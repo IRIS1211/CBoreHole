@@ -1,0 +1,11 @@
+<map id="RenderLabelNumber" name="RenderLabelNumber">
+<area shape="rect" id="node1" title="实现信息格式化显示 默认 float 显示一位数据" alt="" coords="1119,78,1257,105"/>
+<area shape="rect" id="node2" href="$da/d73/a01090.html#a1ac8d28317aadd53446419ac8b353a82" title="实时数据绘制初初始化" alt="" coords="871,21,1063,47"/>
+<area shape="rect" id="node8" href="$da/d73/a01090.html#a9a8ced9f7f74949fed034599a7c51a50" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="645,71,816,112"/>
+<area shape="rect" id="node9" href="$da/d73/a01090.html#abcea4fe649629b7e40ec27966d5c530c" title="更新电子罗盘数据" alt="" coords="864,133,1071,159"/>
+<area shape="rect" id="node3" href="$da/d73/a01090.html#a01083e6fa8585bbe6302affa302bd4d7" title="输入差值 更新 位置信息" alt="" coords="645,5,816,47"/>
+<area shape="rect" id="node4" href="$da/d73/a01090.html#a4b3c834d510144adafcb21791be6c86f" title="设定相关槽和信号的连接" alt="" coords="424,78,597,105"/>
+<area shape="rect" id="node5" href="$da/d73/a01090.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,78,376,105"/>
+<area shape="rect" id="node6" href="$d7/dce/a00143.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="79,49,130,75"/>
+<area shape="rect" id="node7" href="$de/d91/a01034.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,100,204,141"/>
+</map>

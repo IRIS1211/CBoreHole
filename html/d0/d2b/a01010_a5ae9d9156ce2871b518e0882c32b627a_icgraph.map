@@ -1,0 +1,5 @@
+<map id="CSerialPort::OpenPort" name="CSerialPort::OpenPort">
+<area shape="rect" id="node1" title="打开串口" alt="" coords="387,5,537,32"/>
+<area shape="rect" id="node2" href="$d0/d2b/a01010.html#a86910d240b82b2a53d53e511186f5855" title="初始化串口函数" alt="" coords="201,5,339,32"/>
+<area shape="rect" id="node3" href="$d0/d2b/a01010.html#a96ead81aea8f5c577586c595cb67bc26" title="初始化串口 并开启处理线程" alt="" coords="5,5,153,32"/>
+</map>

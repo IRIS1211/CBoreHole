@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/test/test_serialport.cc 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.4.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('de/db1/a00197_source.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">test_serialport.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/db1/a00197.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../stdafx.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// 测试串口处理函数</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// 测试 传统串口</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f">   14</a></span>&#160;<a class="code" href="../../de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;test Cserial port&quot;</span>)  </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// CHECK(1 == 1);</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../d1/dd8/a01022.html">&#x202A;CSerialPort</a> ser_;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ser_.startPort(3, 19200);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// if(!ser_.OpenListenThread ())</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> * start_check = <span class="keyword">new</span> <a class="code" href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>[6]{ 0x68,0x05,0x00,0x0C,0x00,0x11 };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//  测试 写入100 次</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> i = 10;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">while</span>(i--)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        ser_.<a class="code" href="../../d1/dd8/a01022.html#a5ccbd6e8a12799fe60851e37bbbeb2eb">&#x202A;WriteData</a>(start_check,6);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../d5/df9/a00044.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a> = <span class="keyword">new</span> <a class="code" href="../../db/dba/a01078.html">&#x202A;ThreadQueue&lt;SerialData&gt;</a>(16);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// 测试 读取 100 次</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ser_.<a class="code" href="../../d1/dd8/a01022.html#a5166808d3063ff309f36f029768a1103">&#x202A;OpenListenThread</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../d2/dd5/a01002.html">&#x202A;SerialData</a> *tmp_out;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">while</span> (!<a class="code" href="../../d5/df9/a00044.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a>-&gt;IsEmpty() &amp;&amp; i++ &lt; 10)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        tmp_out = <a class="code" href="../../d5/df9/a00044.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a>-&gt;Out();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">// LDebug(&quot;data:{}&quot;, tmp_out-&gt;CharArr2Str(tmp_out-&gt;data_));</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ser_.<a class="code" href="../../d1/dd8/a01022.html#a4ffffefd2d6bfa763cfb8e993b79612d">&#x202A;CloseListenTread</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// 测试 QSerialport</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../de/db1/a00197.html#a365c5f87d11776070cbbc7756f50f2b1">   50</a></span>&#160;<a class="code" href="../../de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;test MySerial Operate&quot;</span>)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../de/d02/a01026.html">&#x202A;MySerial</a> my_serial_;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    my_serial_.<a class="code" href="../../de/d02/a01026.html#a5cb7de4701d2dc22afc1f2c918498837">&#x202A;ListAllPort</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    my_serial_.<a class="code" href="../../de/d02/a01026.html#a7a303778b26d04e336f4e4032f33d8db">&#x202A;OpenSerialPort</a>(3);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    my_serial_.<a class="code" href="../../de/d02/a01026.html#a19b5760f5593fb3f34a270cc82016fcc">&#x202A;SetPortPara</a>(QSerialPort::Baud19200);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    my_serial_.<a class="code" href="../../de/d02/a01026.html#a5974eda1ce165f3878cd3ca2ec87d2ab">&#x202A;OpenListenThread</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// 发送开始查询命令</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">char</span> * start_check = <span class="keyword">new</span> <span class="keywordtype">char</span>[6]{ 0x68,0x05,0x00,0x0C,0x00,0x11 };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QByteArray ser_wc = QByteArray(start_check, 6);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// my_serial_.WriteData(ser_wc, 6);</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">string</span> write_data = <span class="stringliteral">&quot;68 13 00 85 11 12 21 22 31 32 00 00 01 00 00 02 00 00 03 88 FF 01 02 03 04 05 0F&quot;</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// my_serial_.OpenListenThread();</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// TODO: 分析 串口写入数据 进程 调试</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> i = 1000000;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">while</span> (i--)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (i % 100 == 0)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="comment">// my_serial_.write_buffer_-&gt;push(to_string (i));</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            my_serial_.<a class="code" href="../../de/d02/a01026.html#a319fddf3355ae0ec9c910d7f7b57189e">&#x202A;WriteData</a>(write_data);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span> (!my_serial_.<a class="code" href="../../de/d02/a01026.html#aa2c01d595713da9410e4d4a7dda770b9">&#x202A;m_timer_</a>-&gt;isActive())</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                LTrace(<span class="stringliteral">&quot;i:{}&quot;</span>, i);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="comment">// emitTimeoutAndStop(my_serial_.m_timer_);</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    my_serial_.<a class="code" href="../../de/d02/a01026.html#a8c29e89104f5336d4bab24aecd847a83">&#x202A;CloseListenThread</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    my_serial_.<a class="code" href="../../de/d02/a01026.html#a67070338023321d94e1159f4b322f28c">&#x202A;CloseSerialPort</a>(3);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">// 测试 QSerialport</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="../../de/db1/a00197.html#ad86addbaf197fc6470e8c8c197efed66">   99</a></span>&#160;<a class="code" href="../../de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;test Serial&quot;</span>)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// CHECK(1 == 1);</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../d9/d9a/a00998.html">&#x202A;Serial</a> *serial = <span class="keyword">new</span> <a class="code" href="../../d9/d9a/a00998.html">&#x202A;Serial</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    QThread *serial_thread = <span class="keyword">new</span> QThread();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    QObject::connect(serial_thread, &amp;QThread::started, serial, &amp;<a class="code" href="../../d9/d9a/a00998.html#ad1a697720cbc1f1022a4f620d8fd8de2">&#x202A;Serial::Init</a>, Qt::QueuedConnection);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    QObject::connect(serial_thread, &amp;QThread::finished, serial, &amp;<a class="code" href="../../d9/d9a/a00998.html#ab7106342a338373afe7f670fa1dae510">&#x202A;Serial::HandleCloseSerial</a>, Qt::QueuedConnection);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// QObject::connect(serial, &amp;Serial::destroyed, serial_thread, &amp;QThread::quit, Qt::QueuedConnection);</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    serial-&gt;moveToThread(serial_thread);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    serial-&gt;<a class="code" href="../../d9/d9a/a00998.html#a30f2d80417f1745dfba393a2e1370c97">&#x202A;serial_</a>-&gt;moveToThread(serial_thread);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    serial-&gt;<a class="code" href="../../d9/d9a/a00998.html#a40575a6236cf353d61c56232b41944cc">&#x202A;timer_</a>-&gt;moveToThread(serial_thread);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    serial_thread-&gt;start();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// emit serial-&gt;signal_open_serial(gConfig-&gt;runPara.Device.nSerialPort, gConfig-&gt;runPara.Device.nSerialBaud);</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    Sleep(5000);    <span class="comment">// 延时 获取数据 </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// 测试读取数据信息</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">int</span> j = 100;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">while</span> (!serial-&gt;<a class="code" href="../../d9/d9a/a00998.html#ad5dbb64a68e98cd5a778c073c74c9727">&#x202A;m_read_queue_</a>-&gt;<a class="code" href="../../df/d39/a00950.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;Empty</a>() &amp;&amp; j--)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="../../d2/dd5/a01002.html">&#x202A;SerialData</a> tmp_out;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        serial-&gt;<a class="code" href="../../d9/d9a/a00998.html#ad5dbb64a68e98cd5a778c073c74c9727">&#x202A;m_read_queue_</a>-&gt;<a class="code" href="../../df/d39/a00950.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;Pop</a>(tmp_out);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        LDebug(<span class="stringliteral">&quot;data-{}:{}&quot;</span>, j, <a class="code" href="../../d2/de7/a00014.html#a2bccd732252a844a62b3e0bdc7de82d8">&#x202A;charArr2String</a>(tmp_out.<a class="code" href="../../d2/dd5/a01002.html#ad9ed7d32daec135c2637e7afa08b9c1b">&#x202A;data_</a>,tmp_out.<a class="code" href="../../d2/dd5/a01002.html#a16ffc76f51bee6ac5a129ae6577aa5b5">&#x202A;dat_len_</a>));</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        Sleep(100);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    serial_thread-&gt;quit();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00998_html_ab7106342a338373afe7f670fa1dae510"><div class="ttname"><a href="../../d9/d9a/a00998.html#ab7106342a338373afe7f670fa1dae510">&#x202A;Serial::HandleCloseSerial</a></div><div class="ttdeci">&#x202A;void HandleCloseSerial(void)</div><div class="ttdoc">&#x202A;Handles the close serial</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00190">Serial.cc:190</a></div></div>
+<div class="ttc" id="aa01078_html"><div class="ttname"><a href="../../db/dba/a01078.html">&#x202A;ThreadQueue</a></div><div class="ttdoc">&#x202A;Queue of threads.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00049">ThreadQueue.h:49</a></div></div>
+<div class="ttc" id="aa00998_html_ad5dbb64a68e98cd5a778c073c74c9727"><div class="ttname"><a href="../../d9/d9a/a00998.html#ad5dbb64a68e98cd5a778c073c74c9727">&#x202A;Serial::m_read_queue_</a></div><div class="ttdeci">&#x202A;CQueue&lt; SerialData &gt; * m_read_queue_</div><div class="ttdoc">&#x202A;Queue of reads</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00123">Serial.h:123</a></div></div>
+<div class="ttc" id="aa00998_html_ad1a697720cbc1f1022a4f620d8fd8de2"><div class="ttname"><a href="../../d9/d9a/a00998.html#ad1a697720cbc1f1022a4f620d8fd8de2">&#x202A;Serial::Init</a></div><div class="ttdeci">&#x202A;void Init(void)</div><div class="ttdoc">&#x202A;Initializes this object</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00204">Serial.cc:204</a></div></div>
+<div class="ttc" id="aa01026_html_a7a303778b26d04e336f4e4032f33d8db"><div class="ttname"><a href="../../de/d02/a01026.html#a7a303778b26d04e336f4e4032f33d8db">&#x202A;MySerial::OpenSerialPort</a></div><div class="ttdeci">&#x202A;bool OpenSerialPort(uint port_no=1, QIODevice::OpenMode dir=QIODevice::ReadWrite)</div><div class="ttdoc">&#x202A;打开 串口</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00704">SerialPort.cc:704</a></div></div>
+<div class="ttc" id="aa01026_html_a8c29e89104f5336d4bab24aecd847a83"><div class="ttname"><a href="../../de/d02/a01026.html#a8c29e89104f5336d4bab24aecd847a83">&#x202A;MySerial::CloseListenThread</a></div><div class="ttdeci">&#x202A;bool CloseListenThread()</div><div class="ttdoc">&#x202A;关闭监听线程</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00836">SerialPort.cc:836</a></div></div>
+<div class="ttc" id="aa00044_html_a490ece921a21c9c1f092304537c8924c"><div class="ttname"><a href="../../d5/df9/a00044.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a></div><div class="ttdeci">&#x202A;ThreadQueue&lt; SerialData &gt; * lqFrame</div><div class="ttdoc">&#x202A;The lq frame</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00011">SerialProc.cc:11</a></div></div>
+<div class="ttc" id="aa00014_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00036">Commu.h:36</a></div></div>
+<div class="ttc" id="aa01022_html"><div class="ttname"><a href="../../d1/dd8/a01022.html">&#x202A;CSerialPort</a></div><div class="ttdoc">&#x202A;串口通信类</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00060">SerialPort.h:60</a></div></div>
+<div class="ttc" id="aa01002_html"><div class="ttname"><a href="../../d2/dd5/a01002.html">&#x202A;SerialData</a></div><div class="ttdoc">&#x202A;暂存 串口发送回来的 分组数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00030">serialdata.h:30</a></div></div>
+<div class="ttc" id="aa01026_html_a67070338023321d94e1159f4b322f28c"><div class="ttname"><a href="../../de/d02/a01026.html#a67070338023321d94e1159f4b322f28c">&#x202A;MySerial::CloseSerialPort</a></div><div class="ttdeci">&#x202A;bool CloseSerialPort(uint port_no=1)</div><div class="ttdoc">&#x202A;关闭串口</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00759">SerialPort.cc:759</a></div></div>
+<div class="ttc" id="aa01002_html_ad9ed7d32daec135c2637e7afa08b9c1b"><div class="ttname"><a href="../../d2/dd5/a01002.html#ad9ed7d32daec135c2637e7afa08b9c1b">&#x202A;SerialData::data_</a></div><div class="ttdeci">&#x202A;uchar * data_</div><div class="ttdoc">&#x202A;帧数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00036">serialdata.h:36</a></div></div>
+<div class="ttc" id="aa00998_html_a40575a6236cf353d61c56232b41944cc"><div class="ttname"><a href="../../d9/d9a/a00998.html#a40575a6236cf353d61c56232b41944cc">&#x202A;Serial::timer_</a></div><div class="ttdeci">&#x202A;QTimer * timer_</div><div class="ttdoc">&#x202A;The timer</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00119">Serial.h:119</a></div></div>
+<div class="ttc" id="aa00014_html_a2bccd732252a844a62b3e0bdc7de82d8"><div class="ttname"><a href="../../d2/de7/a00014.html#a2bccd732252a844a62b3e0bdc7de82d8">&#x202A;charArr2String</a></div><div class="ttdeci">&#x202A;std::string charArr2String(uchar *buffer, int length=16, int flg_space=1)</div><div class="ttdoc">&#x202A;将UCHAR 字符串依次转换成 string 字符串</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d06/a00131_source.html#l01087">Commu.cc:1087</a></div></div>
+<div class="ttc" id="aa01022_html_a5166808d3063ff309f36f029768a1103"><div class="ttname"><a href="../../d1/dd8/a01022.html#a5166808d3063ff309f36f029768a1103">&#x202A;CSerialPort::OpenListenThread</a></div><div class="ttdeci">&#x202A;bool OpenListenThread()</div><div class="ttdoc">&#x202A;开启监听线程</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00336">SerialPort.cc:336</a></div></div>
+<div class="ttc" id="aa00998_html_a30f2d80417f1745dfba393a2e1370c97"><div class="ttname"><a href="../../d9/d9a/a00998.html#a30f2d80417f1745dfba393a2e1370c97">&#x202A;Serial::serial_</a></div><div class="ttdeci">&#x202A;QSerialPort * serial_</div><div class="ttdoc">&#x202A;The serial</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00117">Serial.h:117</a></div></div>
+<div class="ttc" id="aa01026_html"><div class="ttname"><a href="../../de/d02/a01026.html">&#x202A;MySerial</a></div><div class="ttdoc">&#x202A;自定义串口类型 继承串口类 和多线程类, 能够自定义线程启动</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00379">SerialPort.h:379</a></div></div>
+<div class="ttc" id="aa01002_html_a16ffc76f51bee6ac5a129ae6577aa5b5"><div class="ttname"><a href="../../d2/dd5/a01002.html#a16ffc76f51bee6ac5a129ae6577aa5b5">&#x202A;SerialData::dat_len_</a></div><div class="ttdeci">&#x202A;int dat_len_</div><div class="ttdoc">&#x202A;数据帧长度</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00040">serialdata.h:40</a></div></div>
+<div class="ttc" id="aa01026_html_a319fddf3355ae0ec9c910d7f7b57189e"><div class="ttname"><a href="../../de/d02/a01026.html#a319fddf3355ae0ec9c910d7f7b57189e">&#x202A;MySerial::WriteData</a></div><div class="ttdeci">&#x202A;void WriteData(const QByteArray &amp;data)</div><div class="ttdoc">&#x202A;Writes a data</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l01051">SerialPort.cc:1051</a></div></div>
+<div class="ttc" id="aa00950_html_a4d55a1a82ab1aa26325a0c93e2603c3f"><div class="ttname"><a href="../../df/d39/a00950.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;CQueue::Empty</a></div><div class="ttdeci">&#x202A;bool Empty(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00326">CQueue.h:326</a></div></div>
+<div class="ttc" id="aa00197_html_afb6ab9fe19efa5b425254c76eb078d4f"><div class="ttname"><a href="../../de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;test Cserial port&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/db1/a00197_source.html#l00014">test_serialport.cc:14</a></div></div>
+<div class="ttc" id="aa01026_html_a19b5760f5593fb3f34a270cc82016fcc"><div class="ttname"><a href="../../de/d02/a01026.html#a19b5760f5593fb3f34a270cc82016fcc">&#x202A;MySerial::SetPortPara</a></div><div class="ttdeci">&#x202A;bool SetPortPara(uint baud_rate=QSerialPort::Baud19200, uint parity=QSerialPort::NoParity, uint data_bits=QSerialPort::Data8, uint stop_bits=QSerialPort::OneStop, uint flow_control=QSerialPort::NoFlowControl)</div><div class="ttdoc">&#x202A;设置串口</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00789">SerialPort.cc:789</a></div></div>
+<div class="ttc" id="aa01022_html_a4ffffefd2d6bfa763cfb8e993b79612d"><div class="ttname"><a href="../../d1/dd8/a01022.html#a4ffffefd2d6bfa763cfb8e993b79612d">&#x202A;CSerialPort::CloseListenTread</a></div><div class="ttdeci">&#x202A;bool CloseListenTread()</div><div class="ttdoc">&#x202A;关闭监听线程</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00374">SerialPort.cc:374</a></div></div>
+<div class="ttc" id="aa00998_html"><div class="ttname"><a href="../../d9/d9a/a00998.html">&#x202A;Serial</a></div><div class="ttdoc">&#x202A;A serial.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00035">Serial.h:35</a></div></div>
+<div class="ttc" id="aa01022_html_a5ccbd6e8a12799fe60851e37bbbeb2eb"><div class="ttname"><a href="../../d1/dd8/a01022.html#a5ccbd6e8a12799fe60851e37bbbeb2eb">&#x202A;CSerialPort::WriteData</a></div><div class="ttdeci">&#x202A;bool WriteData(unsigned char *pData, unsigned int length)</div><div class="ttdoc">&#x202A;向串口写数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00575">SerialPort.cc:575</a></div></div>
+<div class="ttc" id="aa01026_html_aa2c01d595713da9410e4d4a7dda770b9"><div class="ttname"><a href="../../de/d02/a01026.html#aa2c01d595713da9410e4d4a7dda770b9">&#x202A;MySerial::m_timer_</a></div><div class="ttdeci">&#x202A;QTimer * m_timer_</div><div class="ttdoc">&#x202A;The timer</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00436">SerialPort.h:436</a></div></div>
+<div class="ttc" id="aa01026_html_a5974eda1ce165f3878cd3ca2ec87d2ab"><div class="ttname"><a href="../../de/d02/a01026.html#a5974eda1ce165f3878cd3ca2ec87d2ab">&#x202A;MySerial::OpenListenThread</a></div><div class="ttdeci">&#x202A;bool OpenListenThread()</div><div class="ttdoc">&#x202A;设置监听线程</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00815">SerialPort.cc:815</a></div></div>
+<div class="ttc" id="aa01026_html_a5cb7de4701d2dc22afc1f2c918498837"><div class="ttname"><a href="../../de/d02/a01026.html#a5cb7de4701d2dc22afc1f2c918498837">&#x202A;MySerial::ListAllPort</a></div><div class="ttdeci">&#x202A;bool ListAllPort(void)</div><div class="ttdoc">&#x202A;列出所有的 串口</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l01102">SerialPort.cc:1102</a></div></div>
+<div class="ttc" id="aa00950_html_aabb5d6f90ce5562f4d30867de96bc983"><div class="ttname"><a href="../../df/d39/a00950.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;CQueue::Pop</a></div><div class="ttdeci">&#x202A;bool Pop(T &amp;data)</div><div class="ttdoc">&#x202A;返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00155">CQueue.h:155</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_e4242af473e2aee12aed92be20342e47.html">&#x202A;test</a></li><li class="navelem"><a class="el" href="../../de/db1/a00197.html">&#x202A;test_serialport.cc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+digraph "WorkWindow::signal_render_extra"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="WorkWindow::signal\l_render_extra",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Raises a Render extra signal"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="WorkWindow::setConnect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/df7/a01074.html#a4b3c834d510144adafcb21791be6c86f",tooltip="设定相关槽和信号的连接"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="WorkWindow::Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/df7/a01074.html#a98cc99469cf7af144c013870cd2a31e1",tooltip="主线程 初始化"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dce/a00143.html#a0ddf1224851353fc92bfbff6f499fa97",tooltip="Main entry-point for this application"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SetWindow::on_btn_startWork\l_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/dd8/a01022.html#a16d22af38341107258918d2b0b93e912",tooltip="Handles button start work clicked signals"];
+}

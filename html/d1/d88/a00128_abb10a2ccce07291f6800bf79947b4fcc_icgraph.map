@@ -1,0 +1,5 @@
+<map id="initCpu" name="initCpu">
+<area shape="rect" id="node1" title="init cpu in assembly language" alt="" coords="176,31,239,57"/>
+<area shape="rect" id="node2" href="$d1/d88/a00128.html#a1ae22fc8f3c32c755120ddcfea0fba14" title="Gets CPU type" alt="" coords="21,5,112,32"/>
+<area shape="rect" id="node3" href="$d1/d88/a00128.html#ae0a5fc298e7c4661b5450c6921156f95" title="Gets manufacture identifier" alt="" coords="5,56,128,83"/>
+</map>

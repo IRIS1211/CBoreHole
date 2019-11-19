@@ -1,0 +1,5 @@
+<map id="FrameData::Update" name="FrameData::Update">
+<area shape="rect" id="node1" title="根据串口数据 更新当前类的值" alt="" coords="5,31,140,57"/>
+<area shape="rect" id="node2" href="$da/d45/a00011.html#acab6a3f3a0d0970b03b4b6de388ba319" title="根据磁力计 返回的 三个UCHAR值 解算成相应的十进制值" alt="" coords="188,5,292,32"/>
+<area shape="rect" id="node3" href="$da/d45/a00011.html#ad3b5d3b3c83f0557e63b42855daab802" title="计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据" alt="" coords="203,56,277,83"/>
+</map>

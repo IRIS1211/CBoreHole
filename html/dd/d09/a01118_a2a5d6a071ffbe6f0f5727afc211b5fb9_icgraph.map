@@ -1,0 +1,11 @@
+<map id="CSlider::Associate" name="CSlider::Associate">
+<area shape="rect" id="node1" title="Associates" alt="" coords="860,97,991,123"/>
+<area shape="rect" id="node2" href="$de/d91/a01034.html#ab19d4b6c6091b475253fabf838d92ccd" title="Initializes the user interface" alt="" coords="669,71,795,98"/>
+<area shape="rect" id="node5" href="$da/d73/a01090.html#a5ae6f45b6b134db391e806306eba0711" title="Updates the user interface 根据运行参数 更改目前程序界面上的参数" alt="" coords="652,122,812,149"/>
+<area shape="rect" id="node3" href="$de/d91/a01034.html#ae102c72b4049bec2a4c5c41fd8185a28" title="Handles button cancel clicked signals" alt="" coords="424,5,604,47"/>
+<area shape="rect" id="node4" href="$de/d91/a01034.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="433,71,595,98"/>
+<area shape="rect" id="node6" href="$da/d73/a01090.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,147,376,174"/>
+<area shape="rect" id="node9" href="$da/d73/a01090.html#a4b3c834d510144adafcb21791be6c86f" title="设定相关槽和信号的连接" alt="" coords="427,173,601,199"/>
+<area shape="rect" id="node7" href="$d7/dce/a00143.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="79,118,130,145"/>
+<area shape="rect" id="node8" href="$de/d91/a01034.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,169,204,211"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="FrameData" name="FrameData">
+<area shape="rect" id="node1" title="定义一帧数据" alt="" coords="233,95,319,121"/>
+<area shape="rect" id="node2" href="$dc/d81/a01006.html#d0/d2b/a01010" title="编码器 的值 保留当前值 上次值 以及运算的中值" alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node3" href="$dc/d81/a01006.html#d3/d08/a01018" title="电子罗盘" alt="" coords="185,5,367,32"/>
+<area shape="rect" id="node4" href="$dc/d81/a01006.html#d0/d56/a01014" title="记录电压当前值" alt="" coords="392,5,547,32"/>
+</map>

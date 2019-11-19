@@ -1,0 +1,8 @@
+<map id="ImageProc::matchImage" name="ImageProc::matchImage">
+<area shape="rect" id="node1" title="Match image" alt="" coords="5,81,168,108"/>
+<area shape="rect" id="node2" href="$da/d45/a00011.html#a15bfdd88e937e375aca09f8c2994579d" title="根据一副图像的尺寸和要生成的图像尺寸 生成居中 的一个矩形框" alt="" coords="253,5,344,32"/>
+<area shape="rect" id="node3" href="$df/dce/a00974.html#a8f4aaa7b7ee5937f7f8b66afbb67e7ca" title="计算两个 小区块 图像的偏移值" alt="" coords="216,56,381,83"/>
+<area shape="rect" id="node4" href="$da/d45/a00011.html#a2b33969147c46958972d8f7d5d8e66b3" title="返回图像的 矩形区域" alt="" coords="255,107,343,133"/>
+<area shape="rect" id="node5" href="$da/d45/a00011.html#aef517eb734fb58e5679c499b7e03f9f9" title="根据当前区域相对于上次区域的偏移值定位出来 上次矩形框的外扩范围" alt="" coords="248,157,349,184"/>
+<area shape="rect" id="node6" href="$d1/d88/a00128.html#ab688848b4cebf25b937dea6704b3b6a8" title="Margin rectangle" alt="" coords="429,157,517,184"/>
+</map>

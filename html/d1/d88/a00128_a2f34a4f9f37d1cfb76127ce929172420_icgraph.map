@@ -1,0 +1,12 @@
+<map id="QTDirExist" name="QTDirExist">
+<area shape="rect" id="node1" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="928,85,1013,111"/>
+<area shape="rect" id="node2" href="$de/d91/a01034.html#afbc288067257bd144de1867ca656ef79" title=" " alt="" coords="697,23,880,50"/>
+<area shape="rect" id="node6" href="$d1/d88/a00128.html#ab4e02a15fd849dbf13c3b9bb17fd2d58" title="初始化 全局变量 主要是读取主配置文件 并根据配置文件决定后续程序执行" alt="" coords="742,85,835,111"/>
+<area shape="rect" id="node9" href="$dd/df1/a01082.html#a0089a1003badc38250ed84d66b8c5fe3" title=" " alt="" coords="710,147,867,174"/>
+<area shape="rect" id="node3" href="$de/d91/a01034.html#af449e6140a028d414e2745f8c2bb03b6" title="Slot show camera" alt="" coords="475,5,649,47"/>
+<area shape="rect" id="node4" href="$de/d91/a01034.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,13,427,39"/>
+<area shape="rect" id="node5" href="$de/d91/a01034.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,13,168,39"/>
+<area shape="rect" id="node7" href="$d9/df5/a01086.html#ac43fc49189df29ccdf5e0724d29eb5e1" title=" " alt="" coords="504,71,620,98"/>
+<area shape="rect" id="node8" href="$d7/dce/a00143.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="537,122,587,149"/>
+<area shape="rect" id="node10" href="$dd/df1/a01082.html#a8537b4c963467314c61eb26616087b1b" title="Initializes a new instance of the WriteVideo class ��ʼʵ�� ���г���" alt="" coords="483,173,641,199"/>
+</map>

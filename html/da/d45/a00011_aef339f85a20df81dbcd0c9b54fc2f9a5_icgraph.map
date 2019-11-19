@@ -1,0 +1,9 @@
+<map id="CalcSumCheck" name="CalcSumCheck">
+<area shape="rect" id="node1" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="544,81,656,108"/>
+<area shape="rect" id="node2" href="$d9/d9a/a00998.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="367,56,487,83"/>
+<area shape="rect" id="node6" href="$de/d02/a01026.html#a6df22759fdbcef2fa39b4977abd0ed4b" title="Reads the data" alt="" coords="357,107,496,133"/>
+<area shape="rect" id="node3" href="$d9/d9a/a00998.html#ab4d98e474b554e318508d1f26a053998" title="Handles the read data" alt="" coords="149,5,309,32"/>
+<area shape="rect" id="node5" href="$d9/d9a/a00998.html#a7f33b441ca3c2e17c8d673a997437bd4" title="Handles the timeout" alt="" coords="155,56,304,83"/>
+<area shape="rect" id="node4" href="$d9/d9a/a00998.html#adda4ed09582ac92c92b16b55b471a6d4" title="Initializes a new instance of the Serial class" alt="" coords="5,31,101,57"/>
+<area shape="rect" id="node7" href="$de/d02/a01026.html#afb6dc5f937b25f5ee2e43fe1b2c28e09" title="Initializes a new instance of the MySerial class" alt="" coords="163,107,295,133"/>
+</map>

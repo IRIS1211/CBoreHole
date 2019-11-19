@@ -1,0 +1,7 @@
+<map id="WriteVideo::WriteVideo" name="WriteVideo::WriteVideo">
+<area shape="rect" id="node1" title="Initializes a new instance of the WriteVideo class ��ʼʵ�� ���г���" alt="" coords="5,31,164,57"/>
+<area shape="rect" id="node2" href="$dd/df1/a01082.html#a0089a1003badc38250ed84d66b8c5fe3" title=" " alt="" coords="212,31,369,57"/>
+<area shape="rect" id="node3" href="$da/d45/a00011.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="417,5,503,32"/>
+<area shape="rect" id="node5" href="$da/d45/a00011.html#a417ad9bc43db4f2f4eda91598d39e883" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="417,56,503,83"/>
+<area shape="rect" id="node4" href="$d1/d88/a00128.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="551,5,621,32"/>
+</map>

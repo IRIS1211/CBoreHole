@@ -1,0 +1,52 @@
+<map id="D:/Code/Vision/Camera/Project/CBoreHole/Code/stdafx.h" name="D:/Code/Vision/Camera/Project/CBoreHole/Code/stdafx.h">
+<area shape="rect" id="node1" title=" " alt="" coords="1763,5,1930,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="215,483,287,509"/>
+<area shape="rect" id="node3" title=" " alt="" coords="707,408,776,435"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2061,109,2117,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="2142,109,2205,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="2229,109,2288,136"/>
+<area shape="rect" id="node7" title=" " alt="" coords="558,781,613,808"/>
+<area shape="rect" id="node8" title=" " alt="" coords="2312,109,2376,136"/>
+<area shape="rect" id="node9" title=" " alt="" coords="2400,109,2461,136"/>
+<area shape="rect" id="node10" title=" " alt="" coords="2486,109,2573,136"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1240,259,1307,285"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2597,109,2667,136"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2691,109,2739,136"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1757,259,1864,285"/>
+<area shape="rect" id="node15" title=" " alt="" coords="955,557,1026,584"/>
+<area shape="rect" id="node16" title=" " alt="" coords="2763,109,2941,136"/>
+<area shape="rect" id="node17" title=" " alt="" coords="2966,109,3074,136"/>
+<area shape="rect" id="node18" title=" " alt="" coords="3098,109,3187,136"/>
+<area shape="rect" id="node19" title=" " alt="" coords="3212,109,3356,136"/>
+<area shape="rect" id="node20" title=" " alt="" coords="3380,109,3519,136"/>
+<area shape="rect" id="node21" title=" " alt="" coords="3543,109,3705,136"/>
+<area shape="rect" id="node22" title=" " alt="" coords="311,707,377,733"/>
+<area shape="rect" id="node23" title=" " alt="" coords="1167,333,1238,360"/>
+<area shape="rect" id="node24" title=" " alt="" coords="3729,109,3825,136"/>
+<area shape="rect" id="node25" title=" " alt="" coords="3850,109,3947,136"/>
+<area shape="rect" id="node26" title=" " alt="" coords="3971,109,4106,136"/>
+<area shape="rect" id="node27" title=" " alt="" coords="4131,109,4227,136"/>
+<area shape="rect" id="node28" title=" " alt="" coords="4251,109,4333,136"/>
+<area shape="rect" id="node29" href="$da/d45/a00011.html" title=" " alt="" coords="1109,632,1221,659"/>
+<area shape="rect" id="node30" href="$d5/de0/a00050.html" title="Declares the speed logger class @changelog 2019/10/17 IRIS_Chen Created." alt="" coords="1101,707,1229,733"/>
+<area shape="rect" id="node31" href="$d4/d51/a00017.html" title="Declares the configuration class @changelog 2019/11/7 IRIS_Chen Created." alt="" coords="1917,184,2016,211"/>
+<area shape="rect" id="node32" href="$dc/dee/a00053.html" title="Declares the system para class @changelog 2019/10/17 IRIS_Chen Created." alt="" coords="1914,259,2019,285"/>
+<area shape="rect" id="node33" href="$d5/d16/a00029.html" title=" " alt="" coords="1960,333,2069,360"/>
+<area shape="rect" id="node34" href="$dd/dad/a00005.html" title="实现相机采集类, 能够在另一个线程完成图像采集任务, 将采集到的图像存入自己的采集队列中, @changelog 2019/11/7 IRIS_Chen Created...." alt="" coords="574,259,709,285"/>
+<area shape="rect" id="node35" href="$d9/d2e/a00056.html" title="Declares the thread queue class @changelog 2019/10/17 IRIS_Chen Created." alt="" coords="195,333,306,360"/>
+<area shape="rect" id="node36" href="$db/db2/a00020.html" title="Declares the queue class @changelog 2019/11/8 IRIS_Chen Created." alt="" coords="533,333,613,360"/>
+<area shape="rect" id="node37" href="$d5/df9/a00044.html" title="Declares the serial proc class @changelog 2019/10/17 IRIS_Chen Created." alt="" coords="437,408,531,435"/>
+<area shape="rect" id="node38" href="$d4/d8c/a00035.html" title="Declares the serial class @changelog 2019/11/7 IRIS_Chen Created." alt="" coords="780,483,847,509"/>
+<area shape="rect" id="node39" href="$d8/d41/a00038.html" title="Declares the serialdata class @changelog 2019/11/7 IRIS_Chen Created." alt="" coords="534,557,623,584"/>
+<area shape="rect" id="node40" href="$d2/de7/a00014.html" title="Declares the commu class @changelog 2019/11/7 IRIS_Chen Created." alt="" coords="406,632,485,659"/>
+<area shape="rect" id="node41" href="$dd/d32/a00041.html" title="Declares the serial port class @changelog 2019/11/7 IRIS_Chen Created." alt="" coords="584,483,675,509"/>
+<area shape="rect" id="node42" href="$d4/dee/a00008.html" title="Declares the camera proc class @changelog 2019/11/7 IRIS_Chen Created." alt="" coords="1038,184,1154,211"/>
+<area shape="rect" id="node43" href="$d6/d5b/a00026.html" title=" " alt="" coords="1037,259,1165,285"/>
+<area shape="rect" id="node44" href="$de/de1/a00065.html" title="Declares the writerthread class @changelog 2019/11/7 IRIS_Chen Created." alt="" coords="1280,184,1416,211"/>
+<area shape="rect" id="node45" href="$d6/d2d/a00047.html" title=" " alt="" coords="1661,109,1784,136"/>
+<area shape="rect" id="node46" href="$df/d03/a00062.html" title="Declares the work Windows Form @changelog 2019/10/17 IRIS_Chen Created." alt="" coords="1491,184,1634,211"/>
+<area shape="rect" id="node47" href="$da/d24/a00068.html" title="Declares the write video class @changelog 2019/11/19 IRIS_Chen Created." alt="" coords="1382,259,1479,285"/>
+<area shape="rect" id="node48" href="$dc/d87/a00032.html" title="Declares the readwindow class @changelog 2019/11/7 IRIS_Chen Created." alt="" coords="1760,184,1893,211"/>
+<area shape="rect" id="node49" title=" " alt="" coords="4357,109,4461,136"/>
+<area shape="rect" id="node50" title=" " alt="" coords="4486,109,4669,136"/>
+</map>

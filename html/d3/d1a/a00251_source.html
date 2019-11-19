@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/ui/ui_readwindow.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.4.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d3/d1a/a00251_source.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ui_readwindow.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/d1a/a00251.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/********************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** Form generated from reading UI file &#39;readwindow.ui&#39;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** Created by: Qt User Interface Compiler version 5.11.1</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">** WARNING! All changes made in this file will be lost when recompiling UI file!</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">********************************************************************************/</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef UI_READWINDOW_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define UI_READWINDOW_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QtCore/QVariant&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QApplication&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QGridLayout&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QHBoxLayout&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QLabel&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QLineEdit&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QMainWindow&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QPushButton&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QScrollArea&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QScrollBar&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QSpacerItem&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QVBoxLayout&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QWidget&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;QT_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html">   27</a></span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/d88/a01294.html">&#x202A;Ui_ReadWindow</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">   30</a></span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a66980b936d7e3895be9711737170381e">   31</a></span>&#160;    QWidget *<a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">   32</a></span>&#160;    QGridLayout *<a class="code" href="../../d7/d88/a01294.html#a66980b936d7e3895be9711737170381e">&#x202A;gridLayout</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">   33</a></span>&#160;    QHBoxLayout *<a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#ac654ab070a2a451bf3c9010c96fdd26c">   34</a></span>&#160;    QVBoxLayout *<a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#ab8caca35ea7914c8c42a85aa66068320">   35</a></span>&#160;    QVBoxLayout *<a class="code" href="../../d7/d88/a01294.html#ac654ab070a2a451bf3c9010c96fdd26c">&#x202A;top</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a3f624ee5b39d6b012b16ad04e77464ee">   36</a></span>&#160;    QVBoxLayout *<a class="code" href="../../d7/d88/a01294.html#ab8caca35ea7914c8c42a85aa66068320">&#x202A;verticalLayout_3</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#ad43f89e86f61bf46c5f154ec00bdfff9">   37</a></span>&#160;    QPushButton *<a class="code" href="../../d7/d88/a01294.html#a3f624ee5b39d6b012b16ad04e77464ee">&#x202A;btn_openFile</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a8b8a865b86f3dc4d274e14d3185556fc">   38</a></span>&#160;    QPushButton *<a class="code" href="../../d7/d88/a01294.html#ad43f89e86f61bf46c5f154ec00bdfff9">&#x202A;btn_closeFile</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#aa30cc5775305ee779d5731c98c67dc2b">   39</a></span>&#160;    QPushButton *<a class="code" href="../../d7/d88/a01294.html#a8b8a865b86f3dc4d274e14d3185556fc">&#x202A;btn_read_exit</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#ac0e3bb7b2a863ee66c7ad924ca08dc18">   40</a></span>&#160;    QVBoxLayout *<a class="code" href="../../d7/d88/a01294.html#aa30cc5775305ee779d5731c98c67dc2b">&#x202A;verticalLayout_2</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#acfa4ef50e36a18148403cd60fdba0028">   41</a></span>&#160;    QLabel *<a class="code" href="../../d7/d88/a01294.html#ac0e3bb7b2a863ee66c7ad924ca08dc18">&#x202A;label</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#ac9e7131370801035af06377bf0ba45ea">   42</a></span>&#160;    QLineEdit *<a class="code" href="../../d7/d88/a01294.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;lb_work_dir</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a775544df36513241c2789f3c0fa47ef3">   43</a></span>&#160;    QHBoxLayout *<a class="code" href="../../d7/d88/a01294.html#ac9e7131370801035af06377bf0ba45ea">&#x202A;center</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#ac18fe57377d75fc8e1cc233206d6f662">   44</a></span>&#160;    QSpacerItem *<a class="code" href="../../d7/d88/a01294.html#a775544df36513241c2789f3c0fa47ef3">&#x202A;verticalSpacer_2</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#af5ab1e26952fdc0ac7e745da7da7748f">   45</a></span>&#160;    QHBoxLayout *<a class="code" href="../../d7/d88/a01294.html#ac18fe57377d75fc8e1cc233206d6f662">&#x202A;bot</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a65b4373d6c3f25f59d9ed09ef9322800">   46</a></span>&#160;    QSpacerItem *<a class="code" href="../../d7/d88/a01294.html#af5ab1e26952fdc0ac7e745da7da7748f">&#x202A;verticalSpacer_3</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a9f05437ab2100ebabc9f7616132f89be">   47</a></span>&#160;    QHBoxLayout *<a class="code" href="../../d7/d88/a01294.html#a65b4373d6c3f25f59d9ed09ef9322800">&#x202A;vspace</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">   48</a></span>&#160;    QSpacerItem *<a class="code" href="../../d7/d88/a01294.html#a9f05437ab2100ebabc9f7616132f89be">&#x202A;verticalSpacer</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#aa89d890bd6de9b20c1d34f3c10373d89">   49</a></span>&#160;    QVBoxLayout *<a class="code" href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">&#x202A;content</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#ae07c617627ed766cad71472c90525399">   50</a></span>&#160;    QHBoxLayout *<a class="code" href="../../d7/d88/a01294.html#aa89d890bd6de9b20c1d34f3c10373d89">&#x202A;topContent</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a8cbb2edbe4553843d2fb8f871d790f4a">   51</a></span>&#160;    QScrollArea *<a class="code" href="../../d7/d88/a01294.html#ae07c617627ed766cad71472c90525399">&#x202A;scrollArea</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#ad5693c3692cac43d7b71142c3262ec6c">   52</a></span>&#160;    QWidget *<a class="code" href="../../d7/d88/a01294.html#a8cbb2edbe4553843d2fb8f871d790f4a">&#x202A;scrollAreaWidgetContents</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#acc05c40abda8253106654b5d26fb95ab">   53</a></span>&#160;    QLabel *<a class="code" href="../../d7/d88/a01294.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;lb_show</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#ad2e21ad2c65726b9e8fe9958bfbe26fc">   54</a></span>&#160;    QHBoxLayout *<a class="code" href="../../d7/d88/a01294.html#acc05c40abda8253106654b5d26fb95ab">&#x202A;hBar</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a023096e2a97eae34a69b41f4f1699770">   55</a></span>&#160;    QScrollBar *<a class="code" href="../../d7/d88/a01294.html#ad2e21ad2c65726b9e8fe9958bfbe26fc">&#x202A;horizontalScrollBar</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    QVBoxLayout *<a class="code" href="../../d7/d88/a01294.html#a023096e2a97eae34a69b41f4f1699770">&#x202A;right</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a45d7b0a78d984b9adb25941f04a12721">   57</a></span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d88/a01294.html#a45d7b0a78d984b9adb25941f04a12721">&#x202A;setupUi</a>(QMainWindow *<a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>-&gt;objectName().isEmpty())</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;ReadWindow&quot;</span>));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>-&gt;resize(1280, 600);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>-&gt;setStyleSheet(QStringLiteral(<span class="stringliteral">&quot;&quot;</span>));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a> = <span class="keyword">new</span> QWidget(<a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;centralwidget&quot;</span>));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a66980b936d7e3895be9711737170381e">&#x202A;gridLayout</a> = <span class="keyword">new</span> QGridLayout(<a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a66980b936d7e3895be9711737170381e">&#x202A;gridLayout</a>-&gt;setSpacing(0);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a66980b936d7e3895be9711737170381e">&#x202A;gridLayout</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;gridLayout&quot;</span>));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a66980b936d7e3895be9711737170381e">&#x202A;gridLayout</a>-&gt;setContentsMargins(0, 0, 0, 0);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a> = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>-&gt;setSpacing(0);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;mainWindows&quot;</span>));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>-&gt;setContentsMargins(0, 0, 0, 0);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a> = <span class="keyword">new</span> QVBoxLayout();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>-&gt;setSpacing(0);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;left&quot;</span>));</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac654ab070a2a451bf3c9010c96fdd26c">&#x202A;top</a> = <span class="keyword">new</span> QVBoxLayout();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac654ab070a2a451bf3c9010c96fdd26c">&#x202A;top</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;top&quot;</span>));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ab8caca35ea7914c8c42a85aa66068320">&#x202A;verticalLayout_3</a> = <span class="keyword">new</span> QVBoxLayout();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ab8caca35ea7914c8c42a85aa66068320">&#x202A;verticalLayout_3</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;verticalLayout_3&quot;</span>));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a3f624ee5b39d6b012b16ad04e77464ee">&#x202A;btn_openFile</a> = <span class="keyword">new</span> QPushButton(<a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a3f624ee5b39d6b012b16ad04e77464ee">&#x202A;btn_openFile</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;btn_openFile&quot;</span>));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Preferred);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        sizePolicy.setHorizontalStretch(0);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        sizePolicy.setVerticalStretch(0);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        sizePolicy.setHeightForWidth(<a class="code" href="../../d7/d88/a01294.html#a3f624ee5b39d6b012b16ad04e77464ee">&#x202A;btn_openFile</a>-&gt;sizePolicy().hasHeightForWidth());</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a3f624ee5b39d6b012b16ad04e77464ee">&#x202A;btn_openFile</a>-&gt;setSizePolicy(sizePolicy);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ab8caca35ea7914c8c42a85aa66068320">&#x202A;verticalLayout_3</a>-&gt;addWidget(<a class="code" href="../../d7/d88/a01294.html#a3f624ee5b39d6b012b16ad04e77464ee">&#x202A;btn_openFile</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad43f89e86f61bf46c5f154ec00bdfff9">&#x202A;btn_closeFile</a> = <span class="keyword">new</span> QPushButton(<a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad43f89e86f61bf46c5f154ec00bdfff9">&#x202A;btn_closeFile</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;btn_closeFile&quot;</span>));</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        sizePolicy.setHeightForWidth(<a class="code" href="../../d7/d88/a01294.html#ad43f89e86f61bf46c5f154ec00bdfff9">&#x202A;btn_closeFile</a>-&gt;sizePolicy().hasHeightForWidth());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad43f89e86f61bf46c5f154ec00bdfff9">&#x202A;btn_closeFile</a>-&gt;setSizePolicy(sizePolicy);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ab8caca35ea7914c8c42a85aa66068320">&#x202A;verticalLayout_3</a>-&gt;addWidget(<a class="code" href="../../d7/d88/a01294.html#ad43f89e86f61bf46c5f154ec00bdfff9">&#x202A;btn_closeFile</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a8b8a865b86f3dc4d274e14d3185556fc">&#x202A;btn_read_exit</a> = <span class="keyword">new</span> QPushButton(<a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a8b8a865b86f3dc4d274e14d3185556fc">&#x202A;btn_read_exit</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;btn_read_exit&quot;</span>));</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        sizePolicy.setHeightForWidth(<a class="code" href="../../d7/d88/a01294.html#a8b8a865b86f3dc4d274e14d3185556fc">&#x202A;btn_read_exit</a>-&gt;sizePolicy().hasHeightForWidth());</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a8b8a865b86f3dc4d274e14d3185556fc">&#x202A;btn_read_exit</a>-&gt;setSizePolicy(sizePolicy);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ab8caca35ea7914c8c42a85aa66068320">&#x202A;verticalLayout_3</a>-&gt;addWidget(<a class="code" href="../../d7/d88/a01294.html#a8b8a865b86f3dc4d274e14d3185556fc">&#x202A;btn_read_exit</a>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac654ab070a2a451bf3c9010c96fdd26c">&#x202A;top</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#ab8caca35ea7914c8c42a85aa66068320">&#x202A;verticalLayout_3</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#aa30cc5775305ee779d5731c98c67dc2b">&#x202A;verticalLayout_2</a> = <span class="keyword">new</span> QVBoxLayout();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#aa30cc5775305ee779d5731c98c67dc2b">&#x202A;verticalLayout_2</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;verticalLayout_2&quot;</span>));</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac0e3bb7b2a863ee66c7ad924ca08dc18">&#x202A;label</a> = <span class="keyword">new</span> QLabel(<a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac0e3bb7b2a863ee66c7ad924ca08dc18">&#x202A;label</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;label&quot;</span>));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#aa30cc5775305ee779d5731c98c67dc2b">&#x202A;verticalLayout_2</a>-&gt;addWidget(<a class="code" href="../../d7/d88/a01294.html#ac0e3bb7b2a863ee66c7ad924ca08dc18">&#x202A;label</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;lb_work_dir</a> = <span class="keyword">new</span> QLineEdit(<a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;lb_work_dir</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;lb_work_dir&quot;</span>));</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#aa30cc5775305ee779d5731c98c67dc2b">&#x202A;verticalLayout_2</a>-&gt;addWidget(<a class="code" href="../../d7/d88/a01294.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;lb_work_dir</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac654ab070a2a451bf3c9010c96fdd26c">&#x202A;top</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#aa30cc5775305ee779d5731c98c67dc2b">&#x202A;verticalLayout_2</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac654ab070a2a451bf3c9010c96fdd26c">&#x202A;top</a>-&gt;setStretch(0, 3);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac654ab070a2a451bf3c9010c96fdd26c">&#x202A;top</a>-&gt;setStretch(1, 1);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#ac654ab070a2a451bf3c9010c96fdd26c">&#x202A;top</a>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac9e7131370801035af06377bf0ba45ea">&#x202A;center</a> = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac9e7131370801035af06377bf0ba45ea">&#x202A;center</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;center&quot;</span>));</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a775544df36513241c2789f3c0fa47ef3">&#x202A;verticalSpacer_2</a> = <span class="keyword">new</span> QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac9e7131370801035af06377bf0ba45ea">&#x202A;center</a>-&gt;addItem(<a class="code" href="../../d7/d88/a01294.html#a775544df36513241c2789f3c0fa47ef3">&#x202A;verticalSpacer_2</a>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#ac9e7131370801035af06377bf0ba45ea">&#x202A;center</a>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac18fe57377d75fc8e1cc233206d6f662">&#x202A;bot</a> = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac18fe57377d75fc8e1cc233206d6f662">&#x202A;bot</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;bot&quot;</span>));</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#af5ab1e26952fdc0ac7e745da7da7748f">&#x202A;verticalSpacer_3</a> = <span class="keyword">new</span> QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac18fe57377d75fc8e1cc233206d6f662">&#x202A;bot</a>-&gt;addItem(<a class="code" href="../../d7/d88/a01294.html#af5ab1e26952fdc0ac7e745da7da7748f">&#x202A;verticalSpacer_3</a>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#ac18fe57377d75fc8e1cc233206d6f662">&#x202A;bot</a>);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a65b4373d6c3f25f59d9ed09ef9322800">&#x202A;vspace</a> = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a65b4373d6c3f25f59d9ed09ef9322800">&#x202A;vspace</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;vspace&quot;</span>));</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a9f05437ab2100ebabc9f7616132f89be">&#x202A;verticalSpacer</a> = <span class="keyword">new</span> QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a65b4373d6c3f25f59d9ed09ef9322800">&#x202A;vspace</a>-&gt;addItem(<a class="code" href="../../d7/d88/a01294.html#a9f05437ab2100ebabc9f7616132f89be">&#x202A;verticalSpacer</a>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#a65b4373d6c3f25f59d9ed09ef9322800">&#x202A;vspace</a>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>-&gt;setStretch(0, 4);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>-&gt;setStretch(1, 2);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>-&gt;setStretch(2, 2);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>-&gt;setStretch(3, 2);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;left</a>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">&#x202A;content</a> = <span class="keyword">new</span> QVBoxLayout();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">&#x202A;content</a>-&gt;setSpacing(0);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">&#x202A;content</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;content&quot;</span>));</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#aa89d890bd6de9b20c1d34f3c10373d89">&#x202A;topContent</a> = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#aa89d890bd6de9b20c1d34f3c10373d89">&#x202A;topContent</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;topContent&quot;</span>));</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ae07c617627ed766cad71472c90525399">&#x202A;scrollArea</a> = <span class="keyword">new</span> QScrollArea(<a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ae07c617627ed766cad71472c90525399">&#x202A;scrollArea</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;scrollArea&quot;</span>));</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ae07c617627ed766cad71472c90525399">&#x202A;scrollArea</a>-&gt;setWidgetResizable(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a8cbb2edbe4553843d2fb8f871d790f4a">&#x202A;scrollAreaWidgetContents</a> = <span class="keyword">new</span> QWidget();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a8cbb2edbe4553843d2fb8f871d790f4a">&#x202A;scrollAreaWidgetContents</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;scrollAreaWidgetContents&quot;</span>));</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a8cbb2edbe4553843d2fb8f871d790f4a">&#x202A;scrollAreaWidgetContents</a>-&gt;setGeometry(QRect(0, 0, 846, 573));</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;lb_show</a> = <span class="keyword">new</span> QLabel(<a class="code" href="../../d7/d88/a01294.html#a8cbb2edbe4553843d2fb8f871d790f4a">&#x202A;scrollAreaWidgetContents</a>);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;lb_show</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;lb_show&quot;</span>));</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;lb_show</a>-&gt;setGeometry(QRect(0, 0, 841, 500));</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;lb_show</a>-&gt;setAlignment(Qt::AlignCenter);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ae07c617627ed766cad71472c90525399">&#x202A;scrollArea</a>-&gt;setWidget(<a class="code" href="../../d7/d88/a01294.html#a8cbb2edbe4553843d2fb8f871d790f4a">&#x202A;scrollAreaWidgetContents</a>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#aa89d890bd6de9b20c1d34f3c10373d89">&#x202A;topContent</a>-&gt;addWidget(<a class="code" href="../../d7/d88/a01294.html#ae07c617627ed766cad71472c90525399">&#x202A;scrollArea</a>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">&#x202A;content</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#aa89d890bd6de9b20c1d34f3c10373d89">&#x202A;topContent</a>);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#acc05c40abda8253106654b5d26fb95ab">&#x202A;hBar</a> = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#acc05c40abda8253106654b5d26fb95ab">&#x202A;hBar</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;hBar&quot;</span>));</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad2e21ad2c65726b9e8fe9958bfbe26fc">&#x202A;horizontalScrollBar</a> = <span class="keyword">new</span> QScrollBar(<a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad2e21ad2c65726b9e8fe9958bfbe26fc">&#x202A;horizontalScrollBar</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;horizontalScrollBar&quot;</span>));</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad2e21ad2c65726b9e8fe9958bfbe26fc">&#x202A;horizontalScrollBar</a>-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad2e21ad2c65726b9e8fe9958bfbe26fc">&#x202A;horizontalScrollBar</a>-&gt;setOrientation(Qt::Horizontal);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#acc05c40abda8253106654b5d26fb95ab">&#x202A;hBar</a>-&gt;addWidget(<a class="code" href="../../d7/d88/a01294.html#ad2e21ad2c65726b9e8fe9958bfbe26fc">&#x202A;horizontalScrollBar</a>);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">&#x202A;content</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#acc05c40abda8253106654b5d26fb95ab">&#x202A;hBar</a>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">&#x202A;content</a>-&gt;setStretch(0, 30);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">&#x202A;content</a>-&gt;setStretch(1, 1);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">&#x202A;content</a>);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a023096e2a97eae34a69b41f4f1699770">&#x202A;right</a> = <span class="keyword">new</span> QVBoxLayout();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a023096e2a97eae34a69b41f4f1699770">&#x202A;right</a>-&gt;setSpacing(0);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a023096e2a97eae34a69b41f4f1699770">&#x202A;right</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;right&quot;</span>));</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#a023096e2a97eae34a69b41f4f1699770">&#x202A;right</a>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>-&gt;setStretch(0, 1);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>-&gt;setStretch(1, 4);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>-&gt;setStretch(2, 1);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a66980b936d7e3895be9711737170381e">&#x202A;gridLayout</a>-&gt;addLayout(<a class="code" href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;mainWindows</a>, 0, 0, 1, 1);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>-&gt;setCentralWidget(<a class="code" href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;centralwidget</a>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a585a56ba69efb334e018833371a23d9c">&#x202A;retranslateUi</a>(<a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        QMetaObject::connectSlotsByName(<a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    } <span class="comment">// setupUi</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a585a56ba69efb334e018833371a23d9c">  219</a></span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d88/a01294.html#a585a56ba69efb334e018833371a23d9c">&#x202A;retranslateUi</a>(QMainWindow *<a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>)</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <a class="code" href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a>-&gt;setWindowTitle(QApplication::translate(<span class="stringliteral">&quot;ReadWindow&quot;</span>, <span class="stringliteral">&quot;\346\265\217\350\247\210\346\226\207\344\273\266&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a3f624ee5b39d6b012b16ad04e77464ee">&#x202A;btn_openFile</a>-&gt;setText(QApplication::translate(<span class="stringliteral">&quot;ReadWindow&quot;</span>, <span class="stringliteral">&quot;\346\265\217\350\247\210\346\226\207\344\273\266&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad43f89e86f61bf46c5f154ec00bdfff9">&#x202A;btn_closeFile</a>-&gt;setText(QApplication::translate(<span class="stringliteral">&quot;ReadWindow&quot;</span>, <span class="stringliteral">&quot;\345\205\263\351\227\255\346\226\207\344\273\266&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#a8b8a865b86f3dc4d274e14d3185556fc">&#x202A;btn_read_exit</a>-&gt;setText(QApplication::translate(<span class="stringliteral">&quot;ReadWindow&quot;</span>, <span class="stringliteral">&quot;\345\205\263\351\227\255\346\265\217\350\247\210&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ac0e3bb7b2a863ee66c7ad924ca08dc18">&#x202A;label</a>-&gt;setText(QApplication::translate(<span class="stringliteral">&quot;ReadWindow&quot;</span>, <span class="stringliteral">&quot;\345\275\223\345\211\215\346\226\207\344\273\266\357\274\232&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;lb_work_dir</a>-&gt;setText(QApplication::translate(<span class="stringliteral">&quot;ReadWindow&quot;</span>, <span class="stringliteral">&quot;$(ProjectDir)/pro_001&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="../../d7/d88/a01294.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;lb_show</a>-&gt;setText(QApplication::translate(<span class="stringliteral">&quot;ReadWindow&quot;</span>, <span class="stringliteral">&quot;11111111111111111111111111111&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    } <span class="comment">// retranslateUi</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;};</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="../../d4/d34/a01298.html">  233</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d0/dc3/a00354.html">&#x202A;Ui</a> {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">class </span><a class="code" href="../../d4/d34/a01298.html">&#x202A;ReadWindow</a>: <span class="keyword">public</span> <a class="code" href="../../d7/d88/a01294.html">&#x202A;Ui_ReadWindow</a> {};</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;} <span class="comment">// namespace Ui</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;QT_END_NAMESPACE</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">#endif // UI_READWINDOW_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01294_html_aa30cc5775305ee779d5731c98c67dc2b"><div class="ttname"><a href="../../d7/d88/a01294.html#aa30cc5775305ee779d5731c98c67dc2b">&#x202A;Ui_ReadWindow::verticalLayout_2</a></div><div class="ttdeci">&#x202A;QVBoxLayout * verticalLayout_2</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00039">ui_readwindow.h:39</a></div></div>
+<div class="ttc" id="aa01294_html_a31adbef42569847c3d1aba6024d961ab"><div class="ttname"><a href="../../d7/d88/a01294.html#a31adbef42569847c3d1aba6024d961ab">&#x202A;Ui_ReadWindow::content</a></div><div class="ttdeci">&#x202A;QVBoxLayout * content</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00048">ui_readwindow.h:48</a></div></div>
+<div class="ttc" id="aa01294_html"><div class="ttname"><a href="../../d7/d88/a01294.html">&#x202A;Ui_ReadWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00027">ui_readwindow.h:27</a></div></div>
+<div class="ttc" id="aa01294_html_a8b8a865b86f3dc4d274e14d3185556fc"><div class="ttname"><a href="../../d7/d88/a01294.html#a8b8a865b86f3dc4d274e14d3185556fc">&#x202A;Ui_ReadWindow::btn_read_exit</a></div><div class="ttdeci">&#x202A;QPushButton * btn_read_exit</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00038">ui_readwindow.h:38</a></div></div>
+<div class="ttc" id="aa00354_html"><div class="ttname"><a href="../../d0/dc3/a00354.html">&#x202A;Ui</a></div></div>
+<div class="ttc" id="aa01294_html_ac9e7131370801035af06377bf0ba45ea"><div class="ttname"><a href="../../d7/d88/a01294.html#ac9e7131370801035af06377bf0ba45ea">&#x202A;Ui_ReadWindow::center</a></div><div class="ttdeci">&#x202A;QHBoxLayout * center</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00042">ui_readwindow.h:42</a></div></div>
+<div class="ttc" id="aa01294_html_ae07c617627ed766cad71472c90525399"><div class="ttname"><a href="../../d7/d88/a01294.html#ae07c617627ed766cad71472c90525399">&#x202A;Ui_ReadWindow::scrollArea</a></div><div class="ttdeci">&#x202A;QScrollArea * scrollArea</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00050">ui_readwindow.h:50</a></div></div>
+<div class="ttc" id="aa01294_html_a3f624ee5b39d6b012b16ad04e77464ee"><div class="ttname"><a href="../../d7/d88/a01294.html#a3f624ee5b39d6b012b16ad04e77464ee">&#x202A;Ui_ReadWindow::btn_openFile</a></div><div class="ttdeci">&#x202A;QPushButton * btn_openFile</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00036">ui_readwindow.h:36</a></div></div>
+<div class="ttc" id="aa01294_html_ad2e21ad2c65726b9e8fe9958bfbe26fc"><div class="ttname"><a href="../../d7/d88/a01294.html#ad2e21ad2c65726b9e8fe9958bfbe26fc">&#x202A;Ui_ReadWindow::horizontalScrollBar</a></div><div class="ttdeci">&#x202A;QScrollBar * horizontalScrollBar</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00054">ui_readwindow.h:54</a></div></div>
+<div class="ttc" id="aa01294_html_ad43f89e86f61bf46c5f154ec00bdfff9"><div class="ttname"><a href="../../d7/d88/a01294.html#ad43f89e86f61bf46c5f154ec00bdfff9">&#x202A;Ui_ReadWindow::btn_closeFile</a></div><div class="ttdeci">&#x202A;QPushButton * btn_closeFile</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00037">ui_readwindow.h:37</a></div></div>
+<div class="ttc" id="aa01294_html_a9f05437ab2100ebabc9f7616132f89be"><div class="ttname"><a href="../../d7/d88/a01294.html#a9f05437ab2100ebabc9f7616132f89be">&#x202A;Ui_ReadWindow::verticalSpacer</a></div><div class="ttdeci">&#x202A;QSpacerItem * verticalSpacer</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00047">ui_readwindow.h:47</a></div></div>
+<div class="ttc" id="aa01294_html_ac0e3bb7b2a863ee66c7ad924ca08dc18"><div class="ttname"><a href="../../d7/d88/a01294.html#ac0e3bb7b2a863ee66c7ad924ca08dc18">&#x202A;Ui_ReadWindow::label</a></div><div class="ttdeci">&#x202A;QLabel * label</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00040">ui_readwindow.h:40</a></div></div>
+<div class="ttc" id="aa01294_html_a8cbb2edbe4553843d2fb8f871d790f4a"><div class="ttname"><a href="../../d7/d88/a01294.html#a8cbb2edbe4553843d2fb8f871d790f4a">&#x202A;Ui_ReadWindow::scrollAreaWidgetContents</a></div><div class="ttdeci">&#x202A;QWidget * scrollAreaWidgetContents</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00051">ui_readwindow.h:51</a></div></div>
+<div class="ttc" id="aa01294_html_acfa4ef50e36a18148403cd60fdba0028"><div class="ttname"><a href="../../d7/d88/a01294.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;Ui_ReadWindow::lb_work_dir</a></div><div class="ttdeci">&#x202A;QLineEdit * lb_work_dir</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00041">ui_readwindow.h:41</a></div></div>
+<div class="ttc" id="aa01294_html_af5ab1e26952fdc0ac7e745da7da7748f"><div class="ttname"><a href="../../d7/d88/a01294.html#af5ab1e26952fdc0ac7e745da7da7748f">&#x202A;Ui_ReadWindow::verticalSpacer_3</a></div><div class="ttdeci">&#x202A;QSpacerItem * verticalSpacer_3</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00045">ui_readwindow.h:45</a></div></div>
+<div class="ttc" id="aa01294_html_a585a56ba69efb334e018833371a23d9c"><div class="ttname"><a href="../../d7/d88/a01294.html#a585a56ba69efb334e018833371a23d9c">&#x202A;Ui_ReadWindow::retranslateUi</a></div><div class="ttdeci">&#x202A;void retranslateUi(QMainWindow *ReadWindow)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00219">ui_readwindow.h:219</a></div></div>
+<div class="ttc" id="aa01294_html_a65b4373d6c3f25f59d9ed09ef9322800"><div class="ttname"><a href="../../d7/d88/a01294.html#a65b4373d6c3f25f59d9ed09ef9322800">&#x202A;Ui_ReadWindow::vspace</a></div><div class="ttdeci">&#x202A;QHBoxLayout * vspace</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00046">ui_readwindow.h:46</a></div></div>
+<div class="ttc" id="aa01294_html_a66980b936d7e3895be9711737170381e"><div class="ttname"><a href="../../d7/d88/a01294.html#a66980b936d7e3895be9711737170381e">&#x202A;Ui_ReadWindow::gridLayout</a></div><div class="ttdeci">&#x202A;QGridLayout * gridLayout</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00031">ui_readwindow.h:31</a></div></div>
+<div class="ttc" id="aa01294_html_ac18fe57377d75fc8e1cc233206d6f662"><div class="ttname"><a href="../../d7/d88/a01294.html#ac18fe57377d75fc8e1cc233206d6f662">&#x202A;Ui_ReadWindow::bot</a></div><div class="ttdeci">&#x202A;QHBoxLayout * bot</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00044">ui_readwindow.h:44</a></div></div>
+<div class="ttc" id="aa01294_html_a023096e2a97eae34a69b41f4f1699770"><div class="ttname"><a href="../../d7/d88/a01294.html#a023096e2a97eae34a69b41f4f1699770">&#x202A;Ui_ReadWindow::right</a></div><div class="ttdeci">&#x202A;QVBoxLayout * right</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00055">ui_readwindow.h:55</a></div></div>
+<div class="ttc" id="aa01294_html_acc82f4fb2731a1316e3f602d0cfd9d7d"><div class="ttname"><a href="../../d7/d88/a01294.html#acc82f4fb2731a1316e3f602d0cfd9d7d">&#x202A;Ui_ReadWindow::centralwidget</a></div><div class="ttdeci">&#x202A;QWidget * centralwidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00030">ui_readwindow.h:30</a></div></div>
+<div class="ttc" id="aa01294_html_a775544df36513241c2789f3c0fa47ef3"><div class="ttname"><a href="../../d7/d88/a01294.html#a775544df36513241c2789f3c0fa47ef3">&#x202A;Ui_ReadWindow::verticalSpacer_2</a></div><div class="ttdeci">&#x202A;QSpacerItem * verticalSpacer_2</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00043">ui_readwindow.h:43</a></div></div>
+<div class="ttc" id="aa01294_html_acc05c40abda8253106654b5d26fb95ab"><div class="ttname"><a href="../../d7/d88/a01294.html#acc05c40abda8253106654b5d26fb95ab">&#x202A;Ui_ReadWindow::hBar</a></div><div class="ttdeci">&#x202A;QHBoxLayout * hBar</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00053">ui_readwindow.h:53</a></div></div>
+<div class="ttc" id="aa01294_html_ad5693c3692cac43d7b71142c3262ec6c"><div class="ttname"><a href="../../d7/d88/a01294.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;Ui_ReadWindow::lb_show</a></div><div class="ttdeci">&#x202A;QLabel * lb_show</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00052">ui_readwindow.h:52</a></div></div>
+<div class="ttc" id="aa01294_html_a0e69ae0bee322dcc7b73cb6f60a78217"><div class="ttname"><a href="../../d7/d88/a01294.html#a0e69ae0bee322dcc7b73cb6f60a78217">&#x202A;Ui_ReadWindow::left</a></div><div class="ttdeci">&#x202A;QVBoxLayout * left</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00033">ui_readwindow.h:33</a></div></div>
+<div class="ttc" id="aa01294_html_aa89d890bd6de9b20c1d34f3c10373d89"><div class="ttname"><a href="../../d7/d88/a01294.html#aa89d890bd6de9b20c1d34f3c10373d89">&#x202A;Ui_ReadWindow::topContent</a></div><div class="ttdeci">&#x202A;QHBoxLayout * topContent</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00049">ui_readwindow.h:49</a></div></div>
+<div class="ttc" id="aa01294_html_ac654ab070a2a451bf3c9010c96fdd26c"><div class="ttname"><a href="../../d7/d88/a01294.html#ac654ab070a2a451bf3c9010c96fdd26c">&#x202A;Ui_ReadWindow::top</a></div><div class="ttdeci">&#x202A;QVBoxLayout * top</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00034">ui_readwindow.h:34</a></div></div>
+<div class="ttc" id="aa01294_html_ab8caca35ea7914c8c42a85aa66068320"><div class="ttname"><a href="../../d7/d88/a01294.html#ab8caca35ea7914c8c42a85aa66068320">&#x202A;Ui_ReadWindow::verticalLayout_3</a></div><div class="ttdeci">&#x202A;QVBoxLayout * verticalLayout_3</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00035">ui_readwindow.h:35</a></div></div>
+<div class="ttc" id="aa01294_html_a45d7b0a78d984b9adb25941f04a12721"><div class="ttname"><a href="../../d7/d88/a01294.html#a45d7b0a78d984b9adb25941f04a12721">&#x202A;Ui_ReadWindow::setupUi</a></div><div class="ttdeci">&#x202A;void setupUi(QMainWindow *ReadWindow)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00057">ui_readwindow.h:57</a></div></div>
+<div class="ttc" id="aa01298_html"><div class="ttname"><a href="../../d4/d34/a01298.html">&#x202A;Ui::ReadWindow</a></div><div class="ttdoc">&#x202A;Form for viewing the read.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00233">ui_readwindow.h:233</a></div></div>
+<div class="ttc" id="aa01294_html_a852ed4d2b7ff2977c5546768cd9cc349"><div class="ttname"><a href="../../d7/d88/a01294.html#a852ed4d2b7ff2977c5546768cd9cc349">&#x202A;Ui_ReadWindow::mainWindows</a></div><div class="ttdeci">&#x202A;QHBoxLayout * mainWindows</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00032">ui_readwindow.h:32</a></div></div>
+<div class="ttc" id="aa00994_html"><div class="ttname"><a href="../../d4/dd0/a00994.html">&#x202A;ReadWindow</a></div><div class="ttdoc">&#x202A;Form for viewing the read.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00045">readwindow.h:45</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_865e22b1c32424a17ae326649529a862.html">&#x202A;ui</a></li><li class="navelem"><a class="el" href="../../d3/d1a/a00251.html">&#x202A;ui_readwindow.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

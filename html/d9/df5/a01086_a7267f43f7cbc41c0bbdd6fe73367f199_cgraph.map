@@ -1,0 +1,13 @@
+<map id="UnitTest::testImgProc" name="UnitTest::testImgProc">
+<area shape="rect" id="node1" title="Tests image proc" alt="" coords="5,57,153,84"/>
+<area shape="rect" id="node2" href="$d3/d7b/a00986.html#a4b2e9059917bc49d6bba52b08ccabf19" title="// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然..." alt="" coords="201,19,352,45"/>
+<area shape="rect" id="node4" href="$d3/d7b/a00986.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="215,95,338,121"/>
+<area shape="rect" id="node3" href="$d3/d7b/a00986.html#a453aa18bb8ee0cb86e5d55e145a20ca0" title="右侧偏移图像修正 bool fixUpImage(cv::Mat &amp;subImg, cv::Mat &amp;fixImage, int offset_x = 0, int offset_y = 0); 通过 ..." alt="" coords="411,5,562,32"/>
+<area shape="rect" id="node5" href="$d3/d7b/a00986.html#a783eedce7c7a71d4bf5fba6b2dad54ca" title="加上新的图像 如果溢出 从上面开始重复" alt="" coords="400,56,573,83"/>
+<area shape="rect" id="node6" href="$d2/ddd/a00978.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2" title="写入新一批的图像" alt="" coords="413,107,560,133"/>
+<area shape="rect" id="node7" href="$d3/d7b/a00986.html#aaf4c9fb991fb727787f31b3ac5b815cf" title="自定义匹配两个图像 用来获取当前图像对于上一帧图像的偏移值" alt="" coords="405,157,568,184"/>
+<area shape="rect" id="node9" href="$d3/d7b/a00986.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60" title="将数据存储下来" alt="" coords="407,208,566,235"/>
+<area shape="rect" id="node8" href="$d3/d7b/a00986.html#a8f4aaa7b7ee5937f7f8b66afbb67e7ca" title="计算两个 小区块 图像的偏移值" alt="" coords="621,157,787,184"/>
+<area shape="rect" id="node10" href="$da/d45/a00011.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="661,208,747,235"/>
+<area shape="rect" id="node11" href="$d1/d88/a00128.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="835,208,905,235"/>
+</map>

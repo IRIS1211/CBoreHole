@@ -1,0 +1,4 @@
+<map id="ImageProc::GetFrame" name="ImageProc::GetFrame">
+<area shape="rect" id="node1" title="// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然..." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$df/dce/a00974.html#a453aa18bb8ee0cb86e5d55e145a20ca0" title="右侧偏移图像修正 bool fixUpImage(cv::Mat &amp;subImg, cv::Mat &amp;fixImage, int offset_x = 0, int offset_y = 0); 通过 ..." alt="" coords="204,5,355,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="WorkWindow::slot_render_extra" name="WorkWindow::slot_render_extra">
+<area shape="rect" id="node1" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node2" href="$da/d45/a00011.html#aab88c91d58aa0bc4e84d2d8505fef807" title="实现信息格式化显示 默认 float 显示一位数据" alt="" coords="224,13,363,39"/>
+</map>

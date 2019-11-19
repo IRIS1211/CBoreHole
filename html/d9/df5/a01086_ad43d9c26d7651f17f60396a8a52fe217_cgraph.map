@@ -1,0 +1,11 @@
+<map id="UnitTest::testIDOIFileAppend" name="UnitTest::testIDOIFileAppend">
+<area shape="rect" id="node1" title="Tests idoi file append" alt="" coords="5,132,196,159"/>
+<area shape="rect" id="node2" href="$d2/ddd/a00978.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2" title="写入新一批的图像" alt="" coords="244,5,391,32"/>
+<area shape="rect" id="node3" href="$da/d45/a00011.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="275,56,360,83"/>
+<area shape="rect" id="node5" href="$d2/ddd/a00978.html#a1b9087ac53865c6b4f0955c72144609a" title="读取 Mat 图像" alt="" coords="256,107,379,133"/>
+<area shape="rect" id="node7" href="$d2/ddd/a00978.html#a504625eb8394b33bc2ab2d9b413139a2" title="读文件 参数" alt="" coords="253,157,381,184"/>
+<area shape="rect" id="node8" href="$d2/ddd/a00978.html#a70c5db6374434b417972bb28a1144029" title="文件操作" alt="" coords="258,208,377,235"/>
+<area shape="rect" id="node9" href="$d2/ddd/a00978.html#ab0e31dfdd11ff5a789178ff0e70dc15c" title="Writes the para" alt="" coords="252,259,383,285"/>
+<area shape="rect" id="node4" href="$d1/d88/a00128.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="489,56,560,83"/>
+<area shape="rect" id="node6" href="$d2/ddd/a00978.html#a2fe58433b8df4ab155d7e0c325021cdf" title="Reads one row matrix" alt="" coords="439,107,611,133"/>
+</map>

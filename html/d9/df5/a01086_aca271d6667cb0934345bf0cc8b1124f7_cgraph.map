@@ -1,0 +1,10 @@
+<map id="UnitTest::testSerial" name="UnitTest::testSerial">
+<area shape="rect" id="node1" title="Tests serial" alt="" coords="5,52,139,79"/>
+<area shape="rect" id="node2" href="$d1/dd8/a01022.html#a4ffffefd2d6bfa763cfb8e993b79612d" title="关闭监听线程" alt="" coords="205,15,369,57"/>
+<area shape="rect" id="node3" href="$d1/dd8/a01022.html#a5166808d3063ff309f36f029768a1103" title="开启监听线程" alt="" coords="187,81,388,108"/>
+<area shape="rect" id="node4" href="$d1/dd8/a01022.html#a53335a4795e04563f5293fc92621024a" title="串口监听线程" alt="" coords="436,81,607,108"/>
+<area shape="rect" id="node5" href="$d2/de7/a00014.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="707,5,793,32"/>
+<area shape="rect" id="node6" href="$d2/de7/a00014.html#a2bccd732252a844a62b3e0bdc7de82d8" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="697,56,803,83"/>
+<area shape="rect" id="node7" href="$d1/dd8/a01022.html#abb85234d6f6d3774c8010fae51f7722f" title="获取串口缓冲区中的字节数" alt="" coords="655,107,845,133"/>
+<area shape="rect" id="node8" href="$d1/dd8/a01022.html#a5c37ce285506e5b69b6c900c406f37b7" title="读取串口接收缓冲区中一个字节的数据" alt="" coords="673,157,827,184"/>
+</map>

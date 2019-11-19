@@ -1,0 +1,5 @@
+<map id="WriteVideo::run" name="WriteVideo::run">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,117,57"/>
+<area shape="rect" id="node2" href="$df/d39/a00950.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="165,5,280,32"/>
+<area shape="rect" id="node3" href="$df/d39/a00950.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="173,56,273,83"/>
+</map>

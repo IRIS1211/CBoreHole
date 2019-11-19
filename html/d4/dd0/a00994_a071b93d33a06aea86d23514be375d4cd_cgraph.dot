@@ -1,0 +1,12 @@
+digraph "FrameData::Update"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FrameData::Update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="根据串口数据 更新当前类的值"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CalcHCMData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d45/a00011.html#acab6a3f3a0d0970b03b4b6de388ba319",tooltip="根据磁力计 返回的 三个UCHAR值 解算成相应的十进制值"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CalcPCA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d45/a00011.html#ad3b5d3b3c83f0557e63b42855daab802",tooltip="计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据"];
+}

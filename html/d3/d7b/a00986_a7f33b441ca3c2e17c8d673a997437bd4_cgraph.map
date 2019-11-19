@@ -1,0 +1,9 @@
+<map id="Serial::HandleTimeout" name="Serial::HandleTimeout">
+<area shape="rect" id="node1" title="Handles the timeout" alt="" coords="5,107,155,133"/>
+<area shape="rect" id="node2" href="$d3/d7b/a00986.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="203,107,323,133"/>
+<area shape="rect" id="node3" href="$da/d45/a00011.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="371,5,483,32"/>
+<area shape="rect" id="node4" href="$d2/de7/a00014.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="383,56,470,83"/>
+<area shape="rect" id="node5" href="$d2/de7/a00014.html#a2bccd732252a844a62b3e0bdc7de82d8" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="374,107,479,133"/>
+<area shape="rect" id="node6" href="$da/d45/a00011.html#adac9adbd4e9202c48c2ef1e1a5101894" title="Gets time FPS // 计算出来 以当前时间计算出来的 每秒可以执行的次数" alt="" coords="381,157,472,184"/>
+<area shape="rect" id="node7" href="$df/d39/a00950.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="373,208,480,235"/>
+</map>

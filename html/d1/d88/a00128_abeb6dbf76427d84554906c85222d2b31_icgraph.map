@@ -1,0 +1,16 @@
+<map id="cvMat2QImage" name="cvMat2QImage">
+<area shape="rect" id="node1" title="Mat 和QImage 互相转换" alt="" coords="1177,103,1285,130"/>
+<area shape="rect" id="node2" href="$d4/dd0/a00994.html#a95fcda8a05bce42033ab50c78c3f8a44" title="Handles button open file clicked signals" alt="" coords="969,12,1115,53"/>
+<area shape="rect" id="node3" href="$da/dfb/a01174.html#a3f1a23663337082bc684229123014abb" title=" " alt="" coords="963,78,1121,105"/>
+<area shape="rect" id="node8" href="$da/d73/a01090.html#a60f2ffe1a920ec6657fa90971da54db7" title="Shows the image" alt="" coords="955,129,1129,155"/>
+<area shape="rect" id="node14" href="$d1/d88/a00128.html#a757663ba676f98ccb99aa73062ec0f15" title="在相应的label 上显示图片" alt="" coords="973,179,1111,206"/>
+<area shape="rect" id="node4" href="$de/d91/a01034.html#a14c17111de0cbe2903eee9ab0f388e53" title=" " alt="" coords="721,5,907,47"/>
+<area shape="rect" id="node5" href="$de/d91/a01034.html#af449e6140a028d414e2745f8c2bb03b6" title="Slot show camera" alt="" coords="727,71,901,112"/>
+<area shape="rect" id="node6" href="$de/d91/a01034.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="463,78,673,105"/>
+<area shape="rect" id="node7" href="$de/d91/a01034.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="252,78,415,105"/>
+<area shape="rect" id="node9" href="$da/d73/a01090.html#ac884dd9b61e14f9f5ec47fc624663c8d" title="Slot show frame" alt="" coords="731,136,897,177"/>
+<area shape="rect" id="node10" href="$da/d73/a01090.html#a4b3c834d510144adafcb21791be6c86f" title="设定相关槽和信号的连接" alt="" coords="481,143,655,170"/>
+<area shape="rect" id="node11" href="$da/d73/a01090.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="271,143,395,170"/>
+<area shape="rect" id="node12" href="$d7/dce/a00143.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="79,114,130,141"/>
+<area shape="rect" id="node13" href="$de/d91/a01034.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,165,204,207"/>
+</map>
