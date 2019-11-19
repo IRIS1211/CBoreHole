@@ -1,0 +1,4 @@
+<map id="ImageProc::Push" name="ImageProc::Push">
+<area shape="rect" id="node1" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="156,5,279,32"/>
+<area shape="rect" id="node2" href="$d4/d12/a00910.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="5,5,108,32"/>
+</map>

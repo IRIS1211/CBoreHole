@@ -1,0 +1,25 @@
+<map id="SetWindow::SetWindow" name="SetWindow::SetWindow">
+<area shape="rect" id="node1" title="Initializes a new instance of the SetWindow class" alt="" coords="5,179,168,205"/>
+<area shape="rect" id="node2" href="$d1/dd8/a01022.html#ab19d4b6c6091b475253fabf838d92ccd" title="Initializes the user interface" alt="" coords="259,103,384,129"/>
+<area shape="rect" id="node7" href="$d0/d00/a01286.html#aba11689f60f0584eb5f095bcdd664023" title=" " alt="" coords="242,153,401,180"/>
+<area shape="rect" id="node8" href="$d1/dd8/a01022.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,204,427,231"/>
+<area shape="rect" id="node23" href="$d1/dd8/a01022.html#ab107be5794a64206778aad057a7202bb" title="Slot reshow" alt="" coords="239,255,404,281"/>
+<area shape="rect" id="node3" href="$d6/dea/a01094.html#a360026a5aa3f54d505b0a6deba81201e" title="将内存与组件关联" alt="" coords="493,52,637,79"/>
+<area shape="rect" id="node6" href="$d4/da7/a01102.html#a2a5d6a071ffbe6f0f5727afc211b5fb9" title="Associates" alt="" coords="499,103,630,129"/>
+<area shape="rect" id="node4" href="$d6/dea/a01094.html#a8bebc9d382cfe7dac27fcfbd17d1193d" title="数据输入完成 将数据存储相应内存中 暂时只考虑 数据部分, 将填入的数据内容给 获取出来" alt="" coords="703,5,889,32"/>
+<area shape="rect" id="node5" href="$d6/dea/a01094.html#ac9586e57923f41790ae07939ec14ccd1" title="将数据同一显示" alt="" coords="723,56,869,83"/>
+<area shape="rect" id="node9" href="$da/dd8/a00906.html#a6f0ea79714ca60cd2f4c6c6d83300117" title="初始化参数" alt="" coords="505,153,624,180"/>
+<area shape="rect" id="node10" href="$da/dd8/a00906.html#aae997ee39248ce1e50a450e2a6727193" title="Sets buffer queue" alt="" coords="475,204,655,231"/>
+<area shape="rect" id="node11" href="$d1/dd8/a01022.html#af449e6140a028d414e2745f8c2bb03b6" title="Slot show camera" alt="" coords="477,255,652,297"/>
+<area shape="rect" id="node12" href="$da/d45/a00011.html#a0dd08ab91977a2738f33adbd7e8306b2" title=" " alt="" coords="746,136,846,163"/>
+<area shape="rect" id="node13" href="$d1/dd8/a01022.html#afbc288067257bd144de1867ca656ef79" title=" " alt="" coords="705,187,887,213"/>
+<area shape="rect" id="node18" href="$d4/d8a/a01062.html#af40a436dfc3c2bedd4ceb2c465fe3b95" title="Query if this object is empty" alt="" coords="719,237,873,264"/>
+<area shape="rect" id="node19" href="$d4/d8a/a01062.html#a8986765a7b79b6054d351616c991f100" title="Gets the out" alt="" coords="732,288,860,315"/>
+<area shape="rect" id="node20" href="$df/db5/a01158.html#a3f1a23663337082bc684229123014abb" title=" " alt="" coords="717,339,875,365"/>
+<area shape="rect" id="node22" href="$d4/d8a/a01062.html#a104678e1c6363e2719cca591e0ed6eab" title="Gets the size" alt="" coords="731,389,861,416"/>
+<area shape="rect" id="node14" href="$da/d45/a00011.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="949,136,1034,163"/>
+<area shape="rect" id="node16" href="$da/d45/a00011.html#a1c11ea4eddb168aee72861c8397c20a2" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="956,187,1027,213"/>
+<area shape="rect" id="node17" href="$da/d45/a00011.html#a417ad9bc43db4f2f4eda91598d39e883" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="949,237,1034,264"/>
+<area shape="rect" id="node15" href="$d1/d88/a00128.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="1093,136,1164,163"/>
+<area shape="rect" id="node21" href="$da/d45/a00011.html#abeb6dbf76427d84554906c85222d2b31" title="Mat 和QImage 互相转换" alt="" coords="937,339,1045,365"/>
+</map>

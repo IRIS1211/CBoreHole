@@ -1,0 +1,10 @@
+<map id="MySerial::MySerial" name="MySerial::MySerial">
+<area shape="rect" id="node1" title="Initializes a new instance of the MySerial class" alt="" coords="5,56,137,83"/>
+<area shape="rect" id="node2" href="$de/d02/a01026.html#a33ca8de10a68c0a405d4fd858c7348fd" title="Handles the error described by error" alt="" coords="196,5,345,32"/>
+<area shape="rect" id="node4" href="$de/d02/a01026.html#a78bd67e661f637664d3399018791d0f3" title="Handles the time out" alt="" coords="185,56,356,83"/>
+<area shape="rect" id="node5" href="$de/d02/a01026.html#a6df22759fdbcef2fa39b4977abd0ed4b" title="Reads the data" alt="" coords="201,107,340,133"/>
+<area shape="rect" id="node3" href="$de/d02/a01026.html#a67070338023321d94e1159f4b322f28c" title="关闭串口" alt="" coords="404,5,575,32"/>
+<area shape="rect" id="node6" href="$da/d45/a00011.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="433,56,545,83"/>
+<area shape="rect" id="node7" href="$d2/de7/a00014.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="446,107,533,133"/>
+<area shape="rect" id="node8" href="$df/d39/a00950.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="436,157,543,184"/>
+</map>

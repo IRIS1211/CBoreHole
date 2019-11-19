@@ -1,0 +1,12 @@
+<map id="UnitTest::test_MySerial" name="UnitTest::test_MySerial">
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,164,209"/>
+<area shape="rect" id="node2" href="$de/d02/a01026.html#a8c29e89104f5336d4bab24aecd847a83" title="关闭监听线程" alt="" coords="212,5,400,32"/>
+<area shape="rect" id="node4" href="$de/d02/a01026.html#a67070338023321d94e1159f4b322f28c" title="关闭串口" alt="" coords="221,56,391,83"/>
+<area shape="rect" id="node5" href="$df/d39/a00950.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="249,107,363,133"/>
+<area shape="rect" id="node6" href="$de/d02/a01026.html#a5cb7de4701d2dc22afc1f2c918498837" title="列出所有的 串口" alt="" coords="235,157,377,184"/>
+<area shape="rect" id="node7" href="$de/d02/a01026.html#a5974eda1ce165f3878cd3ca2ec87d2ab" title="设置监听线程" alt="" coords="213,208,399,235"/>
+<area shape="rect" id="node8" href="$de/d02/a01026.html#a7a303778b26d04e336f4e4032f33d8db" title="打开 串口" alt="" coords="221,259,391,285"/>
+<area shape="rect" id="node9" href="$de/d02/a01026.html#a19b5760f5593fb3f34a270cc82016fcc" title="设置串口" alt="" coords="448,284,600,311"/>
+<area shape="rect" id="node10" href="$de/d02/a01026.html#a319fddf3355ae0ec9c910d7f7b57189e" title="Writes a data" alt="" coords="237,360,375,387"/>
+<area shape="rect" id="node3" href="$da/d45/a00011.html#a26dca4d5b5d146ab29a61dbd9876603d" title="停止进程并同时 删除对象 循环进程" alt="" coords="473,5,575,32"/>
+</map>

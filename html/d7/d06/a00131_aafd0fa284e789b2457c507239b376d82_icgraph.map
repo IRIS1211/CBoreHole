@@ -1,0 +1,15 @@
+<map id="char2uchar" name="char2uchar">
+<area shape="rect" id="node1" title="Character 2uchar" alt="" coords="848,145,935,172"/>
+<area shape="rect" id="node2" href="$d1/dd8/a01022.html#a53335a4795e04563f5293fc92621024a" title="串口监听线程" alt="" coords="629,88,800,115"/>
+<area shape="rect" id="node8" href="$d9/d9a/a00998.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="655,145,775,172"/>
+<area shape="rect" id="node12" href="$de/d02/a01026.html#a6df22759fdbcef2fa39b4977abd0ed4b" title="Reads the data" alt="" coords="645,208,784,235"/>
+<area shape="rect" id="node3" href="$d1/dd8/a01022.html#a5166808d3063ff309f36f029768a1103" title="开启监听线程" alt="" coords="380,81,581,108"/>
+<area shape="rect" id="node4" href="$d9/df5/a01086.html#ad767a193d579f47ec9b66e1df49a102f" title="Grab data" alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node5" href="$d1/dd8/a01022.html#a96ead81aea8f5c577586c595cb67bc26" title="初始化串口 并开启处理线程" alt="" coords="184,31,332,57"/>
+<area shape="rect" id="node6" href="$de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f" title=" " alt="" coords="209,81,307,108"/>
+<area shape="rect" id="node7" href="$d9/df5/a01086.html#aca271d6667cb0934345bf0cc8b1124f7" title="Tests serial" alt="" coords="191,132,325,159"/>
+<area shape="rect" id="node9" href="$d9/d9a/a00998.html#ab4d98e474b554e318508d1f26a053998" title="Handles the read data" alt="" coords="401,132,561,159"/>
+<area shape="rect" id="node11" href="$d9/d9a/a00998.html#a7f33b441ca3c2e17c8d673a997437bd4" title="Handles the timeout" alt="" coords="406,183,555,209"/>
+<area shape="rect" id="node10" href="$d9/d9a/a00998.html#adda4ed09582ac92c92b16b55b471a6d4" title="Initializes a new instance of the Serial class" alt="" coords="210,183,306,209"/>
+<area shape="rect" id="node13" href="$de/d02/a01026.html#afb6dc5f937b25f5ee2e43fe1b2c28e09" title="Initializes a new instance of the MySerial class" alt="" coords="415,233,547,260"/>
+</map>

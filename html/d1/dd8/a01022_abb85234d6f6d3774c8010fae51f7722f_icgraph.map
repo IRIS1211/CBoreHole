@@ -1,0 +1,9 @@
+<map id="CSerialPort::GetBytesInCOM" name="CSerialPort::GetBytesInCOM">
+<area shape="rect" id="node1" title="获取串口缓冲区中的字节数" alt="" coords="848,56,1039,83"/>
+<area shape="rect" id="node2" href="$d1/dd8/a01022.html#a53335a4795e04563f5293fc92621024a" title="串口监听线程" alt="" coords="629,56,800,83"/>
+<area shape="rect" id="node3" href="$d1/dd8/a01022.html#a5166808d3063ff309f36f029768a1103" title="开启监听线程" alt="" coords="380,56,581,83"/>
+<area shape="rect" id="node4" href="$d9/df5/a01086.html#ad767a193d579f47ec9b66e1df49a102f" title="Grab data" alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node5" href="$d1/dd8/a01022.html#a96ead81aea8f5c577586c595cb67bc26" title="初始化串口 并开启处理线程" alt="" coords="184,31,332,57"/>
+<area shape="rect" id="node6" href="$de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f" title=" " alt="" coords="209,81,307,108"/>
+<area shape="rect" id="node7" href="$d9/df5/a01086.html#aca271d6667cb0934345bf0cc8b1124f7" title="Tests serial" alt="" coords="191,132,325,159"/>
+</map>

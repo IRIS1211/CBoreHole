@@ -1,0 +1,7 @@
+<map id="SerialProc::run" name="SerialProc::run">
+<area shape="rect" id="node1" title="Runs this object" alt="" coords="5,31,113,57"/>
+<area shape="rect" id="node2" href="$d2/de7/a00014.html#acff23706cd23da7fde42b33a9f5ebcea" title="字符串 转换成 数值数组" alt="" coords="177,5,281,32"/>
+<area shape="rect" id="node3" href="$dc/d81/a01006.html#a071b93d33a06aea86d23514be375d4cd" title="根据串口数据 更新当前类的值" alt="" coords="161,56,296,83"/>
+<area shape="rect" id="node4" href="$da/d45/a00011.html#acab6a3f3a0d0970b03b4b6de388ba319" title="根据磁力计 返回的 三个UCHAR值 解算成相应的十进制值" alt="" coords="344,31,448,57"/>
+<area shape="rect" id="node5" href="$da/d45/a00011.html#ad3b5d3b3c83f0557e63b42855daab802" title="计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据" alt="" coords="359,81,433,108"/>
+</map>

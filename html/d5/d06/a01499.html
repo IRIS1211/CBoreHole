@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;自定义文件格式存储</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.4.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d5/d06/a01499.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc PageDocLTR-title"><div class="header">
+  <div class="headertitle">
+<div class="title">&#x202A;自定义文件格式存储 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p class="DocNodeLTR">自定义文件结构体</p>
+<div class="fragment"><div class="line"><span class="comment">//  存储 系统运行参数  按照参数具体类型进行细分</span></div>
+<div class="line"><span class="keyword">class </span><a class="code" href="../../de/d41/a01030.html">&#x202A;SystemPara</a></div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">public</span>:</div>
+<div class="line">    <span class="comment">// 探针工作方向</span></div>
+<div class="line">    <span class="keyword">enum</span> <a class="code" href="../../de/d41/a01030.html#a07d55beb2460bc08d8beefdff1c4b8dc">&#x202A;ProbeDir</a></div>
+<div class="line">    {</div>
+<div class="line">        <a class="code" href="../../de/d41/a01030.html#a07d55beb2460bc08d8beefdff1c4b8dcaa52de436db8ff1c0d35687f46719996e">&#x202A;PBACK</a> = 0,</div>
+<div class="line">        <a class="code" href="../../de/d41/a01030.html#a07d55beb2460bc08d8beefdff1c4b8dcae4ce00bc1c05a4c97a7b96168d683eaf">&#x202A;PHEAD</a> = 1</div>
+<div class="line">    };</div>
+<div class="line">    <span class="comment">// 测孔方向</span></div>
+<div class="line">    <span class="keyword">enum</span> <a class="code" href="../../de/d41/a01030.html#a290f7c26da729c41af8a80dcd2f89c9d">&#x202A;HoleType</a></div>
+<div class="line">    {</div>
+<div class="line">        <a class="code" href="../../de/d41/a01030.html#a290f7c26da729c41af8a80dcd2f89c9da30b50f6f40598a06d1a166873748dfcc">&#x202A;HHORIZON</a> = 0,</div>
+<div class="line">        <a class="code" href="../../de/d41/a01030.html#a290f7c26da729c41af8a80dcd2f89c9da669dd5ffc65b8f51045fd8f4db6d6686">&#x202A;HVERIAL</a>  = 1</div>
+<div class="line">    };</div>
+<div class="line">    <span class="comment">// 默认类型使用 int  但是很多类型可以使用char 或者 bool 类型进行空间压缩</span></div>
+<div class="line">    <span class="comment">// #TODO 按照类型考虑每种类型的 空间占用</span></div>
+<div class="line">    <span class="comment">// 自定义 文件个数 尽量使用简单类型  避免占用更多</span></div>
+<div class="line">    <span class="keyword">struct </span>structFileHeader</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// 旧版本参数 </span></div>
+<div class="line">        <span class="keywordtype">char</span> <a class="code" href="../../de/d41/a01030.html#a544b19a8c624f6078000c55b9ddd3671">&#x202A;strConfigVersion</a>[20];  <span class="comment">// 文件协议版本</span></div>
+<div class="line">        <span class="keywordtype">char</span> <a class="code" href="../../de/d41/a01030.html#a49a70ea02c3350b889ae9a41137f3566">&#x202A;strWorkDir</a>[60];        <span class="comment">// 工作文件夹</span></div>
+<div class="line">        <span class="comment">// int nFileHeaderSize; //Byte 字节  头文件 字节大小 // 废弃</span></div>
+<div class="line">        <span class="comment">// int nFileSize;       // MByte 文件大小    // 总文件大小 需要累计计算</span></div>
+<div class="line">    }<a class="code" href="../../de/d41/a01030.html#a0bd2d9312128a93d2b234cdf96e996d4">&#x202A;FileHeader</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 探头信息</span></div>
+<div class="line">    <span class="keyword">struct </span>structProbe</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordtype">int</span>  <a class="code" href="../../de/d41/a01030.html#a3824fd5c9bd10061b166d281ef2c2d59">&#x202A;nProbeType</a>; <span class="comment">// 探头型号</span></div>
+<div class="line">        <span class="keywordtype">int</span>  <a class="code" href="../../de/d41/a01030.html#ae49d9664a0ed87256452770214c2161e">&#x202A;bProbeDirAhead</a>; <span class="comment">// 工作方向 1向前 0 向后</span></div>
+<div class="line">    }<a class="code" href="../../de/d41/a01030.html#a15af3e0319ff1042a10296212e1c0a36">&#x202A;Probe</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 编码器信息 脉冲</span></div>
+<div class="line">    <span class="keyword">struct </span>structPulse</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#aee070b12c85f63f2049215c25d2ff319">&#x202A;nPulseUm</a>; <span class="comment">// 脉冲距离  广电编码器 每个脉冲走过的距离  单位 1um  最大 65535</span></div>
+<div class="line">        <span class="comment">// int nPulseCnt; // 总脉冲计数 // 避免溢出 可以使用 int 足够</span></div>
+<div class="line">        <span class="keywordtype">int</span>   <a class="code" href="../../de/d41/a01030.html#af3b08218f679b1a0f670f60964f596d1">&#x202A;nPixalPerPulse</a>;   <span class="comment">// 每个脉冲对应的像素数目 的千倍</span></div>
+<div class="line">    }<a class="code" href="../../de/d41/a01030.html#aa2d0a7d3c82f3f63d3ed44ab1595f9ec">&#x202A;Pulse</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">struct </span>structHole</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// 测孔参数信息</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a795b77c973e3454a2346213fad340b03">&#x202A;nHoleDiameter</a>; <span class="comment">// 钻孔直径</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a40f815a9d1e043a90e703002833d51ab">&#x202A;nHoleBeginDepth</a>; <span class="comment">// 开始深度 表示设备开始工作的深度 mm</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a1c5ae2e5a45f0154a27f38174d9e58a2">&#x202A;nHoleTypeVertical</a>;  <span class="comment">// 测孔类型 水平0  竖直1</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#afcf78afe3bb634edac724d85b0fe4783">&#x202A;nHoleWorkAhead</a>;  <span class="comment">// 工作方式 前进1 后退0 </span></div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordtype">char</span> <a class="code" href="../../de/d41/a01030.html#a747264c3a36ae3fc0709a64d164303f1">&#x202A;strHoleNum</a>[20]; <span class="comment">// 测孔编号</span></div>
+<div class="line">        <span class="keywordtype">char</span> <a class="code" href="../../de/d41/a01030.html#ab402894321f69972ca2879a97dad9c23">&#x202A;strHoleTime</a>[20]; <span class="comment">// 测孔时间</span></div>
+<div class="line">        <span class="keywordtype">char</span> <a class="code" href="../../de/d41/a01030.html#adfd9eb5e6eea6bc5a2cd6b13c4c193ff">&#x202A;strHoleLocal</a>[20]; <span class="comment">// 测孔地点</span></div>
+<div class="line">        <span class="keywordtype">char</span> <a class="code" href="../../de/d41/a01030.html#a8f8b77e41f21b2cc1bc5558c903b99ae">&#x202A;strHolePerson</a>[20]; <span class="comment">// 测孔人员</span></div>
+<div class="line">        <span class="keywordtype">char</span> <a class="code" href="../../de/d41/a01030.html#a28073d0cd03cefdc08fb6ba9bb177622">&#x202A;strHoleCompany</a>[20]; <span class="comment">// 测孔单位</span></div>
+<div class="line">    } <a class="code" href="../../de/d41/a01030.html#a78c8d15d49fdb75f23f4218482b16d24">&#x202A;Hole</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">struct </span>structImage</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// 以下均为图像参数 有单位的 为像素</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a1ecee266821634490065ffec704b6a41">&#x202A;nImgCenterX</a>; <span class="comment">// 中心 X 座标</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a01052f80eaee37e5ce7e60343c81409a">&#x202A;nImgCenterY</a>; <span class="comment">// 中心 Y 座标</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a9dc897e8c79bd445467129f72aefe3a5">&#x202A;nImgMaxR</a>;   <span class="comment">// 外径 最大范围 </span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a21fdcca2d08919048757ac093259c7ab">&#x202A;nImgMinR</a>;   <span class="comment">// 内径</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a9924373f7ff56141af0cbf7f4765a406">&#x202A;nImgWidth</a>;   <span class="comment">// 图像宽度</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#aedda67b5a360a46077414c06abc7b902">&#x202A;nImgHeight</a>;  <span class="comment">// 图像高度</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a70fb9ad131d768df5a152309ea91d385">&#x202A;nImgFPS</a>;      <span class="comment">// 图像采集帧速度 FPS</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a85f355cf3396c2556f43847ff771540e">&#x202A;nImgOneRowSize</a>; <span class="comment">// 一行图像的数据大小  3*nWidth</span></div>
+<div class="line">        <span class="comment">// int   nImgSize;    // 图像 空间大小  RGB= 3*nWidth*nHeight</span></div>
+<div class="line">        </div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#abd1d77aee4c134d84253ae4ea94312d4">&#x202A;nImgLight</a>;    <span class="comment">// 图像亮度</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a7c84169a522a172d8280d796c66b2735">&#x202A;nImgSharp</a>;    <span class="comment">// 图像锐度</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a2570067c025ba745a6ba65acf3819fe4">&#x202A;nImgContrast</a>;   <span class="comment">// 图像对比度</span></div>
+<div class="line"> </div>
+<div class="line">                              <span class="comment">// int nImgBitsPixal; // 每个像素  位数</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#ac326a0c90063f8095524486cf25540d8">&#x202A;nImgVPixalPerMM</a>;  <span class="comment">// 竖直方向 分辨率 像素每毫米</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#ad2a6018733b714fd63b5d62b696456d0">&#x202A;nImgHPixalPerMM</a>;  <span class="comment">// 水平方向 分辨率 像素每毫米</span></div>
+<div class="line"> </div>
+<div class="line">                                <span class="comment">// 图像数据 </span></div>
+<div class="line">                                <span class="comment">// unsigned int *uImageData;</span></div>
+<div class="line">    }<a class="code" href="../../de/d41/a01030.html#a64a7a7226365add2e542f4e84a561aa1">&#x202A;Image</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 电子罗盘参数</span></div>
+<div class="line">    <span class="keyword">struct </span>structCompass</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// 罗盘参数</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a524998787984bcc7fc0af8964cfddef9">&#x202A;nComType</a>; <span class="comment">// 罗盘类型</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#aeb4b1f3a03c348e1cad62679e9e648c3">&#x202A;nComFixModeHor</a>; <span class="comment">// 罗盘安装方式  水平1 竖直0 </span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#ad2ea8df47fbab7c74f5fec274110a8be">&#x202A;nComUse</a>;    <span class="comment">// 是否启用 默认 启用1  不启用 0</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#ad692beb7cd756ef79eab455a21cd4cd6">&#x202A;nComCompen</a>; <span class="comment">// 罗盘补偿</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#ab277b1d9a17d20ea0408d811cbc0c0b5">&#x202A;nComAngleOffset</a>; <span class="comment">// 探头内部罗盘安装角度误差   // 等于罗盘补偿? </span></div>
+<div class="line">    }<a class="code" href="../../de/d41/a01030.html#a89f7893897c57e8c97b238d5b1148254">&#x202A;Compass</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 额外信息</span></div>
+<div class="line">    <span class="keyword">struct </span>structExtra</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a463b442b8e1c9e676700eb9cd1a77aad">&#x202A;nCompress</a>; <span class="comment">// 压缩? // 弃用</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a1a4cb697880aa29104205d856f5f1aae">&#x202A;nScreenLight</a>; <span class="comment">// 屏幕亮度</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#ad3354c0338918bf1f0ee99ff07090062">&#x202A;nLighterLight</a>; <span class="comment">// 探灯亮度 </span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a1a7cdc08e47f3718fa01464cfc9d6ea2">&#x202A;nStorageCur</a>; <span class="comment">// 目前空间占用  0.01GB  已用</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a38e12dc53b0f78015ffcd666de7a91fc">&#x202A;nStorageAll</a>; <span class="comment">// 总空间;  0.01 GB</span></div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../de/d41/a01030.html#a3e8087391392da58d8c9e3f8bb410d13">&#x202A;nBattaryV</a>;   <span class="comment">// 电池电压 // 0.01V 单位</span></div>
+<div class="line">    }<a class="code" href="../../de/d41/a01030.html#a746fc0b3637c99e57937fe7960d9a7e8">&#x202A;Extra</a>;</div>
+<div class="line">};</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01030_html_a21fdcca2d08919048757ac093259c7ab"><div class="ttname"><a href="../../de/d41/a01030.html#a21fdcca2d08919048757ac093259c7ab">&#x202A;SystemPara::structImage::nImgMinR</a></div><div class="ttdeci">&#x202A;int nImgMinR</div><div class="ttdoc">&#x202A;内径</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00153">SystemPara.h:153</a></div></div>
+<div class="ttc" id="aa01030_html_ad692beb7cd756ef79eab455a21cd4cd6"><div class="ttname"><a href="../../de/d41/a01030.html#ad692beb7cd756ef79eab455a21cd4cd6">&#x202A;SystemPara::structCompass::nComCompen</a></div><div class="ttdeci">&#x202A;int nComCompen</div><div class="ttdoc">&#x202A;罗盘补偿</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00187">SystemPara.h:187</a></div></div>
+<div class="ttc" id="aa01030_html_aeb4b1f3a03c348e1cad62679e9e648c3"><div class="ttname"><a href="../../de/d41/a01030.html#aeb4b1f3a03c348e1cad62679e9e648c3">&#x202A;SystemPara::structCompass::nComFixModeHor</a></div><div class="ttdeci">&#x202A;int nComFixModeHor</div><div class="ttdoc">&#x202A;罗盘安装方式 水平1 竖直0</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00185">SystemPara.h:185</a></div></div>
+<div class="ttc" id="aa01030_html_aa2d0a7d3c82f3f63d3ed44ab1595f9ec"><div class="ttname"><a href="../../de/d41/a01030.html#aa2d0a7d3c82f3f63d3ed44ab1595f9ec">&#x202A;SystemPara::Pulse</a></div><div class="ttdeci">&#x202A;struct SystemPara::structPulse Pulse</div></div>
+<div class="ttc" id="aa01030_html_a747264c3a36ae3fc0709a64d164303f1"><div class="ttname"><a href="../../de/d41/a01030.html#a747264c3a36ae3fc0709a64d164303f1">&#x202A;SystemPara::structHole::strHoleNum</a></div><div class="ttdeci">&#x202A;char strHoleNum[20]</div><div class="ttdoc">&#x202A;测孔编号</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00130">SystemPara.h:130</a></div></div>
+<div class="ttc" id="aa01030_html_a544b19a8c624f6078000c55b9ddd3671"><div class="ttname"><a href="../../de/d41/a01030.html#a544b19a8c624f6078000c55b9ddd3671">&#x202A;SystemPara::structFileHeader::strConfigVersion</a></div><div class="ttdeci">&#x202A;char strConfigVersion[20]</div><div class="ttdoc">&#x202A;文件协议版本</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00075">SystemPara.h:75</a></div></div>
+<div class="ttc" id="aa01030_html_a01052f80eaee37e5ce7e60343c81409a"><div class="ttname"><a href="../../de/d41/a01030.html#a01052f80eaee37e5ce7e60343c81409a">&#x202A;SystemPara::structImage::nImgCenterY</a></div><div class="ttdeci">&#x202A;int nImgCenterY</div><div class="ttdoc">&#x202A;中心 Y 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00150">SystemPara.h:150</a></div></div>
+<div class="ttc" id="aa01030_html_a8f8b77e41f21b2cc1bc5558c903b99ae"><div class="ttname"><a href="../../de/d41/a01030.html#a8f8b77e41f21b2cc1bc5558c903b99ae">&#x202A;SystemPara::structHole::strHolePerson</a></div><div class="ttdeci">&#x202A;char strHolePerson[20]</div><div class="ttdoc">&#x202A;测孔人员</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00133">SystemPara.h:133</a></div></div>
+<div class="ttc" id="aa01030_html_a7c84169a522a172d8280d796c66b2735"><div class="ttname"><a href="../../de/d41/a01030.html#a7c84169a522a172d8280d796c66b2735">&#x202A;SystemPara::structImage::nImgSharp</a></div><div class="ttdeci">&#x202A;int nImgSharp</div><div class="ttdoc">&#x202A;图像锐度</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00161">SystemPara.h:161</a></div></div>
+<div class="ttc" id="aa01030_html_a85f355cf3396c2556f43847ff771540e"><div class="ttname"><a href="../../de/d41/a01030.html#a85f355cf3396c2556f43847ff771540e">&#x202A;SystemPara::structImage::nImgOneRowSize</a></div><div class="ttdeci">&#x202A;int nImgOneRowSize</div><div class="ttdoc">&#x202A;一行图像的数据大小 3*nWidth</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00157">SystemPara.h:157</a></div></div>
+<div class="ttc" id="aa01030_html_a3824fd5c9bd10061b166d281ef2c2d59"><div class="ttname"><a href="../../de/d41/a01030.html#a3824fd5c9bd10061b166d281ef2c2d59">&#x202A;SystemPara::structProbe::nProbeType</a></div><div class="ttdeci">&#x202A;int nProbeType</div><div class="ttdoc">&#x202A;探头型号</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00093">SystemPara.h:93</a></div></div>
+<div class="ttc" id="aa01030_html_a64a7a7226365add2e542f4e84a561aa1"><div class="ttname"><a href="../../de/d41/a01030.html#a64a7a7226365add2e542f4e84a561aa1">&#x202A;SystemPara::Image</a></div><div class="ttdeci">&#x202A;struct SystemPara::structImage Image</div></div>
+<div class="ttc" id="aa01030_html_a07d55beb2460bc08d8beefdff1c4b8dc"><div class="ttname"><a href="../../de/d41/a01030.html#a07d55beb2460bc08d8beefdff1c4b8dc">&#x202A;SystemPara::ProbeDir</a></div><div class="ttdeci">&#x202A;ProbeDir</div><div class="ttdoc">&#x202A;探针工作方向</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00036">SystemPara.h:36</a></div></div>
+<div class="ttc" id="aa01030_html"><div class="ttname"><a href="../../de/d41/a01030.html">&#x202A;SystemPara</a></div><div class="ttdoc">&#x202A;存储 系统运行参数 按照参数具体类型进行细分</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00026">SystemPara.h:26</a></div></div>
+<div class="ttc" id="aa01030_html_a524998787984bcc7fc0af8964cfddef9"><div class="ttname"><a href="../../de/d41/a01030.html#a524998787984bcc7fc0af8964cfddef9">&#x202A;SystemPara::structCompass::nComType</a></div><div class="ttdeci">&#x202A;int nComType</div><div class="ttdoc">&#x202A;罗盘类型</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00183">SystemPara.h:183</a></div></div>
+<div class="ttc" id="aa01030_html_aedda67b5a360a46077414c06abc7b902"><div class="ttname"><a href="../../de/d41/a01030.html#aedda67b5a360a46077414c06abc7b902">&#x202A;SystemPara::structImage::nImgHeight</a></div><div class="ttdeci">&#x202A;int nImgHeight</div><div class="ttdoc">&#x202A;图像高度</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00155">SystemPara.h:155</a></div></div>
+<div class="ttc" id="aa01030_html_a2570067c025ba745a6ba65acf3819fe4"><div class="ttname"><a href="../../de/d41/a01030.html#a2570067c025ba745a6ba65acf3819fe4">&#x202A;SystemPara::structImage::nImgContrast</a></div><div class="ttdeci">&#x202A;int nImgContrast</div><div class="ttdoc">&#x202A;图像对比度</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00162">SystemPara.h:162</a></div></div>
+<div class="ttc" id="aa01030_html_a463b442b8e1c9e676700eb9cd1a77aad"><div class="ttname"><a href="../../de/d41/a01030.html#a463b442b8e1c9e676700eb9cd1a77aad">&#x202A;SystemPara::structExtra::nCompress</a></div><div class="ttdeci">&#x202A;int nCompress</div><div class="ttdoc">&#x202A;压缩? // 弃用</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00202">SystemPara.h:202</a></div></div>
+<div class="ttc" id="aa01030_html_a290f7c26da729c41af8a80dcd2f89c9da669dd5ffc65b8f51045fd8f4db6d6686"><div class="ttname"><a href="../../de/d41/a01030.html#a290f7c26da729c41af8a80dcd2f89c9da669dd5ffc65b8f51045fd8f4db6d6686">&#x202A;SystemPara::HVERIAL</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00051">SystemPara.h:51</a></div></div>
+<div class="ttc" id="aa01030_html_a9924373f7ff56141af0cbf7f4765a406"><div class="ttname"><a href="../../de/d41/a01030.html#a9924373f7ff56141af0cbf7f4765a406">&#x202A;SystemPara::structImage::nImgWidth</a></div><div class="ttdeci">&#x202A;int nImgWidth</div><div class="ttdoc">&#x202A;图像宽度</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00154">SystemPara.h:154</a></div></div>
+<div class="ttc" id="aa01030_html_ad2ea8df47fbab7c74f5fec274110a8be"><div class="ttname"><a href="../../de/d41/a01030.html#ad2ea8df47fbab7c74f5fec274110a8be">&#x202A;SystemPara::structCompass::nComUse</a></div><div class="ttdeci">&#x202A;int nComUse</div><div class="ttdoc">&#x202A;是否启用 默认 启用1 不启用 0</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00186">SystemPara.h:186</a></div></div>
+<div class="ttc" id="aa01030_html_a9dc897e8c79bd445467129f72aefe3a5"><div class="ttname"><a href="../../de/d41/a01030.html#a9dc897e8c79bd445467129f72aefe3a5">&#x202A;SystemPara::structImage::nImgMaxR</a></div><div class="ttdeci">&#x202A;int nImgMaxR</div><div class="ttdoc">&#x202A;外径 最大范围</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00152">SystemPara.h:152</a></div></div>
+<div class="ttc" id="aa01030_html_a89f7893897c57e8c97b238d5b1148254"><div class="ttname"><a href="../../de/d41/a01030.html#a89f7893897c57e8c97b238d5b1148254">&#x202A;SystemPara::Compass</a></div><div class="ttdeci">&#x202A;struct SystemPara::structCompass Compass</div></div>
+<div class="ttc" id="aa01030_html_a70fb9ad131d768df5a152309ea91d385"><div class="ttname"><a href="../../de/d41/a01030.html#a70fb9ad131d768df5a152309ea91d385">&#x202A;SystemPara::structImage::nImgFPS</a></div><div class="ttdeci">&#x202A;int nImgFPS</div><div class="ttdoc">&#x202A;图像采集帧速度 FPS</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00156">SystemPara.h:156</a></div></div>
+<div class="ttc" id="aa01030_html_adfd9eb5e6eea6bc5a2cd6b13c4c193ff"><div class="ttname"><a href="../../de/d41/a01030.html#adfd9eb5e6eea6bc5a2cd6b13c4c193ff">&#x202A;SystemPara::structHole::strHoleLocal</a></div><div class="ttdeci">&#x202A;char strHoleLocal[20]</div><div class="ttdoc">&#x202A;测孔地点</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00132">SystemPara.h:132</a></div></div>
+<div class="ttc" id="aa01030_html_ab402894321f69972ca2879a97dad9c23"><div class="ttname"><a href="../../de/d41/a01030.html#ab402894321f69972ca2879a97dad9c23">&#x202A;SystemPara::structHole::strHoleTime</a></div><div class="ttdeci">&#x202A;char strHoleTime[20]</div><div class="ttdoc">&#x202A;测孔时间</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00131">SystemPara.h:131</a></div></div>
+<div class="ttc" id="aa01030_html_af3b08218f679b1a0f670f60964f596d1"><div class="ttname"><a href="../../de/d41/a01030.html#af3b08218f679b1a0f670f60964f596d1">&#x202A;SystemPara::structPulse::nPixalPerPulse</a></div><div class="ttdeci">&#x202A;int nPixalPerPulse</div><div class="ttdoc">&#x202A;每个脉冲对应的像素数目 的千倍</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00110">SystemPara.h:110</a></div></div>
+<div class="ttc" id="aa01030_html_a49a70ea02c3350b889ae9a41137f3566"><div class="ttname"><a href="../../de/d41/a01030.html#a49a70ea02c3350b889ae9a41137f3566">&#x202A;SystemPara::structFileHeader::strWorkDir</a></div><div class="ttdeci">&#x202A;char strWorkDir[100]</div><div class="ttdoc">&#x202A;工作文件夹 // 可能路径很深</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00076">SystemPara.h:76</a></div></div>
+<div class="ttc" id="aa01030_html_a07d55beb2460bc08d8beefdff1c4b8dcaa52de436db8ff1c0d35687f46719996e"><div class="ttname"><a href="../../de/d41/a01030.html#a07d55beb2460bc08d8beefdff1c4b8dcaa52de436db8ff1c0d35687f46719996e">&#x202A;SystemPara::PBACK</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00038">SystemPara.h:38</a></div></div>
+<div class="ttc" id="aa01030_html_a1ecee266821634490065ffec704b6a41"><div class="ttname"><a href="../../de/d41/a01030.html#a1ecee266821634490065ffec704b6a41">&#x202A;SystemPara::structImage::nImgCenterX</a></div><div class="ttdeci">&#x202A;int nImgCenterX</div><div class="ttdoc">&#x202A;中心 X 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00149">SystemPara.h:149</a></div></div>
+<div class="ttc" id="aa01030_html_abd1d77aee4c134d84253ae4ea94312d4"><div class="ttname"><a href="../../de/d41/a01030.html#abd1d77aee4c134d84253ae4ea94312d4">&#x202A;SystemPara::structImage::nImgLight</a></div><div class="ttdeci">&#x202A;int nImgLight</div><div class="ttdoc">&#x202A;图像亮度</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00160">SystemPara.h:160</a></div></div>
+<div class="ttc" id="aa01030_html_ae49d9664a0ed87256452770214c2161e"><div class="ttname"><a href="../../de/d41/a01030.html#ae49d9664a0ed87256452770214c2161e">&#x202A;SystemPara::structProbe::bProbeDirAhead</a></div><div class="ttdeci">&#x202A;int bProbeDirAhead</div><div class="ttdoc">&#x202A;工作方向 1向前 0 向后</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00094">SystemPara.h:94</a></div></div>
+<div class="ttc" id="aa01030_html_a1c5ae2e5a45f0154a27f38174d9e58a2"><div class="ttname"><a href="../../de/d41/a01030.html#a1c5ae2e5a45f0154a27f38174d9e58a2">&#x202A;SystemPara::structHole::nHoleTypeVertical</a></div><div class="ttdeci">&#x202A;int nHoleTypeVertical</div><div class="ttdoc">&#x202A;测孔类型 水平0 竖直1</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00127">SystemPara.h:127</a></div></div>
+<div class="ttc" id="aa01030_html_ad3354c0338918bf1f0ee99ff07090062"><div class="ttname"><a href="../../de/d41/a01030.html#ad3354c0338918bf1f0ee99ff07090062">&#x202A;SystemPara::structExtra::nLighterLight</a></div><div class="ttdeci">&#x202A;int nLighterLight</div><div class="ttdoc">&#x202A;探灯亮度</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00204">SystemPara.h:204</a></div></div>
+<div class="ttc" id="aa01030_html_a3e8087391392da58d8c9e3f8bb410d13"><div class="ttname"><a href="../../de/d41/a01030.html#a3e8087391392da58d8c9e3f8bb410d13">&#x202A;SystemPara::structExtra::nBattaryV</a></div><div class="ttdeci">&#x202A;int nBattaryV</div><div class="ttdoc">&#x202A;电池电压 // 0.01V 单位</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00207">SystemPara.h:207</a></div></div>
+<div class="ttc" id="aa01030_html_a38e12dc53b0f78015ffcd666de7a91fc"><div class="ttname"><a href="../../de/d41/a01030.html#a38e12dc53b0f78015ffcd666de7a91fc">&#x202A;SystemPara::structExtra::nStorageAll</a></div><div class="ttdeci">&#x202A;int nStorageAll</div><div class="ttdoc">&#x202A;总空间; 0.01 GB</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00206">SystemPara.h:206</a></div></div>
+<div class="ttc" id="aa01030_html_a795b77c973e3454a2346213fad340b03"><div class="ttname"><a href="../../de/d41/a01030.html#a795b77c973e3454a2346213fad340b03">&#x202A;SystemPara::structHole::nHoleDiameter</a></div><div class="ttdeci">&#x202A;int nHoleDiameter</div><div class="ttdoc">&#x202A;钻孔直径</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00125">SystemPara.h:125</a></div></div>
+<div class="ttc" id="aa01030_html_a746fc0b3637c99e57937fe7960d9a7e8"><div class="ttname"><a href="../../de/d41/a01030.html#a746fc0b3637c99e57937fe7960d9a7e8">&#x202A;SystemPara::Extra</a></div><div class="ttdeci">&#x202A;struct SystemPara::structExtra Extra</div></div>
+<div class="ttc" id="aa01030_html_ad2a6018733b714fd63b5d62b696456d0"><div class="ttname"><a href="../../de/d41/a01030.html#ad2a6018733b714fd63b5d62b696456d0">&#x202A;SystemPara::structImage::nImgHPixalPerMM</a></div><div class="ttdeci">&#x202A;int nImgHPixalPerMM</div><div class="ttdoc">&#x202A;水平方向 分辨率 像素每毫米</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00165">SystemPara.h:165</a></div></div>
+<div class="ttc" id="aa01030_html_a07d55beb2460bc08d8beefdff1c4b8dcae4ce00bc1c05a4c97a7b96168d683eaf"><div class="ttname"><a href="../../de/d41/a01030.html#a07d55beb2460bc08d8beefdff1c4b8dcae4ce00bc1c05a4c97a7b96168d683eaf">&#x202A;SystemPara::PHEAD</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00039">SystemPara.h:39</a></div></div>
+<div class="ttc" id="aa01030_html_aee070b12c85f63f2049215c25d2ff319"><div class="ttname"><a href="../../de/d41/a01030.html#aee070b12c85f63f2049215c25d2ff319">&#x202A;SystemPara::structPulse::nPulseUm</a></div><div class="ttdeci">&#x202A;int nPulseUm</div><div class="ttdoc">&#x202A;脉冲距离 广电编码器 每个脉冲走过的距离 单位 1um 最大 65535</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00108">SystemPara.h:108</a></div></div>
+<div class="ttc" id="aa01030_html_a1a4cb697880aa29104205d856f5f1aae"><div class="ttname"><a href="../../de/d41/a01030.html#a1a4cb697880aa29104205d856f5f1aae">&#x202A;SystemPara::structExtra::nScreenLight</a></div><div class="ttdeci">&#x202A;int nScreenLight</div><div class="ttdoc">&#x202A;屏幕亮度</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00203">SystemPara.h:203</a></div></div>
+<div class="ttc" id="aa01030_html_a1a7cdc08e47f3718fa01464cfc9d6ea2"><div class="ttname"><a href="../../de/d41/a01030.html#a1a7cdc08e47f3718fa01464cfc9d6ea2">&#x202A;SystemPara::structExtra::nStorageCur</a></div><div class="ttdeci">&#x202A;int nStorageCur</div><div class="ttdoc">&#x202A;目前空间占用 0.01GB 已用</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00205">SystemPara.h:205</a></div></div>
+<div class="ttc" id="aa01030_html_a15af3e0319ff1042a10296212e1c0a36"><div class="ttname"><a href="../../de/d41/a01030.html#a15af3e0319ff1042a10296212e1c0a36">&#x202A;SystemPara::Probe</a></div><div class="ttdeci">&#x202A;struct SystemPara::structProbe Probe</div></div>
+<div class="ttc" id="aa01030_html_afcf78afe3bb634edac724d85b0fe4783"><div class="ttname"><a href="../../de/d41/a01030.html#afcf78afe3bb634edac724d85b0fe4783">&#x202A;SystemPara::structHole::nHoleWorkAhead</a></div><div class="ttdeci">&#x202A;int nHoleWorkAhead</div><div class="ttdoc">&#x202A;工作方式 前进1 后退0</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00128">SystemPara.h:128</a></div></div>
+<div class="ttc" id="aa01030_html_a28073d0cd03cefdc08fb6ba9bb177622"><div class="ttname"><a href="../../de/d41/a01030.html#a28073d0cd03cefdc08fb6ba9bb177622">&#x202A;SystemPara::structHole::strHoleCompany</a></div><div class="ttdeci">&#x202A;char strHoleCompany[20]</div><div class="ttdoc">&#x202A;测孔单位</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00134">SystemPara.h:134</a></div></div>
+<div class="ttc" id="aa01030_html_a290f7c26da729c41af8a80dcd2f89c9da30b50f6f40598a06d1a166873748dfcc"><div class="ttname"><a href="../../de/d41/a01030.html#a290f7c26da729c41af8a80dcd2f89c9da30b50f6f40598a06d1a166873748dfcc">&#x202A;SystemPara::HHORIZON</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00050">SystemPara.h:50</a></div></div>
+<div class="ttc" id="aa01030_html_a0bd2d9312128a93d2b234cdf96e996d4"><div class="ttname"><a href="../../de/d41/a01030.html#a0bd2d9312128a93d2b234cdf96e996d4">&#x202A;SystemPara::FileHeader</a></div><div class="ttdeci">&#x202A;struct SystemPara::structFileHeader FileHeader</div></div>
+<div class="ttc" id="aa01030_html_ab277b1d9a17d20ea0408d811cbc0c0b5"><div class="ttname"><a href="../../de/d41/a01030.html#ab277b1d9a17d20ea0408d811cbc0c0b5">&#x202A;SystemPara::structCompass::nComAngleOffset</a></div><div class="ttdeci">&#x202A;int nComAngleOffset</div><div class="ttdoc">&#x202A;探头内部罗盘安装角度误差 // 等于罗盘补偿?</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00188">SystemPara.h:188</a></div></div>
+<div class="ttc" id="aa01030_html_ac326a0c90063f8095524486cf25540d8"><div class="ttname"><a href="../../de/d41/a01030.html#ac326a0c90063f8095524486cf25540d8">&#x202A;SystemPara::structImage::nImgVPixalPerMM</a></div><div class="ttdeci">&#x202A;int nImgVPixalPerMM</div><div class="ttdoc">&#x202A;竖直方向 分辨率 像素每毫米</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00164">SystemPara.h:164</a></div></div>
+<div class="ttc" id="aa01030_html_a78c8d15d49fdb75f23f4218482b16d24"><div class="ttname"><a href="../../de/d41/a01030.html#a78c8d15d49fdb75f23f4218482b16d24">&#x202A;SystemPara::Hole</a></div><div class="ttdeci">&#x202A;struct SystemPara::structHole Hole</div></div>
+<div class="ttc" id="aa01030_html_a40f815a9d1e043a90e703002833d51ab"><div class="ttname"><a href="../../de/d41/a01030.html#a40f815a9d1e043a90e703002833d51ab">&#x202A;SystemPara::structHole::nHoleBeginDepth</a></div><div class="ttdeci">&#x202A;int nHoleBeginDepth</div><div class="ttdoc">&#x202A;开始深度 表示设备开始工作的深度 mm</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00126">SystemPara.h:126</a></div></div>
+<div class="ttc" id="aa01030_html_a290f7c26da729c41af8a80dcd2f89c9d"><div class="ttname"><a href="../../de/d41/a01030.html#a290f7c26da729c41af8a80dcd2f89c9d">&#x202A;SystemPara::HoleType</a></div><div class="ttdeci">&#x202A;HoleType</div><div class="ttdoc">&#x202A;测孔方向</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00048">SystemPara.h:48</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

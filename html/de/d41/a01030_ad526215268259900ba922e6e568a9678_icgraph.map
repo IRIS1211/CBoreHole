@@ -1,0 +1,6 @@
+<map id="SystemPara::LoadPara" name="SystemPara::LoadPara">
+<area shape="rect" id="node1" title="从配置文件中 读取内容 可以读取固定格式的 节点的值 XML 或者 YML 均可" alt="" coords="311,31,468,57"/>
+<area shape="rect" id="node2" href="$d1/d88/a00128.html#ab4e02a15fd849dbf13c3b9bb17fd2d58" title="初始化 全局变量 主要是读取主配置文件 并根据配置文件决定后续程序执行" alt="" coords="169,31,263,57"/>
+<area shape="rect" id="node3" href="$d5/d67/a01070.html#ac43fc49189df29ccdf5e0724d29eb5e1" title=" " alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node4" href="$d7/dce/a00143.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="38,56,89,83"/>
+</map>

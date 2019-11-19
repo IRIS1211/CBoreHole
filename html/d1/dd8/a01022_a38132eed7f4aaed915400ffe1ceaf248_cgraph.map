@@ -1,0 +1,17 @@
+<map id="SetWindow::slot_previewCamera" name="SetWindow::slot_previewCamera">
+<area shape="rect" id="node1" title="Slot preview camera" alt="" coords="5,73,216,100"/>
+<area shape="rect" id="node2" href="$da/dd8/a00906.html#a6f0ea79714ca60cd2f4c6c6d83300117" title="初始化参数" alt="" coords="295,23,413,49"/>
+<area shape="rect" id="node3" href="$da/dd8/a00906.html#aae997ee39248ce1e50a450e2a6727193" title="Sets buffer queue" alt="" coords="264,73,444,100"/>
+<area shape="rect" id="node4" href="$d1/dd8/a01022.html#af449e6140a028d414e2745f8c2bb03b6" title="Slot show camera" alt="" coords="267,125,441,166"/>
+<area shape="rect" id="node5" href="$da/d45/a00011.html#a0dd08ab91977a2738f33adbd7e8306b2" title=" " alt="" coords="533,5,633,32"/>
+<area shape="rect" id="node6" href="$d1/dd8/a01022.html#afbc288067257bd144de1867ca656ef79" title=" " alt="" coords="492,56,675,83"/>
+<area shape="rect" id="node11" href="$d4/d8a/a01062.html#af40a436dfc3c2bedd4ceb2c465fe3b95" title="Query if this object is empty" alt="" coords="506,107,661,133"/>
+<area shape="rect" id="node12" href="$d4/d8a/a01062.html#a8986765a7b79b6054d351616c991f100" title="Gets the out" alt="" coords="519,157,647,184"/>
+<area shape="rect" id="node13" href="$df/db5/a01158.html#a3f1a23663337082bc684229123014abb" title=" " alt="" coords="504,208,663,235"/>
+<area shape="rect" id="node15" href="$d4/d8a/a01062.html#a104678e1c6363e2719cca591e0ed6eab" title="Gets the size" alt="" coords="518,259,649,285"/>
+<area shape="rect" id="node7" href="$da/d45/a00011.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="734,5,819,32"/>
+<area shape="rect" id="node9" href="$da/d45/a00011.html#a1c11ea4eddb168aee72861c8397c20a2" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="741,56,812,83"/>
+<area shape="rect" id="node10" href="$da/d45/a00011.html#a417ad9bc43db4f2f4eda91598d39e883" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="734,107,819,133"/>
+<area shape="rect" id="node8" href="$d1/d88/a00128.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="879,5,949,32"/>
+<area shape="rect" id="node14" href="$da/d45/a00011.html#abeb6dbf76427d84554906c85222d2b31" title="Mat 和QImage 互相转换" alt="" coords="723,208,831,235"/>
+</map>

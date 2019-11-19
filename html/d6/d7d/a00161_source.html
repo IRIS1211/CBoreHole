@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/SerialProc.cc 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.4.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d6/d7d/a00161_source.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SerialProc.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d6/d7d/a00161.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../inc/SerialProc.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../stdafx.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; <span class="comment">// 串口帧数据 队列</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d6/d7d/a00161.html#a490ece921a21c9c1f092304537c8924c">   11</a></span>&#160;<a class="code" href="../../db/dba/a01078.html">&#x202A;ThreadQueue&lt;SerialData&gt;</a> *<a class="code" href="../../d6/d7d/a00161.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a>;   </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../de/d41/a01030.html#a2eb103016c9d0b4a4e13368ff3e9236c">   22</a></span>&#160;<a class="code" href="../../de/d41/a01030.html#a2eb103016c9d0b4a4e13368ff3e9236c">&#x202A;SerialProc::SerialProc</a>(QObject *parent <span class="comment">/* = nullptr */</span>) :QThread(parent)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// lqFrame = new LQueue(FrameMax); //  设定一个长度的循环队列</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../de/d41/a01030.html#a07a11a77533c253128d128031b4c9c89">&#x202A;frameData</a>.<a class="code" href="../../dc/d81/a01006.html#a76883a54c2abb618cae97337dc49bc4c">&#x202A;PCA</a>.<a class="code" href="../../dc/d81/a01006.html#a7d951e1e1f52fcbe8949d076d577aa2e">&#x202A;cur</a> = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// 定义全局队列 用以处理 数据帧</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d6/d7d/a00161.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a> = <span class="keyword">new</span> <a class="code" href="../../db/dba/a01078.html">&#x202A;ThreadQueue&lt;SerialData&gt;</a>(<a class="code" href="../../d8/d41/a00038.html#a3c33e10ce751f7b3673e89e579c134ff">&#x202A;FrameMax</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 默认 com口 COM5</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// serPort = new CSerialPort();</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../de/d41/a01030.html#a007a19e6aa2f66cfd83c60eaa95c145d">&#x202A;m_serial_</a> = <span class="keyword">new</span> <a class="code" href="../../d9/d9a/a00998.html">&#x202A;Serial</a>();   <span class="comment">// 按照 配置参数打开串口</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// emit m_serial_-&gt;signal_open_serial(gConfig-&gt;runPara.Device.nSerialPort,</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//                                    gConfig-&gt;runPara.Device.nSerialBaud);</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// 开启</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// 初始化 com 口 和 baudrate</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// serPort-&gt;startPort(gConfig-&gt;runPara.Device.nSerialPort,gConfig-&gt;runPara.Device.nSerialBaud);</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if TEST_SerData</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="../../de/d41/a01030.html#a70bceb027dd6ce7fb72cbabc181268d4">&#x202A;pFile</a> = <span class="keyword">new</span> ifstream();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../de/d41/a01030.html#a70bceb027dd6ce7fb72cbabc181268d4">&#x202A;pFile</a>-&gt;open(<a class="code" href="../../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb">&#x202A;runPara</a>.<a class="code" href="../../d3/dd1/a00914.html#a085cb2990e31caf25e8af118dcc94a62">&#x202A;CFG</a>.<a class="code" href="../../d3/dd1/a00914.html#a40f5bf5d5ace83db16f9349571d27932">&#x202A;Debug</a>.<a class="code" href="../../d3/dd1/a00914.html#a73a95490e4c5186adfd24ba58f5d2c35">&#x202A;sSerialFilePath</a>, std::ios::in);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    LDebug(<span class="stringliteral">&quot;path:{}&quot;</span>, <a class="code" href="../../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb">&#x202A;runPara</a>.<a class="code" href="../../d3/dd1/a00914.html#a085cb2990e31caf25e8af118dcc94a62">&#x202A;CFG</a>.<a class="code" href="../../d3/dd1/a00914.html#a40f5bf5d5ace83db16f9349571d27932">&#x202A;Debug</a>.<a class="code" href="../../d3/dd1/a00914.html#a73a95490e4c5186adfd24ba58f5d2c35">&#x202A;sSerialFilePath</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// start(); // 开启处理进程</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../de/d41/a01030.html#a31a5970045e50bbb739a674cf61ef102">   61</a></span>&#160;<a class="code" href="../../de/d41/a01030.html#a31a5970045e50bbb739a674cf61ef102">&#x202A;SerialProc::~SerialProc</a>()</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    this-&gt;requestInterruption();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    this-&gt;wait();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    this-&gt;quit();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#if TEST_SerData</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// 删除文件指针</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../de/d41/a01030.html#a70bceb027dd6ce7fb72cbabc181268d4">&#x202A;pFile</a>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="../../de/d41/a01030.html#a70bceb027dd6ce7fb72cbabc181268d4">&#x202A;pFile</a>-&gt;close();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="../../de/d41/a01030.html#a70bceb027dd6ce7fb72cbabc181268d4">&#x202A;pFile</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">delete</span> <a class="code" href="../../de/d41/a01030.html#a70bceb027dd6ce7fb72cbabc181268d4">&#x202A;pFile</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }                                                                           </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../de/d41/a01030.html#a6e9917bcad16434b9579bbf0719dbfe5">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/d41/a01030.html#a6e9917bcad16434b9579bbf0719dbfe5">&#x202A;SerialProc::run</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// 测试情况下循环读取 一行数据</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#if TEST_SerData</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">string</span> str;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// 处理数据</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// 循环解析 队列里面的帧数据</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">while</span> (!isInterruptionRequested())</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">// 加锁 在未处理完成数据之前  阻塞在这里避免出错</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="../../de/d41/a01030.html#a7399fa888477b5ca53eb2c7ef5c40855">&#x202A;serMutex</a>.lock();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if TEST_SerData</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">// LDebug(&quot;pfile:{},str:{}&quot;, QStringLiteral(&quot;@0x%1&quot;).arg(quintptr(pFile), 16, 16, QLatin1Char(&#39;0&#39;)).toStdString(), str);</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">// 获取一行数据</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        getline(*<a class="code" href="../../de/d41/a01030.html#a70bceb027dd6ce7fb72cbabc181268d4">&#x202A;pFile</a>, str);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="comment">// 获取一帧 数据</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="../../d2/dd5/a01002.html">&#x202A;SerialData</a> cFrame;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="../../d2/de7/a00014.html#acff23706cd23da7fde42b33a9f5ebcea">&#x202A;Str2CharArray</a>(cFrame.<a class="code" href="../../d2/dd5/a01002.html#ad9ed7d32daec135c2637e7afa08b9c1b">&#x202A;data_</a>, str);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="../../d6/d7d/a00161.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a>-&gt;Enter(&amp;cFrame);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">// 如果无串口数据 则 不更新</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d7d/a00161.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a>-&gt;IsEmpty())</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="comment">//取出一帧数据用于更新好 帧数据值</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="../../de/d41/a01030.html#a07a11a77533c253128d128031b4c9c89">&#x202A;frameData</a>.<a class="code" href="../../dc/d81/a01006.html#a071b93d33a06aea86d23514be375d4cd">&#x202A;Update</a>(*<a class="code" href="../../d6/d7d/a00161.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a>-&gt;Out());</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="comment">// LDebug(&quot;Serial Data Frame_cnt:{}&quot;, frameData.frame_cnt);</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">// serMutex.unlock();</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01030_html_a007a19e6aa2f66cfd83c60eaa95c145d"><div class="ttname"><a href="../../de/d41/a01030.html#a007a19e6aa2f66cfd83c60eaa95c145d">&#x202A;SerialProc::m_serial_</a></div><div class="ttdeci">&#x202A;Serial * m_serial_</div><div class="ttdoc">&#x202A;The serial</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00078">SerialProc.h:78</a></div></div>
+<div class="ttc" id="aa01006_html_a071b93d33a06aea86d23514be375d4cd"><div class="ttname"><a href="../../dc/d81/a01006.html#a071b93d33a06aea86d23514be375d4cd">&#x202A;FrameData::Update</a></div><div class="ttdeci">&#x202A;bool Update(SerialData &amp;ser_data)</div><div class="ttdoc">&#x202A;根据串口数据 更新当前类的值</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00225">serialdata.h:225</a></div></div>
+<div class="ttc" id="aa01078_html"><div class="ttname"><a href="../../db/dba/a01078.html">&#x202A;ThreadQueue</a></div><div class="ttdoc">&#x202A;Queue of threads.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00049">ThreadQueue.h:49</a></div></div>
+<div class="ttc" id="aa01030_html_a2eb103016c9d0b4a4e13368ff3e9236c"><div class="ttname"><a href="../../de/d41/a01030.html#a2eb103016c9d0b4a4e13368ff3e9236c">&#x202A;SerialProc::SerialProc</a></div><div class="ttdeci">&#x202A;SerialProc(QObject *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the SerialProc class</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00022">SerialProc.cc:22</a></div></div>
+<div class="ttc" id="aa01006_html_a76883a54c2abb618cae97337dc49bc4c"><div class="ttname"><a href="../../dc/d81/a01006.html#a76883a54c2abb618cae97337dc49bc4c">&#x202A;FrameData::PCA</a></div><div class="ttdeci">&#x202A;struct FrameData::structPCA PCA</div><div class="ttdoc">&#x202A;记录编码器的差值</div></div>
+<div class="ttc" id="aa01030_html_a07a11a77533c253128d128031b4c9c89"><div class="ttname"><a href="../../de/d41/a01030.html#a07a11a77533c253128d128031b4c9c89">&#x202A;SerialProc::frameData</a></div><div class="ttdeci">&#x202A;FrameData frameData</div><div class="ttdoc">&#x202A;Information describing the frame</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00073">SerialProc.h:73</a></div></div>
+<div class="ttc" id="aa00143_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00019">main.cpp:19</a></div></div>
+<div class="ttc" id="aa00038_html_a3c33e10ce751f7b3673e89e579c134ff"><div class="ttname"><a href="../../d8/d41/a00038.html#a3c33e10ce751f7b3673e89e579c134ff">&#x202A;FrameMax</a></div><div class="ttdeci">&#x202A;const int FrameMax</div><div class="ttdoc">&#x202A;最多存储的帧数目</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00019">serialdata.h:19</a></div></div>
+<div class="ttc" id="aa01002_html"><div class="ttname"><a href="../../d2/dd5/a01002.html">&#x202A;SerialData</a></div><div class="ttdoc">&#x202A;暂存 串口发送回来的 分组数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00030">serialdata.h:30</a></div></div>
+<div class="ttc" id="aa01030_html_a31a5970045e50bbb739a674cf61ef102"><div class="ttname"><a href="../../de/d41/a01030.html#a31a5970045e50bbb739a674cf61ef102">&#x202A;SerialProc::~SerialProc</a></div><div class="ttdeci">&#x202A;~SerialProc()</div><div class="ttdoc">&#x202A;Finalizes an instance of the SerialProc class</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00061">SerialProc.cc:61</a></div></div>
+<div class="ttc" id="aa00017_html_a004c41c0eff48239d7cb3a12807199fb"><div class="ttname"><a href="../../d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb">&#x202A;Config::runPara</a></div><div class="ttdeci">&#x202A;RunPara runPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00245">Config.h:245</a></div></div>
+<div class="ttc" id="aa01030_html_a7399fa888477b5ca53eb2c7ef5c40855"><div class="ttname"><a href="../../de/d41/a01030.html#a7399fa888477b5ca53eb2c7ef5c40855">&#x202A;SerialProc::serMutex</a></div><div class="ttdeci">&#x202A;QMutex serMutex</div><div class="ttdoc">&#x202A;串口处理线程 锁 进行线程同步</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00074">SerialProc.h:74</a></div></div>
+<div class="ttc" id="aa00014_html_acff23706cd23da7fde42b33a9f5ebcea"><div class="ttname"><a href="../../d2/de7/a00014.html#acff23706cd23da7fde42b33a9f5ebcea">&#x202A;Str2CharArray</a></div><div class="ttdeci">&#x202A;void Str2CharArray(uchar *buffer, const std::string &amp;str, int flg_space=1)</div><div class="ttdoc">&#x202A;字符串 转换成 数值数组</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d06/a00131_source.html#l01116">Commu.cc:1116</a></div></div>
+<div class="ttc" id="aa01030_html_a6e9917bcad16434b9579bbf0719dbfe5"><div class="ttname"><a href="../../de/d41/a01030.html#a6e9917bcad16434b9579bbf0719dbfe5">&#x202A;SerialProc::run</a></div><div class="ttdeci">&#x202A;void run(void) override</div><div class="ttdoc">&#x202A;Runs this object</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00088">SerialProc.cc:88</a></div></div>
+<div class="ttc" id="aa01002_html_ad9ed7d32daec135c2637e7afa08b9c1b"><div class="ttname"><a href="../../d2/dd5/a01002.html#ad9ed7d32daec135c2637e7afa08b9c1b">&#x202A;SerialData::data_</a></div><div class="ttdeci">&#x202A;uchar * data_</div><div class="ttdoc">&#x202A;帧数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00036">serialdata.h:36</a></div></div>
+<div class="ttc" id="aa01030_html_a70bceb027dd6ce7fb72cbabc181268d4"><div class="ttname"><a href="../../de/d41/a01030.html#a70bceb027dd6ce7fb72cbabc181268d4">&#x202A;SerialProc::pFile</a></div><div class="ttdeci">&#x202A;std::ifstream * pFile</div><div class="ttdoc">&#x202A;The file</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00099">SerialProc.h:99</a></div></div>
+<div class="ttc" id="aa00914_html_a40f5bf5d5ace83db16f9349571d27932"><div class="ttname"><a href="../../d3/dd1/a00914.html#a40f5bf5d5ace83db16f9349571d27932">&#x202A;RunPara::Struct_Config::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::Struct_Config::Struct_Debug Debug</div></div>
+<div class="ttc" id="aa00914_html_a085cb2990e31caf25e8af118dcc94a62"><div class="ttname"><a href="../../d3/dd1/a00914.html#a085cb2990e31caf25e8af118dcc94a62">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::Struct_Config CFG</div></div>
+<div class="ttc" id="aa00998_html"><div class="ttname"><a href="../../d9/d9a/a00998.html">&#x202A;Serial</a></div><div class="ttdoc">&#x202A;A serial.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00035">Serial.h:35</a></div></div>
+<div class="ttc" id="aa00914_html_a73a95490e4c5186adfd24ba58f5d2c35"><div class="ttname"><a href="../../d3/dd1/a00914.html#a73a95490e4c5186adfd24ba58f5d2c35">&#x202A;RunPara::Struct_Config::Struct_Debug::sSerialFilePath</a></div><div class="ttdeci">&#x202A;std::string sSerialFilePath</div><div class="ttdoc">&#x202A;Full pathname of the serial file</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00155">Config.h:155</a></div></div>
+<div class="ttc" id="aa01006_html_a7d951e1e1f52fcbe8949d076d577aa2e"><div class="ttname"><a href="../../dc/d81/a01006.html#a7d951e1e1f52fcbe8949d076d577aa2e">&#x202A;FrameData::structPCA::cur</a></div><div class="ttdeci">&#x202A;int cur</div><div class="ttdoc">&#x202A;The current</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00170">serialdata.h:170</a></div></div>
+<div class="ttc" id="aa00161_html_a490ece921a21c9c1f092304537c8924c"><div class="ttname"><a href="../../d6/d7d/a00161.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a></div><div class="ttdeci">&#x202A;ThreadQueue&lt; SerialData &gt; * lqFrame</div><div class="ttdoc">&#x202A;The lq frame</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00011">SerialProc.cc:11</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">&#x202A;SerialProc.cc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

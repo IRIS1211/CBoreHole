@@ -1,0 +1,8 @@
+<map id="WorkWindow::slot_show_frame" name="WorkWindow::slot_show_frame">
+<area shape="rect" id="node1" title="Slot show frame" alt="" coords="5,100,171,141"/>
+<area shape="rect" id="node2" href="$d6/d40/a01114.html#a054256077ab572adcbad2c9c7e8db3e2" title="Shows the image" alt="" coords="229,71,383,112"/>
+<area shape="rect" id="node5" href="$da/d73/a01090.html#a60f2ffe1a920ec6657fa90971da54db7" title="Shows the image" alt="" coords="219,137,393,163"/>
+<area shape="rect" id="node3" href="$d6/d40/a01114.html#a68cd096eb4b3acfc5a6a0bee0ba447d4" title="Calculates the position" alt="" coords="441,5,596,47"/>
+<area shape="rect" id="node4" href="$d6/d40/a01114.html#ac937ca5ac6f721398fab75e26f227532" title="Updates the scene" alt="" coords="441,71,596,112"/>
+<area shape="rect" id="node6" href="$da/d45/a00011.html#abeb6dbf76427d84554906c85222d2b31" title="Mat 和QImage 互相转换" alt="" coords="465,137,573,163"/>
+</map>

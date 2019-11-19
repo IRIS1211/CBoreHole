@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;多线程队列实现</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.4.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d6/dc9/a01498.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc PageDocLTR-title"><div class="header">
+  <div class="headertitle">
+<div class="title">&#x202A;多线程队列实现 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p class="DocNodeLTR">具体实现代码</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md32"></a>
+介绍</h1>
+<p class="DocNodeLTR">在项目中,进行多线程队列实现是一个比较麻烦的事, 找到了一个实现比较好的多线程队列实现, 自己做了一点修改更加适应自己的项目, 记录下来, 有需要的自己进行修改使用.</p>
+<p class="DocNodeLTR">代码写的并不是很好, 封装起来的实现也是并不是很好用, 个人水平的一个记录, 希望理解 </p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md33"></a>
+多线程队列实现</h1>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;初始化一定长度的空间存储数据</li>
+<li>&#x202A;每次压入或者弹出操作的时候需要获取锁, 保证同时只有一个操作可以被执行,</li>
+<li>&#x202A;压入或者弹出数据的时候, 如果队列已经满了或者空的, 另外一个线程可能需要**等待**, 或者返回 <b>false</b> 具体看程序注释,考虑自己情况进行程序修改</li>
+<li>&#x202A;最终清理对象数据, 清空队列,退出线程</li>
+</ol>
+<p class="DocNodeLTR">&lt;details&gt;</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#ifndef CQUEUE_H__</span></div>
+<div class="line"><span class="preprocessor">#define CQUEUE_H__</span></div>
+<div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"><span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span><a class="code" href="../../df/d39/a00950.html">&#x202A;CQueue</a></div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">protected</span>:</div>
+<div class="line">    <span class="comment">// Data</span></div>
+<div class="line">    std::queue&lt;T&gt; <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>;   </div>
+<div class="line">    <span class="keyword">private</span>:</div>
+<div class="line">    <span class="keyword">typename</span> std::queue&lt;T&gt;::size_type <a class="code" href="../../df/d39/a00950.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;_size_max</a>;    </div>
+<div class="line">    <span class="comment">// Thread gubbins</span></div>
+<div class="line">    std::mutex <a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>;  </div>
+<div class="line">    std::condition_variable <a class="code" href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>;   </div>
+<div class="line">    std::condition_variable <a class="code" href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>; </div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Exit</span></div>
+<div class="line">    <span class="comment">// 原子操作</span></div>
+<div class="line">    std::atomic_bool <a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a>; </div>
+<div class="line">    std::atomic_bool <a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>; </div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">public</span>:</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="../../df/d39/a00950.html#afa09bd6918457c409fcb25ea2da3f60d">&#x202A;CQueue</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> size_max) :<a class="code" href="../../df/d39/a00950.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;_size_max</a>(size_max) {</div>
+<div class="line">        <a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a> = ATOMIC_VAR_INIT(<span class="keyword">false</span>);</div>
+<div class="line">        <a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a> = ATOMIC_VAR_INIT(<span class="keyword">false</span>);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="../../df/d39/a00950.html#afa09bd6918457c409fcb25ea2da3f60d">&#x202A;CQueue</a>(CONST <a class="code" href="../../df/d39/a00950.html">&#x202A;CQueue</a>&amp;) = <span class="keyword">delete</span>; </div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="../../df/d39/a00950.html#af85abc481df6d6325bde80e6019805b1">&#x202A;~CQueue</a>()</div>
+<div class="line">    {</div>
+<div class="line">        <a class="code" href="../../df/d39/a00950.html#a9ebd3370594a5d6c7c63863d4aa08964">&#x202A;Quit</a>();</div>
+<div class="line">        <span class="keywordflow">while</span> (<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size())</div>
+<div class="line">            ;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code" href="../../df/d39/a00950.html#a282e80149935f212e9c6c6e8ef9d7374">&#x202A;Push</a>(T&amp; data)</div>
+<div class="line">    {</div>
+<div class="line">        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line">        <span class="keywordflow">while</span> (!<a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a> &amp;&amp; !<a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">if</span> (<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size() &lt; <a class="code" href="../../df/d39/a00950.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;_size_max</a>)</div>
+<div class="line">            {</div>
+<div class="line">                <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.push(std::move(data));</div>
+<div class="line">                <span class="comment">//_queue.Push(data);</span></div>
+<div class="line">                <a class="code" href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.notify_all();</div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">else</span></div>
+<div class="line">            {</div>
+<div class="line">                <span class="comment">// wait的时候自动释放锁，如果wait到了会获取锁</span></div>
+<div class="line">                <span class="comment">// _fullQue.wait(lock);</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">false</span>;   </div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code" href="../../df/d39/a00950.html#a9b4d693618a5679ff27f58762549199a">&#x202A;Pop</a>(T &amp;data)</div>
+<div class="line">    {</div>
+<div class="line">        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line">        <span class="keywordflow">while</span> (!<a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a>)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">if</span> (!<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty())                <span class="comment">// 队列非空</span></div>
+<div class="line">            {</div>
+<div class="line">                <span class="comment">//data = std::move(_queue.front());</span></div>
+<div class="line">                data = <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.front();</div>
+<div class="line">                <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.pop();</div>
+<div class="line"> </div>
+<div class="line">                <a class="code" href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();       <span class="comment">// 通知所有 由于满队无法加入的线程</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty() &amp;&amp; <a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)   <span class="comment">// 队列为空 且不再加入</span></div>
+<div class="line">            {</div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">else</span></div>
+<div class="line">            {</div>
+<div class="line">                <span class="comment">// _empty.wait(lock);          // 等待队列加入元素</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">false</span>;   </div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    std::shared_ptr&lt;T&gt; <a class="code" href="../../df/d39/a00950.html#a9b4d693618a5679ff27f58762549199a">&#x202A;Pop</a>(<span class="keywordtype">void</span>)</div>
+<div class="line">    {</div>
+<div class="line">        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line">        std::shared_ptr&lt;T&gt; res = <span class="keyword">nullptr</span>;</div>
+<div class="line">        <span class="keywordflow">while</span> (!<a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a>)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">if</span> (!<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty())                <span class="comment">// 队列非空</span></div>
+<div class="line">            {</div>
+<div class="line">                <span class="comment">//data = std::move(_queue.front());</span></div>
+<div class="line">                res = std::make_shared&lt;T&gt;(<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.front());</div>
+<div class="line">                <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.pop();</div>
+<div class="line"> </div>
+<div class="line">                <a class="code" href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();       <span class="comment">// 通知所有 由于满队无法加入的线程</span></div>
+<div class="line"> </div>
+<div class="line">                <span class="keywordflow">return</span> res;</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty() &amp;&amp; <a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)   <span class="comment">// 队列为空 且不再加入</span></div>
+<div class="line">            {</div>
+<div class="line">                <span class="keywordflow">return</span> res;     <span class="comment">// 无数据进入 智能返回一个空指针 (可能出错)</span></div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">else</span></div>
+<div class="line">            {</div>
+<div class="line">                <a class="code" href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.wait(lock);          <span class="comment">// 等待队列加入元素</span></div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="../../df/d39/a00950.html#a36aaded7a809ddcac8672d56b840afaa">&#x202A;Finished</a>()</div>
+<div class="line">    {</div>
+<div class="line">        <a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a> = <span class="keyword">true</span>;</div>
+<div class="line">        <a class="code" href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.notify_all();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="../../df/d39/a00950.html#a9ebd3370594a5d6c7c63863d4aa08964">&#x202A;Quit</a>()</div>
+<div class="line">    {</div>
+<div class="line">        <a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a> = <span class="keyword">true</span>;</div>
+<div class="line">        <a class="code" href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.notify_all();</div>
+<div class="line">        <a class="code" href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">int</span> <a class="code" href="../../df/d39/a00950.html#a532385f9b87230d55650fe10b0259c57">&#x202A;Length</a>()</div>
+<div class="line">    {</div>
+<div class="line">        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line">        <span class="keywordflow">return</span> static_cast&lt;int&gt;(<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size());</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">int</span> <a class="code" href="../../df/d39/a00950.html#a979820688e76c1997aa0d36d120df98f">&#x202A;Size</a>()</div>
+<div class="line">    {</div>
+<div class="line">        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line">        <span class="keywordflow">return</span> static_cast&lt;int&gt;(<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size());</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code" href="../../df/d39/a00950.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;Empty</a>(<span class="keywordtype">void</span>)</div>
+<div class="line">    {</div>
+<div class="line">        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line">        <span class="keywordflow">return</span> (0 == <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size());</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code" href="../../df/d39/a00950.html#aecb92693aa7f2b4eb791930203cc39ea">&#x202A;Clear</a>(<span class="keywordtype">void</span>)</div>
+<div class="line">    {</div>
+<div class="line">        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line">        <span class="keywordflow">while</span> (!<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty ())</div>
+<div class="line">        {</div>
+<div class="line">            <a class="code" href="../../df/d39/a00950.html#a9b4d693618a5679ff27f58762549199a">&#x202A;Pop</a>();  <span class="comment">// 依次弹出数据</span></div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+</div><!-- fragment --><p class="DocNodeLTR">&lt;/details&gt;</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md34"></a>
+更多</h1>
+<p class="DocNodeLTR">有另外的多线程实现, 来自网上找到的, 可能找不到参考链接了, 贴出来 供参考</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md35"></a>
+线程安全队列 1</h2>
+<p class="DocNodeLTR">&lt;details&gt;</p>
+<p class="DocNodeLTR">具体实现代码 </p>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span>ThreadSafeQueue</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">private</span>:</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">mutable</span> std::mutex mut;</div>
+<div class="line">    std::queue&lt;T&gt; data_queue;   </div>
+<div class="line">    std::condition_variable data_cond;  </div>
+<div class="line">    <span class="keyword">public</span>:</div>
+<div class="line"> </div>
+<div class="line">    ThreadSafeQueue() {}</div>
+<div class="line"> </div>
+<div class="line">    ThreadSafeQueue(ThreadSafeQueue <span class="keyword">const</span>&amp; other)</div>
+<div class="line">    {</div>
+<div class="line">        std::lock_guard&lt;std::mutex&gt; lk(other.mut);</div>
+<div class="line">        data_queue = other.data_queue;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> push(T&amp; new_value)<span class="comment">//入队操作</span></div>
+<div class="line">    {</div>
+<div class="line">        std::lock_guard&lt;std::mutex&gt; lk(mut);</div>
+<div class="line">        data_queue.push(new_value);</div>
+<div class="line">        data_cond.notify_one();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> wait_and_pop(T&amp; value)<span class="comment">//直到有元素可以删除为止</span></div>
+<div class="line">    {</div>
+<div class="line">        std::unique_lock&lt;std::mutex&gt; lk(mut);</div>
+<div class="line">        data_cond.wait(lk, [<span class="keyword">this</span>]</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span> !data_queue.empty();</div>
+<div class="line">        });</div>
+<div class="line">        value = data_queue.front();</div>
+<div class="line">        data_queue.pop();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    std::shared_ptr&lt;T&gt; wait_and_pop()</div>
+<div class="line">    {</div>
+<div class="line">        std::unique_lock&lt;std::mutex&gt; lk(mut);</div>
+<div class="line">        data_cond.wait(lk, [<span class="keyword">this</span>]</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span> !data_queue.empty();</div>
+<div class="line">        });</div>
+<div class="line">        std::shared_ptr&lt;T&gt; res(std::make_shared&lt;T&gt;(data_queue.front()));</div>
+<div class="line">        data_queue.pop();</div>
+<div class="line">        <span class="keywordflow">return</span> res;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">bool</span> try_pop(T&amp; value)<span class="comment">//不管有没有队首元素直接返回</span></div>
+<div class="line">    {</div>
+<div class="line">        std::lock_guard&lt;std::mutex&gt; lk(mut);</div>
+<div class="line">        <span class="keywordflow">if</span> (data_queue.empty())</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">        value = data_queue.front();</div>
+<div class="line">        data_queue.pop();</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    std::shared_ptr&lt;T&gt; try_pop()</div>
+<div class="line">    {</div>
+<div class="line">        std::lock_guard&lt;std::mutex&gt; lk(mut);</div>
+<div class="line">        <span class="keywordflow">if</span> (data_queue.empty())</div>
+<div class="line">            <span class="keywordflow">return</span> std::shared_ptr&lt;T&gt;();</div>
+<div class="line">        std::shared_ptr&lt;T&gt; res(std::make_shared&lt;T&gt;(data_queue.front()));</div>
+<div class="line">        data_queue.pop();</div>
+<div class="line">        <span class="keywordflow">return</span> res;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">bool</span> empty()<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword">    </span>{</div>
+<div class="line">        std::lock_guard&lt;std::mutex&gt; lk(mut);</div>
+<div class="line">        <span class="keywordflow">return</span> data_queue.empty();</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+</div><!-- fragment --><p class="DocNodeLTR">&lt;/details&gt;</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md36"></a>
+线程安全队列 2</h2>
+<p class="DocNodeLTR">&lt;details&gt;</p>
+<p class="DocNodeLTR">具体实现代码 </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;initializer_list&gt;</span></div>
+<div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment">* 线程安全队列</span></div>
+<div class="line"><span class="comment">* T为队列元素类型</span></div>
+<div class="line"><span class="comment">* 因为有std::mutex和std::condition_variable类成员,所以此类不支持复制构造函数也不支持赋值操作符(=)</span></div>
+<div class="line"><span class="comment">* */</span></div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span>threadsafe_queue</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">private</span>:</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">mutable</span> std::mutex mut;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">mutable</span> std::condition_variable data_cond;</div>
+<div class="line">    <span class="keyword">using</span> queue_type = std::queue&lt;T&gt;;   </div>
+<div class="line">    queue_type data_queue;  </div>
+<div class="line">    <span class="keyword">public</span>:</div>
+<div class="line">    <span class="keyword">using</span> value_type = <span class="keyword">typename</span> queue_type::value_type; </div>
+<div class="line">    <span class="keyword">using</span> container_type = <span class="keyword">typename</span> queue_type::container_type; </div>
+<div class="line"> </div>
+<div class="line">    threadsafe_queue() = <span class="keywordflow">default</span>;</div>
+<div class="line"> </div>
+<div class="line">    threadsafe_queue(<span class="keyword">const</span> threadsafe_queue&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"> </div>
+<div class="line">    threadsafe_queue&amp; operator=(<span class="keyword">const</span> threadsafe_queue&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">    * 使用迭代器为参数的构造函数,适用所有容器对象</span></div>
+<div class="line"><span class="comment">    * */</span></div>
+<div class="line">    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> _InputIterator&gt;</div>
+<div class="line"> </div>
+<div class="line">    threadsafe_queue(_InputIterator first, _InputIterator last) {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keyword">auto</span> itor = first; itor != last; ++itor)</div>
+<div class="line">        {</div>
+<div class="line">            data_queue.push(*itor);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">explicit</span> threadsafe_queue(<span class="keyword">const</span> container_type &amp;c) :data_queue(c) {}</div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">    * 使用初始化列表为参数的构造函数</span></div>
+<div class="line"><span class="comment">    * */</span></div>
+<div class="line"> </div>
+<div class="line">    threadsafe_queue(std::initializer_list&lt;value_type&gt; list) :threadsafe_queue(list.begin(), list.end()) {</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">    * 将元素加入队列</span></div>
+<div class="line"><span class="comment">    * */</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> push(<span class="keyword">const</span> value_type &amp;new_value) {</div>
+<div class="line">        std::lock_guard&lt;std::mutex&gt;lk(mut);</div>
+<div class="line">        data_queue.push(std::move(new_value));</div>
+<div class="line">        data_cond.notify_one();</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">    * 从队列中弹出一个元素,如果队列为空就阻塞</span></div>
+<div class="line"><span class="comment">    * */</span></div>
+<div class="line"> </div>
+<div class="line">    value_type wait_and_pop() {</div>
+<div class="line">        std::unique_lock&lt;std::mutex&gt;lk(mut);</div>
+<div class="line">        data_cond.wait(lk, [<span class="keyword">this</span>]</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span> !this-&gt;data_queue.empty();</div>
+<div class="line">        });</div>
+<div class="line">        <span class="keyword">auto</span> value = std::move(data_queue.front());</div>
+<div class="line">        data_queue.pop();</div>
+<div class="line">        <span class="keywordflow">return</span> value;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">    * 从队列中弹出一个元素,如果队列为空返回false</span></div>
+<div class="line"><span class="comment">    * */</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">bool</span> try_pop(value_type&amp; value) {</div>
+<div class="line">        std::lock_guard&lt;std::mutex&gt;lk(mut);</div>
+<div class="line">        <span class="keywordflow">if</span> (data_queue.empty())</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line">        value = std::move(data_queue.front());</div>
+<div class="line">        data_queue.pop();</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">    * 返回队列是否为空</span></div>
+<div class="line"><span class="comment">    * */</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">auto</span> empty() const-&gt;decltype(data_queue.empty()) {</div>
+<div class="line">        std::lock_guard&lt;std::mutex&gt;lk(mut);</div>
+<div class="line">        <span class="keywordflow">return</span> data_queue.empty();</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">/*</span></div>
+<div class="line"><span class="comment">    * 返回队列中元素数个</span></div>
+<div class="line"><span class="comment">    * */</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">auto</span> size() const-&gt;decltype(data_queue.size()) {</div>
+<div class="line">        std::lock_guard&lt;std::mutex&gt;lk(mut);</div>
+<div class="line">        <span class="keywordflow">return</span> data_queue.size();</div>
+<div class="line">    }</div>
+<div class="line">}; <span class="comment">/* threadsafe_queue */</span></div>
+</div><!-- fragment --><p class="DocNodeLTR">&lt;/details&gt; </p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md37"></a>
+参考链接</h1>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;<a href="&#x202A;https://blog.csdn.net/10km/article/details/52067929">C++11:基于std::queue和std::mutex构建一个线程安全的队列</a></li>
+<li>&#x202A;<a href="&#x202A;https://codereview.stackexchange.com/questions/41604/thread-safe-concurrent-fifo-queue-in-c">Thread-safe concurrent FIFO queue in C++</a></li>
+<li>&#x202A;<a href="&#x202A;https://blog.csdn.net/bieleyang/article/details/78027032">Java多线程总结之线程安全队列Queue</a></li>
+<li>&#x202A;<a href="&#x202A;https://blog.csdn.net/liuxuejiang158blog/article/details/17301739">C++并发实战12：线程安全的queue</a> </li>
+</ol>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00950_html_a34d45f7666abe5308d3d8623a85b8f1c"><div class="ttname"><a href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;CQueue::_mutex</a></div><div class="ttdeci">&#x202A;std::mutex _mutex</div><div class="ttdoc">&#x202A;线程操作 锁</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00050">CQueue.h:50</a></div></div>
+<div class="ttc" id="aa00950_html_afa09bd6918457c409fcb25ea2da3f60d"><div class="ttname"><a href="../../df/d39/a00950.html#afa09bd6918457c409fcb25ea2da3f60d">&#x202A;CQueue::CQueue</a></div><div class="ttdeci">&#x202A;CQueue(const size_t size_max)</div><div class="ttdoc">&#x202A;初始化队列长度,并将退出标志和 满信号标志置空</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00072">CQueue.h:72</a></div></div>
+<div class="ttc" id="aa00950_html_abb949d05c89e26035e33619b5ebc48db"><div class="ttname"><a href="../../df/d39/a00950.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;CQueue::_size_max</a></div><div class="ttdeci">&#x202A;std::queue&lt; T &gt;::size_type _size_max</div><div class="ttdoc">&#x202A;队列的最大长度</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00048">CQueue.h:48</a></div></div>
+<div class="ttc" id="aa00950_html_a979820688e76c1997aa0d36d120df98f"><div class="ttname"><a href="../../df/d39/a00950.html#a979820688e76c1997aa0d36d120df98f">&#x202A;CQueue::Size</a></div><div class="ttdeci">&#x202A;int Size()</div><div class="ttdoc">&#x202A;Gets the Size 返回当前队列长度</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00309">CQueue.h:309</a></div></div>
+<div class="ttc" id="aa00950_html_a9b4d693618a5679ff27f58762549199a"><div class="ttname"><a href="../../df/d39/a00950.html#a9b4d693618a5679ff27f58762549199a">&#x202A;CQueue::Pop</a></div><div class="ttdeci">&#x202A;std::shared_ptr&lt; T &gt; Pop(void)</div><div class="ttdoc">&#x202A;弹出一个元素 直接返回 出错无法报错</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00223">CQueue.h:223</a></div></div>
+<div class="ttc" id="aa00950_html_a9ebd3370594a5d6c7c63863d4aa08964"><div class="ttname"><a href="../../df/d39/a00950.html#a9ebd3370594a5d6c7c63863d4aa08964">&#x202A;CQueue::Quit</a></div><div class="ttdeci">&#x202A;void Quit()</div><div class="ttdoc">&#x202A;Quits this CQueue 退出队列, 无法再加入压入或者弹出数据</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00275">CQueue.h:275</a></div></div>
+<div class="ttc" id="aa00950_html_a7916b9e86573d3fe1ff69a0cf2ba57e2"><div class="ttname"><a href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;CQueue::_fullQue</a></div><div class="ttdeci">&#x202A;std::condition_variable _fullQue</div><div class="ttdoc">&#x202A;队列满了的信号</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00051">CQueue.h:51</a></div></div>
+<div class="ttc" id="aa00950_html_aecb92693aa7f2b4eb791930203cc39ea"><div class="ttname"><a href="../../df/d39/a00950.html#aecb92693aa7f2b4eb791930203cc39ea">&#x202A;CQueue::Clear</a></div><div class="ttdeci">&#x202A;bool Clear(void)</div><div class="ttdoc">&#x202A;清空队列</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00350">CQueue.h:350</a></div></div>
+<div class="ttc" id="aa00950_html_a282e80149935f212e9c6c6e8ef9d7374"><div class="ttname"><a href="../../df/d39/a00950.html#a282e80149935f212e9c6c6e8ef9d7374">&#x202A;CQueue::Push</a></div><div class="ttdeci">&#x202A;bool Push(T &amp;data)</div><div class="ttdoc">&#x202A;队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00119">CQueue.h:119</a></div></div>
+<div class="ttc" id="aa00950_html_a731467755163891c27b0991e02cae72c"><div class="ttname"><a href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;CQueue::_quit</a></div><div class="ttdeci">&#x202A;std::atomic_bool _quit</div><div class="ttdoc">&#x202A;{ false }; // 退出信号</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00056">CQueue.h:56</a></div></div>
+<div class="ttc" id="aa00950_html_a17dbdf1f0bd8a2a88339ca6500ecccfd"><div class="ttname"><a href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;CQueue::_empty</a></div><div class="ttdeci">&#x202A;std::condition_variable _empty</div><div class="ttdoc">&#x202A;队列为空的信号</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00052">CQueue.h:52</a></div></div>
+<div class="ttc" id="aa00950_html"><div class="ttname"><a href="../../df/d39/a00950.html">&#x202A;CQueue</a></div><div class="ttdoc">&#x202A;Queue of cs.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00042">CQueue.h:42</a></div></div>
+<div class="ttc" id="aa00950_html_a4d55a1a82ab1aa26325a0c93e2603c3f"><div class="ttname"><a href="../../df/d39/a00950.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;CQueue::Empty</a></div><div class="ttdeci">&#x202A;bool Empty(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00326">CQueue.h:326</a></div></div>
+<div class="ttc" id="aa00950_html_a532385f9b87230d55650fe10b0259c57"><div class="ttname"><a href="../../df/d39/a00950.html#a532385f9b87230d55650fe10b0259c57">&#x202A;CQueue::Length</a></div><div class="ttdeci">&#x202A;int Length()</div><div class="ttdoc">&#x202A;Gets the Length 返回队列目前长度</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00293">CQueue.h:293</a></div></div>
+<div class="ttc" id="aa00950_html_a3d59f87a0110946f7391d816346a23dd"><div class="ttname"><a href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;CQueue::_queue</a></div><div class="ttdeci">&#x202A;std::queue&lt; T &gt; _queue</div><div class="ttdoc">&#x202A;存储数据的真实队列, 不是线程安全的</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00046">CQueue.h:46</a></div></div>
+<div class="ttc" id="aa00950_html_af85abc481df6d6325bde80e6019805b1"><div class="ttname"><a href="../../df/d39/a00950.html#af85abc481df6d6325bde80e6019805b1">&#x202A;CQueue::~CQueue</a></div><div class="ttdeci">&#x202A;~CQueue()</div><div class="ttdoc">&#x202A;Finalizes an instance of the CQueue class 销毁队列, 退出线程 清除数据 // 存在问题</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00099">CQueue.h:99</a></div></div>
+<div class="ttc" id="aa00950_html_a36aaded7a809ddcac8672d56b840afaa"><div class="ttname"><a href="../../df/d39/a00950.html#a36aaded7a809ddcac8672d56b840afaa">&#x202A;CQueue::Finished</a></div><div class="ttdeci">&#x202A;void Finished()</div><div class="ttdoc">&#x202A;The queue has Finished accepting input 标识队列完成输入 不再继续输入</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00260">CQueue.h:260</a></div></div>
+<div class="ttc" id="aa00950_html_a7831c704ce59d01acb76eb0d501aae12"><div class="ttname"><a href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;CQueue::_finished</a></div><div class="ttdeci">&#x202A;std::atomic_bool _finished</div><div class="ttdoc">&#x202A;{ false }; // 完成信号 // 表示不再继续输入数据</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00057">CQueue.h:57</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

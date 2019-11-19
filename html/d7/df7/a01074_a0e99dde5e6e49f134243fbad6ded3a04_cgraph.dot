@@ -1,0 +1,10 @@
+digraph "WorkWindow::~WorkWindow"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="WorkWindow::~WorkWindow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Finalizes an instance of the WorkWindow class"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="releaseThread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d45/a00011.html#a26dca4d5b5d146ab29a61dbd9876603d",tooltip="停止进程并同时 删除对象 循环进程"];
+}

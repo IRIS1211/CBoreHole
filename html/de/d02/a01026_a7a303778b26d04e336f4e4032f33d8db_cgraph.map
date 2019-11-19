@@ -1,0 +1,4 @@
+<map id="MySerial::OpenSerialPort" name="MySerial::OpenSerialPort">
+<area shape="rect" id="node1" title="打开 串口" alt="" coords="5,5,175,32"/>
+<area shape="rect" id="node2" href="$de/d02/a01026.html#a19b5760f5593fb3f34a270cc82016fcc" title="设置串口" alt="" coords="223,5,375,32"/>
+</map>

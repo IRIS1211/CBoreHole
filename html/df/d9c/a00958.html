@@ -1,0 +1,811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;threadsafe_queue&lt; T &gt; 模板类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.4.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('df/d9c/a00958.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-types">Private 类型</a> &#124;
+<a href="#pri-attribs">Private 属性</a>  </div>
+  <div class="headertitle">
+<div class="title">threadsafe_queue&lt; T &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>&#x202A;<a class="el" href="../../d8/d84/a00001.html#d5/df4/a01322" title="&#x202A;线程安全队列实现">Queue</a> of threadsafes.  
+ <a href="../../df/d9c/a00958.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/db2/a00020_source.html">Code\inc\CQueue.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a83a2200876cda8128072e0e352a31c97"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">value_type</a> = typename queue_type::value_type</td></tr>
+<tr class="memdesc:a83a2200876cda8128072e0e352a31c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Type of the value  <a href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">更多...</a><br /></td></tr>
+<tr class="separator:a83a2200876cda8128072e0e352a31c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa729a41343d257bf7643feff3110aa20"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#aa729a41343d257bf7643feff3110aa20">container_type</a> = typename queue_type::container_type</td></tr>
+<tr class="memdesc:aa729a41343d257bf7643feff3110aa20"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Type of the container  <a href="../../df/d9c/a00958.html#aa729a41343d257bf7643feff3110aa20">更多...</a><br /></td></tr>
+<tr class="separator:aa729a41343d257bf7643feff3110aa20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7ff89ec2b146599f88c6d7c77d1dd9e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#a7ff89ec2b146599f88c6d7c77d1dd9e0">threadsafe_queue</a> ()=default</td></tr>
+<tr class="memdesc:a7ff89ec2b146599f88c6d7c77d1dd9e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../df/d9c/a00958.html" title="&#x202A;Queue of threadsafes.">threadsafe_queue</a> class  <a href="../../df/d9c/a00958.html#a7ff89ec2b146599f88c6d7c77d1dd9e0">更多...</a><br /></td></tr>
+<tr class="separator:a7ff89ec2b146599f88c6d7c77d1dd9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07a99c83bf4985beec35b011bdee488"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#aa07a99c83bf4985beec35b011bdee488">threadsafe_queue</a> (const <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a> &amp;)=delete</td></tr>
+<tr class="memdesc:aa07a99c83bf4985beec35b011bdee488"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../df/d9c/a00958.html" title="&#x202A;Queue of threadsafes.">threadsafe_queue</a> class  <a href="../../df/d9c/a00958.html#aa07a99c83bf4985beec35b011bdee488">更多...</a><br /></td></tr>
+<tr class="separator:aa07a99c83bf4985beec35b011bdee488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af039f7a0ca09536e909b8a0ff2522757"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#af039f7a0ca09536e909b8a0ff2522757">operator=</a> (const <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a> &amp;)=delete</td></tr>
+<tr class="memdesc:af039f7a0ca09536e909b8a0ff2522757"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Assignment operator  <a href="../../df/d9c/a00958.html#af039f7a0ca09536e909b8a0ff2522757">更多...</a><br /></td></tr>
+<tr class="separator:af039f7a0ca09536e909b8a0ff2522757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae480757fabc0dcaf5b8d706ae426306a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#ae480757fabc0dcaf5b8d706ae426306a">threadsafe_queue</a> (_InputIterator first, _InputIterator last)</td></tr>
+<tr class="memdesc:ae480757fabc0dcaf5b8d706ae426306a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../df/d9c/a00958.html" title="&#x202A;Queue of threadsafes.">threadsafe_queue</a> class  <a href="../../df/d9c/a00958.html#ae480757fabc0dcaf5b8d706ae426306a">更多...</a><br /></td></tr>
+<tr class="separator:ae480757fabc0dcaf5b8d706ae426306a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad272b92ce4c569533e289f68a910cd0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#ad272b92ce4c569533e289f68a910cd0a">threadsafe_queue</a> (const <a class="el" href="../../df/d9c/a00958.html#aa729a41343d257bf7643feff3110aa20">container_type</a> &amp;c)</td></tr>
+<tr class="memdesc:ad272b92ce4c569533e289f68a910cd0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../df/d9c/a00958.html" title="&#x202A;Queue of threadsafes.">threadsafe_queue</a> class  <a href="../../df/d9c/a00958.html#ad272b92ce4c569533e289f68a910cd0a">更多...</a><br /></td></tr>
+<tr class="separator:ad272b92ce4c569533e289f68a910cd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85fcddb0e54c6d999a648b0cc1ce0b37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#a85fcddb0e54c6d999a648b0cc1ce0b37">threadsafe_queue</a> (std::initializer_list&lt; <a class="el" href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">value_type</a> &gt; list)</td></tr>
+<tr class="memdesc:a85fcddb0e54c6d999a648b0cc1ce0b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../df/d9c/a00958.html" title="&#x202A;Queue of threadsafes.">threadsafe_queue</a> class  <a href="../../df/d9c/a00958.html#a85fcddb0e54c6d999a648b0cc1ce0b37">更多...</a><br /></td></tr>
+<tr class="separator:a85fcddb0e54c6d999a648b0cc1ce0b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f237071976807a482e3f0b2dc5e664"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#ae6f237071976807a482e3f0b2dc5e664">push</a> (const <a class="el" href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">value_type</a> &amp;new_value)</td></tr>
+<tr class="memdesc:ae6f237071976807a482e3f0b2dc5e664"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Pushes an object onto this stack  <a href="../../df/d9c/a00958.html#ae6f237071976807a482e3f0b2dc5e664">更多...</a><br /></td></tr>
+<tr class="separator:ae6f237071976807a482e3f0b2dc5e664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab89cfd156304da4221d5009c952e3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#a6ab89cfd156304da4221d5009c952e3e">wait_and_pop</a> ()</td></tr>
+<tr class="memdesc:a6ab89cfd156304da4221d5009c952e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Wait and pop  <a href="../../df/d9c/a00958.html#a6ab89cfd156304da4221d5009c952e3e">更多...</a><br /></td></tr>
+<tr class="separator:a6ab89cfd156304da4221d5009c952e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f1bf6191aa4c44f66241358b07e5e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#aa9f1bf6191aa4c44f66241358b07e5e9">try_pop</a> (<a class="el" href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">value_type</a> &amp;value)</td></tr>
+<tr class="memdesc:aa9f1bf6191aa4c44f66241358b07e5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Attempts to pop  <a href="../../df/d9c/a00958.html#aa9f1bf6191aa4c44f66241358b07e5e9">更多...</a><br /></td></tr>
+<tr class="separator:aa9f1bf6191aa4c44f66241358b07e5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54775089e076c3577748d3fe5aa4ef7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#ab54775089e076c3577748d3fe5aa4ef7">empty</a> () const -&gt; decltype(data_queue.empty())</td></tr>
+<tr class="memdesc:ab54775089e076c3577748d3fe5aa4ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets the empty  <a href="../../df/d9c/a00958.html#ab54775089e076c3577748d3fe5aa4ef7">更多...</a><br /></td></tr>
+<tr class="separator:ab54775089e076c3577748d3fe5aa4ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333a1561bb742555739119f03b991f9b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#a333a1561bb742555739119f03b991f9b">size</a> () const -&gt; decltype(data_queue.size())</td></tr>
+<tr class="separator:a333a1561bb742555739119f03b991f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private 类型</h2></td></tr>
+<tr class="memitem:a0e6c6189e3f08a550df3b686cc3d7c56"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#a0e6c6189e3f08a550df3b686cc3d7c56">queue_type</a> = std::queue&lt; T &gt;</td></tr>
+<tr class="memdesc:a0e6c6189e3f08a550df3b686cc3d7c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Type of the queue  <a href="../../df/d9c/a00958.html#a0e6c6189e3f08a550df3b686cc3d7c56">更多...</a><br /></td></tr>
+<tr class="separator:a0e6c6189e3f08a550df3b686cc3d7c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ab7a0b37845981b988c23845fc9699275"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#ab7a0b37845981b988c23845fc9699275">mut</a></td></tr>
+<tr class="memdesc:ab7a0b37845981b988c23845fc9699275"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;data_queue访问信号量  <a href="../../df/d9c/a00958.html#ab7a0b37845981b988c23845fc9699275">更多...</a><br /></td></tr>
+<tr class="separator:ab7a0b37845981b988c23845fc9699275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bef65f7001c06cf7dbc9d013d97d8ee"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#a5bef65f7001c06cf7dbc9d013d97d8ee">data_cond</a></td></tr>
+<tr class="memdesc:a5bef65f7001c06cf7dbc9d013d97d8ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets the data condition  <a href="../../df/d9c/a00958.html#a5bef65f7001c06cf7dbc9d013d97d8ee">更多...</a><br /></td></tr>
+<tr class="separator:a5bef65f7001c06cf7dbc9d013d97d8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97121ebc287a936c5e9590b374cd624a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9c/a00958.html#a0e6c6189e3f08a550df3b686cc3d7c56">queue_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">data_queue</a></td></tr>
+<tr class="memdesc:a97121ebc287a936c5e9590b374cd624a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;<a class="el" href="../../d8/d84/a00001.html#d5/df4/a01322" title="&#x202A;线程安全队列实现">Queue</a> of data  <a href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">更多...</a><br /></td></tr>
+<tr class="separator:a97121ebc287a936c5e9590b374cd624a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class threadsafe_queue&lt; T &gt;</h3>
+
+<p class="DocNodeLTR"><a class="el" href="../../d8/d84/a00001.html#d5/df4/a01322" title="&#x202A;线程安全队列实现">Queue</a> of threadsafes. </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00578">578</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="aa729a41343d257bf7643feff3110aa20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa729a41343d257bf7643feff3110aa20">&#9670;&nbsp;</a></span>container_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::<a class="el" href="../../df/d9c/a00958.html#aa729a41343d257bf7643feff3110aa20">container_type</a> =  typename queue_type::container_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Type of the container </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00605">605</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0e6c6189e3f08a550df3b686cc3d7c56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6c6189e3f08a550df3b686cc3d7c56">&#9670;&nbsp;</a></span>queue_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::<a class="el" href="../../df/d9c/a00958.html#a0e6c6189e3f08a550df3b686cc3d7c56">queue_type</a> =  std::queue&lt;T&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Type of the queue </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00601">601</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a83a2200876cda8128072e0e352a31c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a2200876cda8128072e0e352a31c97">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::<a class="el" href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">value_type</a> =  typename queue_type::value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Type of the value </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00604">604</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a7ff89ec2b146599f88c6d7c77d1dd9e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff89ec2b146599f88c6d7c77d1dd9e0">&#9670;&nbsp;</a></span>threadsafe_queue() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::<a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../df/d9c/a00958.html" title="&#x202A;Queue of threadsafes.">threadsafe_queue</a> class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17 </dd></dl>
+
+</div>
+</div>
+<a id="aa07a99c83bf4985beec35b011bdee488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa07a99c83bf4985beec35b011bdee488">&#9670;&nbsp;</a></span>threadsafe_queue() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::<a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../df/d9c/a00958.html" title="&#x202A;Queue of threadsafes.">threadsafe_queue</a> class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter1</td><td>&#x202A;The first parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae480757fabc0dcaf5b8d706ae426306a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae480757fabc0dcaf5b8d706ae426306a">&#9670;&nbsp;</a></span>threadsafe_queue() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _InputIterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; _InputIterator &gt;::<a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a> </td>
+          <td>(</td>
+          <td class="paramtype">_InputIterator&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_InputIterator&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../df/d9c/a00958.html" title="&#x202A;Queue of threadsafes.">threadsafe_queue</a> class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>&#x202A;The first </td></tr>
+    <tr><td class="paramname">last</td><td>&#x202A;The last </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00662">662</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                                                                {</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> itor = first; itor != last; ++itor)</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        {</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;            <a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>.push(*itor);</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        }</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad272b92ce4c569533e289f68a910cd0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad272b92ce4c569533e289f68a910cd0a">&#9670;&nbsp;</a></span>threadsafe_queue() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::<a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d9c/a00958.html#aa729a41343d257bf7643feff3110aa20">container_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../df/d9c/a00958.html" title="&#x202A;Queue of threadsafes.">threadsafe_queue</a> class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>&#x202A;A container_type to process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00680">680</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;:<a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>(c) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a85fcddb0e54c6d999a648b0cc1ce0b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85fcddb0e54c6d999a648b0cc1ce0b37">&#9670;&nbsp;</a></span>threadsafe_queue() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::<a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">value_type</a> &gt;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../df/d9c/a00958.html" title="&#x202A;Queue of threadsafes.">threadsafe_queue</a> class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>&#x202A;The list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00696">696</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                                                           :<a class="code" href="../../df/d9c/a00958.html#a7ff89ec2b146599f88c6d7c77d1dd9e0">&#x202A;threadsafe_queue</a>(list.begin(), list.end()) {</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab54775089e076c3577748d3fe5aa4ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54775089e076c3577748d3fe5aa4ef7">&#9670;&nbsp;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; decltype(data_queue.empty()) </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets the empty </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An auto </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00783">783</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;                                                     {</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        std::lock_guard&lt;std::mutex&gt;lk(<a class="code" href="../../df/d9c/a00958.html#ab7a0b37845981b988c23845fc9699275">&#x202A;mut</a>);</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>.empty();</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af039f7a0ca09536e909b8a0ff2522757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af039f7a0ca09536e909b8a0ff2522757">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a> &amp; <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Assignment operator </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter1</td><td>&#x202A;The first parameter</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A shallow copy of this object </dd></dl>
+
+</div>
+</div>
+<a id="ae6f237071976807a482e3f0b2dc5e664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f237071976807a482e3f0b2dc5e664">&#9670;&nbsp;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::push </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>new_value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Pushes an object onto this stack </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_value</td><td>&#x202A;The new value to push </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00713">713</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                                           {</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        std::lock_guard&lt;std::mutex&gt;lk(<a class="code" href="../../df/d9c/a00958.html#ab7a0b37845981b988c23845fc9699275">&#x202A;mut</a>);</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        <a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>.push(std::move(new_value));</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        <a class="code" href="../../df/d9c/a00958.html#a5bef65f7001c06cf7dbc9d013d97d8ee">&#x202A;data_cond</a>.notify_one();</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a333a1561bb742555739119f03b991f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333a1561bb742555739119f03b991f9b">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; decltype(data_queue.size()) </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00802">802</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;                                                   {</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;        std::lock_guard&lt;std::mutex&gt;lk(<a class="code" href="../../df/d9c/a00958.html#ab7a0b37845981b988c23845fc9699275">&#x202A;mut</a>);</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>.size();</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa9f1bf6191aa4c44f66241358b07e5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f1bf6191aa4c44f66241358b07e5e9">&#9670;&nbsp;</a></span>try_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::try_pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Attempts to pop </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">value</td><td>&#x202A;The value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00760">760</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;                                    {</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        std::lock_guard&lt;std::mutex&gt;lk(<a class="code" href="../../df/d9c/a00958.html#ab7a0b37845981b988c23845fc9699275">&#x202A;mut</a>);</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>.empty())</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        value = std::move(<a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>.front());</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        <a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>.pop();</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6ab89cfd156304da4221d5009c952e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ab89cfd156304da4221d5009c952e3e">&#9670;&nbsp;</a></span>wait_and_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/a00958.html#a83a2200876cda8128072e0e352a31c97">value_type</a> <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::wait_and_pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Wait and pop </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A value_type </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00733">733</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                              {</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        std::unique_lock&lt;std::mutex&gt;lk(<a class="code" href="../../df/d9c/a00958.html#ab7a0b37845981b988c23845fc9699275">&#x202A;mut</a>);</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        <a class="code" href="../../df/d9c/a00958.html#a5bef65f7001c06cf7dbc9d013d97d8ee">&#x202A;data_cond</a>.wait(lk, [<span class="keyword">this</span>]</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        {</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;            <span class="keywordflow">return</span> !this-&gt;<a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>.empty();</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        });</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        <span class="keyword">auto</span> value = std::move(<a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>.front());</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        <a class="code" href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;data_queue</a>.pop();</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a5bef65f7001c06cf7dbc9d013d97d8ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bef65f7001c06cf7dbc9d013d97d8ee">&#9670;&nbsp;</a></span>data_cond</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::condition_variable <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::data_cond</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets the data condition </p>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The data condition </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00600">600</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a97121ebc287a936c5e9590b374cd624a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97121ebc287a936c5e9590b374cd624a">&#9670;&nbsp;</a></span>data_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/a00958.html#a0e6c6189e3f08a550df3b686cc3d7c56">queue_type</a> <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::data_queue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;<a class="el" href="../../d8/d84/a00001.html#d5/df4/a01322" title="&#x202A;线程安全队列实现">Queue</a> of data </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00602">602</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab7a0b37845981b988c23845fc9699275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a0b37845981b988c23845fc9699275">&#9670;&nbsp;</a></span>mut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex <a class="el" href="../../df/d9c/a00958.html">threadsafe_queue</a>&lt; T &gt;::mut</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;data_queue访问信号量 </p>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The mut </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00590">590</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00958_html_ab7a0b37845981b988c23845fc9699275"><div class="ttname"><a href="../../df/d9c/a00958.html#ab7a0b37845981b988c23845fc9699275">&#x202A;threadsafe_queue::mut</a></div><div class="ttdeci">&#x202A;std::mutex mut</div><div class="ttdoc">&#x202A;data_queue访问信号量</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00590">CQueue.h:590</a></div></div>
+<div class="ttc" id="aa00958_html_a5bef65f7001c06cf7dbc9d013d97d8ee"><div class="ttname"><a href="../../df/d9c/a00958.html#a5bef65f7001c06cf7dbc9d013d97d8ee">&#x202A;threadsafe_queue::data_cond</a></div><div class="ttdeci">&#x202A;std::condition_variable data_cond</div><div class="ttdoc">&#x202A;Gets the data condition</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00600">CQueue.h:600</a></div></div>
+<div class="ttc" id="aa00958_html_a7ff89ec2b146599f88c6d7c77d1dd9e0"><div class="ttname"><a href="../../df/d9c/a00958.html#a7ff89ec2b146599f88c6d7c77d1dd9e0">&#x202A;threadsafe_queue::threadsafe_queue</a></div><div class="ttdeci">&#x202A;threadsafe_queue()=default</div><div class="ttdoc">&#x202A;Initializes a new instance of the threadsafe_queue class</div></div>
+<div class="ttc" id="aa00958_html_a97121ebc287a936c5e9590b374cd624a"><div class="ttname"><a href="../../df/d9c/a00958.html#a97121ebc287a936c5e9590b374cd624a">&#x202A;threadsafe_queue::data_queue</a></div><div class="ttdeci">&#x202A;queue_type data_queue</div><div class="ttdoc">&#x202A;Queue of data</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00602">CQueue.h:602</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../df/d9c/a00958.html">&#x202A;threadsafe_queue</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

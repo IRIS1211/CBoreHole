@@ -1,0 +1,10 @@
+digraph "EXT::EXT"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="EXT::EXT",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Initializes a new instance of the EXT class"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="EXT::LoadDefault",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d88/a00962.html#aa24a0dcdf4d736ae56136bae3d1aeffc",tooltip="加载默认参数 // 其他信息每行不一样 长度取 1080*3+28 == 3268 == 0x0CC4 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 1..."];
+}

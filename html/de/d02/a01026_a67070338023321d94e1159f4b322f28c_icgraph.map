@@ -1,0 +1,7 @@
+<map id="MySerial::CloseSerialPort" name="MySerial::CloseSerialPort">
+<area shape="rect" id="node1" title="关闭串口" alt="" coords="392,56,563,83"/>
+<area shape="rect" id="node2" href="$de/d02/a01026.html#a33ca8de10a68c0a405d4fd858c7348fd" title="Handles the error described by error" alt="" coords="190,5,339,32"/>
+<area shape="rect" id="node4" href="$de/db1/a00197.html#a365c5f87d11776070cbbc7756f50f2b1" title=" " alt="" coords="216,56,313,83"/>
+<area shape="rect" id="node5" href="$d9/df5/a01086.html#a8c9cfbdd12fb45435643a31d809d9f3c" title=" " alt="" coords="185,107,344,133"/>
+<area shape="rect" id="node3" href="$de/d02/a01026.html#afb6dc5f937b25f5ee2e43fe1b2c28e09" title="Initializes a new instance of the MySerial class" alt="" coords="5,5,137,32"/>
+</map>

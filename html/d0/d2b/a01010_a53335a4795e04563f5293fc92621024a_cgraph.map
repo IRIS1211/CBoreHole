@@ -1,0 +1,7 @@
+<map id="CSerialPort::ListenThread" name="CSerialPort::ListenThread">
+<area shape="rect" id="node1" title="串口监听线程" alt="" coords="5,81,176,108"/>
+<area shape="rect" id="node2" href="$d2/de7/a00014.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="276,5,363,32"/>
+<area shape="rect" id="node3" href="$d2/de7/a00014.html#a2bccd732252a844a62b3e0bdc7de82d8" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="267,56,372,83"/>
+<area shape="rect" id="node4" href="$d0/d2b/a01010.html#abb85234d6f6d3774c8010fae51f7722f" title="获取串口缓冲区中的字节数" alt="" coords="224,107,415,133"/>
+<area shape="rect" id="node5" href="$d0/d2b/a01010.html#a5c37ce285506e5b69b6c900c406f37b7" title="读取串口接收缓冲区中一个字节的数据" alt="" coords="243,157,396,184"/>
+</map>

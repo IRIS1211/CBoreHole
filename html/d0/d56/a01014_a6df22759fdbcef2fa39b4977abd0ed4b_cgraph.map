@@ -1,0 +1,6 @@
+<map id="MySerial::ReadData" name="MySerial::ReadData">
+<area shape="rect" id="node1" title="Reads the data" alt="" coords="5,56,144,83"/>
+<area shape="rect" id="node2" href="$da/d45/a00011.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="192,5,304,32"/>
+<area shape="rect" id="node3" href="$d2/de7/a00014.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="205,56,291,83"/>
+<area shape="rect" id="node4" href="$df/d39/a00950.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="195,107,301,133"/>
+</map>

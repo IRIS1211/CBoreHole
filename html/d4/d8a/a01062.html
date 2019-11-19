@@ -1,0 +1,921 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;ThreadQueue&lt; Object &gt; 模板类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.4.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d4/d8a/a01062.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a>  </div>
+  <div class="headertitle">
+<div class="title">ThreadQueue&lt; Object &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>&#x202A;<a class="el" href="../../d8/d84/a00001.html#d7/d8c/a01306" title="&#x202A;线程安全队列实现">Queue</a> of threads.  
+ <a href="../../d4/d8a/a01062.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d9/d2e/a00056_source.html">Code\inc\ThreadQueue.h</a>&gt;</code></p>
+<div class="dynheader">
+类 ThreadQueue&lt; Object &gt; 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d9e/a01061.png" border="0" usemap="#_thread_queue_3_01_object_01_4_inherit__map" alt="Inheritance graph"/></div>
+<!-- MAP 0 -->
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+ThreadQueue&lt; Object &gt; 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d16/a01060.png" border="0" usemap="#_thread_queue_3_01_object_01_4_coll__map" alt="Collaboration graph"/></div>
+<!-- MAP 1 -->
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0e7f0a674ddcf61ea8ee6dd4aaed918b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#a0e7f0a674ddcf61ea8ee6dd4aaed918b">ThreadQueue</a> (int qSize=<a class="el" href="../../d9/d2e/a00056.html#a9771cabfd673a8e350f1f8ce0b8f458f">DEFAULT_SIZE</a>)</td></tr>
+<tr class="memdesc:a0e7f0a674ddcf61ea8ee6dd4aaed918b"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../d4/d8a/a01062.html" title="&#x202A;Queue of threads.">ThreadQueue</a> class  <a href="../../d4/d8a/a01062.html#a0e7f0a674ddcf61ea8ee6dd4aaed918b">更多...</a><br /></td></tr>
+<tr class="separator:a0e7f0a674ddcf61ea8ee6dd4aaed918b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9bb6b36d96a240f6827551d6df413ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#aa9bb6b36d96a240f6827551d6df413ec">~ThreadQueue</a> ()</td></tr>
+<tr class="memdesc:aa9bb6b36d96a240f6827551d6df413ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Finalizes an instance of the <a class="el" href="../../d4/d8a/a01062.html" title="&#x202A;Queue of threads.">ThreadQueue</a> class  <a href="../../d4/d8a/a01062.html#aa9bb6b36d96a240f6827551d6df413ec">更多...</a><br /></td></tr>
+<tr class="separator:aa9bb6b36d96a240f6827551d6df413ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4519f732c9728eefb866274a30370c4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#a4519f732c9728eefb866274a30370c4e">Enter</a> (Object *obj)</td></tr>
+<tr class="memdesc:a4519f732c9728eefb866274a30370c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Enters the given object  <a href="../../d4/d8a/a01062.html#a4519f732c9728eefb866274a30370c4e">更多...</a><br /></td></tr>
+<tr class="separator:a4519f732c9728eefb866274a30370c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601dea6d7a0ac7065e82c082d6925b9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#a601dea6d7a0ac7065e82c082d6925b9a">EnterObj</a> (Object &amp;obj)</td></tr>
+<tr class="memdesc:a601dea6d7a0ac7065e82c082d6925b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Enter object  <a href="../../d4/d8a/a01062.html#a601dea6d7a0ac7065e82c082d6925b9a">更多...</a><br /></td></tr>
+<tr class="separator:a601dea6d7a0ac7065e82c082d6925b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8986765a7b79b6054d351616c991f100"><td class="memItemLeft" align="right" valign="top">Object *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#a8986765a7b79b6054d351616c991f100">Out</a> ()</td></tr>
+<tr class="memdesc:a8986765a7b79b6054d351616c991f100"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets the out  <a href="../../d4/d8a/a01062.html#a8986765a7b79b6054d351616c991f100">更多...</a><br /></td></tr>
+<tr class="separator:a8986765a7b79b6054d351616c991f100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b5c146156a3c86bed71bd96580fa3e"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#a37b5c146156a3c86bed71bd96580fa3e">OutObj</a> ()</td></tr>
+<tr class="memdesc:a37b5c146156a3c86bed71bd96580fa3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Out object  <a href="../../d4/d8a/a01062.html#a37b5c146156a3c86bed71bd96580fa3e">更多...</a><br /></td></tr>
+<tr class="separator:a37b5c146156a3c86bed71bd96580fa3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40a436dfc3c2bedd4ceb2c465fe3b95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#af40a436dfc3c2bedd4ceb2c465fe3b95">IsEmpty</a> ()</td></tr>
+<tr class="memdesc:af40a436dfc3c2bedd4ceb2c465fe3b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Query if this object is empty  <a href="../../d4/d8a/a01062.html#af40a436dfc3c2bedd4ceb2c465fe3b95">更多...</a><br /></td></tr>
+<tr class="separator:af40a436dfc3c2bedd4ceb2c465fe3b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e69e4e3c3cfdffa01e9adbc6f3c328"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#a84e69e4e3c3cfdffa01e9adbc6f3c328">IsFull</a> ()</td></tr>
+<tr class="memdesc:a84e69e4e3c3cfdffa01e9adbc6f3c328"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Query if this object is full  <a href="../../d4/d8a/a01062.html#a84e69e4e3c3cfdffa01e9adbc6f3c328">更多...</a><br /></td></tr>
+<tr class="separator:a84e69e4e3c3cfdffa01e9adbc6f3c328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512d2e2988c5a845fd38d13020e4d6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#a512d2e2988c5a845fd38d13020e4d6e0">clear</a> ()</td></tr>
+<tr class="memdesc:a512d2e2988c5a845fd38d13020e4d6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Clears this object to its blank/initial state  <a href="../../d4/d8a/a01062.html#a512d2e2988c5a845fd38d13020e4d6e0">更多...</a><br /></td></tr>
+<tr class="separator:a512d2e2988c5a845fd38d13020e4d6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104678e1c6363e2719cca591e0ed6eab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#a104678e1c6363e2719cca591e0ed6eab">size</a> ()</td></tr>
+<tr class="memdesc:a104678e1c6363e2719cca591e0ed6eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets the size  <a href="../../d4/d8a/a01062.html#a104678e1c6363e2719cca591e0ed6eab">更多...</a><br /></td></tr>
+<tr class="separator:a104678e1c6363e2719cca591e0ed6eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ab753d883552d3ca75572b71666537a45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">front</a></td></tr>
+<tr class="memdesc:ab753d883552d3ca75572b71666537a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;The front  <a href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">更多...</a><br /></td></tr>
+<tr class="separator:ab753d883552d3ca75572b71666537a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ae51ef9877c0498c3dee39a6dcd566"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">rear</a></td></tr>
+<tr class="memdesc:ab0ae51ef9877c0498c3dee39a6dcd566"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;The rear  <a href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">更多...</a><br /></td></tr>
+<tr class="separator:ab0ae51ef9877c0498c3dee39a6dcd566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36cb1eac3f3faa58f5f14bb7080739c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#ac36cb1eac3f3faa58f5f14bb7080739c">mSize</a></td></tr>
+<tr class="memdesc:ac36cb1eac3f3faa58f5f14bb7080739c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;The size  <a href="../../d4/d8a/a01062.html#ac36cb1eac3f3faa58f5f14bb7080739c">更多...</a><br /></td></tr>
+<tr class="separator:ac36cb1eac3f3faa58f5f14bb7080739c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d533f4c148eeb978d346613c76d8a1e"><td class="memItemLeft" align="right" valign="top">Object **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#a8d533f4c148eeb978d346613c76d8a1e">list</a></td></tr>
+<tr class="memdesc:a8d533f4c148eeb978d346613c76d8a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;存储 object * 数据的数组指针  <a href="../../d4/d8a/a01062.html#a8d533f4c148eeb978d346613c76d8a1e">更多...</a><br /></td></tr>
+<tr class="separator:a8d533f4c148eeb978d346613c76d8a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6834249c21a1441ee04040f1622d47d"><td class="memItemLeft" align="right" valign="top">Object *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#ac6834249c21a1441ee04040f1622d47d">mList</a></td></tr>
+<tr class="memdesc:ac6834249c21a1441ee04040f1622d47d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;存储数据  <a href="../../d4/d8a/a01062.html#ac6834249c21a1441ee04040f1622d47d">更多...</a><br /></td></tr>
+<tr class="separator:ac6834249c21a1441ee04040f1622d47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa87b5c0134a800d932099268a77f88e"><td class="memItemLeft" align="right" valign="top">QMutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">queueMutex</a></td></tr>
+<tr class="memdesc:afa87b5c0134a800d932099268a77f88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;The queue mutex  <a href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">更多...</a><br /></td></tr>
+<tr class="separator:afa87b5c0134a800d932099268a77f88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;class Object&gt;<br />
+class ThreadQueue&lt; Object &gt;</h3>
+
+<p class="DocNodeLTR"><a class="el" href="../../d8/d84/a00001.html#d7/d8c/a01306" title="&#x202A;线程安全队列实现">Queue</a> of threads. </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00049">49</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a0e7f0a674ddcf61ea8ee6dd4aaed918b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7f0a674ddcf61ea8ee6dd4aaed918b">&#9670;&nbsp;</a></span>ThreadQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::<a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>qSize</em> = <code><a class="el" href="../../d9/d2e/a00056.html#a9771cabfd673a8e350f1f8ce0b8f458f">DEFAULT_SIZE</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../d4/d8a/a01062.html" title="&#x202A;Queue of threads.">ThreadQueue</a> class </p>
+<p class="DocNodeLTR">Initializes a new instance of the <a class="el" href="../../d4/d8a/a01062.html" title="&#x202A;Queue of threads.">ThreadQueue</a>&lt;Object&gt; class</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qSize</td><td>&#x202A;(Optional) The size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>&#x202A;Type of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">qSize</td><td>&#x202A;The size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00210">210</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;{</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">// 判断值是否符合 要求值 否则 使用默认值</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">if</span> (qSize &lt;= 0 || qSize &gt; 100)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        qSize = 10;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;front</a> = <a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a> = 0;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#ac36cb1eac3f3faa58f5f14bb7080739c">&#x202A;mSize</a> = qSize;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">// 动态初始化 list 尺寸</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#a8d533f4c148eeb978d346613c76d8a1e">&#x202A;list</a> = <span class="keyword">new</span> Object* [qSize]; <span class="comment">// 动态初始化 设定尺寸的 object* 指针数组</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#ac6834249c21a1441ee04040f1622d47d">&#x202A;mList</a> = <span class="keyword">new</span> Object[qSize];</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.lock();</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.unlock();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment">// pthread_mutex_lock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa9bb6b36d96a240f6827551d6df413ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9bb6b36d96a240f6827551d6df413ec">&#9670;&nbsp;</a></span>~ThreadQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::~<a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Finalizes an instance of the <a class="el" href="../../d4/d8a/a01062.html" title="&#x202A;Queue of threads.">ThreadQueue</a> class </p>
+<p class="DocNodeLTR">Finalizes an instance of the <a class="el" href="../../d4/d8a/a01062.html" title="&#x202A;Queue of threads.">ThreadQueue</a>&lt;Object&gt; class</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>&#x202A;Type of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00483">483</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;{</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keyword">delete</span>[]<a class="code" href="../../d4/d8a/a01062.html#a8d533f4c148eeb978d346613c76d8a1e">&#x202A;list</a>;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a512d2e2988c5a845fd38d13020e4d6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a512d2e2988c5a845fd38d13020e4d6e0">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Clears this object to its blank/initial state </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>&#x202A;Type of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00464">464</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;{</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keywordflow">while</span> (!<a class="code" href="../../d4/d8a/a01062.html#af40a436dfc3c2bedd4ceb2c465fe3b95">&#x202A;IsEmpty</a>())</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <a class="code" href="../../d4/d8a/a01062.html#a37b5c146156a3c86bed71bd96580fa3e">&#x202A;OutObj</a>();</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8a/a01062_a512d2e2988c5a845fd38d13020e4d6e0_icgraph.png" border="0" usemap="#d4/d8a/a01062_a512d2e2988c5a845fd38d13020e4d6e0_icgraph" alt=""/></div>
+<!-- MAP 2 -->
+</div>
+
+</div>
+</div>
+<a id="a4519f732c9728eefb866274a30370c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4519f732c9728eefb866274a30370c4e">&#9670;&nbsp;</a></span>Enter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::Enter </td>
+          <td>(</td>
+          <td class="paramtype">Object *&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Enters the given object </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">obj</td><td>&#x202A;If non-null, the object</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>&#x202A;Type of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">obj</td><td>&#x202A;If non-null, the object</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00245">245</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;{</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.lock();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="comment">// pthread_mutex_lock(&amp;queueMutex); \n queueMutex.lock();</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8a/a01062.html#a84e69e4e3c3cfdffa01e9adbc6f3c328">&#x202A;IsFull</a>())</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="comment">// cout &lt;&lt; &quot;Queue is full!&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="comment">// pthread_mutex_unlock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.unlock();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#a8d533f4c148eeb978d346613c76d8a1e">&#x202A;list</a>[<a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a>] = obj;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a> = (<a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a> + 1) % <a class="code" href="../../d4/d8a/a01062.html#ac36cb1eac3f3faa58f5f14bb7080739c">&#x202A;mSize</a>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="comment">// pthread_mutex_unlock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.unlock();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a601dea6d7a0ac7065e82c082d6925b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601dea6d7a0ac7065e82c082d6925b9a">&#9670;&nbsp;</a></span>EnterObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::EnterObj </td>
+          <td>(</td>
+          <td class="paramtype">Object &amp;&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Enter object </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">obj</td><td>&#x202A;The object</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>&#x202A;Type of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">obj</td><td>&#x202A;The object</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00283">283</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;{</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.lock();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="comment">// pthread_mutex_lock(&amp;queueMutex); \n queueMutex.lock();</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8a/a01062.html#a84e69e4e3c3cfdffa01e9adbc6f3c328">&#x202A;IsFull</a>())</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="comment">// cout &lt;&lt; &quot;Queue is full!&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="comment">// pthread_mutex_unlock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.unlock();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="code" href="../../d5/de0/a00050.html#a8f15acfec2db055b15d9dab7b6975210">&#x202A;LDebug</a>(<span class="stringliteral">&quot;Enter:&quot;</span>, <a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a>);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#ac6834249c21a1441ee04040f1622d47d">&#x202A;mList</a>[<a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a>] = obj;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a> = (<a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a> + 1) % <a class="code" href="../../d4/d8a/a01062.html#ac36cb1eac3f3faa58f5f14bb7080739c">&#x202A;mSize</a>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">// pthread_mutex_unlock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.unlock();</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af40a436dfc3c2bedd4ceb2c465fe3b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af40a436dfc3c2bedd4ceb2c465fe3b95">&#9670;&nbsp;</a></span>IsEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::IsEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Query if this object is empty </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if empty, false if not</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>&#x202A;Type of the object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if empty, false if not </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00400">400</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;{</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a> == <a class="code" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;front</a>)</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8a/a01062_af40a436dfc3c2bedd4ceb2c465fe3b95_icgraph.png" border="0" usemap="#d4/d8a/a01062_af40a436dfc3c2bedd4ceb2c465fe3b95_icgraph" alt=""/></div>
+<!-- MAP 3 -->
+</div>
+
+</div>
+</div>
+<a id="a84e69e4e3c3cfdffa01e9adbc6f3c328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e69e4e3c3cfdffa01e9adbc6f3c328">&#9670;&nbsp;</a></span>IsFull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::IsFull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Query if this object is full </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if full, false if not</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>&#x202A;Type of the object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if full, false if not </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00423">423</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;{</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordflow">if</span> ((<a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a> + 1) % <a class="code" href="../../d4/d8a/a01062.html#ac36cb1eac3f3faa58f5f14bb7080739c">&#x202A;mSize</a> == <a class="code" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;front</a>)</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8986765a7b79b6054d351616c991f100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8986765a7b79b6054d351616c991f100">&#9670;&nbsp;</a></span>Out()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Object * <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::Out </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets the out </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;Null if it fails, else a pointer to an Object</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>&#x202A;Type of the object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;Null if it fails, else a pointer to an Object </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00325">325</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    Object* temp;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.lock();</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">//pthread_mutex_lock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8a/a01062.html#af40a436dfc3c2bedd4ceb2c465fe3b95">&#x202A;IsEmpty</a>())</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Queue is empty!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="comment">// pthread_mutex_unlock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.unlock();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    temp = <a class="code" href="../../d4/d8a/a01062.html#a8d533f4c148eeb978d346613c76d8a1e">&#x202A;list</a>[<a class="code" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;front</a>];</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;front</a> = (<a class="code" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;front</a> + 1) % <a class="code" href="../../d4/d8a/a01062.html#ac36cb1eac3f3faa58f5f14bb7080739c">&#x202A;mSize</a>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.unlock();  </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">//pthread_mutex_unlock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordflow">return</span> temp;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8a/a01062_a8986765a7b79b6054d351616c991f100_icgraph.png" border="0" usemap="#d4/d8a/a01062_a8986765a7b79b6054d351616c991f100_icgraph" alt=""/></div>
+<!-- MAP 4 -->
+</div>
+
+</div>
+</div>
+<a id="a37b5c146156a3c86bed71bd96580fa3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b5c146156a3c86bed71bd96580fa3e">&#9670;&nbsp;</a></span>OutObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Object <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::OutObj </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Out object </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An Object</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>&#x202A;Type of the object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An Object </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00362">362</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;{</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    Object temp;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.lock();</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">//pthread_mutex_lock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8a/a01062.html#af40a436dfc3c2bedd4ceb2c465fe3b95">&#x202A;IsEmpty</a>())</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Queue is empty!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="comment">// pthread_mutex_unlock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.unlock();</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">return</span> temp;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    temp = <a class="code" href="../../d4/d8a/a01062.html#ac6834249c21a1441ee04040f1622d47d">&#x202A;mList</a>[<a class="code" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;front</a>];</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;front</a> = (<a class="code" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;front</a> + 1) % <a class="code" href="../../d4/d8a/a01062.html#ac36cb1eac3f3faa58f5f14bb7080739c">&#x202A;mSize</a>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <a class="code" href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;queueMutex</a>.unlock();</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="comment">//pthread_mutex_unlock(&amp;queueMutex);</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">return</span> temp;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a104678e1c6363e2719cca591e0ed6eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a104678e1c6363e2719cca591e0ed6eab">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets the size </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An int</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Object</td><td>&#x202A;Type of the object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An int </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00445">445</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;{</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;rear</a> + 10 - <a class="code" href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;front</a>) % <a class="code" href="../../d4/d8a/a01062.html#ac36cb1eac3f3faa58f5f14bb7080739c">&#x202A;mSize</a>;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8a/a01062_a104678e1c6363e2719cca591e0ed6eab_icgraph.png" border="0" usemap="#d4/d8a/a01062_a104678e1c6363e2719cca591e0ed6eab_icgraph" alt=""/></div>
+<!-- MAP 5 -->
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="ab753d883552d3ca75572b71666537a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab753d883552d3ca75572b71666537a45">&#9670;&nbsp;</a></span>front</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::front</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;The front </p>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00186">186</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8d533f4c148eeb978d346613c76d8a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d533f4c148eeb978d346613c76d8a1e">&#9670;&nbsp;</a></span>list</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object* * <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::list</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;存储 object * 数据的数组指针 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00189">189</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac6834249c21a1441ee04040f1622d47d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6834249c21a1441ee04040f1622d47d">&#9670;&nbsp;</a></span>mList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object* <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::mList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;存储数据 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00190">190</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac36cb1eac3f3faa58f5f14bb7080739c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac36cb1eac3f3faa58f5f14bb7080739c">&#9670;&nbsp;</a></span>mSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::mSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;The size </p>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00188">188</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afa87b5c0134a800d932099268a77f88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa87b5c0134a800d932099268a77f88e">&#9670;&nbsp;</a></span>queueMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMutex <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::queueMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;The queue mutex </p>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00191">191</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab0ae51ef9877c0498c3dee39a6dcd566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ae51ef9877c0498c3dee39a6dcd566">&#9670;&nbsp;</a></span>rear</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Object&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d4/d8a/a01062.html">ThreadQueue</a>&lt; Object &gt;::rear</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;The rear </p>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00187">187</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../d9/d2e/a00056_source.html">ThreadQueue.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01062_html_ac36cb1eac3f3faa58f5f14bb7080739c"><div class="ttname"><a href="../../d4/d8a/a01062.html#ac36cb1eac3f3faa58f5f14bb7080739c">&#x202A;ThreadQueue::mSize</a></div><div class="ttdeci">&#x202A;int mSize</div><div class="ttdoc">&#x202A;The size</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00188">ThreadQueue.h:188</a></div></div>
+<div class="ttc" id="aa01062_html_a8d533f4c148eeb978d346613c76d8a1e"><div class="ttname"><a href="../../d4/d8a/a01062.html#a8d533f4c148eeb978d346613c76d8a1e">&#x202A;ThreadQueue::list</a></div><div class="ttdeci">&#x202A;Object ** list</div><div class="ttdoc">&#x202A;存储 object * 数据的数组指针</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00189">ThreadQueue.h:189</a></div></div>
+<div class="ttc" id="aa01062_html_ac6834249c21a1441ee04040f1622d47d"><div class="ttname"><a href="../../d4/d8a/a01062.html#ac6834249c21a1441ee04040f1622d47d">&#x202A;ThreadQueue::mList</a></div><div class="ttdeci">&#x202A;Object * mList</div><div class="ttdoc">&#x202A;存储数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00190">ThreadQueue.h:190</a></div></div>
+<div class="ttc" id="aa01062_html_ab753d883552d3ca75572b71666537a45"><div class="ttname"><a href="../../d4/d8a/a01062.html#ab753d883552d3ca75572b71666537a45">&#x202A;ThreadQueue::front</a></div><div class="ttdeci">&#x202A;int front</div><div class="ttdoc">&#x202A;The front</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00186">ThreadQueue.h:186</a></div></div>
+<div class="ttc" id="aa01062_html_afa87b5c0134a800d932099268a77f88e"><div class="ttname"><a href="../../d4/d8a/a01062.html#afa87b5c0134a800d932099268a77f88e">&#x202A;ThreadQueue::queueMutex</a></div><div class="ttdeci">&#x202A;QMutex queueMutex</div><div class="ttdoc">&#x202A;The queue mutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00191">ThreadQueue.h:191</a></div></div>
+<div class="ttc" id="aa01062_html_af40a436dfc3c2bedd4ceb2c465fe3b95"><div class="ttname"><a href="../../d4/d8a/a01062.html#af40a436dfc3c2bedd4ceb2c465fe3b95">&#x202A;ThreadQueue::IsEmpty</a></div><div class="ttdeci">&#x202A;bool IsEmpty()</div><div class="ttdoc">&#x202A;Query if this object is empty</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00400">ThreadQueue.h:400</a></div></div>
+<div class="ttc" id="aa00050_html_a8f15acfec2db055b15d9dab7b6975210"><div class="ttname"><a href="../../d5/de0/a00050.html#a8f15acfec2db055b15d9dab7b6975210">&#x202A;LDebug</a></div><div class="ttdeci">&#x202A;#define LDebug(...)</div><div class="ttdoc">&#x202A;A macro that defines debug</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00381">SpdLogger.h:381</a></div></div>
+<div class="ttc" id="aa01062_html_ab0ae51ef9877c0498c3dee39a6dcd566"><div class="ttname"><a href="../../d4/d8a/a01062.html#ab0ae51ef9877c0498c3dee39a6dcd566">&#x202A;ThreadQueue::rear</a></div><div class="ttdeci">&#x202A;int rear</div><div class="ttdoc">&#x202A;The rear</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00187">ThreadQueue.h:187</a></div></div>
+<div class="ttc" id="aa01062_html_a37b5c146156a3c86bed71bd96580fa3e"><div class="ttname"><a href="../../d4/d8a/a01062.html#a37b5c146156a3c86bed71bd96580fa3e">&#x202A;ThreadQueue::OutObj</a></div><div class="ttdeci">&#x202A;Object OutObj()</div><div class="ttdoc">&#x202A;Out object</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00362">ThreadQueue.h:362</a></div></div>
+<div class="ttc" id="aa01062_html_a84e69e4e3c3cfdffa01e9adbc6f3c328"><div class="ttname"><a href="../../d4/d8a/a01062.html#a84e69e4e3c3cfdffa01e9adbc6f3c328">&#x202A;ThreadQueue::IsFull</a></div><div class="ttdeci">&#x202A;bool IsFull()</div><div class="ttdoc">&#x202A;Query if this object is full</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00423">ThreadQueue.h:423</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d4/d8a/a01062.html">&#x202A;ThreadQueue</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

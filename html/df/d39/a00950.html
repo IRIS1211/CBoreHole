@@ -1,0 +1,1112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;CQueue&lt; T &gt; 模板类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.4.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('df/d39/a00950.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#pri-attribs">Private 属性</a>  </div>
+  <div class="headertitle">
+<div class="title">CQueue&lt; T &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>&#x202A;<a class="el" href="../../d8/d84/a00001.html#d5/df4/a01322" title="&#x202A;线程安全队列实现">Queue</a> of cs.  
+ <a href="../../df/d39/a00950.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/db2/a00020_source.html">Code\inc\CQueue.h</a>&gt;</code></p>
+<div class="dynheader">
+类 CQueue&lt; T &gt; 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dc6/a00949.png" border="0" usemap="#_c_queue_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_c_queue_3_01_t_01_4_inherit__map" id="_c_queue_3_01_t_01_4_inherit__map">
+<area shape="rect" title="Queue of cs." alt="" coords="207,5,307,32"/>
+<area shape="rect" href="../../df/d39/a00950.html" title=" " alt="" coords="5,95,156,121"/>
+<area shape="rect" href="../../df/d39/a00950.html" title=" " alt="" coords="180,95,333,121"/>
+<area shape="rect" href="../../df/d39/a00950.html" title=" " alt="" coords="357,95,492,121"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:afa09bd6918457c409fcb25ea2da3f60d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#afa09bd6918457c409fcb25ea2da3f60d">CQueue</a> (const size_t size_max)</td></tr>
+<tr class="memdesc:afa09bd6918457c409fcb25ea2da3f60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;初始化队列长度,并将退出标志和 满信号标志置空  <a href="../../df/d39/a00950.html#afa09bd6918457c409fcb25ea2da3f60d">更多...</a><br /></td></tr>
+<tr class="separator:afa09bd6918457c409fcb25ea2da3f60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758220464d98f1eb3e2411cb55486c62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a758220464d98f1eb3e2411cb55486c62">CQueue</a> (CONST <a class="el" href="../../df/d39/a00950.html">CQueue</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a758220464d98f1eb3e2411cb55486c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;不允许拷贝构造函数  <a href="../../df/d39/a00950.html#a758220464d98f1eb3e2411cb55486c62">更多...</a><br /></td></tr>
+<tr class="separator:a758220464d98f1eb3e2411cb55486c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af85abc481df6d6325bde80e6019805b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#af85abc481df6d6325bde80e6019805b1">~CQueue</a> ()</td></tr>
+<tr class="memdesc:af85abc481df6d6325bde80e6019805b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Finalizes an instance of the <a class="el" href="../../df/d39/a00950.html" title="&#x202A;Queue of cs.">CQueue</a> class 销毁队列, 退出线程 清除数据 // 存在问题  <a href="../../df/d39/a00950.html#af85abc481df6d6325bde80e6019805b1">更多...</a><br /></td></tr>
+<tr class="separator:af85abc481df6d6325bde80e6019805b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282e80149935f212e9c6c6e8ef9d7374"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a282e80149935f212e9c6c6e8ef9d7374">Push</a> (T &amp;data)</td></tr>
+<tr class="memdesc:a282e80149935f212e9c6c6e8ef9d7374"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待  <a href="../../df/d39/a00950.html#a282e80149935f212e9c6c6e8ef9d7374">更多...</a><br /></td></tr>
+<tr class="separator:a282e80149935f212e9c6c6e8ef9d7374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb5d6f90ce5562f4d30867de96bc983"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#aabb5d6f90ce5562f4d30867de96bc983">Pop</a> (T &amp;data)</td></tr>
+<tr class="memdesc:aabb5d6f90ce5562f4d30867de96bc983"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素  <a href="../../df/d39/a00950.html#aabb5d6f90ce5562f4d30867de96bc983">更多...</a><br /></td></tr>
+<tr class="separator:aabb5d6f90ce5562f4d30867de96bc983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672cb83493bd4ef33ac54de62383ebfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a672cb83493bd4ef33ac54de62383ebfb">Peek</a> (T &amp;data)</td></tr>
+<tr class="separator:a672cb83493bd4ef33ac54de62383ebfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4d693618a5679ff27f58762549199a"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a9b4d693618a5679ff27f58762549199a">Pop</a> (void)</td></tr>
+<tr class="memdesc:a9b4d693618a5679ff27f58762549199a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;弹出一个元素 直接返回 出错无法报错  <a href="../../df/d39/a00950.html#a9b4d693618a5679ff27f58762549199a">更多...</a><br /></td></tr>
+<tr class="separator:a9b4d693618a5679ff27f58762549199a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36aaded7a809ddcac8672d56b840afaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a36aaded7a809ddcac8672d56b840afaa">Finished</a> ()</td></tr>
+<tr class="memdesc:a36aaded7a809ddcac8672d56b840afaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;The queue has Finished accepting input 标识队列完成输入 不再继续输入  <a href="../../df/d39/a00950.html#a36aaded7a809ddcac8672d56b840afaa">更多...</a><br /></td></tr>
+<tr class="separator:a36aaded7a809ddcac8672d56b840afaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ebd3370594a5d6c7c63863d4aa08964"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a9ebd3370594a5d6c7c63863d4aa08964">Quit</a> ()</td></tr>
+<tr class="memdesc:a9ebd3370594a5d6c7c63863d4aa08964"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Quits this <a class="el" href="../../df/d39/a00950.html" title="&#x202A;Queue of cs.">CQueue</a> 退出队列, 无法再加入压入或者弹出数据  <a href="../../df/d39/a00950.html#a9ebd3370594a5d6c7c63863d4aa08964">更多...</a><br /></td></tr>
+<tr class="separator:a9ebd3370594a5d6c7c63863d4aa08964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532385f9b87230d55650fe10b0259c57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a532385f9b87230d55650fe10b0259c57">Length</a> ()</td></tr>
+<tr class="memdesc:a532385f9b87230d55650fe10b0259c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets the Length 返回队列目前长度  <a href="../../df/d39/a00950.html#a532385f9b87230d55650fe10b0259c57">更多...</a><br /></td></tr>
+<tr class="separator:a532385f9b87230d55650fe10b0259c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979820688e76c1997aa0d36d120df98f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a979820688e76c1997aa0d36d120df98f">Size</a> ()</td></tr>
+<tr class="memdesc:a979820688e76c1997aa0d36d120df98f"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets the Size 返回当前队列长度  <a href="../../df/d39/a00950.html#a979820688e76c1997aa0d36d120df98f">更多...</a><br /></td></tr>
+<tr class="separator:a979820688e76c1997aa0d36d120df98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d55a1a82ab1aa26325a0c93e2603c3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a4d55a1a82ab1aa26325a0c93e2603c3f">Empty</a> (void)</td></tr>
+<tr class="separator:a4d55a1a82ab1aa26325a0c93e2603c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef66b544a9f5bbf861f21767a75227ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#aef66b544a9f5bbf861f21767a75227ea">Full</a> (void)</td></tr>
+<tr class="separator:aef66b544a9f5bbf861f21767a75227ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb92693aa7f2b4eb791930203cc39ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#aecb92693aa7f2b4eb791930203cc39ea">Clear</a> (void)</td></tr>
+<tr class="memdesc:aecb92693aa7f2b4eb791930203cc39ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;清空队列  <a href="../../df/d39/a00950.html#aecb92693aa7f2b4eb791930203cc39ea">更多...</a><br /></td></tr>
+<tr class="separator:aecb92693aa7f2b4eb791930203cc39ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a3d59f87a0110946f7391d816346a23dd"><td class="memItemLeft" align="right" valign="top">std::queue&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">_queue</a></td></tr>
+<tr class="memdesc:a3d59f87a0110946f7391d816346a23dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;存储数据的真实队列, 不是线程安全的  <a href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">更多...</a><br /></td></tr>
+<tr class="separator:a3d59f87a0110946f7391d816346a23dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:abb949d05c89e26035e33619b5ebc48db"><td class="memItemLeft" align="right" valign="top">std::queue&lt; T &gt;::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#abb949d05c89e26035e33619b5ebc48db">_size_max</a></td></tr>
+<tr class="memdesc:abb949d05c89e26035e33619b5ebc48db"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;队列的最大长度  <a href="../../df/d39/a00950.html#abb949d05c89e26035e33619b5ebc48db">更多...</a><br /></td></tr>
+<tr class="separator:abb949d05c89e26035e33619b5ebc48db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d45f7666abe5308d3d8623a85b8f1c"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">_mutex</a></td></tr>
+<tr class="memdesc:a34d45f7666abe5308d3d8623a85b8f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;线程操作 锁  <a href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">更多...</a><br /></td></tr>
+<tr class="separator:a34d45f7666abe5308d3d8623a85b8f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7916b9e86573d3fe1ff69a0cf2ba57e2"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">_fullQue</a></td></tr>
+<tr class="memdesc:a7916b9e86573d3fe1ff69a0cf2ba57e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;队列满了的信号  <a href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">更多...</a><br /></td></tr>
+<tr class="separator:a7916b9e86573d3fe1ff69a0cf2ba57e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17dbdf1f0bd8a2a88339ca6500ecccfd"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">_empty</a></td></tr>
+<tr class="memdesc:a17dbdf1f0bd8a2a88339ca6500ecccfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;队列为空的信号  <a href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">更多...</a><br /></td></tr>
+<tr class="separator:a17dbdf1f0bd8a2a88339ca6500ecccfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731467755163891c27b0991e02cae72c"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">_quit</a></td></tr>
+<tr class="memdesc:a731467755163891c27b0991e02cae72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;{ false }; // 退出信号  <a href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">更多...</a><br /></td></tr>
+<tr class="separator:a731467755163891c27b0991e02cae72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7831c704ce59d01acb76eb0d501aae12"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">_finished</a></td></tr>
+<tr class="memdesc:a7831c704ce59d01acb76eb0d501aae12"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;{ false }; // 完成信号 // 表示不再继续输入数据  <a href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">更多...</a><br /></td></tr>
+<tr class="separator:a7831c704ce59d01acb76eb0d501aae12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class CQueue&lt; T &gt;</h3>
+
+<p class="DocNodeLTR"><a class="el" href="../../d8/d84/a00001.html#d5/df4/a01322" title="&#x202A;线程安全队列实现">Queue</a> of cs. </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00042">42</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="afa09bd6918457c409fcb25ea2da3f60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa09bd6918457c409fcb25ea2da3f60d">&#9670;&nbsp;</a></span>CQueue() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::<a class="el" href="../../df/d39/a00950.html">CQueue</a> </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size_max</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;初始化队列长度,并将退出标志和 满信号标志置空 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size_max</td><td>&#x202A;队列的最长尺寸 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00072">72</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                  :<a class="code" href="../../df/d39/a00950.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;_size_max</a>(size_max) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a> = ATOMIC_VAR_INIT(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a> = ATOMIC_VAR_INIT(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a758220464d98f1eb3e2411cb55486c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a758220464d98f1eb3e2411cb55486c62">&#9670;&nbsp;</a></span>CQueue() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::<a class="el" href="../../df/d39/a00950.html">CQueue</a> </td>
+          <td>(</td>
+          <td class="paramtype">CONST <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;不允许拷贝构造函数 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter1</td><td>&#x202A;The first parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af85abc481df6d6325bde80e6019805b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af85abc481df6d6325bde80e6019805b1">&#9670;&nbsp;</a></span>~CQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::~<a class="el" href="../../df/d39/a00950.html">CQueue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Finalizes an instance of the <a class="el" href="../../df/d39/a00950.html" title="&#x202A;Queue of cs.">CQueue</a> class 销毁队列, 退出线程 清除数据 // 存在问题 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/8 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00099">99</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="../../df/d39/a00950.html#a9ebd3370594a5d6c7c63863d4aa08964">&#x202A;Quit</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">while</span> (<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size())</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            ;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aecb92693aa7f2b4eb791930203cc39ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecb92693aa7f2b4eb791930203cc39ea">&#9670;&nbsp;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Clear </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;清空队列 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00350">350</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty ())</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <a class="code" href="../../df/d39/a00950.html#a9b4d693618a5679ff27f58762549199a">&#x202A;Pop</a>();  <span class="comment">// 依次弹出数据</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4d55a1a82ab1aa26325a0c93e2603c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d55a1a82ab1aa26325a0c93e2603c3f">&#9670;&nbsp;</a></span>Empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Empty </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00326">326</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    {</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">return</span> (0 == <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size());</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d39/a00950_a4d55a1a82ab1aa26325a0c93e2603c3f_icgraph.png" border="0" usemap="#df/d39/a00950_a4d55a1a82ab1aa26325a0c93e2603c3f_icgraph" alt=""/></div>
+<map name="df/d39/a00950_a4d55a1a82ab1aa26325a0c93e2603c3f_icgraph" id="df/d39/a00950_a4d55a1a82ab1aa26325a0c93e2603c3f_icgraph">
+<area shape="rect" title=" " alt="" coords="212,107,327,133"/>
+<area shape="rect" href="../../dd/df1/a01082.html#a0883915d51196a8c6f48eead87c1d05c" title=" " alt="" coords="29,5,141,32"/>
+<area shape="rect" href="../../d4/d12/a00910.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="33,56,136,83"/>
+<area shape="rect" href="../../de/d02/a01026.html#a9f2875db6c0f1827ded60bd5cfaf2b2e" title="线程循环函数 接受到数据会会循环" alt="" coords="33,107,137,133"/>
+<area shape="rect" href="../../de/db1/a00197.html#ad86addbaf197fc6470e8c8c197efed66" title=" " alt="" coords="36,157,133,184"/>
+<area shape="rect" href="../../d9/df5/a01086.html#a8c9cfbdd12fb45435643a31d809d9f3c" title=" " alt="" coords="5,208,164,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a36aaded7a809ddcac8672d56b840afaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36aaded7a809ddcac8672d56b840afaa">&#9670;&nbsp;</a></span>Finished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Finished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;The queue has Finished accepting input 标识队列完成输入 不再继续输入 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00260">260</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <a class="code" href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.notify_all();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aef66b544a9f5bbf861f21767a75227ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef66b544a9f5bbf861f21767a75227ea">&#9670;&nbsp;</a></span>Full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Full </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00333">333</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        std::lock_guard&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../df/d39/a00950.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;_size_max</a> == <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size();</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d39/a00950_aef66b544a9f5bbf861f21767a75227ea_icgraph.png" border="0" usemap="#df/d39/a00950_aef66b544a9f5bbf861f21767a75227ea_icgraph" alt=""/></div>
+<map name="df/d39/a00950_aef66b544a9f5bbf861f21767a75227ea_icgraph" id="df/d39/a00950_aef66b544a9f5bbf861f21767a75227ea_icgraph">
+<area shape="rect" title=" " alt="" coords="173,5,272,32"/>
+<area shape="rect" href="../../da/dd8/a00906.html#ab04aeb116e1fa0b05b79428db55f209e" title="Runs this object" alt="" coords="5,5,125,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a532385f9b87230d55650fe10b0259c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532385f9b87230d55650fe10b0259c57">&#9670;&nbsp;</a></span>Length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets the Length 返回队列目前长度 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An int. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00293">293</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;int&gt;(<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size());</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a672cb83493bd4ef33ac54de62383ebfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672cb83493bd4ef33ac54de62383ebfb">&#9670;&nbsp;</a></span>Peek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Peek </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="DocNodeLTR">&lt; 不等待元素加入数据</p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00185">185</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a>)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty())                <span class="comment">// 队列非空</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                <span class="comment">//data = std::move(_queue.front());</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                data = <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.front();  <span class="comment">// 此处可能出现问题 </span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <a class="code" href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();       <span class="comment">// 通知所有 由于满队无法加入的线程</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty() &amp;&amp; <a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)   <span class="comment">// 队列为空 且不再加入</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <span class="comment">// _empty.wait(lock);          // 等待队列加入元素</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;   </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aabb5d6f90ce5562f4d30867de96bc983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb5d6f90ce5562f4d30867de96bc983">&#9670;&nbsp;</a></span>Pop() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Pop </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>&#x202A;The data to Pop.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+<p class="DocNodeLTR">&lt; 不等待元素加入数据</p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00155">155</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a>)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty())                <span class="comment">// 队列非空</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="comment">//data = std::move(_queue.front());</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                data = <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.front();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.pop();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <a class="code" href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();       <span class="comment">// 通知所有 由于满队无法加入的线程</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty() &amp;&amp; <a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)   <span class="comment">// 队列为空 且不再加入</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                <span class="comment">// _empty.wait(lock);          // 等待队列加入元素</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;   </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d39/a00950_aabb5d6f90ce5562f4d30867de96bc983_icgraph.png" border="0" usemap="#df/d39/a00950_aabb5d6f90ce5562f4d30867de96bc983_icgraph" alt=""/></div>
+<map name="df/d39/a00950_aabb5d6f90ce5562f4d30867de96bc983_icgraph" id="df/d39/a00950_aabb5d6f90ce5562f4d30867de96bc983_icgraph">
+<area shape="rect" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="165,81,265,108"/>
+<area shape="rect" href="../../dd/df1/a01082.html#a0883915d51196a8c6f48eead87c1d05c" title=" " alt="" coords="5,5,117,32"/>
+<area shape="rect" href="../../d4/d12/a00910.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="10,56,113,83"/>
+<area shape="rect" href="../../de/d02/a01026.html#a9f2875db6c0f1827ded60bd5cfaf2b2e" title="线程循环函数 接受到数据会会循环" alt="" coords="9,107,113,133"/>
+<area shape="rect" href="../../de/db1/a00197.html#ad86addbaf197fc6470e8c8c197efed66" title=" " alt="" coords="13,157,110,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9b4d693618a5679ff27f58762549199a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b4d693618a5679ff27f58762549199a">&#9670;&nbsp;</a></span>Pop() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; T &gt; <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Pop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;弹出一个元素 直接返回 出错无法报错 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The previous top-of-stack object. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00223">223</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        std::shared_ptr&lt;T&gt; res = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a>)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty())                <span class="comment">// 队列非空</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <span class="comment">//data = std::move(_queue.front());</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                res = std::make_shared&lt;T&gt;(<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.front());</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.pop();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <a class="code" href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();       <span class="comment">// 通知所有 由于满队无法加入的线程</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty() &amp;&amp; <a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)   <span class="comment">// 队列为空 且不再加入</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                <span class="keywordflow">return</span> res;     <span class="comment">// 无数据进入 智能返回一个空指针 (可能出错)</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <a class="code" href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.wait(lock);          <span class="comment">// 等待队列加入元素</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d39/a00950_a9b4d693618a5679ff27f58762549199a_icgraph.png" border="0" usemap="#df/d39/a00950_a9b4d693618a5679ff27f58762549199a_icgraph" alt=""/></div>
+<map name="df/d39/a00950_a9b4d693618a5679ff27f58762549199a_icgraph" id="df/d39/a00950_a9b4d693618a5679ff27f58762549199a_icgraph">
+<area shape="rect" title="弹出一个元素 直接返回 出错无法报错" alt="" coords="196,13,296,39"/>
+<area shape="rect" href="../../df/d39/a00950.html#aecb92693aa7f2b4eb791930203cc39ea" title="清空队列" alt="" coords="5,5,148,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a282e80149935f212e9c6c6e8ef9d7374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282e80149935f212e9c6c6e8ef9d7374">&#9670;&nbsp;</a></span>Push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Push </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/10</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>&#x202A;The data to Push.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+<p class="DocNodeLTR">&lt; 如果满了 这里不进行等待 避免出现问题</p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00119">119</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a> &amp;&amp; !<a class="code" href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size() &lt; <a class="code" href="../../df/d39/a00950.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;_size_max</a>)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="comment">// _queue.push(std::move(data));</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.push(data);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <a class="code" href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.notify_all();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="comment">// wait的时候自动释放锁，如果wait到了会获取锁</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="comment">// _fullQue.wait(lock);</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;   </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d39/a00950_a282e80149935f212e9c6c6e8ef9d7374_icgraph.png" border="0" usemap="#df/d39/a00950_a282e80149935f212e9c6c6e8ef9d7374_icgraph" alt=""/></div>
+<map name="df/d39/a00950_a282e80149935f212e9c6c6e8ef9d7374_icgraph" id="df/d39/a00950_a282e80149935f212e9c6c6e8ef9d7374_icgraph">
+<area shape="rect" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="544,107,651,133"/>
+<area shape="rect" href="../../d9/d9a/a00998.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="367,56,487,83"/>
+<area shape="rect" href="../../de/d02/a01026.html#a6df22759fdbcef2fa39b4977abd0ed4b" title="Reads the data" alt="" coords="357,107,496,133"/>
+<area shape="rect" href="../../da/dd8/a00906.html#ab04aeb116e1fa0b05b79428db55f209e" title="Runs this object" alt="" coords="367,157,487,184"/>
+<area shape="rect" href="../../d9/d9a/a00998.html#ab4d98e474b554e318508d1f26a053998" title="Handles the read data" alt="" coords="149,5,309,32"/>
+<area shape="rect" href="../../d9/d9a/a00998.html#a7f33b441ca3c2e17c8d673a997437bd4" title="Handles the timeout" alt="" coords="155,56,304,83"/>
+<area shape="rect" href="../../d9/d9a/a00998.html#adda4ed09582ac92c92b16b55b471a6d4" title="Initializes a new instance of the Serial class" alt="" coords="5,31,101,57"/>
+<area shape="rect" href="../../de/d02/a01026.html#afb6dc5f937b25f5ee2e43fe1b2c28e09" title="Initializes a new instance of the MySerial class" alt="" coords="163,107,295,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9ebd3370594a5d6c7c63863d4aa08964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ebd3370594a5d6c7c63863d4aa08964">&#9670;&nbsp;</a></span>Quit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Quit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Quits this <a class="el" href="../../df/d39/a00950.html" title="&#x202A;Queue of cs.">CQueue</a> 退出队列, 无法再加入压入或者弹出数据 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00275">275</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <a class="code" href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.notify_all();</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d39/a00950_a9ebd3370594a5d6c7c63863d4aa08964_icgraph.png" border="0" usemap="#df/d39/a00950_a9ebd3370594a5d6c7c63863d4aa08964_icgraph" alt=""/></div>
+<map name="df/d39/a00950_a9ebd3370594a5d6c7c63863d4aa08964_icgraph" id="df/d39/a00950_a9ebd3370594a5d6c7c63863d4aa08964_icgraph">
+<area shape="rect" title="Quits this CQueue 退出队列, 无法再加入压入或者弹出数据" alt="" coords="196,13,297,39"/>
+<area shape="rect" href="../../df/d39/a00950.html#af85abc481df6d6325bde80e6019805b1" title="Finalizes an instance of the CQueue class 销毁队列, 退出线程 清除数据 // 存在问题" alt="" coords="5,5,148,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a979820688e76c1997aa0d36d120df98f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979820688e76c1997aa0d36d120df98f">&#9670;&nbsp;</a></span>Size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::Size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets the Size 返回当前队列长度 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An int. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00309">309</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;int&gt;(<a class="code" href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size());</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a17dbdf1f0bd8a2a88339ca6500ecccfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#9670;&nbsp;</a></span>_empty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::condition_variable <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::_empty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;队列为空的信号 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7831c704ce59d01acb76eb0d501aae12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7831c704ce59d01acb76eb0d501aae12">&#9670;&nbsp;</a></span>_finished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic_bool <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::_finished</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;{ false }; // 完成信号 // 表示不再继续输入数据 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00057">57</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7916b9e86573d3fe1ff69a0cf2ba57e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#9670;&nbsp;</a></span>_fullQue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::condition_variable <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::_fullQue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;队列满了的信号 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a34d45f7666abe5308d3d8623a85b8f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d45f7666abe5308d3d8623a85b8f1c">&#9670;&nbsp;</a></span>_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;线程操作 锁 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3d59f87a0110946f7391d816346a23dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d59f87a0110946f7391d816346a23dd">&#9670;&nbsp;</a></span>_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::queue&lt;T&gt; <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::_queue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;存储数据的真实队列, 不是线程安全的 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a731467755163891c27b0991e02cae72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a731467755163891c27b0991e02cae72c">&#9670;&nbsp;</a></span>_quit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic_bool <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::_quit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;{ false }; // 退出信号 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abb949d05c89e26035e33619b5ebc48db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb949d05c89e26035e33619b5ebc48db">&#9670;&nbsp;</a></span>_size_max</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::queue&lt;T&gt;::size_type <a class="el" href="../../df/d39/a00950.html">CQueue</a>&lt; T &gt;::_size_max</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;队列的最大长度 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a> 第 <a class="el" href="../../db/db2/a00020_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../db/db2/a00020_source.html">CQueue.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00950_html_a34d45f7666abe5308d3d8623a85b8f1c"><div class="ttname"><a href="../../df/d39/a00950.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;CQueue::_mutex</a></div><div class="ttdeci">&#x202A;std::mutex _mutex</div><div class="ttdoc">&#x202A;线程操作 锁</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00050">CQueue.h:50</a></div></div>
+<div class="ttc" id="aa00950_html_abb949d05c89e26035e33619b5ebc48db"><div class="ttname"><a href="../../df/d39/a00950.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;CQueue::_size_max</a></div><div class="ttdeci">&#x202A;std::queue&lt; T &gt;::size_type _size_max</div><div class="ttdoc">&#x202A;队列的最大长度</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00048">CQueue.h:48</a></div></div>
+<div class="ttc" id="aa00950_html_a9b4d693618a5679ff27f58762549199a"><div class="ttname"><a href="../../df/d39/a00950.html#a9b4d693618a5679ff27f58762549199a">&#x202A;CQueue::Pop</a></div><div class="ttdeci">&#x202A;std::shared_ptr&lt; T &gt; Pop(void)</div><div class="ttdoc">&#x202A;弹出一个元素 直接返回 出错无法报错</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00223">CQueue.h:223</a></div></div>
+<div class="ttc" id="aa00950_html_a9ebd3370594a5d6c7c63863d4aa08964"><div class="ttname"><a href="../../df/d39/a00950.html#a9ebd3370594a5d6c7c63863d4aa08964">&#x202A;CQueue::Quit</a></div><div class="ttdeci">&#x202A;void Quit()</div><div class="ttdoc">&#x202A;Quits this CQueue 退出队列, 无法再加入压入或者弹出数据</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00275">CQueue.h:275</a></div></div>
+<div class="ttc" id="aa00950_html_a7916b9e86573d3fe1ff69a0cf2ba57e2"><div class="ttname"><a href="../../df/d39/a00950.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;CQueue::_fullQue</a></div><div class="ttdeci">&#x202A;std::condition_variable _fullQue</div><div class="ttdoc">&#x202A;队列满了的信号</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00051">CQueue.h:51</a></div></div>
+<div class="ttc" id="aa00950_html_a731467755163891c27b0991e02cae72c"><div class="ttname"><a href="../../df/d39/a00950.html#a731467755163891c27b0991e02cae72c">&#x202A;CQueue::_quit</a></div><div class="ttdeci">&#x202A;std::atomic_bool _quit</div><div class="ttdoc">&#x202A;{ false }; // 退出信号</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00056">CQueue.h:56</a></div></div>
+<div class="ttc" id="aa00950_html_a17dbdf1f0bd8a2a88339ca6500ecccfd"><div class="ttname"><a href="../../df/d39/a00950.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;CQueue::_empty</a></div><div class="ttdeci">&#x202A;std::condition_variable _empty</div><div class="ttdoc">&#x202A;队列为空的信号</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00052">CQueue.h:52</a></div></div>
+<div class="ttc" id="aa00950_html_a3d59f87a0110946f7391d816346a23dd"><div class="ttname"><a href="../../df/d39/a00950.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;CQueue::_queue</a></div><div class="ttdeci">&#x202A;std::queue&lt; T &gt; _queue</div><div class="ttdoc">&#x202A;存储数据的真实队列, 不是线程安全的</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00046">CQueue.h:46</a></div></div>
+<div class="ttc" id="aa00950_html_a7831c704ce59d01acb76eb0d501aae12"><div class="ttname"><a href="../../df/d39/a00950.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;CQueue::_finished</a></div><div class="ttdeci">&#x202A;std::atomic_bool _finished</div><div class="ttdoc">&#x202A;{ false }; // 完成信号 // 表示不再继续输入数据</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00057">CQueue.h:57</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../df/d39/a00950.html">&#x202A;CQueue</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;ImageProc类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.4.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d3/d7b/a00986.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">成员变量</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a>  </div>
+  <div class="headertitle">
+<div class="title">ImageProc类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>&#x202A;An image show.  
+ <a href="../../d3/d7b/a00986.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d6/d5b/a00026_source.html">Code\inc\ImageProc.h</a>&gt;</code></p>
+<div class="dynheader">
+ImageProc 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d4c/a00984.png" border="0" usemap="#_image_proc_coll__map" alt="Collaboration graph"/></div>
+<map name="_image_proc_coll__map" id="_image_proc_coll__map">
+<area shape="rect" title="An image show." alt="" coords="1609,161,1693,187"/>
+<area shape="rect" href="../../d2/ddd/a00978.html" title="An idoi file." alt="" coords="1455,161,1523,187"/>
+<area shape="rect" href="../../d2/ddd/a00978.html#d1/d7a/a00982" title="定义指针组,指向不同的位置 不要直接使用此处指针操作, 只能获取值, 不能更新值" alt="" coords="1217,91,1341,118"/>
+<area shape="rect" title="STL class" alt="" coords="959,54,1049,81"/>
+<area shape="rect" title="STL class" alt="" coords="727,47,856,88"/>
+<area shape="rect" title="STL class" alt="" coords="541,47,677,88"/>
+<area shape="rect" title="STL class" alt="" coords="361,5,490,47"/>
+<area shape="rect" title="STL class" alt="" coords="155,42,309,69"/>
+<area shape="rect" title="STL class" alt="" coords="359,71,492,112"/>
+<area shape="rect" title="STL class" alt="" coords="5,42,105,69"/>
+<area shape="rect" title="STL class" alt="" coords="1239,146,1319,173"/>
+<area shape="rect" title="STL class" alt="" coords="941,131,1067,172"/>
+<area shape="rect" href="../../df/dce/a00974.html" title="#TODO: 完善拓展信息内容 定义拓展信息内容" alt="" coords="1257,206,1302,233"/>
+<area shape="rect" href="../../da/d17/a01046.html" title="存储 系统运行参数 按照参数具体类型进行细分" alt="" coords="1232,325,1327,351"/>
+<area shape="rect" href="../../da/d17/a01046.html#d5/d67/a01070" title="电子罗盘参数" alt="" coords="909,197,1099,223"/>
+<area shape="rect" href="../../da/d17/a01046.html#d5/d4c/a01058" title="编码器信息 脉冲" alt="" coords="920,247,1088,274"/>
+<area shape="rect" href="../../da/d17/a01046.html#d9/d8e/a01050" title="默认类型使用 int 但是很多类型可以使用char 或者 bool 类型进行空间压缩 #TODO 按照类型考虑每种类型的 空间占用 自定义 文件个数 尽量使用简单类型 避免占用更多 存在字节对齐的情况,..." alt="" coords="905,298,1103,325"/>
+<area shape="rect" href="../../da/d17/a01046.html#d4/d8a/a01062" title="A structure hole." alt="" coords="923,349,1085,375"/>
+<area shape="rect" href="../../da/d17/a01046.html#dd/d57/a01054" title="探头信息" alt="" coords="919,399,1089,426"/>
+<area shape="rect" href="../../da/d17/a01046.html#d0/dfb/a01066" title="A structure image." alt="" coords="919,450,1089,477"/>
+<area shape="rect" href="../../da/d17/a01046.html#d7/df7/a01074" title="额外信息" alt="" coords="921,501,1087,527"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac778e6a3be5e0b1b29c5af9da0ae6436"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#ac778e6a3be5e0b1b29c5af9da0ae6436">ImageProc</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:ac778e6a3be5e0b1b29c5af9da0ae6436"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../d3/d7b/a00986.html" title="&#x202A;An image show.">ImageProc</a> class  <a href="../../d3/d7b/a00986.html#ac778e6a3be5e0b1b29c5af9da0ae6436">更多...</a><br /></td></tr>
+<tr class="separator:ac778e6a3be5e0b1b29c5af9da0ae6436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b916885777aafadbdc90ffe9e074fff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a8b916885777aafadbdc90ffe9e074fff">ImageProc</a> (int imgWidth, int imgHeight)</td></tr>
+<tr class="memdesc:a8b916885777aafadbdc90ffe9e074fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../d3/d7b/a00986.html" title="&#x202A;An image show.">ImageProc</a> class  <a href="../../d3/d7b/a00986.html#a8b916885777aafadbdc90ffe9e074fff">更多...</a><br /></td></tr>
+<tr class="separator:a8b916885777aafadbdc90ffe9e074fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d60d62d842d0bcf3a37ba6a00bb1893"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a9d60d62d842d0bcf3a37ba6a00bb1893">~ImageProc</a> ()</td></tr>
+<tr class="memdesc:a9d60d62d842d0bcf3a37ba6a00bb1893"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Finalizes an instance of the <a class="el" href="../../d3/d7b/a00986.html" title="&#x202A;An image show.">ImageProc</a> class  <a href="../../d3/d7b/a00986.html#a9d60d62d842d0bcf3a37ba6a00bb1893">更多...</a><br /></td></tr>
+<tr class="separator:a9d60d62d842d0bcf3a37ba6a00bb1893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761ee051ae7ddcdf6fe2fd5c0a91bf60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60">StoreImage</a> (int cnt)</td></tr>
+<tr class="memdesc:a761ee051ae7ddcdf6fe2fd5c0a91bf60"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将数据存储下来  <a href="../../d3/d7b/a00986.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60">更多...</a><br /></td></tr>
+<tr class="separator:a761ee051ae7ddcdf6fe2fd5c0a91bf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8d375e61badc6cdba5f2cea7376770"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a1e8d375e61badc6cdba5f2cea7376770">SetFileP</a> (<a class="el" href="../../d2/ddd/a00978.html">IDOIFile</a> *file_p)</td></tr>
+<tr class="memdesc:a1e8d375e61badc6cdba5f2cea7376770"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设置文件指针, 如果不为空,表示指针之前有数据, 覆盖旧指针 , 返回错误  <a href="../../d3/d7b/a00986.html#a1e8d375e61badc6cdba5f2cea7376770">更多...</a><br /></td></tr>
+<tr class="separator:a1e8d375e61badc6cdba5f2cea7376770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd18773a822c007ea0d9242b24f86e4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#acd18773a822c007ea0d9242b24f86e4d">Push</a> (cv::Mat &amp;newImage, int offset_x=0, int offset_y=0)</td></tr>
+<tr class="memdesc:acd18773a822c007ea0d9242b24f86e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行, 开始从最上侧开始运行 将已有的大图看成一个环形队列, 在设定的位置 添加上相应的位置 如果左右边界不满足 则log 并判断出错的问题 超过设定值 之后进行存储操作.  <a href="../../d3/d7b/a00986.html#acd18773a822c007ea0d9242b24f86e4d">更多...</a><br /></td></tr>
+<tr class="separator:acd18773a822c007ea0d9242b24f86e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2e9059917bc49d6bba52b08ccabf19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a4b2e9059917bc49d6bba52b08ccabf19">GetFrame</a> (cv::Mat &amp;dstImg)</td></tr>
+<tr class="memdesc:a4b2e9059917bc49d6bba52b08ccabf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然后显示出来 // bool GetFrame(cv::Mat &amp;dstImg,int start_y=-1, int hight_h=-1, // // int start_x = -1, int width_w = WIDTH);  <a href="../../d3/d7b/a00986.html#a4b2e9059917bc49d6bba52b08ccabf19">更多...</a><br /></td></tr>
+<tr class="separator:a4b2e9059917bc49d6bba52b08ccabf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf4c9fb991fb727787f31b3ac5b815cf"><td class="memItemLeft" align="right" valign="top">cv::Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#aaf4c9fb991fb727787f31b3ac5b815cf">matchImage</a> (const cv::Mat &amp;curImg, const cv::Mat &amp;lastImg)</td></tr>
+<tr class="memdesc:aaf4c9fb991fb727787f31b3ac5b815cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;自定义匹配两个图像 用来获取当前图像对于上一帧图像的偏移值  <a href="../../d3/d7b/a00986.html#aaf4c9fb991fb727787f31b3ac5b815cf">更多...</a><br /></td></tr>
+<tr class="separator:aaf4c9fb991fb727787f31b3ac5b815cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefce1fe135777841cff60ed292835d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#aefce1fe135777841cff60ed292835d68">matchImage</a> (const cv::Mat &amp;curImg, const cv::Mat &amp;lastImg, cv::Point &amp;offset)</td></tr>
+<tr class="memdesc:aefce1fe135777841cff60ed292835d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Match image  <a href="../../d3/d7b/a00986.html#aefce1fe135777841cff60ed292835d68">更多...</a><br /></td></tr>
+<tr class="separator:aefce1fe135777841cff60ed292835d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4aaa7b7ee5937f7f8b66afbb67e7ca"><td class="memItemLeft" align="right" valign="top">cv::Point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a8f4aaa7b7ee5937f7f8b66afbb67e7ca">getImgOffset</a> (const cv::Mat &amp;curImg, const cv::Mat &amp;lastImg)</td></tr>
+<tr class="memdesc:a8f4aaa7b7ee5937f7f8b66afbb67e7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;计算两个 小区块 图像的偏移值  <a href="../../d3/d7b/a00986.html#a8f4aaa7b7ee5937f7f8b66afbb67e7ca">更多...</a><br /></td></tr>
+<tr class="separator:a8f4aaa7b7ee5937f7f8b66afbb67e7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:ab88bf9b026d0054064c76c4ce8fb46d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/ddd/a00978.html">IDOIFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">m_file</a></td></tr>
+<tr class="memdesc:ab88bf9b026d0054064c76c4ce8fb46d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;写入文件指针  <a href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">更多...</a><br /></td></tr>
+<tr class="separator:ab88bf9b026d0054064c76c4ce8fb46d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7492a19f8826165daf13efdfe237ba5"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#af7492a19f8826165daf13efdfe237ba5">gImgLast</a></td></tr>
+<tr class="memdesc:af7492a19f8826165daf13efdfe237ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;存储自己 上一次运行的图像 便于后续进行匹配  <a href="../../d3/d7b/a00986.html#af7492a19f8826165daf13efdfe237ba5">更多...</a><br /></td></tr>
+<tr class="separator:af7492a19f8826165daf13efdfe237ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a453aa18bb8ee0cb86e5d55e145a20ca0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a453aa18bb8ee0cb86e5d55e145a20ca0">shiftImage</a> (cv::Mat &amp;srcImg, cv::Mat &amp;dstImg, int offset_x=0, int offset_y=0)</td></tr>
+<tr class="memdesc:a453aa18bb8ee0cb86e5d55e145a20ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;右侧偏移图像修正 bool fixUpImage(cv::Mat &amp;subImg, cv::Mat &amp;fixImage, int offset_x = 0, int offset_y = 0); 通过 平移 使得一侧偏移的图像从 另一侧补上来 下出 上补 右出 左补  <a href="../../d3/d7b/a00986.html#a453aa18bb8ee0cb86e5d55e145a20ca0">更多...</a><br /></td></tr>
+<tr class="separator:a453aa18bb8ee0cb86e5d55e145a20ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783eedce7c7a71d4bf5fba6b2dad54ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a783eedce7c7a71d4bf5fba6b2dad54ca">addNewImage</a> (cv::Mat &amp;newImg)</td></tr>
+<tr class="memdesc:a783eedce7c7a71d4bf5fba6b2dad54ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;加上新的图像 如果溢出 从上面开始重复  <a href="../../d3/d7b/a00986.html#a783eedce7c7a71d4bf5fba6b2dad54ca">更多...</a><br /></td></tr>
+<tr class="separator:a783eedce7c7a71d4bf5fba6b2dad54ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282880334d463cad0db39781d6b2e855"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a282880334d463cad0db39781d6b2e855">addExtraInfo</a> (cv::Mat &amp;fixImg, cv::Mat &amp;extraImg)</td></tr>
+<tr class="memdesc:a282880334d463cad0db39781d6b2e855"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;附属添加额外信息  <a href="../../d3/d7b/a00986.html#a282880334d463cad0db39781d6b2e855">更多...</a><br /></td></tr>
+<tr class="separator:a282880334d463cad0db39781d6b2e855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a8ca54e1f0a2a6340c86a62ff8c10f5e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a8ca54e1f0a2a6340c86a62ff8c10f5e2">img_cnt</a></td></tr>
+<tr class="memdesc:a8ca54e1f0a2a6340c86a62ff8c10f5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;计数当前的图片数量  <a href="../../d3/d7b/a00986.html#a8ca54e1f0a2a6340c86a62ff8c10f5e2">更多...</a><br /></td></tr>
+<tr class="separator:a8ca54e1f0a2a6340c86a62ff8c10f5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af09edee54cbc81a670eb9a3432027d84"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#af09edee54cbc81a670eb9a3432027d84">gImage</a></td></tr>
+<tr class="memdesc:af09edee54cbc81a670eb9a3432027d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;默认拼接之后的图片 整体大图 初始化为黑色  <a href="../../d3/d7b/a00986.html#af09edee54cbc81a670eb9a3432027d84">更多...</a><br /></td></tr>
+<tr class="separator:af09edee54cbc81a670eb9a3432027d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5799833a58df3e4fbc9124eb39a41370"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a5799833a58df3e4fbc9124eb39a41370">sImage_</a></td></tr>
+<tr class="memdesc:a5799833a58df3e4fbc9124eb39a41370"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;存储的大图, 每次往后添加, 直到数据满了, 存入硬盘中  <a href="../../d3/d7b/a00986.html#a5799833a58df3e4fbc9124eb39a41370">更多...</a><br /></td></tr>
+<tr class="separator:a5799833a58df3e4fbc9124eb39a41370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e48656cd2e95d6be718fcc698bad592"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">gImgWidth</a></td></tr>
+<tr class="separator:a9e48656cd2e95d6be718fcc698bad592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405d920b70e4dd78c6e170a4e2bcb23c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c">gImgHeight</a></td></tr>
+<tr class="memdesc:a405d920b70e4dd78c6e170a4e2bcb23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets the height of the image  <a href="../../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c">更多...</a><br /></td></tr>
+<tr class="separator:a405d920b70e4dd78c6e170a4e2bcb23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d28445d61faebe4e937cb68d4ab6ffb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a1d28445d61faebe4e937cb68d4ab6ffb">pImgLast_LT_y</a></td></tr>
+<tr class="memdesc:a1d28445d61faebe4e937cb68d4ab6ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;更新图像之后 记录当前更新值之后的 左上角点, 下一步从此点开始计算  <a href="../../d3/d7b/a00986.html#a1d28445d61faebe4e937cb68d4ab6ffb">更多...</a><br /></td></tr>
+<tr class="separator:a1d28445d61faebe4e937cb68d4ab6ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c4b4cecfbb900e2661223824ed26de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/a00986.html#a79c4b4cecfbb900e2661223824ed26de">pImgLast_LB_y</a></td></tr>
+<tr class="memdesc:a79c4b4cecfbb900e2661223824ed26de"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设置图像的左下角点 便于图像获取一副图像的整体视角  <a href="../../d3/d7b/a00986.html#a79c4b4cecfbb900e2661223824ed26de">更多...</a><br /></td></tr>
+<tr class="separator:a79c4b4cecfbb900e2661223824ed26de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p class="DocNodeLTR">An image show. </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00060">60</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ac778e6a3be5e0b1b29c5af9da0ae6436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac778e6a3be5e0b1b29c5af9da0ae6436">&#9670;&nbsp;</a></span>ImageProc() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageProc::ImageProc </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../d3/d7b/a00986.html" title="&#x202A;An image show.">ImageProc</a> class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;(Optional) If non-null, the parent</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;If non-null, the parent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00025">25</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    UNREFERENCED_PARAMETER(parent);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">&#x202A;m_file</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8b916885777aafadbdc90ffe9e074fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b916885777aafadbdc90ffe9e074fff">&#9670;&nbsp;</a></span>ImageProc() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageProc::ImageProc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>imgWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>imgHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../d3/d7b/a00986.html" title="&#x202A;An image show.">ImageProc</a> class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imgWidth</td><td>&#x202A;Width of the image </td></tr>
+    <tr><td class="paramname">imgHeight</td><td>&#x202A;Height of the image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/16</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imgWidth</td><td>&#x202A;Width of the image </td></tr>
+    <tr><td class="paramname">imgHeight</td><td>&#x202A;Height of the image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00043">43</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// if(imgWidth)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">&#x202A;gImgWidth</a> = imgWidth;   <span class="comment">// 设定 大图尺寸</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c">&#x202A;gImgHeight</a> = imgHeight;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// 生成大图 存储</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#af09edee54cbc81a670eb9a3432027d84">&#x202A;gImage</a> = cv::Mat::zeros( <a class="code" href="../../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c">&#x202A;gImgHeight</a>, <a class="code" href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">&#x202A;gImgWidth</a>,  CV_8UC3);  <span class="comment">// 行列</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a5799833a58df3e4fbc9124eb39a41370">&#x202A;sImage_</a> = cv::Mat::zeros(0, <a class="code" href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">&#x202A;gImgWidth</a>, CV_8UC3);    <span class="comment">// 初始给一行数据</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a8ca54e1f0a2a6340c86a62ff8c10f5e2">&#x202A;img_cnt</a> = 0;   <span class="comment">// Image 计数 得到初始 数目 依次累加即可</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a1d28445d61faebe4e937cb68d4ab6ffb">&#x202A;pImgLast_LT_y</a> = 0;    <span class="comment">// 初始的Image 记录开始的左上角点</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a79c4b4cecfbb900e2661223824ed26de">&#x202A;pImgLast_LB_y</a> = 0; <span class="comment">// 记录左下角点</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// gImgLast = cv::Mat::zeros(10, 10, CV_8UC3);</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">&#x202A;m_file</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9d60d62d842d0bcf3a37ba6a00bb1893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d60d62d842d0bcf3a37ba6a00bb1893">&#9670;&nbsp;</a></span>~ImageProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageProc::~ImageProc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Finalizes an instance of the <a class="el" href="../../d3/d7b/a00986.html" title="&#x202A;An image show.">ImageProc</a> class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00072">72</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">&#x202A;m_file</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">&#x202A;m_file</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a282880334d463cad0db39781d6b2e855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282880334d463cad0db39781d6b2e855">&#9670;&nbsp;</a></span>addExtraInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ImageProc::addExtraInfo </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>fixImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>extraImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;附属添加额外信息 </p>
+<p class="DocNodeLTR">Adds an extra information to 'extraImg'</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">fixImg</td><td>&#x202A;The fix image </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">extraImg</td><td>&#x202A;The extra image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">fixImg</td><td>&#x202A;The fix image. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">extraImg</td><td>&#x202A;The extra image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00476">476</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;{</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    <span class="keywordflow">if</span>(fixImg.size().height != extraImg.size().height)</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160; </div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    cv::Mat img = fixImg + extraImg;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160; </div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    <span class="keywordflow">if</span>(img.size().width != fixImg.size().width)</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a783eedce7c7a71d4bf5fba6b2dad54ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a783eedce7c7a71d4bf5fba6b2dad54ca">&#9670;&nbsp;</a></span>addNewImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ImageProc::addNewImage </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>newImg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;加上新的图像 如果溢出 从上面开始重复 </p>
+<p class="DocNodeLTR">已经确保图像 左右对其 进行上下补齐操作 默认是 往gImage 上添加相应的新图</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">newImg</td><td>&#x202A;The new image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">newImg</td><td>&#x202A;The new image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00443">443</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;{</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="comment">// 区分彩色图像和 灰度图像 不同处理方法</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordtype">int</span> nRows = newImg.rows;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="keywordtype">int</span> nCols = newImg.cols;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="comment">// 快速遍历 将数据复制到指定位置</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nRows; i++)</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    {</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        cv::Vec3b *pNew = newImg.ptr&lt;cv::Vec3b&gt;(i);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        cv::Vec3b *pGlobal = <a class="code" href="../../d3/d7b/a00986.html#af09edee54cbc81a670eb9a3432027d84">&#x202A;gImage</a>.ptr&lt;cv::Vec3b&gt;((i + <a class="code" href="../../d3/d7b/a00986.html#a1d28445d61faebe4e937cb68d4ab6ffb">&#x202A;pImgLast_LT_y</a>)%<a class="code" href="../../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c">&#x202A;gImgHeight</a>);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; nCols; j++)</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        {</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            pGlobal[j] = pNew[j];     <span class="comment">// [(j + offset_x) % nCols]; // 保证不会出现数据溢出问题</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        }</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    }</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_a783eedce7c7a71d4bf5fba6b2dad54ca_icgraph.png" border="0" usemap="#d3/d7b/a00986_a783eedce7c7a71d4bf5fba6b2dad54ca_icgraph" alt=""/></div>
+<map name="d3/d7b/a00986_a783eedce7c7a71d4bf5fba6b2dad54ca_icgraph" id="d3/d7b/a00986_a783eedce7c7a71d4bf5fba6b2dad54ca_icgraph">
+<area shape="rect" title="加上新的图像 如果溢出 从上面开始重复" alt="" coords="372,31,545,57"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="201,31,324,57"/>
+<area shape="rect" href="../../d4/d12/a00910.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,5,131,32"/>
+<area shape="rect" href="../../d9/df5/a01086.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,56,153,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4b2e9059917bc49d6bba52b08ccabf19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b2e9059917bc49d6bba52b08ccabf19">&#9670;&nbsp;</a></span>GetFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ImageProc::GetFrame </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>dstImg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然后显示出来 // bool GetFrame(cv::Mat &amp;dstImg,int start_y=-1, int hight_h=-1, // // int start_x = -1, int width_w = WIDTH); </p>
+<p class="DocNodeLTR">Gets a frame</p>
+<p class="DocNodeLTR">获取一副图像 便于后续显示</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/22</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dstImg</td><td>&#x202A;Destination image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails.</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dstImg</td><td>&#x202A;Destination image. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">start_y</td><td>&#x202A;The start y coordinate. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">hight_h</td><td>&#x202A;The hight h. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">start_x</td><td>&#x202A;The start x coordinate. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">width_w</td><td>&#x202A;The width w.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails.</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dstImg</td><td>&#x202A;Destination image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00238">238</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;{</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">// 默认从上一副图像的左下角点计算得到相应的结果值</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a453aa18bb8ee0cb86e5d55e145a20ca0">&#x202A;shiftImage</a>(<a class="code" href="../../d3/d7b/a00986.html#af09edee54cbc81a670eb9a3432027d84">&#x202A;gImage</a>, dstImg, 0, <a class="code" href="../../d3/d7b/a00986.html#a79c4b4cecfbb900e2661223824ed26de">&#x202A;pImgLast_LB_y</a>);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="comment">// 画出来一条线 标识出来 临时图像的区域</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordtype">int</span> tmp_height = (<a class="code" href="../../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c">&#x202A;gImgHeight</a> - (<a class="code" href="../../d3/d7b/a00986.html#a79c4b4cecfbb900e2661223824ed26de">&#x202A;pImgLast_LB_y</a> - <a class="code" href="../../d3/d7b/a00986.html#a1d28445d61faebe4e937cb68d4ab6ffb">&#x202A;pImgLast_LT_y</a>)) % <a class="code" href="../../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c">&#x202A;gImgHeight</a>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    cv::line(dstImg, </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;             cv::Point(0, tmp_height), </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;             cv::Point(<a class="code" href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">&#x202A;gImgWidth</a> - 1, tmp_height), </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;             cv::Scalar(0, 255, 0));</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_a4b2e9059917bc49d6bba52b08ccabf19_cgraph.png" border="0" usemap="#d3/d7b/a00986_a4b2e9059917bc49d6bba52b08ccabf19_cgraph" alt=""/></div>
+<map name="d3/d7b/a00986_a4b2e9059917bc49d6bba52b08ccabf19_cgraph" id="d3/d7b/a00986_a4b2e9059917bc49d6bba52b08ccabf19_cgraph">
+<area shape="rect" title="// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然..." alt="" coords="5,5,156,32"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#a453aa18bb8ee0cb86e5d55e145a20ca0" title="右侧偏移图像修正 bool fixUpImage(cv::Mat &amp;subImg, cv::Mat &amp;fixImage, int offset_x = 0, int offset_y = 0); 通过 ..." alt="" coords="204,5,355,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_a4b2e9059917bc49d6bba52b08ccabf19_icgraph.png" border="0" usemap="#d3/d7b/a00986_a4b2e9059917bc49d6bba52b08ccabf19_icgraph" alt=""/></div>
+<map name="d3/d7b/a00986_a4b2e9059917bc49d6bba52b08ccabf19_icgraph" id="d3/d7b/a00986_a4b2e9059917bc49d6bba52b08ccabf19_icgraph">
+<area shape="rect" title="// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然..." alt="" coords="201,31,352,57"/>
+<area shape="rect" href="../../d4/d12/a00910.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,5,131,32"/>
+<area shape="rect" href="../../d9/df5/a01086.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,56,153,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8f4aaa7b7ee5937f7f8b66afbb67e7ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4aaa7b7ee5937f7f8b66afbb67e7ca">&#9670;&nbsp;</a></span>getImgOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Point ImageProc::getImgOffset </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>curImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>lastImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;计算两个 小区块 图像的偏移值 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curImg</td><td>&#x202A;The current image </td></tr>
+    <tr><td class="paramname">lastImg</td><td>&#x202A;The last image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The image offset</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curImg</td><td>&#x202A;The current image. </td></tr>
+    <tr><td class="paramname">lastImg</td><td>&#x202A;The last image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The image offset. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00351">351</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;{</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="comment">// 获取到的 上一副图像 稍微大出来一圈 进行区域判断</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    </div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="comment">// 创建一个 结果图像 后续查找结果座标值</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordtype">int</span> res_cols = lastImg.cols - curImg.cols + 1;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordtype">int</span> res_rows = lastImg.rows - curImg.rows + 1;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    cv::Mat res = cv::Mat(res_rows, res_cols, CV_32FC1);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="comment">// 第一个为原图 大图, 第二个参数为 小图</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    cv::matchTemplate(lastImg, curImg, res, CV_TM_SQDIFF);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">// 找到最大最小值 以及位置座标</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordtype">double</span> minVal, maxVal;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    cv::Point minLoc, maxLoc;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    cv::minMaxLoc(res, &amp;minVal, &amp;maxVal, &amp;minLoc, &amp;maxLoc, cv::Mat());</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">// 对于不同的算法 最大匹配点可能发生在最大值处(其他)或者最小值处(CV_TM_SQDIFF,CV_SQDIFF_NORMED)</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">return</span> minLoc;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_a8f4aaa7b7ee5937f7f8b66afbb67e7ca_icgraph.png" border="0" usemap="#d3/d7b/a00986_a8f4aaa7b7ee5937f7f8b66afbb67e7ca_icgraph" alt=""/></div>
+<map name="d3/d7b/a00986_a8f4aaa7b7ee5937f7f8b66afbb67e7ca_icgraph" id="d3/d7b/a00986_a8f4aaa7b7ee5937f7f8b66afbb67e7ca_icgraph">
+<area shape="rect" title="计算两个 小区块 图像的偏移值" alt="" coords="583,31,748,57"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#aaf4c9fb991fb727787f31b3ac5b815cf" title="自定义匹配两个图像 用来获取当前图像对于上一帧图像的偏移值" alt="" coords="372,31,535,57"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="201,31,324,57"/>
+<area shape="rect" href="../../d4/d12/a00910.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,5,131,32"/>
+<area shape="rect" href="../../d9/df5/a01086.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,56,153,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaf4c9fb991fb727787f31b3ac5b815cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf4c9fb991fb727787f31b3ac5b815cf">&#9670;&nbsp;</a></span>matchImage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Point ImageProc::matchImage </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>curImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>lastImg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;自定义匹配两个图像 用来获取当前图像对于上一帧图像的偏移值 </p>
+<p class="DocNodeLTR">匹配两个图像 获取偏移值</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curImg</td><td>&#x202A;The current image </td></tr>
+    <tr><td class="paramname">lastImg</td><td>&#x202A;The last image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A cv::Point</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curImg</td><td>&#x202A;The current image. </td></tr>
+    <tr><td class="paramname">lastImg</td><td>&#x202A;The last image.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A cv::Point. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00267">267</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;{</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="comment">// 截取出来两个小尺寸图像</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    cv::Mat curImg_block = curImg(<a class="code" href="../../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb">&#x202A;runPara</a>.<a class="code" href="../../d3/dd1/a00914.html#ae4a6ffed9c799a33a1e0d1dff4110fd4">&#x202A;Image</a>.<a class="code" href="../../d0/ddf/a00918.html#a068c8cf2672c980ec99128d7b345d2d3">&#x202A;curImgR</a>);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    cv::Mat lastImg_block = lastImg(<a class="code" href="../../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb">&#x202A;runPara</a>.<a class="code" href="../../d3/dd1/a00914.html#ae4a6ffed9c799a33a1e0d1dff4110fd4">&#x202A;Image</a>.<a class="code" href="../../d0/ddf/a00918.html#a938a0c5124ecbc7d0b5929ad7a63236e">&#x202A;lastImgR</a>);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="comment">// 计算 小区域图像的偏移值 (座标系不同)</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    cv::Point offsetP = <a class="code" href="../../d3/d7b/a00986.html#a8f4aaa7b7ee5937f7f8b66afbb67e7ca">&#x202A;getImgOffset</a>(curImg_block, lastImg_block);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;     <span class="comment">// 计算出来真实的偏移值</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    offsetP += <a class="code" href="../../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb">&#x202A;runPara</a>.<a class="code" href="../../d3/dd1/a00914.html#ae4a6ffed9c799a33a1e0d1dff4110fd4">&#x202A;Image</a>.<a class="code" href="../../d0/ddf/a00918.html#a938a0c5124ecbc7d0b5929ad7a63236e">&#x202A;lastImgR</a>.tl() </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;             - <a class="code" href="../../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb">&#x202A;runPara</a>.<a class="code" href="../../d3/dd1/a00914.html#ae4a6ffed9c799a33a1e0d1dff4110fd4">&#x202A;Image</a>.<a class="code" href="../../d0/ddf/a00918.html#a068c8cf2672c980ec99128d7b345d2d3">&#x202A;curImgR</a>.tl();</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="comment">// LInfo(&quot;Offset:({0},{1})&quot;, offsetP.x, offsetP.y);</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">return</span> offsetP;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_aaf4c9fb991fb727787f31b3ac5b815cf_cgraph.png" border="0" usemap="#d3/d7b/a00986_aaf4c9fb991fb727787f31b3ac5b815cf_cgraph" alt=""/></div>
+<map name="d3/d7b/a00986_aaf4c9fb991fb727787f31b3ac5b815cf_cgraph" id="d3/d7b/a00986_aaf4c9fb991fb727787f31b3ac5b815cf_cgraph">
+<area shape="rect" title="自定义匹配两个图像 用来获取当前图像对于上一帧图像的偏移值" alt="" coords="5,5,168,32"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#a8f4aaa7b7ee5937f7f8b66afbb67e7ca" title="计算两个 小区块 图像的偏移值" alt="" coords="216,5,381,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_aaf4c9fb991fb727787f31b3ac5b815cf_icgraph.png" border="0" usemap="#d3/d7b/a00986_aaf4c9fb991fb727787f31b3ac5b815cf_icgraph" alt=""/></div>
+<map name="d3/d7b/a00986_aaf4c9fb991fb727787f31b3ac5b815cf_icgraph" id="d3/d7b/a00986_aaf4c9fb991fb727787f31b3ac5b815cf_icgraph">
+<area shape="rect" title="自定义匹配两个图像 用来获取当前图像对于上一帧图像的偏移值" alt="" coords="372,31,535,57"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="201,31,324,57"/>
+<area shape="rect" href="../../d4/d12/a00910.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,5,131,32"/>
+<area shape="rect" href="../../d9/df5/a01086.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,56,153,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aefce1fe135777841cff60ed292835d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefce1fe135777841cff60ed292835d68">&#9670;&nbsp;</a></span>matchImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ImageProc::matchImage </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>curImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>lastImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Point &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Match image </p>
+<p class="DocNodeLTR">根据设定的偏移值附近范围内进行图像匹配最优点 更快</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">curImg</td><td>&#x202A;The current image </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">lastImg</td><td>&#x202A;The last image </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">offset</td><td>&#x202A;The offset</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">curImg</td><td>&#x202A;The current image. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">lastImg</td><td>&#x202A;The last image. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">offset</td><td>&#x202A;The offset. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00297">297</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;{</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="comment">// 根据 偏移值 计算出来要取出来进行匹配的区域</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">// 将目前图像的最中心位置的 设定大小的区域 取出来 然后</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    cv::Rect curImg_rect = <a class="code" href="../../da/d45/a00011.html#a15bfdd88e937e375aca09f8c2994579d">&#x202A;getCenRect</a>(<a class="code" href="../../da/d45/a00011.html#a2b33969147c46958972d8f7d5d8e66b3">&#x202A;getImgRect</a>(curImg),</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                      <a class="code" href="../../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb">&#x202A;runPara</a>.<a class="code" href="../../d3/dd1/a00914.html#ae4a6ffed9c799a33a1e0d1dff4110fd4">&#x202A;Image</a>.<a class="code" href="../../d0/ddf/a00918.html#a068c8cf2672c980ec99128d7b345d2d3">&#x202A;curImgR</a>.width,</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                      <a class="code" href="../../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb">&#x202A;runPara</a>.<a class="code" href="../../d3/dd1/a00914.html#ae4a6ffed9c799a33a1e0d1dff4110fd4">&#x202A;Image</a>.<a class="code" href="../../d0/ddf/a00918.html#a068c8cf2672c980ec99128d7b345d2d3">&#x202A;curImgR</a>.height);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">// #TODO  考虑 细节逻辑</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">// 根据偏移值 和当前区域定位出来上次得到的区域值</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;   </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    cv::Rect lastImg_rect = (<a class="code" href="../../da/d45/a00011.html#aef517eb734fb58e5679c499b7e03f9f9">&#x202A;getOffsetRect</a> (curImg_rect, offset)) &amp; <a class="code" href="../../da/d45/a00011.html#a2b33969147c46958972d8f7d5d8e66b3">&#x202A;getImgRect</a>(lastImg);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    cv::Mat curImg_block = curImg(curImg_rect);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    cv::Mat lastImg_block = lastImg(lastImg_rect | curImg_rect);    <span class="comment">// 获取 图像区域 并集</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="comment">// 测试 将区域画在原图上</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    cv::Mat tmp_cur = curImg.clone(), tmp_last = lastImg.clone();</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    cv::rectangle(tmp_cur, curImg_rect, cv::Scalar(0, 0, 255));</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    cv::rectangle(tmp_last, curImg_rect, cv::Scalar(0, 0, 255));</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    cv::rectangle(tmp_last, lastImg_rect, cv::Scalar(0, 255, 0));</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="comment">// 计算出来两个图像的偏移值</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    cv::Point offset_img;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="comment">// 计算 小区域图像的偏移值 (座标系不同)</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    offset_img = <a class="code" href="../../d3/d7b/a00986.html#a8f4aaa7b7ee5937f7f8b66afbb67e7ca">&#x202A;getImgOffset</a>(curImg_block, lastImg_block);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">// 计算出来真实的偏移值</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    offset_img = lastImg_rect.tl() - curImg_rect.tl() + offset_img;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="comment">// 将硬件的偏移值 加上软件的偏移值</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    offset += offset_img;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    LDebug(<span class="stringliteral">&quot;Offset:{},{}&quot;</span>, offset.x, offset.y);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_aefce1fe135777841cff60ed292835d68_cgraph.png" border="0" usemap="#d3/d7b/a00986_aefce1fe135777841cff60ed292835d68_cgraph" alt=""/></div>
+<map name="d3/d7b/a00986_aefce1fe135777841cff60ed292835d68_cgraph" id="d3/d7b/a00986_aefce1fe135777841cff60ed292835d68_cgraph">
+<area shape="rect" title="Match image" alt="" coords="5,81,168,108"/>
+<area shape="rect" href="../../da/d45/a00011.html#a15bfdd88e937e375aca09f8c2994579d" title="根据一副图像的尺寸和要生成的图像尺寸 生成居中 的一个矩形框" alt="" coords="253,5,344,32"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#a8f4aaa7b7ee5937f7f8b66afbb67e7ca" title="计算两个 小区块 图像的偏移值" alt="" coords="216,56,381,83"/>
+<area shape="rect" href="../../da/d45/a00011.html#a2b33969147c46958972d8f7d5d8e66b3" title="返回图像的 矩形区域" alt="" coords="255,107,343,133"/>
+<area shape="rect" href="../../da/d45/a00011.html#aef517eb734fb58e5679c499b7e03f9f9" title="根据当前区域相对于上次区域的偏移值定位出来 上次矩形框的外扩范围" alt="" coords="248,157,349,184"/>
+<area shape="rect" href="../../d1/d88/a00128.html#ab688848b4cebf25b937dea6704b3b6a8" title="Margin rectangle" alt="" coords="429,157,517,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acd18773a822c007ea0d9242b24f86e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd18773a822c007ea0d9242b24f86e4d">&#9670;&nbsp;</a></span>Push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ImageProc::Push </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>newImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset_x</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset_y</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行, 开始从最上侧开始运行 将已有的大图看成一个环形队列, 在设定的位置 添加上相应的位置 如果左右边界不满足 则log 并判断出错的问题 超过设定值 之后进行存储操作. </p>
+<p class="DocNodeLTR">向大图中添加相应的 小图的实现方式</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">newImage</td><td>&#x202A;The new image </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">offset_x</td><td>&#x202A;(Optional) The offset x coordinate </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">offset_y</td><td>&#x202A;(Optional) The offset y coordinate</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Error_Image_Resize_Crash,Thrown</td><td>&#x202A;when an error image resize crash, error condition occurs.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">newImage</td><td>&#x202A;The new image. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">offset_x</td><td>&#x202A;The offset x coordinate. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">offset_y</td><td>&#x202A;The offset y coordinate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00098">98</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a8ca54e1f0a2a6340c86a62ff8c10f5e2">&#x202A;img_cnt</a>++; <span class="comment">//  图片计数</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// 判断一下图像尺寸是否 正确 避免出现图像空 图像</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (newImage.cols != <a class="code" href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">&#x202A;gImgWidth</a>)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        LError(<span class="stringliteral">&quot;Image Cols Error,Cannnot Continue&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        system(<span class="stringliteral">&quot;pause&quot;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// #TODO: 数据融合</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// 根据 编码器和磁力计 计算出来 图像的偏移值</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// 硬件偏移值</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    cv::Point offsetP(offset_x, offset_y);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// 第一次经过不匹配</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d3/d7b/a00986.html#a8ca54e1f0a2a6340c86a62ff8c10f5e2">&#x202A;img_cnt</a> != 1)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="../../d3/d7b/a00986.html#aaf4c9fb991fb727787f31b3ac5b815cf">&#x202A;matchImage</a>(newImage, <a class="code" href="../../d3/d7b/a00986.html#af7492a19f8826165daf13efdfe237ba5">&#x202A;gImgLast</a>,offsetP); <span class="comment">// 根据硬件偏移值 进行初步搜索 得到精准偏移值 并进行更新</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// #TODO: 此处进行图像偏移的融合 获取图像偏移和 其他传感器</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// Limit(offsetP.y, 3, 20);</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// return false;</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (offsetP.y &lt;1 )</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        offsetP.y = 0;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// LDebug(&quot;Hardware Offset Y:{},Img Offset:({},{})&quot;, offset_y, offsetP.x, offsetP.y);</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    offset_x = offsetP.x;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    offset_y = offsetP.y;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// 判断图像之后</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#af7492a19f8826165daf13efdfe237ba5">&#x202A;gImgLast</a> = newImage.clone();<span class="comment">// 备份上一帧图像</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// 判断新加入的图片的左右尺寸是否一致 否则进行 resize</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">// if (newImage.cols != gImgWidth)</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        LTrace(<span class="stringliteral">&quot;ImageProc Resize Start!&quot;</span>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        cv::resize(newImage, newImage, cv::Size(<a class="code" href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">&#x202A;gImgWidth</a>, newImage.rows));</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">throw</span>(<a class="code" href="../../d5/d16/a00029.html#a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66">&#x202A;Error_Image_Resize_Crash</a>, <span class="stringliteral">&quot;image resize error&quot;</span>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// 首先根据 x 方向偏移 将图像进行错位, 右侧多出的部分补充到左侧, 保证图像尺寸不变, 内容调整  </span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// 如果无偏移值 直接添加 原始图片</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    cv::Mat fixUpNewSubImage;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (offset_x &gt; 0)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="../../d3/d7b/a00986.html#a453aa18bb8ee0cb86e5d55e145a20ca0">&#x202A;shiftImage</a>(newImage, fixUpNewSubImage, offset_x);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        fixUpNewSubImage = newImage;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">// 数据写入文件中</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// 选择出来未覆盖的区域, 然后写入数据文件中</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    cv::Rect r = cv::Rect(0, 0, <a class="code" href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">&#x202A;gImgWidth</a>, offset_y);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    cv::Mat <a class="code" href="../../d3/d00/a00113.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <a class="code" href="../../d3/d7b/a00986.html#af7492a19f8826165daf13efdfe237ba5">&#x202A;gImgLast</a>(r);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">// 每行数据存入数据</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="../../d3/d00/a00113.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>.rows; i++)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <a class="code" href="../../d3/d7b/a00986.html#a5799833a58df3e4fbc9124eb39a41370">&#x202A;sImage_</a>.push_back(<a class="code" href="../../d3/d00/a00113.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>.row(i));</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> simg_cnt = 1;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d3/d7b/a00986.html#a5799833a58df3e4fbc9124eb39a41370">&#x202A;sImage_</a>.rows &gt; 100)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="../../d3/d7b/a00986.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60">&#x202A;StoreImage</a>(simg_cnt++);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">&#x202A;m_file</a>-&gt;<a class="code" href="../../d2/ddd/a00978.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2">&#x202A;AppendData</a>(<a class="code" href="../../d3/d00/a00113.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// 判断区域是否超出设定区域 如果超过设定区域 则也可以使用基本参数使用</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">//  如果已经 超过范围 则直接计算超过的值 保证不超过最大值</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a1d28445d61faebe4e937cb68d4ab6ffb">&#x202A;pImgLast_LT_y</a> =(<a class="code" href="../../d3/d7b/a00986.html#a1d28445d61faebe4e937cb68d4ab6ffb">&#x202A;pImgLast_LT_y</a>+ <a class="code" href="../../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c">&#x202A;gImgHeight</a>+ offset_y)% <a class="code" href="../../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c">&#x202A;gImgHeight</a>; <span class="comment">// 记录下一次图像开始左上角点 行值</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;   <span class="comment">// 将新图像 添加到新图像的位置</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">// 可能存在覆盖图像等操作，只需要取出来前一副图像中 没有被覆盖掉的文件 存入相应的区域即可</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a783eedce7c7a71d4bf5fba6b2dad54ca">&#x202A;addNewImage</a>(fixUpNewSubImage); </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="../../d3/d7b/a00986.html#a79c4b4cecfbb900e2661223824ed26de">&#x202A;pImgLast_LB_y</a> = <a class="code" href="../../d3/d7b/a00986.html#a1d28445d61faebe4e937cb68d4ab6ffb">&#x202A;pImgLast_LT_y</a> + fixUpNewSubImage.rows; <span class="comment">// 记录左下角点  显示的时候从此处来时实现</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">// gImgLast = fixUpNewSubImage.clone(); // 保留上次结果的图像</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// int flg_overflow = 0;</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">// int tmp_pImageB = newImage</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">// LDebug(&quot;Offset:{0},{1}&quot;, offset_x,offset_y);</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_acd18773a822c007ea0d9242b24f86e4d_cgraph.png" border="0" usemap="#d3/d7b/a00986_acd18773a822c007ea0d9242b24f86e4d_cgraph" alt=""/></div>
+<map name="d3/d7b/a00986_acd18773a822c007ea0d9242b24f86e4d_cgraph" id="d3/d7b/a00986_acd18773a822c007ea0d9242b24f86e4d_cgraph">
+<area shape="rect" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="5,107,128,133"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#a783eedce7c7a71d4bf5fba6b2dad54ca" title="加上新的图像 如果溢出 从上面开始重复" alt="" coords="176,5,349,32"/>
+<area shape="rect" href="../../d2/ddd/a00978.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2" title="写入新一批的图像" alt="" coords="189,56,336,83"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#aaf4c9fb991fb727787f31b3ac5b815cf" title="自定义匹配两个图像 用来获取当前图像对于上一帧图像的偏移值" alt="" coords="181,107,344,133"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#a453aa18bb8ee0cb86e5d55e145a20ca0" title="右侧偏移图像修正 bool fixUpImage(cv::Mat &amp;subImg, cv::Mat &amp;fixImage, int offset_x = 0, int offset_y = 0); 通过 ..." alt="" coords="187,157,338,184"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60" title="将数据存储下来" alt="" coords="183,208,342,235"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#a8f4aaa7b7ee5937f7f8b66afbb67e7ca" title="计算两个 小区块 图像的偏移值" alt="" coords="397,107,563,133"/>
+<area shape="rect" href="../../da/d45/a00011.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="437,208,523,235"/>
+<area shape="rect" href="../../d1/d88/a00128.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="611,208,681,235"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_acd18773a822c007ea0d9242b24f86e4d_icgraph.png" border="0" usemap="#d3/d7b/a00986_acd18773a822c007ea0d9242b24f86e4d_icgraph" alt=""/></div>
+<map name="d3/d7b/a00986_acd18773a822c007ea0d9242b24f86e4d_icgraph" id="d3/d7b/a00986_acd18773a822c007ea0d9242b24f86e4d_icgraph">
+<area shape="rect" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="201,31,324,57"/>
+<area shape="rect" href="../../d4/d12/a00910.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,5,131,32"/>
+<area shape="rect" href="../../d9/df5/a01086.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,56,153,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1e8d375e61badc6cdba5f2cea7376770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8d375e61badc6cdba5f2cea7376770">&#9670;&nbsp;</a></span>SetFileP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ImageProc::SetFileP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/ddd/a00978.html">IDOIFile</a> *&#160;</td>
+          <td class="paramname"><em>file_p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;设置文件指针, 如果不为空,表示指针之前有数据, 覆盖旧指针 , 返回错误 </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;如果传入的指针为空, 返回错误 <br  />
+</li>
+<li>&#x202A;如果传入指针非空,类 指针为空, 直接覆盖</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/22</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">file_p</td><td>&#x202A;If non-null, the file p.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00142">142</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span> (file_p == <span class="keyword">nullptr</span>)   </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;  </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">&#x202A;m_file</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <a class="code" href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">&#x202A;m_file</a> = file_p;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">&#x202A;m_file</a> = file_p;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a453aa18bb8ee0cb86e5d55e145a20ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453aa18bb8ee0cb86e5d55e145a20ca0">&#9670;&nbsp;</a></span>shiftImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ImageProc::shiftImage </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>srcImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>dstImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset_x</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset_y</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;右侧偏移图像修正 bool fixUpImage(cv::Mat &amp;subImg, cv::Mat &amp;fixImage, int offset_x = 0, int offset_y = 0); 通过 平移 使得一侧偏移的图像从 另一侧补上来 下出 上补 右出 左补 </p>
+<p class="DocNodeLTR">修正图像 将图像水平推移, 多出的部分移动到左边 参考链接 <a href="https://blog.csdn.net/u012005313/article/details/46687837">https://blog.csdn.net/u012005313/article/details/46687837</a> 移位图像操作</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">srcImg</td><td>&#x202A;Source image </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dstImg</td><td>&#x202A;Destination image </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">offset_x</td><td>&#x202A;(Optional) The offset x coordinate </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">offset_y</td><td>&#x202A;(Optional) The offset y coordinate</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">srcImg</td><td>&#x202A;Source image. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dstImg</td><td>&#x202A;Destination image. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">offset_x</td><td>&#x202A;The offset x coordinate. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">offset_y</td><td>&#x202A;The offset y coordinate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00390">390</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;{</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="comment">//保证两个图像的一致性  避免指针操作出错</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    dstImg = cv::Mat(srcImg.rows, srcImg.cols, srcImg.type());</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="comment">// 区分彩色图像和 灰度图像 不同处理方法</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">if</span> (srcImg.channels() != 1)</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    {</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keywordtype">int</span> nRows = srcImg.rows;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordtype">int</span> nCols = srcImg.cols;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="comment">// 快速遍历 将数据复制到指定位置</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nRows; i++)</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        {</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            cv::Vec3b *pSrc = srcImg.ptr&lt;cv::Vec3b&gt;((i + offset_y) % nRows);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            cv::Vec3b *pDst = dstImg.ptr&lt;cv::Vec3b&gt;(i);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; nCols; j++)</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                pDst[j] = pSrc[(j + offset_x) % nCols]; <span class="comment">// 保证不会出现数据溢出问题</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        }</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    {</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <span class="keywordtype">int</span> nRows = srcImg.rows;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <span class="keywordtype">int</span> nCols = srcImg.cols;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="comment">// 快速遍历 将数据复制到指定位置</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nRows; i++)</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        {</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            <a class="code" href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *pSrc = srcImg.ptr&lt;<a class="code" href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>&gt;((i + offset_y) % nRows);</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            <a class="code" href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *pDst = dstImg.ptr&lt;<a class="code" href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>&gt;(i);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; nCols; j++)</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            {</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;                pDst[j] = pSrc[(j + offset_x) % nCols]; <span class="comment">// 保证不会出现数据溢出问题</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            }</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        }</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_a453aa18bb8ee0cb86e5d55e145a20ca0_icgraph.png" border="0" usemap="#d3/d7b/a00986_a453aa18bb8ee0cb86e5d55e145a20ca0_icgraph" alt=""/></div>
+<map name="d3/d7b/a00986_a453aa18bb8ee0cb86e5d55e145a20ca0_icgraph" id="d3/d7b/a00986_a453aa18bb8ee0cb86e5d55e145a20ca0_icgraph">
+<area shape="rect" title="右侧偏移图像修正 bool fixUpImage(cv::Mat &amp;subImg, cv::Mat &amp;fixImage, int offset_x = 0, int offset_y = 0); 通过 ..." alt="" coords="400,31,551,57"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#a4b2e9059917bc49d6bba52b08ccabf19" title="// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然..." alt="" coords="201,5,352,32"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="215,56,338,83"/>
+<area shape="rect" href="../../d4/d12/a00910.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,5,131,32"/>
+<area shape="rect" href="../../d9/df5/a01086.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,56,153,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a761ee051ae7ddcdf6fe2fd5c0a91bf60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a761ee051ae7ddcdf6fe2fd5c0a91bf60">&#9670;&nbsp;</a></span>StoreImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ImageProc::StoreImage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cnt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;将数据存储下来 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cnt</td><td>&#x202A;Number of</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00119">119</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// 存储  大图</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        cv::imwrite(<span class="stringliteral">&quot;./Media/pic/store/sImage_&quot;</span> + <a class="code" href="../../da/d45/a00011.html#aa132dc7ddfc38fed5cdbc20ae1eddd55">&#x202A;getTimeStr</a>() +<span class="stringliteral">&quot;_&quot;</span>+ std::to_string (cnt)+ <span class="stringliteral">&quot;.png&quot;</span>, <a class="code" href="../../d3/d7b/a00986.html#a5799833a58df3e4fbc9124eb39a41370">&#x202A;sImage_</a>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="../../d3/d7b/a00986.html#a5799833a58df3e4fbc9124eb39a41370">&#x202A;sImage_</a> = cv::Mat::zeros(0, <a class="code" href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">&#x202A;gImgWidth</a>, CV_8UC3);    <span class="comment">// 重新初始化值</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_a761ee051ae7ddcdf6fe2fd5c0a91bf60_cgraph.png" border="0" usemap="#d3/d7b/a00986_a761ee051ae7ddcdf6fe2fd5c0a91bf60_cgraph" alt=""/></div>
+<map name="d3/d7b/a00986_a761ee051ae7ddcdf6fe2fd5c0a91bf60_cgraph" id="d3/d7b/a00986_a761ee051ae7ddcdf6fe2fd5c0a91bf60_cgraph">
+<area shape="rect" title="将数据存储下来" alt="" coords="5,5,164,32"/>
+<area shape="rect" href="../../da/d45/a00011.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="212,5,297,32"/>
+<area shape="rect" href="../../d1/d88/a00128.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="345,5,416,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d7b/a00986_a761ee051ae7ddcdf6fe2fd5c0a91bf60_icgraph.png" border="0" usemap="#d3/d7b/a00986_a761ee051ae7ddcdf6fe2fd5c0a91bf60_icgraph" alt=""/></div>
+<map name="d3/d7b/a00986_a761ee051ae7ddcdf6fe2fd5c0a91bf60_icgraph" id="d3/d7b/a00986_a761ee051ae7ddcdf6fe2fd5c0a91bf60_icgraph">
+<area shape="rect" title="将数据存储下来" alt="" coords="372,31,531,57"/>
+<area shape="rect" href="../../d3/d7b/a00986.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="201,31,324,57"/>
+<area shape="rect" href="../../d4/d12/a00910.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,5,131,32"/>
+<area shape="rect" href="../../d9/df5/a01086.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,56,153,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="af09edee54cbc81a670eb9a3432027d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af09edee54cbc81a670eb9a3432027d84">&#9670;&nbsp;</a></span>gImage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat ImageProc::gImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;默认拼接之后的图片 整体大图 初始化为黑色 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00244">244</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a405d920b70e4dd78c6e170a4e2bcb23c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a405d920b70e4dd78c6e170a4e2bcb23c">&#9670;&nbsp;</a></span>gImgHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">gImgWidth</a> ImageProc::gImgHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets the height of the image </p>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The height of the image </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00255">255</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af7492a19f8826165daf13efdfe237ba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7492a19f8826165daf13efdfe237ba5">&#9670;&nbsp;</a></span>gImgLast</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat ImageProc::gImgLast</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;存储自己 上一次运行的图像 便于后续进行匹配 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00240">240</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9e48656cd2e95d6be718fcc698bad592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e48656cd2e95d6be718fcc698bad592">&#9670;&nbsp;</a></span>gImgWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageProc::gImgWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00255">255</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8ca54e1f0a2a6340c86a62ff8c10f5e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ca54e1f0a2a6340c86a62ff8c10f5e2">&#9670;&nbsp;</a></span>img_cnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageProc::img_cnt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;计数当前的图片数量 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00243">243</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab88bf9b026d0054064c76c4ce8fb46d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab88bf9b026d0054064c76c4ce8fb46d2">&#9670;&nbsp;</a></span>m_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/ddd/a00978.html">IDOIFile</a>* ImageProc::m_file</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;写入文件指针 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a79c4b4cecfbb900e2661223824ed26de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79c4b4cecfbb900e2661223824ed26de">&#9670;&nbsp;</a></span>pImgLast_LB_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageProc::pImgLast_LB_y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;设置图像的左下角点 便于图像获取一副图像的整体视角 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00259">259</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1d28445d61faebe4e937cb68d4ab6ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d28445d61faebe4e937cb68d4ab6ffb">&#9670;&nbsp;</a></span>pImgLast_LT_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ImageProc::pImgLast_LT_y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;更新图像之后 记录当前更新值之后的 左上角点, 下一步从此点开始计算 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00258">258</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5799833a58df3e4fbc9124eb39a41370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5799833a58df3e4fbc9124eb39a41370">&#9670;&nbsp;</a></span>sImage_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat ImageProc::sImage_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;存储的大图, 每次往后添加, 直到数据满了, 存入硬盘中 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a> 第 <a class="el" href="../../d6/d5b/a00026_source.html#l00245">245</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../d6/d5b/a00026_source.html">ImageProc.h</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/src/<a class="el" href="../../d5/db1/a00140_source.html">ImageProc.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00011_html_aef517eb734fb58e5679c499b7e03f9f9"><div class="ttname"><a href="../../da/d45/a00011.html#aef517eb734fb58e5679c499b7e03f9f9">&#x202A;getOffsetRect</a></div><div class="ttdeci">&#x202A;cv::Rect getOffsetRect(const cv::Rect &amp;cur_r, const cv::Point &amp;offset)</div><div class="ttdoc">&#x202A;根据当前区域相对于上次区域的偏移值定位出来 上次矩形框的外扩范围</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00888">common.cc:888</a></div></div>
+<div class="ttc" id="aa00986_html_a9e48656cd2e95d6be718fcc698bad592"><div class="ttname"><a href="../../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592">&#x202A;ImageProc::gImgWidth</a></div><div class="ttdeci">&#x202A;int gImgWidth</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00255">ImageProc.h:255</a></div></div>
+<div class="ttc" id="aa00986_html_a1d28445d61faebe4e937cb68d4ab6ffb"><div class="ttname"><a href="../../d3/d7b/a00986.html#a1d28445d61faebe4e937cb68d4ab6ffb">&#x202A;ImageProc::pImgLast_LT_y</a></div><div class="ttdeci">&#x202A;int pImgLast_LT_y</div><div class="ttdoc">&#x202A;更新图像之后 记录当前更新值之后的 左上角点, 下一步从此点开始计算</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00258">ImageProc.h:258</a></div></div>
+<div class="ttc" id="aa00918_html_a938a0c5124ecbc7d0b5929ad7a63236e"><div class="ttname"><a href="../../d0/ddf/a00918.html#a938a0c5124ecbc7d0b5929ad7a63236e">&#x202A;RunPara::Struct_Image::lastImgR</a></div><div class="ttdeci">&#x202A;cv::Rect lastImgR</div><div class="ttdoc">&#x202A;curImgRect and Last ImgRect</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00060">Config.h:60</a></div></div>
+<div class="ttc" id="aa00986_html_a8ca54e1f0a2a6340c86a62ff8c10f5e2"><div class="ttname"><a href="../../d3/d7b/a00986.html#a8ca54e1f0a2a6340c86a62ff8c10f5e2">&#x202A;ImageProc::img_cnt</a></div><div class="ttdeci">&#x202A;int img_cnt</div><div class="ttdoc">&#x202A;计数当前的图片数量</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00243">ImageProc.h:243</a></div></div>
+<div class="ttc" id="aa00918_html_a068c8cf2672c980ec99128d7b345d2d3"><div class="ttname"><a href="../../d0/ddf/a00918.html#a068c8cf2672c980ec99128d7b345d2d3">&#x202A;RunPara::Struct_Image::curImgR</a></div><div class="ttdeci">&#x202A;cv::Rect curImgR</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00060">Config.h:60</a></div></div>
+<div class="ttc" id="aa00011_html_aa132dc7ddfc38fed5cdbc20ae1eddd55"><div class="ttname"><a href="../../da/d45/a00011.html#aa132dc7ddfc38fed5cdbc20ae1eddd55">&#x202A;getTimeStr</a></div><div class="ttdeci">&#x202A;std::string getTimeStr(char c='-', int flg_rand=0)</div><div class="ttdoc">&#x202A;根据当前时间 创建字符串</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00647">common.cc:647</a></div></div>
+<div class="ttc" id="aa00011_html_a2b33969147c46958972d8f7d5d8e66b3"><div class="ttname"><a href="../../da/d45/a00011.html#a2b33969147c46958972d8f7d5d8e66b3">&#x202A;getImgRect</a></div><div class="ttdeci">&#x202A;cv::Rect getImgRect(const cv::Mat &amp;img)</div><div class="ttdoc">&#x202A;返回图像的 矩形区域</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00806">common.cc:806</a></div></div>
+<div class="ttc" id="aa00014_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00036">Commu.h:36</a></div></div>
+<div class="ttc" id="aa00986_html_a405d920b70e4dd78c6e170a4e2bcb23c"><div class="ttname"><a href="../../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c">&#x202A;ImageProc::gImgHeight</a></div><div class="ttdeci">&#x202A;int gImgHeight</div><div class="ttdoc">&#x202A;Gets the height of the image</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00255">ImageProc.h:255</a></div></div>
+<div class="ttc" id="aa00143_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00019">main.cpp:19</a></div></div>
+<div class="ttc" id="aa00986_html_aaf4c9fb991fb727787f31b3ac5b815cf"><div class="ttname"><a href="../../d3/d7b/a00986.html#aaf4c9fb991fb727787f31b3ac5b815cf">&#x202A;ImageProc::matchImage</a></div><div class="ttdeci">&#x202A;cv::Point matchImage(const cv::Mat &amp;curImg, const cv::Mat &amp;lastImg)</div><div class="ttdoc">&#x202A;自定义匹配两个图像 用来获取当前图像对于上一帧图像的偏移值</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00267">ImageProc.cc:267</a></div></div>
+<div class="ttc" id="aa00017_html_a004c41c0eff48239d7cb3a12807199fb"><div class="ttname"><a href="../../d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb">&#x202A;Config::runPara</a></div><div class="ttdeci">&#x202A;RunPara runPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00245">Config.h:245</a></div></div>
+<div class="ttc" id="aa00986_html_a8f4aaa7b7ee5937f7f8b66afbb67e7ca"><div class="ttname"><a href="../../d3/d7b/a00986.html#a8f4aaa7b7ee5937f7f8b66afbb67e7ca">&#x202A;ImageProc::getImgOffset</a></div><div class="ttdeci">&#x202A;cv::Point getImgOffset(const cv::Mat &amp;curImg, const cv::Mat &amp;lastImg)</div><div class="ttdoc">&#x202A;计算两个 小区块 图像的偏移值</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00351">ImageProc.cc:351</a></div></div>
+<div class="ttc" id="aa00986_html_a783eedce7c7a71d4bf5fba6b2dad54ca"><div class="ttname"><a href="../../d3/d7b/a00986.html#a783eedce7c7a71d4bf5fba6b2dad54ca">&#x202A;ImageProc::addNewImage</a></div><div class="ttdeci">&#x202A;bool addNewImage(cv::Mat &amp;newImg)</div><div class="ttdoc">&#x202A;加上新的图像 如果溢出 从上面开始重复</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00443">ImageProc.cc:443</a></div></div>
+<div class="ttc" id="aa00011_html_a15bfdd88e937e375aca09f8c2994579d"><div class="ttname"><a href="../../da/d45/a00011.html#a15bfdd88e937e375aca09f8c2994579d">&#x202A;getCenRect</a></div><div class="ttdeci">&#x202A;cv::Rect getCenRect(const cv::Rect img_r, int width=-1, int height=-1)</div><div class="ttdoc">&#x202A;根据一副图像的尺寸和要生成的图像尺寸 生成居中 的一个矩形框</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00854">common.cc:854</a></div></div>
+<div class="ttc" id="aa00986_html_a79c4b4cecfbb900e2661223824ed26de"><div class="ttname"><a href="../../d3/d7b/a00986.html#a79c4b4cecfbb900e2661223824ed26de">&#x202A;ImageProc::pImgLast_LB_y</a></div><div class="ttdeci">&#x202A;int pImgLast_LB_y</div><div class="ttdoc">&#x202A;设置图像的左下角点 便于图像获取一副图像的整体视角</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00259">ImageProc.h:259</a></div></div>
+<div class="ttc" id="aa00914_html_ae4a6ffed9c799a33a1e0d1dff4110fd4"><div class="ttname"><a href="../../d3/dd1/a00914.html#ae4a6ffed9c799a33a1e0d1dff4110fd4">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::Struct_Image Image</div></div>
+<div class="ttc" id="aa00986_html_a453aa18bb8ee0cb86e5d55e145a20ca0"><div class="ttname"><a href="../../d3/d7b/a00986.html#a453aa18bb8ee0cb86e5d55e145a20ca0">&#x202A;ImageProc::shiftImage</a></div><div class="ttdeci">&#x202A;bool shiftImage(cv::Mat &amp;srcImg, cv::Mat &amp;dstImg, int offset_x=0, int offset_y=0)</div><div class="ttdoc">&#x202A;右侧偏移图像修正 bool fixUpImage(cv::Mat &amp;subImg, cv::Mat &amp;fixImage, int offset_x = 0, int offset_y = 0); 通过 ...</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00390">ImageProc.cc:390</a></div></div>
+<div class="ttc" id="aa00986_html_ab88bf9b026d0054064c76c4ce8fb46d2"><div class="ttname"><a href="../../d3/d7b/a00986.html#ab88bf9b026d0054064c76c4ce8fb46d2">&#x202A;ImageProc::m_file</a></div><div class="ttdeci">&#x202A;IDOIFile * m_file</div><div class="ttdoc">&#x202A;写入文件指针</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00065">ImageProc.h:65</a></div></div>
+<div class="ttc" id="aa00986_html_af7492a19f8826165daf13efdfe237ba5"><div class="ttname"><a href="../../d3/d7b/a00986.html#af7492a19f8826165daf13efdfe237ba5">&#x202A;ImageProc::gImgLast</a></div><div class="ttdeci">&#x202A;cv::Mat gImgLast</div><div class="ttdoc">&#x202A;存储自己 上一次运行的图像 便于后续进行匹配</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00240">ImageProc.h:240</a></div></div>
+<div class="ttc" id="aa00978_html_a02ab234b0e32ac5f2fd240ee4cf6cfd2"><div class="ttname"><a href="../../d2/ddd/a00978.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2">&#x202A;IDOIFile::AppendData</a></div><div class="ttdeci">&#x202A;bool AppendData(cv::Mat &amp;imgMat)</div><div class="ttdoc">&#x202A;写入新一批的图像</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00334">IDOIFile.cc:334</a></div></div>
+<div class="ttc" id="aa00986_html_af09edee54cbc81a670eb9a3432027d84"><div class="ttname"><a href="../../d3/d7b/a00986.html#af09edee54cbc81a670eb9a3432027d84">&#x202A;ImageProc::gImage</a></div><div class="ttdeci">&#x202A;cv::Mat gImage</div><div class="ttdoc">&#x202A;默认拼接之后的图片 整体大图 初始化为黑色</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00244">ImageProc.h:244</a></div></div>
+<div class="ttc" id="aa00029_html_a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66"><div class="ttname"><a href="../../d5/d16/a00029.html#a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66">&#x202A;Error_Image_Resize_Crash</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00037">myException.h:37</a></div></div>
+<div class="ttc" id="aa00986_html_a5799833a58df3e4fbc9124eb39a41370"><div class="ttname"><a href="../../d3/d7b/a00986.html#a5799833a58df3e4fbc9124eb39a41370">&#x202A;ImageProc::sImage_</a></div><div class="ttdeci">&#x202A;cv::Mat sImage_</div><div class="ttdoc">&#x202A;存储的大图, 每次往后添加, 直到数据满了, 存入硬盘中</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00245">ImageProc.h:245</a></div></div>
+<div class="ttc" id="aa00113_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d3/d00/a00113.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00036">QImgLabel.cc:36</a></div></div>
+<div class="ttc" id="aa00986_html_a761ee051ae7ddcdf6fe2fd5c0a91bf60"><div class="ttname"><a href="../../d3/d7b/a00986.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60">&#x202A;ImageProc::StoreImage</a></div><div class="ttdeci">&#x202A;bool StoreImage(int cnt)</div><div class="ttdoc">&#x202A;将数据存储下来</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00119">ImageProc.h:119</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d7b/a00986.html">&#x202A;ImageProc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

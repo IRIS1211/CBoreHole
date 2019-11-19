@@ -1,0 +1,6 @@
+<map id="MySerial::Run" name="MySerial::Run">
+<area shape="rect" id="node1" title="线程循环函数 接受到数据会会循环" alt="" coords="5,56,109,83"/>
+<area shape="rect" id="node2" href="$df/d39/a00950.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="169,5,284,32"/>
+<area shape="rect" id="node3" href="$df/d39/a00950.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="177,56,277,83"/>
+<area shape="rect" id="node4" href="$d0/d56/a01014.html#a319fddf3355ae0ec9c910d7f7b57189e" title="Writes a data" alt="" coords="157,107,296,133"/>
+</map>

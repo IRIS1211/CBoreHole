@@ -1,0 +1,14 @@
+<map id="globalVarInit" name="globalVarInit">
+<area shape="rect" id="node1" title="初始化 全局变量 主要是读取主配置文件 并根据配置文件决定后续程序执行" alt="" coords="5,157,99,184"/>
+<area shape="rect" id="node2" href="$d1/d88/a00128.html#a7899c2a9cb86cf2ca7c9eabca7132d98" title="Configuration initialize" alt="" coords="194,5,267,32"/>
+<area shape="rect" id="node3" href="$d1/d88/a00128.html#ad097a2be5d255a589cb0c58b1e65fac1" title="Gets date string 返回 8位 日期值" alt="" coords="369,56,455,83"/>
+<area shape="rect" id="node4" href="$d1/d88/a00128.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="509,107,580,133"/>
+<area shape="rect" id="node5" href="$d3/dd1/a00914.html#a10c91a1797db1e6902355e2a4463dac5" title="Loads a para" alt="" coords="163,157,298,184"/>
+<area shape="rect" id="node6" href="$da/d17/a01046.html#ad526215268259900ba922e6e568a9678" title="从配置文件中 读取内容 可以读取固定格式的 节点的值 XML 或者 YML 均可" alt="" coords="152,208,309,235"/>
+<area shape="rect" id="node7" href="$d1/d88/a00128.html#a2f34a4f9f37d1cfb76127ce929172420" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="188,259,273,285"/>
+<area shape="rect" id="node8" href="$da/d17/a01046.html#a406934db88f0fe9d1048f14bedd0c056" title="更新参数 // 根据当前时间以及运行状态,更新文件内部信息" alt="" coords="147,309,315,336"/>
+<area shape="rect" id="node9" href="$da/d45/a00011.html#a3aca825d905b529f9d670f92483b932c" title=" " alt="" coords="370,208,454,235"/>
+<area shape="rect" id="node10" href="$da/d45/a00011.html#a9801f793edfff4024a3ddca0f674e258" title=" " alt="" coords="363,259,461,285"/>
+<area shape="rect" id="node11" href="$da/d45/a00011.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="369,309,455,336"/>
+<area shape="rect" id="node12" href="$da/d45/a00011.html#a1c11ea4eddb168aee72861c8397c20a2" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="377,360,447,387"/>
+</map>

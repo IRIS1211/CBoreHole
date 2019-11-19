@@ -1,0 +1,8 @@
+<map id="CamCapture::run" name="CamCapture::run">
+<area shape="rect" id="node1" title="Runs this object" alt="" coords="5,107,125,133"/>
+<area shape="rect" id="node2" href="$df/d39/a00950.html#aef66b544a9f5bbf861f21767a75227ea" title=" " alt="" coords="189,5,288,32"/>
+<area shape="rect" id="node3" href="$da/d45/a00011.html#a15bfdd88e937e375aca09f8c2994579d" title="根据一副图像的尺寸和要生成的图像尺寸 生成居中 的一个矩形框" alt="" coords="193,56,284,83"/>
+<area shape="rect" id="node4" href="$da/d45/a00011.html#a2b33969147c46958972d8f7d5d8e66b3" title="返回图像的 矩形区域" alt="" coords="195,107,283,133"/>
+<area shape="rect" id="node5" href="$df/d39/a00950.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="185,157,292,184"/>
+<area shape="rect" id="node6" href="$db/dba/a01078.html#a104678e1c6363e2719cca591e0ed6eab" title="Gets the size" alt="" coords="173,208,304,235"/>
+</map>

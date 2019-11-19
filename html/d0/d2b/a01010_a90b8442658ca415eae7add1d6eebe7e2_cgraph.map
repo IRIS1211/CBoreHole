@@ -1,0 +1,5 @@
+<map id="CSerialPort::~CSerialPort" name="CSerialPort::~CSerialPort">
+<area shape="rect" id="node1" title="Finalizes an instance of the CSerialPort class" alt="" coords="5,42,176,69"/>
+<area shape="rect" id="node2" href="$d0/d2b/a01010.html#a4ffffefd2d6bfa763cfb8e993b79612d" title="关闭监听线程" alt="" coords="224,5,388,47"/>
+<area shape="rect" id="node3" href="$d0/d2b/a01010.html#ae0d2dd450a48c47a2039e9458290f04f" title="关闭串口" alt="" coords="229,71,383,98"/>
+</map>

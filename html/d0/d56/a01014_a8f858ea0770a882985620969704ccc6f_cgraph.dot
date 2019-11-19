@@ -1,0 +1,12 @@
+digraph "MySerial::WriteData"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="MySerial::WriteData",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="将Hex字符串发送出去"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Str2QByteArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/de7/a00014.html#ad3557e201a0276ee8492aae3dbec7606",tooltip="将字符串 转换成 QByteArray 字符串默认有空格"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="str2uchar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d06/a00131.html#aa4d8cf50c0a13481ceb04c5a0581c959",tooltip="2uchars the given string"];
+}

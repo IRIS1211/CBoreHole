@@ -1,0 +1,4 @@
+<map id="CSerialPort::ClosePort" name="CSerialPort::ClosePort">
+<area shape="rect" id="node1" title="关闭串口" alt="" coords="224,5,377,32"/>
+<area shape="rect" id="node2" href="$d1/dd8/a01022.html#a90b8442658ca415eae7add1d6eebe7e2" title="Finalizes an instance of the CSerialPort class" alt="" coords="5,5,176,32"/>
+</map>

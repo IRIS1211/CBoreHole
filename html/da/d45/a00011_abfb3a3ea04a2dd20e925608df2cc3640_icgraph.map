@@ -1,0 +1,5 @@
+<map id="SplitFileName" name="SplitFileName">
+<area shape="rect" id="node1" title="将文件路径拆分为 文件路径和文件名称 删除拓展名" alt="" coords="176,31,279,57"/>
+<area shape="rect" id="node2" href="$d2/ddd/a00978.html#a72e717cb530ab9d54bbb3e54dbd4ccf5" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据" alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node3" href="$d1/d88/a00128.html#a146efc099cbdee49a56b4547d272db9b" title="判断指定的文件是否存在 // 给定flg 如果不存在则建立文件" alt="" coords="25,56,108,83"/>
+</map>
