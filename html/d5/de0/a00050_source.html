@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/SpdLogger.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/readwindow.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,334 +89,70 @@ $(document).ready(function(){initNavTree('d5/de0/a00050_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">SpdLogger.h</div>  </div>
+<div class="title">readwindow.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d5/de0/a00050.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// 判断文件夹是否存在 一层</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//  static function check dir </span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// Check only one layer</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef CHECK_DIR_</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define CHECK_DIR_</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifdef WIN32  </span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;io.h&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;direct.h&gt;</span>  </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif  </span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef linux   </span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span> </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span>  </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;sys/stat.h&gt;</span> </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif  </span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d5/de0/a00050.html#af71b12a6478721f866a5c30eb66d1530">   53</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d5/de0/a00050.html#af71b12a6478721f866a5c30eb66d1530">&#x202A;check_dir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dir)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> (_access(dir, 0) == -1)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#ifdef WIN32  </span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">int</span> flag = _mkdir(dir);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif  </span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#ifdef linux   </span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">int</span> flag = mkdir(dir.c_str(), 0777);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  </span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> (flag == 0);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_READWINDOW_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CBOREHOLE_READWINDOW_H_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/d32/a00041.html">&#x202A;IDOIFile.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;opencv2/core.hpp&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../ui/ui_readwindow.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d3/d58/a00285.html">&#x202A;Ui</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">class </span><a class="code" href="../../dc/d92/a00929.html">&#x202A;ReadWindow</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../dc/d92/a00929.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/d92/a00929.html">&#x202A;ReadWindow</a> : <span class="keyword">public</span> QMainWindow</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../dc/d92/a00929.html#a01056a0dc4d03ab9d9a7fbd502237e1c">   39</a></span>&#160;    <a class="code" href="../../d4/ddc/a00917.html">&#x202A;IDOIFile</a> *<a class="code" href="../../dc/d92/a00929.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../dc/d92/a00929.html#ab03fe548569bca2b66da6be93755bf3b">   40</a></span>&#160;    cv::Mat <a class="code" href="../../dc/d92/a00929.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a>;    </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../dc/d92/a00929.html#a8a81e2d13d0192e610471c49bd35da76">   42</a></span>&#160;    <a class="code" href="../../d8/dbf/a01109.html">&#x202A;Ui::ReadWindow</a> *<a class="code" href="../../dc/d92/a00929.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="../../dc/d92/a00929.html#aa399218166bcdcd386abbbcbfaa6e9db">&#x202A;ReadWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="../../dc/d92/a00929.html#abbeaee958736886d2b19bb97c8491c43">&#x202A;~ReadWindow</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">private</span> slots:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//*****************************************************</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//注意：</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//文件名 __FILE__ ,函数名 __func__ ，行号__LINE__ 是编译器实现的</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//并非C++头文件中定义的 </span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//前两个变量是string类型，且__LINE__是整形，所以需要转为string类型</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//******************************************************</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//整数类型文件行号 -&gt;转换为string类型  std::to_string 处理</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#include &quot;spdlog/sinks/stdout_color_sinks.h&quot;</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dc/d92/a00929.html#a95fcda8a05bce42033ab50c78c3f8a44">&#x202A;on_btn_openFile_clicked</a>();     <span class="comment">// 点击浏览文件</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#define FILENAME_ (strrchr(__FILE__, &#39;\\&#39;) ? (strrchr(__FILE__, &#39;\\&#39;) + 1):__FILE__)</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#define FILENAME_ (strrchr(__FILE__, &#39;/&#39;) ? (strrchr(__FILE__, &#39;/&#39;) + 1):__FILE__)</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//定义一个在日志后添加 文件名 函数名 行号 的宏定义</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifndef suffix_</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define suffix_(msg)  std::string(msg).append(&quot;  &lt;&quot;)\</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">        .append(FILENAME_).append(&quot;:&quot;) \</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">        .append(std::to_string(__LINE__))\</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">        .append(&quot;&gt; &lt;&quot;)\</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">        .append(__func__)\</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">        .append(&quot;&gt;&quot;).c_str()</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">//#define suffix_(msg)  std::string().append(&quot; File:&quot;)\</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">//        .append(FILENAME_).append(&quot;\&quot;, Func:\&quot;&quot;).append(__func__)\</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">//        .append(&quot;()\&quot;, Line:\&quot;&quot;).append(std::to_string(__LINE__)).append(&quot;\&quot;&quot;).append(msg).c_str()</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">//在  spdlog.h   之前定义，才有效</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#ifndef SPDLOG_TRACE_ON</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#define SPDLOG_TRACE_ON</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#ifndef SPDLOG_DEBUG_ON</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#define SPDLOG_DEBUG_ON</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_LOGGER_H_</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#define CBOREHOLE_LOGGER_H_</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#define LOG2FILE_ 1</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span>   <span class="comment">// 引入时间 便于生成文件</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">// spd log 参数</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#include &quot;spdlog/spdlog.h&quot;</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#include &quot;spdlog/async.h&quot;</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#include &quot;spdlog/async_logger.h&quot;</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#include &quot;spdlog/sinks/basic_file_sink.h&quot;</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#include &quot;spdlog/sinks/stdout_color_sinks.h&quot;</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#include &quot;spdlog/sinks/msvc_sink.h&quot;</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#include &quot;spdlog/sinks/rotating_file_sink.h&quot;</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html">  174</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/dbc/a01038.html">&#x202A;SpdLogger</a></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#adadbdb99284ebda48dea5aee348c8477">  190</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d4/dbc/a01038.html">&#x202A;SpdLogger</a>&amp; <a class="code" href="../../d4/dbc/a01038.html#adadbdb99284ebda48dea5aee348c8477">&#x202A;GetInstance</a>() {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keyword">static</span> <a class="code" href="../../d4/dbc/a01038.html">&#x202A;SpdLogger</a> m_instance;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">return</span> m_instance;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#a3aaea6bb2af04fa4fef95a1eda1a7ee5">  206</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="../../d4/dbc/a01038.html#a3aaea6bb2af04fa4fef95a1eda1a7ee5">&#x202A;GetLogger</a>() {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958">&#x202A;nml_logger</a>;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#a6363fe481724674897134ef2f0451cc9">  221</a></span>&#160;    <a class="code" href="../../d4/dbc/a01038.html#a6363fe481724674897134ef2f0451cc9">&#x202A;SpdLogger</a>() {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="comment">// 检查文件夹是否存在</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="../../d5/de0/a00050.html#af71b12a6478721f866a5c30eb66d1530">&#x202A;check_dir</a>(<span class="stringliteral">&quot;logs&quot;</span>);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="comment">//std::vector&lt;spdlog::sink_ptr&gt; sinks;</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="comment">//sinks.push_back(std::make_shared&lt;spdlog::sinks::msvc_sink_mt&gt;());</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="comment">//sinks.push_back(std::make_shared&lt;spdlog::sinks::rotating_file_sink_mt&gt;(file_name, 1024 * 1024 * 4, 1));</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="comment">//combined_logger = std::make_shared&lt;spdlog::logger&gt;(file_name, begin(sinks), end(sinks));</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment"></span>        <span class="comment">//combined_logger-&gt;set_pattern(&quot;[%Y-%m-%d %H:%M:%S.%e] [%t] [%l] %v&quot;);</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">//combined_logger-&gt;set_level(spdlog::level::trace);</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="comment">//设置为异步日志</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="comment">// spdlog::set_async_mode(32768);  // 必须为 2 的幂</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        std::vector&lt;spdlog::sink_ptr&gt; sinkList;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="comment">// #FIXME (schen00) 此处修复每次打开console 的问题 </span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="comment">// 命令行窗口输出 会打开console </span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">        #ifdef _CONSOLE</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">            #ifdef _DEBUG</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <span class="keyword">auto</span> consoleSink = std::make_shared&lt;spdlog::sinks::stdout_color_sink_mt&gt;();</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                consoleSink-&gt;set_level(spdlog::level::trace);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <span class="comment">//consoleSink-&gt;set_pattern(&quot;[multi_sink_example] [%^%l%$] %v&quot;);</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                consoleSink-&gt;set_pattern(<span class="stringliteral">&quot;[%H:%M:%S][%^%L%$] %v&quot;</span>);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                sinkList.push_back(consoleSink);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">            #endif</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">        #endif</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="comment">// VS 调试窗口 输出 debug 窗口输出内容</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keyword">auto</span> debuggerSink = std::make_shared&lt;spdlog::sinks::msvc_sink_mt&gt;();</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        debuggerSink-&gt;set_level(spdlog::level::trace);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        debuggerSink-&gt;set_pattern(<span class="stringliteral">&quot;[%m-%d %H:%M:%S.%e] [%t] [%L] %v&quot;</span>);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        sinkList.push_back(debuggerSink);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#if LOG2FILE_</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="comment">// 使用 当前时间创建 log文件</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="comment">// 获取当前时间字符串</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        time_t t = time(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keyword">struct </span>tm ltm;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        localtime_s(&amp;ltm,&amp;t);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        std::string str = std::to_string(1900+ltm.tm_year)  + <span class="stringliteral">&quot;&quot;</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                        + std::to_string(ltm.tm_mon)        + <span class="stringliteral">&quot;&quot;</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                        + std::to_string(ltm.tm_mday)       + <span class="stringliteral">&quot;-&quot;</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                        + std::to_string(ltm.tm_hour)       + <span class="stringliteral">&quot;&quot;</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                        + std::to_string(ltm.tm_min);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="comment">// 日志文件 每次运行新建文件 按照时间格式明明</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        std::string log_file_name = <span class="stringliteral">&quot;logs/Bhole-Log-&quot;</span> + str + <span class="stringliteral">&quot;.txt&quot;</span>;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="comment">// 文件输入 日志全部记录</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keyword">auto</span> basicSink = std::make_shared&lt;spdlog::sinks::basic_file_sink_mt&gt;(log_file_name);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        basicSink-&gt;set_level(spdlog::level::debug);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        basicSink-&gt;set_pattern(<span class="stringliteral">&quot;[%Y-%m-%d %H:%M:%S.%e] [%t] [%l] %v&quot;</span>);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        sinkList.push_back(basicSink);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="comment">// 设置异步模式</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <a class="code" href="../../d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958">&#x202A;nml_logger</a> = std::make_shared&lt;spdlog::logger&gt;(<span class="stringliteral">&quot;both&quot;</span>, begin(sinkList), end(sinkList));</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="comment">//register it if you need to access it globally</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        spdlog::register_logger(<a class="code" href="../../d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958">&#x202A;nml_logger</a>);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="comment">// 设置日志记录级别</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="../../d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958">&#x202A;nml_logger</a>-&gt;set_level(spdlog::level::trace);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <a class="code" href="../../d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958">&#x202A;nml_logger</a>-&gt;set_level(spdlog::level::err);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="comment">//设置 logger 格式[%^%L%$]</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="comment">//nml_logger-&gt;set_pattern(&quot;[%Y-%m-%d %H:%M:%S.%e] [%5l]  %v&quot;);</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="comment">//nml_logger-&gt;set_pattern(&quot;[%Y-%m-%d %H:%M:%S.%e] [%^%5l%$]  %v&quot;);</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="comment">//设置当出发 err 或更严重的错误时立刻刷新日志到  disk </span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <a class="code" href="../../d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958">&#x202A;nml_logger</a>-&gt;flush_on(spdlog::level::err);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="comment">// 每3秒刷新 将数据 刷新到文件 避免日志崩溃未保存</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        spdlog::flush_every(std::chrono::seconds(3));</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <a class="code" href="../../d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958">&#x202A;nml_logger</a>-&gt;info(<span class="stringliteral">&quot;======== Init SPDLOG ========&quot;</span>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#ad9cfd8db33f52bb28ff2c05df68ce404">  314</a></span>&#160;    <a class="code" href="../../d4/dbc/a01038.html#ad9cfd8db33f52bb28ff2c05df68ce404">&#x202A;~SpdLogger</a>() {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        spdlog::drop_all();</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    }</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <a class="code" href="../../d4/dbc/a01038.html#a6363fe481724674897134ef2f0451cc9">&#x202A;SpdLogger</a>(<span class="keyword">const</span> <a class="code" href="../../d4/dbc/a01038.html">&#x202A;SpdLogger</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="../../d4/dbc/a01038.html">&#x202A;SpdLogger</a>&amp; <a class="code" href="../../d4/dbc/a01038.html#ac38d0b230123b6cdc9ec5add41ad2de6">&#x202A;operator=</a>(<span class="keyword">const</span> <a class="code" href="../../d4/dbc/a01038.html">&#x202A;SpdLogger</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958">  347</a></span>&#160;    std::shared_ptr&lt;spdlog::logger&gt; <a class="code" href="../../d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958">&#x202A;nml_logger</a>; </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;};</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment">//Logger&amp; operator&lt;&lt;(Logger&amp; log, const char* s);</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">//Logger&amp; operator&lt;&lt;(Logger&amp; log, const std::string&amp; s);</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment">//#define DEBUG Logger::GetInstance() </span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="preprocessor">#define LTrace(msg,...) SpdLogger::GetInstance().GetLogger()-&gt;trace(suffix_(msg),__VA_ARGS__)</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">// #define LDebug(msg,...) Logger::GetInstance().GetLogger()-&gt;debug(suffix_(msg),__VA_ARGS__)</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">#define LDebug(...) SpdLogger::GetInstance().GetLogger()-&gt;debug(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="preprocessor">#define LInfo(...) SpdLogger::GetInstance().GetLogger()-&gt;info(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor">#define LWarn(...) SpdLogger::GetInstance().GetLogger()-&gt;warn(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">#define LError(msg,...) SpdLogger::GetInstance().GetLogger()-&gt;error(suffix_(msg),__VA_ARGS__)</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">#define LCritical(...) SpdLogger::GetInstance().GetLogger()-&gt;critical(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="preprocessor">#define criticalif(b, ...)                        \</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="preprocessor">    do {                                       \</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="preprocessor">        if ((b)) {                             \</span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="preprocessor">           SpdLogger::GetInstance().GetLogger()-&gt;critical(__VA_ARGS__); \</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="preprocessor">        }                                      \</span></div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160; </div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor">#ifdef WIN32  </span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="preprocessor">#define errcode WSAGetLastError()</span></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160; </div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160; </div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160; </div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160; </div>
-<div class="line"><a name="l00487"></a><span class="lineno"><a class="line" href="../../d4/d56/a01042.html">  487</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/d56/a01042.html">&#x202A;CLogger</a></div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;{</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="comment">// CLogger() = delete;</span></div>
-<div class="line"><a name="l00490"></a><span class="lineno"><a class="line" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">  490</a></span>&#160;    <span class="keyword">static</span> std::shared_ptr&lt;spdlog::logger&gt; <a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a>; </div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
-<div class="line"><a name="l00504"></a><span class="lineno"><a class="line" href="../../d4/d56/a01042.html#a295dafaf86843cf726a7983bcd890453">  504</a></span>&#160;    <a class="code" href="../../d4/d56/a01042.html#a295dafaf86843cf726a7983bcd890453">&#x202A;CLogger</a>(std::string file_name = <span class="stringliteral">&quot;./logs/Bhole.log&quot;</span>)</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    {</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <a class="code" href="../../d4/d56/a01042.html#a1960ef19506793f4a9a30135c6e86015">&#x202A;Init</a>(file_name);</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    }</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160; </div>
-<div class="line"><a name="l00520"></a><span class="lineno"><a class="line" href="../../d4/d56/a01042.html#a1960ef19506793f4a9a30135c6e86015">  520</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d56/a01042.html#a1960ef19506793f4a9a30135c6e86015">&#x202A;Init</a>(std::string file_name = <span class="stringliteral">&quot;./logs/Bhole.log&quot;</span>)</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    {</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a>) <a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        {</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;            std::vector&lt;spdlog::sink_ptr&gt; sinks;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;            sinks.push_back(std::make_shared&lt;spdlog::sinks::msvc_sink_mt&gt;());</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;            sinks.push_back(std::make_shared&lt;spdlog::sinks::rotating_file_sink_mt&gt;(file_name, 1024 * 1024 * 4, 1));</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;            <span class="comment">// sinks.push_back(std::make_shared&lt;spdlog::sinks::basic_logger_mt&gt;(&quot;Camera&quot;,file_name));</span></div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160; </div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;            <a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a> = std::make_shared&lt;spdlog::logger&gt;(file_name, begin(sinks), end(sinks));</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;            <span class="comment">// 打印格式设置 https://github.com/gabime/spdlog/wiki/3.-Custom-formatting</span></div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            <span class="comment">//设置打印格式  年月日 时分秒.毫秒, 线程ID,日志等级,内容 );</span></div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;            <a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a>-&gt;set_pattern(<span class="stringliteral">&quot;[%Y-%m-%d %H:%M:%S.%e] [%t] [%l] %v&quot;</span>);</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;            <a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a>-&gt;set_level(spdlog::level::trace);</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;            <a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a>-&gt;info(<span class="stringliteral">&quot;======== Init SPDLOG ========&quot;</span>);</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        }</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        {</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            <a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        }</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    }</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160; </div>
-<div class="line"><a name="l00552"></a><span class="lineno"><a class="line" href="../../d4/d56/a01042.html#ab7006486dce8452e8098c12c3f44c34b">  552</a></span>&#160;    <a class="code" href="../../d4/d56/a01042.html#ab7006486dce8452e8098c12c3f44c34b">&#x202A;~CLogger</a>()</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    {</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        <a class="code" href="../../d4/d56/a01042.html#aae9277fe6cca37b9c379b2eeaee46f2a">&#x202A;cease_log</a>();</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    }</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160; </div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
-<div class="line"><a name="l00571"></a><span class="lineno"><a class="line" href="../../d4/d56/a01042.html#a10c3465c1899c33c5e5cec33189f5bb4">  571</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d56/a01042.html#a10c3465c1899c33c5e5cec33189f5bb4">&#x202A;info</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, <span class="keyword">const</span> Args&amp;... args)</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    {</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a>) <a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a>-&gt;info(fmt, args...);</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    }</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
-<div class="line"><a name="l00585"></a><span class="lineno"><a class="line" href="../../d4/d56/a01042.html#a28a5495fa79b1e628b80053f5b42d880">  585</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d56/a01042.html#a28a5495fa79b1e628b80053f5b42d880">&#x202A;flush</a>()</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    {</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a>) <a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a>-&gt;flush();</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    }</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160; </div>
-<div class="line"><a name="l00599"></a><span class="lineno"><a class="line" href="../../d4/d56/a01042.html#aae9277fe6cca37b9c379b2eeaee46f2a">  599</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d4/d56/a01042.html#aae9277fe6cca37b9c379b2eeaee46f2a">&#x202A;cease_log</a>()</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    {</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <a class="code" href="../../d4/d56/a01042.html#a28a5495fa79b1e628b80053f5b42d880">&#x202A;flush</a>();</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        <a class="code" href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;combined_logger</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    }</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;};</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160; </div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160; </div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;<span class="preprocessor">#endif  //CBOREHOLE_LOGGER_H_</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dc/d92/a00929.html#ad03aefcbea38fe4b8bef79cbea4a28c3">&#x202A;on_btn_closeFile_clicked</a>();    <span class="comment">// 点击关闭文件</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dc/d92/a00929.html#a60ba7c9f45797caf826c4c9fb2145d59">&#x202A;on_btn_read_exit_clicked</a>();    <span class="comment">// 点击退出浏览</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    signals:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dc/d92/a00929.html#a19ddfc33b6e10f52fe08e2ed2bb72a64">&#x202A;signal_CloseWindow</a>(); <span class="comment">// 发射 关闭 窗口信号</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // CBOREHOLE_READWINDOW_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01042_html_a1960ef19506793f4a9a30135c6e86015"><div class="ttname"><a href="../../d4/d56/a01042.html#a1960ef19506793f4a9a30135c6e86015">&#x202A;CLogger::Init</a></div><div class="ttdeci">&#x202A;static void Init(std::string file_name=&quot;./logs/Bhole.log&quot;)</div><div class="ttdoc">&#x202A;Initializes this object</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00520">SpdLogger.h:520</a></div></div>
-<div class="ttc" id="aa01038_html_adadbdb99284ebda48dea5aee348c8477"><div class="ttname"><a href="../../d4/dbc/a01038.html#adadbdb99284ebda48dea5aee348c8477">&#x202A;SpdLogger::GetInstance</a></div><div class="ttdeci">&#x202A;static SpdLogger &amp; GetInstance()</div><div class="ttdoc">&#x202A;Gets the instance</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00190">SpdLogger.h:190</a></div></div>
-<div class="ttc" id="aa01038_html_ac38d0b230123b6cdc9ec5add41ad2de6"><div class="ttname"><a href="../../d4/dbc/a01038.html#ac38d0b230123b6cdc9ec5add41ad2de6">&#x202A;SpdLogger::operator=</a></div><div class="ttdeci">&#x202A;SpdLogger &amp; operator=(const SpdLogger &amp;)=delete</div><div class="ttdoc">&#x202A;Assignment operator</div></div>
-<div class="ttc" id="aa01042_html"><div class="ttname"><a href="../../d4/d56/a01042.html">&#x202A;CLogger</a></div><div class="ttdoc">&#x202A;A logger.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00487">SpdLogger.h:487</a></div></div>
-<div class="ttc" id="aa00050_html_af71b12a6478721f866a5c30eb66d1530"><div class="ttname"><a href="../../d5/de0/a00050.html#af71b12a6478721f866a5c30eb66d1530">&#x202A;check_dir</a></div><div class="ttdeci">&#x202A;static bool check_dir(const char *dir)</div><div class="ttdoc">&#x202A;Check dir</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00053">SpdLogger.h:53</a></div></div>
-<div class="ttc" id="aa01042_html_aae9277fe6cca37b9c379b2eeaee46f2a"><div class="ttname"><a href="../../d4/d56/a01042.html#aae9277fe6cca37b9c379b2eeaee46f2a">&#x202A;CLogger::cease_log</a></div><div class="ttdeci">&#x202A;static void cease_log()</div><div class="ttdoc">&#x202A;Cease log</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00599">SpdLogger.h:599</a></div></div>
-<div class="ttc" id="aa01042_html_ab7006486dce8452e8098c12c3f44c34b"><div class="ttname"><a href="../../d4/d56/a01042.html#ab7006486dce8452e8098c12c3f44c34b">&#x202A;CLogger::~CLogger</a></div><div class="ttdeci">&#x202A;~CLogger()</div><div class="ttdoc">&#x202A;删除 log</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00552">SpdLogger.h:552</a></div></div>
-<div class="ttc" id="aa01038_html"><div class="ttname"><a href="../../d4/dbc/a01038.html">&#x202A;SpdLogger</a></div><div class="ttdoc">&#x202A;A speed logger.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00174">SpdLogger.h:174</a></div></div>
-<div class="ttc" id="aa01042_html_a28a5495fa79b1e628b80053f5b42d880"><div class="ttname"><a href="../../d4/d56/a01042.html#a28a5495fa79b1e628b80053f5b42d880">&#x202A;CLogger::flush</a></div><div class="ttdeci">&#x202A;static void flush()</div><div class="ttdoc">&#x202A;Flushes this object</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00585">SpdLogger.h:585</a></div></div>
-<div class="ttc" id="aa01042_html_a10c3465c1899c33c5e5cec33189f5bb4"><div class="ttname"><a href="../../d4/d56/a01042.html#a10c3465c1899c33c5e5cec33189f5bb4">&#x202A;CLogger::info</a></div><div class="ttdeci">&#x202A;static void info(const char *fmt, const Args &amp;... args)</div><div class="ttdoc">&#x202A;Infoes</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00571">SpdLogger.h:571</a></div></div>
-<div class="ttc" id="aa01038_html_ad9cfd8db33f52bb28ff2c05df68ce404"><div class="ttname"><a href="../../d4/dbc/a01038.html#ad9cfd8db33f52bb28ff2c05df68ce404">&#x202A;SpdLogger::~SpdLogger</a></div><div class="ttdeci">&#x202A;~SpdLogger()</div><div class="ttdoc">&#x202A;Finalizes an instance of the SpdLogger class</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00314">SpdLogger.h:314</a></div></div>
-<div class="ttc" id="aa01038_html_a2e2b8c9b365ab5f084a2690b23acb958"><div class="ttname"><a href="../../d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958">&#x202A;SpdLogger::nml_logger</a></div><div class="ttdeci">&#x202A;std::shared_ptr&lt; spdlog::logger &gt; nml_logger</div><div class="ttdoc">&#x202A;The nml logger</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00347">SpdLogger.h:347</a></div></div>
-<div class="ttc" id="aa01038_html_a6363fe481724674897134ef2f0451cc9"><div class="ttname"><a href="../../d4/dbc/a01038.html#a6363fe481724674897134ef2f0451cc9">&#x202A;SpdLogger::SpdLogger</a></div><div class="ttdeci">&#x202A;SpdLogger()</div><div class="ttdoc">&#x202A;Initializes a new instance of the SpdLogger class</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00221">SpdLogger.h:221</a></div></div>
-<div class="ttc" id="aa01042_html_a295dafaf86843cf726a7983bcd890453"><div class="ttname"><a href="../../d4/d56/a01042.html#a295dafaf86843cf726a7983bcd890453">&#x202A;CLogger::CLogger</a></div><div class="ttdeci">&#x202A;CLogger(std::string file_name=&quot;./logs/Bhole.log&quot;)</div><div class="ttdoc">&#x202A;Initializes a new instance of the CLogger class</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00504">SpdLogger.h:504</a></div></div>
-<div class="ttc" id="aa01042_html_ad8933150b4ca9bec4d135d7ed19502ad"><div class="ttname"><a href="../../d4/d56/a01042.html#ad8933150b4ca9bec4d135d7ed19502ad">&#x202A;CLogger::combined_logger</a></div><div class="ttdeci">&#x202A;static std::shared_ptr&lt; spdlog::logger &gt; combined_logger</div><div class="ttdoc">&#x202A;The combined logger</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00490">SpdLogger.h:490</a></div></div>
-<div class="ttc" id="aa01038_html_a3aaea6bb2af04fa4fef95a1eda1a7ee5"><div class="ttname"><a href="../../d4/dbc/a01038.html#a3aaea6bb2af04fa4fef95a1eda1a7ee5">&#x202A;SpdLogger::GetLogger</a></div><div class="ttdeci">&#x202A;auto GetLogger()</div><div class="ttdoc">&#x202A;Gets the logger</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00206">SpdLogger.h:206</a></div></div>
+<div class="ttc" id="aa00929_html_aa399218166bcdcd386abbbcbfaa6e9db"><div class="ttname"><a href="../../dc/d92/a00929.html#aa399218166bcdcd386abbbcbfaa6e9db">&#x202A;ReadWindow::ReadWindow</a></div><div class="ttdeci">&#x202A;ReadWindow(QWidget *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the ReadWindow class</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00027">readwindow.cc:27</a></div></div>
+<div class="ttc" id="aa00929_html_a60ba7c9f45797caf826c4c9fb2145d59"><div class="ttname"><a href="../../dc/d92/a00929.html#a60ba7c9f45797caf826c4c9fb2145d59">&#x202A;ReadWindow::on_btn_read_exit_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_read_exit_clicked()</div><div class="ttdoc">&#x202A;Handles button read exit clicked signals</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00139">readwindow.cc:139</a></div></div>
+<div class="ttc" id="aa00929_html_a19ddfc33b6e10f52fe08e2ed2bb72a64"><div class="ttname"><a href="../../dc/d92/a00929.html#a19ddfc33b6e10f52fe08e2ed2bb72a64">&#x202A;ReadWindow::signal_CloseWindow</a></div><div class="ttdeci">&#x202A;void signal_CloseWindow()</div><div class="ttdoc">&#x202A;Sends the signal</div></div>
+<div class="ttc" id="aa00929_html_abbeaee958736886d2b19bb97c8491c43"><div class="ttname"><a href="../../dc/d92/a00929.html#abbeaee958736886d2b19bb97c8491c43">&#x202A;ReadWindow::~ReadWindow</a></div><div class="ttdeci">&#x202A;~ReadWindow()</div><div class="ttdoc">&#x202A;Finalizes an instance of the ReadWindow class</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00045">readwindow.cc:45</a></div></div>
+<div class="ttc" id="aa00929_html"><div class="ttname"><a href="../../dc/d92/a00929.html">&#x202A;ReadWindow</a></div><div class="ttdoc">&#x202A;读取文件的界面类实现 能够读取自定义文件并进行浏览显示</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00035">readwindow.h:35</a></div></div>
+<div class="ttc" id="aa00917_html"><div class="ttname"><a href="../../d4/ddc/a00917.html">&#x202A;IDOIFile</a></div><div class="ttdoc">&#x202A;An idoi file.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00188">IDOIFile.h:188</a></div></div>
+<div class="ttc" id="aa00929_html_a95fcda8a05bce42033ab50c78c3f8a44"><div class="ttname"><a href="../../dc/d92/a00929.html#a95fcda8a05bce42033ab50c78c3f8a44">&#x202A;ReadWindow::on_btn_openFile_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_openFile_clicked()</div><div class="ttdoc">&#x202A;Handles button open file clicked signals</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00058">readwindow.cc:58</a></div></div>
+<div class="ttc" id="aa01109_html"><div class="ttname"><a href="../../d8/dbf/a01109.html">&#x202A;Ui::ReadWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d79/a00203_source.html#l00233">ui_readwindow.h:233</a></div></div>
+<div class="ttc" id="aa00929_html_a8a81e2d13d0192e610471c49bd35da76"><div class="ttname"><a href="../../dc/d92/a00929.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ReadWindow::ui</a></div><div class="ttdeci">&#x202A;Ui::ReadWindow * ui</div><div class="ttdoc">&#x202A;读取界面 窗口 ui</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00042">readwindow.h:42</a></div></div>
+<div class="ttc" id="aa00929_html_a01056a0dc4d03ab9d9a7fbd502237e1c"><div class="ttname"><a href="../../dc/d92/a00929.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;ReadWindow::m_IdoiFile_</a></div><div class="ttdeci">&#x202A;IDOIFile * m_IdoiFile_</div><div class="ttdoc">&#x202A;文件类指针</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00039">readwindow.h:39</a></div></div>
+<div class="ttc" id="aa00285_html"><div class="ttname"><a href="../../d3/d58/a00285.html">&#x202A;Ui</a></div></div>
+<div class="ttc" id="aa00041_html"><div class="ttname"><a href="../../dd/d32/a00041.html">&#x202A;IDOIFile.h</a></div><div class="ttdoc">&#x202A;Declares the idoi file class @changelog 2019/6/26 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa00929_html_ab03fe548569bca2b66da6be93755bf3b"><div class="ttname"><a href="../../dc/d92/a00929.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ReadWindow::ma_ReadImage_</a></div><div class="ttdeci">&#x202A;cv::Mat ma_ReadImage_</div><div class="ttdoc">&#x202A;读取到的图像 可能只是一部分数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00040">readwindow.h:40</a></div></div>
+<div class="ttc" id="aa00929_html_ad03aefcbea38fe4b8bef79cbea4a28c3"><div class="ttname"><a href="../../dc/d92/a00929.html#ad03aefcbea38fe4b8bef79cbea4a28c3">&#x202A;ReadWindow::on_btn_closeFile_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_closeFile_clicked()</div><div class="ttdoc">&#x202A;Handles button close file clicked signals</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00123">readwindow.cc:123</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d5/de0/a00050.html">&#x202A;SpdLogger.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d5/de0/a00050.html">&#x202A;readwindow.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

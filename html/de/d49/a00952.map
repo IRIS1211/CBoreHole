@@ -1,4 +1,4 @@
-<map id="FileHead" name="FileHead">
-<area shape="rect" id="node1" title="定义文件头, 包含系统参数和文件工程参数" alt="" coords="44,95,117,121"/>
-<area shape="rect" id="node2" href="$d3/d52/a00023.html#df/d9c/a00958" title="定义 文件头信息" alt="" coords="5,5,156,32"/>
+<map id="ReadWindow" name="ReadWindow">
+<area shape="rect" id="node1" title="读取文件的界面类实现 能够读取自定义文件并进行浏览显示" alt="" coords="9,80,108,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,112,32"/>
 </map>

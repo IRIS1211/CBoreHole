@@ -1,13 +1,4 @@
-<map id="FileHead" name="FileHead">
-<area shape="rect" id="node1" title="定义文件头, 包含系统参数和文件工程参数" alt="" coords="757,184,831,211"/>
-<area shape="rect" id="node2" href="$d3/d52/a00023.html#d0/daf/a00970" title="保证 不会被压缩" alt="" coords="531,157,646,184"/>
-<area shape="rect" id="node3" href="$da/d17/a01046.html" title="存储 系统运行参数 按照参数具体类型进行细分" alt="" coords="317,157,412,184"/>
-<area shape="rect" id="node4" href="$da/d17/a01046.html#d5/d67/a01070" title="电子罗盘参数" alt="" coords="9,5,199,32"/>
-<area shape="rect" id="node5" href="$da/d17/a01046.html#d5/d4c/a01058" title="编码器信息 脉冲" alt="" coords="20,56,188,83"/>
-<area shape="rect" id="node6" href="$da/d17/a01046.html#d9/d8e/a01050" title="默认类型使用 int 但是很多类型可以使用char 或者 bool 类型进行空间压缩 #TODO 按照类型考虑每种类型的 空间占用 自定义 文件个数 尽量使用简单类型 避免占用更多 存在字节对齐的情况,..." alt="" coords="5,107,203,133"/>
-<area shape="rect" id="node7" href="$da/d17/a01046.html#d4/d8a/a01062" title="A structure hole." alt="" coords="23,157,185,184"/>
-<area shape="rect" id="node8" href="$da/d17/a01046.html#dd/d57/a01054" title="探头信息" alt="" coords="19,208,189,235"/>
-<area shape="rect" id="node9" href="$da/d17/a01046.html#d0/dfb/a01066" title="A structure image." alt="" coords="19,259,189,285"/>
-<area shape="rect" id="node10" href="$da/d17/a01046.html#d7/df7/a01074" title="额外信息" alt="" coords="21,309,187,336"/>
-<area shape="rect" id="node11" href="$d3/d52/a00023.html#d2/d6e/a00966" title="定义 文件头信息" alt="" coords="513,208,664,235"/>
+<map id="SetWindow" name="SetWindow">
+<area shape="rect" id="node1" title="Window for setting the . 设置窗口" alt="" coords="15,80,103,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,112,32"/>
 </map>

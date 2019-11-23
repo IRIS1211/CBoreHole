@@ -1,7 +1,4 @@
-<map id="RunPara::Struct_Config" name="RunPara::Struct_Config">
-<area shape="rect" id="node1" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="111,333,269,360"/>
-<area shape="rect" id="node2" href="$d3/dd1/a00914.html#d5/d54/a00938" title="A show mode." alt="" coords="5,229,164,271"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="117,96,197,123"/>
-<area shape="rect" id="node5" href="$d3/dd1/a00914.html#df/d12/a00942" title="调试 使用的配置路径" alt="" coords="188,229,347,271"/>
-<area shape="rect" id="node4" title="STL class" alt="" coords="93,5,220,47"/>
+<map id="Serial" name="Serial">
+<area shape="rect" id="node1" title="A serial." alt="" coords="13,80,68,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,76,32"/>
 </map>

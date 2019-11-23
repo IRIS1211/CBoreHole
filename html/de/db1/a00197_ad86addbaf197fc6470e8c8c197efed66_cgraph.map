@@ -1,12 +1,10 @@
 <map id="TEST_CASE" name="TEST_CASE">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,103,133"/>
-<area shape="rect" id="node2" href="$d2/de7/a00014.html#a2bccd732252a844a62b3e0bdc7de82d8" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="155,5,261,32"/>
-<area shape="rect" id="node3" href="$df/d39/a00950.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="151,56,265,83"/>
-<area shape="rect" id="node4" href="$d9/d9a/a00998.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="313,95,483,121"/>
-<area shape="rect" id="node6" href="$d9/d9a/a00998.html#ad1a697720cbc1f1022a4f620d8fd8de2" title="Initializes this object" alt="" coords="168,157,248,184"/>
-<area shape="rect" id="node10" href="$df/d39/a00950.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="158,208,258,235"/>
-<area shape="rect" id="node5" href="$d9/d9a/a00998.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="752,139,905,165"/>
-<area shape="rect" id="node7" href="$d9/d9a/a00998.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="323,183,473,209"/>
-<area shape="rect" id="node8" href="$d9/d9a/a00998.html#a1b596e9793b3e992968d7b50392b43c0" title="Gets serial by port no" alt="" coords="531,189,704,216"/>
-<area shape="rect" id="node9" href="$d9/d9a/a00998.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="535,240,699,267"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,103,83"/>
+<area shape="rect" id="node2" href="$dc/d87/a00032.html#a2bccd732252a844a62b3e0bdc7de82d8" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="151,5,256,32"/>
+<area shape="rect" id="node3" href="$d0/d5b/a00933.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="304,49,473,76"/>
+<area shape="rect" id="node5" href="$d0/d5b/a00933.html#ad1a697720cbc1f1022a4f620d8fd8de2" title="Initializes this object" alt="" coords="163,119,243,145"/>
+<area shape="rect" id="node4" href="$d0/d5b/a00933.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="743,96,896,123"/>
+<area shape="rect" id="node6" href="$d0/d5b/a00933.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="313,144,464,171"/>
+<area shape="rect" id="node7" href="$d0/d5b/a00933.html#a1b596e9793b3e992968d7b50392b43c0" title="Gets serial by port no" alt="" coords="521,147,695,173"/>
+<area shape="rect" id="node8" href="$d0/d5b/a00933.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="526,197,690,224"/>
 </map>

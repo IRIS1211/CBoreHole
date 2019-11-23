@@ -1,7 +1,7 @@
 <map id="TEST_CASE" name="TEST_CASE">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,103,83"/>
-<area shape="rect" id="node2" href="$da/d45/a00011.html#a0cc2a6435725f3297188f9a3018a0014" title="Gets disk occupy 获取磁盘占用 默认D盘" alt="" coords="151,31,265,57"/>
-<area shape="rect" id="node5" href="$da/d45/a00011.html#af960c9c6be9b6a8cd92a325aab76a3d3" title="List all disk 列出所有磁盘的信息" alt="" coords="166,81,250,108"/>
-<area shape="rect" id="node3" href="$d1/d88/a00128.html#a2b76409b3eab08521f4246fb8b586c1d" title=" " alt="" coords="319,5,403,32"/>
-<area shape="rect" id="node4" href="$d1/d88/a00128.html#a67e44d2d3123f4153984063e57f07918" title=" " alt="" coords="313,56,408,83"/>
+<area shape="rect" id="node2" href="$d5/d16/a00029.html#a0cc2a6435725f3297188f9a3018a0014" title="Gets disk occupy 获取磁盘占用 默认D盘" alt="" coords="151,31,265,57"/>
+<area shape="rect" id="node5" href="$d5/d16/a00029.html#af960c9c6be9b6a8cd92a325aab76a3d3" title="List all disk 列出所有磁盘的信息" alt="" coords="166,81,250,108"/>
+<area shape="rect" id="node3" href="$d2/df5/a00137.html#a2b76409b3eab08521f4246fb8b586c1d" title=" " alt="" coords="319,5,403,32"/>
+<area shape="rect" id="node4" href="$d2/df5/a00137.html#a67e44d2d3123f4153984063e57f07918" title=" " alt="" coords="313,56,408,83"/>
 </map>

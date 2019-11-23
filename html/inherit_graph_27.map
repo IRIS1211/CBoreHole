@@ -1,4 +1,6 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,68,32"/>
-<area shape="rect" id="node2" href="$da/dfb/a01174.html" title="自定义 label 能够完成图像显示, 继承事件," alt="" coords="116,5,200,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,112,83"/>
+<area shape="rect" id="node2" href="$dc/d92/a00929.html" title="读取文件的界面类实现 能够读取自定义文件并进行浏览显示" alt="" coords="160,5,259,32"/>
+<area shape="rect" id="node3" href="$da/d45/a00961.html" title="Window for setting the . 设置窗口" alt="" coords="165,56,253,83"/>
+<area shape="rect" id="node4" href="$d7/ded/a01009.html" title="声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348" alt="" coords="160,107,259,133"/>
 </map>

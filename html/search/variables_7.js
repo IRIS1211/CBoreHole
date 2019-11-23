@@ -1,24 +1,9 @@
 var searchData=
 [
-  ['g_5fframe_5f_2040',['g_frame_',['../da/dd8/a00906.html#ac5bfb8f0df40d39833784171c1034030',1,'CamCapture']]],
-  ['g_5fimg_5flast_5f_2041',['g_img_last_',['../d4/d12/a00910.html#ad3d6ed71ed50dedb8a2212549d8ab173',1,'CamProc']]],
-  ['g_5fimg_5fpolar_5f_2042',['g_img_polar_',['../d4/d12/a00910.html#ab83ba16491e6d0e6650cbc8750ca5a86',1,'CamProc']]],
-  ['g_5fimg_5fsrc_5f_2043',['g_img_src_',['../d4/d12/a00910.html#a88264cb5a47d2aeed2905d824e9df2e4',1,'CamProc']]],
-  ['gconfig_2044',['gConfig',['../d7/dce/a00143.html#a21a3f473a04332ba5d1dd033517f0570',1,'gConfig():&#160;main.cpp'],['../d7/d25/a00182.html#a21a3f473a04332ba5d1dd033517f0570',1,'gConfig():&#160;main.cpp']]],
-  ['gfs_2045',['gFS',['../d7/dce/a00143.html#af5c9cce7978a6dc022e79146aa3f9e68',1,'gFS():&#160;main.cpp'],['../d7/d25/a00182.html#af5c9cce7978a6dc022e79146aa3f9e68',1,'gFS():&#160;main.cpp']]],
-  ['gimage_2046',['gImage',['../d3/d7b/a00986.html#af09edee54cbc81a670eb9a3432027d84',1,'ImageProc']]],
-  ['gimage_5f_2047',['gImage_',['../d4/dd0/a00994.html#a0b0af743d88866cc719ddf1572b8df61',1,'ReadWindow']]],
-  ['gimgdst_2048',['gImgDst',['../d4/d12/a00910.html#a974c421077be14397c9c63c88e79d345',1,'CamProc']]],
-  ['gimgdstv_2049',['gImgDstV',['../d4/d12/a00910.html#a68c73b08d67cb4aa354ea3a3e6ef374b',1,'CamProc']]],
-  ['gimgheight_2050',['gImgHeight',['../d3/d7b/a00986.html#a405d920b70e4dd78c6e170a4e2bcb23c',1,'ImageProc']]],
-  ['gimglast_2051',['gImgLast',['../d3/d7b/a00986.html#af7492a19f8826165daf13efdfe237ba5',1,'ImageProc']]],
-  ['gimgwidth_2052',['gImgWidth',['../d3/d7b/a00986.html#a9e48656cd2e95d6be718fcc698bad592',1,'ImageProc']]],
-  ['gq_5fcapture_2053',['gQ_capture',['../df/dc8/a00122.html#ac64b0e9e1c6ee891a517b8ba1986d841',1,'gQ_capture():&#160;CamCapture.cc'],['../d7/d25/a00182.html#ac64b0e9e1c6ee891a517b8ba1986d841',1,'gQ_capture():&#160;CamCapture.cc']]],
-  ['gq_5fimg_5fproced_2054',['gQ_Img_Proced',['../df/dc8/a00122.html#a62faeaaed8e99d41e0032ba8e22f09d9',1,'gQ_Img_Proced():&#160;CamCapture.cc'],['../d7/d25/a00182.html#a62faeaaed8e99d41e0032ba8e22f09d9',1,'gQ_Img_Proced():&#160;CamCapture.cc']]],
-  ['gq_5fprocess_2055',['gQ_process',['../df/dc8/a00122.html#af34e76136586a6684c4b9c10bfbc4edc',1,'gQ_process():&#160;CamCapture.cc'],['../d7/d25/a00182.html#af34e76136586a6684c4b9c10bfbc4edc',1,'gQ_process():&#160;CamCapture.cc']]],
-  ['gq_5fwriter_2056',['gQ_writer',['../df/dc8/a00122.html#a6e4480707ad4d2756aab316294d4479d',1,'gQ_writer():&#160;CamCapture.cc'],['../d7/d25/a00182.html#a6e4480707ad4d2756aab316294d4479d',1,'gQ_writer():&#160;CamCapture.cc']]],
-  ['gridlayout_2057',['gridLayout',['../d7/d88/a01294.html#a66980b936d7e3895be9711737170381e',1,'Ui_ReadWindow::gridLayout()'],['../dc/de0/a01302.html#acbcb7210d4d259119cb03b7eca65cb49',1,'Ui_SetWindow::gridLayout()'],['../da/d79/a01310.html#ae0c7b6372bf24d1ccb10867576c9e3ca',1,'Ui_WorkWindow::gridLayout()']]],
-  ['gridlayout_5f2_2058',['gridLayout_2',['../dc/de0/a01302.html#a9787795e54b89f1aeade427db129d127',1,'Ui_SetWindow']]],
-  ['gridlayout_5f3_2059',['gridLayout_3',['../dc/de0/a01302.html#ad626570d9e01861a1b622a532458bcaa',1,'Ui_SetWindow']]],
-  ['gridlayout_5f4_2060',['gridLayout_4',['../dc/de0/a01302.html#adbe231b9568c38b1e47863dd04f24c65',1,'Ui_SetWindow']]]
+  ['gconfig_1762',['gConfig',['../d7/d9a/a00152.html#a21a3f473a04332ba5d1dd033517f0570',1,'gConfig():&#160;main.cpp'],['../d7/d25/a00182.html#a21a3f473a04332ba5d1dd033517f0570',1,'gConfig():&#160;main.cpp']]],
+  ['gfs_1763',['gFS',['../d7/d9a/a00152.html#af5c9cce7978a6dc022e79146aa3f9e68',1,'gFS():&#160;main.cpp'],['../d7/d25/a00182.html#af5c9cce7978a6dc022e79146aa3f9e68',1,'gFS():&#160;main.cpp']]],
+  ['gridlayout_1764',['gridLayout',['../de/d1d/a01105.html#a66980b936d7e3895be9711737170381e',1,'Ui_ReadWindow::gridLayout()'],['../d8/ded/a01113.html#acbcb7210d4d259119cb03b7eca65cb49',1,'Ui_SetWindow::gridLayout()'],['../dd/de4/a01121.html#ae0c7b6372bf24d1ccb10867576c9e3ca',1,'Ui_WorkWindow::gridLayout()']]],
+  ['gridlayout_5f2_1765',['gridLayout_2',['../d8/ded/a01113.html#a9787795e54b89f1aeade427db129d127',1,'Ui_SetWindow']]],
+  ['gridlayout_5f3_1766',['gridLayout_3',['../d8/ded/a01113.html#ad626570d9e01861a1b622a532458bcaa',1,'Ui_SetWindow']]],
+  ['gridlayout_5f4_1767',['gridLayout_4',['../d8/ded/a01113.html#adbe231b9568c38b1e47863dd04f24c65',1,'Ui_SetWindow']]]
 ];

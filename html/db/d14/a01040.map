@@ -1,6 +1,4 @@
-<map id="CLogger" name="CLogger">
-<area shape="rect" id="node1" title="A logger." alt="" coords="49,288,120,315"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,184,164,225"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="15,95,155,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="65,5,104,32"/>
+<map id="QcGaugeWidget" name="QcGaugeWidget">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="28,5,101,32"/>
 </map>

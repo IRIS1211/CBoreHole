@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/model/QImgLabel.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/model/GaugeCompass.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,52 +89,87 @@ $(document).ready(function(){initNavTree('d3/d00/a00113_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">QImgLabel.cc</div>  </div>
+<div class="title">GaugeCompass.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d3/d00/a00113.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../stdafx.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d3e/a00116.html">&#x202A;QImgLabel.h</a>&quot;</span></div>
+<a href="../../d3/d00/a00113.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAUGECOMPASS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAUGECOMPASS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d6a/a00119.html">&#x202A;./qcgaugewidget.h</a>&quot;</span>    <span class="comment">// 包含本文件夹内  仪表盘的实现</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../da/dfb/a01174.html#a62d0263963759aca14662a70e80c0fa8">   19</a></span>&#160;<a class="code" href="../../da/dfb/a01174.html#a62d0263963759aca14662a70e80c0fa8">&#x202A;QImgLabel::QImgLabel</a>(QWidget *parent)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    UNREFERENCED_PARAMETER(parent);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../da/dfb/a01174.html#aee4ae223a587322edecc4f6a77e05745">   32</a></span>&#160;<a class="code" href="../../da/dfb/a01174.html#aee4ae223a587322edecc4f6a77e05745">&#x202A;QImgLabel::~QImgLabel</a>()</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d3/d00/a00113.html#abe29b0d0f446a335c8586ae898a768ed">   36</a></span>&#160;cv::Mat <a class="code" href="../../d3/d00/a00113.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../da/dfb/a01174.html#a3f1a23663337082bc684229123014abb">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/dfb/a01174.html#a3f1a23663337082bc684229123014abb">&#x202A;QImgLabel::ShowImage</a>(<span class="keyword">const</span> cv::Mat &amp; src)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    cv::resize(src, <a class="code" href="../../d3/d00/a00113.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>, cv::Size(this-&gt;width(), this-&gt;height()));</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QImage show_image = <a class="code" href="../../da/d45/a00011.html#abeb6dbf76427d84554906c85222d2b31">&#x202A;cvMat2QImage</a>(<a class="code" href="../../d3/d00/a00113.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    this-&gt;setPixmap(QPixmap::fromImage(show_image));    <span class="comment">// 显示 pix map</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../da/dfb/a01174.html#a0f490dda677b7dff55011d5b43e2367b">   55</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/dfb/a01174.html#a0f490dda677b7dff55011d5b43e2367b">&#x202A;QImgLabel::mouseDoubleClickEvent</a>(QMouseEvent * event)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// LDebug(&quot;Double Click!!&quot;);</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    LDebug(<span class="stringliteral">&quot;Double Click at:({},{}),&quot;</span>, event-&gt;x(),<span class="keyword">event</span>-&gt;y());</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    emit <a class="code" href="../../da/dfb/a01174.html#a7ef1154ab26398e13a52d1a85bdd49e6">&#x202A;signal_doubleClick</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d3/d58/a00285.html">&#x202A;Ui</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/d41/a01037.html">&#x202A;GaugeCompass</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/d41/a01037.html">&#x202A;GaugeCompass</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d2/d41/a01037.html#aa64a89868f350934162deec6001bbb8b">&#x202A;GaugeCompass</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../d2/d41/a01037.html#a04306733615f5b03375507f626879f14">&#x202A;~GaugeCompass</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#ae2ae6e7104e6c5a7226dc6d77d0ad654">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/d41/a01037.html#ae2ae6e7104e6c5a7226dc6d77d0ad654">&#x202A;SetValue</a>(<span class="keywordtype">float</span> value)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="../../d2/d41/a01037.html#a14ab8fb400b289864fc083355cd02969">&#x202A;m_value</a> = value;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#a4031103b42226689d53e2902dc639521">   49</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d2/d41/a01037.html#a4031103b42226689d53e2902dc639521">&#x202A;GetValue</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;float&gt;(<a class="code" href="../../d2/d41/a01037.html#a14ab8fb400b289864fc083355cd02969">&#x202A;m_value</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#a5addca6967d7af19cf06de959b400f88">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/d41/a01037.html#a5addca6967d7af19cf06de959b400f88">&#x202A;StartTimer</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        this-&gt;<a class="code" href="../../d2/d41/a01037.html#afcf32e56cf7c8d59a57a3b08b11750c4">&#x202A;pTimer</a>-&gt;start(100);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#ab11f07718a8657f8cf29c81acc0efa74">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/d41/a01037.html#ab11f07718a8657f8cf29c81acc0efa74">&#x202A;StopTimer</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        this-&gt;<a class="code" href="../../d2/d41/a01037.html#afcf32e56cf7c8d59a57a3b08b11750c4">&#x202A;pTimer</a>-&gt;stop();   <span class="comment">// 设定停止计时器 避免更新</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/d41/a01037.html#a103143429fbb76de11d5f397983657b4">&#x202A;slot_setValue</a>();  <span class="comment">// 更新界面的值</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Ui::GaugeCompass *ui;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#a854eb9317af084557e6b76e197b0e078">   68</a></span>&#160;    <a class="code" href="../../d1/d83/a01041.html">&#x202A;QcGaugeWidget</a> *<a class="code" href="../../d2/d41/a01037.html#a854eb9317af084557e6b76e197b0e078">&#x202A;mCompassGauge</a>;   <span class="comment">// 罗盘仪表盘</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#af276ab6ea16a804f6ccf52df5892f876">   69</a></span>&#160;    <a class="code" href="../../d0/dd3/a01077.html">&#x202A;QcNeedleItem</a> *<a class="code" href="../../d2/d41/a01037.html#af276ab6ea16a804f6ccf52df5892f876">&#x202A;mCompassPointer</a>;  <span class="comment">// 罗盘指针实现</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//  设置 定时刷新指南针</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#afcf32e56cf7c8d59a57a3b08b11750c4">   72</a></span>&#160;    QTimer *<a class="code" href="../../d2/d41/a01037.html#afcf32e56cf7c8d59a57a3b08b11750c4">&#x202A;pTimer</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#a14ab8fb400b289864fc083355cd02969">   75</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d2/d41/a01037.html#a14ab8fb400b289864fc083355cd02969">&#x202A;m_value</a>;    <span class="comment">// 保留指针 方向角度值</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // GAUGECOMPASS_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00116_html"><div class="ttname"><a href="../../d4/d3e/a00116.html">&#x202A;QImgLabel.h</a></div></div>
-<div class="ttc" id="aa00011_html_abeb6dbf76427d84554906c85222d2b31"><div class="ttname"><a href="../../da/d45/a00011.html#abeb6dbf76427d84554906c85222d2b31">&#x202A;cvMat2QImage</a></div><div class="ttdeci">&#x202A;QImage cvMat2QImage(const cv::Mat &amp;mat)</div><div class="ttdoc">&#x202A;Mat 和QImage 互相转换</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00119">common.cc:119</a></div></div>
-<div class="ttc" id="aa01174_html_a62d0263963759aca14662a70e80c0fa8"><div class="ttname"><a href="../../da/dfb/a01174.html#a62d0263963759aca14662a70e80c0fa8">&#x202A;QImgLabel::QImgLabel</a></div><div class="ttdeci">&#x202A;QImgLabel(QWidget *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the QImgLabel class</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00019">QImgLabel.cc:19</a></div></div>
-<div class="ttc" id="aa01174_html_a0f490dda677b7dff55011d5b43e2367b"><div class="ttname"><a href="../../da/dfb/a01174.html#a0f490dda677b7dff55011d5b43e2367b">&#x202A;QImgLabel::mouseDoubleClickEvent</a></div><div class="ttdeci">&#x202A;void mouseDoubleClickEvent(QMouseEvent *event) override</div><div class="ttdoc">&#x202A;鼠标双击事件</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00055">QImgLabel.cc:55</a></div></div>
-<div class="ttc" id="aa01174_html_a7ef1154ab26398e13a52d1a85bdd49e6"><div class="ttname"><a href="../../da/dfb/a01174.html#a7ef1154ab26398e13a52d1a85bdd49e6">&#x202A;QImgLabel::signal_doubleClick</a></div><div class="ttdeci">&#x202A;void signal_doubleClick(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d01/a00227_source.html#l00134">moc_QImgLabel.cpp:134</a></div></div>
-<div class="ttc" id="aa01174_html_aee4ae223a587322edecc4f6a77e05745"><div class="ttname"><a href="../../da/dfb/a01174.html#aee4ae223a587322edecc4f6a77e05745">&#x202A;QImgLabel::~QImgLabel</a></div><div class="ttdeci">&#x202A;~QImgLabel() override</div><div class="ttdoc">&#x202A;Finalizes an instance of the QImgLabel class</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00032">QImgLabel.cc:32</a></div></div>
-<div class="ttc" id="aa01174_html_a3f1a23663337082bc684229123014abb"><div class="ttname"><a href="../../da/dfb/a01174.html#a3f1a23663337082bc684229123014abb">&#x202A;QImgLabel::ShowImage</a></div><div class="ttdeci">&#x202A;void ShowImage(const cv::Mat &amp;src)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00037">QImgLabel.cc:37</a></div></div>
-<div class="ttc" id="aa00113_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d3/d00/a00113.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00036">QImgLabel.cc:36</a></div></div>
+<div class="ttc" id="aa01037_html_af276ab6ea16a804f6ccf52df5892f876"><div class="ttname"><a href="../../d2/d41/a01037.html#af276ab6ea16a804f6ccf52df5892f876">&#x202A;GaugeCompass::mCompassPointer</a></div><div class="ttdeci">&#x202A;QcNeedleItem * mCompassPointer</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00069">GaugeCompass.h:69</a></div></div>
+<div class="ttc" id="aa01037_html_a5addca6967d7af19cf06de959b400f88"><div class="ttname"><a href="../../d2/d41/a01037.html#a5addca6967d7af19cf06de959b400f88">&#x202A;GaugeCompass::StartTimer</a></div><div class="ttdeci">&#x202A;void StartTimer(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00054">GaugeCompass.h:54</a></div></div>
+<div class="ttc" id="aa01037_html_aa64a89868f350934162deec6001bbb8b"><div class="ttname"><a href="../../d2/d41/a01037.html#aa64a89868f350934162deec6001bbb8b">&#x202A;GaugeCompass::GaugeCompass</a></div><div class="ttdeci">&#x202A;GaugeCompass(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00005">GaugeCompass.cc:5</a></div></div>
+<div class="ttc" id="aa01037_html"><div class="ttname"><a href="../../d2/d41/a01037.html">&#x202A;GaugeCompass</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00013">GaugeCompass.h:13</a></div></div>
+<div class="ttc" id="aa01037_html_a854eb9317af084557e6b76e197b0e078"><div class="ttname"><a href="../../d2/d41/a01037.html#a854eb9317af084557e6b76e197b0e078">&#x202A;GaugeCompass::mCompassGauge</a></div><div class="ttdeci">&#x202A;QcGaugeWidget * mCompassGauge</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00068">GaugeCompass.h:68</a></div></div>
+<div class="ttc" id="aa01037_html_a04306733615f5b03375507f626879f14"><div class="ttname"><a href="../../d2/d41/a01037.html#a04306733615f5b03375507f626879f14">&#x202A;GaugeCompass::~GaugeCompass</a></div><div class="ttdeci">&#x202A;~GaugeCompass()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00082">GaugeCompass.cc:82</a></div></div>
+<div class="ttc" id="aa01037_html_ae2ae6e7104e6c5a7226dc6d77d0ad654"><div class="ttname"><a href="../../d2/d41/a01037.html#ae2ae6e7104e6c5a7226dc6d77d0ad654">&#x202A;GaugeCompass::SetValue</a></div><div class="ttdeci">&#x202A;void SetValue(float value)</div><div class="ttdoc">&#x202A;设置 set 以及 get 类</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00033">GaugeCompass.h:33</a></div></div>
+<div class="ttc" id="aa01037_html_a14ab8fb400b289864fc083355cd02969"><div class="ttname"><a href="../../d2/d41/a01037.html#a14ab8fb400b289864fc083355cd02969">&#x202A;GaugeCompass::m_value</a></div><div class="ttdeci">&#x202A;float m_value</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00075">GaugeCompass.h:75</a></div></div>
+<div class="ttc" id="aa00119_html"><div class="ttname"><a href="../../df/d6a/a00119.html">&#x202A;qcgaugewidget.h</a></div></div>
+<div class="ttc" id="aa01037_html_a103143429fbb76de11d5f397983657b4"><div class="ttname"><a href="../../d2/d41/a01037.html#a103143429fbb76de11d5f397983657b4">&#x202A;GaugeCompass::slot_setValue</a></div><div class="ttdeci">&#x202A;void slot_setValue()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00092">GaugeCompass.cc:92</a></div></div>
+<div class="ttc" id="aa01037_html_a4031103b42226689d53e2902dc639521"><div class="ttname"><a href="../../d2/d41/a01037.html#a4031103b42226689d53e2902dc639521">&#x202A;GaugeCompass::GetValue</a></div><div class="ttdeci">&#x202A;float GetValue(void)</div><div class="ttdoc">&#x202A;Gets the value</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00049">GaugeCompass.h:49</a></div></div>
+<div class="ttc" id="aa00285_html"><div class="ttname"><a href="../../d3/d58/a00285.html">&#x202A;Ui</a></div></div>
+<div class="ttc" id="aa01077_html"><div class="ttname"><a href="../../d0/dd3/a01077.html">&#x202A;QcNeedleItem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d6a/a00119_source.html#l00269">qcgaugewidget.h:269</a></div></div>
+<div class="ttc" id="aa01037_html_afcf32e56cf7c8d59a57a3b08b11750c4"><div class="ttname"><a href="../../d2/d41/a01037.html#afcf32e56cf7c8d59a57a3b08b11750c4">&#x202A;GaugeCompass::pTimer</a></div><div class="ttdeci">&#x202A;QTimer * pTimer</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00072">GaugeCompass.h:72</a></div></div>
+<div class="ttc" id="aa01041_html"><div class="ttname"><a href="../../d1/d83/a01041.html">&#x202A;QcGaugeWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d6a/a00119_source.html#l00061">qcgaugewidget.h:61</a></div></div>
+<div class="ttc" id="aa01037_html_ab11f07718a8657f8cf29c81acc0efa74"><div class="ttname"><a href="../../d2/d41/a01037.html#ab11f07718a8657f8cf29c81acc0efa74">&#x202A;GaugeCompass::StopTimer</a></div><div class="ttdeci">&#x202A;void StopTimer(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00058">GaugeCompass.h:58</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_a97d35b535b8178474d1d1f002503b39.html">&#x202A;model</a></li><li class="navelem"><a class="el" href="../../d3/d00/a00113.html">&#x202A;QImgLabel.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_a97d35b535b8178474d1d1f002503b39.html">&#x202A;model</a></li><li class="navelem"><a class="el" href="../../d3/d00/a00113.html">&#x202A;GaugeCompass.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

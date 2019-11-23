@@ -1,4 +1,5 @@
-<map id="UnitTest" name="UnitTest">
-<area shape="rect" id="node1" title="A unit test." alt="" coords="5,80,76,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,76,32"/>
+<map id="QcAttitudeMeter" name="QcAttitudeMeter">
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,123,181"/>
+<area shape="rect" id="node2" href="$d7/d46/a01045.html" title=" " alt="" coords="32,80,96,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="29,5,99,32"/>
 </map>

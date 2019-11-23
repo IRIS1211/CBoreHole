@@ -1,4 +1,4 @@
-<map id="CLineEdit" name="CLineEdit">
-<area shape="rect" id="node1" title="继承Qt 自定义文件 提升成为自己的组件, 修改窗口的值之后 保证相应的值 直接赋值到相应的内存中 如果关联了相应的 点击按钮, 按钮点击之后可以触发 数据更改" alt="" coords="5,80,84,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,84,32"/>
+<map id="Ui::ReadWindow" name="Ui::ReadWindow">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node2" href="$de/d1d/a01105.html" title=" " alt="" coords="6,5,123,32"/>
 </map>

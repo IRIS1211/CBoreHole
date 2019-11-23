@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['int16_2502',['INT16',['../d2/de7/a00014.html#aab0296690050a39f146ea60835bf5154',1,'Commu.h']]],
-  ['int32_2503',['INT32',['../d2/de7/a00014.html#a6cd3486492b15fd3bb281e0fcbdacb33',1,'Commu.h']]],
-  ['int64_2504',['INT64',['../d2/de7/a00014.html#a0161e5691f3cb4e5b3445b9bda30d6c7',1,'Commu.h']]],
-  ['int8_2505',['INT8',['../d2/de7/a00014.html#aa7a9a0398d87cae243cc7560f516c844',1,'Commu.h']]]
+  ['uchar_2179',['UCHAR',['../dc/d87/a00032.html#a212351a4a5cdda9c6f6e12a5232c59b0',1,'UCHAR():&#160;Commu.h'],['../dc/d87/a00032.html#ae48ac2456c5ad6c956fef86e7bef3a21',1,'uchar():&#160;Commu.h']]],
+  ['uint_2180',['uint',['../dc/d87/a00032.html#a69aa29b598b851b0640aa225a9e5d61d',1,'uint():&#160;Commu.h'],['../dc/d87/a00032.html#a2b6a99e22a48562ebfb764265a529937',1,'UINT():&#160;Commu.h']]],
+  ['uint16_2181',['UINT16',['../dc/d87/a00032.html#a12959b963b682ac310aca54c9e954359',1,'Commu.h']]],
+  ['uint32_2182',['UINT32',['../dc/d87/a00032.html#ad218514b084e626393749ca0e0f5bccc',1,'Commu.h']]],
+  ['uint64_2183',['UINT64',['../dc/d87/a00032.html#a601a4012b2ef2f1fe14193c98446409b',1,'Commu.h']]],
+  ['uint8_2184',['UINT8',['../dc/d87/a00032.html#ae37e47d32ebe3ae0800269cd815f8436',1,'Commu.h']]],
+  ['ulong_2185',['ULONG',['../dc/d87/a00032.html#aacc7c27bcc29ccef551e2d7bd95cb652',1,'Commu.h']]],
+  ['ushort_2186',['USHORT',['../dc/d87/a00032.html#a5315435fe48e21e3a8a48dfb10cc9fde',1,'Commu.h']]]
 ];

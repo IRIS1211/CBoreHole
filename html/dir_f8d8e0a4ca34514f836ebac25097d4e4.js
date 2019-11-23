@@ -1,182 +1,196 @@
 var dir_f8d8e0a4ca34514f836ebac25097d4e4 =
 [
-    [ "\u202ACamCapture.h", "dd/dad/a00005.html", [
-      [ "\u202ACamCapture", "da/dd8/a00906.html", "da/dd8/a00906" ]
+    [ "\u202ACamCapture.h", "d3/d52/a00023.html", [
+      [ "\u202ACamCapture", "de/d37/a00849.html", "de/d37/a00849" ]
     ] ],
-    [ "\u202ACamProc.h", "d4/dee/a00008.html", "d4/dee/a00008" ],
-    [ "\u202Acommon.h", "da/d45/a00011.html", "da/d45/a00011" ],
-    [ "\u202ACommu.h", "d2/de7/a00014.html", "d2/de7/a00014" ],
-    [ "\u202AConfig.h", "d4/d51/a00017.html", [
-      [ "\u202ARunPara", "d3/dd1/a00914.html", "d3/dd1/a00914" ],
-      [ "\u202AStruct_Image", "d0/ddf/a00918.html", "d0/ddf/a00918" ],
-      [ "\u202AStruct_UI", "d3/dd1/a00914.html#dd/dcf/a00922", [
-        [ "\u202AlbHeight", "d3/dd1/a00914.html#a64f6f3bf35eb7e44ef8f758007fc5ab4", null ],
-        [ "\u202AlbWidth", "d3/dd1/a00914.html#ab00bf98d6ba19be08eae32aefb1939c8", null ]
+    [ "\u202ACamProc.h", "d6/d5b/a00026.html", "d6/d5b/a00026" ],
+    [ "\u202Acommon.h", "d5/d16/a00029.html", "d5/d16/a00029" ],
+    [ "\u202ACommu.h", "dc/d87/a00032.html", "dc/d87/a00032" ],
+    [ "\u202AConfig.h", "d4/d8c/a00035.html", [
+      [ "\u202ARunPara", "d0/d82/a00857.html", "d0/d82/a00857" ],
+      [ "\u202AStImage", "dd/dd5/a00861.html", "dd/dd5/a00861" ],
+      [ "\u202AStUILable", "d0/d82/a00857.html#dd/d7b/a00865", [
+        [ "\u202AnLabelHeight", "d0/d82/a00857.html#a24dd856d35e60a2b670f0f54e765e832", null ],
+        [ "\u202AnLabelWidth", "d0/d82/a00857.html#a0447f090c014821e90de2e66e1584f5b", null ]
       ] ],
-      [ "\u202AStruct_Device", "d3/dd1/a00914.html#d8/d38/a00926", [
-        [ "\u202AStruct_Serial", "d3/dd1/a00914.html#d7/d16/a00930", [
-          [ "\u202AnBaudRate", "d3/dd1/a00914.html#a4f8c64c76b0843ad4018e608db55380c", null ],
-          [ "\u202AnFrameLength", "d3/dd1/a00914.html#abf0da7da843ee815809c119131ce774d", null ],
-          [ "\u202AnFrameMax", "d3/dd1/a00914.html#a0b1346c17ffce3a6d0bfb5b6d02b5308", null ],
-          [ "\u202AnPort", "d3/dd1/a00914.html#a4e9a0c9819b9678e3bd50438e82c990a", null ]
+      [ "\u202AStDevice", "d0/d82/a00857.html#d3/db2/a00869", [
+        [ "\u202AStCamera", "d0/d82/a00857.html#d9/d22/a00873", [
+          [ "\u202AbEnable", "d0/d82/a00857.html#ae260c7f68f927a03887d6634f6f623ca", null ],
+          [ "\u202AnFPS", "d0/d82/a00857.html#a42cf59cfae146a36d92a7df8edb79703", null ],
+          [ "\u202AnHeight", "d0/d82/a00857.html#a5288812e400a6e98299e79f3eb702fa2", null ],
+          [ "\u202AnIndex", "d0/d82/a00857.html#acaa30247055f1edde2658734280e1b9f", null ],
+          [ "\u202AnWidth", "d0/d82/a00857.html#ab6f31a3e1c372230fb0ae7ec82ae7aa0", null ]
         ] ],
-        [ "\u202AnCamIndex", "d3/dd1/a00914.html#a137c26028178e49b9733d5e3f0e1fa2b", null ],
-        [ "\u202AnDiskAll", "d3/dd1/a00914.html#a06e94bcf64f3f6f7478a07ef247fbfe0", null ],
-        [ "\u202AnDiskUsed", "d3/dd1/a00914.html#a3e4bbfaeb8bce0ca83e38991c6408937", null ],
-        [ "\u202AnSerialBaud", "d3/dd1/a00914.html#ace3633ecdba9127535190395f4e0ec95", null ],
-        [ "\u202AnSerialPort", "d3/dd1/a00914.html#a20082127c484741e8e052e98983dcad6", null ],
-        [ "\u202ASerial", "d3/dd1/a00914.html#a7274dc36dab89eb77f02c6b6aca678ee", null ]
-      ] ],
-      [ "\u202AStruct_Serial", "d3/dd1/a00914.html#d7/d16/a00930", [
-        [ "\u202AnBaudRate", "d3/dd1/a00914.html#a4f8c64c76b0843ad4018e608db55380c", null ],
-        [ "\u202AnFrameLength", "d3/dd1/a00914.html#abf0da7da843ee815809c119131ce774d", null ],
-        [ "\u202AnFrameMax", "d3/dd1/a00914.html#a0b1346c17ffce3a6d0bfb5b6d02b5308", null ],
-        [ "\u202AnPort", "d3/dd1/a00914.html#a4e9a0c9819b9678e3bd50438e82c990a", null ]
-      ] ],
-      [ "\u202AStruct_Config", "d3/dd1/a00914.html#d0/df0/a00934", [
-        [ "\u202AStruct_Debug", "d3/dd1/a00914.html#df/d12/a00942", [
-          [ "\u202AnCamUse", "d3/dd1/a00914.html#a09d7e2ee669aa2f9b74c74bd62bb00fc", null ],
-          [ "\u202AnDocTest", "d3/dd1/a00914.html#a5d7c8c7a1116ae855f38afb181198b83", null ],
-          [ "\u202AnSerialTimer", "d3/dd1/a00914.html#abd51f1f7c44649bbb7711ba779365bb2", null ],
-          [ "\u202AnTestVar1", "d3/dd1/a00914.html#a245eec5b08bc34d2da9531e04095c515", null ],
-          [ "\u202AnTestVar2", "d3/dd1/a00914.html#a780c5b08521c9e03502d13ec55af1a27", null ],
-          [ "\u202AnWriteVideo", "d3/dd1/a00914.html#a12b40854b470128466b0814d599ba817", null ],
-          [ "\u202AsCaptureFilePath", "d3/dd1/a00914.html#a9535cedd50b52fd4065212a49e9e90fb", null ],
-          [ "\u202AsCurrDir", "d3/dd1/a00914.html#a12c82d3b7f8ab3d013b3b186a0cde042", null ],
-          [ "\u202AsSerialFilePath", "d3/dd1/a00914.html#a73a95490e4c5186adfd24ba58f5d2c35", null ],
-          [ "\u202AsWorkDir", "d3/dd1/a00914.html#aa5a69344ca845d45412aa289d0b2c708", null ]
+        [ "\u202AStDisk", "d0/d82/a00857.html#df/d41/a00881", [
+          [ "\u202AnDiskGBAll", "d0/d82/a00857.html#aef119328e7820c1c02157b9e92f3ac1d", null ],
+          [ "\u202AnDiskGBUsed", "d0/d82/a00857.html#a23ea7efdb75cf2e99d81b3682d7080fb", null ]
         ] ],
-        [ "\u202AStruct_ShowMode", "d3/dd1/a00914.html#d5/d54/a00938", [
-          [ "\u202AnShowWork", "d3/dd1/a00914.html#a88aa749d00c4bb5f6c2c29643e0edc3c", null ],
-          [ "\u202AsShowMode", "d3/dd1/a00914.html#a637bf66dfccb9b2e635c6727178aa313", null ]
+        [ "\u202AStSerial", "d0/d82/a00857.html#d1/de7/a00877", [
+          [ "\u202AnBaudRate", "d0/d82/a00857.html#af0cd89a1ff90aa1136e2a8b038d092ce", null ],
+          [ "\u202AnFrameLength", "d0/d82/a00857.html#a96cd2af6fabd5279e5ee8db1cf6309be", null ],
+          [ "\u202AnFrameMax", "d0/d82/a00857.html#a56c24d12cdaf4cc5c749b609ba5e086e", null ],
+          [ "\u202AnPortNum", "d0/d82/a00857.html#aa4e0416b2441e3488c1b50211bb6f569", null ],
+          [ "\u202AnTimer", "d0/d82/a00857.html#ad645843ea7a279989ea32dc37b442544", null ],
+          [ "\u202AnTimerOut", "d0/d82/a00857.html#abaf01987f8812fd37cde1399cda8ccfc", null ],
+          [ "\u202AsFrameHeader", "d0/d82/a00857.html#a1906e11245c8b152b3f3a11aff1a074c", null ]
         ] ],
-        [ "\u202ADebug", "d3/dd1/a00914.html#a40f5bf5d5ace83db16f9349571d27932", null ],
-        [ "\u202AMode", "d3/dd1/a00914.html#a324cfe3828f9a23dbb1d41fe4899f0be", null ]
+        [ "\u202ACamera", "d0/d82/a00857.html#af6d9fdf36076101d9677d1cdc2f8302b", null ],
+        [ "\u202ADisk", "d0/d82/a00857.html#aebb207ab03b76e5453e28c7bc4606afa", null ],
+        [ "\u202AnCamIndex", "d0/d82/a00857.html#ac1507d8db10d80037f1504c54ab55100", null ],
+        [ "\u202AnSerialBaud", "d0/d82/a00857.html#a06a749bdd6ff73a8273ba1f3ca6b37a9", null ],
+        [ "\u202AnSerialPort", "d0/d82/a00857.html#a93d1d10723d6723c8faa4ba4b2493d9a", null ],
+        [ "\u202ASerial", "d0/d82/a00857.html#a398126d54ee5504ddea300b512a6a632", null ]
       ] ],
-      [ "\u202AStruct_ShowMode", "d3/dd1/a00914.html#d5/d54/a00938", [
-        [ "\u202AnShowWork", "d3/dd1/a00914.html#a88aa749d00c4bb5f6c2c29643e0edc3c", null ],
-        [ "\u202AsShowMode", "d3/dd1/a00914.html#a637bf66dfccb9b2e635c6727178aa313", null ]
+      [ "\u202AStCamera", "d0/d82/a00857.html#d9/d22/a00873", [
+        [ "\u202AbEnable", "d0/d82/a00857.html#ae260c7f68f927a03887d6634f6f623ca", null ],
+        [ "\u202AnFPS", "d0/d82/a00857.html#a42cf59cfae146a36d92a7df8edb79703", null ],
+        [ "\u202AnHeight", "d0/d82/a00857.html#a5288812e400a6e98299e79f3eb702fa2", null ],
+        [ "\u202AnIndex", "d0/d82/a00857.html#acaa30247055f1edde2658734280e1b9f", null ],
+        [ "\u202AnWidth", "d0/d82/a00857.html#ab6f31a3e1c372230fb0ae7ec82ae7aa0", null ]
       ] ],
-      [ "\u202AStruct_Debug", "d3/dd1/a00914.html#df/d12/a00942", [
-        [ "\u202AnCamUse", "d3/dd1/a00914.html#a09d7e2ee669aa2f9b74c74bd62bb00fc", null ],
-        [ "\u202AnDocTest", "d3/dd1/a00914.html#a5d7c8c7a1116ae855f38afb181198b83", null ],
-        [ "\u202AnSerialTimer", "d3/dd1/a00914.html#abd51f1f7c44649bbb7711ba779365bb2", null ],
-        [ "\u202AnTestVar1", "d3/dd1/a00914.html#a245eec5b08bc34d2da9531e04095c515", null ],
-        [ "\u202AnTestVar2", "d3/dd1/a00914.html#a780c5b08521c9e03502d13ec55af1a27", null ],
-        [ "\u202AnWriteVideo", "d3/dd1/a00914.html#a12b40854b470128466b0814d599ba817", null ],
-        [ "\u202AsCaptureFilePath", "d3/dd1/a00914.html#a9535cedd50b52fd4065212a49e9e90fb", null ],
-        [ "\u202AsCurrDir", "d3/dd1/a00914.html#a12c82d3b7f8ab3d013b3b186a0cde042", null ],
-        [ "\u202AsSerialFilePath", "d3/dd1/a00914.html#a73a95490e4c5186adfd24ba58f5d2c35", null ],
-        [ "\u202AsWorkDir", "d3/dd1/a00914.html#aa5a69344ca845d45412aa289d0b2c708", null ]
+      [ "\u202AStSerial", "d0/d82/a00857.html#d1/de7/a00877", [
+        [ "\u202AnBaudRate", "d0/d82/a00857.html#af0cd89a1ff90aa1136e2a8b038d092ce", null ],
+        [ "\u202AnFrameLength", "d0/d82/a00857.html#a96cd2af6fabd5279e5ee8db1cf6309be", null ],
+        [ "\u202AnFrameMax", "d0/d82/a00857.html#a56c24d12cdaf4cc5c749b609ba5e086e", null ],
+        [ "\u202AnPortNum", "d0/d82/a00857.html#aa4e0416b2441e3488c1b50211bb6f569", null ],
+        [ "\u202AnTimer", "d0/d82/a00857.html#ad645843ea7a279989ea32dc37b442544", null ],
+        [ "\u202AnTimerOut", "d0/d82/a00857.html#abaf01987f8812fd37cde1399cda8ccfc", null ],
+        [ "\u202AsFrameHeader", "d0/d82/a00857.html#a1906e11245c8b152b3f3a11aff1a074c", null ]
       ] ],
-      [ "\u202AConfig", "d4/d51/a00017.html#da/d40/a00946", [
-        [ "\u202ArunPara", "d4/d51/a00017.html#a004c41c0eff48239d7cb3a12807199fb", null ],
-        [ "\u202AsysPara", "d4/d51/a00017.html#ae557a25811c83150e0cb428df22dfab3", null ]
+      [ "\u202AStDisk", "d0/d82/a00857.html#df/d41/a00881", [
+        [ "\u202AnDiskGBAll", "d0/d82/a00857.html#aef119328e7820c1c02157b9e92f3ac1d", null ],
+        [ "\u202AnDiskGBUsed", "d0/d82/a00857.html#a23ea7efdb75cf2e99d81b3682d7080fb", null ]
+      ] ],
+      [ "\u202AStConfig", "d0/d82/a00857.html#db/d18/a00885", [
+        [ "\u202AStDebug", "d0/d82/a00857.html#dc/d2c/a00893", [
+          [ "\u202AnCameraEnable", "d0/d82/a00857.html#a856441d3fa22eba3ef492bbdb827952d", null ],
+          [ "\u202AnDocTest", "d0/d82/a00857.html#a5c8a72cca3d8730d5d5d78a4c6bee371", null ],
+          [ "\u202AnSerialTimer", "d0/d82/a00857.html#a8195535ae03479100a8b9c2f026b7b0d", null ],
+          [ "\u202AnTestVar1", "d0/d82/a00857.html#a83f9213590a836bc47a85eb66edf13fa", null ],
+          [ "\u202AnTestVar2", "d0/d82/a00857.html#a61fb146f1283ffd076f0f4f1cbd0340f", null ],
+          [ "\u202AnWriteVideo", "d0/d82/a00857.html#ae50d306e83a0c5ec72b2e1577dc144f4", null ],
+          [ "\u202AsCurrDir", "d0/d82/a00857.html#a45a8afb933c79357a12923a7b3197be9", null ],
+          [ "\u202AsSerialFilePath", "d0/d82/a00857.html#a92e6763acb32e178ea991c7810dc6f8b", null ],
+          [ "\u202AsVideoFilePath", "d0/d82/a00857.html#a08b903fe0ce9fde5ed2b33ba79b3065a", null ],
+          [ "\u202AsWorkDir", "d0/d82/a00857.html#acdd314ead7849be898ac8058dfdcaba6", null ]
+        ] ],
+        [ "\u202AStShowMode", "d0/d82/a00857.html#de/dc8/a00889", [
+          [ "\u202AnShowWork", "d0/d82/a00857.html#a8f4e1b60f52ef3bd41bd73b6fc3a8a45", null ],
+          [ "\u202AsShowMode", "d0/d82/a00857.html#a881b418f9426e8ab877b5f4029b32335", null ]
+        ] ],
+        [ "\u202ADebug", "d0/d82/a00857.html#a8451b37552219ca326f2e4ddd0fdc08e", null ],
+        [ "\u202AMode", "d0/d82/a00857.html#aacfb84a45d47c0cdc2d0f1825717226f", null ]
+      ] ],
+      [ "\u202AStShowMode", "d0/d82/a00857.html#de/dc8/a00889", [
+        [ "\u202AnShowWork", "d0/d82/a00857.html#a8f4e1b60f52ef3bd41bd73b6fc3a8a45", null ],
+        [ "\u202AsShowMode", "d0/d82/a00857.html#a881b418f9426e8ab877b5f4029b32335", null ]
+      ] ],
+      [ "\u202AStDebug", "d0/d82/a00857.html#dc/d2c/a00893", [
+        [ "\u202AnCameraEnable", "d0/d82/a00857.html#a856441d3fa22eba3ef492bbdb827952d", null ],
+        [ "\u202AnDocTest", "d0/d82/a00857.html#a5c8a72cca3d8730d5d5d78a4c6bee371", null ],
+        [ "\u202AnSerialTimer", "d0/d82/a00857.html#a8195535ae03479100a8b9c2f026b7b0d", null ],
+        [ "\u202AnTestVar1", "d0/d82/a00857.html#a83f9213590a836bc47a85eb66edf13fa", null ],
+        [ "\u202AnTestVar2", "d0/d82/a00857.html#a61fb146f1283ffd076f0f4f1cbd0340f", null ],
+        [ "\u202AnWriteVideo", "d0/d82/a00857.html#ae50d306e83a0c5ec72b2e1577dc144f4", null ],
+        [ "\u202AsCurrDir", "d0/d82/a00857.html#a45a8afb933c79357a12923a7b3197be9", null ],
+        [ "\u202AsSerialFilePath", "d0/d82/a00857.html#a92e6763acb32e178ea991c7810dc6f8b", null ],
+        [ "\u202AsVideoFilePath", "d0/d82/a00857.html#a08b903fe0ce9fde5ed2b33ba79b3065a", null ],
+        [ "\u202AsWorkDir", "d0/d82/a00857.html#acdd314ead7849be898ac8058dfdcaba6", null ]
+      ] ],
+      [ "\u202AConfig", "d4/d8c/a00035.html#de/d01/a00897", [
+        [ "\u202AmRunPara", "d4/d8c/a00035.html#a3f1c590ef3c4492e16830021d2867c45", null ],
+        [ "\u202AmSysPara", "d4/d8c/a00035.html#a7d94af5d199fe6537ca665421b636cd8", null ]
       ] ]
     ] ],
-    [ "\u202ACQueue.h", "db/db2/a00020.html", [
-      [ "\u202ACQueue", "df/d39/a00950.html", "df/d39/a00950" ],
-      [ "\u202AThreadSafeQueue", "d3/dca/a00954.html", "d3/dca/a00954" ],
-      [ "\u202Athreadsafe_queue", "df/d9c/a00958.html", "df/d9c/a00958" ]
+    [ "\u202ACQueue.h", "d8/d41/a00038.html", [
+      [ "\u202ACQueue", "d0/dac/a00901.html", "d0/dac/a00901" ]
     ] ],
-    [ "\u202AIDOIFile.h", "d3/d52/a00023.html", "d3/d52/a00023" ],
-    [ "\u202AImageProc.h", "d6/d5b/a00026.html", [
-      [ "\u202AImageProc", "d3/d7b/a00986.html", "d3/d7b/a00986" ]
+    [ "\u202AIDOIFile.h", "dd/d32/a00041.html", "dd/d32/a00041" ],
+    [ "\u202AImageProc.h", "d5/df9/a00044.html", [
+      [ "\u202AImageProc", "dd/d7a/a00921.html", "dd/d7a/a00921" ]
     ] ],
-    [ "\u202AmyException.h", "d5/d16/a00029.html", "d5/d16/a00029" ],
-    [ "\u202Areadwindow.h", "dc/d87/a00032.html", [
-      [ "\u202AReadWindow", "d4/dd0/a00994.html", "d4/dd0/a00994" ]
+    [ "\u202AmyException.h", "d6/d2d/a00047.html", "d6/d2d/a00047" ],
+    [ "\u202Areadwindow.h", "d5/de0/a00050.html", [
+      [ "\u202AReadWindow", "dc/d92/a00929.html", "dc/d92/a00929" ]
     ] ],
-    [ "\u202ASerial.h", "d4/d8c/a00035.html", [
-      [ "\u202ACQueue", "df/d39/a00950.html", "df/d39/a00950" ],
-      [ "\u202ASerial", "d9/d9a/a00998.html", "d9/d9a/a00998" ]
+    [ "\u202ASerial.h", "dc/dee/a00053.html", [
+      [ "\u202ACQueue", "d0/dac/a00901.html", "d0/dac/a00901" ],
+      [ "\u202ASerial", "d0/d5b/a00933.html", "d0/d5b/a00933" ]
     ] ],
-    [ "\u202Aserialdata.h", "d8/d41/a00038.html", "d8/d41/a00038" ],
-    [ "\u202ASerialPort.h", "dd/d32/a00041.html", [
-      [ "\u202ACSerialPort", "d1/dd8/a01022.html", "d1/dd8/a01022" ],
-      [ "\u202AMySerial", "de/d02/a01026.html", "de/d02/a01026" ]
+    [ "\u202Aserialdata.h", "d9/d2e/a00056.html", "d9/d2e/a00056" ],
+    [ "\u202ASerialProc.h", "d3/d8b/a00059.html", [
+      [ "\u202ASerialProc", "d1/df7/a00957.html", "d1/df7/a00957" ]
     ] ],
-    [ "\u202ASerialProc.h", "d5/df9/a00044.html", "d5/df9/a00044" ],
-    [ "\u202Asetwindow.h", "d6/d2d/a00047.html", [
-      [ "\u202ASetWindow", "de/d91/a01034.html", "de/d91/a01034" ]
+    [ "\u202Asetwindow.h", "df/d03/a00062.html", [
+      [ "\u202ASetWindow", "da/d45/a00961.html", "da/d45/a00961" ]
     ] ],
-    [ "\u202ASpdLogger.h", "d5/de0/a00050.html", "d5/de0/a00050" ],
-    [ "\u202ASystemPara.h", "dc/dee/a00053.html", [
-      [ "\u202ASystemPara", "da/d17/a01046.html", "da/d17/a01046" ],
-      [ "\u202AstructFileHeader", "da/d17/a01046.html#d9/d8e/a01050", [
-        [ "\u202AnFileNo", "da/d17/a01046.html#a9fa4417e3a28eb3ea23ce81b284e45b1", null ],
-        [ "\u202AnOneRowDataSize", "da/d17/a01046.html#ad50f18cebb1f45d4f8b90bcf6cc82896", null ],
-        [ "\u202AnRowCnt", "da/d17/a01046.html#ad76eed6ac6520bc4d200b90263e82c36", null ],
-        [ "\u202AstrConfigVersion", "da/d17/a01046.html#a544b19a8c624f6078000c55b9ddd3671", null ],
-        [ "\u202AstrWorkDir", "da/d17/a01046.html#a49a70ea02c3350b889ae9a41137f3566", null ],
-        [ "\u202AVerify", "da/d17/a01046.html#a9930bf5abb90c7f03aceb729b2e6a264", null ]
+    [ "\u202ASpdLogger.h", "de/de1/a00065.html", "de/de1/a00065" ],
+    [ "\u202ASystemPara.h", "da/d24/a00068.html", [
+      [ "\u202ASystemPara", "d3/da5/a00973.html", "d3/da5/a00973" ],
+      [ "\u202AStFileHeader", "d3/da5/a00973.html#d5/d6c/a00977", [
+        [ "\u202AnFileNo", "d3/da5/a00973.html#a365b0cd4615f4e6c7effc77bfc3a3d66", null ],
+        [ "\u202AnOneRowDataSize", "d3/da5/a00973.html#aebf142c11b3165e18376b08c6e356657", null ],
+        [ "\u202AnRowCnt", "d3/da5/a00973.html#ac9ded96e7b4070b175ccb568da4ebd81", null ],
+        [ "\u202AstrConfigVersion", "d3/da5/a00973.html#ab9e189a0426be5ec766cad1d5d3d53aa", null ],
+        [ "\u202AstrWorkDir", "d3/da5/a00973.html#a14b10463c37d33b34082de01323ea07d", null ],
+        [ "\u202AVerify", "d3/da5/a00973.html#a70221f0dd12cc03da1cd0c641d66c74f", null ]
       ] ],
-      [ "\u202AstructProbe", "da/d17/a01046.html#dd/d57/a01054", [
-        [ "\u202AbProbeDirAhead", "da/d17/a01046.html#ae49d9664a0ed87256452770214c2161e", null ],
-        [ "\u202AnProbeType", "da/d17/a01046.html#a3824fd5c9bd10061b166d281ef2c2d59", null ]
+      [ "\u202AStProbe", "d3/da5/a00973.html#dd/d24/a00981", [
+        [ "\u202AbProbeDirAhead", "d3/da5/a00973.html#a21908b1a45d14a823d1190856896613c", null ],
+        [ "\u202AnProbeType", "d3/da5/a00973.html#a15e4e5611d4fdebc08e5d0fe049dde09", null ]
       ] ],
-      [ "\u202AstructPulse", "da/d17/a01046.html#d5/d4c/a01058", [
-        [ "\u202AnPixalPerPulse", "da/d17/a01046.html#af3b08218f679b1a0f670f60964f596d1", null ],
-        [ "\u202AnPulseUm", "da/d17/a01046.html#aee070b12c85f63f2049215c25d2ff319", null ]
+      [ "\u202AStPulse", "d3/da5/a00973.html#da/deb/a00985", [
+        [ "\u202AnPixalPerPulse", "d3/da5/a00973.html#a869900d3b758e8fbfd43a0e9bf0e43f3", null ],
+        [ "\u202AnPulseUm", "d3/da5/a00973.html#a3cfefa97e135191a41fc8e8dc01ee388", null ]
       ] ],
-      [ "\u202AstructHole", "da/d17/a01046.html#d4/d8a/a01062", [
-        [ "\u202AnHoleBeginDepth", "da/d17/a01046.html#a40f815a9d1e043a90e703002833d51ab", null ],
-        [ "\u202AnHoleDiameter", "da/d17/a01046.html#a795b77c973e3454a2346213fad340b03", null ],
-        [ "\u202AnHoleTypeVertical", "da/d17/a01046.html#a1c5ae2e5a45f0154a27f38174d9e58a2", null ],
-        [ "\u202AnHoleWorkAhead", "da/d17/a01046.html#afcf78afe3bb634edac724d85b0fe4783", null ],
-        [ "\u202AstrHoleCompany", "da/d17/a01046.html#a28073d0cd03cefdc08fb6ba9bb177622", null ],
-        [ "\u202AstrHoleLocal", "da/d17/a01046.html#adfd9eb5e6eea6bc5a2cd6b13c4c193ff", null ],
-        [ "\u202AstrHoleNum", "da/d17/a01046.html#a747264c3a36ae3fc0709a64d164303f1", null ],
-        [ "\u202AstrHolePerson", "da/d17/a01046.html#a8f8b77e41f21b2cc1bc5558c903b99ae", null ],
-        [ "\u202AstrHoleTime", "da/d17/a01046.html#ab402894321f69972ca2879a97dad9c23", null ]
+      [ "\u202AStHole", "d3/da5/a00973.html#d4/d95/a00989", [
+        [ "\u202AnHoleBeginDepth", "d3/da5/a00973.html#aa1c2bd9b5a9690e77511675b0b25896a", null ],
+        [ "\u202AnHoleDiameter", "d3/da5/a00973.html#a80baca3937e1256e96be0090fc01d495", null ],
+        [ "\u202AnHoleTypeVertical", "d3/da5/a00973.html#ab9608b6809ad03278ff9d72e4b57cff5", null ],
+        [ "\u202AnHoleWorkAhead", "d3/da5/a00973.html#a3fef1dcf543cc4998b1fb68de2c84a91", null ],
+        [ "\u202AstrHoleCompany", "d3/da5/a00973.html#a6c8c3933f928e42aac5c954318edd9a8", null ],
+        [ "\u202AstrHoleLocal", "d3/da5/a00973.html#afda48de6efa9475dadffd186424b6497", null ],
+        [ "\u202AstrHoleNum", "d3/da5/a00973.html#aacf47a963c97d6f2d71f77ba40092b7a", null ],
+        [ "\u202AstrHolePerson", "d3/da5/a00973.html#ac10beaf0d154cf9a4c2a6e478028aefe", null ],
+        [ "\u202AstrHoleTime", "d3/da5/a00973.html#a5f1b7098c0b2f448ec036c6323d5ea5e", null ]
       ] ],
-      [ "\u202AstructImage", "da/d17/a01046.html#d0/dfb/a01066", [
-        [ "\u202AnImgCenterX", "da/d17/a01046.html#a1ecee266821634490065ffec704b6a41", null ],
-        [ "\u202AnImgCenterY", "da/d17/a01046.html#a01052f80eaee37e5ce7e60343c81409a", null ],
-        [ "\u202AnImgContrast", "da/d17/a01046.html#a2570067c025ba745a6ba65acf3819fe4", null ],
-        [ "\u202AnImgFPS", "da/d17/a01046.html#a70fb9ad131d768df5a152309ea91d385", null ],
-        [ "\u202AnImgHeight", "da/d17/a01046.html#aedda67b5a360a46077414c06abc7b902", null ],
-        [ "\u202AnImgHPixalPerMM", "da/d17/a01046.html#ad2a6018733b714fd63b5d62b696456d0", null ],
-        [ "\u202AnImgLight", "da/d17/a01046.html#abd1d77aee4c134d84253ae4ea94312d4", null ],
-        [ "\u202AnImgMaxR", "da/d17/a01046.html#a9dc897e8c79bd445467129f72aefe3a5", null ],
-        [ "\u202AnImgMinR", "da/d17/a01046.html#a21fdcca2d08919048757ac093259c7ab", null ],
-        [ "\u202AnImgOneRowSize", "da/d17/a01046.html#a85f355cf3396c2556f43847ff771540e", null ],
-        [ "\u202AnImgSharp", "da/d17/a01046.html#a7c84169a522a172d8280d796c66b2735", null ],
-        [ "\u202AnImgVPixalPerMM", "da/d17/a01046.html#ac326a0c90063f8095524486cf25540d8", null ],
-        [ "\u202AnImgWidth", "da/d17/a01046.html#a9924373f7ff56141af0cbf7f4765a406", null ]
+      [ "\u202AStImage", "d3/da5/a00973.html#da/d0a/a00993", [
+        [ "\u202AnImgCenterX", "d3/da5/a00973.html#a0576e444e044d3d40b834b98b6492088", null ],
+        [ "\u202AnImgCenterY", "d3/da5/a00973.html#a790288046f4fce15230b6d869d10ee45", null ],
+        [ "\u202AnImgContrast", "d3/da5/a00973.html#afd351d86c285400337e1c091dd584e55", null ],
+        [ "\u202AnImgFPS", "d3/da5/a00973.html#a2eca0ca894b7d650c3b4bd0c9278730b", null ],
+        [ "\u202AnImgHeight", "d3/da5/a00973.html#a86bde63c6c9b0451da881b21611e65e1", null ],
+        [ "\u202AnImgHPixalPerMM", "d3/da5/a00973.html#a9598f5c9b733315685554caa7c790fb8", null ],
+        [ "\u202AnImgLight", "d3/da5/a00973.html#a988cabf6966276de7d37f733b9bc898a", null ],
+        [ "\u202AnImgMaxR", "d3/da5/a00973.html#ab587bb97dd36d62948a297d72a86a82e", null ],
+        [ "\u202AnImgMinR", "d3/da5/a00973.html#a88b80edab45dd79f8c4682634e90e53b", null ],
+        [ "\u202AnImgOneRowSize", "d3/da5/a00973.html#ae5b75c252cfa73c974971087b313c07e", null ],
+        [ "\u202AnImgSharp", "d3/da5/a00973.html#a37a76b88f26c0661c79473fb65591cf9", null ],
+        [ "\u202AnImgVPixalPerMM", "d3/da5/a00973.html#a58979ba910a84fff8cc5acbcda88153f", null ],
+        [ "\u202AnImgWidth", "d3/da5/a00973.html#a0d414d70ac80fead6250017009d7e6d3", null ]
       ] ],
-      [ "\u202AstructCompass", "da/d17/a01046.html#d5/d67/a01070", [
-        [ "\u202AnComAngleOffset", "da/d17/a01046.html#ab277b1d9a17d20ea0408d811cbc0c0b5", null ],
-        [ "\u202AnComCompen", "da/d17/a01046.html#ad692beb7cd756ef79eab455a21cd4cd6", null ],
-        [ "\u202AnComDataLen", "da/d17/a01046.html#ac6dfcbd40bbf9deede9bc37d79d4e621", null ],
-        [ "\u202AnComFixModeHor", "da/d17/a01046.html#aeb4b1f3a03c348e1cad62679e9e648c3", null ],
-        [ "\u202AnComType", "da/d17/a01046.html#a524998787984bcc7fc0af8964cfddef9", null ],
-        [ "\u202AnComUse", "da/d17/a01046.html#ad2ea8df47fbab7c74f5fec274110a8be", null ]
+      [ "\u202AStCompass", "d3/da5/a00973.html#d0/d28/a00997", [
+        [ "\u202AnComAngleOffset", "d3/da5/a00973.html#a069864ce3be8480b13429163b96bf962", null ],
+        [ "\u202AnComCompen", "d3/da5/a00973.html#a430a482c0484363f815dfd5b15a79347", null ],
+        [ "\u202AnComDataLen", "d3/da5/a00973.html#a05f335d66940cf5247a66ac54474eb12", null ],
+        [ "\u202AnComFixModeHor", "d3/da5/a00973.html#a2d447596dc458afaa51520d748c34ef5", null ],
+        [ "\u202AnComType", "d3/da5/a00973.html#a77a43b1f781782c238fb72695a7a65b9", null ],
+        [ "\u202AnComUse", "d3/da5/a00973.html#a623f52701fd22e70e9fd29d581b3a2d8", null ]
       ] ],
-      [ "\u202AstructExtra", "da/d17/a01046.html#d7/df7/a01074", [
-        [ "\u202AnBattaryV", "da/d17/a01046.html#a3e8087391392da58d8c9e3f8bb410d13", null ],
-        [ "\u202AnCompress", "da/d17/a01046.html#a463b442b8e1c9e676700eb9cd1a77aad", null ],
-        [ "\u202AnLighterLight", "da/d17/a01046.html#ad3354c0338918bf1f0ee99ff07090062", null ],
-        [ "\u202AnScreenLight", "da/d17/a01046.html#a1a4cb697880aa29104205d856f5f1aae", null ],
-        [ "\u202AnStorageAll", "da/d17/a01046.html#a38e12dc53b0f78015ffcd666de7a91fc", null ],
-        [ "\u202AnStorageCur", "da/d17/a01046.html#a1a7cdc08e47f3718fa01464cfc9d6ea2", null ]
+      [ "\u202AStExtra", "d3/da5/a00973.html#df/d59/a01001", [
+        [ "\u202AnBattaryV", "d3/da5/a00973.html#aa7090282cca8811c61f51d57916a8c15", null ],
+        [ "\u202AnCompress", "d3/da5/a00973.html#a303e58dc83fa8741718c5d6fa18d6d4c", null ],
+        [ "\u202AnLighterLight", "d3/da5/a00973.html#afec64e40e4df83b475b337be8d0e33d4", null ],
+        [ "\u202AnScreenLight", "d3/da5/a00973.html#a2ead24f4e1b543d054bbce770641b3e3", null ],
+        [ "\u202AnStorageAll", "d3/da5/a00973.html#a23ec389f393241bfb4cb56eaff2a820c", null ],
+        [ "\u202AnStorageCur", "d3/da5/a00973.html#a6a856b50d889ef47cd10ba77a7c8b350", null ]
       ] ]
     ] ],
-    [ "\u202AThreadQueue.h", "d9/d2e/a00056.html", [
-      [ "\u202AThreadQueue", "db/dba/a01078.html", "db/dba/a01078" ]
+    [ "\u202AThreadQueue.h", "d0/d89/a00071.html", [
+      [ "\u202AThreadQueue", "d7/d06/a01005.html", "d7/d06/a01005" ]
     ] ],
-    [ "\u202AUnitTest.h", "d3/d8b/a00059.html", [
-      [ "\u202AWriteVideo", "dd/df1/a01082.html", "dd/df1/a01082" ],
-      [ "\u202AUnitTest", "d9/df5/a01086.html", "d9/df5/a01086" ]
-    ] ],
-    [ "\u202AWorkWindow.h", "df/d03/a00062.html", [
-      [ "\u202AWorkWindow", "da/d73/a01090.html", "da/d73/a01090" ],
-      [ "\u202AstructUIStatus", "da/d73/a01090.html#d6/dea/a01094", null ]
-    ] ],
-    [ "\u202AWriterThread.h", "de/de1/a00065.html", [
-      [ "\u202AWriterThread", "d5/d17/a01098.html", "d5/d17/a01098" ]
-    ] ],
-    [ "\u202AWriteVideo.h", "da/d24/a00068.html", [
-      [ "\u202AWriteVideo", "dd/df1/a01082.html", "dd/df1/a01082" ]
+    [ "\u202AWorkWindow.h", "db/db6/a00074.html", "db/db6/a00074" ],
+    [ "\u202AWriteVideo.h", "d1/d09/a00077.html", [
+      [ "\u202AWriteVideo", "d7/d59/a01013.html", "d7/d59/a01013" ]
     ] ]
 ];

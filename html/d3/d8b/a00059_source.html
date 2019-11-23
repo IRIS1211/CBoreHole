@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/UnitTest.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/SerialProc.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.5.1</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,101 +89,80 @@ $(document).ready(function(){initNavTree('d3/d8b/a00059_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">UnitTest.h</div>  </div>
+<div class="title">SerialProc.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d3/d8b/a00059.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_WRITEVIDEO_H_</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define CBOREHOLE_WRITEVIDEO_H_</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../dd/df1/a01082.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/df1/a01082.html">&#x202A;WriteVideo</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../dd/df1/a01082.html#af263cc43cbdfd70f2892b47dc22ffb10">&#x202A;WriteVideo</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../dd/df1/a01082.html#ac323b2953beb68b8fbafa30bd9370f4c">&#x202A;~WriteVideo</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif  //__WRITEVIDEO_H__</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_UNITTEST_H_</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define CBOREHOLE_UNITTEST_H_</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d9/df5/a01086.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/df5/a01086.html">&#x202A;UnitTest</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/df5/a01086.html#a299cc92121333e2fdd7ac823a84b1292">&#x202A;isQtTestWork</a>(<span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_SERIALPROC_H_</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define CBOREHOLE_SERIALPROC_H_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/dee/a00053.html">&#x202A;Serial.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d2e/a00056.html">&#x202A;serialdata.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// #include &quot;SerialPort.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d87/a00032.html">&#x202A;Commu.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;QMutex&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QThread&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QMutex&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d1/df7/a00957.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/df7/a00957.html">&#x202A;SerialProc</a>: <span class="keyword">public</span> QThread</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d1/df7/a00957.html#a95fe8d5577e75be72dd98d2098576103">   38</a></span>&#160;    <a class="code" href="../../d6/dad/a00941.html">&#x202A;FrameData</a> <a class="code" href="../../d1/df7/a00957.html#a95fe8d5577e75be72dd98d2098576103">&#x202A;m_FrameData_</a>;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d1/df7/a00957.html#ab0efbcfcb776f3339e6d35468a902a5e">   39</a></span>&#160;    std::mutex <a class="code" href="../../d1/df7/a00957.html#ab0efbcfcb776f3339e6d35468a902a5e">&#x202A;mx_SerialProc_</a>;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d1/df7/a00957.html#ac503a555236c48be1a57479cf967e445">   41</a></span>&#160;    <a class="code" href="../../d0/dac/a00901.html">&#x202A;CQueue&lt;SerialData&gt;</a> *<a class="code" href="../../d1/df7/a00957.html#ac503a555236c48be1a57479cf967e445">&#x202A;mq_SerialData_Buffer_</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d1/df7/a00957.html#a8d2fa673b460b127ef35bb49b51e8456">   42</a></span>&#160;    <a class="code" href="../../d0/d5b/a00933.html">&#x202A;Serial</a>  *<a class="code" href="../../d1/df7/a00957.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#if TEST_SerData</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//TODO: 测试的时候时候使用 文本替代数据 </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// 可以在测试的时候生成数据, 便于测试</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// 测试用 读取 txt 文本数据</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// 提前处理好测试数据 保证行数和每行的数值 每行一个数值 1000行  (\d+): 正则替换</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d1/df7/a00957.html#a1b95d136572e032e78da881cbfbce864">   51</a></span>&#160;    std::ifstream *<a class="code" href="../../d1/df7/a00957.html#a1b95d136572e032e78da881cbfbce864">&#x202A;m_FileStream_</a>;   </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/df5/a01086.html#a7973b3cadd9967707c26afe4bee9f3f3">&#x202A;toUpper</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/df5/a01086.html#ac43fc49189df29ccdf5e0724d29eb5e1">&#x202A;InitEnv</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define TEST_IDOIFILE   1</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define TEST_IMGPROC    0</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#define TEST_SERIAL     0</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#define TEST_GrabData   0</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#define TEST_Remap      0</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="../../d1/df7/a00957.html#a2eb103016c9d0b4a4e13368ff3e9236c">&#x202A;SerialProc</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#if TEST_IDOIFILE</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/df5/a01086.html#aec5351041b2e2d4f99899f17f8fa7f68">&#x202A;testIDOIFile</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d1/df7/a00957.html#a31a5970045e50bbb739a674cf61ef102">&#x202A;~SerialProc</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/df5/a01086.html#ad43d9c26d7651f17f60396a8a52fe217">&#x202A;testIDOIFileAppend</a>();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d1/df7/a00957.html#a6e9917bcad16434b9579bbf0719dbfe5">&#x202A;run</a>(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#if TEST_IMGPROC</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/df5/a01086.html#a7267f43f7cbc41c0bbdd6fe73367f199">&#x202A;testImgProc</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#if TEST_SERIAL</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/df5/a01086.html#aca271d6667cb0934345bf0cc8b1124f7">&#x202A;testSerial</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/df5/a01086.html#a8c9cfbdd12fb45435643a31d809d9f3c">&#x202A;test_MySerial</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#if TEST_GrabData</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/df5/a01086.html#ad767a193d579f47ec9b66e1df49a102f">&#x202A;grabData</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#if TEST_Remap</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/df5/a01086.html#afa6a114bae6facfa6c786b703fa137fc">&#x202A;test_remap</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;};</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif  //CBOREHOLE_UNITTEST_H_</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif  //CBOREHOLE_SERIALPROC_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01086_html"><div class="ttname"><a href="../../d9/df5/a01086.html">&#x202A;UnitTest</a></div><div class="ttdoc">&#x202A;A unit test.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00042">UnitTest.h:42</a></div></div>
-<div class="ttc" id="aa01086_html_a7973b3cadd9967707c26afe4bee9f3f3"><div class="ttname"><a href="../../d9/df5/a01086.html#a7973b3cadd9967707c26afe4bee9f3f3">&#x202A;UnitTest::toUpper</a></div><div class="ttdeci">&#x202A;void toUpper()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00029">UnitTest.cc:29</a></div></div>
-<div class="ttc" id="aa01082_html_af263cc43cbdfd70f2892b47dc22ffb10"><div class="ttname"><a href="../../dd/df1/a01082.html#af263cc43cbdfd70f2892b47dc22ffb10">&#x202A;WriteVideo::WriteVideo</a></div><div class="ttdeci">&#x202A;WriteVideo()</div></div>
-<div class="ttc" id="aa01086_html_a7267f43f7cbc41c0bbdd6fe73367f199"><div class="ttname"><a href="../../d9/df5/a01086.html#a7267f43f7cbc41c0bbdd6fe73367f199">&#x202A;UnitTest::testImgProc</a></div><div class="ttdeci">&#x202A;void testImgProc(void)</div><div class="ttdoc">&#x202A;Tests image proc</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00161">UnitTest.cc:161</a></div></div>
-<div class="ttc" id="aa01086_html_ad767a193d579f47ec9b66e1df49a102f"><div class="ttname"><a href="../../d9/df5/a01086.html#ad767a193d579f47ec9b66e1df49a102f">&#x202A;UnitTest::grabData</a></div><div class="ttdeci">&#x202A;void grabData(void)</div><div class="ttdoc">&#x202A;Grab data</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00276">UnitTest.cc:276</a></div></div>
-<div class="ttc" id="aa01086_html_ad43d9c26d7651f17f60396a8a52fe217"><div class="ttname"><a href="../../d9/df5/a01086.html#ad43d9c26d7651f17f60396a8a52fe217">&#x202A;UnitTest::testIDOIFileAppend</a></div><div class="ttdeci">&#x202A;void testIDOIFileAppend()</div><div class="ttdoc">&#x202A;Tests idoi file append</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00093">UnitTest.cc:93</a></div></div>
-<div class="ttc" id="aa01086_html_aec5351041b2e2d4f99899f17f8fa7f68"><div class="ttname"><a href="../../d9/df5/a01086.html#aec5351041b2e2d4f99899f17f8fa7f68">&#x202A;UnitTest::testIDOIFile</a></div><div class="ttdeci">&#x202A;void testIDOIFile()</div><div class="ttdoc">&#x202A;Tests idoi file</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00064">UnitTest.cc:64</a></div></div>
-<div class="ttc" id="aa01086_html_ac43fc49189df29ccdf5e0724d29eb5e1"><div class="ttname"><a href="../../d9/df5/a01086.html#ac43fc49189df29ccdf5e0724d29eb5e1">&#x202A;UnitTest::InitEnv</a></div><div class="ttdeci">&#x202A;void InitEnv(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00040">UnitTest.cc:40</a></div></div>
-<div class="ttc" id="aa01086_html_afa6a114bae6facfa6c786b703fa137fc"><div class="ttname"><a href="../../d9/df5/a01086.html#afa6a114bae6facfa6c786b703fa137fc">&#x202A;UnitTest::test_remap</a></div><div class="ttdeci">&#x202A;void test_remap(void)</div><div class="ttdoc">&#x202A;Tests remap</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00410">UnitTest.cc:410</a></div></div>
-<div class="ttc" id="aa01082_html_ac323b2953beb68b8fbafa30bd9370f4c"><div class="ttname"><a href="../../dd/df1/a01082.html#ac323b2953beb68b8fbafa30bd9370f4c">&#x202A;WriteVideo::~WriteVideo</a></div><div class="ttdeci">&#x202A;~WriteVideo()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd9/a00179_source.html#l00030">WriteVideo.cc:30</a></div></div>
-<div class="ttc" id="aa01082_html"><div class="ttname"><a href="../../dd/df1/a01082.html">&#x202A;WriteVideo</a></div><div class="ttdoc">&#x202A;读写视频类实现</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00022">UnitTest.h:22</a></div></div>
-<div class="ttc" id="aa01086_html_a299cc92121333e2fdd7ac823a84b1292"><div class="ttname"><a href="../../d9/df5/a01086.html#a299cc92121333e2fdd7ac823a84b1292">&#x202A;UnitTest::isQtTestWork</a></div><div class="ttdeci">&#x202A;void isQtTestWork(void)</div><div class="ttdoc">&#x202A;Is qt test work</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00020">UnitTest.cc:20</a></div></div>
-<div class="ttc" id="aa01086_html_aca271d6667cb0934345bf0cc8b1124f7"><div class="ttname"><a href="../../d9/df5/a01086.html#aca271d6667cb0934345bf0cc8b1124f7">&#x202A;UnitTest::testSerial</a></div><div class="ttdeci">&#x202A;void testSerial(void)</div><div class="ttdoc">&#x202A;Tests serial</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00204">UnitTest.cc:204</a></div></div>
-<div class="ttc" id="aa01086_html_a8c9cfbdd12fb45435643a31d809d9f3c"><div class="ttname"><a href="../../d9/df5/a01086.html#a8c9cfbdd12fb45435643a31d809d9f3c">&#x202A;UnitTest::test_MySerial</a></div><div class="ttdeci">&#x202A;void test_MySerial(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00232">UnitTest.cc:232</a></div></div>
+<div class="ttc" id="aa00901_html"><div class="ttname"><a href="../../d0/dac/a00901.html">&#x202A;CQueue&lt; SerialData &gt;</a></div></div>
+<div class="ttc" id="aa00933_html"><div class="ttname"><a href="../../d0/d5b/a00933.html">&#x202A;Serial</a></div><div class="ttdoc">&#x202A;A serial.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00037">Serial.h:37</a></div></div>
+<div class="ttc" id="aa00957_html_a1b95d136572e032e78da881cbfbce864"><div class="ttname"><a href="../../d1/df7/a00957.html#a1b95d136572e032e78da881cbfbce864">&#x202A;SerialProc::m_FileStream_</a></div><div class="ttdeci">&#x202A;std::ifstream * m_FileStream_</div><div class="ttdoc">&#x202A;The file</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00051">SerialProc.h:51</a></div></div>
+<div class="ttc" id="aa00957_html_a8d2fa673b460b127ef35bb49b51e8456"><div class="ttname"><a href="../../d1/df7/a00957.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;SerialProc::m_Serial_</a></div><div class="ttdeci">&#x202A;Serial * m_Serial_</div><div class="ttdoc">&#x202A;The serial</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00042">SerialProc.h:42</a></div></div>
+<div class="ttc" id="aa00957_html_a31a5970045e50bbb739a674cf61ef102"><div class="ttname"><a href="../../d1/df7/a00957.html#a31a5970045e50bbb739a674cf61ef102">&#x202A;SerialProc::~SerialProc</a></div><div class="ttdeci">&#x202A;~SerialProc()</div><div class="ttdoc">&#x202A;Finalizes an instance of the SerialProc class</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/a00167_source.html#l00051">SerialProc.cc:51</a></div></div>
+<div class="ttc" id="aa00032_html"><div class="ttname"><a href="../../dc/d87/a00032.html">&#x202A;Commu.h</a></div><div class="ttdoc">&#x202A;Declares the commu class @changelog 2019/11/7 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa00957_html_a2eb103016c9d0b4a4e13368ff3e9236c"><div class="ttname"><a href="../../d1/df7/a00957.html#a2eb103016c9d0b4a4e13368ff3e9236c">&#x202A;SerialProc::SerialProc</a></div><div class="ttdeci">&#x202A;SerialProc(QObject *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the SerialProc class</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/a00167_source.html#l00021">SerialProc.cc:21</a></div></div>
+<div class="ttc" id="aa00056_html"><div class="ttname"><a href="../../d9/d2e/a00056.html">&#x202A;serialdata.h</a></div><div class="ttdoc">&#x202A;Declares the serialdata class @changelog 2019/11/7 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa00957_html_ab0efbcfcb776f3339e6d35468a902a5e"><div class="ttname"><a href="../../d1/df7/a00957.html#ab0efbcfcb776f3339e6d35468a902a5e">&#x202A;SerialProc::mx_SerialProc_</a></div><div class="ttdeci">&#x202A;std::mutex mx_SerialProc_</div><div class="ttdoc">&#x202A;串口处理线程 锁 进行线程同步</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00039">SerialProc.h:39</a></div></div>
+<div class="ttc" id="aa00957_html_a95fe8d5577e75be72dd98d2098576103"><div class="ttname"><a href="../../d1/df7/a00957.html#a95fe8d5577e75be72dd98d2098576103">&#x202A;SerialProc::m_FrameData_</a></div><div class="ttdeci">&#x202A;FrameData m_FrameData_</div><div class="ttdoc">&#x202A;Information describing the frame</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00038">SerialProc.h:38</a></div></div>
+<div class="ttc" id="aa00957_html_a6e9917bcad16434b9579bbf0719dbfe5"><div class="ttname"><a href="../../d1/df7/a00957.html#a6e9917bcad16434b9579bbf0719dbfe5">&#x202A;SerialProc::run</a></div><div class="ttdeci">&#x202A;void run(void) override</div><div class="ttdoc">&#x202A;Runs this object</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/a00167_source.html#l00067">SerialProc.cc:67</a></div></div>
+<div class="ttc" id="aa00957_html"><div class="ttname"><a href="../../d1/df7/a00957.html">&#x202A;SerialProc</a></div><div class="ttdoc">&#x202A;设定串口 处理 函数 解析串口的数据 到系统运行参数中</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00034">SerialProc.h:34</a></div></div>
+<div class="ttc" id="aa00941_html"><div class="ttname"><a href="../../d6/dad/a00941.html">&#x202A;FrameData</a></div><div class="ttdoc">&#x202A;定义一帧数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00155">serialdata.h:155</a></div></div>
+<div class="ttc" id="aa00957_html_ac503a555236c48be1a57479cf967e445"><div class="ttname"><a href="../../d1/df7/a00957.html#ac503a555236c48be1a57479cf967e445">&#x202A;SerialProc::mq_SerialData_Buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; SerialData &gt; * mq_SerialData_Buffer_</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00041">SerialProc.h:41</a></div></div>
+<div class="ttc" id="aa00053_html"><div class="ttname"><a href="../../dc/dee/a00053.html">&#x202A;Serial.h</a></div><div class="ttdoc">&#x202A;Declares the serial class @changelog 2019/11/7 IRIS_Chen Created.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d3/d8b/a00059.html">&#x202A;UnitTest.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d3/d8b/a00059.html">&#x202A;SerialProc.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

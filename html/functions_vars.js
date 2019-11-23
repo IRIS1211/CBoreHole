@@ -10,7 +10,6 @@ var functions_vars =
     [ "\u202Ag", "functions_vars_g.html", null ],
     [ "\u202Ah", "functions_vars_h.html", null ],
     [ "\u202Ai", "functions_vars_i.html", null ],
-    [ "\u202Ak", "functions_vars_k.html", null ],
     [ "\u202Al", "functions_vars_l.html", null ],
     [ "\u202Am", "functions_vars_m.html", null ],
     [ "\u202An", "functions_vars_n.html", null ],
