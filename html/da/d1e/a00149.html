@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/ImageProc.cc 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/Commu.cc 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.1</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -88,26 +88,2027 @@ $(document).ready(function(){initNavTree('da/d1e/a00149.html','../../');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
   <div class="headertitle">
-<div class="title">ImageProc.cc 文件参考</div>  </div>
+<div class="title">Commu.cc 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>&#x202A;Image proc class @changelog 2019/11/5 IRIS_Chen Created.  
+<p>&#x202A;Commu class @changelog 2019/11/5 IRIS_Chen Created.  
 <a href="#details">更多...</a></p>
 
 <p><a href="../../da/d1e/a00149_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:af4340455c535fe8797ff03fca67122e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#af4340455c535fe8797ff03fca67122e1">CheckSum8</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> len)</td></tr>
+<tr class="memdesc:af4340455c535fe8797ff03fca67122e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;函数声明  <a href="../../da/d1e/a00149.html#af4340455c535fe8797ff03fca67122e1">更多...</a><br /></td></tr>
+<tr class="separator:af4340455c535fe8797ff03fca67122e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60af4f28ef335e370f2c4fd3f0fe7b87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">UINT16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a60af4f28ef335e370f2c4fd3f0fe7b87">CheckSum16</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> len)</td></tr>
+<tr class="memdesc:a60af4f28ef335e370f2c4fd3f0fe7b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Check sum 16  <a href="../../da/d1e/a00149.html#a60af4f28ef335e370f2c4fd3f0fe7b87">更多...</a><br /></td></tr>
+<tr class="separator:a60af4f28ef335e370f2c4fd3f0fe7b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbd46b87cc79791f9be3720b402073c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#ad218514b084e626393749ca0e0f5bccc">UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a7bbd46b87cc79791f9be3720b402073c">CheckSum32</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> len)</td></tr>
+<tr class="memdesc:a7bbd46b87cc79791f9be3720b402073c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Check sum 32  <a href="../../da/d1e/a00149.html#a7bbd46b87cc79791f9be3720b402073c">更多...</a><br /></td></tr>
+<tr class="separator:a7bbd46b87cc79791f9be3720b402073c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a4b02ca721750a553e2c2c1ef791b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a05a4b02ca721750a553e2c2c1ef791b9">IntelHexCheckSum</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> len)</td></tr>
+<tr class="memdesc:a05a4b02ca721750a553e2c2c1ef791b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Intel hexadecimal check sum  <a href="../../da/d1e/a00149.html#a05a4b02ca721750a553e2c2c1ef791b9">更多...</a><br /></td></tr>
+<tr class="separator:a05a4b02ca721750a553e2c2c1ef791b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3738f7ae3c5e7a17a9bc873314c2378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#a5315435fe48e21e3a8a48dfb10cc9fde">USHORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#aa3738f7ae3c5e7a17a9bc873314c2378">NetCheckSum</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> len)</td></tr>
+<tr class="memdesc:aa3738f7ae3c5e7a17a9bc873314c2378"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Net check sum  <a href="../../da/d1e/a00149.html#aa3738f7ae3c5e7a17a9bc873314c2378">更多...</a><br /></td></tr>
+<tr class="separator:aa3738f7ae3c5e7a17a9bc873314c2378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c323a745bddedac6a956be7cdddd4e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a1c323a745bddedac6a956be7cdddd4e0">BCCVerify</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> len)</td></tr>
+<tr class="memdesc:a1c323a745bddedac6a956be7cdddd4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Bcc verify  <a href="../../da/d1e/a00149.html#a1c323a745bddedac6a956be7cdddd4e0">更多...</a><br /></td></tr>
+<tr class="separator:a1c323a745bddedac6a956be7cdddd4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7480cd5401ca9b45a50068cdba11590"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#ab7480cd5401ca9b45a50068cdba11590">OddParity</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> len)</td></tr>
+<tr class="memdesc:ab7480cd5401ca9b45a50068cdba11590"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Odd parity  <a href="../../da/d1e/a00149.html#ab7480cd5401ca9b45a50068cdba11590">更多...</a><br /></td></tr>
+<tr class="separator:ab7480cd5401ca9b45a50068cdba11590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb393d35b0c67a412d716cf3ad1a6fc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#aeb393d35b0c67a412d716cf3ad1a6fc4">EvenParity</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> len)</td></tr>
+<tr class="memdesc:aeb393d35b0c67a412d716cf3ad1a6fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Even parity  <a href="../../da/d1e/a00149.html#aeb393d35b0c67a412d716cf3ad1a6fc4">更多...</a><br /></td></tr>
+<tr class="separator:aeb393d35b0c67a412d716cf3ad1a6fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb29ce7aef3345f8216430b0b90e84c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a4cb29ce7aef3345f8216430b0b90e84c">CRC8</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> len)</td></tr>
+<tr class="memdesc:a4cb29ce7aef3345f8216430b0b90e84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;CRC 8  <a href="../../da/d1e/a00149.html#a4cb29ce7aef3345f8216430b0b90e84c">更多...</a><br /></td></tr>
+<tr class="separator:a4cb29ce7aef3345f8216430b0b90e84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9e2f78c4e81bde43d40b1af8e5dd34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">UINT16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a3d9e2f78c4e81bde43d40b1af8e5dd34">CRC16Default</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *pszBuf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> unLength)</td></tr>
+<tr class="memdesc:a3d9e2f78c4e81bde43d40b1af8e5dd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;CRC 16 default  <a href="../../da/d1e/a00149.html#a3d9e2f78c4e81bde43d40b1af8e5dd34">更多...</a><br /></td></tr>
+<tr class="separator:a3d9e2f78c4e81bde43d40b1af8e5dd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3cebfaec5b6c12fa2bf6cdb937f0d58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">UINT16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#ac3cebfaec5b6c12fa2bf6cdb937f0d58">CRC16CCITT</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *pszBuf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> unLength)</td></tr>
+<tr class="memdesc:ac3cebfaec5b6c12fa2bf6cdb937f0d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;CRC 16 ccitt  <a href="../../da/d1e/a00149.html#ac3cebfaec5b6c12fa2bf6cdb937f0d58">更多...</a><br /></td></tr>
+<tr class="separator:ac3cebfaec5b6c12fa2bf6cdb937f0d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613e8b32a990ed429b65898a708ceae0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">UINT16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a613e8b32a990ed429b65898a708ceae0">CRC16RTU</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *pszBuf, <a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> unLength)</td></tr>
+<tr class="memdesc:a613e8b32a990ed429b65898a708ceae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;CRC 16 rtu  <a href="../../da/d1e/a00149.html#a613e8b32a990ed429b65898a708ceae0">更多...</a><br /></td></tr>
+<tr class="separator:a613e8b32a990ed429b65898a708ceae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055c913ca85df006a69cf69bf5c4ad86"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a055c913ca85df006a69cf69bf5c4ad86">Reflect</a> (unsigned long ref, char ch)</td></tr>
+<tr class="memdesc:a055c913ca85df006a69cf69bf5c4ad86"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Reflects  <a href="../../da/d1e/a00149.html#a055c913ca85df006a69cf69bf5c4ad86">更多...</a><br /></td></tr>
+<tr class="separator:a055c913ca85df006a69cf69bf5c4ad86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e72e9a7192f02f6a631f01149975ba6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#aacc7c27bcc29ccef551e2d7bd95cb652">ULONG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a9e72e9a7192f02f6a631f01149975ba6">CRC32Default</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *pszBuf, <a class="el" href="../../d8/d41/a00038.html#aacc7c27bcc29ccef551e2d7bd95cb652">ULONG</a> ulLength)</td></tr>
+<tr class="memdesc:a9e72e9a7192f02f6a631f01149975ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;CRC 32 default  <a href="../../da/d1e/a00149.html#a9e72e9a7192f02f6a631f01149975ba6">更多...</a><br /></td></tr>
+<tr class="separator:a9e72e9a7192f02f6a631f01149975ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1954f81c6d39046c3e8918893f3f59b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a1954f81c6d39046c3e8918893f3f59b5">str2hex</a> (char *pInput, char *pOutput, int nHexNum)</td></tr>
+<tr class="memdesc:a1954f81c6d39046c3e8918893f3f59b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">*********************************************************************  <a href="../../da/d1e/a00149.html#a1954f81c6d39046c3e8918893f3f59b5">更多...</a><br /></td></tr>
+<tr class="separator:a1954f81c6d39046c3e8918893f3f59b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1538a18516800ceffcebeff63068936d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a1538a18516800ceffcebeff63068936d">BYTE2HEX</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> cr)</td></tr>
+<tr class="memdesc:a1538a18516800ceffcebeff63068936d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Byte 2 hexadecimal  <a href="../../da/d1e/a00149.html#a1538a18516800ceffcebeff63068936d">更多...</a><br /></td></tr>
+<tr class="separator:a1538a18516800ceffcebeff63068936d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53b7ea326b48bf4904a19596868aabb"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#aa53b7ea326b48bf4904a19596868aabb">num2hex</a> (int a1)</td></tr>
+<tr class="memdesc:aa53b7ea326b48bf4904a19596868aabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Number 2hex  <a href="../../da/d1e/a00149.html#aa53b7ea326b48bf4904a19596868aabb">更多...</a><br /></td></tr>
+<tr class="separator:aa53b7ea326b48bf4904a19596868aabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5619370f6b13f37a6780a0986ac1f153"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a5619370f6b13f37a6780a0986ac1f153">hex2num</a> (char a)</td></tr>
+<tr class="memdesc:a5619370f6b13f37a6780a0986ac1f153"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Hexadecimal 2num  <a href="../../da/d1e/a00149.html#a5619370f6b13f37a6780a0986ac1f153">更多...</a><br /></td></tr>
+<tr class="separator:a5619370f6b13f37a6780a0986ac1f153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8bdfe5072387319c78e034268cb9ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#aef8bdfe5072387319c78e034268cb9ba">char2str</a> (char &amp;crev)</td></tr>
+<tr class="memdesc:aef8bdfe5072387319c78e034268cb9ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Character 2str  <a href="../../da/d1e/a00149.html#aef8bdfe5072387319c78e034268cb9ba">更多...</a><br /></td></tr>
+<tr class="separator:aef8bdfe5072387319c78e034268cb9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafba3ada36ef3ece42ae0e5c9e2b1130"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#aafba3ada36ef3ece42ae0e5c9e2b1130">uchar2char</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> c1)</td></tr>
+<tr class="memdesc:aafba3ada36ef3ece42ae0e5c9e2b1130"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Uchar 2char  <a href="../../da/d1e/a00149.html#aafba3ada36ef3ece42ae0e5c9e2b1130">更多...</a><br /></td></tr>
+<tr class="separator:aafba3ada36ef3ece42ae0e5c9e2b1130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd0fa284e789b2457c507239b376d82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#aafd0fa284e789b2457c507239b376d82">char2uchar</a> (char c1)</td></tr>
+<tr class="memdesc:aafd0fa284e789b2457c507239b376d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Character 2uchar  <a href="../../da/d1e/a00149.html#aafd0fa284e789b2457c507239b376d82">更多...</a><br /></td></tr>
+<tr class="separator:aafd0fa284e789b2457c507239b376d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64af658740ce90db45a7ffee5b85da75"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a64af658740ce90db45a7ffee5b85da75">str2char</a> (std::string str)</td></tr>
+<tr class="memdesc:a64af658740ce90db45a7ffee5b85da75"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;2chars the given string  <a href="../../da/d1e/a00149.html#a64af658740ce90db45a7ffee5b85da75">更多...</a><br /></td></tr>
+<tr class="separator:a64af658740ce90db45a7ffee5b85da75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395b3d3e612dee068cfdad97b725cf77"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a395b3d3e612dee068cfdad97b725cf77">str2int</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:a395b3d3e612dee068cfdad97b725cf77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d8cf50c0a13481ceb04c5a0581c959"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#aa4d8cf50c0a13481ceb04c5a0581c959">str2uchar</a> (std::string str)</td></tr>
+<tr class="memdesc:aa4d8cf50c0a13481ceb04c5a0581c959"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;2uchars the given string  <a href="../../da/d1e/a00149.html#aa4d8cf50c0a13481ceb04c5a0581c959">更多...</a><br /></td></tr>
+<tr class="separator:aa4d8cf50c0a13481ceb04c5a0581c959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6f871f3ae4b58f730d4500efe91183"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#adb6f871f3ae4b58f730d4500efe91183">uchar2str</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> CR)</td></tr>
+<tr class="memdesc:adb6f871f3ae4b58f730d4500efe91183"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Uchar 2str  <a href="../../da/d1e/a00149.html#adb6f871f3ae4b58f730d4500efe91183">更多...</a><br /></td></tr>
+<tr class="separator:adb6f871f3ae4b58f730d4500efe91183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79716676bda4eccaf08240b6b85597a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#aa79716676bda4eccaf08240b6b85597a">string2ucharArr</a> (std::string str)</td></tr>
+<tr class="memdesc:aa79716676bda4eccaf08240b6b85597a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;String 2uchar array  <a href="../../da/d1e/a00149.html#aa79716676bda4eccaf08240b6b85597a">更多...</a><br /></td></tr>
+<tr class="separator:aa79716676bda4eccaf08240b6b85597a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a06be480d22587aaad0ccdedc55533"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#aa0a06be480d22587aaad0ccdedc55533">calculateCRC</a> (unsigned char *_regs, unsigned char arraySize)</td></tr>
+<tr class="memdesc:aa0a06be480d22587aaad0ccdedc55533"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Calculates the CRC  <a href="../../da/d1e/a00149.html#aa0a06be480d22587aaad0ccdedc55533">更多...</a><br /></td></tr>
+<tr class="separator:aa0a06be480d22587aaad0ccdedc55533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc01b81d889244cd3b4139105c167f9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a7fc01b81d889244cd3b4139105c167f9">uint16_2_4hex</a> (<a class="el" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">UINT16</a> data)</td></tr>
+<tr class="memdesc:a7fc01b81d889244cd3b4139105c167f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;16 2 4hex 16位数据转换成四个hex 值  <a href="../../da/d1e/a00149.html#a7fc01b81d889244cd3b4139105c167f9">更多...</a><br /></td></tr>
+<tr class="separator:a7fc01b81d889244cd3b4139105c167f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6acfd7d9b152a658df5e474a4207fe3a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a6acfd7d9b152a658df5e474a4207fe3a">CRCString</a> (std::string srcStr)</td></tr>
+<tr class="memdesc:a6acfd7d9b152a658df5e474a4207fe3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;CRC string  <a href="../../da/d1e/a00149.html#a6acfd7d9b152a658df5e474a4207fe3a">更多...</a><br /></td></tr>
+<tr class="separator:a6acfd7d9b152a658df5e474a4207fe3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7329adcc6ca6859f0c6744947b669a43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a7329adcc6ca6859f0c6744947b669a43">CRC16</a> (std::string &amp;srcStr, std::string &amp;dstStr)</td></tr>
+<tr class="memdesc:a7329adcc6ca6859f0c6744947b669a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;CRC 16  <a href="../../da/d1e/a00149.html#a7329adcc6ca6859f0c6744947b669a43">更多...</a><br /></td></tr>
+<tr class="separator:a7329adcc6ca6859f0c6744947b669a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb54d0e69923e14a155d6a9ab0cb2f4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a4eb54d0e69923e14a155d6a9ab0cb2f4">charArr2String</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buffer, int length, int flg_space)</td></tr>
+<tr class="memdesc:a4eb54d0e69923e14a155d6a9ab0cb2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将UCHAR 字符串依次转换成 string 字符串  <a href="../../da/d1e/a00149.html#a4eb54d0e69923e14a155d6a9ab0cb2f4">更多...</a><br /></td></tr>
+<tr class="separator:a4eb54d0e69923e14a155d6a9ab0cb2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471babf1ea4869a04cb075ebdd0db4b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a471babf1ea4869a04cb075ebdd0db4b1">Str2CharArray</a> (<a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buffer, const std::string &amp;str, int flg_space)</td></tr>
+<tr class="memdesc:a471babf1ea4869a04cb075ebdd0db4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;字符串 转换成 数值数组  <a href="../../da/d1e/a00149.html#a471babf1ea4869a04cb075ebdd0db4b1">更多...</a><br /></td></tr>
+<tr class="separator:a471babf1ea4869a04cb075ebdd0db4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7042ca7a062860773cdd8e4ee0e9dbf"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#ad7042ca7a062860773cdd8e4ee0e9dbf">Str2QByteArray</a> (const std::string &amp;str, int flg_space)</td></tr>
+<tr class="memdesc:ad7042ca7a062860773cdd8e4ee0e9dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将字符串 转换成 QByteArray 字符串默认有空格  <a href="../../da/d1e/a00149.html#ad7042ca7a062860773cdd8e4ee0e9dbf">更多...</a><br /></td></tr>
+<tr class="separator:ad7042ca7a062860773cdd8e4ee0e9dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a3865be6a007688f0b2f440d3d40ce3f5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1e/a00149.html#a3865be6a007688f0b2f440d3d40ce3f5">CRC8TAB</a> [256]</td></tr>
+<tr class="separator:a3865be6a007688f0b2f440d3d40ce3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">Image proc class @changelog 2019/11/5 IRIS_Chen Created. </p>
+<div class="textblock"><p class="DocNodeLTR">Commu class @changelog 2019/11/5 IRIS_Chen Created. </p>
 <dl class="section copyright DocNodeLTR"><dt>版权所有</dt><dd>&#x202A;Copyright (c) 2019 IRIS_Chen IRIS Lab </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">ImageProc.cc</a> 中定义.</p>
-</div></div><!-- contents -->
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a1c323a745bddedac6a956be7cdddd4e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c323a745bddedac6a956be7cdddd4e0">&#9670;&nbsp;</a></span>BCCVerify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> BCCVerify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Bcc verify </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00202">202</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;{</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> s = 0;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">for</span> ( <a class="code" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a> i = 0;i&lt;len;i++ )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1538a18516800ceffcebeff63068936d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1538a18516800ceffcebeff63068936d">&#9670;&nbsp;</a></span>BYTE2HEX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string BYTE2HEX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td>
+          <td class="paramname"><em>cr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Byte 2 hexadecimal </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cr</td><td>&#x202A;The carriage return</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cr</td><td>&#x202A;The carriage return</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00658">658</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_a1538a18516800ceffcebeff63068936d_cgraph.png" border="0" usemap="#da/d1e/a00149_a1538a18516800ceffcebeff63068936d_cgraph" alt=""/></div>
+<map name="da/d1e/a00149_a1538a18516800ceffcebeff63068936d_cgraph" id="da/d1e/a00149_a1538a18516800ceffcebeff63068936d_cgraph">
+<area shape="rect" title="Byte 2 hexadecimal" alt="" coords="5,5,93,32"/>
+<area shape="rect" href="../../da/d1e/a00149.html#aa53b7ea326b48bf4904a19596868aabb" title="Number 2hex" alt="" coords="141,5,216,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa0a06be480d22587aaad0ccdedc55533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a06be480d22587aaad0ccdedc55533">&#9670;&nbsp;</a></span>calculateCRC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int calculateCRC </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>_regs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>arraySize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Calculates the CRC </p>
+<p class="DocNodeLTR">CRC校验函数 参数1:待校验数组的起始地址 参数2:待校验数组的长度 返回值CRC校验结果,16位,低字节在前</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">_regs</td><td>&#x202A;If non-null, the regs </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">arraySize</td><td>&#x202A;Size of the array</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The calculated CRC</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">_regs</td><td>&#x202A;If non-null, the regs. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">arraySize</td><td>&#x202A;Size of the array.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The calculated CRC. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00959">959</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;{</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> temp, temp2, flag;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aef8bdfe5072387319c78e034268cb9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8bdfe5072387319c78e034268cb9ba">&#9670;&nbsp;</a></span>char2str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string char2str </td>
+          <td>(</td>
+          <td class="paramtype">char &amp;&#160;</td>
+          <td class="paramname"><em>crev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Character 2str </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">crev</td><td>&#x202A;The crev</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">crev</td><td>&#x202A;The crev</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00751">751</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;{</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="keywordtype">int</span> CR;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    <span class="keywordflow">if</span> ( crev &lt; 0 )</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    {</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        CR = 256 + crev;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    }</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        CR = crev;</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_aef8bdfe5072387319c78e034268cb9ba_cgraph.png" border="0" usemap="#da/d1e/a00149_aef8bdfe5072387319c78e034268cb9ba_cgraph" alt=""/></div>
+<map name="da/d1e/a00149_aef8bdfe5072387319c78e034268cb9ba_cgraph" id="da/d1e/a00149_aef8bdfe5072387319c78e034268cb9ba_cgraph">
+<area shape="rect" title="Character 2str" alt="" coords="5,5,75,32"/>
+<area shape="rect" href="../../da/d1e/a00149.html#aa53b7ea326b48bf4904a19596868aabb" title="Number 2hex" alt="" coords="123,5,197,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aafd0fa284e789b2457c507239b376d82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd0fa284e789b2457c507239b376d82">&#9670;&nbsp;</a></span>char2uchar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> char2uchar </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Character 2uchar </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c1</td><td>&#x202A;The first char</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c1</td><td>&#x202A;The first char.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00809">809</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;{</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <span class="keywordflow">return</span> static_cast&lt;char&gt;(( c1 &gt; 128 ? c1 - 256 : c1 ));</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;}</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160; </div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_aafd0fa284e789b2457c507239b376d82_icgraph.png" border="0" usemap="#da/d1e/a00149_aafd0fa284e789b2457c507239b376d82_icgraph" alt=""/></div>
+<map name="da/d1e/a00149_aafd0fa284e789b2457c507239b376d82_icgraph" id="da/d1e/a00149_aafd0fa284e789b2457c507239b376d82_icgraph">
+<area shape="rect" title="Character 2uchar" alt="" coords="848,107,935,133"/>
+<area shape="rect" href="../../db/d18/a00885.html#a436eadf913d5a2ac0c0023707eb863c1" title="Listen thread" alt="" coords="629,81,800,108"/>
+<area shape="rect" href="../../d9/d17/a01129.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="655,132,775,159"/>
+<area shape="rect" href="../../db/d18/a00885.html#a5166808d3063ff309f36f029768a1103" title="开启 监听线程" alt="" coords="380,81,581,108"/>
+<area shape="rect" href="../../da/d0a/a00993.html#ad767a193d579f47ec9b66e1df49a102f" title="抓取数据" alt="" coords="5,5,136,32"/>
+<area shape="rect" href="../../db/d18/a00885.html#a96ead81aea8f5c577586c595cb67bc26" title="打开串口 并开启监听进程" alt="" coords="184,31,332,57"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#afb6ab9fe19efa5b425254c76eb078d4f" title=" " alt="" coords="209,81,307,108"/>
+<area shape="rect" href="../../da/d0a/a00993.html#aca271d6667cb0934345bf0cc8b1124f7" title="// 测试串口" alt="" coords="191,132,325,159"/>
+<area shape="rect" href="../../d9/d17/a01129.html#ab4d98e474b554e318508d1f26a053998" title="Handles the read data" alt="" coords="401,132,561,159"/>
+<area shape="rect" href="../../d9/d17/a01129.html#a7f33b441ca3c2e17c8d673a997437bd4" title="Handles the timeout" alt="" coords="406,183,555,209"/>
+<area shape="rect" href="../../d9/d17/a01129.html#adda4ed09582ac92c92b16b55b471a6d4" title="Initializes a new instance of the Serial class" alt="" coords="210,183,306,209"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4eb54d0e69923e14a155d6a9ab0cb2f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eb54d0e69923e14a155d6a9ab0cb2f4">&#9670;&nbsp;</a></span>charArr2String()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string charArr2String </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flg_space</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;将UCHAR 字符串依次转换成 string 字符串 </p>
+<p class="DocNodeLTR">将 UCHAR 数组 转换成 string 字符串</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">length</td><td>&#x202A;(Optional) The length </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">flg_space</td><td>&#x202A;(Optional) The flg space</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>&#x202A;If non-null, the buffer. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">length</td><td>&#x202A;The length. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">flg_space</td><td>&#x202A;The flg space.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l01087">1087</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_a4eb54d0e69923e14a155d6a9ab0cb2f4_icgraph.png" border="0" usemap="#da/d1e/a00149_a4eb54d0e69923e14a155d6a9ab0cb2f4_icgraph" alt=""/></div>
+<map name="da/d1e/a00149_a4eb54d0e69923e14a155d6a9ab0cb2f4_icgraph" id="da/d1e/a00149_a4eb54d0e69923e14a155d6a9ab0cb2f4_icgraph">
+<area shape="rect" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="848,183,953,209"/>
+<area shape="rect" href="../../db/d28/a01133.html#ade93d67c2ca12594170e9223af9c21b7" title="将串口数据 转换成字符串 // 数组 char 转换成字符串 用于查看" alt="" coords="635,5,794,32"/>
+<area shape="rect" href="../../da/d0a/a00993.html#ad767a193d579f47ec9b66e1df49a102f" title="抓取数据" alt="" coords="5,107,136,133"/>
+<area shape="rect" href="../../db/d18/a00885.html#a436eadf913d5a2ac0c0023707eb863c1" title="Listen thread" alt="" coords="629,183,800,209"/>
+<area shape="rect" href="../../d9/d17/a01129.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="655,236,775,263"/>
+<area shape="rect" href="../../de/d79/a00203.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc" title=" " alt="" coords="666,287,763,313"/>
+<area shape="rect" href="../../db/d18/a00885.html#a5166808d3063ff309f36f029768a1103" title="开启 监听线程" alt="" coords="380,183,581,209"/>
+<area shape="rect" href="../../db/d18/a00885.html#a96ead81aea8f5c577586c595cb67bc26" title="打开串口 并开启监听进程" alt="" coords="184,157,332,184"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#afb6ab9fe19efa5b425254c76eb078d4f" title=" " alt="" coords="209,208,307,235"/>
+<area shape="rect" href="../../da/d0a/a00993.html#aca271d6667cb0934345bf0cc8b1124f7" title="// 测试串口" alt="" coords="191,259,325,285"/>
+<area shape="rect" href="../../d9/d17/a01129.html#ab4d98e474b554e318508d1f26a053998" title="Handles the read data" alt="" coords="401,240,561,267"/>
+<area shape="rect" href="../../d9/d17/a01129.html#a7f33b441ca3c2e17c8d673a997437bd4" title="Handles the timeout" alt="" coords="406,303,555,329"/>
+<area shape="rect" href="../../d9/d17/a01129.html#adda4ed09582ac92c92b16b55b471a6d4" title="Initializes a new instance of the Serial class" alt="" coords="210,309,306,336"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60af4f28ef335e370f2c4fd3f0fe7b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60af4f28ef335e370f2c4fd3f0fe7b87">&#9670;&nbsp;</a></span>CheckSum16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">UINT16</a> CheckSum16 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Check sum 16 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An UINT16</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An UINT16 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00070">70</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a>    i = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">&#x202A;UINT16</a> Sum = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">for</span> ( i = 0;i&lt;len;i++ )</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        Sum += *buf++;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7bbd46b87cc79791f9be3720b402073c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbd46b87cc79791f9be3720b402073c">&#9670;&nbsp;</a></span>CheckSum32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#ad218514b084e626393749ca0e0f5bccc">UINT32</a> CheckSum32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Check sum 32 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An UINT32</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An UINT32 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00103">103</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a>    i = 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ad218514b084e626393749ca0e0f5bccc">&#x202A;UINT32</a> Sum = 0;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">for</span> ( i = 0;i&lt;len;i++ )</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        Sum += *buf++;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af4340455c535fe8797ff03fca67122e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4340455c535fe8797ff03fca67122e1">&#9670;&nbsp;</a></span>CheckSum8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> CheckSum8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;函数声明 </p>
+<p class="DocNodeLTR">Check sum 8</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00038">38</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a>    i = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> Sum = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> ( i = 0;i&lt;len;i++ )</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        Sum += *buf++;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> Sum;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7329adcc6ca6859f0c6744947b669a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7329adcc6ca6859f0c6744947b669a43">&#9670;&nbsp;</a></span>CRC16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRC16 </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>srcStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>dstStr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;CRC 16 </p>
+<p class="DocNodeLTR">string srcStr 初始字符串， string 计算校验码之后的字符串 串口在输出部分换算成了相应的字符串， 实际计算校验值需要使用 UCHAR 字符， 计算出来校验码之后附加上去然后再输出</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">srcStr</td><td>&#x202A;Source string </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dstStr</td><td>&#x202A;Destination string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">srcStr</td><td>&#x202A;Source string. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dstStr</td><td>&#x202A;Destination string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l01055">1055</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac3cebfaec5b6c12fa2bf6cdb937f0d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3cebfaec5b6c12fa2bf6cdb937f0d58">&#9670;&nbsp;</a></span>CRC16CCITT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">UINT16</a> CRC16CCITT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>pszBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>unLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;CRC 16 ccitt </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pszBuf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">unLength</td><td>&#x202A;Length of the un</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An UINT16</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pszBuf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">unLength</td><td>&#x202A;Length of the un</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An UINT16 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00448">448</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;{</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ad218514b084e626393749ca0e0f5bccc">&#x202A;UINT32</a> i, j;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">&#x202A;UINT16</a> CrcReg = 0xFFFF;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">&#x202A;UINT16</a> CurVal;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160; </div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="keywordflow">for</span> ( i = 0; i &lt; unLength; i++ )</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    {</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        CurVal = static_cast&lt;UINT16&gt;(pszBuf[i] &lt;&lt; 8);</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3d9e2f78c4e81bde43d40b1af8e5dd34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9e2f78c4e81bde43d40b1af8e5dd34">&#9670;&nbsp;</a></span>CRC16Default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">UINT16</a> CRC16Default </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>pszBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>unLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;CRC 16 default </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pszBuf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">unLength</td><td>&#x202A;Length of the un</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An UINT16</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pszBuf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">unLength</td><td>&#x202A;Length of the un</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An UINT16 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00404">404</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;{</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ad218514b084e626393749ca0e0f5bccc">&#x202A;UINT32</a> i, j;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">&#x202A;UINT16</a> CrcReg = 0xFFFF;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">&#x202A;UINT16</a> CurVal;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordflow">for</span> ( i = 0; i &lt; unLength; i++ )</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    {</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        CurVal = static_cast&lt;UINT16&gt;(pszBuf[i] &lt;&lt; 8);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordflow">for</span> ( j = 0; j &lt; 8; j++ )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a613e8b32a990ed429b65898a708ceae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a613e8b32a990ed429b65898a708ceae0">&#9670;&nbsp;</a></span>CRC16RTU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">UINT16</a> CRC16RTU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>pszBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>unLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;CRC 16 rtu </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pszBuf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">unLength</td><td>&#x202A;Length of the un</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An UINT16</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pszBuf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">unLength</td><td>&#x202A;Length of the un</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An UINT16 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00493">493</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;{</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">&#x202A;UINT16</a> CRC = 0XFFFF;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ad218514b084e626393749ca0e0f5bccc">&#x202A;UINT32</a> CRC_count;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160; </div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="keywordflow">for</span> ( CRC_count = 0;CRC_count&lt;unLength;CRC_count++ )</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    {</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        CRC = CRC^*( pszBuf + CRC_count );</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160; </div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="keywordflow">for</span> ( i = 0;i&lt;8;i++ )</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        {</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            <span class="keywordflow">if</span> ( CRC &amp; 1 )</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            {</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_a613e8b32a990ed429b65898a708ceae0_icgraph.png" border="0" usemap="#da/d1e/a00149_a613e8b32a990ed429b65898a708ceae0_icgraph" alt=""/></div>
+<map name="da/d1e/a00149_a613e8b32a990ed429b65898a708ceae0_icgraph" id="da/d1e/a00149_a613e8b32a990ed429b65898a708ceae0_icgraph">
+<area shape="rect" title="CRC 16 rtu" alt="" coords="136,5,224,32"/>
+<area shape="rect" href="../../da/d1e/a00149.html#a6acfd7d9b152a658df5e474a4207fe3a" title="CRC string" alt="" coords="5,5,88,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9e72e9a7192f02f6a631f01149975ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e72e9a7192f02f6a631f01149975ba6">&#9670;&nbsp;</a></span>CRC32Default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#aacc7c27bcc29ccef551e2d7bd95cb652">ULONG</a> CRC32Default </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>pszBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#aacc7c27bcc29ccef551e2d7bd95cb652">ULONG</a>&#160;</td>
+          <td class="paramname"><em>ulLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;CRC 32 default </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pszBuf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">ulLength</td><td>&#x202A;Length of the ul</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An ULONG</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pszBuf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">ulLength</td><td>&#x202A;Length of the ul</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An ULONG </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00572">572</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;{</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> Result = 0xFFFFFFFF;</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> m_Table[256];</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160; </div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ulPolynomial = 0x04C11DB7;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160; </div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160; </div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt;= 0xFF; i++ )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4cb29ce7aef3345f8216430b0b90e84c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb29ce7aef3345f8216430b0b90e84c">&#9670;&nbsp;</a></span>CRC8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> CRC8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;CRC 8 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00369">369</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;{</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>  crc = 0;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6acfd7d9b152a658df5e474a4207fe3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6acfd7d9b152a658df5e474a4207fe3a">&#9670;&nbsp;</a></span>CRCString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CRCString </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>srcStr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;CRC string </p>
+<p class="DocNodeLTR">CRC string 校验函数， 输入字符串返回字符串的校验结果字符串</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcStr</td><td>&#x202A;Source string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">：</td><td>&#x202A;string srcStr 初始字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;： string dstStr 计算后的字符串 </dd></dl>
+<dl class="section note DocNodeLTR"><dt>注解</dt><dd>&#x202A;: 串口在输出部分换算成了相应的字符串， 实际计算校验值需要使用 UCHAR 字符， 计算出来校验码之后附加上去然后再输出</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcStr</td><td>&#x202A;Source string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l01021">1021</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;{</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_a6acfd7d9b152a658df5e474a4207fe3a_cgraph.png" border="0" usemap="#da/d1e/a00149_a6acfd7d9b152a658df5e474a4207fe3a_cgraph" alt=""/></div>
+<map name="da/d1e/a00149_a6acfd7d9b152a658df5e474a4207fe3a_cgraph" id="da/d1e/a00149_a6acfd7d9b152a658df5e474a4207fe3a_cgraph">
+<area shape="rect" title="CRC string" alt="" coords="5,56,88,83"/>
+<area shape="rect" href="../../da/d1e/a00149.html#a613e8b32a990ed429b65898a708ceae0" title="CRC 16 rtu" alt="" coords="147,5,235,32"/>
+<area shape="rect" href="../../da/d1e/a00149.html#aa79716676bda4eccaf08240b6b85597a" title="String 2uchar array" alt="" coords="136,56,247,83"/>
+<area shape="rect" href="../../da/d1e/a00149.html#a7fc01b81d889244cd3b4139105c167f9" title="16 2 4hex 16位数据转换成四个hex 值" alt="" coords="138,107,245,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aeb393d35b0c67a412d716cf3ad1a6fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb393d35b0c67a412d716cf3ad1a6fc4">&#9670;&nbsp;</a></span>EvenParity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EvenParity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Even parity </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00286">286</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5619370f6b13f37a6780a0986ac1f153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5619370f6b13f37a6780a0986ac1f153">&#9670;&nbsp;</a></span>hex2num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hex2num </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Hexadecimal 2num </p>
+<p class="DocNodeLTR">将0-F的值转换成0-15</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>&#x202A;The alpha component</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An int</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>&#x202A;The alpha component</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An int </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00714">714</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;{</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="keywordflow">if</span> (a &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; a &lt;= <span class="charliteral">&#39;f&#39;</span>)</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        a -= 32;</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_a5619370f6b13f37a6780a0986ac1f153_icgraph.png" border="0" usemap="#da/d1e/a00149_a5619370f6b13f37a6780a0986ac1f153_icgraph" alt=""/></div>
+<map name="da/d1e/a00149_a5619370f6b13f37a6780a0986ac1f153_icgraph" id="da/d1e/a00149_a5619370f6b13f37a6780a0986ac1f153_icgraph">
+<area shape="rect" title="Hexadecimal 2num" alt="" coords="151,5,225,32"/>
+<area shape="rect" href="../../de/d79/a00203.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a05a4b02ca721750a553e2c2c1ef791b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a4b02ca721750a553e2c2c1ef791b9">&#9670;&nbsp;</a></span>IntelHexCheckSum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> IntelHexCheckSum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Intel hexadecimal check sum </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00137">137</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> Sum;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    Sum = <a class="code" href="../../da/d1e/a00149.html#af4340455c535fe8797ff03fca67122e1">&#x202A;CheckSum8</a>( buf, len );</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa3738f7ae3c5e7a17a9bc873314c2378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3738f7ae3c5e7a17a9bc873314c2378">&#9670;&nbsp;</a></span>NetCheckSum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#a5315435fe48e21e3a8a48dfb10cc9fde">USHORT</a> NetCheckSum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Net check sum </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An USHORT</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An USHORT </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00167">167</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a>   Sum = 0;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">while</span> ( len-- )</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        Sum += *buf++;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa53b7ea326b48bf4904a19596868aabb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa53b7ea326b48bf4904a19596868aabb">&#9670;&nbsp;</a></span>num2hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char num2hex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Number 2hex </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>&#x202A;An int to process</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The total number of 2hex</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a1</td><td>&#x202A;The first int</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The total number of 2hex </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00689">689</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;{</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_aa53b7ea326b48bf4904a19596868aabb_icgraph.png" border="0" usemap="#da/d1e/a00149_aa53b7ea326b48bf4904a19596868aabb_icgraph" alt=""/></div>
+<map name="da/d1e/a00149_aa53b7ea326b48bf4904a19596868aabb_icgraph" id="da/d1e/a00149_aa53b7ea326b48bf4904a19596868aabb_icgraph">
+<area shape="rect" title="Number 2hex" alt="" coords="141,31,216,57"/>
+<area shape="rect" href="../../da/d1e/a00149.html#a1538a18516800ceffcebeff63068936d" title="Byte 2 hexadecimal" alt="" coords="5,5,93,32"/>
+<area shape="rect" href="../../da/d1e/a00149.html#aef8bdfe5072387319c78e034268cb9ba" title="Character 2str" alt="" coords="15,56,84,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab7480cd5401ca9b45a50068cdba11590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7480cd5401ca9b45a50068cdba11590">&#9670;&nbsp;</a></span>OddParity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OddParity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Odd parity </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00240">240</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a>  i = 0, j = 0;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> d = 0;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">bool</span>  bParity = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    bParity = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">for</span> ( j = 0; j &lt; len;j++ )</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        d = *( buf + j );</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">for</span> ( i = 0; i &lt; 8; i++ )</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordflow">if</span> ( ( d &amp; 0x01 ) == 0x01 )</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                bParity ^= 1;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a055c913ca85df006a69cf69bf5c4ad86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a055c913ca85df006a69cf69bf5c4ad86">&#9670;&nbsp;</a></span>Reflect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long Reflect </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Reflects </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>&#x202A;The reference </td></tr>
+    <tr><td class="paramname">ch</td><td>&#x202A;The ch</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A long</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>&#x202A;The reference. </td></tr>
+    <tr><td class="paramname">ch</td><td>&#x202A;The ch.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A long. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00536">536</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;{</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a64af658740ce90db45a7ffee5b85da75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64af658740ce90db45a7ffee5b85da75">&#9670;&nbsp;</a></span>str2char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char str2char </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;2chars the given string </p>
+<p class="DocNodeLTR">将字符串 00 -FF 转换成char -128-127</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A char</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A char </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00827">827</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;{</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    <span class="keywordflow">return</span> static_cast&lt;uchar&gt;(( c1 &lt; 0 ? 256 + c1 : c1 ));</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;}</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160; </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a471babf1ea4869a04cb075ebdd0db4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a471babf1ea4869a04cb075ebdd0db4b1">&#9670;&nbsp;</a></span>Str2CharArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Str2CharArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flg_space</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;字符串 转换成 数值数组 </p>
+<p class="DocNodeLTR">将字符串 转换成数值 数组</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>&#x202A;If non-null, the buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">str</td><td>&#x202A;The string </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">flg_space</td><td>&#x202A;(Optional) The flg space</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>&#x202A;If non-null, the buffer. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">str</td><td>&#x202A;The string. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">flg_space</td><td>&#x202A;The flg space. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l01116">1116</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_a471babf1ea4869a04cb075ebdd0db4b1_icgraph.png" border="0" usemap="#da/d1e/a00149_a471babf1ea4869a04cb075ebdd0db4b1_icgraph" alt=""/></div>
+<map name="da/d1e/a00149_a471babf1ea4869a04cb075ebdd0db4b1_icgraph" id="da/d1e/a00149_a471babf1ea4869a04cb075ebdd0db4b1_icgraph">
+<area shape="rect" title="字符串 转换成 数值数组" alt="" coords="357,56,461,83"/>
+<area shape="rect" href="../../da/d45/a00961.html#ad526215268259900ba922e6e568a9678" title="从配置文件中 读取内容 可以读取固定格式的 节点的值 XML 或者 YML 均可" alt="" coords="151,5,309,32"/>
+<area shape="rect" href="../../db/d28/a01133.html#a73c1b6474d82fb88844ea63d54a19b1d" title="字符串 转 数组 // 将string 字符串转换成 数组数据 将人工输入的字符串转换成用于处理的数据" alt="" coords="151,56,309,83"/>
+<area shape="rect" href="../../de/d79/a00203.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc" title=" " alt="" coords="181,107,279,133"/>
+<area shape="rect" href="../../d3/de5/a00209.html#ab5e6df2da27e8aacc5489605e4abcc53" title=" " alt="" coords="5,56,103,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1954f81c6d39046c3e8918893f3f59b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1954f81c6d39046c3e8918893f3f59b5">&#9670;&nbsp;</a></span>str2hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void str2hex </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pInput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nHexNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>********************************************************************* </p>
+<p class="DocNodeLTR">String 2hexes</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pInput</td><td>&#x202A;If non-null, the input </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pOutput</td><td>&#x202A;If non-null, the output </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">nHexNum</td><td>&#x202A;The hexadecimal number</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pInput</td><td>&#x202A;If non-null, the input. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pOutput</td><td>&#x202A;If non-null, the output. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">nHexNum</td><td>&#x202A;The hexadecimal number. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00622">622</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;{</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keywordtype">char</span>    szNum[3];</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordtype">int</span>     nAscii, nIndex;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a395b3d3e612dee068cfdad97b725cf77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a395b3d3e612dee068cfdad97b725cf77">&#9670;&nbsp;</a></span>str2int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int str2int </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00855">855</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad7042ca7a062860773cdd8e4ee0e9dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7042ca7a062860773cdd8e4ee0e9dbf">&#9670;&nbsp;</a></span>Str2QByteArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray Str2QByteArray </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flg_space</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;将字符串 转换成 QByteArray 字符串默认有空格 </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;A B C &mdash; 65 66 67 &mdash; 41 42 43</li>
+<li>&#x202A;* 字母 十进制 16进制</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/2</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string. </td></tr>
+    <tr><td class="paramname">flg_space</td><td>&#x202A;(Optional) The flg space.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A QByteArray.</dd></dl>
+<ul class="DocNodeLTR">
+<li>&#x202A;A B C &mdash; 65 66 67 &mdash; 41 42 43</li>
+<li>&#x202A;* 字母 十进制 16进制</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/2</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string. </td></tr>
+    <tr><td class="paramname">flg_space</td><td>&#x202A;The flg space.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A QByteArray. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l01150">1150</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;{</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;    <span class="keywordtype">size_t</span> n = str.size();</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_ad7042ca7a062860773cdd8e4ee0e9dbf_cgraph.png" border="0" usemap="#da/d1e/a00149_ad7042ca7a062860773cdd8e4ee0e9dbf_cgraph" alt=""/></div>
+<map name="da/d1e/a00149_ad7042ca7a062860773cdd8e4ee0e9dbf_cgraph" id="da/d1e/a00149_ad7042ca7a062860773cdd8e4ee0e9dbf_cgraph">
+<area shape="rect" title="将字符串 转换成 QByteArray 字符串默认有空格" alt="" coords="5,5,120,32"/>
+<area shape="rect" href="../../da/d1e/a00149.html#aa4d8cf50c0a13481ceb04c5a0581c959" title="2uchars the given string" alt="" coords="168,5,244,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_ad7042ca7a062860773cdd8e4ee0e9dbf_icgraph.png" border="0" usemap="#da/d1e/a00149_ad7042ca7a062860773cdd8e4ee0e9dbf_icgraph" alt=""/></div>
+<map name="da/d1e/a00149_ad7042ca7a062860773cdd8e4ee0e9dbf_icgraph" id="da/d1e/a00149_ad7042ca7a062860773cdd8e4ee0e9dbf_icgraph">
+<area shape="rect" title="将字符串 转换成 QByteArray 字符串默认有空格" alt="" coords="151,5,265,32"/>
+<area shape="rect" href="../../de/d79/a00203.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa4d8cf50c0a13481ceb04c5a0581c959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d8cf50c0a13481ceb04c5a0581c959">&#9670;&nbsp;</a></span>str2uchar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> str2uchar </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;2uchars the given string </p>
+<p class="DocNodeLTR">将字符串 00 -FF 转换成UCHAR 0-255</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An uchar. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00877">877</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_aa4d8cf50c0a13481ceb04c5a0581c959_icgraph.png" border="0" usemap="#da/d1e/a00149_aa4d8cf50c0a13481ceb04c5a0581c959_icgraph" alt=""/></div>
+<map name="da/d1e/a00149_aa4d8cf50c0a13481ceb04c5a0581c959_icgraph" id="da/d1e/a00149_aa4d8cf50c0a13481ceb04c5a0581c959_icgraph">
+<area shape="rect" title="2uchars the given string" alt="" coords="313,31,389,57"/>
+<area shape="rect" href="../../da/d1e/a00149.html#ad7042ca7a062860773cdd8e4ee0e9dbf" title="将字符串 转换成 QByteArray 字符串默认有空格" alt="" coords="151,5,265,32"/>
+<area shape="rect" href="../../de/d79/a00203.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc" title=" " alt="" coords="5,31,103,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa79716676bda4eccaf08240b6b85597a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79716676bda4eccaf08240b6b85597a">&#9670;&nbsp;</a></span>string2ucharArr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>* string2ucharArr </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;String 2uchar array </p>
+<p class="DocNodeLTR">将字符串转换成UCHAR</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;Null if it fails, else a pointer to an uchar</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;Null if it fails, else a pointer to an uchar. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00926">926</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;{</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_aa79716676bda4eccaf08240b6b85597a_icgraph.png" border="0" usemap="#da/d1e/a00149_aa79716676bda4eccaf08240b6b85597a_icgraph" alt=""/></div>
+<map name="da/d1e/a00149_aa79716676bda4eccaf08240b6b85597a_icgraph" id="da/d1e/a00149_aa79716676bda4eccaf08240b6b85597a_icgraph">
+<area shape="rect" title="String 2uchar array" alt="" coords="136,5,247,32"/>
+<area shape="rect" href="../../da/d1e/a00149.html#a6acfd7d9b152a658df5e474a4207fe3a" title="CRC string" alt="" coords="5,5,88,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aafba3ada36ef3ece42ae0e5c9e2b1130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafba3ada36ef3ece42ae0e5c9e2b1130">&#9670;&nbsp;</a></span>uchar2char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char uchar2char </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td>
+          <td class="paramname"><em>c1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Uchar 2char </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c1</td><td>&#x202A;The first uchar</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A char</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c1</td><td>&#x202A;The first uchar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A char. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00791">791</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;{</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adb6f871f3ae4b58f730d4500efe91183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb6f871f3ae4b58f730d4500efe91183">&#9670;&nbsp;</a></span>uchar2str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string uchar2str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td>
+          <td class="paramname"><em>CR</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Uchar 2str </p>
+<p class="DocNodeLTR">将字符串 UCHAR 0-255 转换成00 -FF</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CR</td><td>&#x202A;The carriage return</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CR</td><td>&#x202A;The carriage return</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00905">905</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7fc01b81d889244cd3b4139105c167f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc01b81d889244cd3b4139105c167f9">&#9670;&nbsp;</a></span>uint16_2_4hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string uint16_2_4hex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">UINT16</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;16 2 4hex 16位数据转换成四个hex 值 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>&#x202A;The data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00993">993</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d1e/a00149_a7fc01b81d889244cd3b4139105c167f9_icgraph.png" border="0" usemap="#da/d1e/a00149_a7fc01b81d889244cd3b4139105c167f9_icgraph" alt=""/></div>
+<map name="da/d1e/a00149_a7fc01b81d889244cd3b4139105c167f9_icgraph" id="da/d1e/a00149_a7fc01b81d889244cd3b4139105c167f9_icgraph">
+<area shape="rect" title="16 2 4hex 16位数据转换成四个hex 值" alt="" coords="136,5,243,32"/>
+<area shape="rect" href="../../da/d1e/a00149.html#a6acfd7d9b152a658df5e474a4207fe3a" title="CRC string" alt="" coords="5,5,88,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a3865be6a007688f0b2f440d3d40ce3f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3865be6a007688f0b2f440d3d40ce3f5">&#9670;&nbsp;</a></span>CRC8TAB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> CRC8TAB[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../da/d1e/a00149_source.html">Commu.cc</a> 第 <a class="el" href="../../da/d1e/a00149_source.html#l00299">299</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa00038_html_ad218514b084e626393749ca0e0f5bccc"><div class="ttname"><a href="../../d8/d41/a00038.html#ad218514b084e626393749ca0e0f5bccc">&#x202A;UINT32</a></div><div class="ttdeci">&#x202A;unsigned int UINT32</div><div class="ttdoc">&#x202A;The 32</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00032">Commu.h:32</a></div></div>
+<div class="ttc" id="aa00038_html_a2b6a99e22a48562ebfb764265a529937"><div class="ttname"><a href="../../d8/d41/a00038.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a></div><div class="ttdeci">&#x202A;unsigned int UINT</div><div class="ttdoc">&#x202A;The uint</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00038">Commu.h:38</a></div></div>
+<div class="ttc" id="aa00038_html_a12959b963b682ac310aca54c9e954359"><div class="ttname"><a href="../../d8/d41/a00038.html#a12959b963b682ac310aca54c9e954359">&#x202A;UINT16</a></div><div class="ttdeci">&#x202A;unsigned short UINT16</div><div class="ttdoc">&#x202A;The 16</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00031">Commu.h:31</a></div></div>
+<div class="ttc" id="aa00149_html_af4340455c535fe8797ff03fca67122e1"><div class="ttname"><a href="../../da/d1e/a00149.html#af4340455c535fe8797ff03fca67122e1">&#x202A;CheckSum8</a></div><div class="ttdeci">&#x202A;uchar CheckSum8(uchar *buf, UINT len)</div><div class="ttdoc">&#x202A;函数声明</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/a00149_source.html#l00038">Commu.cc:38</a></div></div>
+<div class="ttc" id="aa00038_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00036">Commu.h:36</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../da/d1e/a00149.html">&#x202A;ImageProc.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../da/d1e/a00149.html">&#x202A;Commu.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

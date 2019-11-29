@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;串口通信模块实现说明</title>
+<title>&#x202A;CBoreHole: &#x202A;软件开发进度</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,13 +89,73 @@ $(document).ready(function(){initNavTree('db/d57/a01506.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;串口通信模块实现说明 </div>  </div>
+<div class="title">&#x202A;软件开发进度 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md64"></a>
-串口配置信息</h2>
-<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md65"></a>
-串口读写操作</h2>
+<div class="textblock"><hr  />
+ <h1><a class="anchor" id="autotoc_md86"></a>
+20191019</h1>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;设定串口程序</li>
+<li>&#x202A;实现串口通信程序, 完成双向传输,测试程序</li>
+</ol>
+<hr  />
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md88"></a>
+BUGs List</h1>
+<p class="DocNodeLTR">[h264 @ 000001feb5c71d20] Invalid level prefix error while decoding MB 21 37</p>
+<h1><a class="anchor" id="autotoc_md89"></a>
+20191108</h1>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;处理线程计时器问题</li>
+<li>&#x202A;处理点击开启处理的逻辑 以及线程结束的首位工作</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md90"></a>
+20191118</h1>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;测试程序出现问题的地方</li>
+<li>&#x202A;测试resize 问题</li>
+<li>&#x202A;QT 界面 移动问题</li>
+<li>&#x202A;QT 界面固定显示问题</li>
+<li>&#x202A;视频流 数据 写入问题</li>
+<li>&#x202A;同时创建文件 读写问题</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md91"></a>
+20191119</h1>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;测试开始拼接之后的图像的数据</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md92"></a>
+20191123</h1>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;完成串口 可以完成文件读取文件</li>
+</ol>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md93"></a>
+bug 总结</h1>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md94"></a>
+存在的 Bugs</h2>
+<ul class="DocNodeLTR">
+<li>&#x202A;[ ] 初始化失败</li>
+</ul>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md95"></a>
+需要添加的功能 Feature</h2>
+<ul class="DocNodeLTR">
+<li>&#x202A;[ ] 完成初始化内容<ul class="DocNodeLTR">
+<li>&#x202A;[ ] 参数设计</li>
+</ul>
+</li>
+<li>&#x202A;[ ] 整理参数读取顺序和初始化过程</li>
+<li>&#x202A;[ ] 四种配置参数文件的读取和相互转换<ul class="DocNodeLTR">
+<li>&#x202A;[ ] 设计YML参数</li>
+<li>&#x202A;[ ] 在 runPara 记录所有结果,</li>
+<li>&#x202A;[ ] 在 <a class="el" href="../../d2/d21/a00895.html" title="&#x202A;需要存储的系统 para">StorePara</a> 记录 只需要存储的结果</li>
+<li>&#x202A;[ ] 测试自定义结构的读取</li>
+</ul>
+</li>
+<li>&#x202A;[ ] 自定义文件版本兼容设计 <a href="&#x202A;https://segmentfault.com/a/1190000011751770">参考链接</a><ul class="DocNodeLTR">
+<li>&#x202A;[ ] 自己处理读写 不使用结构体读写&ndash; 处理兼容性 </li>
+</ul>
+</li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

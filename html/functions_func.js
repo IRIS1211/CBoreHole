@@ -19,5 +19,6 @@ var functions_func =
     [ "\u202Au", "functions_func_u.html", null ],
     [ "\u202Av", "functions_func_v.html", null ],
     [ "\u202Aw", "functions_func_w.html", null ],
+    [ "\u202Ay", "functions_func_y.html", null ],
     [ "~", "functions_func_~.html", null ]
 ];

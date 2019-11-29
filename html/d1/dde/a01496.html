@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;格式化注释工具</title>
+<title>&#x202A;CBoreHole: &#x202A;配置文件转换系统</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,65 +89,35 @@ $(document).ready(function(){initNavTree('d1/dde/a01496.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;格式化注释工具 </div>  </div>
+<div class="title">&#x202A;配置文件转换系统 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md9"></a>
-介绍</h1>
-<p class="DocNodeLTR"><a href="&#x202A;https://www.atomineerutils.com/products.php">AtomineerUtils</a> 是国外的一款用于生成源代码注释的一款 VS 插件工具. 这款插件，支持 C、C++、C++/CLI、Java 语言等，由此可以看出其强大，注释的风格可以灵活配置。</p>
-<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md10"></a>
-安装方法</h1>
-<p class="DocNodeLTR">软件是付费软件, 具体使用版本见附件 <a href="&#x202A;../../AtomineerUtils使用说明/AtomineerUtils936.zip">AtomineerUtils936</a> 也可以在参考链接给出的网页内找到 使用方法.</p>
-<p class="DocNodeLTR">具体安装方法可以看压缩包内附件文档,</p>
-<hr  />
-<p class="DocNodeLTR"> 0. 正常安装相应文件夹内的VS插件,本人使用的是 VS2015 插件</p><ol type="1" class="DocNodeLTR">
-<li>&#x202A;第一次请务必断网进入VS，在插件里面把本工具的自动更新关闭掉，更新到最新版本将直接无法使用破解版本(如果刚好试用到期也不就不能用了)。</li>
-</ol>
-<p class="DocNodeLTR">VS 2015之下的版本(未测试是否可用): 安装路径自己选的，然后找到：你的安装路径/visual studio 20**/Addins/AtomineerUtils/ 替换掉里面的Atomineer.Utils.dll就好了</p>
-<p class="DocNodeLTR">VS 2015版本: 替换位置: LocalAppData%/Microsoft/VisualStudio/14.0/Extensions/******(随机的名称)/ VS 2017版本: 替换位置: LocalAppData%/Microsoft/VisualStudio/15.0_******** (随机的名称) /Extensions/******(随机的名称)/</p>
+<div class="textblock"><p class="DocNodeLTR">配置文件系统模块设计</p>
+<p class="DocNodeLTR">系统主要的配置文件系统包含四个部分, 后续如果需要设计可以考虑</p><ul class="DocNodeLTR">
+<li>&#x202A;配置文件 YML, 存储运行过程中的配置参数,按照一定格式存储</li>
+<li>&#x202A;运行参数 <a class="el" href="../../d7/d46/a01045.html" title="&#x202A;系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换">RunPara</a>, 系统运行参数 类, 存有几乎所有可以调整的参数以及宏定义部分</li>
+<li>&#x202A;工程文件: <a class="el" href="../../d0/daa/a01029.html" title="&#x202A;An idoi file.">IDOIFile</a> 自定义文件存储系统 二进制存储, 部分参数,完成配置参数的读写过程</li>
+</ul>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md82"></a>
+配置系统</h1>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md83"></a>
+软件配置</h2>
+<p class="DocNodeLTR"><a class="el" href="../../d7/ded/a01009.html" title="&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,">Config</a></p><ul class="DocNodeLTR">
+<li>&#x202A;VERSION_</li>
+<li>&#x202A;mRunPara</li>
+</ul>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md84"></a>
+实现说明</h2>
 <ol type="1" class="DocNodeLTR">
-<li>&#x202A;在相应文件夹内找到文件, 使用附件文件夹内的 同名文件替换掉里面的AtomineerProDocumentation.dll就好了</li>
+<li>&#x202A;系统主要分为两个部分, 全部参数 <a class="el" href="../../d7/d46/a01045.html" title="&#x202A;系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换">RunPara</a> , 以及 版本信息 VERSION_</li>
+<li>&#x202A;从 YML 文件的读写不需要考虑版本信息,因为程序更新之后 会更新配置文件, 同步处理</li>
+<li>&#x202A;自定义文件中存在的兼容问题, 在发布之后,需要考虑不同版本问题, 根据当前配置文件的版本,进行自定义参数的读写</li>
+<li>&#x202A;在初始发布之后,给出版本信息, 使用 100 作为配置参数的版本, 每次根据版本才进行一定的参数写入与读取</li>
 </ol>
-<p class="DocNodeLTR">可以在VS 的拓展目录<code>C:\Users\Chen\AppData\Local\Microsoft\VisualStudio\14.0\Extensions</code> 下搜索文件名可以快速找到</p>
-<p class="DocNodeLTR">例如个人最终的路径为</p>
-<blockquote class="doxtable DocNodeLTR">
-<p class="DocNodeLTR">C:/Users/Chen/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/g2iuajz1.bzo/AtomineerProDocumentation.dll </p>
-</blockquote>
-<p class="DocNodeLTR">PS:如果使用过程中出现路径错误的情况，菜单栏-&gt;工具-&gt;Atomineer...Trial-&gt;...options 进去点下确定出来就好了。</p>
-<p class="DocNodeLTR">或者进入安装路径找到AtomineerUtilsWizard.exe，通过一下配置向导</p>
-<hr  />
-<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md13"></a>
-使用方法说明</h1>
-<p class="DocNodeLTR">由于插件没有中文, 但是并不难理解, <br  />
- 使用的详细方法可以分为以下几步</p>
-<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md14"></a>
-1. VS 进入设置方法</h2>
-<p class="DocNodeLTR">工具-&gt;AtomineerProDocumentation Trail -&gt; Atominee Option</p>
-<p><img src="&#x202A;../../AtomineerUtils使用说明/atomineer_2.png" alt="进入方法" class="inline"/></p>
-<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md15"></a>
-2. 初始设定</h2>
-<p class="DocNodeLTR">建议点击 quick 选择设置方案,根据自己感觉比较好看的方式设定即可, 因为后续需求, 这里选择的方案是 doxygen 的方式, 后续可以根据注释生成项目文档 仅供参考</p>
-<p><img src="&#x202A;../../AtomineerUtils使用说明/atomineer_3.png" alt="初始设定" class="inline"/></p>
-<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md16"></a>
-3. 注释模板路径</h2>
-<p class="DocNodeLTR">在通用设置界面, 选择注释模板文件的搜索路径, 会先从给出的路径进行搜索,如果存在会优先使用,如果找不到就会使用程序默认的方式生成注释, 附件<a href="&#x202A;../../AtomineerUtils使用说明/DoxygenTemplates.xml">详细配置文档</a> 给出了自己的一份配置文件, 比较满意 如果自己感觉不舒服可以自己调整</p>
-<p><img src="&#x202A;../../AtomineerUtils使用说明/atomineer_4.png" alt="注释模板" class="inline"/></p>
-<p class="DocNodeLTR">在通用设置的上半部分还可以设置右键显示的快捷菜单和菜单栏二级菜单显示的内容</p>
-<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md17"></a>
-4. 注释规则</h2>
-<p class="DocNodeLTR">可以根据不同的规则生成不同的注释, 这里使用较少, 暂时不了解怎么使用的,</p>
-<p><img src="&#x202A;../../AtomineerUtils使用说明/atomineer_5.png" alt="不同规则" class="inline"/></p>
-<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md18"></a>
-详细配置文档</h1>
-<p class="DocNodeLTR">详细配置文档定义了相应的行 执行相应的内容 在执行生成注释的时候会根据xml 配置文件以及在软件中的设置自动生成相关内容 <a href="&#x202A;../../AtomineerUtils使用说明/DoxygenTemplates.xml">详细配置文档</a></p>
-<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md19"></a>
-参考链接</h1>
-<ol type="1" class="DocNodeLTR">
-<li>&#x202A;<a href="&#x202A;https://blog.windawings.com/reverse/atomineer-crack.html">Atomineer Pro Documentation Trial 9.36 Crack</a></li>
-<li>&#x202A;<a href="&#x202A;https://www.jb51.net/softs/577153.html">atomineer pro documentation utils(visual studio常用插件) V9.45 官方版</a></li>
-<li>&#x202A;<a href="&#x202A;https://blog.csdn.net/windawings/article/details/50607159">Atomineer Pro Documentation Trial 9.36 Cracked</a> </li>
-</ol>
-</div></div><!-- contents -->
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md85"></a>
+系统运行参数 RunPara</h1>
+<div class="fragment"><div class="line"><span class="comment">// 项目初始发布之后 完成参数设计</span></div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/test/test_commu.cc æºæ–‡ä»¶</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/WriteVideo.cc æºæ–‡ä»¶</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.1</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">&#x202A;æµ‹å­”å›¾ç‰‡æ‹¼æ¥å…¨æ™¯æ˜¾ç¤ºç³»ç»Ÿ</div>
   </td>
@@ -89,52 +89,255 @@ $(document).ready(function(){initNavTree('d9/dd0/a00191_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">test_commu.cc</div>  </div>
+<div class="title">WriteVideo.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d9/dd0/a00191.html">æµè§ˆè¯¥æ–‡ä»¶çš„æ–‡æ¡£.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../stdafx.h&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// æµ‹è¯•é€šè®¯å‡½æ•°</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d9/dd0/a00191.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc">    5</a></span>&#160;<a class="code" href="../../d9/dd0/a00191.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;test Commu  Function!&quot;</span>)</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    CHECK(<a class="code" href="../../dc/d87/a00032.html#a5619370f6b13f37a6780a0986ac1f153">&#x202A;hex2num</a>(<span class="charliteral">&#39;F&#39;</span>) == 15);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    CHECK(<a class="code" href="../../dc/d87/a00032.html#aa4d8cf50c0a13481ceb04c5a0581c959">&#x202A;str2uchar</a>(<span class="stringliteral">&quot;FF&quot;</span>) == 0xff);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    CHECK(<a class="code" href="../../dc/d87/a00032.html#aa4d8cf50c0a13481ceb04c5a0581c959">&#x202A;str2uchar</a>(<span class="stringliteral">&quot;0F&quot;</span>) == 0x0f);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">const</span> std::string test_str = <span class="stringliteral">&quot;68 13 00 85 11 12 21 22 31 32 00 00 01 00 00 02 00 00 03 88 FF 01 02 03 04 05 0F&quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../dc/d87/a00032.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> buf[27];</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../dc/d87/a00032.html#acff23706cd23da7fde42b33a9f5ebcea">&#x202A;Str2CharArray</a>(buf, test_str);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::string str = <a class="code" href="../../dc/d87/a00032.html#a2bccd732252a844a62b3e0bdc7de82d8">&#x202A;charArr2String</a>(buf, 27);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// æ£€æµ‹æ˜¯å¦æ»¡è¶³ è½¬æ¢å‡½æ•°æ­£ç¡®æ€§</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    CHECK(test_str == str);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QByteArray res = <a class="code" href="../../dc/d87/a00032.html#ad3557e201a0276ee8492aae3dbec7606">&#x202A;Str2QByteArray</a>(test_str);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;res:&quot;</span> &lt;&lt; res;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> std::string test_str2 = <span class="stringliteral">&quot;6813008511122122313200000100000200000388FF01020304050F&quot;</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QByteArray res2 = <a class="code" href="../../dc/d87/a00032.html#ad3557e201a0276ee8492aae3dbec7606">&#x202A;Str2QByteArray</a>(test_str2, 0);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;res2:&quot;</span> &lt;&lt; res2;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    CHECK(res.size () == res2.size());</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">}</span></div>
+<a href="../../d9/dd0/a00191.html">æµè§ˆè¯¥æ–‡ä»¶çš„æ–‡æ¡£.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../inc/WriteVideo.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../dc/d98/a01177.html#a8537b4c963467314c61eb26616087b1b">   22</a></span>&#160;<a class="code" href="../../dc/d98/a01177.html#a8537b4c963467314c61eb26616087b1b">&#x202A;WriteVideo::WriteVideo</a>(QObject * parent) :</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QThread(parent),</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    m_write_buffer_(new <a class="code" href="../../d7/d59/a01013.html">&#x202A;CQueue</a>&lt;cv::Mat&gt;(20)),</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    m_writer_(nullptr)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../dc/d98/a01177.html#a0089a1003badc38250ed84d66b8c5fe3">&#x202A;StartWriter</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../dc/d98/a01177.html#ac323b2953beb68b8fbafa30bd9370f4c">   30</a></span>&#160;<a class="code" href="../../dc/d98/a01177.html#ac323b2953beb68b8fbafa30bd9370f4c">&#x202A;WriteVideo::~WriteVideo</a>()</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../dc/d98/a01177.html#ad065ff730822bfeac57ed179617a61e2">   34</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dc/d98/a01177.html#ad065ff730822bfeac57ed179617a61e2">&#x202A;WriteVideo::Init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../dc/d98/a01177.html#a0089a1003badc38250ed84d66b8c5fe3">   39</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dc/d98/a01177.html#a0089a1003badc38250ed84d66b8c5fe3">&#x202A;WriteVideo::StartWriter</a>(std::string file_path <span class="comment">/*= &quot;&quot;*/</span>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (file_path.empty())</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        file_path = <a class="code" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;Project</a>.<a class="code" href="../../d7/d46/a01045.html#ade4767762e0d68450f48bc770a22832d">&#x202A;strProjectPath</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            + <a class="code" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;Project</a>.<a class="code" href="../../d7/d46/a01045.html#aab25e9ce963c06f21bf10939605e5a36">&#x202A;strVideoSuffix</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d4/d8c/a00035.html#a417ad9bc43db4f2f4eda91598d39e883">&#x202A;QTDirExist</a>(file_path))</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">throw</span>(<a class="code" href="../../d6/d22/a00245.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">&#x202A;Error_Work_Dir_Video_Create_Error</a>, <span class="stringliteral">&quot;Error_Work_Dir_Video_Create_Error&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::string file_name = file_path + <span class="stringliteral">&quot;CaptureVideo_&quot;</span> + <a class="code" href="../../d4/d8c/a00035.html#aa132dc7ddfc38fed5cdbc20ae1eddd55">&#x202A;getTimeStr</a>(<span class="charliteral">&#39;_&#39;</span>) + <span class="stringliteral">&quot;.avi&quot;</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//# TODO ´Ë´¦²ÎÊıĞèÒªºóĞøĞŞ¸Ä ÍêÉÆ</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../dc/d98/a01177.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a> = <span class="keyword">new</span> cv::VideoWriter(file_name,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                    cv::CAP_FFMPEG,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                    CV_FOURCC(<span class="charliteral">&#39;X&#39;</span>, <span class="charliteral">&#39;2&#39;</span>, <span class="charliteral">&#39;6&#39;</span>, <span class="charliteral">&#39;4&#39;</span>),</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                    30,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                    cv::Size(1080, 1080));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// ´´½¨Ê§°Ü Å×³ö´íÎó     
+    Q_ASSERT(m_writer_ != nullptr);
+    if (!m_writer_)
+    {
+        throw(Error_Video_Writer_Null, &quot;Error_Video_Writer_Null&quot;);
+        return false;
+    }
+
+    start();    // ¿ªÆô´¦ÀíÏß³Ì
+
+    return true;
+}
+
+bool WriteVideo::CloseWriter()
+{
+    
+    requestInterruption();
+
+    // while (!isInterruptionRequested());
+    Sleep((20));    // ÑÓÊ±  Ö®ºó´¦Àí
+
+
+    if(m_writer_ != nullptr)
+        m_writer_-&gt;release();
+
+
+    
+    // delete m_writer_;
+    // m_writer_ = nullptr;
+    return false;
+}
+
+
+void WriteVideo::run(void)
+{
+    cv::Mat write_img;
+    // Èç¹ûÃ»ÓĞ¹Ø±Õ ³ÖĞø Ñ­»·Ö´ĞĞ
+    while (!isInterruptionRequested())
+    {
+        if (m_write_buffer_-&gt;Empty())
+        {
+            Sleep(10);
+            continue;
+        }
+
+        LTrace(&quot;write frame&quot;);
+
+        // ¶ÓÁĞÖĞÓĞÊı¾İµÄÊ±ºò Ò»Ö±Ğ´ÈëÊı¾İ
+        while (m_write_buffer_ &amp;&amp; !m_write_buffer_-&gt;Empty ())
+        {
+            m_write_buffer_-&gt;Pop(write_img);
+            if (gConfig-&gt;mRunPara.CFG.Debug.nWriteVideoEnable)
+            {
+                m_writer_-&gt;write(write_img);
+            }
+        }
+    }
+}
+</span> </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    Q_ASSERT(<a class="code" href="../../dc/d98/a01177.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../dc/d98/a01177.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">throw</span>(<a class="code" href="../../d6/d22/a00245.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">&#x202A;Error_Video_Writer_Null</a>, <span class="stringliteral">&quot;Error_Video_Writer_Null&quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    start();    <span class="comment">// ¿ªÆô´¦ÀíÏß³Ì 
+    return true;
+}
+
+bool WriteVideo::CloseWriter()
+{
+    
+    requestInterruption();
+
+    // while (!isInterruptionRequested());
+    Sleep((20));    // ÑÓÊ±  Ö®ºó´¦Àí
+
+
+    if(m_writer_ != nullptr)
+        m_writer_-&gt;release();
+
+
+    
+    // delete m_writer_;
+    // m_writer_ = nullptr;
+    return false;
+}
+
+
+void WriteVideo::run(void)
+{
+    cv::Mat write_img;
+    // Èç¹ûÃ»ÓĞ¹Ø±Õ ³ÖĞø Ñ­»·Ö´ĞĞ
+    while (!isInterruptionRequested())
+    {
+        if (m_write_buffer_-&gt;Empty())
+        {
+            Sleep(10);
+            continue;
+        }
+
+        LTrace(&quot;write frame&quot;);
+
+        // ¶ÓÁĞÖĞÓĞÊı¾İµÄÊ±ºò Ò»Ö±Ğ´ÈëÊı¾İ
+        while (m_write_buffer_ &amp;&amp; !m_write_buffer_-&gt;Empty ())
+        {
+            m_write_buffer_-&gt;Pop(write_img);
+            if (gConfig-&gt;mRunPara.CFG.Debug.nWriteVideoEnable)
+            {
+                m_writer_-&gt;write(write_img);
+            }
+        }
+    }
+}
+</span> </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../dc/d98/a01177.html#a21abae28e88c5d6090d4377913ef61ea">   74</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dc/d98/a01177.html#a21abae28e88c5d6090d4377913ef61ea">&#x202A;WriteVideo::CloseWriter</a>()</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    requestInterruption();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// while (!isInterruptionRequested());</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    Sleep((20));    <span class="comment">// ÑÓÊ±  Ö®ºó´¦Àí</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dc/d98/a01177.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="../../dc/d98/a01177.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a>-&gt;release();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// delete m_writer_;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// m_writer_ = nullptr;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../dc/d98/a01177.html#a0883915d51196a8c6f48eead87c1d05c">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dc/d98/a01177.html#a0883915d51196a8c6f48eead87c1d05c">&#x202A;WriteVideo::run</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    cv::Mat write_img;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Èç¹ûÃ»ÓĞ¹Ø±Õ ³ÖĞø Ñ­»·Ö´ĞĞ</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">while</span> (!isInterruptionRequested())</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../dc/d98/a01177.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a>-&gt;<a class="code" href="../../d7/d59/a01013.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;Empty</a>())</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            Sleep(10);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        LTrace(<span class="stringliteral">&quot;write frame&quot;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">// ¶ÓÁĞÖĞÓĞÊı¾İµÄÊ±ºò Ò»Ö±Ğ´ÈëÊı¾İ         while (m_write_buffer_ &amp;&amp; !m_write_buffer_-&gt;Empty ())
+        {
+            m_write_buffer_-&gt;Pop(write_img);
+            if (gConfig-&gt;mRunPara.CFG.Debug.nWriteVideoEnable)
+            {
+                m_writer_-&gt;write(write_img);
+            }
+        }
+    }
+}
+</span> </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">while</span> (<a class="code" href="../../dc/d98/a01177.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a> &amp;&amp; !<a class="code" href="../../dc/d98/a01177.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a>-&gt;<a class="code" href="../../d7/d59/a01013.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;Empty</a> ())</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <a class="code" href="../../dc/d98/a01177.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a>-&gt;<a class="code" href="../../d7/d59/a01013.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;Pop</a>(write_img);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../d7/d46/a01045.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>.<a class="code" href="../../d7/d46/a01045.html#a5a7b3d37220b4b478aaa714245a25b1d">&#x202A;nWriteVideoEnable</a>)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <a class="code" href="../../dc/d98/a01177.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a>-&gt;write(write_img);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00032_html_a5619370f6b13f37a6780a0986ac1f153"><div class="ttname"><a href="../../dc/d87/a00032.html#a5619370f6b13f37a6780a0986ac1f153">&#x202A;hex2num</a></div><div class="ttdeci">&#x202A;int hex2num(char a)</div><div class="ttdoc">&#x202A;Hexadecimal 2num</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00714">Commu.cc:714</a></div></div>
-<div class="ttc" id="aa00032_html_ad3557e201a0276ee8492aae3dbec7606"><div class="ttname"><a href="../../dc/d87/a00032.html#ad3557e201a0276ee8492aae3dbec7606">&#x202A;Str2QByteArray</a></div><div class="ttdeci">&#x202A;QByteArray Str2QByteArray(const std::string &amp;str, int flg_space=1)</div><div class="ttdoc">&#x202A;å°†å­—ç¬¦ä¸² è½¬æ¢æˆ QByteArray å­—ç¬¦ä¸²é»˜è®¤æœ‰ç©ºæ ¼</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l01150">Commu.cc:1150</a></div></div>
-<div class="ttc" id="aa00032_html_acff23706cd23da7fde42b33a9f5ebcea"><div class="ttname"><a href="../../dc/d87/a00032.html#acff23706cd23da7fde42b33a9f5ebcea">&#x202A;Str2CharArray</a></div><div class="ttdeci">&#x202A;void Str2CharArray(uchar *buffer, const std::string &amp;str, int flg_space=1)</div><div class="ttdoc">&#x202A;å­—ç¬¦ä¸² è½¬æ¢æˆ æ•°å€¼æ•°ç»„</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l01116">Commu.cc:1116</a></div></div>
-<div class="ttc" id="aa00191_html_a5d4b06d9b49f5e6c501ccfccd5e19bfc"><div class="ttname"><a href="../../d9/dd0/a00191.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;test Commu  Function!&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/a00191_source.html#l00005">test_commu.cc:5</a></div></div>
-<div class="ttc" id="aa00032_html_aa4d8cf50c0a13481ceb04c5a0581c959"><div class="ttname"><a href="../../dc/d87/a00032.html#aa4d8cf50c0a13481ceb04c5a0581c959">&#x202A;str2uchar</a></div><div class="ttdeci">&#x202A;uchar str2uchar(std::string str)</div><div class="ttdoc">&#x202A;2uchars the given string</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00877">Commu.cc:877</a></div></div>
-<div class="ttc" id="aa00032_html_a2bccd732252a844a62b3e0bdc7de82d8"><div class="ttname"><a href="../../dc/d87/a00032.html#a2bccd732252a844a62b3e0bdc7de82d8">&#x202A;charArr2String</a></div><div class="ttdeci">&#x202A;std::string charArr2String(uchar *buffer, int length=16, int flg_space=1)</div><div class="ttdoc">&#x202A;å°†UCHAR å­—ç¬¦ä¸²ä¾æ¬¡è½¬æ¢æˆ string å­—ç¬¦ä¸²</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l01087">Commu.cc:1087</a></div></div>
-<div class="ttc" id="aa00032_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dc/d87/a00032.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00036">Commu.h:36</a></div></div>
+<div class="ttc" id="aa01177_html_a21abae28e88c5d6090d4377913ef61ea"><div class="ttname"><a href="../../dc/d98/a01177.html#a21abae28e88c5d6090d4377913ef61ea">&#x202A;WriteVideo::CloseWriter</a></div><div class="ttdeci">&#x202A;bool CloseWriter()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/a00191_source.html#l00074">WriteVideo.cc:74</a></div></div>
+<div class="ttc" id="aa01177_html_a0883915d51196a8c6f48eead87c1d05c"><div class="ttname"><a href="../../dc/d98/a01177.html#a0883915d51196a8c6f48eead87c1d05c">&#x202A;WriteVideo::run</a></div><div class="ttdeci">&#x202A;void run(void) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/a00191_source.html#l00094">WriteVideo.cc:94</a></div></div>
+<div class="ttc" id="aa01177_html_a0089a1003badc38250ed84d66b8c5fe3"><div class="ttname"><a href="../../dc/d98/a01177.html#a0089a1003badc38250ed84d66b8c5fe3">&#x202A;WriteVideo::StartWriter</a></div><div class="ttdeci">&#x202A;bool StartWriter(std::string file_name=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/a00191_source.html#l00039">WriteVideo.cc:39</a></div></div>
+<div class="ttc" id="aa01177_html_a6160a17554039c6133fd5cb7b418954f"><div class="ttname"><a href="../../dc/d98/a01177.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;WriteVideo::m_write_buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * m_write_buffer_</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00029">WriteVideo.h:29</a></div></div>
+<div class="ttc" id="aa01045_html_a1ca5d1037652d0b772952ae0716d7a63"><div class="ttname"><a href="../../d7/d46/a01045.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG CFG</div></div>
+<div class="ttc" id="aa01045_html_ade4767762e0d68450f48bc770a22832d"><div class="ttname"><a href="../../d7/d46/a01045.html#ade4767762e0d68450f48bc770a22832d">&#x202A;RunPara::StProject::strProjectPath</a></div><div class="ttdeci">&#x202A;std::string strProjectPath</div><div class="ttdoc">&#x202A;å­˜å‚¨å·¥ç¨‹ç›®å½• // è®¡ç®—ç”Ÿæˆ ä»ç›˜ç¬¦ åˆ°ç›®å½•å</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00074">runpara.h:74</a></div></div>
+<div class="ttc" id="aa01177_html_ad065ff730822bfeac57ed179617a61e2"><div class="ttname"><a href="../../dc/d98/a01177.html#ad065ff730822bfeac57ed179617a61e2">&#x202A;WriteVideo::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/a00191_source.html#l00034">WriteVideo.cc:34</a></div></div>
+<div class="ttc" id="aa00164_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00016">main.cpp:16</a></div></div>
+<div class="ttc" id="aa01177_html_a8537b4c963467314c61eb26616087b1b"><div class="ttname"><a href="../../dc/d98/a01177.html#a8537b4c963467314c61eb26616087b1b">&#x202A;WriteVideo::WriteVideo</a></div><div class="ttdeci">&#x202A;WriteVideo(QObject *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the WriteVideo class ³õÊ¼ÊµÏÖ ¶ÓÁĞ³¤¶È</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/a00191_source.html#l00022">WriteVideo.cc:22</a></div></div>
+<div class="ttc" id="aa01045_html_aab25e9ce963c06f21bf10939605e5a36"><div class="ttname"><a href="../../d7/d46/a01045.html#aab25e9ce963c06f21bf10939605e5a36">&#x202A;RunPara::StProject::strVideoSuffix</a></div><div class="ttdeci">&#x202A;std::string strVideoSuffix</div><div class="ttdoc">&#x202A;è§†é¢‘æ–‡ä»¶åç¼€ &quot;avi &quot;</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00068">runpara.h:68</a></div></div>
+<div class="ttc" id="aa01013_html"><div class="ttname"><a href="../../d7/d59/a01013.html">&#x202A;CQueue</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">CQueue.h:34</a></div></div>
+<div class="ttc" id="aa00035_html_aa132dc7ddfc38fed5cdbc20ae1eddd55"><div class="ttname"><a href="../../d4/d8c/a00035.html#aa132dc7ddfc38fed5cdbc20ae1eddd55">&#x202A;getTimeStr</a></div><div class="ttdeci">&#x202A;std::string getTimeStr(char c='-', int flg_rand=0)</div><div class="ttdoc">&#x202A;æ ¹æ®å½“å‰æ—¶é—´ åˆ›å»ºå­—ç¬¦ä¸²</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00553">common.cc:553</a></div></div>
+<div class="ttc" id="aa01177_html_ac323b2953beb68b8fbafa30bd9370f4c"><div class="ttname"><a href="../../dc/d98/a01177.html#ac323b2953beb68b8fbafa30bd9370f4c">&#x202A;WriteVideo::~WriteVideo</a></div><div class="ttdeci">&#x202A;~WriteVideo()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/a00191_source.html#l00030">WriteVideo.cc:30</a></div></div>
+<div class="ttc" id="aa01045_html_a4e6644435b7546b92c9d1f74b9d828da"><div class="ttname"><a href="../../d7/d46/a01045.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;RunPara::Project</a></div><div class="ttdeci">&#x202A;struct RunPara::StProject Project</div></div>
+<div class="ttc" id="aa01009_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;ç³»ç»Ÿè¿è¡Œå‚æ•°</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa00245_html_a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86"><div class="ttname"><a href="../../d6/d22/a00245.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">&#x202A;Error_Work_Dir_Video_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00048">Utils_Exception.h:48</a></div></div>
+<div class="ttc" id="aa00245_html_a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7"><div class="ttname"><a href="../../d6/d22/a00245.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">&#x202A;Error_Video_Writer_Null</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00050">Utils_Exception.h:50</a></div></div>
+<div class="ttc" id="aa01013_html_a4d55a1a82ab1aa26325a0c93e2603c3f"><div class="ttname"><a href="../../d7/d59/a01013.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;CQueue::Empty</a></div><div class="ttdeci">&#x202A;bool Empty(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00318">CQueue.h:318</a></div></div>
+<div class="ttc" id="aa00035_html_a417ad9bc43db4f2f4eda91598d39e883"><div class="ttname"><a href="../../d4/d8c/a00035.html#a417ad9bc43db4f2f4eda91598d39e883">&#x202A;QTDirExist</a></div><div class="ttdeci">&#x202A;bool QTDirExist(const std::string &amp;path, bool flg_=true)</div><div class="ttdoc">&#x202A;åˆ¤æ–­æ–‡ä»¶å¤¹æ˜¯å¦å­˜åœ¨å¦‚æœå­˜åœ¨ æ ¹æ®æƒ…å†µåˆ¤æ–­æ˜¯å¦åˆ›å»º</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l02178">common.cc:2178</a></div></div>
+<div class="ttc" id="aa01013_html_aabb5d6f90ce5562f4d30867de96bc983"><div class="ttname"><a href="../../d7/d59/a01013.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;CQueue::Pop</a></div><div class="ttdeci">&#x202A;bool Pop(T &amp;data)</div><div class="ttdoc">&#x202A;è¿”å›é˜Ÿåˆ—æœ€å‰é¢çš„å…ƒç´  å¹¶ä¸”å¼¹å‡º // å¦‚æœç©º å¦‚æœfinish åˆ™ç›´æ¥è¿”å›fasle å¦åˆ™ ç­‰å¾…é˜Ÿåˆ—åŠ å…¥å…ƒç´ </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00147">CQueue.h:147</a></div></div>
+<div class="ttc" id="aa01177_html_aec15a690edf1e1a7af966b0fee59f71e"><div class="ttname"><a href="../../dc/d98/a01177.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;WriteVideo::m_writer_</a></div><div class="ttdeci">&#x202A;cv::VideoWriter * m_writer_</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00030">WriteVideo.h:30</a></div></div>
+<div class="ttc" id="aa01045_html_a5a7b3d37220b4b478aaa714245a25b1d"><div class="ttname"><a href="../../d7/d46/a01045.html#a5a7b3d37220b4b478aaa714245a25b1d">&#x202A;RunPara::StCFG::StDebug::nWriteVideoEnable</a></div><div class="ttdeci">&#x202A;int nWriteVideoEnable</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00274">runpara.h:274</a></div></div>
+<div class="ttc" id="aa01045_html_a55676b481748b3169abcad0b15dab03f"><div class="ttname"><a href="../../d7/d46/a01045.html#a55676b481748b3169abcad0b15dab03f">&#x202A;RunPara::StCFG::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG::StDebug Debug</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_e4242af473e2aee12aed92be20342e47.html">&#x202A;test</a></li><li class="navelem"><a class="el" href="../../d9/dd0/a00191.html">&#x202A;test_commu.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d9/dd0/a00191.html">&#x202A;WriteVideo.cc</a></li>
     <li class="footer">åˆ¶ä½œè€…
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

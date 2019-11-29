@@ -1,4 +1,4 @@
-<map id="QcGaugeWidget" name="QcGaugeWidget">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,124,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="28,5,101,32"/>
+<map id="ReadWindow" name="ReadWindow">
+<area shape="rect" id="node1" title="读取文件的界面类实现 能够读取自定义文件并进行浏览显示" alt="" coords="9,80,108,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,112,32"/>
 </map>

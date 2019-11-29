@@ -10,6 +10,7 @@ var functions_dup =
     [ "\u202Ag", "functions_g.html", null ],
     [ "\u202Ah", "functions_h.html", null ],
     [ "\u202Ai", "functions_i.html", null ],
+    [ "\u202Ak", "functions_k.html", null ],
     [ "\u202Al", "functions_l.html", null ],
     [ "\u202Am", "functions_m.html", null ],
     [ "\u202An", "functions_n.html", null ],
@@ -22,5 +23,6 @@ var functions_dup =
     [ "\u202Au", "functions_u.html", null ],
     [ "\u202Av", "functions_v.html", null ],
     [ "\u202Aw", "functions_w.html", null ],
+    [ "\u202Ay", "functions_y.html", null ],
     [ "~", "functions_~.html", null ]
 ];

@@ -1,4 +1,7 @@
-<map id="CLineEdit" name="CLineEdit">
-<area shape="rect" id="node1" title="继承Qt 自定义文件 提升成为自己的组件, 修改窗口的值之后 保证相应的值 直接赋值到相应的内存中 如果关联了相应的 点击按钮, 按钮点击之后可以触发 数据更改" alt="" coords="5,80,84,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,84,32"/>
+<map id="RunPara::StCFG" name="RunPara::StCFG">
+<area shape="rect" id="node1" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="196,304,316,331"/>
+<area shape="rect" id="node2" href="$df/d21/a01039.html#d0/d02/a01119" title="配置 debug 参数" alt="" coords="5,215,184,241"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="55,96,135,123"/>
+<area shape="rect" id="node4" title="STL class" alt="" coords="31,5,158,47"/>
+<area shape="rect" id="node5" href="$df/d21/a01039.html#df/dd5/a01115" title="可以存储的文件参数" alt="" coords="209,215,413,241"/>
 </map>

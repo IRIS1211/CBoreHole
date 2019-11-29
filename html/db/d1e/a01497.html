@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;通讯协议文档说明</title>
+<title>&#x202A;CBoreHole: &#x202A;Camera 项目文档在线</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,48 +89,17 @@ $(document).ready(function(){initNavTree('db/d1e/a01497.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;通讯协议文档说明 </div>  </div>
+<div class="title">&#x202A;Camera 项目文档在线 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p class="DocNodeLTR">文档表示在使用过程中的使用指令说明</p>
-<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md21"></a>
-使用操作说明</h2>
-<p class="DocNodeLTR">上电操作表示 系统每次上电对嵌入式设备发送的命令, 串口实际实现可见文档<a class="el" href="../../d6/d82/a00293.html">串口通讯</a></p>
-<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md22"></a>
-接线操作</h3>
-<p class="DocNodeLTR">3085芯片与4插针连线 </p><blockquote class="doxtable DocNodeLTR">
-<p class="DocNodeLTR">左侧1脚 &ndash;RXD0 左侧4脚 &ndash; RXD485 TXD0&ndash; TXD2PC </p>
-</blockquote>
-<blockquote class="doxtable DocNodeLTR">
-<p class="DocNodeLTR">TXD0&ndash;TXD2PC：主机通过串口发送 PCA+ADC 数据，直接发送到电脑端； RXD0&ndash;TXD485：主机接收电脑串口发送的命令，以启动或结束 PCA 计数； </p>
-</blockquote>
-<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md23"></a>
-上电操作步骤</h3>
-<blockquote class="doxtable DocNodeLTR">
+<div class="textblock"><p class="DocNodeLTR">通过 doxygen 配合 GraphViz 生成,部署到线上,便于后续查看和展示</p>
 <ol type="1" class="DocNodeLTR">
-<li>&#x202A;发送 <b>查询模式</b> 是罗盘停止连续模式, 进入查询模式,等待下一步指令, 一句查询一次返回</li>
-<li>&#x202A;发送 <b>开启PCA</b> 进行PCA计数,获取编码器数据</li>
-<li>&#x202A;发送 <b>启动罗盘连续模式</b> 连续性的获取罗盘数据 + PCA+ADC 值, 同一返回 <blockquote class="doxtable DocNodeLTR">
-<p class="DocNodeLTR">示例格式: 括号扩出来的是 关键数据 68 0D 00 84 [00 04 09 11 79 45 00 81 13] 01 FF [80 00 00 00 00] 80 68 0D 00 84 00 04 09 11 79 45 00 81 13 01 FF 80 01 02 03 04 8A </p>
-</blockquote>
-</li>
+<li>&#x202A;配置文件在根目录, 相应的代码目录不在本目录下,之后看情况开源</li>
+<li>&#x202A;由于 doxygen 文件生成太多, 使用跟目录下 index.html 做简单跳转到 <em>html/index.html</em></li>
+<li>&#x202A;后期考虑使用参考链接的方式 在线 生成代码文档 之后部署</li>
 </ol>
-</blockquote>
-<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md24"></a>
-查询PCA ADC 值</h3>
-<blockquote class="doxtable DocNodeLTR">
-<p class="DocNodeLTR">发送 <b>查询PCA ADC</b> 指令查询ADC值,跟随陀螺仪数据后面发送 </p>
-</blockquote>
-<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md25"></a>
-掉电操作</h3>
-<blockquote class="doxtable DocNodeLTR">
-<ol type="1" class="DocNodeLTR">
-<li>&#x202A;发送 <b>关闭PCA</b> 关闭PCA计数, </li>
-</ol>
-</blockquote>
-<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md26"></a>
-操作指令表</h3>
-<p class="DocNodeLTR">具体操作可以参考<a href="&#x202A;../../../files/通信协议技术文档_V1.2_1014.pdf">通讯协议</a> 和做出来的简单内容的<a href="&#x202A;../../../assets/file/串口通讯指令表.xlsx">串口通讯指令表</a> 具体可见下表 可以使用<a href="&#x202A;http://www.tablesgenerator.com/markdown_tables">在线表格生成网站</a> 生成的 $Markdown$ 表格 </p>
+<p class="DocNodeLTR">具体链接内容可以看 <a href="&#x202A;https://schen1024.github.io/CBoreHole/html/index.html">在线文档首页</a></p>
+<p class="DocNodeLTR">或者 直接使用 <a href="https://schen1024.github.io/CBoreHole/index.html">https://schen1024.github.io/CBoreHole/index.html</a> 访问相应内容 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

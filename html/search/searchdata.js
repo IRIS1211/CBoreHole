@@ -1,16 +1,16 @@
 var indexSectionsWithContent =
 {
-  0: "2_abcdefghiklmnopqrstuvw~äåæçèé",
-  1: "acefgimqrstuw",
+  0: "2_abcdefghiklmnopqrstuvwy~åæçèé串图多程自运通配",
+  1: "acefgiqrstuw",
   2: "u",
-  3: "abcdgimnqrstuw",
-  4: "abcdefghilmnopqrstuvw~",
+  3: "abcdgimqrstuw串图多程自运通配",
+  4: "abcdefghilmnopqrstuvwy~",
   5: "_abcdefghiklmnopqrstuvw",
-  6: "iu",
+  6: "ipu",
   7: "cefn",
   8: "acdefhilmotv",
   9: "ep",
-  10: "2cqsäåæçèé"
+  10: "2cqåæçèé"
 };
 
 var indexSectionNames =

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/abandon/WriterThread.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/abandon/UnitTest.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.1</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,60 +89,85 @@ $(document).ready(function(){initNavTree('d4/d51/a00017_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">WriterThread.h</div>  </div>
+<div class="title">UnitTest.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d4/d51/a00017.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_WRITERTHREAD_H_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CBOREHOLE_WRITERTHREAD_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QThread&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QMutex&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;opencv2/core.hpp&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../inc/common.h&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// using namespace cv;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d7/dcf/a00845.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/dcf/a00845.html">&#x202A;WriterThread</a> :<span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d7/dcf/a00845.html">&#x202A;WriterThread</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ~<a class="code" href="../../d7/dcf/a00845.html">&#x202A;WriterThread</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d7/dcf/a00845.html#aeb5bc24e35be9fd1d65e85d5d51d7a8c">   46</a></span>&#160;    CvVideoWriter *<a class="code" href="../../d7/dcf/a00845.html#aeb5bc24e35be9fd1d65e85d5d51d7a8c">&#x202A;writer</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d7/dcf/a00845.html#ae77184c142376f5cd77f0a61a3cb9f43">   47</a></span>&#160;    QMutex <a class="code" href="../../d7/dcf/a00845.html#ae77184c142376f5cd77f0a61a3cb9f43">&#x202A;writerMutex</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d7/dcf/a00845.html#a4dd6b20164ab96068d991dc7a6d114f4">   49</a></span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/dcf/a00845.html#a4dd6b20164ab96068d991dc7a6d114f4">&#x202A;writerIsOpened</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d7/dcf/a00845.html#a00aded496c1516b96dfe4ad97268ab1d">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d7/dcf/a00845.html#a00aded496c1516b96dfe4ad97268ab1d">&#x202A;img_index</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d7/dcf/a00845.html#a426faf6668ffc354fff7831c479fd5e3">   51</a></span>&#160;    QString <a class="code" href="../../d7/dcf/a00845.html#a426faf6668ffc354fff7831c479fd5e3">&#x202A;folder</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> getCapturedImage(IplImage *img);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> closeWriter();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> process_data(cv::Mat src_img);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // CBOREHOLE_WRITERTHREAD_H_</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_UNITTEST_H_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define CBOREHOLE_UNITTEST_H_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../da/d0a/a00993.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d0a/a00993.html">&#x202A;UnitTest</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d0a/a00993.html#a299cc92121333e2fdd7ac823a84b1292">&#x202A;isQtTestWork</a>(<span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d0a/a00993.html#a7973b3cadd9967707c26afe4bee9f3f3">&#x202A;toUpper</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d0a/a00993.html#ac43fc49189df29ccdf5e0724d29eb5e1">&#x202A;InitEnv</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define TEST_IDOIFILE   1</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define TEST_IMGPROC    0</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define TEST_SERIAL     0</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define TEST_GrabData   0</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define TEST_Remap      0</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#if TEST_IDOIFILE</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d0a/a00993.html#aec5351041b2e2d4f99899f17f8fa7f68">&#x202A;testIDOIFile</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d0a/a00993.html#ad43d9c26d7651f17f60396a8a52fe217">&#x202A;testIDOIFileAppend</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#if TEST_IMGPROC</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d0a/a00993.html#a7267f43f7cbc41c0bbdd6fe73367f199">&#x202A;testImgProc</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#if TEST_SERIAL</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d0a/a00993.html#aca271d6667cb0934345bf0cc8b1124f7">&#x202A;testSerial</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d0a/a00993.html#a8c9cfbdd12fb45435643a31d809d9f3c">&#x202A;test_MySerial</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#if TEST_GrabData</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d0a/a00993.html#ad767a193d579f47ec9b66e1df49a102f">&#x202A;grabData</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#if TEST_Remap</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d0a/a00993.html#afa6a114bae6facfa6c786b703fa137fc">&#x202A;test_remap</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif  //CBOREHOLE_UNITTEST_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00845_html"><div class="ttname"><a href="../../d7/dcf/a00845.html">&#x202A;WriterThread</a></div><div class="ttdoc">&#x202A;A writer thread.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00028">WriterThread.h:28</a></div></div>
-<div class="ttc" id="aa00845_html_aeb5bc24e35be9fd1d65e85d5d51d7a8c"><div class="ttname"><a href="../../d7/dcf/a00845.html#aeb5bc24e35be9fd1d65e85d5d51d7a8c">&#x202A;WriterThread::writer</a></div><div class="ttdeci">&#x202A;CvVideoWriter * writer</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00046">WriterThread.h:46</a></div></div>
-<div class="ttc" id="aa00845_html_ae77184c142376f5cd77f0a61a3cb9f43"><div class="ttname"><a href="../../d7/dcf/a00845.html#ae77184c142376f5cd77f0a61a3cb9f43">&#x202A;WriterThread::writerMutex</a></div><div class="ttdeci">&#x202A;QMutex writerMutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00047">WriterThread.h:47</a></div></div>
-<div class="ttc" id="aa00845_html_a4dd6b20164ab96068d991dc7a6d114f4"><div class="ttname"><a href="../../d7/dcf/a00845.html#a4dd6b20164ab96068d991dc7a6d114f4">&#x202A;WriterThread::writerIsOpened</a></div><div class="ttdeci">&#x202A;volatile bool writerIsOpened</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00049">WriterThread.h:49</a></div></div>
-<div class="ttc" id="aa00845_html_a426faf6668ffc354fff7831c479fd5e3"><div class="ttname"><a href="../../d7/dcf/a00845.html#a426faf6668ffc354fff7831c479fd5e3">&#x202A;WriterThread::folder</a></div><div class="ttdeci">&#x202A;QString folder</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00051">WriterThread.h:51</a></div></div>
-<div class="ttc" id="aa00845_html_a00aded496c1516b96dfe4ad97268ab1d"><div class="ttname"><a href="../../d7/dcf/a00845.html#a00aded496c1516b96dfe4ad97268ab1d">&#x202A;WriterThread::img_index</a></div><div class="ttdeci">&#x202A;int img_index</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00050">WriterThread.h:50</a></div></div>
+<div class="ttc" id="aa00993_html_aca271d6667cb0934345bf0cc8b1124f7"><div class="ttname"><a href="../../da/d0a/a00993.html#aca271d6667cb0934345bf0cc8b1124f7">&#x202A;UnitTest::testSerial</a></div><div class="ttdeci">&#x202A;void testSerial(void)</div><div class="ttdoc">&#x202A;// 测试串口</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00204">UnitTest.cc:204</a></div></div>
+<div class="ttc" id="aa00993_html_ac43fc49189df29ccdf5e0724d29eb5e1"><div class="ttname"><a href="../../da/d0a/a00993.html#ac43fc49189df29ccdf5e0724d29eb5e1">&#x202A;UnitTest::InitEnv</a></div><div class="ttdeci">&#x202A;void InitEnv(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00040">UnitTest.cc:40</a></div></div>
+<div class="ttc" id="aa00993_html_afa6a114bae6facfa6c786b703fa137fc"><div class="ttname"><a href="../../da/d0a/a00993.html#afa6a114bae6facfa6c786b703fa137fc">&#x202A;UnitTest::test_remap</a></div><div class="ttdeci">&#x202A;void test_remap(void)</div><div class="ttdoc">&#x202A;Tests remap</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00381">UnitTest.cc:381</a></div></div>
+<div class="ttc" id="aa00993_html_a8c9cfbdd12fb45435643a31d809d9f3c"><div class="ttname"><a href="../../da/d0a/a00993.html#a8c9cfbdd12fb45435643a31d809d9f3c">&#x202A;UnitTest::test_MySerial</a></div><div class="ttdeci">&#x202A;void test_MySerial(void)</div></div>
+<div class="ttc" id="aa00993_html_ad767a193d579f47ec9b66e1df49a102f"><div class="ttname"><a href="../../da/d0a/a00993.html#ad767a193d579f47ec9b66e1df49a102f">&#x202A;UnitTest::grabData</a></div><div class="ttdeci">&#x202A;void grabData(void)</div><div class="ttdoc">&#x202A;抓取数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00247">UnitTest.cc:247</a></div></div>
+<div class="ttc" id="aa00993_html_aec5351041b2e2d4f99899f17f8fa7f68"><div class="ttname"><a href="../../da/d0a/a00993.html#aec5351041b2e2d4f99899f17f8fa7f68">&#x202A;UnitTest::testIDOIFile</a></div><div class="ttdeci">&#x202A;void testIDOIFile()</div><div class="ttdoc">&#x202A;验证文件操作 读写</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00064">UnitTest.cc:64</a></div></div>
+<div class="ttc" id="aa00993_html_ad43d9c26d7651f17f60396a8a52fe217"><div class="ttname"><a href="../../da/d0a/a00993.html#ad43d9c26d7651f17f60396a8a52fe217">&#x202A;UnitTest::testIDOIFileAppend</a></div><div class="ttdeci">&#x202A;void testIDOIFileAppend()</div><div class="ttdoc">&#x202A;验证文件 附加操作</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00093">UnitTest.cc:93</a></div></div>
+<div class="ttc" id="aa00993_html"><div class="ttname"><a href="../../da/d0a/a00993.html">&#x202A;UnitTest</a></div><div class="ttdoc">&#x202A;A unit test.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00023">UnitTest.h:23</a></div></div>
+<div class="ttc" id="aa00993_html_a7267f43f7cbc41c0bbdd6fe73367f199"><div class="ttname"><a href="../../da/d0a/a00993.html#a7267f43f7cbc41c0bbdd6fe73367f199">&#x202A;UnitTest::testImgProc</a></div><div class="ttdeci">&#x202A;void testImgProc(void)</div><div class="ttdoc">&#x202A;Tests image proc</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00161">UnitTest.cc:161</a></div></div>
+<div class="ttc" id="aa00993_html_a299cc92121333e2fdd7ac823a84b1292"><div class="ttname"><a href="../../da/d0a/a00993.html#a299cc92121333e2fdd7ac823a84b1292">&#x202A;UnitTest::isQtTestWork</a></div><div class="ttdeci">&#x202A;void isQtTestWork(void)</div><div class="ttdoc">&#x202A;保证 QT test 工作</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00020">UnitTest.cc:20</a></div></div>
+<div class="ttc" id="aa00993_html_a7973b3cadd9967707c26afe4bee9f3f3"><div class="ttname"><a href="../../da/d0a/a00993.html#a7973b3cadd9967707c26afe4bee9f3f3">&#x202A;UnitTest::toUpper</a></div><div class="ttdeci">&#x202A;void toUpper()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00029">UnitTest.cc:29</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_18f15a7a138b349aed9dc4e7b3696a50.html">&#x202A;abandon</a></li><li class="navelem"><a class="el" href="../../d4/d51/a00017.html">&#x202A;WriterThread.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_18f15a7a138b349aed9dc4e7b3696a50.html">&#x202A;abandon</a></li><li class="navelem"><a class="el" href="../../d4/d51/a00017.html">&#x202A;UnitTest.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

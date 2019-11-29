@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/model/cdialog.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/model/ALPaintedItem.cc 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.1</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,65 +89,174 @@ $(document).ready(function(){initNavTree('db/dab/a00089_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">cdialog.h</div>  </div>
+<div class="title">ALPaintedItem.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../db/dab/a00089.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CDIALOG_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CDIALOG_H</span></div>
+<a href="../../db/dab/a00089.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../stdafx.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/dc1/a00092.html">&#x202A;ALPaintedItem.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80">    8</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80">&#x202A;CDialogType</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80afb03bb0656c9ea9c4f8a1423eb035052">   10</a></span>&#160;    <a class="code" href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80afb03bb0656c9ea9c4f8a1423eb035052">&#x202A;CDialogType_Unknown</a> = 0,</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80a2b726f2ac9e59c42e58e740f86eba856">   11</a></span>&#160;    <a class="code" href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80a2b726f2ac9e59c42e58e740f86eba856">&#x202A;CDialogType_Warnning</a> = 1,<span class="comment">//警告</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80ae055aab954d8b4fa37a7e868fae96fcf">   12</a></span>&#160;    <a class="code" href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80ae055aab954d8b4fa37a7e868fae96fcf">&#x202A;CDialogType_Ok</a> = 2<span class="comment">//成功</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d3/d58/a00285.html">&#x202A;Ui</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">class </span><a class="code" href="../../d5/dfb/a01021.html">&#x202A;CDialog</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#abeb45674650694f8b42fd0862da82d2d">    4</a></span>&#160;<a class="code" href="../../de/db5/a01181.html#abeb45674650694f8b42fd0862da82d2d">&#x202A;ALPaintedItem::ALPaintedItem</a>(QQuickItem *parent)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    : QQuickPaintedItem(parent),</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    m_brushColor(QColor(0, 0, 0, 255)),</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    m_eraserColor(QColor(255, 255, 255, 255)),</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    m_pDrawPath(nullptr),</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    m_penWidth(0),</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    m_bFlag(true),</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    m_bErasered(false)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    setAcceptedMouseButtons(Qt::LeftButton);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#a9be5a8d26e7fb718cbe6c03f1afedb42">   16</a></span>&#160;<a class="code" href="../../de/db5/a01181.html#a9be5a8d26e7fb718cbe6c03f1afedb42">&#x202A;ALPaintedItem::~ALPaintedItem</a>()</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d5/dfb/a01021.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d5/dfb/a01021.html">&#x202A;CDialog</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#a1b58942919f4781ad6a40e3b4f10760a">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/db5/a01181.html#a1b58942919f4781ad6a40e3b4f10760a">&#x202A;ALPaintedItem::paint</a>(QPainter *painter)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d5/dfb/a01021.html#ae3a42465eaf25b7ac506e93339cf274f">&#x202A;CDialog</a>(<a class="code" href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80">&#x202A;CDialogType</a> type,<span class="keyword">const</span> QString &amp;msg,QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../d5/dfb/a01021.html#a9ef071c98365a6387a533ee43f7bbdd0">&#x202A;~CDialog</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// 默认 定时3000ms</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/dfb/a01021.html#a9af63c38c2387d35cc0a2d2d6bde70d4">&#x202A;StartTimer</a>(<span class="keywordtype">int</span> time_ms = 3000);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/dfb/a01021.html#af65ed9aa2b487d85e3802751b963fed1">&#x202A;InitFrame</a>(<span class="keyword">const</span> QString &amp;msg);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Ui::CDialog *ui;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d5/dfb/a01021.html#a43d216735d32a58348de43fdeba0f752">   34</a></span>&#160;    <a class="code" href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80">&#x202A;CDialogType</a> <a class="code" href="../../d5/dfb/a01021.html#a43d216735d32a58348de43fdeba0f752">&#x202A;m_type</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d5/dfb/a01021.html#a83610a56aa4faa34b36e129854886f27">   35</a></span>&#160;    QTimer *<a class="code" href="../../d5/dfb/a01021.html#a83610a56aa4faa34b36e129854886f27">&#x202A;m_timer</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif // CDIALOG_H</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../de/db5/a01181.html#a53eaebaee0182676d05a514f2965db65">&#x202A;m_bFlag</a>)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        painter-&gt;drawImage(QRectF(0, 0, <a class="code" href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;m_bgImage</a>.width(), <a class="code" href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;m_bgImage</a>.height()), <a class="code" href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;m_bgImage</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        painter-&gt;drawImage(QRectF(0, 0, <a class="code" href="../../de/db5/a01181.html#a0d9e0df44ef0099a1c02b02f20330627">&#x202A;m_tempImage</a>.width(), <a class="code" href="../../de/db5/a01181.html#a0d9e0df44ef0099a1c02b02f20330627">&#x202A;m_tempImage</a>.height()), <a class="code" href="../../de/db5/a01181.html#a0d9e0df44ef0099a1c02b02f20330627">&#x202A;m_tempImage</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        painter-&gt;drawImage(QRectF(0, 0, <a class="code" href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;m_bgImage</a>.width(), <a class="code" href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;m_bgImage</a>.height()), <a class="code" href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;m_bgImage</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#a0e3d2961c2b1a56cc79548a77bbc028d">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/db5/a01181.html#a0e3d2961c2b1a56cc79548a77bbc028d">&#x202A;ALPaintedItem::init</a>()</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;m_bgImage</a> = QImage(static_cast&lt;int&gt;(this-&gt;width()), static_cast&lt;int&gt;(this-&gt;height()), QImage::Format_ARGB32);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../de/db5/a01181.html#a0d9e0df44ef0099a1c02b02f20330627">&#x202A;m_tempImage</a> = QImage(static_cast&lt;int&gt;(this-&gt;width()), static_cast&lt;int&gt;(this-&gt;height()), QImage::Format_ARGB32);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;m_bgImage</a>.fill(QColor(255, 255, 255, 0));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../de/db5/a01181.html#a0d9e0df44ef0099a1c02b02f20330627">&#x202A;m_tempImage</a>.fill(QColor(255, 255, 255, 0));</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#ab69a89e2848591abc965193f7642bf0c">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/db5/a01181.html#ab69a89e2848591abc965193f7642bf0c">&#x202A;ALPaintedItem::clear</a>()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;m_bgImage</a>.fill(QColor(255, 255, 255, 0));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../de/db5/a01181.html#a0d9e0df44ef0099a1c02b02f20330627">&#x202A;m_tempImage</a>.fill(QColor(255, 255, 255, 0));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    update();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#a1e7ca99c454e2adf5bfe764afa5d8f41">   46</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/db5/a01181.html#a1e7ca99c454e2adf5bfe764afa5d8f41">&#x202A;ALPaintedItem::mousePressEvent</a>(QMouseEvent *event)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> (!(event-&gt;button() &amp; acceptedMouseButtons()))</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        QQuickPaintedItem::mousePressEvent(event);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;m_pDrawPath</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;m_pDrawPath</a> = <span class="keyword">new</span> QPainterPath();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;m_pDrawPath</a>-&gt;moveTo(event-&gt;localPos());</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="../../de/db5/a01181.html#ad42e3060267f5a5fd8fad20f01fd33be">&#x202A;m_nowPoint</a> = <span class="keyword">event</span>-&gt;localPos();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#a48286b3700e5ce5b2e34d783351b5a80">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/db5/a01181.html#a48286b3700e5ce5b2e34d783351b5a80">&#x202A;ALPaintedItem::mouseMoveEvent</a>(QMouseEvent *event)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../de/db5/a01181.html#ad29c14c46615e7ead452e59049e8ec4c">&#x202A;m_lastPoint</a> = <a class="code" href="../../de/db5/a01181.html#ad42e3060267f5a5fd8fad20f01fd33be">&#x202A;m_nowPoint</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="../../de/db5/a01181.html#ad42e3060267f5a5fd8fad20f01fd33be">&#x202A;m_nowPoint</a> = <span class="keyword">event</span>-&gt;localPos();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    QPointF tmpPoint = <a class="code" href="../../de/db5/a01181.html#ad42e3060267f5a5fd8fad20f01fd33be">&#x202A;m_nowPoint</a> - <a class="code" href="../../de/db5/a01181.html#ad29c14c46615e7ead452e59049e8ec4c">&#x202A;m_lastPoint</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;m_pDrawPath</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        return ;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (qAbs(tmpPoint.x()) &gt; 0 || qAbs(tmpPoint.y()) &gt; 0)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;m_pDrawPath</a>-&gt;quadTo(<a class="code" href="../../de/db5/a01181.html#ad29c14c46615e7ead452e59049e8ec4c">&#x202A;m_lastPoint</a>.x(), <a class="code" href="../../de/db5/a01181.html#ad29c14c46615e7ead452e59049e8ec4c">&#x202A;m_lastPoint</a>.y(), (<a class="code" href="../../de/db5/a01181.html#ad42e3060267f5a5fd8fad20f01fd33be">&#x202A;m_nowPoint</a>.x() + <a class="code" href="../../de/db5/a01181.html#ad29c14c46615e7ead452e59049e8ec4c">&#x202A;m_lastPoint</a>.x()) / 2, (<a class="code" href="../../de/db5/a01181.html#ad42e3060267f5a5fd8fad20f01fd33be">&#x202A;m_nowPoint</a>.y() + <a class="code" href="../../de/db5/a01181.html#ad29c14c46615e7ead452e59049e8ec4c">&#x202A;m_lastPoint</a>.y()) / 2);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="../../de/db5/a01181.html#a53eaebaee0182676d05a514f2965db65">&#x202A;m_bFlag</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../de/db5/a01181.html#a7b481fa3c215cbff549bfbb8fcf760e8">&#x202A;m_bErasered</a>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="../../de/db5/a01181.html#a5e789f6007f2eb865a3f337e76f44bbf">&#x202A;drawBgLine</a>(*<a class="code" href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;m_pDrawPath</a>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="../../de/db5/a01181.html#ac62d2ed3f3e3b6359da099bda0da020a">&#x202A;drawTmpLine</a>(); </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    QQuickPaintedItem::mouseMoveEvent(event) ;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#aa535415c0d96c80d2ab643f7948183e1">   85</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/db5/a01181.html#aa535415c0d96c80d2ab643f7948183e1">&#x202A;ALPaintedItem::mouseReleaseEvent</a>(QMouseEvent *event)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (!(event-&gt;button() &amp; acceptedMouseButtons()))</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        QQuickPaintedItem::mousePressEvent(event);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;m_pDrawPath</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="../../de/db5/a01181.html#a53eaebaee0182676d05a514f2965db65">&#x202A;m_bFlag</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="../../de/db5/a01181.html#a5e789f6007f2eb865a3f337e76f44bbf">&#x202A;drawBgLine</a>(*<a class="code" href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;m_pDrawPath</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keyword">delete</span> <a class="code" href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;m_pDrawPath</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;m_pDrawPath</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#ac62d2ed3f3e3b6359da099bda0da020a">  103</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/db5/a01181.html#ac62d2ed3f3e3b6359da099bda0da020a">&#x202A;ALPaintedItem::drawTmpLine</a>()</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    QPainter painter(&amp;<a class="code" href="../../de/db5/a01181.html#a0d9e0df44ef0099a1c02b02f20330627">&#x202A;m_tempImage</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="../../de/db5/a01181.html#aea8392d539c394dad9e0de9aa920ea20">&#x202A;drawPenStyle</a>(&amp;painter);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    painter.drawLine(<a class="code" href="../../de/db5/a01181.html#ad29c14c46615e7ead452e59049e8ec4c">&#x202A;m_lastPoint</a>, <a class="code" href="../../de/db5/a01181.html#ad42e3060267f5a5fd8fad20f01fd33be">&#x202A;m_nowPoint</a>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    qreal rad = this-&gt;width() / 375.0 * 170;<span class="comment">//点周围范围值</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;rad:&quot;</span> &lt;&lt; rad;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    QRect rect = QRect(static_cast&lt;int&gt;(<a class="code" href="../../de/db5/a01181.html#ad42e3060267f5a5fd8fad20f01fd33be">&#x202A;m_nowPoint</a>.x() - 5), static_cast&lt;int&gt;(<a class="code" href="../../de/db5/a01181.html#ad42e3060267f5a5fd8fad20f01fd33be">&#x202A;m_nowPoint</a>.y() - 5), 10, 10);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    update(rect.adjusted(static_cast&lt;int&gt;(-rad), static_cast&lt;int&gt;(-rad),static_cast&lt;int&gt;(+rad),static_cast&lt;int&gt;(rad)));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#a5e789f6007f2eb865a3f337e76f44bbf">  114</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/db5/a01181.html#a5e789f6007f2eb865a3f337e76f44bbf">&#x202A;ALPaintedItem::drawBgLine</a>(<span class="keyword">const</span> QPainterPath &amp;path)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    QPainter painter(&amp;<a class="code" href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;m_bgImage</a>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="../../de/db5/a01181.html#aea8392d539c394dad9e0de9aa920ea20">&#x202A;drawPenStyle</a>(&amp;painter);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    painter.drawPath(path);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="../../de/db5/a01181.html#a0d9e0df44ef0099a1c02b02f20330627">&#x202A;m_tempImage</a>.fill(QColor(255, 255, 255, 0));</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    update();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="../../de/db5/a01181.html#aea8392d539c394dad9e0de9aa920ea20">  123</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../de/db5/a01181.html#aea8392d539c394dad9e0de9aa920ea20">&#x202A;ALPaintedItem::drawPenStyle</a>(QPainter *painter)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    painter-&gt;setRenderHint(QPainter::Antialiasing);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    QBrush brush(<a class="code" href="../../de/db5/a01181.html#a1f57ace20706d87e3c2db2860f31c5c8">&#x202A;m_brushColor</a>, Qt::SolidPattern);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../de/db5/a01181.html#a7b481fa3c215cbff549bfbb8fcf760e8">&#x202A;m_bErasered</a>)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        painter-&gt;setCompositionMode(QPainter::CompositionMode_Clear);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        painter-&gt;setPen(QPen(brush, 5 * <a class="code" href="../../de/db5/a01181.html#a90aef703fcf4789abfe077097861bd8f">&#x202A;m_penWidth</a>, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin));</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        painter-&gt;setCompositionMode(QPainter::CompositionMode_SourceOver);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        painter-&gt;setPen(QPen(brush, <a class="code" href="../../de/db5/a01181.html#a90aef703fcf4789abfe077097861bd8f">&#x202A;m_penWidth</a>, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin));</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    painter-&gt;setBrush(Qt::NoBrush);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00089_html_a56d9b6683bc52015612a47f4625c2a80ae055aab954d8b4fa37a7e868fae96fcf"><div class="ttname"><a href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80ae055aab954d8b4fa37a7e868fae96fcf">&#x202A;CDialogType_Ok</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00012">cdialog.h:12</a></div></div>
-<div class="ttc" id="aa01021_html"><div class="ttname"><a href="../../d5/dfb/a01021.html">&#x202A;CDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00020">cdialog.h:20</a></div></div>
-<div class="ttc" id="aa01021_html_a83610a56aa4faa34b36e129854886f27"><div class="ttname"><a href="../../d5/dfb/a01021.html#a83610a56aa4faa34b36e129854886f27">&#x202A;CDialog::m_timer</a></div><div class="ttdeci">&#x202A;QTimer * m_timer</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00035">cdialog.h:35</a></div></div>
-<div class="ttc" id="aa00089_html_a56d9b6683bc52015612a47f4625c2a80afb03bb0656c9ea9c4f8a1423eb035052"><div class="ttname"><a href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80afb03bb0656c9ea9c4f8a1423eb035052">&#x202A;CDialogType_Unknown</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00010">cdialog.h:10</a></div></div>
-<div class="ttc" id="aa00089_html_a56d9b6683bc52015612a47f4625c2a80"><div class="ttname"><a href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80">&#x202A;CDialogType</a></div><div class="ttdeci">&#x202A;CDialogType</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00008">cdialog.h:8</a></div></div>
-<div class="ttc" id="aa00089_html_a56d9b6683bc52015612a47f4625c2a80a2b726f2ac9e59c42e58e740f86eba856"><div class="ttname"><a href="../../db/dab/a00089.html#a56d9b6683bc52015612a47f4625c2a80a2b726f2ac9e59c42e58e740f86eba856">&#x202A;CDialogType_Warnning</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00011">cdialog.h:11</a></div></div>
-<div class="ttc" id="aa01021_html_a9af63c38c2387d35cc0a2d2d6bde70d4"><div class="ttname"><a href="../../d5/dfb/a01021.html#a9af63c38c2387d35cc0a2d2d6bde70d4">&#x202A;CDialog::StartTimer</a></div><div class="ttdeci">&#x202A;void StartTimer(int time_ms=3000)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00025">cdialog.cpp:25</a></div></div>
-<div class="ttc" id="aa00285_html"><div class="ttname"><a href="../../d3/d58/a00285.html">&#x202A;Ui</a></div></div>
-<div class="ttc" id="aa01021_html_a9ef071c98365a6387a533ee43f7bbdd0"><div class="ttname"><a href="../../d5/dfb/a01021.html#a9ef071c98365a6387a533ee43f7bbdd0">&#x202A;CDialog::~CDialog</a></div><div class="ttdeci">&#x202A;~CDialog()</div><div class="ttdoc">&#x202A;CDialog::~CDialog</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00019">cdialog.cpp:19</a></div></div>
-<div class="ttc" id="aa01021_html_a43d216735d32a58348de43fdeba0f752"><div class="ttname"><a href="../../d5/dfb/a01021.html#a43d216735d32a58348de43fdeba0f752">&#x202A;CDialog::m_type</a></div><div class="ttdeci">&#x202A;CDialogType m_type</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00034">cdialog.h:34</a></div></div>
-<div class="ttc" id="aa01021_html_af65ed9aa2b487d85e3802751b963fed1"><div class="ttname"><a href="../../d5/dfb/a01021.html#af65ed9aa2b487d85e3802751b963fed1">&#x202A;CDialog::InitFrame</a></div><div class="ttdeci">&#x202A;void InitFrame(const QString &amp;msg)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00030">cdialog.cpp:30</a></div></div>
-<div class="ttc" id="aa01021_html_ae3a42465eaf25b7ac506e93339cf274f"><div class="ttname"><a href="../../d5/dfb/a01021.html#ae3a42465eaf25b7ac506e93339cf274f">&#x202A;CDialog::CDialog</a></div><div class="ttdeci">&#x202A;CDialog(CDialogType type, const QString &amp;msg, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00003">cdialog.cpp:3</a></div></div>
+<div class="ttc" id="aa01181_html_a5e789f6007f2eb865a3f337e76f44bbf"><div class="ttname"><a href="../../de/db5/a01181.html#a5e789f6007f2eb865a3f337e76f44bbf">&#x202A;ALPaintedItem::drawBgLine</a></div><div class="ttdeci">&#x202A;void drawBgLine(const QPainterPath &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00114">ALPaintedItem.cc:114</a></div></div>
+<div class="ttc" id="aa01181_html_a48286b3700e5ce5b2e34d783351b5a80"><div class="ttname"><a href="../../de/db5/a01181.html#a48286b3700e5ce5b2e34d783351b5a80">&#x202A;ALPaintedItem::mouseMoveEvent</a></div><div class="ttdeci">&#x202A;void mouseMoveEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00063">ALPaintedItem.cc:63</a></div></div>
+<div class="ttc" id="aa01181_html_a90aef703fcf4789abfe077097861bd8f"><div class="ttname"><a href="../../de/db5/a01181.html#a90aef703fcf4789abfe077097861bd8f">&#x202A;ALPaintedItem::m_penWidth</a></div><div class="ttdeci">&#x202A;int m_penWidth</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc1/a00092_source.html#l00058">ALPaintedItem.h:58</a></div></div>
+<div class="ttc" id="aa01181_html_a1f57ace20706d87e3c2db2860f31c5c8"><div class="ttname"><a href="../../de/db5/a01181.html#a1f57ace20706d87e3c2db2860f31c5c8">&#x202A;ALPaintedItem::m_brushColor</a></div><div class="ttdeci">&#x202A;QColor m_brushColor</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc1/a00092_source.html#l00053">ALPaintedItem.h:53</a></div></div>
+<div class="ttc" id="aa01181_html_a7b481fa3c215cbff549bfbb8fcf760e8"><div class="ttname"><a href="../../de/db5/a01181.html#a7b481fa3c215cbff549bfbb8fcf760e8">&#x202A;ALPaintedItem::m_bErasered</a></div><div class="ttdeci">&#x202A;bool m_bErasered</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc1/a00092_source.html#l00060">ALPaintedItem.h:60</a></div></div>
+<div class="ttc" id="aa01181_html_a1e7ca99c454e2adf5bfe764afa5d8f41"><div class="ttname"><a href="../../de/db5/a01181.html#a1e7ca99c454e2adf5bfe764afa5d8f41">&#x202A;ALPaintedItem::mousePressEvent</a></div><div class="ttdeci">&#x202A;void mousePressEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00046">ALPaintedItem.cc:46</a></div></div>
+<div class="ttc" id="aa01181_html_a8a06f8afd5f29f0e6e58c39c6bf34c3d"><div class="ttname"><a href="../../de/db5/a01181.html#a8a06f8afd5f29f0e6e58c39c6bf34c3d">&#x202A;ALPaintedItem::m_bgImage</a></div><div class="ttdeci">&#x202A;QImage m_bgImage</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc1/a00092_source.html#l00051">ALPaintedItem.h:51</a></div></div>
+<div class="ttc" id="aa01181_html_a0d9e0df44ef0099a1c02b02f20330627"><div class="ttname"><a href="../../de/db5/a01181.html#a0d9e0df44ef0099a1c02b02f20330627">&#x202A;ALPaintedItem::m_tempImage</a></div><div class="ttdeci">&#x202A;QImage m_tempImage</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc1/a00092_source.html#l00052">ALPaintedItem.h:52</a></div></div>
+<div class="ttc" id="aa01181_html_a9be5a8d26e7fb718cbe6c03f1afedb42"><div class="ttname"><a href="../../de/db5/a01181.html#a9be5a8d26e7fb718cbe6c03f1afedb42">&#x202A;ALPaintedItem::~ALPaintedItem</a></div><div class="ttdeci">&#x202A;~ALPaintedItem()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00016">ALPaintedItem.cc:16</a></div></div>
+<div class="ttc" id="aa01181_html_ad29c14c46615e7ead452e59049e8ec4c"><div class="ttname"><a href="../../de/db5/a01181.html#ad29c14c46615e7ead452e59049e8ec4c">&#x202A;ALPaintedItem::m_lastPoint</a></div><div class="ttdeci">&#x202A;QPointF m_lastPoint</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc1/a00092_source.html#l00056">ALPaintedItem.h:56</a></div></div>
+<div class="ttc" id="aa01181_html_a53eaebaee0182676d05a514f2965db65"><div class="ttname"><a href="../../de/db5/a01181.html#a53eaebaee0182676d05a514f2965db65">&#x202A;ALPaintedItem::m_bFlag</a></div><div class="ttdeci">&#x202A;bool m_bFlag</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc1/a00092_source.html#l00059">ALPaintedItem.h:59</a></div></div>
+<div class="ttc" id="aa01181_html_ab69a89e2848591abc965193f7642bf0c"><div class="ttname"><a href="../../de/db5/a01181.html#ab69a89e2848591abc965193f7642bf0c">&#x202A;ALPaintedItem::clear</a></div><div class="ttdeci">&#x202A;Q_INVOKABLE void clear()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00039">ALPaintedItem.cc:39</a></div></div>
+<div class="ttc" id="aa01181_html_a51dbc660e8e24ca2b444c2fc31fe436b"><div class="ttname"><a href="../../de/db5/a01181.html#a51dbc660e8e24ca2b444c2fc31fe436b">&#x202A;ALPaintedItem::m_pDrawPath</a></div><div class="ttdeci">&#x202A;QPainterPath * m_pDrawPath</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc1/a00092_source.html#l00057">ALPaintedItem.h:57</a></div></div>
+<div class="ttc" id="aa01181_html_aea8392d539c394dad9e0de9aa920ea20"><div class="ttname"><a href="../../de/db5/a01181.html#aea8392d539c394dad9e0de9aa920ea20">&#x202A;ALPaintedItem::drawPenStyle</a></div><div class="ttdeci">&#x202A;void drawPenStyle(QPainter *painter)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00123">ALPaintedItem.cc:123</a></div></div>
+<div class="ttc" id="aa01181_html_a1b58942919f4781ad6a40e3b4f10760a"><div class="ttname"><a href="../../de/db5/a01181.html#a1b58942919f4781ad6a40e3b4f10760a">&#x202A;ALPaintedItem::paint</a></div><div class="ttdeci">&#x202A;void paint(QPainter *painter)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00020">ALPaintedItem.cc:20</a></div></div>
+<div class="ttc" id="aa01181_html_ad42e3060267f5a5fd8fad20f01fd33be"><div class="ttname"><a href="../../de/db5/a01181.html#ad42e3060267f5a5fd8fad20f01fd33be">&#x202A;ALPaintedItem::m_nowPoint</a></div><div class="ttdeci">&#x202A;QPointF m_nowPoint</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dc1/a00092_source.html#l00055">ALPaintedItem.h:55</a></div></div>
+<div class="ttc" id="aa01181_html_aa535415c0d96c80d2ab643f7948183e1"><div class="ttname"><a href="../../de/db5/a01181.html#aa535415c0d96c80d2ab643f7948183e1">&#x202A;ALPaintedItem::mouseReleaseEvent</a></div><div class="ttdeci">&#x202A;void mouseReleaseEvent(QMouseEvent *event)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00085">ALPaintedItem.cc:85</a></div></div>
+<div class="ttc" id="aa01181_html_abeb45674650694f8b42fd0862da82d2d"><div class="ttname"><a href="../../de/db5/a01181.html#abeb45674650694f8b42fd0862da82d2d">&#x202A;ALPaintedItem::ALPaintedItem</a></div><div class="ttdeci">&#x202A;ALPaintedItem(QQuickItem *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00004">ALPaintedItem.cc:4</a></div></div>
+<div class="ttc" id="aa01181_html_a0e3d2961c2b1a56cc79548a77bbc028d"><div class="ttname"><a href="../../de/db5/a01181.html#a0e3d2961c2b1a56cc79548a77bbc028d">&#x202A;ALPaintedItem::init</a></div><div class="ttdeci">&#x202A;Q_INVOKABLE void init()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00031">ALPaintedItem.cc:31</a></div></div>
+<div class="ttc" id="aa01181_html_ac62d2ed3f3e3b6359da099bda0da020a"><div class="ttname"><a href="../../de/db5/a01181.html#ac62d2ed3f3e3b6359da099bda0da020a">&#x202A;ALPaintedItem::drawTmpLine</a></div><div class="ttdeci">&#x202A;void drawTmpLine()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dab/a00089_source.html#l00103">ALPaintedItem.cc:103</a></div></div>
+<div class="ttc" id="aa00092_html"><div class="ttname"><a href="../../d1/dc1/a00092.html">&#x202A;ALPaintedItem.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_a97d35b535b8178474d1d1f002503b39.html">&#x202A;model</a></li><li class="navelem"><a class="el" href="../../db/dab/a00089.html">&#x202A;cdialog.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_a97d35b535b8178474d1d1f002503b39.html">&#x202A;model</a></li><li class="navelem"><a class="el" href="../../db/dab/a00089.html">&#x202A;ALPaintedItem.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

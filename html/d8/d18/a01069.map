@@ -1,4 +1,12 @@
-<map id="UnitTest" name="UnitTest">
-<area shape="rect" id="node1" title="A unit test." alt="" coords="5,80,76,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,76,32"/>
+<map id="RunPara::StDevice" name="RunPara::StDevice">
+<area shape="rect" id="node1" title="设置硬件的参数信息" alt="" coords="653,209,784,235"/>
+<area shape="rect" id="node2" href="$df/d21/a01039.html#de/d6d/a01095" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="407,5,545,47"/>
+<area shape="rect" id="node3" href="$df/d21/a01039.html#dd/d80/a01075" title="脉冲参数" alt="" coords="407,71,545,112"/>
+<area shape="rect" id="node4" href="$df/d21/a01039.html#d6/d9a/a01083" title="电子罗盘参数 调整罗盘数据" alt="" coords="407,136,545,177"/>
+<area shape="rect" id="node5" title="STL class" alt="" coords="181,174,261,201"/>
+<area shape="rect" id="node10" href="$df/d21/a01039.html#d6/d0d/a01091" title="窗口状态信息" alt="" coords="407,201,545,243"/>
+<area shape="rect" id="node6" title="STL class" alt="" coords="5,167,132,208"/>
+<area shape="rect" id="node7" href="$df/d21/a01039.html#d6/dbc/a01099" title="额外信息" alt="" coords="407,267,545,308"/>
+<area shape="rect" id="node8" href="$df/d21/a01039.html#d0/d1f/a01087" title="相机参数结构体" alt="" coords="407,332,545,373"/>
+<area shape="rect" id="node9" href="$df/d21/a01039.html#d2/d4d/a01079" title="探头参数" alt="" coords="407,397,545,439"/>
 </map>

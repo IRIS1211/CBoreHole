@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/myException.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/CQueue.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.1</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,76 +89,241 @@ $(document).ready(function(){initNavTree('d6/d2d/a00047_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">myException.h</div>  </div>
+<div class="title">CQueue.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d6/d2d/a00047.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************************************/</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05f">   29</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05f">&#x202A;ErrorCode</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa2654b0b73d4f079d11fb190ba0f414e6">   31</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa2654b0b73d4f079d11fb190ba0f414e6">&#x202A;ConfigError</a> = 101,</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51">   32</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51">&#x202A;Error_IDOI_File_Write</a> = 201,    <span class="comment">// IDOI 写文件指针错误</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9">   33</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9">&#x202A;Error_IDOI_FileNotExist</a>         =   5000,</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe">   34</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe">&#x202A;Error_IDOI_FileWritePointerNull</a> =   5001,   <span class="comment">//    写入文件指针为空</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44">   35</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44">&#x202A;Error_IDOI_FileVerifyError</a>      =   5002,   <span class="comment">// 读取文件头校验失败</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66">   37</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66">&#x202A;Error_Image_Resize_Crash</a> =  3001,   <span class="comment">// 图片缩放错误</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa42cfa7783896b2c31ef38744358e4d9f">   38</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa42cfa7783896b2c31ef38744358e4d9f">&#x202A;Error_Image_Resize_Crash_On_Reszie_To_Show</a> = 3002,  <span class="comment">// 在显示过程中的缩放出错</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86">   40</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86">&#x202A;Error_Serial_Timeout_Over_Set_Time</a> = 4002,  <span class="comment">// 串口超时无数据</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05faafe9863228f36a1df34141a859eca7b3">   43</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05faafe9863228f36a1df34141a859eca7b3">&#x202A;Error_Work_Dir_Create_Error</a> = 5000,     <span class="comment">// 工作路径文件夹创建错误</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f">   44</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f">&#x202A;Error_Work_Dir_Pic_Create_Error</a> = 5001,     <span class="comment">// 工作路径下图片文件夹创建错误</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">   45</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">&#x202A;Error_Work_Dir_Video_Create_Error</a> = 5002,     <span class="comment">// 工作路径下视频文件夹创建错误</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">   47</a></span>&#160;    <a class="code" href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">&#x202A;Error_Video_Writer_Null</a> = 6001,     <span class="comment">// 视频流指针为空</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<a href="../../d6/d2d/a00047.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CQUEUE_H__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CQUEUE_H__</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// #include &quot;SerialProc.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/d59/a01013.html">&#x202A;CQueue</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Data</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">   38</a></span>&#160;    std::queue&lt;T&gt; <a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>;   </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#abb949d05c89e26035e33619b5ebc48db">   40</a></span>&#160;    <span class="keyword">typename</span> std::queue&lt;T&gt;::size_type <a class="code" href="../../d7/d59/a01013.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;_size_max</a>;    </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Thread gubbins</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">   42</a></span>&#160;    std::mutex <a class="code" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>;  </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">   43</a></span>&#160;    std::condition_variable <a class="code" href="../../d7/d59/a01013.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>;   </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">   44</a></span>&#160;    std::condition_variable <a class="code" href="../../d7/d59/a01013.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Exit</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// 原子操作</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a731467755163891c27b0991e02cae72c">   48</a></span>&#160;    std::atomic_bool <a class="code" href="../../d7/d59/a01013.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a>; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a7831c704ce59d01acb76eb0d501aae12">   49</a></span>&#160;    std::atomic_bool <a class="code" href="../../d7/d59/a01013.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/**********************************************************************************************/</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../dc/d36/a00925.html">   69</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/d36/a00925.html">&#x202A;MyException</a> : <span class="keyword">public</span> std::exception</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// 错误信息返回</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../dc/d36/a00925.html#a68be52c56e03b4a2f8bcf8e9db016b20">   74</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../dc/d36/a00925.html#a68be52c56e03b4a2f8bcf8e9db016b20">&#x202A;mi_ErrorCode_</a>; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../dc/d36/a00925.html#ac817cad28a7f06c7293ea7b38528216a">   75</a></span>&#160;    std::string <a class="code" href="../../dc/d36/a00925.html#ac817cad28a7f06c7293ea7b38528216a">&#x202A;ms_ErrorMsg_</a>;  </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../dc/d36/a00925.html#a03958e1c9c4c618d132538573aaa81d0">   88</a></span>&#160;    <a class="code" href="../../dc/d36/a00925.html#a03958e1c9c4c618d132538573aaa81d0">&#x202A;MyException</a>(<span class="keywordtype">int</span> num = 100, std::string str = <span class="stringliteral">&quot;Unknown exception&quot;</span>)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">// LOG(INFO) &lt;&lt; &quot;错误代码:&quot; &lt;&lt; err_num &lt;&lt; &quot;:&quot; &lt;&lt; err_str;</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="../../dc/d36/a00925.html#a68be52c56e03b4a2f8bcf8e9db016b20">&#x202A;mi_ErrorCode_</a> = num;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="../../dc/d36/a00925.html#ac817cad28a7f06c7293ea7b38528216a">&#x202A;ms_ErrorMsg_</a> = str;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// log出异常</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        LError(<span class="stringliteral">&quot;Exception occur:\t Code:{}\tMess:{}&quot;</span>, <a class="code" href="../../dc/d36/a00925.html#a68be52c56e03b4a2f8bcf8e9db016b20">&#x202A;mi_ErrorCode_</a>, <a class="code" href="../../dc/d36/a00925.html#ac817cad28a7f06c7293ea7b38528216a">&#x202A;ms_ErrorMsg_</a>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#afa09bd6918457c409fcb25ea2da3f60d">   64</a></span>&#160;    <a class="code" href="../../d7/d59/a01013.html#afa09bd6918457c409fcb25ea2da3f60d">&#x202A;CQueue</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> size_max) :<a class="code" href="../../d7/d59/a01013.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;_size_max</a>(size_max) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="../../d7/d59/a01013.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a> = ATOMIC_VAR_INIT(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="../../d7/d59/a01013.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a> = ATOMIC_VAR_INIT(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="../../d7/d59/a01013.html#afa09bd6918457c409fcb25ea2da3f60d">&#x202A;CQueue</a>(CONST <a class="code" href="../../d7/d59/a01013.html">&#x202A;CQueue</a>&amp;) = <span class="keyword">delete</span>; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#af85abc481df6d6325bde80e6019805b1">   91</a></span>&#160;    <a class="code" href="../../d7/d59/a01013.html#af85abc481df6d6325bde80e6019805b1">&#x202A;~CQueue</a>()</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="../../d7/d59/a01013.html#a9ebd3370594a5d6c7c63863d4aa08964">&#x202A;Quit</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">while</span> (<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size())</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            ;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a282e80149935f212e9c6c6e8ef9d7374">  111</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d59/a01013.html#a282e80149935f212e9c6c6e8ef9d7374">&#x202A;Push</a>(T&amp; data)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="../../d7/d59/a01013.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a> &amp;&amp; !<a class="code" href="../../d7/d59/a01013.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size() &lt; <a class="code" href="../../d7/d59/a01013.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;_size_max</a>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="comment">// _queue.push(std::move(data));</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.push(data);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <a class="code" href="../../d7/d59/a01013.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.notify_all();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="comment">// wait的时候自动释放锁，如果wait到了会获取锁</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="comment">// _fullQue.wait(lock);</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;   </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#aabb5d6f90ce5562f4d30867de96bc983">  147</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d59/a01013.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;Pop</a>(T &amp;data)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="../../d7/d59/a01013.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a>)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty())                <span class="comment">// 队列非空</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="comment">//data = std::move(_queue.front());</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                data = <a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.front();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.pop();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <a class="code" href="../../d7/d59/a01013.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();       <span class="comment">// 通知所有 由于满队无法加入的线程</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty() &amp;&amp; <a class="code" href="../../d7/d59/a01013.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)   <span class="comment">// 队列为空 且不再加入</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="comment">// _empty.wait(lock);          // 等待队列加入元素</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;   </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// 获取队列首位的数据 但是 并不弹出, </span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// 如果被另一个线程访问数据后弹出销毁, 可能导致内存泄漏或者指针无指向</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">// #delete 可能存在问题 不建议使用</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a672cb83493bd4ef33ac54de62383ebfb">  177</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d59/a01013.html#a672cb83493bd4ef33ac54de62383ebfb">&#x202A;Peek</a>(T &amp;data)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="../../d7/d59/a01013.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a>)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty())                <span class="comment">// 队列非空</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <span class="comment">//data = std::move(_queue.front());</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                data = <a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.front();  <span class="comment">// 此处可能出现问题 </span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                <a class="code" href="../../d7/d59/a01013.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();       <span class="comment">// 通知所有 由于满队无法加入的线程</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty() &amp;&amp; <a class="code" href="../../d7/d59/a01013.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)   <span class="comment">// 队列为空 且不再加入</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                <span class="comment">// _empty.wait(lock);          // 等待队列加入元素</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;   </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a9b4d693618a5679ff27f58762549199a">  215</a></span>&#160;    std::shared_ptr&lt;T&gt; <a class="code" href="../../d7/d59/a01013.html#a9b4d693618a5679ff27f58762549199a">&#x202A;Pop</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        std::shared_ptr&lt;T&gt; res = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="../../d7/d59/a01013.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a>)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty())                <span class="comment">// 队列非空</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="comment">//data = std::move(_queue.front());</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                res = std::make_shared&lt;T&gt;(<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.front());</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                <a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.pop();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                <a class="code" href="../../d7/d59/a01013.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();       <span class="comment">// 通知所有 由于满队无法加入的线程</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty() &amp;&amp; <a class="code" href="../../d7/d59/a01013.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a>)   <span class="comment">// 队列为空 且不再加入</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                <span class="keywordflow">return</span> res;     <span class="comment">// 无数据进入 智能返回一个空指针 (可能出错)</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                <a class="code" href="../../d7/d59/a01013.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.wait(lock);          <span class="comment">// 等待队列加入元素</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a36aaded7a809ddcac8672d56b840afaa">  252</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d59/a01013.html#a36aaded7a809ddcac8672d56b840afaa">&#x202A;Finished</a>()</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <a class="code" href="../../d7/d59/a01013.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;_finished</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="../../d7/d59/a01013.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.notify_all();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a9ebd3370594a5d6c7c63863d4aa08964">  267</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d59/a01013.html#a9ebd3370594a5d6c7c63863d4aa08964">&#x202A;Quit</a>()</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="../../d7/d59/a01013.html#a731467755163891c27b0991e02cae72c">&#x202A;_quit</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="../../d7/d59/a01013.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;_empty</a>.notify_all();</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <a class="code" href="../../d7/d59/a01013.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;_fullQue</a>.notify_all();</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a532385f9b87230d55650fe10b0259c57">  285</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d7/d59/a01013.html#a532385f9b87230d55650fe10b0259c57">&#x202A;Length</a>()</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;int&gt;(<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size());</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a979820688e76c1997aa0d36d120df98f">  301</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d7/d59/a01013.html#a979820688e76c1997aa0d36d120df98f">&#x202A;Size</a>()</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;int&gt;(<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size());</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    }</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#a4d55a1a82ab1aa26325a0c93e2603c3f">  318</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d59/a01013.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;Empty</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">return</span> (0 == <a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size());</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="comment">// 判断队列是否已经达到最大值</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#aef66b544a9f5bbf861f21767a75227ea">  325</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d59/a01013.html#aef66b544a9f5bbf861f21767a75227ea">&#x202A;Full</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/d59/a01013.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;_size_max</a> == <a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.size();</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="../../d7/d59/a01013.html#aecb92693aa7f2b4eb791930203cc39ea">  342</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d59/a01013.html#aecb92693aa7f2b4eb791930203cc39ea">&#x202A;Clear</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;_mutex</a>);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;_queue</a>.empty ())</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        {</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <a class="code" href="../../d7/d59/a01013.html#a9b4d693618a5679ff27f58762549199a">&#x202A;Pop</a>();  <span class="comment">// 依次弹出数据</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    }</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;};</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">&#x202A;Error_Work_Dir_Video_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00045">myException.h:45</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05fa2654b0b73d4f079d11fb190ba0f414e6"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa2654b0b73d4f079d11fb190ba0f414e6">&#x202A;ConfigError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00031">myException.h:31</a></div></div>
-<div class="ttc" id="aa00925_html_ac817cad28a7f06c7293ea7b38528216a"><div class="ttname"><a href="../../dc/d36/a00925.html#ac817cad28a7f06c7293ea7b38528216a">&#x202A;MyException::ms_ErrorMsg_</a></div><div class="ttdeci">&#x202A;std::string ms_ErrorMsg_</div><div class="ttdoc">&#x202A;错误消息</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00075">myException.h:75</a></div></div>
-<div class="ttc" id="aa00925_html"><div class="ttname"><a href="../../dc/d36/a00925.html">&#x202A;MyException</a></div><div class="ttdoc">&#x202A;直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00069">myException.h:69</a></div></div>
-<div class="ttc" id="aa00925_html_a03958e1c9c4c618d132538573aaa81d0"><div class="ttname"><a href="../../dc/d36/a00925.html#a03958e1c9c4c618d132538573aaa81d0">&#x202A;MyException::MyException</a></div><div class="ttdeci">&#x202A;MyException(int num=100, std::string str=&quot;Unknown exception&quot;)</div><div class="ttdoc">&#x202A;初始对象生成 默认会出现 位置错误 对于错误异常 直接处理结果</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00088">myException.h:88</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9">&#x202A;Error_IDOI_FileNotExist</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00033">myException.h:33</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86">&#x202A;Error_Serial_Timeout_Over_Set_Time</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00040">myException.h:40</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe">&#x202A;Error_IDOI_FileWritePointerNull</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">myException.h:34</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f">&#x202A;Error_Work_Dir_Pic_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00044">myException.h:44</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">&#x202A;Error_Video_Writer_Null</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00047">myException.h:47</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66">&#x202A;Error_Image_Resize_Crash</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00037">myException.h:37</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05f"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05f">&#x202A;ErrorCode</a></div><div class="ttdeci">&#x202A;ErrorCode</div><div class="ttdoc">&#x202A;定义错误代码 表示不同功能, 从小到达依次定义 可以参考错误代码表</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00029">myException.h:29</a></div></div>
-<div class="ttc" id="aa00925_html_a68be52c56e03b4a2f8bcf8e9db016b20"><div class="ttname"><a href="../../dc/d36/a00925.html#a68be52c56e03b4a2f8bcf8e9db016b20">&#x202A;MyException::mi_ErrorCode_</a></div><div class="ttdeci">&#x202A;int mi_ErrorCode_</div><div class="ttdoc">&#x202A;错误代码</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00074">myException.h:74</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44">&#x202A;Error_IDOI_FileVerifyError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00035">myException.h:35</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05fa42cfa7783896b2c31ef38744358e4d9f"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05fa42cfa7783896b2c31ef38744358e4d9f">&#x202A;Error_Image_Resize_Crash_On_Reszie_To_Show</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00038">myException.h:38</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05faafe9863228f36a1df34141a859eca7b3"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05faafe9863228f36a1df34141a859eca7b3">&#x202A;Error_Work_Dir_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00043">myException.h:43</a></div></div>
-<div class="ttc" id="aa00047_html_a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51"><div class="ttname"><a href="../../d6/d2d/a00047.html#a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51">&#x202A;Error_IDOI_File_Write</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00032">myException.h:32</a></div></div>
+<div class="ttc" id="aa01013_html_a9ebd3370594a5d6c7c63863d4aa08964"><div class="ttname"><a href="../../d7/d59/a01013.html#a9ebd3370594a5d6c7c63863d4aa08964">&#x202A;CQueue::Quit</a></div><div class="ttdeci">&#x202A;void Quit()</div><div class="ttdoc">&#x202A;Quits this CQueue 退出队列, 无法再加入压入或者弹出数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00267">CQueue.h:267</a></div></div>
+<div class="ttc" id="aa01013_html_afa09bd6918457c409fcb25ea2da3f60d"><div class="ttname"><a href="../../d7/d59/a01013.html#afa09bd6918457c409fcb25ea2da3f60d">&#x202A;CQueue::CQueue</a></div><div class="ttdeci">&#x202A;CQueue(const size_t size_max)</div><div class="ttdoc">&#x202A;初始化队列长度,并将退出标志和 满信号标志置空</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00064">CQueue.h:64</a></div></div>
+<div class="ttc" id="aa01013_html_a36aaded7a809ddcac8672d56b840afaa"><div class="ttname"><a href="../../d7/d59/a01013.html#a36aaded7a809ddcac8672d56b840afaa">&#x202A;CQueue::Finished</a></div><div class="ttdeci">&#x202A;void Finished()</div><div class="ttdoc">&#x202A;The queue has Finished accepting input 标识队列完成输入 不再继续输入</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00252">CQueue.h:252</a></div></div>
+<div class="ttc" id="aa01013_html_a282e80149935f212e9c6c6e8ef9d7374"><div class="ttname"><a href="../../d7/d59/a01013.html#a282e80149935f212e9c6c6e8ef9d7374">&#x202A;CQueue::Push</a></div><div class="ttdeci">&#x202A;bool Push(T &amp;data)</div><div class="ttdoc">&#x202A;队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00111">CQueue.h:111</a></div></div>
+<div class="ttc" id="aa01013_html_a17dbdf1f0bd8a2a88339ca6500ecccfd"><div class="ttname"><a href="../../d7/d59/a01013.html#a17dbdf1f0bd8a2a88339ca6500ecccfd">&#x202A;CQueue::_empty</a></div><div class="ttdeci">&#x202A;std::condition_variable _empty</div><div class="ttdoc">&#x202A;队列为空的信号</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00044">CQueue.h:44</a></div></div>
+<div class="ttc" id="aa01013_html_a7916b9e86573d3fe1ff69a0cf2ba57e2"><div class="ttname"><a href="../../d7/d59/a01013.html#a7916b9e86573d3fe1ff69a0cf2ba57e2">&#x202A;CQueue::_fullQue</a></div><div class="ttdeci">&#x202A;std::condition_variable _fullQue</div><div class="ttdoc">&#x202A;队列满了的信号</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00043">CQueue.h:43</a></div></div>
+<div class="ttc" id="aa01013_html_aef66b544a9f5bbf861f21767a75227ea"><div class="ttname"><a href="../../d7/d59/a01013.html#aef66b544a9f5bbf861f21767a75227ea">&#x202A;CQueue::Full</a></div><div class="ttdeci">&#x202A;bool Full(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00325">CQueue.h:325</a></div></div>
+<div class="ttc" id="aa01013_html_a34d45f7666abe5308d3d8623a85b8f1c"><div class="ttname"><a href="../../d7/d59/a01013.html#a34d45f7666abe5308d3d8623a85b8f1c">&#x202A;CQueue::_mutex</a></div><div class="ttdeci">&#x202A;std::mutex _mutex</div><div class="ttdoc">&#x202A;线程操作 锁</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00042">CQueue.h:42</a></div></div>
+<div class="ttc" id="aa01013_html_a3d59f87a0110946f7391d816346a23dd"><div class="ttname"><a href="../../d7/d59/a01013.html#a3d59f87a0110946f7391d816346a23dd">&#x202A;CQueue::_queue</a></div><div class="ttdeci">&#x202A;std::queue&lt; T &gt; _queue</div><div class="ttdoc">&#x202A;存储数据的真实队列, 不是线程安全的</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00038">CQueue.h:38</a></div></div>
+<div class="ttc" id="aa01013_html_a7831c704ce59d01acb76eb0d501aae12"><div class="ttname"><a href="../../d7/d59/a01013.html#a7831c704ce59d01acb76eb0d501aae12">&#x202A;CQueue::_finished</a></div><div class="ttdeci">&#x202A;std::atomic_bool _finished</div><div class="ttdoc">&#x202A;{ false }; // 完成信号 // 表示不再继续输入数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00049">CQueue.h:49</a></div></div>
+<div class="ttc" id="aa01013_html"><div class="ttname"><a href="../../d7/d59/a01013.html">&#x202A;CQueue</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">CQueue.h:34</a></div></div>
+<div class="ttc" id="aa01013_html_a731467755163891c27b0991e02cae72c"><div class="ttname"><a href="../../d7/d59/a01013.html#a731467755163891c27b0991e02cae72c">&#x202A;CQueue::_quit</a></div><div class="ttdeci">&#x202A;std::atomic_bool _quit</div><div class="ttdoc">&#x202A;{ false }; // 退出信号</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00048">CQueue.h:48</a></div></div>
+<div class="ttc" id="aa01013_html_a672cb83493bd4ef33ac54de62383ebfb"><div class="ttname"><a href="../../d7/d59/a01013.html#a672cb83493bd4ef33ac54de62383ebfb">&#x202A;CQueue::Peek</a></div><div class="ttdeci">&#x202A;bool Peek(T &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00177">CQueue.h:177</a></div></div>
+<div class="ttc" id="aa01013_html_abb949d05c89e26035e33619b5ebc48db"><div class="ttname"><a href="../../d7/d59/a01013.html#abb949d05c89e26035e33619b5ebc48db">&#x202A;CQueue::_size_max</a></div><div class="ttdeci">&#x202A;std::queue&lt; T &gt;::size_type _size_max</div><div class="ttdoc">&#x202A;队列的最大长度</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00040">CQueue.h:40</a></div></div>
+<div class="ttc" id="aa01013_html_aecb92693aa7f2b4eb791930203cc39ea"><div class="ttname"><a href="../../d7/d59/a01013.html#aecb92693aa7f2b4eb791930203cc39ea">&#x202A;CQueue::Clear</a></div><div class="ttdeci">&#x202A;bool Clear(void)</div><div class="ttdoc">&#x202A;清空队列</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00342">CQueue.h:342</a></div></div>
+<div class="ttc" id="aa01013_html_a532385f9b87230d55650fe10b0259c57"><div class="ttname"><a href="../../d7/d59/a01013.html#a532385f9b87230d55650fe10b0259c57">&#x202A;CQueue::Length</a></div><div class="ttdeci">&#x202A;int Length()</div><div class="ttdoc">&#x202A;Gets the Length 返回队列目前长度</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00285">CQueue.h:285</a></div></div>
+<div class="ttc" id="aa01013_html_a4d55a1a82ab1aa26325a0c93e2603c3f"><div class="ttname"><a href="../../d7/d59/a01013.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;CQueue::Empty</a></div><div class="ttdeci">&#x202A;bool Empty(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00318">CQueue.h:318</a></div></div>
+<div class="ttc" id="aa01013_html_aabb5d6f90ce5562f4d30867de96bc983"><div class="ttname"><a href="../../d7/d59/a01013.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;CQueue::Pop</a></div><div class="ttdeci">&#x202A;bool Pop(T &amp;data)</div><div class="ttdoc">&#x202A;返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00147">CQueue.h:147</a></div></div>
+<div class="ttc" id="aa01013_html_a9b4d693618a5679ff27f58762549199a"><div class="ttname"><a href="../../d7/d59/a01013.html#a9b4d693618a5679ff27f58762549199a">&#x202A;CQueue::Pop</a></div><div class="ttdeci">&#x202A;std::shared_ptr&lt; T &gt; Pop(void)</div><div class="ttdoc">&#x202A;弹出一个元素 直接返回 出错无法报错</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00215">CQueue.h:215</a></div></div>
+<div class="ttc" id="aa01013_html_a979820688e76c1997aa0d36d120df98f"><div class="ttname"><a href="../../d7/d59/a01013.html#a979820688e76c1997aa0d36d120df98f">&#x202A;CQueue::Size</a></div><div class="ttdeci">&#x202A;int Size()</div><div class="ttdoc">&#x202A;Gets the Size 返回当前队列长度</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00301">CQueue.h:301</a></div></div>
+<div class="ttc" id="aa01013_html_af85abc481df6d6325bde80e6019805b1"><div class="ttname"><a href="../../d7/d59/a01013.html#af85abc481df6d6325bde80e6019805b1">&#x202A;CQueue::~CQueue</a></div><div class="ttdeci">&#x202A;~CQueue()</div><div class="ttdoc">&#x202A;Finalizes an instance of the CQueue class 销毁队列, 退出线程 清除数据 // 存在问题</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00091">CQueue.h:91</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d6/d2d/a00047.html">&#x202A;myException.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d6/d2d/a00047.html">&#x202A;CQueue.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

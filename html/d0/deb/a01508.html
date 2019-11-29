@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;System Para 类实现</title>
+<title>&#x202A;CBoreHole: &#x202A;CBoreHole  工程说明</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,10 +89,35 @@ $(document).ready(function(){initNavTree('d0/deb/a01508.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;System Para 类实现 </div>  </div>
+<div class="title">&#x202A;CBoreHole 工程说明 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><p class="DocNodeLTR">设备为测孔用图像采集设备,能够满足特定情况下的工程应用</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md103"></a>
+软件说明</h1>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md104"></a>
+使用流程说明</h2>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md105"></a>
+1. 系统启动阶段</h3>
+<p class="DocNodeLTR">1.1 读取主配置文件 <em><a class="el" href="../../dd/de2/a00320.html">Config.yml</a></em> 获取程序运行配置文件位置( 此位置可能自定义 ) 1.2 查看程序上一次执行或者备份时间 决定执行程序备份 放置到 ( <em>Config/Backup</em> ) 文件夹中 并删除时间过久的备份文件 1.3 每次打开显示上一次使用的参数 避免过多修改</p>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md106"></a>
+2. 正常执行阶段</h3>
+<p class="DocNodeLTR">下面章节介绍各个窗口的显示,分为单独的文档介绍内容</p>
+<p class="DocNodeLTR">设置窗口</p>
+<p class="DocNodeLTR">浏览窗口</p>
+<p class="DocNodeLTR">工作窗口</p>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md107"></a>
+3. 退出收尾阶段</h3>
+<p class="DocNodeLTR">处理后续收尾工作</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md108"></a>
+软件架构</h2>
+<p class="DocNodeLTR">系统控件属于自己编写</p>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md109"></a>
+自定义文件结构</h3>
+<p class="DocNodeLTR">IDOIFIle 详细文档见 [自定义文件结构]()./model/IDOIFile.md)</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md110"></a>
+硬件说明</h1>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

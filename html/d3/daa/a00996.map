@@ -1,10 +1,4 @@
-<map id="Serial" name="Serial">
-<area shape="rect" id="node1" title="A serial." alt="" coords="87,377,141,404"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,288,76,315"/>
-<area shape="rect" id="node3" href="$df/d39/a00950.html" title=" " alt="" coords="159,288,312,315"/>
-<area shape="rect" id="node4" title=" " alt="" coords="152,184,319,211"/>
-<area shape="rect" id="node5" href="$d2/dd5/a01002.html" title="暂存 串口发送回来的 分组数据" alt="" coords="78,95,161,121"/>
-<area shape="rect" id="node6" title="STL class" alt="" coords="189,95,303,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="227,5,265,32"/>
-<area shape="rect" id="node8" href="$df/d39/a00950.html" title="Queue of cs." alt="" coords="343,184,443,211"/>
+<map id="WriterThread" name="WriterThread">
+<area shape="rect" id="node1" title="A writer thread." alt="" coords="5,80,101,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="18,5,89,32"/>
 </map>

@@ -1,4 +1,5 @@
-<map id="WorkWindow" name="WorkWindow">
-<area shape="rect" id="node1" title="Form for viewing the work." alt="" coords="9,80,108,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,112,32"/>
+<map id="RunPara::StDevice::StSerial" name="RunPara::StDevice::StSerial">
+<area shape="rect" id="node1" title="窗口状态信息" alt="" coords="5,185,144,227"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="35,96,115,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="11,5,138,47"/>
 </map>

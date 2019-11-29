@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/docs/module/imageExpansion.md 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/test_utils_string.cc 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.1</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -88,16 +88,148 @@ $(document).ready(function(){initNavTree('d1/da8/a00230.html','../../');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
   <div class="headertitle">
-<div class="title">D:/Code/Vision/Camera/Project/CBoreHole/docs/module/imageExpansion.md 文件参考</div>  </div>
+<div class="title">test_utils_string.cc 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a href="../../d1/da8/a00230_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a0c8356354e7084226f483b3c82f7c8e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html#a0c8356354e7084226f483b3c82f7c8e8">TEST_CASE</a> (&quot;Test utils_string Func Str2Vec&quot;)</td></tr>
+<tr class="separator:a0c8356354e7084226f483b3c82f7c8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66fafdc4d4d512ca22125664739eb6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html#ab66fafdc4d4d512ca22125664739eb6a">TEST_CASE</a> (&quot;Test utils_string Func Str2Vector&quot;)</td></tr>
+<tr class="separator:ab66fafdc4d4d512ca22125664739eb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9271be2aa3d5065cc51196d96d8a5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html#ace9271be2aa3d5065cc51196d96d8a5c">TEST_CASE</a> (&quot;Test utils_string Func StrVersionToInt&quot;)</td></tr>
+<tr class="separator:ace9271be2aa3d5065cc51196d96d8a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a0c8356354e7084226f483b3c82f7c8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8356354e7084226f483b3c82f7c8e8">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Test utils_string Func Str2Vec&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d1/da8/a00230_source.html">test_utils_string.cc</a> 第 <a class="el" href="../../d1/da8/a00230_source.html#l00007">7</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    std::string str(<span class="stringliteral">&quot;Windows,Linux,,MacOS,&quot;</span>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    std::vector&lt;std::string&gt; res;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    res = <a class="code" href="../../dc/d9e/a01305.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a>(str, res,<span class="charliteral">&#39;,&#39;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    CHECK(res.size() == 3);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    res.clear();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    res = <a class="code" href="../../dc/d9e/a01305.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a>(str, res, <span class="charliteral">&#39;,&#39;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    CHECK(res.size() == 4);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../dc/d9e/a01305.html#aa9618ca3dfef95482acfb3f973eb1e5e">&#x202A;Utils_String::CoutVector</a>(res);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/da8/a00230_a0c8356354e7084226f483b3c82f7c8e8_cgraph.png" border="0" usemap="#d1/da8/a00230_a0c8356354e7084226f483b3c82f7c8e8_cgraph" alt=""/></div>
+<map name="d1/da8/a00230_a0c8356354e7084226f483b3c82f7c8e8_cgraph" id="d1/da8/a00230_a0c8356354e7084226f483b3c82f7c8e8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,103,57"/>
+<area shape="rect" href="../../dc/d9e/a01305.html#aa9618ca3dfef95482acfb3f973eb1e5e" title=" " alt="" coords="151,5,313,32"/>
+<area shape="rect" href="../../dc/d9e/a01305.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="160,56,304,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab66fafdc4d4d512ca22125664739eb6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66fafdc4d4d512ca22125664739eb6a">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Test utils_string Func Str2Vector&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d1/da8/a00230_source.html">test_utils_string.cc</a> 第 <a class="el" href="../../d1/da8/a00230_source.html#l00021">21</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::string str(<span class="stringliteral">&quot;Windows,Linux||,&#39;&#39;,MacOS All&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::vector&lt;std::string&gt; res;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    res = <a class="code" href="../../dc/d9e/a01305.html#a09734b79282d4132596b4a11dcb8175d">&#x202A;Utils_String::Str2Vector</a>(str,res, <span class="stringliteral">&quot;,| &quot;</span>,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../dc/d9e/a01305.html#aa9618ca3dfef95482acfb3f973eb1e5e">&#x202A;Utils_String::CoutVector</a>(res);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/da8/a00230_ab66fafdc4d4d512ca22125664739eb6a_cgraph.png" border="0" usemap="#d1/da8/a00230_ab66fafdc4d4d512ca22125664739eb6a_cgraph" alt=""/></div>
+<map name="d1/da8/a00230_ab66fafdc4d4d512ca22125664739eb6a_cgraph" id="d1/da8/a00230_ab66fafdc4d4d512ca22125664739eb6a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,103,57"/>
+<area shape="rect" href="../../dc/d9e/a01305.html#aa9618ca3dfef95482acfb3f973eb1e5e" title=" " alt="" coords="151,5,313,32"/>
+<area shape="rect" href="../../dc/d9e/a01305.html#a09734b79282d4132596b4a11dcb8175d" title="返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 https://segmentfault.com/a/1190000002483483" alt="" coords="153,56,311,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ace9271be2aa3d5065cc51196d96d8a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9271be2aa3d5065cc51196d96d8a5c">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Test utils_string Func StrVersionToInt&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d1/da8/a00230_source.html">test_utils_string.cc</a> 第 <a class="el" href="../../d1/da8/a00230_source.html#l00029">29</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    CHECK(<a class="code" href="../../dc/d9e/a01305.html#ae622a70f87186c0d22e17cb9c59c5697">&#x202A;Utils_String::StringVersionToInt</a>(<span class="stringliteral">&quot;1.1&quot;</span>) == 101);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    CHECK(<a class="code" href="../../dc/d9e/a01305.html#ae622a70f87186c0d22e17cb9c59c5697">&#x202A;Utils_String::StringVersionToInt</a>(<span class="stringliteral">&quot;10.0&quot;</span>) == 1000);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    CHECK(<a class="code" href="../../dc/d9e/a01305.html#ae622a70f87186c0d22e17cb9c59c5697">&#x202A;Utils_String::StringVersionToInt</a>(<span class="stringliteral">&quot;10.0&quot;</span>) == 1000);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/da8/a00230_ace9271be2aa3d5065cc51196d96d8a5c_cgraph.png" border="0" usemap="#d1/da8/a00230_ace9271be2aa3d5065cc51196d96d8a5c_cgraph" alt=""/></div>
+<map name="d1/da8/a00230_ace9271be2aa3d5065cc51196d96d8a5c_cgraph" id="d1/da8/a00230_ace9271be2aa3d5065cc51196d96d8a5c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,103,39"/>
+<area shape="rect" href="../../dc/d9e/a01305.html#ae622a70f87186c0d22e17cb9c59c5697" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="151,5,325,47"/>
+<area shape="rect" href="../../dc/d9e/a01305.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="373,13,517,39"/>
+</map>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa01305_html_aa9618ca3dfef95482acfb3f973eb1e5e"><div class="ttname"><a href="../../dc/d9e/a01305.html#aa9618ca3dfef95482acfb3f973eb1e5e">&#x202A;Utils_String::CoutVector</a></div><div class="ttdeci">&#x202A;static void CoutVector(T &amp;vec)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00022">utils_string.h:22</a></div></div>
+<div class="ttc" id="aa01305_html_a707dfc08a28c18474486ca8ca43d6b39"><div class="ttname"><a href="../../dc/d9e/a01305.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vec(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const char separator, bool skip_empty=true)</div><div class="ttdoc">&#x202A;将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834...</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00057">utils_string.h:57</a></div></div>
+<div class="ttc" id="aa01305_html_a09734b79282d4132596b4a11dcb8175d"><div class="ttname"><a href="../../dc/d9e/a01305.html#a09734b79282d4132596b4a11dcb8175d">&#x202A;Utils_String::Str2Vector</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vector(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const std::string &amp;delimiters, bool skip_empty=true)</div><div class="ttdoc">&#x202A;返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 https://segmentfault.com/a/1190000002483483</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00094">utils_string.h:94</a></div></div>
+<div class="ttc" id="aa01305_html_ae622a70f87186c0d22e17cb9c59c5697"><div class="ttname"><a href="../../dc/d9e/a01305.html#ae622a70f87186c0d22e17cb9c59c5697">&#x202A;Utils_String::StringVersionToInt</a></div><div class="ttdeci">&#x202A;static int StringVersionToInt(const std::string &amp;str)</div><div class="ttdoc">&#x202A;将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00151">utils_string.cc:151</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d1/da8/a00230.html">&#x202A;imageExpansion.md</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d1/da8/a00230.html">&#x202A;test_utils_string.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

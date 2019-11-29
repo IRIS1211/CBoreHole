@@ -1,4 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$da/d79/a01310.html" title=" " alt="" coords="5,5,124,32"/>
-<area shape="rect" id="node2" href="$d9/de6/a01314.html" title="Form for viewing the work." alt="" coords="172,5,291,32"/>
+<area shape="rect" id="node1" title="STL class" alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node2" href="$dc/d8c/a01297.html" title="直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类" alt="" coords="157,5,271,32"/>
 </map>
