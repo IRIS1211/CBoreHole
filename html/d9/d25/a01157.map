@@ -1,6 +1,5 @@
-<map id="CLogger" name="CLogger">
-<area shape="rect" id="node1" title="A logger." alt="" coords="49,288,120,315"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,184,164,225"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="15,95,155,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="65,5,104,32"/>
+<map id="RunPara::StCFG::StDebug" name="RunPara::StCFG::StDebug">
+<area shape="rect" id="node1" title="配置 debug 参数" alt="" coords="5,229,184,256"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="55,96,135,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="31,5,158,47"/>
 </map>

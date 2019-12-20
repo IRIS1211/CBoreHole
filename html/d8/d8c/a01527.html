@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;软件开发进度</title>
+<title>&#x202A;CBoreHole: &#x202A;QT 多线程串口设计</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.5.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,41 +89,17 @@ $(document).ready(function(){initNavTree('d8/d8c/a01527.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;软件开发进度 </div>  </div>
+<div class="title">&#x202A;QT 多线程串口设计 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><hr  />
- <h1><a class="anchor" id="autotoc_md76"></a>
-20191019</h1>
-<ol type="1" class="DocNodeLTR">
-<li>&#x202A;设定串口程序</li>
-<li>&#x202A;实现串口通信程序, 完成双向传输,测试程序</li>
-</ol>
-<hr  />
-<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md78"></a>
-BUGs List</h1>
-<p class="DocNodeLTR">[h264 @ 000001feb5c71d20] Invalid level prefix error while decoding MB 21 37</p>
-<h1><a class="anchor" id="autotoc_md79"></a>
-20191108</h1>
-<ol type="1" class="DocNodeLTR">
-<li>&#x202A;处理线程计时器问题</li>
-<li>&#x202A;处理点击开启处理的逻辑 以及线程结束的首位工作</li>
-</ol>
-<h1><a class="anchor" id="autotoc_md80"></a>
-20191118</h1>
-<ol type="1" class="DocNodeLTR">
-<li>&#x202A;测试程序出现问题的地方</li>
-<li>&#x202A;测试resize 问题</li>
-<li>&#x202A;QT 界面 移动问题</li>
-<li>&#x202A;QT 界面固定显示问题</li>
-<li>&#x202A;视频流 数据 写入问题</li>
-<li>&#x202A;同时创建文件 读写问题</li>
-</ol>
-<h1><a class="anchor" id="autotoc_md81"></a>
-20191119</h1>
-<ol type="1" class="DocNodeLTR">
-<li>&#x202A;测试开始拼接之后的图像的数据 </li>
-</ol>
+<div class="textblock"><p class="DocNodeLTR">使用 QT 自带的串口做底层设计,然后做属于自己的封装,完成串口读写以及关闭设计,</p>
+<p class="DocNodeLTR">通过设计相应的槽函数, 通过信号进行数据的读取与发送,串口的打开关闭以及设计定时读写设计等功能</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md9"></a>
+多线程串口设计</h1>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md10"></a>
+附加资源</h1>
+<p class="DocNodeLTR">使用 VSPD 虚拟串口, 便于调试过程, 安装文件可见 *./assets/VSPD_CN_Free.zip*</p>
+<p class="DocNodeLTR">虚拟出来 COM3 COM4 进行串口的程序 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

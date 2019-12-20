@@ -38,7 +38,7 @@ PROJECT_NAME           = CBoreHole
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = 1.5.2
+PROJECT_NUMBER         = 1.6.0
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -832,7 +832,11 @@ WARN_LOGFILE           =
 INPUT                  = D:\Code\Vision\Camera\Project\CBoreHole\Code \
                          D:\Code\Vision\Camera\Project\CBoreHole\docs\module \
                          D:\Code\Vision\Camera\Project\CBoreHole\Config \
-                         D:\Code\Vision\Camera\Project\CBoreHole\docs
+                         D:\Code\Vision\Camera\Project\CBoreHole\docs \
+                         D:\Code\Vision\Camera\Project\CBoreHole\docs\module \
+                         ../DevProgress.md \
+                         ../index.md \
+                         ../SystemStructure.md
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses

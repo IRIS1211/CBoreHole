@@ -1,7 +1,6 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,76,108"/>
-<area shape="rect" id="node2" href="$df/d59/a01001.html" title="摄像头 抓取对象, 循环抓取对象数据到缓冲队列中" alt="" coords="124,5,219,32"/>
-<area shape="rect" id="node3" href="$d7/d06/a01005.html" title="处理线程 单独执行过程" alt="" coords="133,56,209,83"/>
-<area shape="rect" id="node4" href="$dc/d06/a01153.html" title="设定串口 处理 函数 解析串口的数据 到系统运行参数中" alt="" coords="130,107,213,133"/>
-<area shape="rect" id="node5" href="$dc/d98/a01177.html" title="A write video. 使用传统线程方式 处理, 程序循环执行 写入动作" alt="" coords="128,157,215,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,76,83"/>
+<area shape="rect" id="node2" href="$de/d26/a01035.html" title="摄像头 抓取对象, 循环抓取对象数据到缓冲队列中" alt="" coords="124,5,219,32"/>
+<area shape="rect" id="node3" href="$df/d21/a01039.html" title="处理线程 单独执行过程" alt="" coords="133,56,209,83"/>
+<area shape="rect" id="node4" href="$d0/d5a/a01199.html" title="A write video. 使用传统线程方式 处理, 程序循环执行 写入动作" alt="" coords="128,107,215,133"/>
 </map>

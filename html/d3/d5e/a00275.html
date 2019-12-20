@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/docs/module/串口通信协议说明.md 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_qt.cc 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -88,16 +88,273 @@ $(document).ready(function(){initNavTree('d3/d5e/a00275.html','../../');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
   <div class="headertitle">
-<div class="title">D:/Code/Vision/Camera/Project/CBoreHole/docs/module/串口通信协议说明.md 文件参考</div>  </div>
+<div class="title">utils_qt.cc 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a href="../../d3/d5e/a00275_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2fa06e07e6a6dd1740cbc879aced80d1"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5e/a00275.html#a2fa06e07e6a6dd1740cbc879aced80d1">getDiskSpace</a> (QString iDriver, bool flag)</td></tr>
+<tr class="memdesc:a2fa06e07e6a6dd1740cbc879aced80d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;获取磁盘容量  <a href="../../d3/d5e/a00275.html#a2fa06e07e6a6dd1740cbc879aced80d1">更多...</a><br /></td></tr>
+<tr class="separator:a2fa06e07e6a6dd1740cbc879aced80d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c32b3164adb610ebd071218bb4c388a"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5e/a00275.html#a3c32b3164adb610ebd071218bb4c388a">getDiskName</a> ()</td></tr>
+<tr class="memdesc:a3c32b3164adb610ebd071218bb4c388a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;获取电脑所有盘符名  <a href="../../d3/d5e/a00275.html#a3c32b3164adb610ebd071218bb4c388a">更多...</a><br /></td></tr>
+<tr class="separator:a3c32b3164adb610ebd071218bb4c388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f96a1e0ee1aead4df603983e3176b2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5e/a00275.html#a09f96a1e0ee1aead4df603983e3176b2">getDiskOccupy</a> (void)</td></tr>
+<tr class="memdesc:a09f96a1e0ee1aead4df603983e3176b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;获取本磁盘的占用  <a href="../../d3/d5e/a00275.html#a09f96a1e0ee1aead4df603983e3176b2">更多...</a><br /></td></tr>
+<tr class="separator:a09f96a1e0ee1aead4df603983e3176b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5045aaf43064e14071d15a206ea85fb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5e/a00275.html#a5045aaf43064e14071d15a206ea85fb3">GetSysDisk</a> (int &amp;nDiskTotal, int &amp;nDiskUsed)</td></tr>
+<tr class="memdesc:a5045aaf43064e14071d15a206ea85fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets system disk  <a href="../../d3/d5e/a00275.html#a5045aaf43064e14071d15a206ea85fb3">更多...</a><br /></td></tr>
+<tr class="separator:a5045aaf43064e14071d15a206ea85fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a3c32b3164adb610ebd071218bb4c388a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c32b3164adb610ebd071218bb4c388a">&#9670;&nbsp;</a></span>getDiskName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList getDiskName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;获取电脑所有盘符名 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk name </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00267">267</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;{</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    QFileInfoList list = QDir::drives();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    QStringList diskNameList(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; list.count(); i++)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        QString str = list.at(i).absoluteDir().absolutePath();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        diskNameList.append(str);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">return</span> diskNameList;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d5e/a00275_a3c32b3164adb610ebd071218bb4c388a_icgraph.png" border="0" usemap="#d3/d5e/a00275_a3c32b3164adb610ebd071218bb4c388a_icgraph" alt=""/></div>
+<map name="d3/d5e/a00275_a3c32b3164adb610ebd071218bb4c388a_icgraph" id="d3/d5e/a00275_a3c32b3164adb610ebd071218bb4c388a_icgraph">
+<area shape="rect" title="获取电脑所有盘符名" alt="" coords="164,5,264,32"/>
+<area shape="rect" href="../../d3/d5e/a00275.html#a09f96a1e0ee1aead4df603983e3176b2" title="获取本磁盘的占用" alt="" coords="5,5,116,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a09f96a1e0ee1aead4df603983e3176b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09f96a1e0ee1aead4df603983e3176b2">&#9670;&nbsp;</a></span>getDiskOccupy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getDiskOccupy </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;获取本磁盘的占用 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk occupy </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00292">292</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    QStringList diskList = <a class="code" href="../../d3/d5e/a00275.html#a3c32b3164adb610ebd071218bb4c388a">&#x202A;getDiskName</a>();</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    QString diskCur = QDir::currentPath().left(1);  <span class="comment">// 获取最左侧的字符 一般是 盘符</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    quint64 totalSpace = <a class="code" href="../../d3/d5e/a00275.html#a2fa06e07e6a6dd1740cbc879aced80d1">&#x202A;getDiskSpace</a>(diskCur, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    quint64 freeSpace = <a class="code" href="../../d3/d5e/a00275.html#a2fa06e07e6a6dd1740cbc879aced80d1">&#x202A;getDiskSpace</a>(diskCur, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">char</span> res[20];</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    sprintf(res, <span class="stringliteral">&quot;%d / %d&quot;</span>, static_cast&lt;int&gt;(freeSpace / 0.1f), static_cast&lt;int&gt;(totalSpace / 0.1f));</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span> std::string(res);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d5e/a00275_a09f96a1e0ee1aead4df603983e3176b2_cgraph.png" border="0" usemap="#d3/d5e/a00275_a09f96a1e0ee1aead4df603983e3176b2_cgraph" alt=""/></div>
+<map name="d3/d5e/a00275_a09f96a1e0ee1aead4df603983e3176b2_cgraph" id="d3/d5e/a00275_a09f96a1e0ee1aead4df603983e3176b2_cgraph">
+<area shape="rect" title="获取本磁盘的占用" alt="" coords="5,31,116,57"/>
+<area shape="rect" href="../../d3/d5e/a00275.html#a3c32b3164adb610ebd071218bb4c388a" title="获取电脑所有盘符名" alt="" coords="165,5,265,32"/>
+<area shape="rect" href="../../d3/d5e/a00275.html#a2fa06e07e6a6dd1740cbc879aced80d1" title="获取磁盘容量" alt="" coords="164,56,267,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2fa06e07e6a6dd1740cbc879aced80d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa06e07e6a6dd1740cbc879aced80d1">&#9670;&nbsp;</a></span>getDiskSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint64 getDiskSpace </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>iDriver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;获取磁盘容量 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iDriver</td><td>&#x202A;Zero-based index of the driver </td></tr>
+    <tr><td class="paramname">flag</td><td>&#x202A;True to flag</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk space </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00238">238</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;{</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">//iDriver为盘符(例如&quot;C\&quot;),flag为true则求磁盘总容量，为false则求磁盘剩余容量</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    LPCWSTR strDriver = reinterpret_cast&lt;LPCWSTR&gt;(iDriver.utf16());</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    ULARGE_INTEGER freeDiskSpaceAvailable, totalDiskSpace, totalFreeDiskSpace;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">//调用函数获取磁盘参数(单位为字节Byte),转化为GB，需要除以(1024*1024*1024)</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    GetDiskFreeSpaceEx(strDriver, &amp;freeDiskSpaceAvailable, &amp;totalDiskSpace, &amp;totalFreeDiskSpace);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span> (flag)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;quint64&gt;(totalDiskSpace.QuadPart / GB);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;quint64&gt;(totalFreeDiskSpace.QuadPart / GB);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d5e/a00275_a2fa06e07e6a6dd1740cbc879aced80d1_icgraph.png" border="0" usemap="#d3/d5e/a00275_a2fa06e07e6a6dd1740cbc879aced80d1_icgraph" alt=""/></div>
+<map name="d3/d5e/a00275_a2fa06e07e6a6dd1740cbc879aced80d1_icgraph" id="d3/d5e/a00275_a2fa06e07e6a6dd1740cbc879aced80d1_icgraph">
+<area shape="rect" title="获取磁盘容量" alt="" coords="164,5,267,32"/>
+<area shape="rect" href="../../d3/d5e/a00275.html#a09f96a1e0ee1aead4df603983e3176b2" title="获取本磁盘的占用" alt="" coords="5,5,116,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5045aaf43064e14071d15a206ea85fb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5045aaf43064e14071d15a206ea85fb3">&#9670;&nbsp;</a></span>GetSysDisk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GetSysDisk </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>nDiskTotal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>nDiskUsed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets system disk </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">nDiskTotal</td><td>&#x202A;The disk total </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">nDiskUsed</td><td>&#x202A;The disk used</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00321">321</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;{</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> path[_MAX_PATH];<span class="comment">//存储当前系统存在的盘符</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                <span class="comment">// int curdrive = _getdrive();</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lFreeAll = 0UL;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lTotalAll = 0UL;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> drive = 1; drive &lt;= 26; drive++)<span class="comment">//遍历所有盘符</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span> (!_chdrive(drive))</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            sprintf(path, <span class="stringliteral">&quot;%c:\\&quot;</span>, drive + <span class="charliteral">&#39;A&#39;</span> - 1);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            ULARGE_INTEGER caller, total, free;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            WCHAR wszClassName[_MAX_PATH];</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            memset(wszClassName, 0, <span class="keyword">sizeof</span>(wszClassName));</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            MultiByteToWideChar(CP_ACP, 0, path, static_cast&lt;int&gt;(strlen(path) + 1), wszClassName,</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                                <span class="keyword">sizeof</span>(wszClassName) / <span class="keyword">sizeof</span>(wszClassName[0]));</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordflow">if</span> (GetDiskFreeSpaceEx(wszClassName, &amp;caller, &amp;total, &amp;free) == 0)</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                qDebug() &lt;&lt; <span class="stringliteral">&quot;GetDiskFreeSpaceEx Filed!&quot;</span>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <span class="keywordtype">double</span> dTepFree = free.QuadPart / (1024.0*1024.0);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordtype">double</span> dTepTotal = total.QuadPart / (1024.0*1024.0);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="comment">//qDebug()&lt;&lt;&quot;Get Windows Disk Information:&quot;&lt;&lt;path&lt;&lt;&quot;--free:&quot;&lt;&lt;dTepFree&lt;&lt;&quot;--total:&quot;&lt;&lt;dTepTotal;</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            lFreeAll += static_cast&lt;unsigned long&gt;(ceil(dTepFree));</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            lTotalAll += static_cast&lt;unsigned long&gt;(ceil(dTepTotal));</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    nDiskUsed = static_cast&lt;int&gt;(lFreeAll);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    nDiskTotal = static_cast&lt;int&gt;(lTotalAll);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa00275_html_a3c32b3164adb610ebd071218bb4c388a"><div class="ttname"><a href="../../d3/d5e/a00275.html#a3c32b3164adb610ebd071218bb4c388a">&#x202A;getDiskName</a></div><div class="ttdeci">&#x202A;QStringList getDiskName()</div><div class="ttdoc">&#x202A;获取电脑所有盘符名</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00267">utils_qt.cc:267</a></div></div>
+<div class="ttc" id="aa00275_html_a2fa06e07e6a6dd1740cbc879aced80d1"><div class="ttname"><a href="../../d3/d5e/a00275.html#a2fa06e07e6a6dd1740cbc879aced80d1">&#x202A;getDiskSpace</a></div><div class="ttdeci">&#x202A;quint64 getDiskSpace(QString iDriver, bool flag)</div><div class="ttdoc">&#x202A;获取磁盘容量</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00238">utils_qt.cc:238</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d3/d5e/a00275.html">&#x202A;串口通信协议说明.md</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d3/d5e/a00275.html">&#x202A;utils_qt.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

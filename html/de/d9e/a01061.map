@@ -1,5 +1,34 @@
-<map id="RunPara::StHole" name="RunPara::StHole">
-<area shape="rect" id="node1" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="9,244,128,271"/>
-<area shape="rect" id="node2" title="STL class" alt="" coords="29,96,109,123"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="5,5,132,47"/>
+<map id="IDOIFile" name="IDOIFile">
+<area shape="rect" id="node1" title="An idoi file." alt="" coords="1545,197,1613,223"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="1297,66,1388,93"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="1077,29,1206,71"/>
+<area shape="rect" id="node4" title="STL class" alt="" coords="700,29,836,71"/>
+<area shape="rect" id="node5" title="STL class" alt="" coords="361,71,490,112"/>
+<area shape="rect" id="node6" title="STL class" alt="" coords="155,54,309,81"/>
+<area shape="rect" id="node8" title="STL class" alt="" coords="359,5,492,47"/>
+<area shape="rect" id="node7" title="STL class" alt="" coords="5,54,105,81"/>
+<area shape="rect" id="node9" href="$d2/d4d/a01079.html" title="系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换" alt="" coords="1307,374,1379,401"/>
+<area shape="rect" id="node10" href="$d2/d4d/a01079.html#db/db2/a01143" title="设置用户UI 参数" alt="" coords="1089,301,1194,327"/>
+<area shape="rect" id="node11" href="$d2/d4d/a01079.html#d8/ddb/a01147" title=" " alt="" coords="689,265,847,291"/>
+<area shape="rect" id="node12" href="$d2/d4d/a01079.html#d3/de1/a01111" title="设置硬件的参数信息" alt="" coords="1076,885,1207,911"/>
+<area shape="rect" id="node13" href="$d2/d4d/a01079.html#de/de4/a01135" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="699,844,837,885"/>
+<area shape="rect" id="node14" href="$d2/d4d/a01079.html#df/dd5/a01115" title="脉冲参数" alt="" coords="699,909,837,951"/>
+<area shape="rect" id="node15" href="$d2/d4d/a01079.html#de/de5/a01123" title="电子罗盘参数 调整罗盘数据" alt="" coords="699,1040,837,1081"/>
+<area shape="rect" id="node16" title="STL class" alt="" coords="385,531,465,558"/>
+<area shape="rect" id="node21" href="$d2/d4d/a01079.html#d8/d84/a01131" title="窗口状态信息" alt="" coords="699,1105,837,1147"/>
+<area shape="rect" id="node22" href="$d2/d4d/a01079.html#d6/d9a/a01083" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="897,214,1052,241"/>
+<area shape="rect" id="node23" href="$d2/d4d/a01079.html#d6/d0d/a01091" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="915,551,1034,578"/>
+<area shape="rect" id="node25" href="$d2/d4d/a01079.html#d7/de8/a01159" title="配置 debug 参数" alt="" coords="679,611,857,638"/>
+<area shape="rect" id="node28" href="$d2/d4d/a01079.html#de/d4a/a01107" title=" " alt="" coords="663,315,873,342"/>
+<area shape="rect" id="node31" href="$d2/d4d/a01079.html#d0/d1f/a01087" title="记录 路径以及其他路径信息" alt="" coords="907,481,1042,507"/>
+<area shape="rect" id="node17" title="STL class" alt="" coords="169,524,295,565"/>
+<area shape="rect" id="node18" href="$d2/d4d/a01079.html#d5/d3e/a01139" title="额外信息" alt="" coords="699,713,837,755"/>
+<area shape="rect" id="node19" href="$d2/d4d/a01079.html#d9/d5b/a01127" title="相机参数结构体" alt="" coords="699,779,837,820"/>
+<area shape="rect" id="node20" href="$d2/d4d/a01079.html#d0/d02/a01119" title="探头参数" alt="" coords="699,975,837,1016"/>
+<area shape="rect" id="node24" href="$d2/d4d/a01079.html#de/df1/a01151" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="1081,611,1201,638"/>
+<area shape="rect" id="node26" href="$d2/d4d/a01079.html#db/d07/a01155" title="可以存储的文件参数" alt="" coords="666,662,870,689"/>
+<area shape="rect" id="node27" href="$d2/d4d/a01079.html#de/d6d/a01095" title="运行过程中的 图像参数" alt="" coords="1077,374,1205,401"/>
+<area shape="rect" id="node29" href="$d2/d4d/a01079.html#d6/dbc/a01099" title="Image 处理参数, 作为图像展开参数" alt="" coords="676,367,860,408"/>
+<area shape="rect" id="node30" href="$d2/d4d/a01079.html#d9/d10/a01103" title="Image Para 参数" alt="" coords="663,433,873,459"/>
+<area shape="rect" id="node32" href="$d0/d90/a01059.html" title="#TODO: 完善拓展信息内容 定义拓展信息内容" alt="" coords="1306,425,1379,451"/>
 </map>

@@ -1,6 +1,10 @@
-<map id="CQueue&lt; T &gt;" name="CQueue&lt; T &gt;">
-<area shape="rect" id="node1" title="Queue of cs." alt="" coords="207,5,307,32"/>
-<area shape="rect" id="node2" href="$df/d39/a00950.html" title=" " alt="" coords="5,95,156,121"/>
-<area shape="rect" id="node3" href="$df/d39/a00950.html" title=" " alt="" coords="180,95,333,121"/>
-<area shape="rect" id="node4" href="$df/d39/a00950.html" title=" " alt="" coords="357,95,492,121"/>
+<map id="StorePara::StDevice" name="StorePara::StDevice">
+<area shape="rect" id="node1" title="设置硬件的参数信息" alt="" coords="252,209,391,235"/>
+<area shape="rect" id="node2" href="$d1/d0b/a00919.html#d0/d3c/a00971" title="窗口状态信息" alt="" coords="5,5,144,47"/>
+<area shape="rect" id="node3" href="$d1/d0b/a00919.html#de/dad/a00963" title="电子罗盘参数 调整罗盘数据" alt="" coords="5,71,144,112"/>
+<area shape="rect" id="node4" href="$d1/d0b/a00919.html#dc/db6/a00955" title="脉冲参数" alt="" coords="5,136,144,177"/>
+<area shape="rect" id="node5" href="$d1/d0b/a00919.html#db/dbf/a00975" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="5,201,144,243"/>
+<area shape="rect" id="node6" href="$d1/d0b/a00919.html#d8/d49/a00979" title="额外信息" alt="" coords="5,267,144,308"/>
+<area shape="rect" id="node7" href="$d1/d0b/a00919.html#db/d40/a00959" title="探头参数" alt="" coords="5,332,144,373"/>
+<area shape="rect" id="node8" href="$d1/d0b/a00919.html#d4/d94/a00967" title="相机参数结构体" alt="" coords="5,397,144,439"/>
 </map>

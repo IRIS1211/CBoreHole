@@ -1,9 +1,6 @@
-<map id="WriteVideo" name="WriteVideo">
-<area shape="rect" id="node1" title="A write video. 使用传统线程方式 处理, 程序循环执行 写入动作" alt="" coords="41,377,127,404"/>
-<area shape="rect" id="node2" title=" " alt="" coords="6,288,77,315"/>
-<area shape="rect" id="node3" href="$d6/d8d/a01007.html" title=" " alt="" coords="101,288,235,315"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,184,155,211"/>
-<area shape="rect" id="node5" title="STL class" alt="" coords="23,95,137,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="61,5,99,32"/>
-<area shape="rect" id="node7" href="$d6/d8d/a01007.html" title=" " alt="" coords="179,184,279,211"/>
+<map id="FrameData" name="FrameData">
+<area shape="rect" id="node1" title="定义数据帧头像" alt="" coords="217,95,303,121"/>
+<area shape="rect" id="node2" href="$d2/d22/a01171.html#dc/d2d/a01183" title="电子罗盘" alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node3" href="$d2/d22/a01171.html#de/d1a/a01179" title="记录电压当前值" alt="" coords="193,5,327,32"/>
+<area shape="rect" id="node4" href="$d2/d22/a01171.html#d6/df2/a01175" title="编码器 的值 保留当前值 上次值 以及运算的中值" alt="" coords="351,5,486,32"/>
 </map>

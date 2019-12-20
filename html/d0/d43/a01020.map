@@ -1,4 +1,4 @@
-<map id="CDialog" name="CDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="6,80,73,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,73,32"/>
+<map id="UnitTest" name="UnitTest">
+<area shape="rect" id="node1" title="A unit test." alt="" coords="5,80,76,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,76,32"/>
 </map>

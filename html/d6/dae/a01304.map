@@ -1,18 +1,4 @@
-<map id="Ui::SetWindow" name="Ui::SetWindow">
-<area shape="rect" id="node1" title="Window for setting the ." alt="" coords="171,648,279,675"/>
-<area shape="rect" id="node2" href="$dc/de0/a01302.html" title=" " alt="" coords="171,572,278,599"/>
-<area shape="rect" id="node3" href="$dd/d09/a01118.html" title="自定义滑动条实现, 滑动之后更改相应的值和相应的关系" alt="" coords="9,336,73,363"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,247,71,273"/>
-<area shape="rect" id="node5" href="$da/dfb/a01174.html" title="自定义 label 能够完成图像显示, 继承事件," alt="" coords="99,336,183,363"/>
-<area shape="rect" id="node6" title=" " alt="" coords="95,247,157,273"/>
-<area shape="rect" id="node7" href="$db/d32/a01122.html" title=" " alt="" coords="209,336,323,363"/>
-<area shape="rect" id="node8" title=" " alt="" coords="176,157,249,184"/>
-<area shape="rect" id="node14" href="$db/d1e/a01126.html" title=" " alt="" coords="233,247,352,273"/>
-<area shape="rect" id="node9" href="$d4/d13/a01162.html" title=" " alt="" coords="377,247,481,273"/>
-<area shape="rect" id="node10" href="$dd/de2/a01134.html" title=" " alt="" coords="289,157,387,184"/>
-<area shape="rect" id="node11" href="$d0/d61/a01130.html" title=" " alt="" coords="375,81,439,108"/>
-<area shape="rect" id="node13" href="$de/d07/a01146.html" title=" " alt="" coords="411,157,505,184"/>
-<area shape="rect" id="node12" title=" " alt="" coords="372,5,443,32"/>
-<area shape="rect" id="node15" href="$d1/d3d/a01110.html" title="继承Qt 自定义文件 提升成为自己的组件, 修改窗口的值之后 保证相应的值 直接赋值到相应的内存中 如果关联了相应的 点击按钮, 按钮点击之后可以触发 数据更改" alt="" coords="427,336,505,363"/>
-<area shape="rect" id="node16" title=" " alt="" coords="505,247,584,273"/>
+<map id="Ui::WorkWindow" name="Ui::WorkWindow">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node2" href="$d3/d07/a01301.html" title=" " alt="" coords="5,5,124,32"/>
 </map>

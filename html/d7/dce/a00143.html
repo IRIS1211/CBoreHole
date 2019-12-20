@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/camProc.cc 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/common.cc 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -91,79 +91,348 @@ $(document).ready(function(){initNavTree('d7/dce/a00143.html','../../');});
   <div class="summary">
 <a href="#func-members">函数</a>  </div>
   <div class="headertitle">
-<div class="title">camProc.cc 文件参考</div>  </div>
+<div class="title">common.cc 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>&#x202A;Camera proc class  
-<a href="#details">更多...</a></p>
 
 <p><a href="../../d7/dce/a00143_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:a7dcf2a41c2d055b6a47c9756dc1db0a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#a7dcf2a41c2d055b6a47c9756dc1db0a2">CreatMapMat</a> (cv::Mat &amp;map_x, cv::Mat &amp;map_y, int cen_x, int cen_y, int min_r, int max_r, int Width, int Height)</td></tr>
-<tr class="memdesc:a7dcf2a41c2d055b6a47c9756dc1db0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;创建 映射map 图像  <a href="../../d7/dce/a00143.html#a7dcf2a41c2d055b6a47c9756dc1db0a2">更多...</a><br /></td></tr>
-<tr class="separator:a7dcf2a41c2d055b6a47c9756dc1db0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475a60f278f15fdbbdffb826f87fba72"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#a475a60f278f15fdbbdffb826f87fba72">CalcPeriodTimeMs</a> (int flg, std::string str)</td></tr>
+<tr class="memdesc:a475a60f278f15fdbbdffb826f87fba72"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;计算经过的 时间 ms 单位  <a href="../../d7/dce/a00143.html#a475a60f278f15fdbbdffb826f87fba72">更多...</a><br /></td></tr>
+<tr class="separator:a475a60f278f15fdbbdffb826f87fba72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b766d952edae9adfd918d4b2e8c43d7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#a1b766d952edae9adfd918d4b2e8c43d7">CalcPeriodTimeFps</a> (int flg, std::string str)</td></tr>
+<tr class="memdesc:a1b766d952edae9adfd918d4b2e8c43d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets time FPS // 计算出来 以当前时间计算出来的 每秒可以执行的次数  <a href="../../d7/dce/a00143.html#a1b766d952edae9adfd918d4b2e8c43d7">更多...</a><br /></td></tr>
+<tr class="separator:a1b766d952edae9adfd918d4b2e8c43d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b816b14fb11dbdb1d0e7986cb0aca9"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#a51b816b14fb11dbdb1d0e7986cb0aca9">CvMat2QImage</a> (const cv::Mat &amp;mat)</td></tr>
+<tr class="memdesc:a51b816b14fb11dbdb1d0e7986cb0aca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;opencv Mat格式转换为 QT 的 QImage  <a href="../../d7/dce/a00143.html#a51b816b14fb11dbdb1d0e7986cb0aca9">更多...</a><br /></td></tr>
+<tr class="separator:a51b816b14fb11dbdb1d0e7986cb0aca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eeb818cd8623175cafd977ba37ffd2a"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#a0eeb818cd8623175cafd977ba37ffd2a">MatToQImage</a> (cv::Mat src_bgr)</td></tr>
+<tr class="memdesc:a0eeb818cd8623175cafd977ba37ffd2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Matrix to q image 将 MAT 类型的数据 转换成 QImage  <a href="../../d7/dce/a00143.html#a0eeb818cd8623175cafd977ba37ffd2a">更多...</a><br /></td></tr>
+<tr class="separator:a0eeb818cd8623175cafd977ba37ffd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13dba3fc65c16e774fde626887d7d71"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#ad13dba3fc65c16e774fde626887d7d71">QImage2cvMat</a> (QImage image)</td></tr>
+<tr class="memdesc:ad13dba3fc65c16e774fde626887d7d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;QT QImage 转换成 opencv Mat 格式图像  <a href="../../d7/dce/a00143.html#ad13dba3fc65c16e774fde626887d7d71">更多...</a><br /></td></tr>
+<tr class="separator:ad13dba3fc65c16e774fde626887d7d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe03cac2d706c0f6d5a11f8c0e26946"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#acbe03cac2d706c0f6d5a11f8c0e26946">ReleaseThread</a> (QThread *qthread)</td></tr>
+<tr class="memdesc:acbe03cac2d706c0f6d5a11f8c0e26946"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;停止进程并同时 删除对象  <a href="../../d7/dce/a00143.html#acbe03cac2d706c0f6d5a11f8c0e26946">更多...</a><br /></td></tr>
+<tr class="separator:acbe03cac2d706c0f6d5a11f8c0e26946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b5d3b3c83f0557e63b42855daab802"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#ad3b5d3b3c83f0557e63b42855daab802">CalcPCA</a> (<a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *dat)</td></tr>
+<tr class="memdesc:ad3b5d3b3c83f0557e63b42855daab802"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据  <a href="../../d7/dce/a00143.html#ad3b5d3b3c83f0557e63b42855daab802">更多...</a><br /></td></tr>
+<tr class="separator:ad3b5d3b3c83f0557e63b42855daab802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab6a3f3a0d0970b03b4b6de388ba319"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#acab6a3f3a0d0970b03b4b6de388ba319">CalcHCMData</a> (<a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *dat)</td></tr>
+<tr class="memdesc:acab6a3f3a0d0970b03b4b6de388ba319"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;根据磁力计 返回的 三个UCHAR值 解算成相应的十进制值  <a href="../../d7/dce/a00143.html#acab6a3f3a0d0970b03b4b6de388ba319">更多...</a><br /></td></tr>
+<tr class="separator:acab6a3f3a0d0970b03b4b6de388ba319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a4d471be78a55fdeef64b3a950052b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#ae6a4d471be78a55fdeef64b3a950052b">CalcAngle</a> (<a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *dat)</td></tr>
+<tr class="memdesc:ae6a4d471be78a55fdeef64b3a950052b"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Calculates the Angle data  <a href="../../d7/dce/a00143.html#ae6a4d471be78a55fdeef64b3a950052b">更多...</a><br /></td></tr>
+<tr class="separator:ae6a4d471be78a55fdeef64b3a950052b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f26c02f30bde495edb12a04ca26904a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#a1f26c02f30bde495edb12a04ca26904a">CalcMagnet</a> (<a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *dat)</td></tr>
+<tr class="memdesc:a1f26c02f30bde495edb12a04ca26904a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Calculates the magnet  <a href="../../d7/dce/a00143.html#a1f26c02f30bde495edb12a04ca26904a">更多...</a><br /></td></tr>
+<tr class="separator:a1f26c02f30bde495edb12a04ca26904a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef339f85a20df81dbcd0c9b54fc2f9a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#aef339f85a20df81dbcd0c9b54fc2f9a5">CalcSumCheck</a> (<a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *dat, int len)</td></tr>
+<tr class="memdesc:aef339f85a20df81dbcd0c9b54fc2f9a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Calculates the sum check 计算开始的len 数据的sum 和,  <a href="../../d7/dce/a00143.html#aef339f85a20df81dbcd0c9b54fc2f9a5">更多...</a><br /></td></tr>
+<tr class="separator:aef339f85a20df81dbcd0c9b54fc2f9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb3a3ea04a2dd20e925608df2cc3640"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#abfb3a3ea04a2dd20e925608df2cc3640">SplitFileName</a> (std::string &amp;file_name, std::string &amp;file_path, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:abfb3a3ea04a2dd20e925608df2cc3640"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将文件路径拆分为 文件路径和文件名称 删除拓展名  <a href="../../d7/dce/a00143.html#abfb3a3ea04a2dd20e925608df2cc3640">更多...</a><br /></td></tr>
+<tr class="separator:abfb3a3ea04a2dd20e925608df2cc3640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36f7da215866e6e1cd05a52aa5bc0b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#ac36f7da215866e6e1cd05a52aa5bc0b6">IsDirExist</a> (const std::string &amp;path, bool create_)</td></tr>
+<tr class="memdesc:ac36f7da215866e6e1cd05a52aa5bc0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;判断文件夹是否存在, 如果不存在 则新建 文件夹 // 不确定能否递归建立  <a href="../../d7/dce/a00143.html#ac36f7da215866e6e1cd05a52aa5bc0b6">更多...</a><br /></td></tr>
+<tr class="separator:ac36f7da215866e6e1cd05a52aa5bc0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146efc099cbdee49a56b4547d272db9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#a146efc099cbdee49a56b4547d272db9b">IsFileExist</a> (const std::string &amp;file, bool create_)</td></tr>
+<tr class="memdesc:a146efc099cbdee49a56b4547d272db9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;判断指定的文件是否存在 // 给定flg 如果不存在则建立文件  <a href="../../d7/dce/a00143.html#a146efc099cbdee49a56b4547d272db9b">更多...</a><br /></td></tr>
+<tr class="separator:a146efc099cbdee49a56b4547d272db9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757663ba676f98ccb99aa73062ec0f15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#a757663ba676f98ccb99aa73062ec0f15">ShowImageOnLable</a> (const cv::Mat &amp;srcImg, QLabel *lb_label, int width, int height)</td></tr>
+<tr class="memdesc:a757663ba676f98ccb99aa73062ec0f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;在相应的label 上显示图片  <a href="../../d7/dce/a00143.html#a757663ba676f98ccb99aa73062ec0f15">更多...</a><br /></td></tr>
+<tr class="separator:a757663ba676f98ccb99aa73062ec0f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada508f63f55e790426a4a235ee420303"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#ada508f63f55e790426a4a235ee420303">emitTimeoutAndStop</a> (QTimer *timer)</td></tr>
+<tr class="memdesc:ada508f63f55e790426a4a235ee420303"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Emit timeout and stop  <a href="../../d7/dce/a00143.html#ada508f63f55e790426a4a235ee420303">更多...</a><br /></td></tr>
+<tr class="separator:ada508f63f55e790426a4a235ee420303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4398c20ecda27598d99d9a661a2ea9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#ac4398c20ecda27598d99d9a661a2ea9c">RenderNumberOnLabel</a> (QLabel *label, float num)</td></tr>
+<tr class="separator:ac4398c20ecda27598d99d9a661a2ea9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516438d193b466735a44c169cae10b05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#a516438d193b466735a44c169cae10b05">RenderNumberOnLabel</a> (QLabel *label, int num)</td></tr>
+<tr class="separator:a516438d193b466735a44c169cae10b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd08ab91977a2738f33adbd7e8306b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dce/a00143.html#a0dd08ab91977a2738f33adbd7e8306b2">AddImageInfo</a> (cv::Mat &amp;img)</td></tr>
+<tr class="separator:a0dd08ab91977a2738f33adbd7e8306b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">Camera proc class </p>
-
-<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">camProc.cc</a> 中定义.</p>
-</div><h2 class="groupheader">函数说明</h2>
-<a id="a7dcf2a41c2d055b6a47c9756dc1db0a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dcf2a41c2d055b6a47c9756dc1db0a2">&#9670;&nbsp;</a></span>CreatMapMat()</h2>
+<h2 class="groupheader">函数说明</h2>
+<a id="a0dd08ab91977a2738f33adbd7e8306b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dd08ab91977a2738f33adbd7e8306b2">&#9670;&nbsp;</a></span>AddImageInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CreatMapMat </td>
+          <td class="memname">bool AddImageInfo </td>
           <td>(</td>
           <td class="paramtype">cv::Mat &amp;&#160;</td>
-          <td class="paramname"><em>map_x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>img</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">cv::Mat &amp;&#160;</td>
-          <td class="paramname"><em>map_y</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00601">601</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;{</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    <a class="code" href="../../d2/d4d/a01079.html#d6/dbc/a01099">&#x202A;RunPara::StImage::StImagePolar</a> *polar_para = &amp;(<a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d2/d4d/a01079.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>);</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    {</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="comment">// 画出来 内外圆</span></div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        cv::circle(img, </div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                             polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>),</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                   polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#aaa0951944900aab9f998b309431fcd90">&#x202A;nImgMinR</a>, </div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                   cv::Scalar(0, 255, 0), </div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                   4);</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        cv::circle(img, </div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;                             polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;                   polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;nImgMaxR</a>, </div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;                   cv::Scalar(0, 255, 0), </div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                   4);</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160; </div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <span class="comment">// 划出来 圆心</span></div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        cv::circle(img, </div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;                             polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                   8, </div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;                   cv::Scalar(255, 0, 0), </div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                   -1);</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <span class="comment">// 画出 分割线 标识 展开的起点</span></div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        cv::arrowedLine(img,</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                 cv::Point(polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                           polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                 cv::Point(polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                           polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a> + 540), </div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                 cv::Scalar(255, 0, 0), </div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                 2);</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    }</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160; </div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="keywordflow">return</span>  <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dce/a00143_a0dd08ab91977a2738f33adbd7e8306b2_icgraph.png" border="0" usemap="#d7/dce/a00143_a0dd08ab91977a2738f33adbd7e8306b2_icgraph" alt=""/></div>
+<map name="d7/dce/a00143_a0dd08ab91977a2738f33adbd7e8306b2_icgraph" id="d7/dce/a00143_a0dd08ab91977a2738f33adbd7e8306b2_icgraph">
+<area shape="rect" title=" " alt="" coords="736,42,836,69"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a14c17111de0cbe2903eee9ab0f388e53" title="单次预览和连续预览" alt="" coords="489,5,674,47"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a89c4f17fbaeaba0884d96a9932973256" title="Slot show camera" alt="" coords="475,71,688,98"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,42,427,69"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,42,168,69"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae6a4d471be78a55fdeef64b3a950052b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a4d471be78a55fdeef64b3a950052b">&#9670;&nbsp;</a></span>CalcAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">float CalcAngle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>dat</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Calculates the Angle data </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;根据磁力计 数据计算相应的角度值</li>
+<li>&#x202A;* Pitch俯仰角: -90.0度 ～ +90.0度：（2字节）乘10后对应0x 13 84 ～ 0x 03 84最高位是符号位 Roll横滚角：-180.0度 ～ +180.0度： （2字节）乘10后对应0x 17 08 ～ 0x 07 08最高位是符号位 Heading方位角：0 ～360.0度: （2字节，地磁正北为0度）乘10后对应0x 00 00 ～ 0x 0E 10</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dat</td><td>&#x202A;If non-null, the dat.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The calculated hcm data. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00315">315</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">float</span> res = (((*dat &amp; 0x0F) &lt;&lt; 8) + (*(dat + 1))) / 10.0f;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">return</span> ((*dat) &amp; 0x10) ? -res : res;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acab6a3f3a0d0970b03b4b6de388ba319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab6a3f3a0d0970b03b4b6de388ba319">&#9670;&nbsp;</a></span>CalcHCMData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CalcHCMData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>dat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;根据磁力计 返回的 三个UCHAR值 解算成相应的十进制值 </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;// 按照手册, 三个字节解算成一个 float 数据</li>
+<li>&#x202A;* // 三个字节 六位 HEX字符 第一位表示符号 后三位表示正值 最后两位表示小数后的值</li>
+<li>&#x202A;* // SXXX.yy 的格式</li>
+<li>&#x202A;* // 例如 0x 10 10 50 = -10.5</li>
+<li>&#x202A;* // 0x 01 10 05 = +110.05 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/14</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dat</td><td>&#x202A;If non-null, the dat.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The calculated hcm data. </dd></dl>
+</li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00286">286</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="comment">// 按照对应的位计算相应的值</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">float</span> res = (*dat % 16) * 100</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        + (*(dat + 1) / 16) * 10</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        + (*(dat + 1) % 16) * 1.0f</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        + (*(dat + 2) / 16) * 0.1f</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        + (*(dat + 2) % 16) * 0.01f;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">// 根据符号为返回相应的值信息</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">return</span> *dat &gt; 16 ? -res : res;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dce/a00143_acab6a3f3a0d0970b03b4b6de388ba319_icgraph.png" border="0" usemap="#d7/dce/a00143_acab6a3f3a0d0970b03b4b6de388ba319_icgraph" alt=""/></div>
+<map name="d7/dce/a00143_acab6a3f3a0d0970b03b4b6de388ba319_icgraph" id="d7/dce/a00143_acab6a3f3a0d0970b03b4b6de388ba319_icgraph">
+<area shape="rect" title="根据磁力计 返回的 三个UCHAR值 解算成相应的十进制值" alt="" coords="188,5,292,32"/>
+<area shape="rect" href="../../d2/d22/a01171.html#a071b93d33a06aea86d23514be375d4cd" title="根据串口数据 更新当前类的值" alt="" coords="5,5,140,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1f26c02f30bde495edb12a04ca26904a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f26c02f30bde495edb12a04ca26904a">&#9670;&nbsp;</a></span>CalcMagnet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CalcMagnet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>dat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Calculates the magnet </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;磁场强度：尽管一般100,000nT就足够了，但仍用3个字节，最高位是符号位 X: - 8,388,607～+ 8,388,607 （单位nT， 3字节有符号整型0xFFFFFF ~0x7FFFFF） Y: - 8,388,607～+ 8,388,607（单位nT，3字节有符号整型0xFFFFFF ~0x7FFFFF） Z: - 8,388,607～+ 8,388,607（单位nT，3字节有符号整型0xFFFFFF ~0x7FFFFF）</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dat</td><td>&#x202A;If non-null, the dat.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The calculated magnet.</dd></dl>
+<ul class="DocNodeLTR">
+<li>&#x202A;磁场强度：尽管一般100,000nT就足够了，但仍用3个字节，最高位是符号位 X: - 8,388,607～+ 8,388,607 （单位nT， 3字节有符号整型0xFFFFFF ~0x7FFFFF） Y: - 8,388,607～+ 8, 388,607（单位nT，3字节有符号整型0xFFFFFF ~0x7FFFFF） Z: - 8,388,607～+ 8,388, 607（单位nT，3字节有符号整型0xFFFFFF ~0x7FFFFF）</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dat</td><td>&#x202A;If non-null, the dat.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The calculated magnet. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00338">338</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;{</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">int</span> res = (((*dat) &amp; 0x7F) &lt;&lt; 16) + ((*(dat + 1)) &lt;&lt; 8) + (*(dat + 2));</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">return</span> (*dat &amp; 0x80) ? -res : res;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad3b5d3b3c83f0557e63b42855daab802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b5d3b3c83f0557e63b42855daab802">&#9670;&nbsp;</a></span>CalcPCA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CalcPCA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>dat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据 </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;编码器反转：0x80 正转：0x00 d2：PCA 高位数据 d3: PCA 次高位数据 d4：PCA 最低位数据</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dat</td><td>&#x202A;If non-null, the dat.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The calculated encoder. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00262">262</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">int</span> res = static_cast&lt;int&gt;(((*(dat + 1)) &lt;&lt; 16) + (*(dat + 2) &lt;&lt; 8) + *(dat + 3));</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">return</span> *(dat) == <a class="code" href="../../d0/d89/a00071.html#af029f43dfa3e14b6c8988a307d32fa02ab1ec3017acb6a3acf7ce57b7b5bdcdce">&#x202A;VDPCASignal</a> ? -res : res;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dce/a00143_ad3b5d3b3c83f0557e63b42855daab802_icgraph.png" border="0" usemap="#d7/dce/a00143_ad3b5d3b3c83f0557e63b42855daab802_icgraph" alt=""/></div>
+<map name="d7/dce/a00143_ad3b5d3b3c83f0557e63b42855daab802_icgraph" id="d7/dce/a00143_ad3b5d3b3c83f0557e63b42855daab802_icgraph">
+<area shape="rect" title="计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据" alt="" coords="188,5,263,32"/>
+<area shape="rect" href="../../d2/d22/a01171.html#a071b93d33a06aea86d23514be375d4cd" title="根据串口数据 更新当前类的值" alt="" coords="5,5,140,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1b766d952edae9adfd918d4b2e8c43d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b766d952edae9adfd918d4b2e8c43d7">&#9670;&nbsp;</a></span>CalcPeriodTimeFps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CalcPeriodTimeFps </td>
+          <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cen_x</em>, </td>
+          <td class="paramname"><em>flg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cen_y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>min_r</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>max_r</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>Width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>Height</em>&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -173,112 +442,990 @@ $(document).ready(function(){initNavTree('d7/dce/a00143.html','../../');});
       </table>
 </div><div class="memdoc">
 
-<p>&#x202A;创建 映射map 图像 </p>
-<p class="DocNodeLTR">为 展开图像创建 map 后续执行起来很快 展开思路 参考 <a href="https://blog.csdn.net/guduruyu/article/details/65436931">https://blog.csdn.net/guduruyu/article/details/65436931</a> 见附件 pdf 公式推导 展开图像角度 从标准座标系 270开始的 顺时针展开 #TODO: 解决缩放 插值的问题</p>
+<p>&#x202A;Gets time FPS // 计算出来 以当前时间计算出来的 每秒可以执行的次数 </p>
+<p class="DocNodeLTR">计算 fps 单位的处理速度</p>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/15</dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">map_x</td><td>&#x202A;The map x coordinate. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">map_y</td><td>&#x202A;The map y coordinate. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">cen_x</td><td>&#x202A;The cen x coordinate. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">cen_y</td><td>&#x202A;The cen y coordinate. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">min_r</td><td>&#x202A;The minimum r. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">max_r</td><td>&#x202A;The maximum r. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">Width</td><td>&#x202A;(Optional) The width. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">Height</td><td>&#x202A;(Optional) The height.</td></tr>
+    <tr><td class="paramname">flg</td><td>&#x202A;0 标识第一次进入 1 标识第二次进度 输出结果值 </td></tr>
+    <tr><td class="paramname">str</td><td>&#x202A;给出一个string 标识 执行哪段程序的 时间周期</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;返回两次两次进入程序 之间时间的倒数 为 FPS 便于显示</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flg</td><td>&#x202A;The flg </td></tr>
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The time FPS </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00059">59</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span>  clock_t gFps_tmp = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">float</span> time_fps = -1;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (!flg)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        gFps_tmp = clock();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// 计算得到的ms 值  生成 字符串输出</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        time_fps = CLOCKS_PER_SEC / static_cast&lt;float&gt;(clock() - gFps_tmp);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        gFps_tmp = 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        str = <span class="stringliteral">&quot;Processs [ &quot;</span> + str + <span class="stringliteral">&quot; ] in&quot;</span> + __FILE__ + std::to_string(__LINE__) + <span class="stringliteral">&quot;:  &quot;</span> + std::to_string(time_fps) + <span class="stringliteral">&quot;fps&quot;</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">// qDebug() &lt;&lt; QString::fromStdString(str);</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> time_fps;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dce/a00143_a1b766d952edae9adfd918d4b2e8c43d7_icgraph.png" border="0" usemap="#d7/dce/a00143_a1b766d952edae9adfd918d4b2e8c43d7_icgraph" alt=""/></div>
+<map name="d7/dce/a00143_a1b766d952edae9adfd918d4b2e8c43d7_icgraph" id="d7/dce/a00143_a1b766d952edae9adfd918d4b2e8c43d7_icgraph">
+<area shape="rect" title="Gets time FPS // 计算出来 以当前时间计算出来的 每秒可以执行的次数" alt="" coords="173,31,308,57"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="5,5,125,32"/>
+<area shape="rect" href="../../df/d21/a01039.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="14,56,117,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a475a60f278f15fdbbdffb826f87fba72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a475a60f278f15fdbbdffb826f87fba72">&#9670;&nbsp;</a></span>CalcPeriodTimeMs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CalcPeriodTimeMs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;计算经过的 时间 ms 单位 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flg</td><td>&#x202A;The flg </td></tr>
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The time milliseconds </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00025">25</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span>  clock_t gTime_tmp = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">float</span> time_ms = -1;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (!flg)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        gTime_tmp = clock();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment">// 计算得到的ms 值  生成 字符串输出</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        time_ms = static_cast&lt;float&gt;(clock() - gTime_tmp)*1000.0f / CLOCKS_PER_SEC;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        str = <span class="stringliteral">&quot;Funciton [ &quot;</span> + str + <span class="stringliteral">&quot; ] in &quot;</span> + __FILE__ + <span class="stringliteral">&quot; - &quot;</span> + std::to_string(__LINE__) + <span class="stringliteral">&quot;:  &quot;</span> + std::to_string(time_ms) + <span class="stringliteral">&quot;ms&quot;</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        qDebug() &lt;&lt; QString::fromStdString(str);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> time_ms;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aef339f85a20df81dbcd0c9b54fc2f9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef339f85a20df81dbcd0c9b54fc2f9a5">&#9670;&nbsp;</a></span>CalcSumCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CalcSumCheck </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>dat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Calculates the sum check 计算开始的len 数据的sum 和, </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;计算结果如果等于 len+1 位置值, 则true 否则 false</li>
+<li>&#x202A;* 罗盘数据 长度 12 AD数据长度为 5</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/16</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dat</td><td>&#x202A;If non-null, the dat. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;(Optional) The length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails.</dd></dl>
+<ul class="DocNodeLTR">
+<li>&#x202A;计算结果如果等于 len+1 位置值, 则true 否则 false</li>
+<li>&#x202A;* 罗盘数据 长度 12 AD数据长度为 5</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/16</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">dat</td><td>&#x202A;If non-null, the dat. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>&#x202A;The length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00360">360</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;{</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> sum = 0;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; i++)</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        sum += *dat++;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordflow">return</span> sum == *dat; <span class="comment">// 判断校验值是否等于结果值</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dce/a00143_aef339f85a20df81dbcd0c9b54fc2f9a5_icgraph.png" border="0" usemap="#d7/dce/a00143_aef339f85a20df81dbcd0c9b54fc2f9a5_icgraph" alt=""/></div>
+<map name="d7/dce/a00143_aef339f85a20df81dbcd0c9b54fc2f9a5_icgraph" id="d7/dce/a00143_aef339f85a20df81dbcd0c9b54fc2f9a5_icgraph">
+<area shape="rect" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="1241,31,1353,57"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a501d9387b58680267b0dfd9e5c569fdb" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="1049,5,1193,32"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="1061,56,1181,83"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a2d4464068d1094563166f6f26976c825" title="循环处理 串口 数据" alt="" coords="824,5,1001,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#ab481e15af6902cba13410c1e665100ff" title="Slot timer run 设置定时器时间到了之后执行的循环操作" alt="" coords="604,5,776,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="389,5,556,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="151,5,341,32"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a51b816b14fb11dbdb1d0e7986cb0aca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b816b14fb11dbdb1d0e7986cb0aca9">&#9670;&nbsp;</a></span>CvMat2QImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage CvMat2QImage </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;opencv Mat格式转换为 QT 的 QImage </p>
+<p class="DocNodeLTR">Cv matrix 2 q image</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/15 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opencv</td><td>&#x202A;mat 图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;QT QImage 图像</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>&#x202A;The matrix</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A QImage </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00092">92</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (mat.empty())</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Mat Image is Empty!&quot;</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// 8-bits unsigned, NO. OF CHANNELS = 1</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (mat.type() == CV_8UC1)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        QImage image(mat.data, mat.cols, mat.rows, static_cast&lt;int&gt;(mat.step), QImage::Format_Grayscale8);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> image;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// 8-bits unsigned, NO. OF CHANNELS = 3</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mat.type() == CV_8UC3)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">// Copy input Mat</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">// const uchar *pSrc = static_cast&lt;const uchar*&gt;(mat.data);</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">// Create QImage with same dimensions as input Mat</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        QImage image(mat.data, mat.cols, mat.rows, static_cast&lt;int&gt;(mat.step), QImage::Format_RGB888);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> image.rgbSwapped();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mat.type() == CV_8UC4)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        QImage image(mat.data, mat.cols, mat.rows, static_cast&lt;int&gt;(mat.step), QImage::Format_ARGB32);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> image;   <span class="comment">//  .copy();</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;ERROR: Mat could not be converted to QImage.&quot;</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> QImage();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dce/a00143_a51b816b14fb11dbdb1d0e7986cb0aca9_icgraph.png" border="0" usemap="#d7/dce/a00143_a51b816b14fb11dbdb1d0e7986cb0aca9_icgraph" alt=""/></div>
+<map name="d7/dce/a00143_a51b816b14fb11dbdb1d0e7986cb0aca9_icgraph" id="d7/dce/a00143_a51b816b14fb11dbdb1d0e7986cb0aca9_icgraph">
+<area shape="rect" title="opencv Mat格式转换为 QT 的 QImage" alt="" coords="1272,97,1383,123"/>
+<area shape="rect" href="../../dd/d80/a01075.html#a95fcda8a05bce42033ab50c78c3f8a44" title="Handles button open file clicked signals" alt="" coords="1040,5,1185,47"/>
+<area shape="rect" href="../../d3/d42/a01275.html#a3f1a23663337082bc684229123014abb" title=" " alt="" coords="1033,71,1192,98"/>
+<area shape="rect" href="../../d7/dce/a00143.html#a757663ba676f98ccb99aa73062ec0f15" title="在相应的label 上显示图片" alt="" coords="1044,122,1181,149"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a4ec884594b80adcfb3a7fa7181e216d4" title="将一副图像显示在 设定的 Label 上" alt="" coords="1001,173,1224,199"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a14c17111de0cbe2903eee9ab0f388e53" title="单次预览和连续预览" alt="" coords="754,27,939,68"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a89c4f17fbaeaba0884d96a9932973256" title="Slot show camera" alt="" coords="740,93,953,119"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="472,63,683,90"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="252,63,415,90"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a41a95073fcd146be53bf16c5649b00b0" title="跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示" alt="" coords="752,165,941,207"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="463,173,692,199"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="271,173,395,199"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,143,130,170"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,195,204,236"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ada508f63f55e790426a4a235ee420303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada508f63f55e790426a4a235ee420303">&#9670;&nbsp;</a></span>emitTimeoutAndStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void emitTimeoutAndStop </td>
+          <td>(</td>
+          <td class="paramtype">QTimer *&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Emit timeout and stop </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">timer</td><td>&#x202A;If non-null, the timer</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">map_x</td><td>&#x202A;The map x coordinate. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">map_y</td><td>&#x202A;The map y coordinate. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">cen_x</td><td>&#x202A;The cen x coordinate. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">cen_y</td><td>&#x202A;The cen y coordinate. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">min_r</td><td>&#x202A;The minimum r. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">max_r</td><td>&#x202A;The maximum r. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">Width</td><td>&#x202A;The width. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">Height</td><td>&#x202A;The height. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">timer</td><td>&#x202A;If non-null, the timer </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">camProc.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00282">282</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;{</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">//  避免赋值出错 进行数值交换</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">if</span> (min_r &gt; max_r)</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    {</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        LDebug(<span class="stringliteral">&quot;MinR:{0} is larger than MaxR:{1}&quot;</span>, min_r, max_r);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        std::swap(min_r, max_r);  <span class="comment">//交换一下</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="comment">// 需要判断是否 超过范围 避免 溢出值</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// 求算出来 中心点到四个边缘 的最小值, </span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">int</span> maxR_h = std::min(std::min(cen_x, cen_y), </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                          std::min(<a class="code" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d7/d46/a01045.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d7/d46/a01045.html#a20bacc2aeb213d0bbdc756dcac1f91dd">&#x202A;nImgWidth</a> - cen_x,</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                   <a class="code" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d7/d46/a01045.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d7/d46/a01045.html#aa721cf6d68764a514708e2407c4ff6bf">&#x202A;nImgHeight</a> - cen_y));</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">// 计算出来 设定值与给出值的最小值</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    max_r = std::min(max_r, maxR_h);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">//  避免赋值出错 进行数值交换</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">if</span> (min_r &gt; max_r)</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        LDebug(<span class="stringliteral">&quot;MinR:{0} is larger than MaxR:{1}&quot;</span>, min_r, max_r);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        std::swap(min_r, max_r);  <span class="comment">//交换一下</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">// 对于 圆形的图像 按照给出的直径范围  生成对应的值的映射, 相应位置的值 为对应的座标 值</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="comment">// 按照给出的 展开圆的区域 生成空的数组</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="comment">// 如果给出的尺寸是默认尺寸  -1  则使用 中间圆周长和 内外圆差值做宽高</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">int</span> map_width = 0, map_height=0;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="comment">// 如果 参数未赋值 使用默认方法 赋值</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    map_width = ((-1 == Width)?((<span class="keywordtype">int</span>)(max_r + min_r)*CV_PI):Width);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    map_height = ((-1 == Height) ? (max_r - min_r) : Height);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="comment">// 创建空的尺寸图 用于存放变换座标序列 默认使用 32F值</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    map_x = cv::Mat::zeros(map_height, map_width, CV_32FC1);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    map_y = cv::Mat::zeros(map_height, map_width, CV_32FC1);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">// 计算两个尺寸的缩放因子</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">float</span> delta_r = 1.0;  <span class="comment">// (float)(map_height)/(max_r - min_r); // 此值 需要进行计算 单纵向没有拉伸, 可以不进行处理</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordtype">float</span> delta_theta = - 2.0f * static_cast&lt;float&gt;(CV_PI / map_width);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="comment">// 填充两个 图的座标值</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; map_height; y++)</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    {</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; map_width; x++)</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        {</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <span class="comment">// 计算出来 对应的C 图上的座标值</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keywordtype">float</span> xc = cen_x + delta_r*(min_r + map_height - y)*<a class="code" href="../../d4/d8c/a00035.html#a653ae5753ed4e6d081f26387eff9c651">&#x202A;FastSin</a>(delta_theta*x);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordtype">float</span> yc = cen_y + delta_r*(min_r + map_height - y)*<a class="code" href="../../d4/d8c/a00035.html#a7daed858041751067eb05ea6a7373fa6">&#x202A;FastCos</a>(delta_theta*x);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            map_x.at&lt;<span class="keywordtype">float</span>&gt;(y, x) = xc;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            map_y.at&lt;<span class="keywordtype">float</span>&gt;(y, x) = yc;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;}</div>
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00553">553</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;{</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    Q_ASSERT(timer);</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    Q_ASSERT(QAbstractEventDispatcher::instance()); <span class="comment">// event loop must be on the stack </span></div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordflow">if</span> (!timer-&gt;isActive()) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    QTimerEvent <span class="keyword">event</span>{timer-&gt;timerId()};</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    QCoreApplication::sendEvent(timer, &amp;event);</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    timer-&gt;stop();</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac36f7da215866e6e1cd05a52aa5bc0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac36f7da215866e6e1cd05a52aa5bc0b6">&#9670;&nbsp;</a></span>IsDirExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsDirExist </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>create_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;判断文件夹是否存在, 如果不存在 则新建 文件夹 // 不确定能否递归建立 </p>
+<p class="DocNodeLTR">判断文件夹是否存在, 如果不存在 则新建 文件夹 // 不能否递归建立</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/29</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>&#x202A;Full pathname of the file. </td></tr>
+    <tr><td class="paramname">create_</td><td>&#x202A;(Optional) True to create.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if dir exist, false if not.</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/29</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>&#x202A;Full pathname of the file. </td></tr>
+    <tr><td class="paramname">create_</td><td>&#x202A;True to create.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if dir exist, false if not. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00424">424</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;{</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordflow">if</span> (_access(path.c_str (), 0) == -1)</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    {</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keywordflow">if</span> (create_)</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        {</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#ifdef WIN32  </span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            <span class="keywordtype">int</span> flag = _mkdir(path.c_str());</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#endif  </span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">#ifdef linux   </span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            <span class="keywordtype">int</span> flag = mkdir(dir.c_str(), 0777);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#endif  </span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            <span class="keywordflow">return</span> (flag == 0);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        }</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    }</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dce/a00143_ac36f7da215866e6e1cd05a52aa5bc0b6_icgraph.png" border="0" usemap="#d7/dce/a00143_ac36f7da215866e6e1cd05a52aa5bc0b6_icgraph" alt=""/></div>
+<map name="d7/dce/a00143_ac36f7da215866e6e1cd05a52aa5bc0b6_icgraph" id="d7/dce/a00143_ac36f7da215866e6e1cd05a52aa5bc0b6_icgraph">
+<area shape="rect" title="判断文件夹是否存在, 如果不存在 则新建 文件夹 // 不确定能否递归建立" alt="" coords="136,5,215,32"/>
+<area shape="rect" href="../../d7/dce/a00143.html#a146efc099cbdee49a56b4547d272db9b" title="判断指定的文件是否存在 // 给定flg 如果不存在则建立文件" alt="" coords="5,5,88,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a146efc099cbdee49a56b4547d272db9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a146efc099cbdee49a56b4547d272db9b">&#9670;&nbsp;</a></span>IsFileExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsFileExist </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>create_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;判断指定的文件是否存在 // 给定flg 如果不存在则建立文件 </p>
+<p class="DocNodeLTR">判断指定的文件是否存在 // 给定flg 如果不存在则建立文件 当path为文件时，_access函数判断文件是否存在，并判断文件是否可以用mode值指定的模式进行访问。</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/29</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&#x202A;The file. </td></tr>
+    <tr><td class="paramname">creat_</td><td>&#x202A;(Optional) True to creat.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if file exist, false if not.</dd></dl>
+<pre class="fragment">     当path为目录时，_access只判断指定的目录是否存在，  
+     00--只检查文件是否存在 02--写权限  04--读权限 06--读写权限
+
+     如果文件具有指定的访问权限，则函数返回0；如果文件不存在或者不能访问指定的权限，则返回-1。
+</pre><dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/29</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&#x202A;The file. </td></tr>
+    <tr><td class="paramname">create_</td><td>&#x202A;True to creat.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if file exist, false if not. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00463">463</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;{</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">if</span> ((_access(file.c_str(), 0)) == -1)</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    {</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <span class="keywordflow">if</span> (create_)</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        {</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            <span class="comment">// 创建文件</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            std::string name_, path_;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <a class="code" href="../../d7/dce/a00143.html#abfb3a3ea04a2dd20e925608df2cc3640">&#x202A;SplitFileName</a>(name_, path_, file);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d7/dce/a00143.html#ac36f7da215866e6e1cd05a52aa5bc0b6">&#x202A;IsDirExist</a>(path_, create_))</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            {</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                <span class="keywordflow">if</span> ((_access(file.c_str(), 0)) != -1)</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            }</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        }</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    }</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d7/dce/a00143_a7dcf2a41c2d055b6a47c9756dc1db0a2_cgraph.png" border="0" usemap="#d7/dce/a00143_a7dcf2a41c2d055b6a47c9756dc1db0a2_cgraph" alt=""/></div>
-<map name="d7/dce/a00143_a7dcf2a41c2d055b6a47c9756dc1db0a2_cgraph" id="d7/dce/a00143_a7dcf2a41c2d055b6a47c9756dc1db0a2_cgraph">
-<area shape="rect" title="创建 映射map 图像" alt="" coords="5,31,105,57"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#a7daed858041751067eb05ea6a7373fa6" title="定义快速 cos 变换" alt="" coords="153,5,224,32"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#a653ae5753ed4e6d081f26387eff9c651" title="自定义快速变换 sin cos 函数 定义 而外精度 更高拟合效果 参考链接 https://www.cnblogs.com/sun11086/archive/2009/03/20/1417944...." alt="" coords="155,56,222,83"/>
-<area shape="rect" href="../../d9/db6/a00146.html#a653ae5753ed4e6d081f26387eff9c651" title="自定义快速变换 sin cos 函数 定义 而外精度 更高拟合效果 参考链接 https://www.cnblogs.com/sun11086/archive/2009/03/20/1417944...." alt="" coords="272,5,339,32"/>
+<div class="center"><img src="../../d7/dce/a00143_a146efc099cbdee49a56b4547d272db9b_cgraph.png" border="0" usemap="#d7/dce/a00143_a146efc099cbdee49a56b4547d272db9b_cgraph" alt=""/></div>
+<map name="d7/dce/a00143_a146efc099cbdee49a56b4547d272db9b_cgraph" id="d7/dce/a00143_a146efc099cbdee49a56b4547d272db9b_cgraph">
+<area shape="rect" title="判断指定的文件是否存在 // 给定flg 如果不存在则建立文件" alt="" coords="5,31,88,57"/>
+<area shape="rect" href="../../d7/dce/a00143.html#ac36f7da215866e6e1cd05a52aa5bc0b6" title="判断文件夹是否存在, 如果不存在 则新建 文件夹 // 不确定能否递归建立" alt="" coords="148,5,227,32"/>
+<area shape="rect" href="../../d7/dce/a00143.html#abfb3a3ea04a2dd20e925608df2cc3640" title="将文件路径拆分为 文件路径和文件名称 删除拓展名" alt="" coords="136,56,239,83"/>
 </map>
 </div>
-<div class="dynheader">
+
+</div>
+</div>
+<a id="a0eeb818cd8623175cafd977ba37ffd2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eeb818cd8623175cafd977ba37ffd2a">&#9670;&nbsp;</a></span>MatToQImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage MatToQImage </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>src_bgr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Matrix to q image 将 MAT 类型的数据 转换成 QImage </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/15</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">图像原始图像</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A QImage</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/5/6</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src_bgr</td><td>&#x202A;Source BGR</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A QImage </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00137">137</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span> (src_bgr.empty())</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Mat Image is Empty!&quot;</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    QImage img;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">if</span> (src_bgr.channels() != 1)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        cv::cvtColor(src_bgr, src_bgr, CV_BGR2RGB);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="comment">// 根据图像尺寸 转换图像, 避免图像尺寸不对造成的图像倾斜</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        img = QImage(static_cast&lt;const unsigned char*&gt;(src_bgr.data),</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                     src_bgr.cols,</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                     src_bgr.rows,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                     static_cast&lt;int&gt;(src_bgr.step),</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                     QImage::Format_RGB888);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="comment">// 根据图像尺寸 转换图像, 避免图像尺寸不对造成的图像倾斜</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        img = QImage(static_cast&lt;const unsigned char*&gt;(src_bgr.data),</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                     src_bgr.cols,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                     src_bgr.rows,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                     static_cast&lt;int&gt;(src_bgr.step),</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                     QImage::Format_RGB888);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">//static int i = 1;</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">//std::string filename = &quot;./Media/pic/tmp_show_&quot; + to_string(i) + &quot;-&quot; + to_string(rand()) + &quot;.png&quot;;</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">//img.save(QString::fromStdString(filename), &quot;PNG&quot;, 100);</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">return</span> img;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad13dba3fc65c16e774fde626887d7d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13dba3fc65c16e774fde626887d7d71">&#9670;&nbsp;</a></span>QImage2cvMat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat QImage2cvMat </td>
+          <td>(</td>
+          <td class="paramtype">QImage&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;QT QImage 转换成 opencv Mat 格式图像 </p>
+<p class="DocNodeLTR">QImage 变换</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/15</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">QT</td><td>&#x202A;QImage 格式图像</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;cv::Mat 图像</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/22</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>&#x202A;The image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A cv::Mat </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00183">183</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    cv::Mat mat;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    qDebug() &lt;&lt; image.format();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">switch</span> (image.format())</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">case</span> QImage::Format_ARGB32:</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">case</span> QImage::Format_RGB32:</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">case</span> QImage::Format_ARGB32_Premultiplied:</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            mat = cv::Mat(image.height(), image.width(), CV_8UC4);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">case</span> QImage::Format_RGB888:</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="comment">// mat = cv::Mat(image.height(), image.width(), CV_8UC3, (void*)image.constBits(), image.bytesPerLine());</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            mat = cv::Mat(image.height(), image.width(), CV_8UC3);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            cv::cvtColor(mat, mat, CV_BGR2RGB);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">case</span> QImage::Format_Indexed8:</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="comment">// mat = cv::Mat(image.height(), image.width(), CV_8UC1, (void*)image.constBits(), image.bytesPerLine());</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            mat = cv::Mat(image.height(), image.width(), CV_8UC1);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">default</span>: <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">return</span> mat;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;} </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acbe03cac2d706c0f6d5a11f8c0e26946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe03cac2d706c0f6d5a11f8c0e26946">&#9670;&nbsp;</a></span>ReleaseThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ReleaseThread </td>
+          <td>(</td>
+          <td class="paramtype">QThread *&#160;</td>
+          <td class="paramname"><em>qthread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;停止进程并同时 删除对象 </p>
+<p class="DocNodeLTR">停止进程并同时 删除对象 // 循环进程 使用 isInterruptionRequested 做while 循环条件 避免 无法退出 <a href="https://blog.csdn.net/caoshangpa/article/details/62421334">https://blog.csdn.net/caoshangpa/article/details/62421334</a></p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/15</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">qthread</td><td>&#x202A;If non-null, the qthread</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">qthread</td><td>&#x202A;If non-null, the qthread</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00224">224</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">if</span> (qthread == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        qthread-&gt;requestInterruption();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        qthread-&gt;quit();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        qthread-&gt;wait();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keyword">delete</span> qthread;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Thread Quit Error!&quot;</span>&lt;&lt;e.what ();</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d7/dce/a00143_a7dcf2a41c2d055b6a47c9756dc1db0a2_icgraph.png" border="0" usemap="#d7/dce/a00143_a7dcf2a41c2d055b6a47c9756dc1db0a2_icgraph" alt=""/></div>
-<map name="d7/dce/a00143_a7dcf2a41c2d055b6a47c9756dc1db0a2_icgraph" id="d7/dce/a00143_a7dcf2a41c2d055b6a47c9756dc1db0a2_icgraph">
-<area shape="rect" title="创建 映射map 图像" alt="" coords="196,5,296,32"/>
-<area shape="rect" href="../../da/d0a/a00993.html#afa6a114bae6facfa6c786b703fa137fc" title="Tests remap" alt="" coords="5,5,148,32"/>
+<div class="center"><img src="../../d7/dce/a00143_acbe03cac2d706c0f6d5a11f8c0e26946_icgraph.png" border="0" usemap="#d7/dce/a00143_acbe03cac2d706c0f6d5a11f8c0e26946_icgraph" alt=""/></div>
+<map name="d7/dce/a00143_acbe03cac2d706c0f6d5a11f8c0e26946_icgraph" id="d7/dce/a00143_acbe03cac2d706c0f6d5a11f8c0e26946_icgraph">
+<area shape="rect" title="停止进程并同时 删除对象" alt="" coords="245,5,353,32"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a0e99dde5e6e49f134243fbad6ded3a04" title="Finalizes an instance of the WorkWindow class" alt="" coords="5,5,197,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac4398c20ecda27598d99d9a661a2ea9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4398c20ecda27598d99d9a661a2ea9c">&#9670;&nbsp;</a></span>RenderNumberOnLabel() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderNumberOnLabel </td>
+          <td>(</td>
+          <td class="paramtype">QLabel *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00575">575</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;{</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    label-&gt;setText(QString::number(num, <span class="charliteral">&#39;f&#39;</span>, 1));</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dce/a00143_ac4398c20ecda27598d99d9a661a2ea9c_icgraph.png" border="0" usemap="#d7/dce/a00143_ac4398c20ecda27598d99d9a661a2ea9c_icgraph" alt=""/></div>
+<map name="d7/dce/a00143_ac4398c20ecda27598d99d9a661a2ea9c_icgraph" id="d7/dce/a00143_ac4398c20ecda27598d99d9a661a2ea9c_icgraph">
+<area shape="rect" title=" " alt="" coords="1175,78,1331,105"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a1ac8d28317aadd53446419ac8b353a82" title="将位置信息实时更新到界面的label 上" alt="" coords="927,21,1119,47"/>
+<area shape="rect" href="../../d8/df3/a01195.html#af92af3ed8f61e4fd9eaf4d1b14446683" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="701,71,872,112"/>
+<area shape="rect" href="../../d8/df3/a01195.html#ae9dcd6afdb5b4cd7811eda08b9223de1" title="更新电子罗盘数据" alt="" coords="920,133,1127,159"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a01083e6fa8585bbe6302affa302bd4d7" title="更新 编码器 位置信息" alt="" coords="701,5,872,47"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,78,653,105"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,78,376,105"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,49,130,75"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,100,204,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a516438d193b466735a44c169cae10b05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a516438d193b466735a44c169cae10b05">&#9670;&nbsp;</a></span>RenderNumberOnLabel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RenderNumberOnLabel </td>
+          <td>(</td>
+          <td class="paramtype">QLabel *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00592">592</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;{</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    label-&gt;setText(QString::number(num));</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a757663ba676f98ccb99aa73062ec0f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757663ba676f98ccb99aa73062ec0f15">&#9670;&nbsp;</a></span>ShowImageOnLable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ShowImageOnLable </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>srcImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QLabel *&#160;</td>
+          <td class="paramname"><em>lb_label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;在相应的label 上显示图片 </p>
+<p class="DocNodeLTR">Shows the image on lable</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">srcImg</td><td>&#x202A;Source image. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">lb_label</td><td>&#x202A;If non-null, the pound label. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">width</td><td>&#x202A;The width. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">height</td><td>&#x202A;The height.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails.</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">srcImg</td><td>&#x202A;Source image </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">lb_label</td><td>&#x202A;If non-null, the pound label </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">width</td><td>&#x202A;The width </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">height</td><td>&#x202A;The height</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00502">502</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;{</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="comment">// tCamProc-&gt;procMutex.lock(); // 处理线程  锁定</span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="comment">// #TODO: 寻找减少转换的方案</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="comment">// 首先根据label 大小 缩放对应的图像</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160; </div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    Q_ASSERT(srcImg.rows != 0);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    cv::Mat tmp_img;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="comment">// 进行 图像缩放 进行进一步尺寸限制</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    {</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="comment">// LDebug(&quot;start resize Image {}!&quot;,img_cnt);</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="comment">// #FIXME 解决图像缩放问题</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        <span class="comment">// float src_ratio = (float)srcImg.rows / srcImg.cols;</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        LTrace(<span class="stringliteral">&quot;Show Image On Lable Resize Start!&quot;</span>);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        cv::resize(srcImg, tmp_img, cv::Size(width, height));</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="comment">// tmp_show_img = srcImg(cv::Rect(0, 0, width, height));</span></div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="comment">// LTrace(&quot;end Image{}&quot;, img_cnt);</span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="comment">// tmp_show_img = srcImg;</span></div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    }</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    {</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        LError(<span class="stringliteral">&quot;resize Error!&quot;</span>);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    }</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160; </div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="comment">// 将原始图像转换成 QImage</span></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    QImage img = <a class="code" href="../../d7/dce/a00143.html#a51b816b14fb11dbdb1d0e7986cb0aca9">&#x202A;CvMat2QImage</a>(tmp_img);</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160; </div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <span class="comment">// 将QImage 转换成 QPixmap</span></div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    QPixmap pixmap = QPixmap::fromImage(img);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="comment">// 在相应的lable 上 显示图片</span></div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="comment">// pixmap.scaled(QSize(lb_label-&gt;width(),lb_label-&gt;height ()));</span></div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="comment">// lb_label-&gt;setScaledContents(true);</span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    lb_label-&gt;setPixmap(pixmap);</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dce/a00143_a757663ba676f98ccb99aa73062ec0f15_cgraph.png" border="0" usemap="#d7/dce/a00143_a757663ba676f98ccb99aa73062ec0f15_cgraph" alt=""/></div>
+<map name="d7/dce/a00143_a757663ba676f98ccb99aa73062ec0f15_cgraph" id="d7/dce/a00143_a757663ba676f98ccb99aa73062ec0f15_cgraph">
+<area shape="rect" title="在相应的label 上显示图片" alt="" coords="5,5,143,32"/>
+<area shape="rect" href="../../d7/dce/a00143.html#a51b816b14fb11dbdb1d0e7986cb0aca9" title="opencv Mat格式转换为 QT 的 QImage" alt="" coords="191,5,301,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abfb3a3ea04a2dd20e925608df2cc3640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb3a3ea04a2dd20e925608df2cc3640">&#9670;&nbsp;</a></span>SplitFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SplitFileName </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;将文件路径拆分为 文件路径和文件名称 删除拓展名 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/25</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">file_name</td><td>&#x202A;Filename of the file. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">file_path</td><td>&#x202A;Full pathname of the file. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">filename</td><td>&#x202A;Filename of the file.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails.</dd></dl>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md0"></a>
+param            suffix  The suffix.</h3>
+
+<p class="definition">在文件 <a class="el" href="../../d7/dce/a00143_source.html">common.cc</a> 第 <a class="el" href="../../d7/dce/a00143_source.html#l00389">389</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;{</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="comment">// 根据 filename 更新 file_name_, 和 file_path_  找到最后一个 &quot;/&quot; 如果找不到 pos = -1</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordtype">size_t</span> pos = filename.find_last_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="comment">// 如果 找不到前置 /  表示当层目录, 对应的是 &quot;&quot; &quot;/&quot; &quot;./&quot; </span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">if</span> (pos &lt; 2)</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        file_path = <span class="stringliteral">&quot;./&quot;</span>;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        file_path = filename.substr(0, pos + 1);    <span class="comment">// 将 /  包含到 path 中</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="comment">// 从找到的pos 后一位开始就可</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    file_name = filename.substr(pos + 1); <span class="comment">// 从/ 开始到最后的结尾</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    pos = file_name.find_last_of(<span class="stringliteral">&quot;.&quot;</span>);     <span class="comment">// 计算最后一个 &quot;. &quot;  去除 拓展名</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="comment">// 表示找到了字符串</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordflow">if</span> (pos &gt; 0)</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        file_name = file_name.substr(0, pos);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dce/a00143_abfb3a3ea04a2dd20e925608df2cc3640_icgraph.png" border="0" usemap="#d7/dce/a00143_abfb3a3ea04a2dd20e925608df2cc3640_icgraph" alt=""/></div>
+<map name="d7/dce/a00143_abfb3a3ea04a2dd20e925608df2cc3640_icgraph" id="d7/dce/a00143_abfb3a3ea04a2dd20e925608df2cc3640_icgraph">
+<area shape="rect" title="将文件路径拆分为 文件路径和文件名称 删除拓展名" alt="" coords="176,31,279,57"/>
+<area shape="rect" href="../../de/de6/a01063.html#ad9fb6635d112a3e806762bd6d338605d" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据 对于写入数据, 使用 gConfig.sysPara 内容存储 到文件头信息中 对于读取数据,..." alt="" coords="5,5,128,32"/>
+<area shape="rect" href="../../d7/dce/a00143.html#a146efc099cbdee49a56b4547d272db9b" title="判断指定的文件是否存在 // 给定flg 如果不存在则建立文件" alt="" coords="25,56,108,83"/>
 </map>
 </div>
 
@@ -286,18 +1433,24 @@ $(document).ready(function(){initNavTree('d7/dce/a00143.html','../../');});
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01045_html_a76b56f70107ff342985f6d8bef2fa3ba"><div class="ttname"><a href="../../d7/d46/a01045.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;RunPara::StImage::Polar</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage::StImagePolar Polar</div></div>
-<div class="ttc" id="aa00035_html_a653ae5753ed4e6d081f26387eff9c651"><div class="ttname"><a href="../../d4/d8c/a00035.html#a653ae5753ed4e6d081f26387eff9c651">&#x202A;FastSin</a></div><div class="ttdeci">&#x202A;float FastSin(float x)</div><div class="ttdoc">&#x202A;自定义快速变换 sin cos 函数 定义 而外精度 更高拟合效果 参考链接 https://www.cnblogs.com/sun11086/archive/2009/03/20/1417944....</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00349">common.cc:349</a></div></div>
-<div class="ttc" id="aa00164_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00016">main.cpp:16</a></div></div>
-<div class="ttc" id="aa01045_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../d7/d46/a01045.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
-<div class="ttc" id="aa01045_html_aa721cf6d68764a514708e2407c4ff6bf"><div class="ttname"><a href="../../d7/d46/a01045.html#aa721cf6d68764a514708e2407c4ff6bf">&#x202A;RunPara::StImage::StImagePolar::nImgHeight</a></div><div class="ttdeci">&#x202A;int nImgHeight</div><div class="ttdoc">&#x202A;图像高度</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00117">runpara.h:117</a></div></div>
-<div class="ttc" id="aa01009_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00034">Config.h:34</a></div></div>
-<div class="ttc" id="aa01045_html_a20bacc2aeb213d0bbdc756dcac1f91dd"><div class="ttname"><a href="../../d7/d46/a01045.html#a20bacc2aeb213d0bbdc756dcac1f91dd">&#x202A;RunPara::StImage::StImagePolar::nImgWidth</a></div><div class="ttdeci">&#x202A;int nImgWidth</div><div class="ttdoc">&#x202A;图像宽度</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00116">runpara.h:116</a></div></div>
-<div class="ttc" id="aa00035_html_a7daed858041751067eb05ea6a7373fa6"><div class="ttname"><a href="../../d4/d8c/a00035.html#a7daed858041751067eb05ea6a7373fa6">&#x202A;FastCos</a></div><div class="ttdeci">&#x202A;float FastCos(float x)</div><div class="ttdoc">&#x202A;定义快速 cos 变换</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00387">common.cc:387</a></div></div>
+<div class="ttc" id="aa01079_html_a32a897b4e7267880e0487ccfa093f0b1"><div class="ttname"><a href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;RunPara::StImage::StImagePolar::nImgCenterY</a></div><div class="ttdeci">&#x202A;int nImgCenterY</div><div class="ttdoc">&#x202A;中心 Y 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00114">runpara.h:114</a></div></div>
+<div class="ttc" id="aa01079_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../d2/d4d/a01079.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
+<div class="ttc" id="aa00161_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00014">main.cpp:14</a></div></div>
+<div class="ttc" id="aa01079_html_a1f8c6937a5479cf7be87ec579c92ae0b"><div class="ttname"><a href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;RunPara::StImage::StImagePolar::nImgCenterX</a></div><div class="ttdeci">&#x202A;int nImgCenterX</div><div class="ttdoc">&#x202A;中心 X 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00113">runpara.h:113</a></div></div>
+<div class="ttc" id="aa00143_html_a51b816b14fb11dbdb1d0e7986cb0aca9"><div class="ttname"><a href="../../d7/dce/a00143.html#a51b816b14fb11dbdb1d0e7986cb0aca9">&#x202A;CvMat2QImage</a></div><div class="ttdeci">&#x202A;QImage CvMat2QImage(const cv::Mat &amp;mat)</div><div class="ttdoc">&#x202A;opencv Mat格式转换为 QT 的 QImage</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00092">common.cc:92</a></div></div>
+<div class="ttc" id="aa01079_html_aaa0951944900aab9f998b309431fcd90"><div class="ttname"><a href="../../d2/d4d/a01079.html#aaa0951944900aab9f998b309431fcd90">&#x202A;RunPara::StImage::StImagePolar::nImgMinR</a></div><div class="ttdeci">&#x202A;int nImgMinR</div><div class="ttdoc">&#x202A;内径</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00116">runpara.h:116</a></div></div>
+<div class="ttc" id="aa01079_html_a76b56f70107ff342985f6d8bef2fa3ba"><div class="ttname"><a href="../../d2/d4d/a01079.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;RunPara::StImage::Polar</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage::StImagePolar Polar</div></div>
+<div class="ttc" id="aa00143_html_ac36f7da215866e6e1cd05a52aa5bc0b6"><div class="ttname"><a href="../../d7/dce/a00143.html#ac36f7da215866e6e1cd05a52aa5bc0b6">&#x202A;IsDirExist</a></div><div class="ttdeci">&#x202A;bool IsDirExist(const std::string &amp;path, bool create_)</div><div class="ttdoc">&#x202A;判断文件夹是否存在, 如果不存在 则新建 文件夹 // 不确定能否递归建立</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00424">common.cc:424</a></div></div>
+<div class="ttc" id="aa01079_html_a7e46989d0421ca554f06927f2c28b99a"><div class="ttname"><a href="../../d2/d4d/a01079.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;RunPara::StImage::StImagePolar::nImgMaxR</a></div><div class="ttdeci">&#x202A;int nImgMaxR</div><div class="ttdoc">&#x202A;外径 最大范围</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00115">runpara.h:115</a></div></div>
+<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00036">Commu.h:36</a></div></div>
+<div class="ttc" id="aa01079_html_d6/dbc/a01099"><div class="ttname"><a href="../../d2/d4d/a01079.html#d6/dbc/a01099">&#x202A;RunPara::StImage::StImagePolar</a></div><div class="ttdoc">&#x202A;Image 处理参数, 作为图像展开参数</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00111">runpara.h:111</a></div></div>
+<div class="ttc" id="aa00071_html_af029f43dfa3e14b6c8988a307d32fa02ab1ec3017acb6a3acf7ce57b7b5bdcdce"><div class="ttname"><a href="../../d0/d89/a00071.html#af029f43dfa3e14b6c8988a307d32fa02ab1ec3017acb6a3acf7ce57b7b5bdcdce">&#x202A;VDPCASignal</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d89/a00071_source.html#l00144">serialdata.h:144</a></div></div>
+<div class="ttc" id="aa00143_html_abfb3a3ea04a2dd20e925608df2cc3640"><div class="ttname"><a href="../../d7/dce/a00143.html#abfb3a3ea04a2dd20e925608df2cc3640">&#x202A;SplitFileName</a></div><div class="ttdeci">&#x202A;bool SplitFileName(std::string &amp;file_name, std::string &amp;file_path, const std::string &amp;filename)</div><div class="ttdoc">&#x202A;将文件路径拆分为 文件路径和文件名称 删除拓展名</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00389">common.cc:389</a></div></div>
+<div class="ttc" id="aa01043_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00034">Config.h:34</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d7/dce/a00143.html">&#x202A;camProc.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d7/dce/a00143.html">&#x202A;common.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

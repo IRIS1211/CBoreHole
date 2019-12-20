@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;测试计划</title>
+<title>&#x202A;CBoreHole: &#x202A;通讯协议文档说明</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,11 +89,48 @@ $(document).ready(function(){initNavTree('dc/d2d/a01534.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;测试计划 </div>  </div>
+<div class="title">&#x202A;通讯协议文档说明 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p class="DocNodeLTR">测试计划（Test Plan）</p>
-<p class="DocNodeLTR">一、引言 1． 编写目的（阐明编写测试计划的目的,指明读者对象。） 2． 项目背景（说明项目的来源 委托单位及主管部门。） 3． 定义（列出测试计划中用到的专门术语定义和缩写词的原意。） 4． 参考资料（列出这些资料的作者、标题、编号、发表日期、出版单位或资料来源，可包括：（1）项目开发计划；（2）需求规格说明书；（3）概要设计说明书；（4）详细设计说明书；（5）用户操作手册; (6) 本测试计划中引用的其他资料 采用的软件开发标准或规范。） 二．任务概述 1．目标 2．运行环境 3．需求概述 4．条件与限制 三．计划 1．测试方案（说明确定测试方法和选取测试用例的原则。） 2．测试项目（列出组装测试和确认测试中每一项测试的内容、名称、目的和进度。） 3．测试准备 4．测试机构及人员（测试机构名称 负责人和职责。） 四．测试项目说明（按顺序逐个对测试项目做出说明：） 1．测试项目名称及测试内容 2．测试用例 （1）输入（输入的数据和输入的命令。） （2）输出（预期的输出数据。） （3）步骤及操作 （4）允许偏差（给出实测结果与预测结果之间允许偏差的范围。） 3． 进度 4． 条件（给出项测试对资源的特殊要求，如设备、软件、人员等。） 5． 测试资料（说明项测试所需的资料。） 五．评价 1．范围（说明所完成的各项测试说明问题的范围及其局限性。） 2．准则（说明评价测试结果的准则。） </p>
+<div class="textblock"><p class="DocNodeLTR">文档表示在使用过程中的使用指令说明</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md26"></a>
+使用操作说明</h2>
+<p class="DocNodeLTR">上电操作表示 系统每次上电对嵌入式设备发送的命令, 串口实际实现可见文档串口通讯</p>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md27"></a>
+接线操作</h3>
+<p class="DocNodeLTR">3085芯片与4插针连线 </p><blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">左侧1脚 &ndash;RXD0 左侧4脚 &ndash; RXD485 TXD0&ndash; TXD2PC </p>
+</blockquote>
+<blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">TXD0&ndash;TXD2PC：主机通过串口发送 PCA+ADC 数据，直接发送到电脑端； RXD0&ndash;TXD485：主机接收电脑串口发送的命令，以启动或结束 PCA 计数； </p>
+</blockquote>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md28"></a>
+上电操作步骤</h3>
+<blockquote class="doxtable DocNodeLTR">
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;发送 <b>查询模式</b> 是罗盘停止连续模式, 进入查询模式,等待下一步指令, 一句查询一次返回</li>
+<li>&#x202A;发送 <b>开启PCA</b> 进行PCA计数,获取编码器数据</li>
+<li>&#x202A;发送 <b>启动罗盘连续模式</b> 连续性的获取罗盘数据 + PCA+ADC 值, 同一返回 <blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">示例格式: 括号扩出来的是 关键数据 68 0D 00 84 [00 04 09 11 79 45 00 81 13] 01 FF [80 00 00 00 00] 80 68 0D 00 84 00 04 09 11 79 45 00 81 13 01 FF 80 01 02 03 04 8A </p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md29"></a>
+查询PCA ADC 值</h3>
+<blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">发送 <b>查询PCA ADC</b> 指令查询ADC值,跟随陀螺仪数据后面发送 </p>
+</blockquote>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md30"></a>
+掉电操作</h3>
+<blockquote class="doxtable DocNodeLTR">
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;发送 <b>关闭PCA</b> 关闭PCA计数, </li>
+</ol>
+</blockquote>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md31"></a>
+操作指令表</h3>
+<p class="DocNodeLTR">具体操作可以参考<a href="&#x202A;../../../files/通信协议技术文档_V1.2_1014.pdf">通讯协议</a> 和做出来的简单内容的<a href="&#x202A;../../../assets/file/串口通讯指令表.xlsx">串口通讯指令表</a> 具体可见下表 可以使用<a href="&#x202A;http://www.tablesgenerator.com/markdown_tables">在线表格生成网站</a> 生成的 $Markdown$ 表格 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

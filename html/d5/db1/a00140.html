@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/CamCapture.cc 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/camProc.cc 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -88,18 +88,215 @@ $(document).ready(function(){initNavTree('d5/db1/a00140.html','../../');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
   <div class="headertitle">
-<div class="title">CamCapture.cc 文件参考</div>  </div>
+<div class="title">camProc.cc 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>&#x202A;Camera proc class  
+<a href="#details">更多...</a></p>
+
 <p><a href="../../d5/db1/a00140_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a7dcf2a41c2d055b6a47c9756dc1db0a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db1/a00140.html#a7dcf2a41c2d055b6a47c9756dc1db0a2">CreatMapMat</a> (cv::Mat &amp;map_x, cv::Mat &amp;map_y, int cen_x, int cen_y, int min_r, int max_r, int Width, int Height)</td></tr>
+<tr class="memdesc:a7dcf2a41c2d055b6a47c9756dc1db0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;创建 映射map 图像  <a href="../../d5/db1/a00140.html#a7dcf2a41c2d055b6a47c9756dc1db0a2">更多...</a><br /></td></tr>
+<tr class="separator:a7dcf2a41c2d055b6a47c9756dc1db0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p class="DocNodeLTR">Camera proc class </p>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">camProc.cc</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a7dcf2a41c2d055b6a47c9756dc1db0a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dcf2a41c2d055b6a47c9756dc1db0a2">&#9670;&nbsp;</a></span>CreatMapMat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CreatMapMat </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>map_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>map_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cen_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cen_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;创建 映射map 图像 </p>
+<p class="DocNodeLTR">为 展开图像创建 map 后续执行起来很快 展开思路 参考 <a href="https://blog.csdn.net/guduruyu/article/details/65436931">https://blog.csdn.net/guduruyu/article/details/65436931</a> 见附件 pdf 公式推导 展开图像角度 从标准座标系 270开始的 顺时针展开 #TODO: 解决缩放 插值的问题</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">map_x</td><td>&#x202A;The map x coordinate. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">map_y</td><td>&#x202A;The map y coordinate. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">cen_x</td><td>&#x202A;The cen x coordinate. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">cen_y</td><td>&#x202A;The cen y coordinate. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">min_r</td><td>&#x202A;The minimum r. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">max_r</td><td>&#x202A;The maximum r. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">Width</td><td>&#x202A;(Optional) The width. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">Height</td><td>&#x202A;(Optional) The height.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">map_x</td><td>&#x202A;The map x coordinate. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">map_y</td><td>&#x202A;The map y coordinate. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">cen_x</td><td>&#x202A;The cen x coordinate. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">cen_y</td><td>&#x202A;The cen y coordinate. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">min_r</td><td>&#x202A;The minimum r. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">max_r</td><td>&#x202A;The maximum r. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">Width</td><td>&#x202A;The width. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">Height</td><td>&#x202A;The height. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/db1/a00140_source.html">camProc.cc</a> 第 <a class="el" href="../../d5/db1/a00140_source.html#l00284">284</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;{</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">//  避免赋值出错 进行数值交换</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">if</span> (min_r &gt; max_r)</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    {</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        LDebug(<span class="stringliteral">&quot;MinR:{0} is larger than MaxR:{1}&quot;</span>, min_r, max_r);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        std::swap(min_r, max_r);  <span class="comment">//交换一下</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">// 需要判断是否 超过范围 避免 溢出值</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="comment">// 求算出来 中心点到四个边缘 的最小值, </span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">int</span> maxR_h = std::min(std::min(cen_x, cen_y), </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                          std::min(<a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d2/d4d/a01079.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d2/d4d/a01079.html#a20bacc2aeb213d0bbdc756dcac1f91dd">&#x202A;nImgWidth</a> - cen_x,</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                   <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d2/d4d/a01079.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d2/d4d/a01079.html#aa721cf6d68764a514708e2407c4ff6bf">&#x202A;nImgHeight</a> - cen_y));</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">// 计算出来 设定值与给出值的最小值</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    max_r = std::min(max_r, maxR_h);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">//  避免赋值出错 进行数值交换</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">if</span> (min_r &gt; max_r)</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        LDebug(<span class="stringliteral">&quot;MinR:{0} is larger than MaxR:{1}&quot;</span>, min_r, max_r);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        std::swap(min_r, max_r);  <span class="comment">//交换一下</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="comment">// 对于 圆形的图像 按照给出的直径范围  生成对应的值的映射, 相应位置的值 为对应的座标 值</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="comment">// 按照给出的 展开圆的区域 生成空的数组</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="comment">// 如果给出的尺寸是默认尺寸  -1  则使用 中间圆周长和 内外圆差值做宽高</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">int</span> map_width = 0, map_height=0;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="comment">// 如果 参数未赋值 使用默认方法 赋值</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    map_width = ((-1 == Width)?((<span class="keywordtype">int</span>)(max_r + min_r)*CV_PI):Width);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    map_height = ((-1 == Height) ? (max_r - min_r) : Height);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="comment">// 创建空的尺寸图 用于存放变换座标序列 默认使用 32F值</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    map_x = cv::Mat::zeros(map_height, map_width, CV_32FC1);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    map_y = cv::Mat::zeros(map_height, map_width, CV_32FC1);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// 计算两个尺寸的缩放因子</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">float</span> delta_r = 1.0;  <span class="comment">// (float)(map_height)/(max_r - min_r); // 此值 需要进行计算 单纵向没有拉伸, 可以不进行处理</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">float</span> delta_theta = - 2.0f * static_cast&lt;float&gt;(CV_PI / map_width);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="comment">// 填充两个 图的座标值</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; map_height; y++)</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; map_width; x++)</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="comment">// 计算出来 对应的C 图上的座标值</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="keywordtype">float</span> xc = cen_x + delta_r*(min_r + map_height - y)*<a class="code" href="../../d1/d72/a01319.html#a9aeccc7a52077e9fa2494a2033879391">&#x202A;Utils_Data::FastSin</a>(delta_theta*x);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordtype">float</span> yc = cen_y + delta_r*(min_r + map_height - y)*<a class="code" href="../../d1/d72/a01319.html#aa86beee7623347a625d209cb2d4e9d6d">&#x202A;Utils_Data::FastCos</a>(delta_theta*x);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            map_x.at&lt;<span class="keywordtype">float</span>&gt;(y, x) = xc;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            map_y.at&lt;<span class="keywordtype">float</span>&gt;(y, x) = yc;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/db1/a00140_a7dcf2a41c2d055b6a47c9756dc1db0a2_cgraph.png" border="0" usemap="#d5/db1/a00140_a7dcf2a41c2d055b6a47c9756dc1db0a2_cgraph" alt=""/></div>
+<map name="d5/db1/a00140_a7dcf2a41c2d055b6a47c9756dc1db0a2_cgraph" id="d5/db1/a00140_a7dcf2a41c2d055b6a47c9756dc1db0a2_cgraph">
+<area shape="rect" title="创建 映射map 图像" alt="" coords="5,31,105,57"/>
+<area shape="rect" href="../../d1/d72/a01319.html#aa86beee7623347a625d209cb2d4e9d6d" title="���� cos �任" alt="" coords="153,5,292,32"/>
+<area shape="rect" href="../../d1/d72/a01319.html#a9aeccc7a52077e9fa2494a2033879391" title="���� sin �任 ��ϵõ� �������� https://www.cnblogs.com/sun11086/archive/2009/03/20/1417944.html" alt="" coords="340,31,475,57"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/db1/a00140_a7dcf2a41c2d055b6a47c9756dc1db0a2_icgraph.png" border="0" usemap="#d5/db1/a00140_a7dcf2a41c2d055b6a47c9756dc1db0a2_icgraph" alt=""/></div>
+<map name="d5/db1/a00140_a7dcf2a41c2d055b6a47c9756dc1db0a2_icgraph" id="d5/db1/a00140_a7dcf2a41c2d055b6a47c9756dc1db0a2_icgraph">
+<area shape="rect" title="创建 映射map 图像" alt="" coords="196,5,296,32"/>
+<area shape="rect" href="../../dd/dfd/a01027.html#afa6a114bae6facfa6c786b703fa137fc" title="Tests remap" alt="" coords="5,5,148,32"/>
+</map>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa01079_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../d2/d4d/a01079.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
+<div class="ttc" id="aa00161_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00014">main.cpp:14</a></div></div>
+<div class="ttc" id="aa01079_html_a76b56f70107ff342985f6d8bef2fa3ba"><div class="ttname"><a href="../../d2/d4d/a01079.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;RunPara::StImage::Polar</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage::StImagePolar Polar</div></div>
+<div class="ttc" id="aa01319_html_a9aeccc7a52077e9fa2494a2033879391"><div class="ttname"><a href="../../d1/d72/a01319.html#a9aeccc7a52077e9fa2494a2033879391">&#x202A;Utils_Data::FastSin</a></div><div class="ttdeci">&#x202A;static float FastSin(float x)</div><div class="ttdoc">&#x202A;���� sin �任 ��ϵõ� �������� https://www.cnblogs.com/sun11086/archive/2009/03/20/1417944.html</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00010">utils_data.cc:10</a></div></div>
+<div class="ttc" id="aa01079_html_a20bacc2aeb213d0bbdc756dcac1f91dd"><div class="ttname"><a href="../../d2/d4d/a01079.html#a20bacc2aeb213d0bbdc756dcac1f91dd">&#x202A;RunPara::StImage::StImagePolar::nImgWidth</a></div><div class="ttdeci">&#x202A;int nImgWidth</div><div class="ttdoc">&#x202A;图像宽度</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00117">runpara.h:117</a></div></div>
+<div class="ttc" id="aa01079_html_aa721cf6d68764a514708e2407c4ff6bf"><div class="ttname"><a href="../../d2/d4d/a01079.html#aa721cf6d68764a514708e2407c4ff6bf">&#x202A;RunPara::StImage::StImagePolar::nImgHeight</a></div><div class="ttdeci">&#x202A;int nImgHeight</div><div class="ttdoc">&#x202A;图像高度</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00118">runpara.h:118</a></div></div>
+<div class="ttc" id="aa01319_html_aa86beee7623347a625d209cb2d4e9d6d"><div class="ttname"><a href="../../d1/d72/a01319.html#aa86beee7623347a625d209cb2d4e9d6d">&#x202A;Utils_Data::FastCos</a></div><div class="ttdeci">&#x202A;static float FastCos(float x)</div><div class="ttdoc">&#x202A;���� cos �任</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00035">utils_data.cc:35</a></div></div>
+<div class="ttc" id="aa01043_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00034">Config.h:34</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d5/db1/a00140.html">&#x202A;CamCapture.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d5/db1/a00140.html">&#x202A;camProc.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

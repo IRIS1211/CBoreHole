@@ -1,5 +1,8 @@
-<map id="RunPara::StDevice::StCompass" name="RunPara::StDevice::StCompass">
-<area shape="rect" id="node1" title="电子罗盘参数 调整罗盘数据" alt="" coords="5,200,144,241"/>
-<area shape="rect" id="node2" title="STL class" alt="" coords="35,96,115,123"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="11,5,138,47"/>
+<map id="RunPara::StImage" name="RunPara::StImage">
+<area shape="rect" id="node1" title="运行过程中的 图像参数" alt="" coords="709,80,837,107"/>
+<area shape="rect" id="node2" href="$d2/d4d/a01079.html#de/d4a/a01107" title=" " alt="" coords="416,21,627,48"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="181,21,261,48"/>
+<area shape="rect" id="node4" title="STL class" alt="" coords="5,14,132,55"/>
+<area shape="rect" id="node5" href="$d2/d4d/a01079.html#d6/dbc/a01099" title="Image 处理参数, 作为图像展开参数" alt="" coords="429,73,613,114"/>
+<area shape="rect" id="node6" href="$d2/d4d/a01079.html#d9/d10/a01103" title="Image Para 参数" alt="" coords="416,139,627,165"/>
 </map>

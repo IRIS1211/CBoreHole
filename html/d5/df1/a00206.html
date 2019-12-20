@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/test/test_config.cc 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/test/test_idoifile.cc 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('d5/df1/a00206.html','../../');});
   <div class="summary">
 <a href="#func-members">函数</a>  </div>
   <div class="headertitle">
-<div class="title">test_config.cc 文件参考</div>  </div>
+<div class="title">test_idoifile.cc 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -99,14 +99,12 @@ $(document).ready(function(){initNavTree('d5/df1/a00206.html','../../');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
-<tr class="memitem:a3b854a3e416cd8e379515c704f0fcbd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df1/a00206.html#a3b854a3e416cd8e379515c704f0fcbd6">TEST_CASE</a> (&quot;Test Write And Read YML&quot;)</td></tr>
-<tr class="separator:a3b854a3e416cd8e379515c704f0fcbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44733fb236621e4eaa4a2e26d628659f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df1/a00206.html#a44733fb236621e4eaa4a2e26d628659f">TEST_CASE</a> (&quot;Test Write And Read Files&quot;)</td></tr>
-<tr class="separator:a44733fb236621e4eaa4a2e26d628659f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e6df2da27e8aacc5489605e4abcc53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df1/a00206.html#ab5e6df2da27e8aacc5489605e4abcc53">TEST_CASE</a> (&quot;test IDOI file WriteAndRead&quot;)</td></tr>
+<tr class="separator:ab5e6df2da27e8aacc5489605e4abcc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">函数说明</h2>
-<a id="a44733fb236621e4eaa4a2e26d628659f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44733fb236621e4eaa4a2e26d628659f">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[1/2]</span></h2>
+<a id="ab5e6df2da27e8aacc5489605e4abcc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e6df2da27e8aacc5489605e4abcc53">&#9670;&nbsp;</a></span>TEST_CASE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -114,134 +112,111 @@ $(document).ready(function(){initNavTree('d5/df1/a00206.html','../../');});
         <tr>
           <td class="memname">TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">&quot;Test Write And Read Files&quot;&#160;</td>
+          <td class="paramtype">&quot;test IDOI file WriteAndRead&quot;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d5/df1/a00206_source.html">test_config.cc</a> 第 <a class="el" href="../../d5/df1/a00206_source.html#l00028">28</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 初始化参数, 写入临时文件 并能够成功读取文件</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../d7/ded/a01009.html">&#x202A;Config</a> *config;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d2/d41/a01037.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a>(config, <a class="code" href="../../db/ddf/a00164.html#af5c9cce7978a6dc022e79146aa3f9e68">&#x202A;gFS</a>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    config-&gt;<a class="code" href="../../d7/ded/a01009.html#aaa28b92aaa35102c72b3196a7a2295ef">&#x202A;LoadParaFromYML</a>(<a class="code" href="../../db/ddf/a00164.html#af5c9cce7978a6dc022e79146aa3f9e68">&#x202A;gFS</a>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::fstream *file = <span class="keyword">new</span> std::fstream();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    file-&gt;open(<span class="stringliteral">&quot;./Config/test.bin&quot;</span>, std::ios::out | std::ios::binary);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    config-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#aa2e8fbcdd233ecc35b7798932be4bc46">&#x202A;WriteRunParaToFile</a>(file);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    file-&gt;close();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    config = <span class="keyword">new</span> <a class="code" href="../../d7/ded/a01009.html">&#x202A;Config</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// 重新打开</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    file-&gt;open(<span class="stringliteral">&quot;./Config/test.bin&quot;</span>, std::ios::in | std::ios::binary);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    config-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#ab50487cc4124576dfbb2af0445a595c0">&#x202A;ReadRunParaFromFile</a>(file);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    file-&gt;close();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">delete</span> config;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">delete</span> file;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// _CrtDumpMemoryLeaks();  // 到达此处时 所有未销毁的对象都认为是内存泄漏</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d5/df1/a00206_a44733fb236621e4eaa4a2e26d628659f_cgraph.png" border="0" usemap="#d5/df1/a00206_a44733fb236621e4eaa4a2e26d628659f_cgraph" alt=""/></div>
-<map name="d5/df1/a00206_a44733fb236621e4eaa4a2e26d628659f_cgraph" id="d5/df1/a00206_a44733fb236621e4eaa4a2e26d628659f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,348,103,375"/>
-<area shape="rect" href="../../d2/d41/a01037.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="��ʼ�� ȫ�ֲ���" alt="" coords="195,184,317,211"/>
-<area shape="rect" href="../../d7/ded/a01009.html#aaa28b92aaa35102c72b3196a7a2295ef" title="从yml 中 读取参数" alt="" coords="167,319,345,345"/>
-<area shape="rect" href="../../d7/d46/a01045.html#ab50487cc4124576dfbb2af0445a595c0" title=" " alt="" coords="151,555,361,581"/>
-<area shape="rect" href="../../d7/d46/a01045.html#aa2e8fbcdd233ecc35b7798932be4bc46" title=" " alt="" coords="158,377,354,404"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#ad097a2be5d255a589cb0c58b1e65fac1" title="Gets date string 返回 8位 日期值" alt="" coords="711,5,798,32"/>
-<area shape="rect" href="../../d2/d41/a01037.html#a5714027a2cc07f9c5c0ae84a177631be" title="�������в��� ���²���" alt="" coords="444,108,589,135"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#a1c11ea4eddb168aee72861c8397c20a2" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="719,208,790,235"/>
-<area shape="rect" href="../../d7/d46/a01045.html#aad8567884f1564ee1657671892c7ad06" title="从 yml 文件 读取参数, 使用" alt="" coords="409,260,624,287"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#a417ad9bc43db4f2f4eda91598d39e883" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="474,209,559,236"/>
-<area shape="rect" href="../../d9/db6/a00146.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="922,31,993,57"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#a3aca825d905b529f9d670f92483b932c" title=" " alt="" coords="713,107,797,133"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#a9801f793edfff4024a3ddca0f674e258" title=" " alt="" coords="705,157,804,184"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="712,56,797,83"/>
-<area shape="rect" href="../../dc/dd5/a01293.html#a8387a1da4bd9a03f42b6037f5370a28e" title="将字符串按照分割字符分割之后 生成矩形" alt="" coords="689,263,821,289"/>
-<area shape="rect" href="../../dc/d9e/a01305.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="885,291,1029,317"/>
-<area shape="rect" href="../../dc/d9e/a01305.html#ae622a70f87186c0d22e17cb9c59c5697" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="429,311,604,353"/>
-<area shape="rect" href="../../dc/d9e/a01305.html#a5ed8c8e05cada7d7334a213dd8ff1050" title=" " alt="" coords="672,555,837,581"/>
-<area shape="rect" href="../../d3/d07/a01301.html#af4c9bf35a4632862f1c57ccac2560c0c" title="读取基本数据类型" alt="" coords="443,631,591,657"/>
-<area shape="rect" href="../../d3/d07/a01301.html#af772ad9b6fe06d2fce4132dd2b93c613" title="���ļ����ж�ȡһ�� �ַ���" alt="" coords="439,580,594,607"/>
-<area shape="rect" href="../../dc/d9e/a01305.html#afdd80557e406c33ce221395db601f196" title=" " alt="" coords="672,403,837,429"/>
-<area shape="rect" href="../../d3/d07/a01301.html#ad5e45fd13b53170545c6a9852e8415c7" title="Writes a data 写入基本数据类型" alt="" coords="442,479,591,505"/>
-<area shape="rect" href="../../d3/d07/a01301.html#af8aafd167c8014c71990933efa4431aa" title="��һ���ַ���д�뵽�������ļ�����" alt="" coords="439,428,595,455"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a3b854a3e416cd8e379515c704f0fcbd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b854a3e416cd8e379515c704f0fcbd6">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;Test Write And Read YML&quot;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d5/df1/a00206_source.html">test_config.cc</a> 第 <a class="el" href="../../d5/df1/a00206_source.html#l00005">5</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="comment">// 初始化参数, 写入临时文件 并能够成功读取文件</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="../../d7/ded/a01009.html">&#x202A;Config</a> *config;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    cv::FileStorage fs;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    fs.open(<span class="stringliteral">&quot;./Config/test.yml&quot;</span>, cv::FileStorage::WRITE);</div>
+<p class="definition">在文件 <a class="el" href="../../d5/df1/a00206_source.html">test_idoifile.cc</a> 第 <a class="el" href="../../d5/df1/a00206_source.html#l00007">7</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">// 测试通过之后 不再进行实体文件测试</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// CHECK(1 == 1);</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../d2/d41/a01037.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a>(config, <a class="code" href="../../db/ddf/a00164.html#af5c9cce7978a6dc022e79146aa3f9e68">&#x202A;gFS</a>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    config-&gt;<a class="code" href="../../d7/ded/a01009.html#aaa28b92aaa35102c72b3196a7a2295ef">&#x202A;LoadParaFromYML</a>(<a class="code" href="../../db/ddf/a00164.html#af5c9cce7978a6dc022e79146aa3f9e68">&#x202A;gFS</a>);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// 写入文件</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    config-&gt;<a class="code" href="../../d7/ded/a01009.html#adbb6ccd1f7a72de24216484582071010">&#x202A;WriteParaToYML</a>(fs);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    fs.release();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// 重新打开</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    fs.open(<span class="stringliteral">&quot;./Config/test.yml&quot;</span>, cv::FileStorage::READ);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    config-&gt;<a class="code" href="../../d7/ded/a01009.html#aaa28b92aaa35102c72b3196a7a2295ef">&#x202A;LoadParaFromYML</a>(fs);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    fs.release();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">const</span> std::string file_path = <span class="stringliteral">&quot;./Media/file/test/&quot;</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">const</span> std::string file_ext = <span class="stringliteral">&quot;.idoi&quot;</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../de/de6/a01063.html">&#x202A;IDOIFile</a> *idoi = <span class="keyword">new</span> <a class="code" href="../../de/de6/a01063.html">&#x202A;IDOIFile</a>(file_path + <a class="code" href="../../d3/da4/a01343.html#aa797e5e8119ca57f492ea5641817d49a">&#x202A;Utils_String::GetTime</a>(<span class="charliteral">&#39;_&#39;</span>, 1) + file_ext);   <span class="comment">// 新建对象</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// 通过字符串 构造串口数据</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// const std::string ser_str = &quot;68 0D 00 84 00 04 09 11 79 45 00 81 13 01 FF 80 00 00 01 81&quot;;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> std::string ser_str = <span class="stringliteral">&quot;68 13 00 85 11 12 21 22 31 32 00 00 01 00 00 02 00 00 03 88 FF 01 02 03 04 05 0F&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../d7/dd6/a01167.html">&#x202A;SerialData</a> ser(27);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ser.Str2CharArr(ser.data_, ser_str);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// 检测串口数据 是否正常转换</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    CHECK(ser_str == <a class="code" href="../../d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda">&#x202A;Utils_String::CharArr2Hex</a>(ser.data_, 27));</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    cv::Mat img = cv::imread(file_path + <span class="stringliteral">&quot;test.png&quot;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (img.rows / 8) ; i++)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">// 每次取出8行图像 加入到 尝试写入图像</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        cv::Rect r(0,8*i, img.cols,8);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        cv::Mat tmp_img = img(r);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        idoi-&gt;<a class="code" href="../../de/de6/a01063.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2">&#x202A;AppendData</a>(tmp_img, ser);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// 更新参数 // 重新写入函数头</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    idoi-&gt;<a class="code" href="../../de/de6/a01063.html#a5c968f9f3721c77545c419d5ea519ca0">&#x202A;updatePara</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 检测两个计数之间的差值 在10行以内</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    CHECK(abs(img.rows - (<span class="keywordtype">int</span>)idoi-&gt;pSysPara-&gt;FileHeader.nRowCnt) &lt; 10);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    idoi-&gt;<a class="code" href="../../de/de6/a01063.html#a70c5db6374434b417972bb28a1144029">&#x202A;release</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../de/de6/a01063.html">&#x202A;IDOIFile</a> *idoi_read = <span class="keyword">new</span> <a class="code" href="../../de/de6/a01063.html">&#x202A;IDOIFile</a>(file_path + <span class="stringliteral">&quot;test&quot;</span> + file_ext,0,<a class="code" href="../../dc/dee/a00053.html#af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb">&#x202A;OREAD</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../d2/d4d/a01079.html">&#x202A;RunPara</a> para_read;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// idoi_read-&gt;readPara();</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    para_read = *idoi_read-&gt;pSysPara;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    cv::Mat gImg = cv::Mat(0, para_read.<a class="code" href="../../d2/d4d/a01079.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.nImgWidth, CV_8UC3);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../dd/d32/a00041.html#a69aa29b598b851b0640aa225a9e5d61d">&#x202A;uint</a> cnt = para_read.<a class="code" href="../../d2/d4d/a01079.html#abdb922f4f6c3aae4f0815fec2c5b5a28">&#x202A;FileHeader</a>.<a class="code" href="../../d2/d4d/a01079.html#afce00056b91ac03c37dbbd836cc0b528">&#x202A;nRowCnt</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    cv::Mat tmp_img = cv::Mat(1, para_read.<a class="code" href="../../d2/d4d/a01079.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.nImgWidth, CV_8UC3);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    EXT ext;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; cnt; i++)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *p = tmp_img.ptr(0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        idoi_read-&gt;<a class="code" href="../../de/de6/a01063.html#a44bebcfa4609689ed618201d45a0f027">&#x202A;ReadOneRowExt</a>(ext.data_);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        idoi_read-&gt;<a class="code" href="../../de/de6/a01063.html#a2fe58433b8df4ab155d7e0c325021cdf">&#x202A;readOneRowMat</a>(p);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        gImg.push_back(tmp_img);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// CHECK(ser_str == Utils_String::CharArr2Hex(ext.data_, 27));</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// 判断读取的图像</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    CHECK(gImg.rows == cnt);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    CHECK(gImg.rows &gt;= (img.rows-8));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 换 一种方式执行</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    cv::Mat gImg2 = idoi_read-&gt;<a class="code" href="../../de/de6/a01063.html#a866e2bf6ee5717435128e3a07500a957">&#x202A;ReadMat</a>(100, 100);   <span class="comment">// 从100行开始 读取100 行</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    cv::Mat gImg3;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    idoi_read-&gt;<a class="code" href="../../de/de6/a01063.html#a866e2bf6ee5717435128e3a07500a957">&#x202A;ReadMat</a>(gImg3, 100, 100);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    CHECK(gImg3.rows == 100);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    idoi_read-&gt;<a class="code" href="../../de/de6/a01063.html#a866e2bf6ee5717435128e3a07500a957">&#x202A;ReadMat</a>(gImg3, 100, -1);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    CHECK(gImg3.rows &gt;2000);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d5/df1/a00206_a3b854a3e416cd8e379515c704f0fcbd6_cgraph.png" border="0" usemap="#d5/df1/a00206_a3b854a3e416cd8e379515c704f0fcbd6_cgraph" alt=""/></div>
-<map name="d5/df1/a00206_a3b854a3e416cd8e379515c704f0fcbd6_cgraph" id="d5/df1/a00206_a3b854a3e416cd8e379515c704f0fcbd6_cgraph">
-<area shape="rect" title=" " alt="" coords="5,264,103,291"/>
-<area shape="rect" href="../../d2/d41/a01037.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="��ʼ�� ȫ�ֲ���" alt="" coords="179,159,301,186"/>
-<area shape="rect" href="../../d7/ded/a01009.html#aaa28b92aaa35102c72b3196a7a2295ef" title="从yml 中 读取参数" alt="" coords="151,264,329,291"/>
-<area shape="rect" href="../../d7/ded/a01009.html#adbb6ccd1f7a72de24216484582071010" title="将参数 写入到 yml 文件中" alt="" coords="157,319,323,346"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#ad097a2be5d255a589cb0c58b1e65fac1" title="Gets date string 返回 8位 日期值" alt="" coords="441,7,528,34"/>
-<area shape="rect" href="../../d2/d41/a01037.html#a5714027a2cc07f9c5c0ae84a177631be" title="�������в��� ���²���" alt="" coords="412,83,557,110"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#a1c11ea4eddb168aee72861c8397c20a2" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="699,183,770,210"/>
-<area shape="rect" href="../../d7/d46/a01045.html#aad8567884f1564ee1657671892c7ad06" title="从 yml 文件 读取参数, 使用" alt="" coords="377,235,592,262"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#a417ad9bc43db4f2f4eda91598d39e883" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="442,184,527,211"/>
-<area shape="rect" href="../../d9/db6/a00146.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="914,56,985,83"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#a3aca825d905b529f9d670f92483b932c" title=" " alt="" coords="693,31,777,58"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#a9801f793edfff4024a3ddca0f674e258" title=" " alt="" coords="685,82,784,108"/>
-<area shape="rect" href="../../d4/d8c/a00035.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="692,132,777,159"/>
-<area shape="rect" href="../../dc/dd5/a01293.html#a8387a1da4bd9a03f42b6037f5370a28e" title="将字符串按照分割字符分割之后 生成矩形" alt="" coords="669,238,801,264"/>
-<area shape="rect" href="../../dc/d9e/a01305.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="877,266,1021,292"/>
-<area shape="rect" href="../../dc/d9e/a01305.html#ae622a70f87186c0d22e17cb9c59c5697" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="397,286,572,328"/>
-<area shape="rect" href="../../d7/d46/a01045.html#a4745d779fa1d892d5cb7bbb8fe499f55" title="将参数 写入到 YML 文件中" alt="" coords="383,352,586,379"/>
-<area shape="rect" href="../../dc/d9e/a01305.html#a896df628262afa4ba8b55eeefe349f36" title="在字符串前后 添加 引号 双引号 用于YML 写入" alt="" coords="640,352,829,379"/>
+<div class="center"><img src="../../d5/df1/a00206_ab5e6df2da27e8aacc5489605e4abcc53_cgraph.png" border="0" usemap="#d5/df1/a00206_ab5e6df2da27e8aacc5489605e4abcc53_cgraph" alt=""/></div>
+<map name="d5/df1/a00206_ab5e6df2da27e8aacc5489605e4abcc53_cgraph" id="d5/df1/a00206_ab5e6df2da27e8aacc5489605e4abcc53_cgraph">
+<area shape="rect" title=" " alt="" coords="5,208,103,235"/>
+<area shape="rect" href="../../de/de6/a01063.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2" title="写入新一批的图像" alt="" coords="163,5,309,32"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="151,56,321,83"/>
+<area shape="rect" href="../../d3/da4/a01343.html#aa797e5e8119ca57f492ea5641817d49a" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="163,107,309,133"/>
+<area shape="rect" href="../../de/de6/a01063.html#a866e2bf6ee5717435128e3a07500a957" title="bool ReadMat(cv::Mat &amp;img,int ) ; // 考虑循环读取文件操作 , 可能存在问题" alt="" coords="172,208,300,235"/>
+<area shape="rect" href="../../de/de6/a01063.html#a44bebcfa4609689ed618201d45a0f027" title="Reads one row extent" alt="" coords="369,157,544,184"/>
+<area shape="rect" href="../../de/de6/a01063.html#a2fe58433b8df4ab155d7e0c325021cdf" title="Reads one row matrix" alt="" coords="371,259,543,285"/>
+<area shape="rect" href="../../de/de6/a01063.html#a70c5db6374434b417972bb28a1144029" title="文件操作" alt="" coords="177,309,295,336"/>
+<area shape="rect" href="../../d7/dd6/a01167.html#a73c1b6474d82fb88844ea63d54a19b1d" title="字符串 转 数组 // 将string 字符串转换成 数组数据 将人工输入的字符串转换成用于处理的数据" alt="" coords="157,360,315,387"/>
+<area shape="rect" href="../../de/de6/a01063.html#a5c968f9f3721c77545c419d5ea519ca0" title="Updates the para" alt="" coords="165,411,307,437"/>
+<area shape="rect" href="../../d3/da4/a01343.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="379,56,534,83"/>
+<area shape="rect" href="../../d3/da4/a01343.html#ab0bd05f35427650f2e295c18ba6938b3" title="num 转换成 字符串 前 补零" alt="" coords="371,107,543,133"/>
+<area shape="rect" href="../../de/de6/a01063.html#a5fec0ab1ea64f58af14e26f7e4ad0aac" title="Resets the p file described by s" alt="" coords="387,208,527,235"/>
+<area shape="rect" href="../../d3/da4/a01343.html#ac881e47f67b62f0e112ad8778404720c" title="Hexadecimal 2 character array hex 字符串 转换成 数组" alt="" coords="371,360,542,387"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="592,360,753,387"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="801,360,956,387"/>
+<area shape="rect" href="../../de/de6/a01063.html#ab0e31dfdd11ff5a789178ff0e70dc15c" title="Writes the para" alt="" coords="391,411,522,437"/>
 </map>
 </div>
 
@@ -249,18 +224,27 @@ $(document).ready(function(){initNavTree('d5/df1/a00206.html','../../');});
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00164_html_af5c9cce7978a6dc022e79146aa3f9e68"><div class="ttname"><a href="../../db/ddf/a00164.html#af5c9cce7978a6dc022e79146aa3f9e68">&#x202A;gFS</a></div><div class="ttdeci">&#x202A;cv::FileStorage gFS</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00014">main.cpp:14</a></div></div>
-<div class="ttc" id="aa01009_html"><div class="ttname"><a href="../../d7/ded/a01009.html">&#x202A;Config</a></div><div class="ttdoc">&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00029">Config.h:29</a></div></div>
-<div class="ttc" id="aa01009_html_aaa28b92aaa35102c72b3196a7a2295ef"><div class="ttname"><a href="../../d7/ded/a01009.html#aaa28b92aaa35102c72b3196a7a2295ef">&#x202A;Config::LoadParaFromYML</a></div><div class="ttdeci">&#x202A;bool LoadParaFromYML(const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;从yml 中 读取参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00604">Config.cc:604</a></div></div>
-<div class="ttc" id="aa01045_html_aa2e8fbcdd233ecc35b7798932be4bc46"><div class="ttname"><a href="../../d7/d46/a01045.html#aa2e8fbcdd233ecc35b7798932be4bc46">&#x202A;RunPara::WriteRunParaToFile</a></div><div class="ttdeci">&#x202A;bool WriteRunParaToFile(std::fstream *pfile)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00338">Config.cc:338</a></div></div>
-<div class="ttc" id="aa01009_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00034">Config.h:34</a></div></div>
-<div class="ttc" id="aa01009_html_adbb6ccd1f7a72de24216484582071010"><div class="ttname"><a href="../../d7/ded/a01009.html#adbb6ccd1f7a72de24216484582071010">&#x202A;Config::WriteParaToYML</a></div><div class="ttdeci">&#x202A;bool WriteParaToYML(cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;将参数 写入到 yml 文件中</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00611">Config.cc:611</a></div></div>
-<div class="ttc" id="aa01045_html_ab50487cc4124576dfbb2af0445a595c0"><div class="ttname"><a href="../../d7/d46/a01045.html#ab50487cc4124576dfbb2af0445a595c0">&#x202A;RunPara::ReadRunParaFromFile</a></div><div class="ttdeci">&#x202A;bool ReadRunParaFromFile(std::fstream *pfile)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00469">Config.cc:469</a></div></div>
-<div class="ttc" id="aa01037_html_ac6c5c0e3086cf28a96387e32ffc5bebf"><div class="ttname"><a href="../../d2/d41/a01037.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a></div><div class="ttdeci">&#x202A;static bool GlobalVarInit(Config *&amp;config, const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;��ʼ�� ȫ�ֲ���</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00083">init.cc:83</a></div></div>
+<div class="ttc" id="aa01079_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../d2/d4d/a01079.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
+<div class="ttc" id="aa01079_html"><div class="ttname"><a href="../../d2/d4d/a01079.html">&#x202A;RunPara</a></div><div class="ttdoc">&#x202A;系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00026">runpara.h:26</a></div></div>
+<div class="ttc" id="aa01063_html_a866e2bf6ee5717435128e3a07500a957"><div class="ttname"><a href="../../de/de6/a01063.html#a866e2bf6ee5717435128e3a07500a957">&#x202A;IDOIFile::ReadMat</a></div><div class="ttdeci">&#x202A;cv::Mat ReadMat(int row, int hight=100)</div><div class="ttdoc">&#x202A;bool ReadMat(cv::Mat &amp;img,int ) ; // 考虑循环读取文件操作 , 可能存在问题</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00453">IDOIFile.cc:453</a></div></div>
+<div class="ttc" id="aa01063_html_a2fe58433b8df4ab155d7e0c325021cdf"><div class="ttname"><a href="../../de/de6/a01063.html#a2fe58433b8df4ab155d7e0c325021cdf">&#x202A;IDOIFile::readOneRowMat</a></div><div class="ttdeci">&#x202A;bool readOneRowMat(uchar *oneRow)</div><div class="ttdoc">&#x202A;Reads one row matrix</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00413">IDOIFile.cc:413</a></div></div>
+<div class="ttc" id="aa01063_html_a02ab234b0e32ac5f2fd240ee4cf6cfd2"><div class="ttname"><a href="../../de/de6/a01063.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2">&#x202A;IDOIFile::AppendData</a></div><div class="ttdeci">&#x202A;bool AppendData(cv::Mat &amp;imgMat)</div><div class="ttdoc">&#x202A;写入新一批的图像</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00313">IDOIFile.cc:313</a></div></div>
+<div class="ttc" id="aa00053_html_af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb"><div class="ttname"><a href="../../dc/dee/a00053.html#af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb">&#x202A;OREAD</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00170">IDOIFile.h:170</a></div></div>
+<div class="ttc" id="aa01343_html_a343a35752b0575e884df5b0758cadfda"><div class="ttname"><a href="../../d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda">&#x202A;Utils_String::CharArr2Hex</a></div><div class="ttdeci">&#x202A;static std::string CharArr2Hex(uchar *buffer, int length=16, int flg_space=1)</div><div class="ttdoc">&#x202A;Character array 2 hexadecimal 数组 转换成 hex 字符</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00513">utils_string.cc:513</a></div></div>
+<div class="ttc" id="aa01063_html_a44bebcfa4609689ed618201d45a0f027"><div class="ttname"><a href="../../de/de6/a01063.html#a44bebcfa4609689ed618201d45a0f027">&#x202A;IDOIFile::ReadOneRowExt</a></div><div class="ttdeci">&#x202A;bool ReadOneRowExt(uchar *ext)</div><div class="ttdoc">&#x202A;Reads one row extent</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00433">IDOIFile.cc:433</a></div></div>
+<div class="ttc" id="aa01167_html"><div class="ttname"><a href="../../d7/dd6/a01167.html">&#x202A;SerialData</a></div><div class="ttdoc">&#x202A;暂存 串口发送回来的 分组数据 保存串口发送的原始数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d89/a00071_source.html#l00032">serialdata.h:32</a></div></div>
+<div class="ttc" id="aa01079_html_afce00056b91ac03c37dbbd836cc0b528"><div class="ttname"><a href="../../d2/d4d/a01079.html#afce00056b91ac03c37dbbd836cc0b528">&#x202A;RunPara::StFileHeader::nRowCnt</a></div><div class="ttdeci">&#x202A;int nRowCnt</div><div class="ttdoc">&#x202A;记录 文件数据的总的行数</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00052">runpara.h:52</a></div></div>
+<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00036">Commu.h:36</a></div></div>
+<div class="ttc" id="aa01063_html_a5c968f9f3721c77545c419d5ea519ca0"><div class="ttname"><a href="../../de/de6/a01063.html#a5c968f9f3721c77545c419d5ea519ca0">&#x202A;IDOIFile::updatePara</a></div><div class="ttdeci">&#x202A;bool updatePara(void)</div><div class="ttdoc">&#x202A;Updates the para</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00187">IDOIFile.cc:187</a></div></div>
+<div class="ttc" id="aa01063_html_a70c5db6374434b417972bb28a1144029"><div class="ttname"><a href="../../de/de6/a01063.html#a70c5db6374434b417972bb28a1144029">&#x202A;IDOIFile::release</a></div><div class="ttdeci">&#x202A;bool release()</div><div class="ttdoc">&#x202A;文件操作</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00628">IDOIFile.cc:628</a></div></div>
+<div class="ttc" id="aa01079_html_abdb922f4f6c3aae4f0815fec2c5b5a28"><div class="ttname"><a href="../../d2/d4d/a01079.html#abdb922f4f6c3aae4f0815fec2c5b5a28">&#x202A;RunPara::FileHeader</a></div><div class="ttdeci">&#x202A;struct RunPara::StFileHeader FileHeader</div></div>
+<div class="ttc" id="aa00041_html_a69aa29b598b851b0640aa225a9e5d61d"><div class="ttname"><a href="../../dd/d32/a00041.html#a69aa29b598b851b0640aa225a9e5d61d">&#x202A;uint</a></div><div class="ttdeci">&#x202A;unsigned int uint</div><div class="ttdoc">&#x202A;The uint</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00039">Commu.h:39</a></div></div>
+<div class="ttc" id="aa01063_html"><div class="ttname"><a href="../../de/de6/a01063.html">&#x202A;IDOIFile</a></div><div class="ttdoc">&#x202A;An idoi file.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00188">IDOIFile.h:188</a></div></div>
+<div class="ttc" id="aa01343_html_aa797e5e8119ca57f492ea5641817d49a"><div class="ttname"><a href="../../d3/da4/a01343.html#aa797e5e8119ca57f492ea5641817d49a">&#x202A;Utils_String::GetTime</a></div><div class="ttdeci">&#x202A;static std::string GetTime(char c='_', bool rand_flg=false)</div><div class="ttdoc">&#x202A;Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00567">utils_string.cc:567</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_e4242af473e2aee12aed92be20342e47.html">&#x202A;test</a></li><li class="navelem"><a class="el" href="../../d5/df1/a00206.html">&#x202A;test_config.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_e4242af473e2aee12aed92be20342e47.html">&#x202A;test</a></li><li class="navelem"><a class="el" href="../../d5/df1/a00206.html">&#x202A;test_idoifile.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/WorkWindow.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/WriteVideo.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,160 +89,62 @@ $(document).ready(function(){initNavTree('d2/d1f/a00083_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">WorkWindow.h</div>  </div>
+<div class="title">WriteVideo.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d2/d1f/a00083.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_WORKWINDOW_H_</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define CBOREHOLE_WORKWINDOW_H_</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../ui/ui_workwindow.h&quot;</span>    <span class="comment">// 本文件的 ui 编译之后的文件</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// 引用函数头文件</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/de0/a00050.html">&#x202A;IDOIFile.h</a>&quot;</span>       </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/de1/a00065.html">&#x202A;Serial.h</a>&quot;</span>         </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d8c/a00035.html">&#x202A;common.h</a>&quot;</span>         </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d2a/a00086.html">&#x202A;WriteVideo.h</a>&quot;</span>     </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/d06/a01005.html">&#x202A;CamProc</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="../../df/d59/a01001.html">&#x202A;CamCapture</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d2/d0a/a00333.html">&#x202A;Ui</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">class </span><a class="code" href="../../d7/d0c/a01173.html">&#x202A;WorkWindow</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d2/d1f/a00083.html#a8109678940135e75e59bb64819c1004d">   41</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/d1f/a00083.html#a8109678940135e75e59bb64819c1004d">&#x202A;K_BUFFER_MAX_SIZE</a> = 6;  </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_WRITEVIDEO_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CBOREHOLE_WRITEVIDEO_H_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QThread&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QMutex&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;opencv2/core.hpp&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/de0/a00050.html">&#x202A;CQueue.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d0/d5a/a01199.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d0/d5a/a01199.html">&#x202A;WriteVideo</a>:<span class="keyword">public</span> QThread</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d0/d5a/a01199.html#a6160a17554039c6133fd5cb7b418954f">   29</a></span>&#160;    <a class="code" href="../../db/dbb/a01047.html">&#x202A;CQueue&lt;cv::Mat&gt;</a> *<a class="code" href="../../d0/d5a/a01199.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d0/d5a/a01199.html#aec15a690edf1e1a7af966b0fee59f71e">   30</a></span>&#160;    cv::VideoWriter *<a class="code" href="../../d0/d5a/a01199.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d0/d5a/a01199.html#abaf737843cc8706003350634de08b9e8">   31</a></span>&#160;    QMutex <a class="code" href="../../d0/d5a/a01199.html#abaf737843cc8706003350634de08b9e8">&#x202A;m_write_mutex_</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d5a/a01199.html#a8537b4c963467314c61eb26616087b1b">&#x202A;WriteVideo</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d0/d5a/a01199.html#ac323b2953beb68b8fbafa30bd9370f4c">&#x202A;~WriteVideo</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// 初始化程序</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d0/d5a/a01199.html#ad065ff730822bfeac57ed179617a61e2">&#x202A;Init</a>(<span class="keywordtype">void</span>);    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 开始写入</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d0/d5a/a01199.html#a0089a1003badc38250ed84d66b8c5fe3">&#x202A;StartWriter</a>(std::string file_name = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d0/d5a/a01199.html#a21abae28e88c5d6090d4377913ef61ea">&#x202A;CloseWriter</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d7/d0c/a01173.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/d0c/a01173.html">&#x202A;WorkWindow</a> : <span class="keyword">public</span> QMainWindow</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d7/d0c/a01173.html#a798f4301174eaffad296ad212a61b33d">   59</a></span>&#160;    <a class="code" href="../../d7/d59/a01013.html">&#x202A;CQueue&lt;cv::Mat&gt;</a> *<a class="code" href="../../d7/d0c/a01173.html#a798f4301174eaffad296ad212a61b33d">&#x202A;mq_CaptureImageBuffer_</a>;  </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d7/d0c/a01173.html#a0875afe0e956a7c16209a742b564309d">   62</a></span>&#160;    <a class="code" href="../../d9/dda/a01289.html">&#x202A;Ui::WorkWindow</a> *<a class="code" href="../../d7/d0c/a01173.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// 创建 处理线程</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d7/d0c/a01173.html#a61b65273b35191ec0675fe927b2a8fc8">   64</a></span>&#160;    <a class="code" href="../../d7/d06/a01005.html">&#x202A;CamProc</a> *<a class="code" href="../../d7/d0c/a01173.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>;  </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d7/d0c/a01173.html#a5db89bd52183aedfb5723bf4f41af7c6">   65</a></span>&#160;    <a class="code" href="../../df/d59/a01001.html">&#x202A;CamCapture</a> *<a class="code" href="../../d7/d0c/a01173.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;m_CamCapture_</a>;    </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d7/d0c/a01173.html#a8b24028f5fda51b3994e0ce589db5825">   66</a></span>&#160;    <a class="code" href="../../dc/d98/a01177.html">&#x202A;WriteVideo</a>  *<a class="code" href="../../d7/d0c/a01173.html#a8b24028f5fda51b3994e0ce589db5825">&#x202A;m_WriteVideo__</a>; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d7/d0c/a01173.html#ab7c42f345db9d961069023109afd18b2">   68</a></span>&#160;    QThread *<a class="code" href="../../d7/d0c/a01173.html#ab7c42f345db9d961069023109afd18b2">&#x202A;mt_serial_thread_</a>; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d7/d0c/a01173.html#ae75fa8506f277a4bfd16ecf6854faa10">&#x202A;WorkWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../d7/d0c/a01173.html#a0e99dde5e6e49f134243fbad6ded3a04">&#x202A;~WorkWindow</a>();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0c/a01173.html#a14c3f45662e1af9a6dd2071418d6a484">&#x202A;ListAllCameraDevice</a>();  </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0c/a01173.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9">&#x202A;SetRelateConnection</a>(); </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0c/a01173.html#a4ec884594b80adcfb3a7fa7181e216d4">&#x202A;ShowMatOnQtLabel</a>(<span class="keyword">const</span> cv::Mat &amp;srcImg, QLabel *lb_label,<span class="keywordtype">int</span> width,<span class="keywordtype">int</span> height);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#a41a95073fcd146be53bf16c5649b00b0">&#x202A;slot_ShowMatOnLabelByFlg</a>(cv::Mat *img,<span class="keywordtype">int</span> flg=0);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#ae0cd97fd58fbed431d25dd3055f084bd">&#x202A;Slot_UpdateUIByRunPara</a>();</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;signals:</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#a079ea93a8e35136b245a4f19b9f380f5">&#x202A;signal_close_windows</a>();</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#af811eab27901f7a9dac0a8700f13be49">&#x202A;signal_render_extra_info</a>();     </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#a043fda4cae901d1aa3566022c4b66b90">&#x202A;signal_updateUI</a>(); <span class="comment">// 更新 ui 信号 可以从其他地方 发送</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#adf8cb1ec53fceb7ea6e54150b22ba590">&#x202A;on_btn_work_exit_clicked</a>();  <span class="comment">// 退出按钮点击之后的操作</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#a7597205c96689c706eea3c64d87ba180">&#x202A;on_btn_startWork_clicked</a>();  </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#afbdd485a69c246f9a2fb96ce22c7f9c2">&#x202A;on_btn_Record_clicked</a>();</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#a01083e6fa8585bbe6302affa302bd4d7">&#x202A;slot_render_location</a>(<span class="keywordtype">int</span> dPluse);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#ae9dcd6afdb5b4cd7811eda08b9223de1">&#x202A;slot_render_HCM</a>(<a class="code" href="../../d6/d6e/a01137.html#d8/d02/a01149">&#x202A;FrameData::StCompass</a> &amp;compass);  </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#af92af3ed8f61e4fd9eaf4d1b14446683">&#x202A;slot_render_extra_info</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#aedce215cbc9df3707f1371f28f63e9d1">&#x202A;closeEvent</a>(QCloseEvent *event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0c/a01173.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;Init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0c/a01173.html#a8ef97f32155274910902b00d7a327c84">&#x202A;ParaInit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d0c/a01173.html#a054b4913c0b0f87c7c285e122eaed7fe">&#x202A;RunParaUpdate</a>();</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0c/a01173.html#a1ac8d28317aadd53446419ac8b353a82">&#x202A;renderLocation</a>(<span class="keywordtype">int</span> d_pluse);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;};</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#endif // CBOREHOLE_WORKWINDOW_H_</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// run 函数 执行在另外的线程中</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d0/d5a/a01199.html#a0883915d51196a8c6f48eead87c1d05c">&#x202A;run</a>(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif  //CBOREHOLE_WRITEVIDEO_H_</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01173_html_af92af3ed8f61e4fd9eaf4d1b14446683"><div class="ttname"><a href="../../d7/d0c/a01173.html#af92af3ed8f61e4fd9eaf4d1b14446683">&#x202A;WorkWindow::slot_render_extra_info</a></div><div class="ttdeci">&#x202A;void slot_render_extra_info(void)</div><div class="ttdoc">&#x202A;更新其他信息值 // 电压 // 亮度 // 存储信息</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00452">WorkWindow.cc:452</a></div></div>
-<div class="ttc" id="aa01173_html_a61b65273b35191ec0675fe927b2a8fc8"><div class="ttname"><a href="../../d7/d0c/a01173.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;WorkWindow::m_CamProc_</a></div><div class="ttdeci">&#x202A;CamProc * m_CamProc_</div><div class="ttdoc">&#x202A;图像处理对象</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00064">WorkWindow.h:64</a></div></div>
-<div class="ttc" id="aa00086_html"><div class="ttname"><a href="../../da/d2a/a00086.html">&#x202A;WriteVideo.h</a></div><div class="ttdoc">&#x202A;Declares the write video class @changelog 2019/11/19 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01173_html_a5db89bd52183aedfb5723bf4f41af7c6"><div class="ttname"><a href="../../d7/d0c/a01173.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;WorkWindow::m_CamCapture_</a></div><div class="ttdeci">&#x202A;CamCapture * m_CamCapture_</div><div class="ttdoc">&#x202A;相机采集 对象</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00065">WorkWindow.h:65</a></div></div>
-<div class="ttc" id="aa01173_html_a043fda4cae901d1aa3566022c4b66b90"><div class="ttname"><a href="../../d7/d0c/a01173.html#a043fda4cae901d1aa3566022c4b66b90">&#x202A;WorkWindow::signal_updateUI</a></div><div class="ttdeci">&#x202A;void signal_updateUI()</div><div class="ttdoc">&#x202A;Raises an Update user interface signal 提醒刷新界面 ui 参数</div></div>
-<div class="ttc" id="aa01173_html_a798f4301174eaffad296ad212a61b33d"><div class="ttname"><a href="../../d7/d0c/a01173.html#a798f4301174eaffad296ad212a61b33d">&#x202A;WorkWindow::mq_CaptureImageBuffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * mq_CaptureImageBuffer_</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00059">WorkWindow.h:59</a></div></div>
-<div class="ttc" id="aa01001_html"><div class="ttname"><a href="../../df/d59/a01001.html">&#x202A;CamCapture</a></div><div class="ttdoc">&#x202A;摄像头 抓取对象, 循环抓取对象数据到缓冲队列中</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00030">CamCapture.h:30</a></div></div>
-<div class="ttc" id="aa01173_html_adf8cb1ec53fceb7ea6e54150b22ba590"><div class="ttname"><a href="../../d7/d0c/a01173.html#adf8cb1ec53fceb7ea6e54150b22ba590">&#x202A;WorkWindow::on_btn_work_exit_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_work_exit_clicked()</div><div class="ttdoc">&#x202A;退出按钮点击之后的操作</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00287">WorkWindow.cc:287</a></div></div>
-<div class="ttc" id="aa01173_html_a079ea93a8e35136b245a4f19b9f380f5"><div class="ttname"><a href="../../d7/d0c/a01173.html#a079ea93a8e35136b245a4f19b9f380f5">&#x202A;WorkWindow::signal_close_windows</a></div><div class="ttdeci">&#x202A;void signal_close_windows()</div><div class="ttdoc">&#x202A;发送当前窗口关闭信号</div></div>
-<div class="ttc" id="aa01173_html_a7597205c96689c706eea3c64d87ba180"><div class="ttname"><a href="../../d7/d0c/a01173.html#a7597205c96689c706eea3c64d87ba180">&#x202A;WorkWindow::on_btn_startWork_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_startWork_clicked()</div><div class="ttdoc">&#x202A;开始工作按钮点击事件 开始执行拼图程序</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00336">WorkWindow.cc:336</a></div></div>
-<div class="ttc" id="aa01173_html_a1ac8d28317aadd53446419ac8b353a82"><div class="ttname"><a href="../../d7/d0c/a01173.html#a1ac8d28317aadd53446419ac8b353a82">&#x202A;WorkWindow::renderLocation</a></div><div class="ttdeci">&#x202A;bool renderLocation(int d_pluse)</div><div class="ttdoc">&#x202A;将位置信息实时更新到界面的label 上</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00512">WorkWindow.cc:512</a></div></div>
-<div class="ttc" id="aa01173_html_ae9dcd6afdb5b4cd7811eda08b9223de1"><div class="ttname"><a href="../../d7/d0c/a01173.html#ae9dcd6afdb5b4cd7811eda08b9223de1">&#x202A;WorkWindow::slot_render_HCM</a></div><div class="ttdeci">&#x202A;void slot_render_HCM(FrameData::StCompass &amp;compass)</div><div class="ttdoc">&#x202A;更新电子罗盘数据</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00443">WorkWindow.cc:443</a></div></div>
-<div class="ttc" id="aa01173_html_a98cc99469cf7af144c013870cd2a31e1"><div class="ttname"><a href="../../d7/d0c/a01173.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;WorkWindow::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdoc">&#x202A;主线程 初始化</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00053">WorkWindow.cc:53</a></div></div>
-<div class="ttc" id="aa00333_html"><div class="ttname"><a href="../../d2/d0a/a00333.html">&#x202A;Ui</a></div></div>
-<div class="ttc" id="aa01173_html_a8b24028f5fda51b3994e0ce589db5825"><div class="ttname"><a href="../../d7/d0c/a01173.html#a8b24028f5fda51b3994e0ce589db5825">&#x202A;WorkWindow::m_WriteVideo__</a></div><div class="ttdeci">&#x202A;WriteVideo * m_WriteVideo__</div><div class="ttdoc">&#x202A;数据写入流</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00066">WorkWindow.h:66</a></div></div>
-<div class="ttc" id="aa01173_html_a054b4913c0b0f87c7c285e122eaed7fe"><div class="ttname"><a href="../../d7/d0c/a01173.html#a054b4913c0b0f87c7c285e122eaed7fe">&#x202A;WorkWindow::RunParaUpdate</a></div><div class="ttdeci">&#x202A;void RunParaUpdate()</div><div class="ttdoc">&#x202A;根据运行状态 以及系统时间 更新运行 参数</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00485">WorkWindow.cc:485</a></div></div>
-<div class="ttc" id="aa01173_html_ab7c42f345db9d961069023109afd18b2"><div class="ttname"><a href="../../d7/d0c/a01173.html#ab7c42f345db9d961069023109afd18b2">&#x202A;WorkWindow::mt_serial_thread_</a></div><div class="ttdeci">&#x202A;QThread * mt_serial_thread_</div><div class="ttdoc">&#x202A;串口线程 建立一个线程管理线程执行</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00068">WorkWindow.h:68</a></div></div>
-<div class="ttc" id="aa01173_html_a14c3f45662e1af9a6dd2071418d6a484"><div class="ttname"><a href="../../d7/d0c/a01173.html#a14c3f45662e1af9a6dd2071418d6a484">&#x202A;WorkWindow::ListAllCameraDevice</a></div><div class="ttdeci">&#x202A;bool ListAllCameraDevice()</div><div class="ttdoc">&#x202A;列出所有可以使用 的相机 使用 QDebug 输出</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00128">WorkWindow.cc:128</a></div></div>
-<div class="ttc" id="aa01013_html"><div class="ttname"><a href="../../d7/d59/a01013.html">&#x202A;CQueue&lt; cv::Mat &gt;</a></div></div>
-<div class="ttc" id="aa01005_html"><div class="ttname"><a href="../../d7/d06/a01005.html">&#x202A;CamProc</a></div><div class="ttdoc">&#x202A;处理线程 单独执行过程</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00035">CamProc.h:35</a></div></div>
-<div class="ttc" id="aa01173_html_af811eab27901f7a9dac0a8700f13be49"><div class="ttname"><a href="../../d7/d0c/a01173.html#af811eab27901f7a9dac0a8700f13be49">&#x202A;WorkWindow::signal_render_extra_info</a></div><div class="ttdeci">&#x202A;void signal_render_extra_info()</div><div class="ttdoc">&#x202A;更新其他信息 —亮度,存储,电压等信息</div></div>
-<div class="ttc" id="aa01137_html_d8/d02/a01149"><div class="ttname"><a href="../../d6/d6e/a01137.html#d8/d02/a01149">&#x202A;FrameData::StCompass</a></div><div class="ttdoc">&#x202A;电子罗盘</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00182">serialdata.h:182</a></div></div>
-<div class="ttc" id="aa01173_html_afbdd485a69c246f9a2fb96ce22c7f9c2"><div class="ttname"><a href="../../d7/d0c/a01173.html#afbdd485a69c246f9a2fb96ce22c7f9c2">&#x202A;WorkWindow::on_btn_Record_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_Record_clicked()</div><div class="ttdoc">&#x202A;处理单纯的录制图像 功能</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00411">WorkWindow.cc:411</a></div></div>
-<div class="ttc" id="aa01173_html_aca648f5b3e1bd12006f0d2fd3fc5c8e9"><div class="ttname"><a href="../../d7/d0c/a01173.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9">&#x202A;WorkWindow::SetRelateConnection</a></div><div class="ttdeci">&#x202A;bool SetRelateConnection()</div><div class="ttdoc">&#x202A;设定相关槽和信号的连接</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00176">WorkWindow.cc:176</a></div></div>
-<div class="ttc" id="aa00035_html"><div class="ttname"><a href="../../d4/d8c/a00035.html">&#x202A;common.h</a></div></div>
-<div class="ttc" id="aa00083_html_a8109678940135e75e59bb64819c1004d"><div class="ttname"><a href="../../d2/d1f/a00083.html#a8109678940135e75e59bb64819c1004d">&#x202A;K_BUFFER_MAX_SIZE</a></div><div class="ttdeci">&#x202A;const int K_BUFFER_MAX_SIZE</div><div class="ttdoc">&#x202A;缓冲队列的最大长度</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00041">WorkWindow.h:41</a></div></div>
-<div class="ttc" id="aa00050_html"><div class="ttname"><a href="../../d5/de0/a00050.html">&#x202A;IDOIFile.h</a></div><div class="ttdoc">&#x202A;Declares the idoi file class @changelog 2019/6/26 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01173_html_a8ef97f32155274910902b00d7a327c84"><div class="ttname"><a href="../../d7/d0c/a01173.html#a8ef97f32155274910902b00d7a327c84">&#x202A;WorkWindow::ParaInit</a></div><div class="ttdeci">&#x202A;bool ParaInit(void)</div><div class="ttdoc">&#x202A;初始化 程序</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00468">WorkWindow.cc:468</a></div></div>
-<div class="ttc" id="aa01289_html"><div class="ttname"><a href="../../d9/dda/a01289.html">&#x202A;Ui::WorkWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d01/a00227_source.html#l00665">ui_workwindow.h:665</a></div></div>
-<div class="ttc" id="aa01177_html"><div class="ttname"><a href="../../dc/d98/a01177.html">&#x202A;WriteVideo</a></div><div class="ttdoc">&#x202A;A write video. 使用传统线程方式 处理, 程序循环执行 写入动作</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00026">WriteVideo.h:26</a></div></div>
-<div class="ttc" id="aa01173_html_a01083e6fa8585bbe6302affa302bd4d7"><div class="ttname"><a href="../../d7/d0c/a01173.html#a01083e6fa8585bbe6302affa302bd4d7">&#x202A;WorkWindow::slot_render_location</a></div><div class="ttdeci">&#x202A;void slot_render_location(int dPluse)</div><div class="ttdoc">&#x202A;更新 编码器 位置信息</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00428">WorkWindow.cc:428</a></div></div>
-<div class="ttc" id="aa01173_html_ae0cd97fd58fbed431d25dd3055f084bd"><div class="ttname"><a href="../../d7/d0c/a01173.html#ae0cd97fd58fbed431d25dd3055f084bd">&#x202A;WorkWindow::Slot_UpdateUIByRunPara</a></div><div class="ttdeci">&#x202A;void Slot_UpdateUIByRunPara()</div><div class="ttdoc">&#x202A;根据运行参数 更改目前程序界面上的参数</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00151">WorkWindow.cc:151</a></div></div>
-<div class="ttc" id="aa00065_html"><div class="ttname"><a href="../../de/de1/a00065.html">&#x202A;Serial.h</a></div><div class="ttdoc">&#x202A;Declares the serial class @changelog 2019/11/7 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01173_html_a0875afe0e956a7c16209a742b564309d"><div class="ttname"><a href="../../d7/d0c/a01173.html#a0875afe0e956a7c16209a742b564309d">&#x202A;WorkWindow::ui</a></div><div class="ttdeci">&#x202A;Ui::WorkWindow * ui</div><div class="ttdoc">&#x202A;缓冲队列, 给采集和显示用的队列</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00062">WorkWindow.h:62</a></div></div>
-<div class="ttc" id="aa01173_html_a41a95073fcd146be53bf16c5649b00b0"><div class="ttname"><a href="../../d7/d0c/a01173.html#a41a95073fcd146be53bf16c5649b00b0">&#x202A;WorkWindow::slot_ShowMatOnLabelByFlg</a></div><div class="ttdeci">&#x202A;void slot_ShowMatOnLabelByFlg(cv::Mat *img, int flg=0)</div><div class="ttdoc">&#x202A;跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00211">WorkWindow.cc:211</a></div></div>
-<div class="ttc" id="aa01173_html_aedce215cbc9df3707f1371f28f63e9d1"><div class="ttname"><a href="../../d7/d0c/a01173.html#aedce215cbc9df3707f1371f28f63e9d1">&#x202A;WorkWindow::closeEvent</a></div><div class="ttdeci">&#x202A;void closeEvent(QCloseEvent *event) override</div><div class="ttdoc">&#x202A;窗口关闭事件,</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00315">WorkWindow.cc:315</a></div></div>
-<div class="ttc" id="aa01173_html_ae75fa8506f277a4bfd16ecf6854faa10"><div class="ttname"><a href="../../d7/d0c/a01173.html#ae75fa8506f277a4bfd16ecf6854faa10">&#x202A;WorkWindow::WorkWindow</a></div><div class="ttdeci">&#x202A;WorkWindow(QWidget *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the WorkWindow class 实现构造函数, 完成构造的设定 初始化部分单独处理</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00017">WorkWindow.cc:17</a></div></div>
-<div class="ttc" id="aa01173_html"><div class="ttname"><a href="../../d7/d0c/a01173.html">&#x202A;WorkWindow</a></div><div class="ttdoc">&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00054">WorkWindow.h:54</a></div></div>
-<div class="ttc" id="aa01173_html_a4ec884594b80adcfb3a7fa7181e216d4"><div class="ttname"><a href="../../d7/d0c/a01173.html#a4ec884594b80adcfb3a7fa7181e216d4">&#x202A;WorkWindow::ShowMatOnQtLabel</a></div><div class="ttdeci">&#x202A;bool ShowMatOnQtLabel(const cv::Mat &amp;srcImg, QLabel *lb_label, int width, int height)</div><div class="ttdoc">&#x202A;将一副图像显示在 设定的 Label 上</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00249">WorkWindow.cc:249</a></div></div>
-<div class="ttc" id="aa01173_html_a0e99dde5e6e49f134243fbad6ded3a04"><div class="ttname"><a href="../../d7/d0c/a01173.html#a0e99dde5e6e49f134243fbad6ded3a04">&#x202A;WorkWindow::~WorkWindow</a></div><div class="ttdeci">&#x202A;~WorkWindow()</div><div class="ttdoc">&#x202A;Finalizes an instance of the WorkWindow class</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00103">WorkWindow.cc:103</a></div></div>
+<div class="ttc" id="aa01199_html_a8537b4c963467314c61eb26616087b1b"><div class="ttname"><a href="../../d0/d5a/a01199.html#a8537b4c963467314c61eb26616087b1b">&#x202A;WriteVideo::WriteVideo</a></div><div class="ttdeci">&#x202A;WriteVideo(QObject *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the WriteVideo class ��ʼʵ�� ���г���</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df3/a00185_source.html#l00022">WriteVideo.cc:22</a></div></div>
+<div class="ttc" id="aa01199_html"><div class="ttname"><a href="../../d0/d5a/a01199.html">&#x202A;WriteVideo</a></div><div class="ttdoc">&#x202A;A write video. 使用传统线程方式 处理, 程序循环执行 写入动作</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00026">WriteVideo.h:26</a></div></div>
+<div class="ttc" id="aa01199_html_a0883915d51196a8c6f48eead87c1d05c"><div class="ttname"><a href="../../d0/d5a/a01199.html#a0883915d51196a8c6f48eead87c1d05c">&#x202A;WriteVideo::run</a></div><div class="ttdeci">&#x202A;void run(void) override</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df3/a00185_source.html#l00094">WriteVideo.cc:94</a></div></div>
+<div class="ttc" id="aa01199_html_aec15a690edf1e1a7af966b0fee59f71e"><div class="ttname"><a href="../../d0/d5a/a01199.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;WriteVideo::m_writer_</a></div><div class="ttdeci">&#x202A;cv::VideoWriter * m_writer_</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00030">WriteVideo.h:30</a></div></div>
+<div class="ttc" id="aa01199_html_ac323b2953beb68b8fbafa30bd9370f4c"><div class="ttname"><a href="../../d0/d5a/a01199.html#ac323b2953beb68b8fbafa30bd9370f4c">&#x202A;WriteVideo::~WriteVideo</a></div><div class="ttdeci">&#x202A;~WriteVideo()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df3/a00185_source.html#l00030">WriteVideo.cc:30</a></div></div>
+<div class="ttc" id="aa01199_html_abaf737843cc8706003350634de08b9e8"><div class="ttname"><a href="../../d0/d5a/a01199.html#abaf737843cc8706003350634de08b9e8">&#x202A;WriteVideo::m_write_mutex_</a></div><div class="ttdeci">&#x202A;QMutex m_write_mutex_</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00031">WriteVideo.h:31</a></div></div>
+<div class="ttc" id="aa01199_html_ad065ff730822bfeac57ed179617a61e2"><div class="ttname"><a href="../../d0/d5a/a01199.html#ad065ff730822bfeac57ed179617a61e2">&#x202A;WriteVideo::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df3/a00185_source.html#l00034">WriteVideo.cc:34</a></div></div>
+<div class="ttc" id="aa01199_html_a21abae28e88c5d6090d4377913ef61ea"><div class="ttname"><a href="../../d0/d5a/a01199.html#a21abae28e88c5d6090d4377913ef61ea">&#x202A;WriteVideo::CloseWriter</a></div><div class="ttdeci">&#x202A;bool CloseWriter()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df3/a00185_source.html#l00074">WriteVideo.cc:74</a></div></div>
+<div class="ttc" id="aa01199_html_a6160a17554039c6133fd5cb7b418954f"><div class="ttname"><a href="../../d0/d5a/a01199.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;WriteVideo::m_write_buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * m_write_buffer_</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00029">WriteVideo.h:29</a></div></div>
+<div class="ttc" id="aa00050_html"><div class="ttname"><a href="../../d5/de0/a00050.html">&#x202A;CQueue.h</a></div><div class="ttdoc">&#x202A;Declares the queue class @changelog 2019/11/8 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa01199_html_a0089a1003badc38250ed84d66b8c5fe3"><div class="ttname"><a href="../../d0/d5a/a01199.html#a0089a1003badc38250ed84d66b8c5fe3">&#x202A;WriteVideo::StartWriter</a></div><div class="ttdeci">&#x202A;bool StartWriter(std::string file_name=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df3/a00185_source.html#l00039">WriteVideo.cc:39</a></div></div>
+<div class="ttc" id="aa01047_html"><div class="ttname"><a href="../../db/dbb/a01047.html">&#x202A;CQueue&lt; cv::Mat &gt;</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d2/d1f/a00083.html">&#x202A;WorkWindow.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d2/d1f/a00083.html">&#x202A;WriteVideo.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

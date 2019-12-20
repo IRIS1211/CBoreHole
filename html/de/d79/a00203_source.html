@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/test/test_commu.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/test/test_config.cc 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,52 +89,80 @@ $(document).ready(function(){initNavTree('de/d79/a00203_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">test_commu.cc</div>  </div>
+<div class="title">test_config.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../de/d79/a00203.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../stdafx.h&quot;</span></div>
+<a href="../../de/d79/a00203.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../inc/Config.h&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// 测试通讯函数</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../de/d79/a00203.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc">    5</a></span>&#160;<a class="code" href="../../de/d79/a00203.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;test Commu  Function!&quot;</span>)</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"># if 0</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../de/d79/a00203.html#a3b854a3e416cd8e379515c704f0fcbd6">    5</a></span>&#160;<a class="code" href="../../de/d79/a00203.html#a3b854a3e416cd8e379515c704f0fcbd6">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Test Write And Read YML&quot;</span>)</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    CHECK(<a class="code" href="../../d8/d41/a00038.html#a5619370f6b13f37a6780a0986ac1f153">&#x202A;hex2num</a>(<span class="charliteral">&#39;F&#39;</span>) == 15);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    CHECK(<a class="code" href="../../d8/d41/a00038.html#aa4d8cf50c0a13481ceb04c5a0581c959">&#x202A;str2uchar</a>(<span class="stringliteral">&quot;FF&quot;</span>) == 0xff);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    CHECK(<a class="code" href="../../d8/d41/a00038.html#aa4d8cf50c0a13481ceb04c5a0581c959">&#x202A;str2uchar</a>(<span class="stringliteral">&quot;0F&quot;</span>) == 0x0f);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">const</span> std::string test_str = <span class="stringliteral">&quot;68 13 00 85 11 12 21 22 31 32 00 00 01 00 00 02 00 00 03 88 FF 01 02 03 04 05 0F&quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> buf[27];</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#acff23706cd23da7fde42b33a9f5ebcea">&#x202A;Str2CharArray</a>(buf, test_str);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::string str = <a class="code" href="../../d8/d41/a00038.html#a2bccd732252a844a62b3e0bdc7de82d8">&#x202A;charArr2String</a>(buf, 27);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// 检测是否满足 转换函数正确性</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    CHECK(test_str == str);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="comment">// 初始化参数, 写入临时文件 并能够成功读取文件</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="../../d8/d27/a01043.html">&#x202A;Config</a> *config;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    cv::FileStorage fs;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    fs.open(<span class="stringliteral">&quot;./Config/test.yml&quot;</span>, cv::FileStorage::WRITE);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../df/d18/a01071.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a>(config, gFS);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    config-&gt;<a class="code" href="../../d8/d27/a01043.html#aaa28b92aaa35102c72b3196a7a2295ef">&#x202A;LoadParaFromYML</a>(gFS);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// 写入文件</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    config-&gt;<a class="code" href="../../d8/d27/a01043.html#adbb6ccd1f7a72de24216484582071010">&#x202A;WriteParaToYML</a>(fs);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    fs.release();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QByteArray res = <a class="code" href="../../d8/d41/a00038.html#ad3557e201a0276ee8492aae3dbec7606">&#x202A;Str2QByteArray</a>(test_str);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;res:&quot;</span> &lt;&lt; res;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> std::string test_str2 = <span class="stringliteral">&quot;6813008511122122313200000100000200000388FF01020304050F&quot;</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QByteArray res2 = <a class="code" href="../../d8/d41/a00038.html#ad3557e201a0276ee8492aae3dbec7606">&#x202A;Str2QByteArray</a>(test_str2, 0);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;res2:&quot;</span> &lt;&lt; res2;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    CHECK(res.size () == res2.size());</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// 重新打开</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    fs.open(<span class="stringliteral">&quot;./Config/test.yml&quot;</span>, cv::FileStorage::READ);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    config-&gt;<a class="code" href="../../d8/d27/a01043.html#aaa28b92aaa35102c72b3196a7a2295ef">&#x202A;LoadParaFromYML</a>(fs);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    fs.release();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"># if 0</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../de/d79/a00203.html#a44733fb236621e4eaa4a2e26d628659f">   28</a></span>&#160;<a class="code" href="../../de/d79/a00203.html#a3b854a3e416cd8e379515c704f0fcbd6">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Test Write And Read Files&quot;</span>)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 初始化参数, 写入临时文件 并能够成功读取文件</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../d8/d27/a01043.html">&#x202A;Config</a> *config;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../df/d18/a01071.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a>(config, gFS);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    config-&gt;<a class="code" href="../../d8/d27/a01043.html#aaa28b92aaa35102c72b3196a7a2295ef">&#x202A;LoadParaFromYML</a>(gFS);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::fstream *file = <span class="keyword">new</span> std::fstream();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    file-&gt;open(<span class="stringliteral">&quot;./Config/test.bin&quot;</span>, std::ios::out | std::ios::binary);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    config-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#aa2e8fbcdd233ecc35b7798932be4bc46">&#x202A;WriteRunParaToFile</a>(file);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    file-&gt;close();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    config = <span class="keyword">new</span> <a class="code" href="../../d8/d27/a01043.html">&#x202A;Config</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// 重新打开</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    file-&gt;open(<span class="stringliteral">&quot;./Config/test.bin&quot;</span>, std::ios::in | std::ios::binary);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    config-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ab50487cc4124576dfbb2af0445a595c0">&#x202A;ReadRunParaFromFile</a>(file);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    file-&gt;close();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">delete</span> config;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">delete</span> file;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// _CrtDumpMemoryLeaks();  // 到达此处时 所有未销毁的对象都认为是内存泄漏</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00203_html_a5d4b06d9b49f5e6c501ccfccd5e19bfc"><div class="ttname"><a href="../../de/d79/a00203.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;test Commu  Function!&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d79/a00203_source.html#l00005">test_commu.cc:5</a></div></div>
-<div class="ttc" id="aa00038_html_ad3557e201a0276ee8492aae3dbec7606"><div class="ttname"><a href="../../d8/d41/a00038.html#ad3557e201a0276ee8492aae3dbec7606">&#x202A;Str2QByteArray</a></div><div class="ttdeci">&#x202A;QByteArray Str2QByteArray(const std::string &amp;str, int flg_space=1)</div><div class="ttdoc">&#x202A;将字符串 转换成 QByteArray 字符串默认有空格</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/a00149_source.html#l01150">Commu.cc:1150</a></div></div>
-<div class="ttc" id="aa00038_html_a2bccd732252a844a62b3e0bdc7de82d8"><div class="ttname"><a href="../../d8/d41/a00038.html#a2bccd732252a844a62b3e0bdc7de82d8">&#x202A;charArr2String</a></div><div class="ttdeci">&#x202A;std::string charArr2String(uchar *buffer, int length=16, int flg_space=1)</div><div class="ttdoc">&#x202A;将UCHAR 字符串依次转换成 string 字符串</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/a00149_source.html#l01087">Commu.cc:1087</a></div></div>
-<div class="ttc" id="aa00038_html_acff23706cd23da7fde42b33a9f5ebcea"><div class="ttname"><a href="../../d8/d41/a00038.html#acff23706cd23da7fde42b33a9f5ebcea">&#x202A;Str2CharArray</a></div><div class="ttdeci">&#x202A;void Str2CharArray(uchar *buffer, const std::string &amp;str, int flg_space=1)</div><div class="ttdoc">&#x202A;字符串 转换成 数值数组</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/a00149_source.html#l01116">Commu.cc:1116</a></div></div>
-<div class="ttc" id="aa00038_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00036">Commu.h:36</a></div></div>
-<div class="ttc" id="aa00038_html_a5619370f6b13f37a6780a0986ac1f153"><div class="ttname"><a href="../../d8/d41/a00038.html#a5619370f6b13f37a6780a0986ac1f153">&#x202A;hex2num</a></div><div class="ttdeci">&#x202A;int hex2num(char a)</div><div class="ttdoc">&#x202A;Hexadecimal 2num</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/a00149_source.html#l00714">Commu.cc:714</a></div></div>
-<div class="ttc" id="aa00038_html_aa4d8cf50c0a13481ceb04c5a0581c959"><div class="ttname"><a href="../../d8/d41/a00038.html#aa4d8cf50c0a13481ceb04c5a0581c959">&#x202A;str2uchar</a></div><div class="ttdeci">&#x202A;uchar str2uchar(std::string str)</div><div class="ttdoc">&#x202A;2uchars the given string</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/a00149_source.html#l00877">Commu.cc:877</a></div></div>
+<div class="ttc" id="aa00203_html_a3b854a3e416cd8e379515c704f0fcbd6"><div class="ttname"><a href="../../de/d79/a00203.html#a3b854a3e416cd8e379515c704f0fcbd6">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;Test Write And Read YML&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d79/a00203_source.html#l00005">test_config.cc:5</a></div></div>
+<div class="ttc" id="aa01043_html_aaa28b92aaa35102c72b3196a7a2295ef"><div class="ttname"><a href="../../d8/d27/a01043.html#aaa28b92aaa35102c72b3196a7a2295ef">&#x202A;Config::LoadParaFromYML</a></div><div class="ttdeci">&#x202A;bool LoadParaFromYML(const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;从yml 中 读取参数</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/a00149_source.html#l00623">Config.cc:623</a></div></div>
+<div class="ttc" id="aa01079_html_ab50487cc4124576dfbb2af0445a595c0"><div class="ttname"><a href="../../d2/d4d/a01079.html#ab50487cc4124576dfbb2af0445a595c0">&#x202A;RunPara::ReadRunParaFromFile</a></div><div class="ttdeci">&#x202A;bool ReadRunParaFromFile(std::fstream *pfile)</div><div class="ttdoc">&#x202A;从二进制流文件中读取文件</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/a00149_source.html#l00485">Config.cc:485</a></div></div>
+<div class="ttc" id="aa01071_html_ac6c5c0e3086cf28a96387e32ffc5bebf"><div class="ttname"><a href="../../df/d18/a01071.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a></div><div class="ttdeci">&#x202A;static bool GlobalVarInit(Config *&amp;config, const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;��ʼ�� ȫ�ֲ���</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00111">init.cc:111</a></div></div>
+<div class="ttc" id="aa01043_html_adbb6ccd1f7a72de24216484582071010"><div class="ttname"><a href="../../d8/d27/a01043.html#adbb6ccd1f7a72de24216484582071010">&#x202A;Config::WriteParaToYML</a></div><div class="ttdeci">&#x202A;bool WriteParaToYML(cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;将参数 写入到 yml 文件中</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/a00149_source.html#l00630">Config.cc:630</a></div></div>
+<div class="ttc" id="aa01043_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01043_html"><div class="ttname"><a href="../../d8/d27/a01043.html">&#x202A;Config</a></div><div class="ttdoc">&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00029">Config.h:29</a></div></div>
+<div class="ttc" id="aa01079_html_aa2e8fbcdd233ecc35b7798932be4bc46"><div class="ttname"><a href="../../d2/d4d/a01079.html#aa2e8fbcdd233ecc35b7798932be4bc46">&#x202A;RunPara::WriteRunParaToFile</a></div><div class="ttdeci">&#x202A;bool WriteRunParaToFile(std::fstream *pfile)</div><div class="ttdoc">&#x202A;通过文件指针 将数据写入到二进制数据流中</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1e/a00149_source.html#l00354">Config.cc:354</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_e4242af473e2aee12aed92be20342e47.html">&#x202A;test</a></li><li class="navelem"><a class="el" href="../../de/d79/a00203.html">&#x202A;test_commu.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_e4242af473e2aee12aed92be20342e47.html">&#x202A;test</a></li><li class="navelem"><a class="el" href="../../de/d79/a00203.html">&#x202A;test_config.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

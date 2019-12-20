@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_files.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,42 +89,73 @@ $(document).ready(function(){initNavTree('dd/dd7/a00248_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">utils_files.cc</div>  </div>
+<div class="title">utils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../dd/dd7/a00248.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d39/a00257.html">&#x202A;utils_string.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d1a/a00251.html">&#x202A;utils_files.h</a>&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d3/d07/a01301.html#af8aafd167c8014c71990933efa4431aa">   19</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d3/d07/a01301.html#af8aafd167c8014c71990933efa4431aa">&#x202A;Utils_Files::WriteString</a>(std::fstream * pfile, <span class="keyword">const</span> std::string &amp; str, <span class="keywordtype">int</span> len)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[len];</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <a class="code" href="../../dc/d9e/a01305.html#afdd80557e406c33ce221395db601f196">&#x202A;Utils_String::String2Char</a>(str);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    pfile-&gt;write(<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>, len);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">delete</span> []<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d3/d07/a01301.html#af772ad9b6fe06d2fce4132dd2b93c613">   43</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d3/d07/a01301.html#af772ad9b6fe06d2fce4132dd2b93c613">&#x202A;Utils_Files::ReadString</a>(std::fstream * pfile, std::string &amp; str, <span class="keywordtype">int</span> len)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[len];</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    pfile-&gt;read(<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>, len);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    str = <a class="code" href="../../dc/d9e/a01305.html#a5ed8c8e05cada7d7334a213dd8ff1050">&#x202A;Utils_String::Char2String</a>(<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">delete</span> []<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<a href="../../dd/dd7/a00248.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef UTILS_H__</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define UTILS_H__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd6/a00272.html">&#x202A;utils_logger.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/da9/a00263.html">&#x202A;Utils_Exception.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/dc3/a00284.html">&#x202A;utils_string.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d42/a00269.html">&#x202A;utils_files.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d03/a00254.html">&#x202A;utils_cv.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/dd7/a00260.html">&#x202A;utils_data.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d5d/a00278.html">&#x202A;utils_qt.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// 直接继承 可以使用 同一的类名 访问</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../de/d69/a01311.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../de/d69/a01311.html">&#x202A;Utils</a> :</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d3/da4/a01343.html">&#x202A;Utils_String</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d4/d2c/a01327.html">&#x202A;Utils_Files</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d1/d72/a01319.html">&#x202A;Utils_Data</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d2/d8e/a01315.html">&#x202A;Utils_CV</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../de/d69/a01311.html#a8caf43f80697158f648269f7964fffdd">   46</a></span>&#160;    <span class="keyword">static</span> T <a class="code" href="../../de/d69/a01311.html#a8caf43f80697158f648269f7964fffdd">&#x202A;Limit</a>(T &amp;q, <span class="keyword">const</span> T minV, <span class="keyword">const</span> T maxV)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// 将值限定在 设定区域内; 超过的值 都限定在 min max 中</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        q = std::max(minV, std::min(maxV, q));</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> q;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../de/d69/a01311.html#aa3b0433eafd84e9c9f6386a863f45267">   64</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../de/d69/a01311.html#aa3b0433eafd84e9c9f6386a863f45267">&#x202A;ClearQueue</a>(T &amp;q)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        T empty;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        swap(empty, q);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif  //UTILS_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00131_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d06/a00131_source.html#l00036">QImgLabel.cc:36</a></div></div>
-<div class="ttc" id="aa01305_html_afdd80557e406c33ce221395db601f196"><div class="ttname"><a href="../../dc/d9e/a01305.html#afdd80557e406c33ce221395db601f196">&#x202A;Utils_String::String2Char</a></div><div class="ttdeci">&#x202A;static char * String2Char(const std::string &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00065">utils_string.cc:65</a></div></div>
-<div class="ttc" id="aa01301_html_af8aafd167c8014c71990933efa4431aa"><div class="ttname"><a href="../../d3/d07/a01301.html#af8aafd167c8014c71990933efa4431aa">&#x202A;Utils_Files::WriteString</a></div><div class="ttdeci">&#x202A;static bool WriteString(std::fstream *pfile, const std::string &amp;str, int len)</div><div class="ttdoc">&#x202A;��һ���ַ���д�뵽�������ļ�����</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00248_source.html#l00019">utils_files.cc:19</a></div></div>
-<div class="ttc" id="aa01305_html_a5ed8c8e05cada7d7334a213dd8ff1050"><div class="ttname"><a href="../../dc/d9e/a01305.html#a5ed8c8e05cada7d7334a213dd8ff1050">&#x202A;Utils_String::Char2String</a></div><div class="ttdeci">&#x202A;static std::string Char2String(char *buffer)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00097">utils_string.cc:97</a></div></div>
-<div class="ttc" id="aa00257_html"><div class="ttname"><a href="../../d9/d39/a00257.html">&#x202A;utils_string.h</a></div><div class="ttdoc">&#x202A;通用字符串操作类 继承使用, 方便使用 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01301_html_af772ad9b6fe06d2fce4132dd2b93c613"><div class="ttname"><a href="../../d3/d07/a01301.html#af772ad9b6fe06d2fce4132dd2b93c613">&#x202A;Utils_Files::ReadString</a></div><div class="ttdeci">&#x202A;static bool ReadString(std::fstream *pfile, std::string &amp;str, int len)</div><div class="ttdoc">&#x202A;���ļ����ж�ȡһ�� �ַ���</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00248_source.html#l00043">utils_files.cc:43</a></div></div>
-<div class="ttc" id="aa00251_html"><div class="ttname"><a href="../../d3/d1a/a00251.html">&#x202A;utils_files.h</a></div></div>
+<div class="ttc" id="aa00272_html"><div class="ttname"><a href="../../d9/dd6/a00272.html">&#x202A;utils_logger.h</a></div></div>
+<div class="ttc" id="aa00254_html"><div class="ttname"><a href="../../d7/d03/a00254.html">&#x202A;utils_cv.h</a></div><div class="ttdoc">&#x202A;有关opencv 的相关函数组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa00260_html"><div class="ttname"><a href="../../dd/dd7/a00260.html">&#x202A;utils_data.h</a></div><div class="ttdoc">&#x202A;���峣�õ����ݴ��� ��� @changelog 2019/12/3 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa01311_html"><div class="ttname"><a href="../../de/d69/a01311.html">&#x202A;Utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00248_source.html#l00024">utils.h:24</a></div></div>
+<div class="ttc" id="aa01311_html_a8caf43f80697158f648269f7964fffdd"><div class="ttname"><a href="../../de/d69/a01311.html#a8caf43f80697158f648269f7964fffdd">&#x202A;Utils::Limit</a></div><div class="ttdeci">&#x202A;static T Limit(T &amp;q, const T minV, const T maxV)</div><div class="ttdoc">&#x202A;定义 函数限定函数， 根据 输入的值现象参数的范围</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00248_source.html#l00046">utils.h:46</a></div></div>
+<div class="ttc" id="aa00284_html"><div class="ttname"><a href="../../db/dc3/a00284.html">&#x202A;utils_string.h</a></div><div class="ttdoc">&#x202A;通用字符串操作类 继承使用, 方便使用 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa00263_html"><div class="ttname"><a href="../../df/da9/a00263.html">&#x202A;Utils_Exception.h</a></div></div>
+<div class="ttc" id="aa01311_html_aa3b0433eafd84e9c9f6386a863f45267"><div class="ttname"><a href="../../de/d69/a01311.html#aa3b0433eafd84e9c9f6386a863f45267">&#x202A;Utils::ClearQueue</a></div><div class="ttdeci">&#x202A;static void ClearQueue(T &amp;q)</div><div class="ttdoc">&#x202A;将队列清空 // 定义 清空队列函数 快速 清空队列</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00248_source.html#l00064">utils.h:64</a></div></div>
+<div class="ttc" id="aa00269_html"><div class="ttname"><a href="../../d5/d42/a00269.html">&#x202A;utils_files.h</a></div><div class="ttdoc">&#x202A;Declares the utilities files class</div></div>
+<div class="ttc" id="aa01319_html"><div class="ttname"><a href="../../d1/d72/a01319.html">&#x202A;Utils_Data</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00260_source.html#l00016">utils_data.h:16</a></div></div>
+<div class="ttc" id="aa01327_html"><div class="ttname"><a href="../../d4/d2c/a01327.html">&#x202A;Utils_Files</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00020">utils_files.h:20</a></div></div>
+<div class="ttc" id="aa01315_html"><div class="ttname"><a href="../../d2/d8e/a01315.html">&#x202A;Utils_CV</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00015">utils_cv.h:15</a></div></div>
+<div class="ttc" id="aa00278_html"><div class="ttname"><a href="../../dc/d5d/a00278.html">&#x202A;utils_qt.h</a></div><div class="ttdoc">&#x202A;有关Qt的 通用组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa01343_html"><div class="ttname"><a href="../../d3/da4/a01343.html">&#x202A;Utils_String</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00016">utils_string.h:16</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../dd/dd7/a00248.html">&#x202A;utils_files.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../dd/dd7/a00248.html">&#x202A;utils.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

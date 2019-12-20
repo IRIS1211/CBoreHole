@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;软件项目计划</title>
+<title>&#x202A;CBoreHole: &#x202A;工作窗口 具体设置</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,15 +89,18 @@ $(document).ready(function(){initNavTree('d1/d62/a01533.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;软件项目计划 </div>  </div>
+<div class="title">&#x202A;工作窗口 具体设置 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p class="DocNodeLTR">软件项目计划（Software Project Plan）</p>
-<p class="DocNodeLTR">一．引言 1．编写目的（阐明编写软件计划的目的，指出读者对象。） 2．项目背景（可包括：（1）项目委托单位、开发单位和主管部门；（2）该软件系统与其他系统的关系。） 3．定义（列出本文档中用到的专门术语的定义和缩略词的原文。） 4．参考资料（可包括：文档所引用的资料、规范等；列出资料的作者、标题、编号、发表日期、出版单位或资料来源。） 二．项目概述</p><ol type="1" class="DocNodeLTR">
-<li>&#x202A;工作内容（简要说明项目的各项主要工作,介绍所开发软件的功能 性能等. 若不编写可行性研究报告,则应在本节给出较详细的介绍。)</li>
-<li>&#x202A;条件与限制（阐明为完成项目应具备的条件 开发单位已具备的条件以及尚需创造的条件. 必要时还应说明用户及分合同承包者承担的工作 完成期限及其它条件与限制。）</li>
-<li>&#x202A;产品 （1）程序（列出应交付的程序名称 使用的语言及存储形式。） （2）文档（列出应交付的文档。） （3）运行环境（应包括硬件环境 软件环境。） 4．服务（阐明开发单位可向用户提供的服务. 如人员培训 安装 保修 维护和其他运行支持。） 5．验收标准 三．实施计划 1．任务分解（任务的划分及各项任务的负责人。） 2．进度（按阶段完成的项目,用图表说明开始时间 完成时间。） 3．预算 4．关键问题（说明可能影响项目的关键问题,如设备条件 技术难点或其他风险因素,并说明对策。） 四．人员组织及分工 五．交付期限 六．专题计划要点（如测试计划等。） </li>
+<div class="textblock"><p><img src="&#x202A;../../../assets/pic/workWindows.png" alt="工作窗口预览界面" class="inline"/></p>
+<p class="DocNodeLTR">2.2.1 系统开启 摄像头,进入预览模式, 显示 <b>原始图像</b> 和 <b>展开图像</b> 2.2.1.1 可以根据原始图像或者展开图像 调整显示参数以及运行参数 2.2.2 点击 <b>开始拼接</b> 进入工作状态, 开始持续拼接 2.2.2.1 创建自定义文件 二进制 写入文件头内容, 2.2.2.2 抓取图像, 展开图像, 根据串口获取的数据 找到拼接图像的区域, 进行图像匹配获取图像的偏移值 2.2.2.3 将图像拼接之后, 显示出来 拼接图像. 2.2.2.4 将每次图像覆盖掉的区域 并列串口数据 写入串口文件中(每行图像外扩几个像素存储图像信息) 2.2.2.5 循环 写入图像 一定时间内 强制刷入图像避免图像过大造成内存崩溃</p>
+<p class="DocNodeLTR">2.2.3 点击 <b>完成拼接</b> 系统完成工作 2.2.3.1 释放文件, 刷入文件 刷入硬盘 2.2.3.2 关闭串口数据 关闭不必要线程, 程序进入基础状态</p>
+<p class="DocNodeLTR">2.2.4 其他部分</p><ol type="1" class="DocNodeLTR">
+<li>&#x202A;罗盘实时刷新电子罗盘角度,来自 串口数据实时接收, 1.1 罗盘样式为 提升的Wiget 组件, 需要考虑组件目录路径, 避免出现错误 1.2 罗盘使用 <a class="el" href="../../d7/ddd/a01223.html">GaugeCompass</a> 样式 组件</li>
 </ol>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md24"></a>
+界面 UI 对应 name 标识</h2>
+<p class="DocNodeLTR">| <b>序号</b> | <b>界面标识(text)</b> | <b>对象类型</b> | <b>程序操作标识(objectName)</b> | <b>功能描述</b> | <b>备注</b> | |:---&mdash;:|:-----------&mdash;:|:--------------&mdash;:|:-------------------&mdash;:|:-----&mdash;:|:---&mdash;:| | 1 | 探灯亮度 | Qslider | hs_Light_light | 探灯亮度滑动调 | | 2 | 开始拼接 | QPushButton | btn_startWork | 开始工作点击按钮 | | 3 | 抓取图像 | QPushButton | btn_capture | 抓取一副图像 | | 4 | 开始录像 | QPushButton | btn_Record | 开始录像 | | 5 | 退出 | QPushButton | btn_work_exit | 退出窗口 | | 6 | 参数设置 | QPushButton | btn_vision_para | 设置显示参数 | | 7 | 硬件参数 | QPushButton | btn_syspara | 硬件参数设置 | | 8 | 缩小 | QPushButton | btn_zoomin | 缩放 缩小 | | 9 | 放大 | QPushButton | btn_zoomout | 缩放 放大 | | 10 | 上升 | QPushButton | btn_up | 上升移动 | | 11 | 下降 | QPushButton | btn_down | 下降移动 | | 12 | 左移 | QPushButton | btn_left | 左右移动 | | 13 | 右移 | QPushButton | btn_right | 左右移动 | | 14 | 重置 | QPushButton | btn_reset | 重置视图 | | 15 | 存储空间 | QProgressBar | pb_storage | 存储控件容量 | | 16 | 测孔编号 | QLineEdit | le_hole_num | 测孔编号 | | 17 | 原图像 | QLabel | lb_src | 原始图像 | | 18 | 探灯亮度 | QLabel | lb_Light_light | 探灯亮度 | | 19 | 电压 | QLabel | lb_battary | 电压值 | | 20 | Pitch角度 | QLabel | lb_pitch | | 21 | Roll 角度 | QLabel | lb_roll | | 22 | Head角度 | QLabel | lb_head | | 23 | 展开图像显示 | QLabel | lb_dst_p | 展开图像显示 | | 24 | 拼接大图显示 | QLabel | lb_dst | 大图显示 | | 25 | 深度位置 | QLabel | lb_loc | 深度值 | | 26 | 缩放比例 | QLabel | lb_ratio | 缩放深度 | | 27 | 罗盘控件 | <a class="el" href="../../d7/ddd/a01223.html">GaugeCompass</a> | wg_compass | 罗盘显示 | | 28 | 图像显示控件 | <a class="el" href="../../da/d3f/a01215.html" title="&#x202A;A qt open cv viewer gl.">CQtOpenCVViewerGl</a> | img_dst | 图像显示 GL | </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

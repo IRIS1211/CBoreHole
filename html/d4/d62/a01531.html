@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;软件需求规格说明</title>
+<title>&#x202A;CBoreHole: &#x202A;浏览窗口</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,11 +89,14 @@ $(document).ready(function(){initNavTree('d4/d62/a01531.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;软件需求规格说明 </div>  </div>
+<div class="title">&#x202A;浏览窗口 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p class="DocNodeLTR">需求规格说明书（Requirements Specification）</p>
-<p class="DocNodeLTR">一．引言 1． 编写目的（阐明编写需求说明书的目的,指明读者对象。） 2． 项目背景（可包括：（1）项目的委托单位,开发单位和主管部门；（2）该软件系统与其他系统的关系。） 3． 定义（列出文档中用到的专门术语定义和缩写词的原文。） 4． 参考资料（可包括：（1）项目开发计划；（2）文档所引用的资料，标准和规范。列出这些资料的作者、标题、编号、发表日期、出版单位或资料来源。） 二．任务概述 1．目标 2．运行环境 3．条件与限制 三．数据描述 1． 静态数据 2． 动态数据（包括输入数据和输出数据。） 3． 数据库描述（给出使用数据库的名称和类型。） 4． 数据词典 5． 数据采集 四．功能需求 1．功能划分 2．功能描述 五．性能需求 1．数据精确度 2．时间特性（如响应时间、更新处理时间、数据转化与传输时间、运行时间等。） 3．适应性（在操作方式 运行环境 与其他软件的接口以及开发计划等发生变化时，应具有的适应能力。） 六．运行需求 1．用户界面（如屏幕格式、报表格式、菜单格式、输入输出时间等。） 2．硬件接口 3．软件接口 4．故障处理 七．其他需求（如可使用性、安全保密、可维护性、可移植性等。） </p>
+<div class="textblock"><p><img src="&#x202A;../../../assets/pic/readWindows.png" alt="浏览窗口预览界面" class="inline"/></p>
+<p class="DocNodeLTR">2.3.1 打开文件 弹出窗口 选择文件 进行浏览显示</p>
+<h4 class="DocNodeLTR"><a class="anchor" id="autotoc_md18"></a>
+按键操作对应</h4>
+<p class="DocNodeLTR">| <b>序号</b> | <b>对象类型</b> | <b>界面标识(text)</b> | <b>程序操作标识(objectName)</b> | <b>功能描述</b> | <b>备注</b> | |:---&mdash;:|:--------&mdash;:|:-----------&mdash;:|:-------------------&mdash;:|:-------&mdash;:|:--------------&mdash;:| | 1 | QLabel | 预览窗口 | lb_show | label show | | 2 | QLineEdit | 工作路径 | lb_work_dir | 当前文件存储文件夹 | 可以通过配置得到 | | 3 | QPushButton | 浏览文件 | btn_openFile | 浏览文件 | 打开窗口, 选择自定义文件进行打开 | | 4 | QPushButton | 关闭文件 | btn_closeFile | 关闭文件 | 关闭当前文件 | | 5 | QPushButton | 关闭浏览 | btn_read_exit | 关闭浏览 | 关闭浏览串口,退出设置窗口 | </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

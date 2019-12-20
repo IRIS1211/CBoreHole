@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/test/test_common.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/test/test_commu.cc 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,29 +89,49 @@ $(document).ready(function(){initNavTree('d3/db1/a00200_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">test_common.cc</div>  </div>
+<div class="title">test_commu.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d3/db1/a00200.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../inc/common.h&quot;</span></div>
+<a href="../../d3/db1/a00200.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../inc/Commu.h&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// #include &quot;doctest.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// 测试列出磁盘信息</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d3/db1/a00200.html#aea0173db0aef40856a88feafb2d31117">    5</a></span>&#160;<a class="code" href="../../d3/db1/a00200.html#aea0173db0aef40856a88feafb2d31117">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;test ListAllDisk!&quot;</span>)</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// 测试通讯函数</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d3/db1/a00200.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc">    5</a></span>&#160;<a class="code" href="../../d3/db1/a00200.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;test Commu  Function!&quot;</span>)</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="../../d4/d8c/a00035.html#af960c9c6be9b6a8cd92a325aab76a3d3">&#x202A;ListAllDisk</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="../../d4/d8c/a00035.html#a0cc2a6435725f3297188f9a3018a0014">&#x202A;GetDiskOccupy</a>(<span class="stringliteral">&quot;D&quot;</span>);     <span class="comment">// 千分之的值</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    CHECK(<a class="code" href="../../d4/d8c/a00035.html#a0cc2a6435725f3297188f9a3018a0014">&#x202A;GetDiskOccupy</a>() &gt;= 500);  <span class="comment">// 磁盘占用超过 50% // 86.9% 实际</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    CHECK(<a class="code" href="../../dd/d32/a00041.html#a5619370f6b13f37a6780a0986ac1f153">&#x202A;hex2num</a>(<span class="charliteral">&#39;F&#39;</span>) == 15);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    CHECK(<a class="code" href="../../dd/d32/a00041.html#aa4d8cf50c0a13481ceb04c5a0581c959">&#x202A;str2uchar</a>(<span class="stringliteral">&quot;FF&quot;</span>) == 0xff);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    CHECK(<a class="code" href="../../dd/d32/a00041.html#aa4d8cf50c0a13481ceb04c5a0581c959">&#x202A;str2uchar</a>(<span class="stringliteral">&quot;0F&quot;</span>) == 0x0f);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">const</span> std::string test_str = <span class="stringliteral">&quot;68 13 00 85 11 12 21 22 31 32 00 00 01 00 00 02 00 00 03 88 FF 01 02 03 04 05 0F&quot;</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> buf[27];</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    Str2CharArray(buf, test_str);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::string str = Utils_String::CharArrr2Hex(buf, 27);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// 检测是否满足 转换函数正确性</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    CHECK(test_str == str);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QByteArray res = Str2QByteArray(test_str);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;res:&quot;</span> &lt;&lt; res;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> std::string test_str2 = <span class="stringliteral">&quot;6813008511122122313200000100000200000388FF01020304050F&quot;</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QByteArray res2 = Str2QByteArray(test_str2, 0);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    qDebug() &lt;&lt; <span class="stringliteral">&quot;res2:&quot;</span> &lt;&lt; res2;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    CHECK(res.size () == res2.size());</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">}</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00035_html_a0cc2a6435725f3297188f9a3018a0014"><div class="ttname"><a href="../../d4/d8c/a00035.html#a0cc2a6435725f3297188f9a3018a0014">&#x202A;GetDiskOccupy</a></div><div class="ttdeci">&#x202A;int GetDiskOccupy(const std::string disk=&quot;D&quot;)</div><div class="ttdoc">&#x202A;Gets disk occupy 获取磁盘占用 默认D盘</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l02097">common.cc:2097</a></div></div>
-<div class="ttc" id="aa00200_html_aea0173db0aef40856a88feafb2d31117"><div class="ttname"><a href="../../d3/db1/a00200.html#aea0173db0aef40856a88feafb2d31117">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;test ListAllDisk!&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/db1/a00200_source.html#l00005">test_common.cc:5</a></div></div>
-<div class="ttc" id="aa00035_html_af960c9c6be9b6a8cd92a325aab76a3d3"><div class="ttname"><a href="../../d4/d8c/a00035.html#af960c9c6be9b6a8cd92a325aab76a3d3">&#x202A;ListAllDisk</a></div><div class="ttdeci">&#x202A;void ListAllDisk(void)</div><div class="ttdoc">&#x202A;List all disk 列出所有磁盘的信息</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l02011">common.cc:2011</a></div></div>
+<div class="ttc" id="aa00041_html_aa4d8cf50c0a13481ceb04c5a0581c959"><div class="ttname"><a href="../../dd/d32/a00041.html#aa4d8cf50c0a13481ceb04c5a0581c959">&#x202A;str2uchar</a></div><div class="ttdeci">&#x202A;uchar str2uchar(std::string str)</div><div class="ttdoc">&#x202A;2uchars the given string</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00877">Commu.cc:877</a></div></div>
+<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00036">Commu.h:36</a></div></div>
+<div class="ttc" id="aa00200_html_a5d4b06d9b49f5e6c501ccfccd5e19bfc"><div class="ttname"><a href="../../d3/db1/a00200.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;test Commu  Function!&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/db1/a00200_source.html#l00005">test_commu.cc:5</a></div></div>
+<div class="ttc" id="aa00041_html_a5619370f6b13f37a6780a0986ac1f153"><div class="ttname"><a href="../../dd/d32/a00041.html#a5619370f6b13f37a6780a0986ac1f153">&#x202A;hex2num</a></div><div class="ttdeci">&#x202A;int hex2num(char a)</div><div class="ttdoc">&#x202A;Hexadecimal 2num</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00714">Commu.cc:714</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_e4242af473e2aee12aed92be20342e47.html">&#x202A;test</a></li><li class="navelem"><a class="el" href="../../d3/db1/a00200.html">&#x202A;test_common.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_e4242af473e2aee12aed92be20342e47.html">&#x202A;test</a></li><li class="navelem"><a class="el" href="../../d3/db1/a00200.html">&#x202A;test_commu.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

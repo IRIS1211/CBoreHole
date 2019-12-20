@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/ReadMe.md 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;自定义异常</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -87,17 +87,80 @@ $(document).ready(function(){initNavTree('d7/def/a01538.html','../../');});
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">D:/Code/Vision/Camera/Project/CBoreHole/Code/src/ReadMe.md 文件参考</div>  </div>
+<div class="title">&#x202A;自定义异常 </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p class="DocNodeLTR">定义不同的异常代码, 抛出相应的错误,</p>
+<p class="DocNodeLTR">具体错误代码见 excel 表格 或者下表</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md52"></a>
+错误代码定义</h1>
+<p class="DocNodeLTR">错误代码主要分为4位, 十进制数 第一位表示程序错误部分, 第二位表示程序严重程序,后面两位标识错误 具体细节见表格 第一位从1-9</p>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;配置文件</li>
+<li>&#x202A;相机硬件部分</li>
+<li>&#x202A;图像处理部分</li>
+<li>&#x202A;串口及其他硬件部分</li>
+<li>&#x202A;自定义文件部分</li>
+<li>&#x202A;视频流读写部分</li>
+<li>&#x202A;界面显示及操作部分</li>
+<li>&#x202A;其他部分</li>
+<li>&#x202A;保留 0. 无</li>
+</ol>
+<p class="DocNodeLTR">第二位重要程度 分为 0-3 四个等级 参考了 log 的错误等级, 主要是 异常错误都比较严重了, 只要捕获到异常,程序已经不能回到原有执行了, 所以一定要处理</p>
+<p class="DocNodeLTR">0. 非常严重: 可能导致程序崩溃 必须处理</p><ol type="1" class="DocNodeLTR">
+<li>&#x202A;严重 : 不处理,后续程序可能出错</li>
+<li>&#x202A;一般错误: 值得关注,类似警告, 不出现</li>
+<li>&#x202A;保留</li>
+</ol>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md53"></a>
+目前已经使用的异常</h1>
+<div class="fragment"><div class="line"><span class="keyword">enum</span> <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05f">&#x202A;ErrorCode</a></div>
+<div class="line">{</div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa2654b0b73d4f079d11fb190ba0f414e6">&#x202A;ConfigError</a> = 101,</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa744a961ecf866862fe54a04994222bb5">&#x202A;Error_YML_FileNotExist</a> = 1000,     <span class="comment">// yml 文件不存在</span></div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa617c02a2de66b8c41e6a68232690fbb2">&#x202A;Error_YML_FileNode_NoExist</a>      = 1001,     <span class="comment">// 文件节点不存在</span></div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9">&#x202A;Error_IDOI_FileNotExist</a>         =   5000,   <span class="comment">//  自定义文件不存在</span></div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe">&#x202A;Error_IDOI_FileWritePointerNull</a> =   5001,   <span class="comment">//    写入文件指针为空</span></div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44">&#x202A;Error_IDOI_FileVerifyError</a>      =   5002,   <span class="comment">// 读取文件头校验失败</span></div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51">&#x202A;Error_IDOI_File_Write</a> = 5003,    <span class="comment">// IDOI 写文件指针错误</span></div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66">&#x202A;Error_Image_Resize_Crash</a> =  3001,   <span class="comment">// 图片缩放错误</span></div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa42cfa7783896b2c31ef38744358e4d9f">&#x202A;Error_Image_Resize_Crash_On_Reszie_To_Show</a> = 3002,  <span class="comment">// 在显示过程中的缩放出错</span></div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86">&#x202A;Error_Serial_Timeout_Over_Set_Time</a> = 4002,  <span class="comment">// 串口超时无数据</span></div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d">&#x202A;Error_Project_Dir_Create_Error</a> = 5000,     <span class="comment">// 工作路径文件夹创建错误</span></div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f">&#x202A;Error_Work_Dir_Pic_Create_Error</a> = 5001,     <span class="comment">// 工作路径下图片文件夹创建错误</span></div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">&#x202A;Error_Work_Dir_Video_Create_Error</a> = 5002,     <span class="comment">// 工作路径下视频文件夹创建错误</span></div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">&#x202A;Error_Video_Writer_Null</a> = 6001,     <span class="comment">// 视频流指针为空</span></div>
+<div class="line"> </div>
+<div class="line">};</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe">&#x202A;Error_IDOI_FileWritePointerNull</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00037">Utils_Exception.h:37</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">&#x202A;Error_Work_Dir_Video_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00049">Utils_Exception.h:49</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fa617c02a2de66b8c41e6a68232690fbb2"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa617c02a2de66b8c41e6a68232690fbb2">&#x202A;Error_YML_FileNode_NoExist</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00034">Utils_Exception.h:34</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f">&#x202A;Error_Work_Dir_Pic_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00048">Utils_Exception.h:48</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fa42cfa7783896b2c31ef38744358e4d9f"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa42cfa7783896b2c31ef38744358e4d9f">&#x202A;Error_Image_Resize_Crash_On_Reszie_To_Show</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00042">Utils_Exception.h:42</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">&#x202A;Error_Video_Writer_Null</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00051">Utils_Exception.h:51</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51">&#x202A;Error_IDOI_File_Write</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00039">Utils_Exception.h:39</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66">&#x202A;Error_Image_Resize_Crash</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00041">Utils_Exception.h:41</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05f"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05f">&#x202A;ErrorCode</a></div><div class="ttdeci">&#x202A;ErrorCode</div><div class="ttdoc">&#x202A;定义错误代码 表示不同功能, 从小到达依次定义 可以参考错误代码表</div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00029">Utils_Exception.h:29</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fa744a961ecf866862fe54a04994222bb5"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa744a961ecf866862fe54a04994222bb5">&#x202A;Error_YML_FileNotExist</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00033">Utils_Exception.h:33</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86">&#x202A;Error_Serial_Timeout_Over_Set_Time</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00044">Utils_Exception.h:44</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d">&#x202A;Error_Project_Dir_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00047">Utils_Exception.h:47</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44">&#x202A;Error_IDOI_FileVerifyError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00038">Utils_Exception.h:38</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fa2654b0b73d4f079d11fb190ba0f414e6"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa2654b0b73d4f079d11fb190ba0f414e6">&#x202A;ConfigError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00031">Utils_Exception.h:31</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9">&#x202A;Error_IDOI_FileNotExist</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00036">Utils_Exception.h:36</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d7/def/a01538.html">&#x202A;ReadMe.md</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

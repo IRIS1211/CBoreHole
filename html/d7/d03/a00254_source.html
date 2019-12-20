@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_string.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_cv.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,142 +89,66 @@ $(document).ready(function(){initNavTree('d7/d03/a00254_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">utils_string.cc</div>  </div>
+<div class="title">utils_cv.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d7/d03/a00254.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// 通用字符串操作类 </span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d39/a00257.html">&#x202A;utils_string.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// 字符串 分割成数组</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#ae22cfa53ffee39ead69856b4a92eba02">   11</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="../../dc/d9e/a01305.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a>(<span class="keyword">const</span> std::string &amp; str, <span class="keyword">const</span> <span class="keywordtype">char</span> separator, <span class="keywordtype">bool</span> skip_empty)</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::vector&lt;std::string&gt; res;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::istringstream iss(str);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">for</span> (std::string item; getline(iss, item, separator);)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">if</span> (skip_empty &amp;&amp; item.empty())</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            res.push_back(item);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// 完成字符串分割</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#ae8c37b345e4022fae88d29f9be940523">   26</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="../../dc/d9e/a01305.html#a09734b79282d4132596b4a11dcb8175d">&#x202A;Utils_String::Str2Vector</a>(<span class="keyword">const</span> std::string &amp; str, <span class="keyword">const</span> std::string &amp; delimiters, <span class="keywordtype">bool</span> skip_empty)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::vector&lt;std::string&gt; res;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    string::size_type pos, prev = 0;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">while</span> ((pos = str.find_first_of(delimiters, prev)) != string::npos)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (pos &gt; prev)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">if</span> (skip_empty &amp;&amp; 1 == pos - prev)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            res.emplace_back(str, prev, pos - prev);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        prev = pos + 1;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (prev &lt; str.size())</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        res.emplace_back(str, prev, str.size() - prev);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#ab0655ea746432bac89754a8e71caa5cc">   59</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../dc/d9e/a01305.html#ab0655ea746432bac89754a8e71caa5cc">&#x202A;Utils_String::String2ConstChar</a>(<span class="keyword">const</span> std::string &amp;str)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> str.c_str();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#afdd80557e406c33ce221395db601f196">   65</a></span>&#160;<span class="keywordtype">char</span> * <a class="code" href="../../dc/d9e/a01305.html#afdd80557e406c33ce221395db601f196">&#x202A;Utils_String::String2Char</a>(<span class="keyword">const</span> std::string &amp; str)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">char</span> *ch = <span class="keyword">new</span> <span class="keywordtype">char</span>[str.size() + 1];</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    strcpy(ch, str.c_str());</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> ch;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#a518cb647622b31947f638b48320fc646">   74</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> * <a class="code" href="../../dc/d9e/a01305.html#a518cb647622b31947f638b48320fc646">&#x202A;Utils_String::String2Uchar</a>(<span class="keyword">const</span> std::string &amp; str)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>*)str.c_str();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#a6c1e2edd1365b94dff05468194611770">   92</a></span>&#160;std::string <a class="code" href="../../dc/d9e/a01305.html#a6c1e2edd1365b94dff05468194611770">&#x202A;Utils_String::ConstChar2String</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *buffer)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> std::string(buffer);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#a5ed8c8e05cada7d7334a213dd8ff1050">   97</a></span>&#160;std::string <a class="code" href="../../dc/d9e/a01305.html#a5ed8c8e05cada7d7334a213dd8ff1050">&#x202A;Utils_String::Char2String</a>(<span class="keywordtype">char</span> * buffer)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> std::string(buffer);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#a89d9fe1b4fd0eb7f266cce483fdaaced">  102</a></span>&#160;std::string <a class="code" href="../../dc/d9e/a01305.html#a89d9fe1b4fd0eb7f266cce483fdaaced">&#x202A;Utils_String::Uchar2String</a>(<span class="keyword">const</span> <a class="code" href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> * buffer)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{   </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::string str = (<span class="keywordtype">char</span>*)buffer;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> str;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#a778ef548491bb4f043fb0111f87f80ae">  108</a></span>&#160;<span class="keywordtype">char</span> * <a class="code" href="../../dc/d9e/a01305.html#a778ef548491bb4f043fb0111f87f80ae">&#x202A;Utils_String::ConstChar2Char</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* buffer)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">char</span>* res = <span class="keyword">new</span> <span class="keywordtype">char</span>[100];  <span class="comment">// 足够的长度避免溢出</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    strcpy(res, buffer);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#acd89201285eb22950b500376627a9194">  115</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="../../dc/d9e/a01305.html#acd89201285eb22950b500376627a9194">&#x202A;Utils_String::Char2ConstChar</a>(<span class="keywordtype">char</span> * buffer)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> buffer;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#a896df628262afa4ba8b55eeefe349f36">  134</a></span>&#160;std::string <a class="code" href="../../dc/d9e/a01305.html#a896df628262afa4ba8b55eeefe349f36">&#x202A;Utils_String::AddQuoteString</a>(std::string str, <span class="keyword">const</span> std::string q)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">return</span> (q + str + q);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html#ae622a70f87186c0d22e17cb9c59c5697">  151</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../dc/d9e/a01305.html#ae622a70f87186c0d22e17cb9c59c5697">&#x202A;Utils_String::StringVersionToInt</a>(<span class="keyword">const</span> std::string &amp; str)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    std::vector&lt;std::string&gt; tmp_str = <a class="code" href="../../dc/d9e/a01305.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Str2Vec</a>(str, <span class="charliteral">&#39;.&#39;</span>);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    assert(tmp_str.size() == 2);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">int</span> res = 0;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; s : tmp_str)</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = std::stoi(s);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> &lt; 0)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = -<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        res = res * 100 + <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// #include &quot;utils.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef UTILS_CV_H__</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define UTILS_CV_H__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d2/d8e/a01315.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/d8e/a01315.html">&#x202A;Utils_CV</a> </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d2/d8e/a01315.html#a8387a1da4bd9a03f42b6037f5370a28e">&#x202A;Str2Rect</a>(<span class="keyword">const</span> std::string &amp;str, <span class="keyword">const</span> std::string delim = <span class="stringliteral">&quot;,| &quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;     </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d2/d8e/a01315.html#a55b4da9c06b152eaee65da5a38ff6252">&#x202A;ImageSplit</a>(<span class="keyword">const</span> cv::Mat &amp;src_img,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                           <span class="keyword">const</span> std::vector&lt;int&gt; &amp;lines,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                           std::vector&lt;cv::Mat&gt; &amp;splitImgVec,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                           <span class="keywordtype">bool</span> horizon = <span class="keyword">true</span>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">int</span> wealth = 5);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d2/d8e/a01315.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">&#x202A;ImageMerge</a>(cv::Mat &amp;dst_img,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                           <span class="keyword">const</span> std::vector&lt;cv::Mat&gt; &amp;splitImgVec,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                           <span class="keyword">const</span> std::vector&lt;int&gt; &amp;lines,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                           <span class="keywordtype">bool</span> horizon = <span class="keyword">true</span>,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">int</span> wealth = 5);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d2/d8e/a01315.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">&#x202A;ImageMerge</a>(cv::Mat &amp;dst_img,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                           <span class="keyword">const</span> std::vector&lt;cv::Mat&gt; &amp;splitImgVec,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                           <span class="keywordtype">bool</span> horizon = <span class="keyword">true</span>,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">int</span> wealth = 5);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d2/d8e/a01315.html#a9ba8a738f801f6b8c82345c444a4e71c">&#x202A;GetSquareRect</a>(<span class="keyword">const</span> cv::Mat &amp;img);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d2/d8e/a01315.html#a3104bb7c29b83b4dfb4a38bd9e899ce5">&#x202A;GetRect</a>(<span class="keyword">const</span> cv::Mat &amp;img);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d2/d8e/a01315.html#a29dc0b093427ee4ca1a9e195d4c78433">&#x202A;GetCenterRect</a>(<span class="keyword">const</span> cv::Rect img_r, <span class="keywordtype">int</span> width = -1, <span class="keywordtype">int</span> height = -1);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d2/d8e/a01315.html#ac488a0830a690dbdbb48f0b999b771d3">&#x202A;MarginRect</a>(<span class="keyword">const</span> cv::Rect &amp;cur_r, <span class="keywordtype">int</span> t = 5, <span class="keywordtype">int</span> l = -1, <span class="keywordtype">int</span> b = -1, <span class="keywordtype">int</span> r = -1);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d2/d8e/a01315.html#abd858a9d1a7a0b329bc960a3fe0019b1">&#x202A;GetOffsetRect</a>(<span class="keyword">const</span> cv::Rect &amp;cur_r, <span class="keyword">const</span> cv::Point &amp;offset);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;};</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif  //UTILS_CV_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01305_html_a778ef548491bb4f043fb0111f87f80ae"><div class="ttname"><a href="../../dc/d9e/a01305.html#a778ef548491bb4f043fb0111f87f80ae">&#x202A;Utils_String::ConstChar2Char</a></div><div class="ttdeci">&#x202A;static char * ConstChar2Char(const char *buffer)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00108">utils_string.cc:108</a></div></div>
-<div class="ttc" id="aa01305_html_ab0655ea746432bac89754a8e71caa5cc"><div class="ttname"><a href="../../dc/d9e/a01305.html#ab0655ea746432bac89754a8e71caa5cc">&#x202A;Utils_String::String2ConstChar</a></div><div class="ttdeci">&#x202A;static const char * String2ConstChar(const std::string &amp;str)</div><div class="ttdoc">&#x202A;String 2 character 直接返回数据字符串</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00059">utils_string.cc:59</a></div></div>
-<div class="ttc" id="aa00131_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d06/a00131_source.html#l00036">QImgLabel.cc:36</a></div></div>
-<div class="ttc" id="aa01305_html_a518cb647622b31947f638b48320fc646"><div class="ttname"><a href="../../dc/d9e/a01305.html#a518cb647622b31947f638b48320fc646">&#x202A;Utils_String::String2Uchar</a></div><div class="ttdeci">&#x202A;static const uchar * String2Uchar(const std::string &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00074">utils_string.cc:74</a></div></div>
-<div class="ttc" id="aa01305_html_a896df628262afa4ba8b55eeefe349f36"><div class="ttname"><a href="../../dc/d9e/a01305.html#a896df628262afa4ba8b55eeefe349f36">&#x202A;Utils_String::AddQuoteString</a></div><div class="ttdeci">&#x202A;static std::string AddQuoteString(std::string str, const std::string q=&quot;\&quot;&quot;)</div><div class="ttdoc">&#x202A;在字符串前后 添加 引号 双引号 用于YML 写入</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00134">utils_string.cc:134</a></div></div>
-<div class="ttc" id="aa01305_html_a6c1e2edd1365b94dff05468194611770"><div class="ttname"><a href="../../dc/d9e/a01305.html#a6c1e2edd1365b94dff05468194611770">&#x202A;Utils_String::ConstChar2String</a></div><div class="ttdeci">&#x202A;static std::string ConstChar2String(const char *buffer)</div><div class="ttdoc">&#x202A;Character 2 string</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00092">utils_string.cc:92</a></div></div>
-<div class="ttc" id="aa01305_html_afdd80557e406c33ce221395db601f196"><div class="ttname"><a href="../../dc/d9e/a01305.html#afdd80557e406c33ce221395db601f196">&#x202A;Utils_String::String2Char</a></div><div class="ttdeci">&#x202A;static char * String2Char(const std::string &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00065">utils_string.cc:65</a></div></div>
-<div class="ttc" id="aa01305_html_a707dfc08a28c18474486ca8ca43d6b39"><div class="ttname"><a href="../../dc/d9e/a01305.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vec(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const char separator, bool skip_empty=true)</div><div class="ttdoc">&#x202A;将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834...</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00057">utils_string.h:57</a></div></div>
-<div class="ttc" id="aa01305_html_acd89201285eb22950b500376627a9194"><div class="ttname"><a href="../../dc/d9e/a01305.html#acd89201285eb22950b500376627a9194">&#x202A;Utils_String::Char2ConstChar</a></div><div class="ttdeci">&#x202A;static const char * Char2ConstChar(char *buffer)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00115">utils_string.cc:115</a></div></div>
-<div class="ttc" id="aa01305_html_a09734b79282d4132596b4a11dcb8175d"><div class="ttname"><a href="../../dc/d9e/a01305.html#a09734b79282d4132596b4a11dcb8175d">&#x202A;Utils_String::Str2Vector</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vector(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const std::string &amp;delimiters, bool skip_empty=true)</div><div class="ttdoc">&#x202A;返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 https://segmentfault.com/a/1190000002483483</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00094">utils_string.h:94</a></div></div>
-<div class="ttc" id="aa01305_html_a5ed8c8e05cada7d7334a213dd8ff1050"><div class="ttname"><a href="../../dc/d9e/a01305.html#a5ed8c8e05cada7d7334a213dd8ff1050">&#x202A;Utils_String::Char2String</a></div><div class="ttdeci">&#x202A;static std::string Char2String(char *buffer)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00097">utils_string.cc:97</a></div></div>
-<div class="ttc" id="aa01305_html_a89d9fe1b4fd0eb7f266cce483fdaaced"><div class="ttname"><a href="../../dc/d9e/a01305.html#a89d9fe1b4fd0eb7f266cce483fdaaced">&#x202A;Utils_String::Uchar2String</a></div><div class="ttdeci">&#x202A;static std::string Uchar2String(const uchar *buffer)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00102">utils_string.cc:102</a></div></div>
-<div class="ttc" id="aa00257_html"><div class="ttname"><a href="../../d9/d39/a00257.html">&#x202A;utils_string.h</a></div><div class="ttdoc">&#x202A;通用字符串操作类 继承使用, 方便使用 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01305_html_ae622a70f87186c0d22e17cb9c59c5697"><div class="ttname"><a href="../../dc/d9e/a01305.html#ae622a70f87186c0d22e17cb9c59c5697">&#x202A;Utils_String::StringVersionToInt</a></div><div class="ttdeci">&#x202A;static int StringVersionToInt(const std::string &amp;str)</div><div class="ttdoc">&#x202A;将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00151">utils_string.cc:151</a></div></div>
-<div class="ttc" id="aa00038_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../d8/d41/a00038.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00036">Commu.h:36</a></div></div>
+<div class="ttc" id="aa01315_html_a8387a1da4bd9a03f42b6037f5370a28e"><div class="ttname"><a href="../../d2/d8e/a01315.html#a8387a1da4bd9a03f42b6037f5370a28e">&#x202A;Utils_CV::Str2Rect</a></div><div class="ttdeci">&#x202A;static cv::Rect Str2Rect(const std::string &amp;str, const std::string delim=&quot;,| &quot;)</div><div class="ttdoc">&#x202A;将字符串按照分割字符分割之后 生成矩形</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00029">utils_cv.cc:29</a></div></div>
+<div class="ttc" id="aa01315_html_a29dc0b093427ee4ca1a9e195d4c78433"><div class="ttname"><a href="../../d2/d8e/a01315.html#a29dc0b093427ee4ca1a9e195d4c78433">&#x202A;Utils_CV::GetCenterRect</a></div><div class="ttdeci">&#x202A;static cv::Rect GetCenterRect(const cv::Rect img_r, int width=-1, int height=-1)</div><div class="ttdoc">&#x202A;获取图像中心区域 的值</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00298">utils_cv.cc:298</a></div></div>
+<div class="ttc" id="aa01315_html_a55b4da9c06b152eaee65da5a38ff6252"><div class="ttname"><a href="../../d2/d8e/a01315.html#a55b4da9c06b152eaee65da5a38ff6252">&#x202A;Utils_CV::ImageSplit</a></div><div class="ttdeci">&#x202A;static bool ImageSplit(const cv::Mat &amp;src_img, const std::vector&lt; int &gt; &amp;lines, std::vector&lt; cv::Mat &gt; &amp;splitImgVec, bool horizon=true, const int wealth=5)</div><div class="ttdoc">&#x202A;将一副图片按照给出的线划分 成为 几列图像   给出一定的裕量 相应的图片会比较大 // 默认横向分割</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00069">utils_cv.cc:69</a></div></div>
+<div class="ttc" id="aa01315_html_ac488a0830a690dbdbb48f0b999b771d3"><div class="ttname"><a href="../../d2/d8e/a01315.html#ac488a0830a690dbdbb48f0b999b771d3">&#x202A;Utils_CV::MarginRect</a></div><div class="ttdeci">&#x202A;static cv::Rect MarginRect(const cv::Rect &amp;cur_r, int t=5, int l=-1, int b=-1, int r=-1)</div><div class="ttdoc">&#x202A;矩形外扩一定范围</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00333">utils_cv.cc:333</a></div></div>
+<div class="ttc" id="aa01315_html_a9ba8a738f801f6b8c82345c444a4e71c"><div class="ttname"><a href="../../d2/d8e/a01315.html#a9ba8a738f801f6b8c82345c444a4e71c">&#x202A;Utils_CV::GetSquareRect</a></div><div class="ttdeci">&#x202A;static cv::Rect GetSquareRect(const cv::Mat &amp;img)</div><div class="ttdoc">&#x202A;根据 图像尺寸 生成 一个包含中间区域的 矩形框</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00252">utils_cv.cc:252</a></div></div>
+<div class="ttc" id="aa01315_html_a80d57d4eeb1fc9965c1e0fa5f63b7fa0"><div class="ttname"><a href="../../d2/d8e/a01315.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">&#x202A;Utils_CV::ImageMerge</a></div><div class="ttdeci">&#x202A;static bool ImageMerge(cv::Mat &amp;dst_img, const std::vector&lt; cv::Mat &gt; &amp;splitImgVec, const std::vector&lt; int &gt; &amp;lines, bool horizon=true, const int wealth=5)</div></div>
+<div class="ttc" id="aa01315_html_abd858a9d1a7a0b329bc960a3fe0019b1"><div class="ttname"><a href="../../d2/d8e/a01315.html#abd858a9d1a7a0b329bc960a3fe0019b1">&#x202A;Utils_CV::GetOffsetRect</a></div><div class="ttdeci">&#x202A;static cv::Rect GetOffsetRect(const cv::Rect &amp;cur_r, const cv::Point &amp;offset)</div><div class="ttdoc">&#x202A;根据当前区域相对于上次区域的偏移值定位出来 上次矩形框的外扩范围</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00377">utils_cv.cc:377</a></div></div>
+<div class="ttc" id="aa01315_html"><div class="ttname"><a href="../../d2/d8e/a01315.html">&#x202A;Utils_CV</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00015">utils_cv.h:15</a></div></div>
+<div class="ttc" id="aa01315_html_a3104bb7c29b83b4dfb4a38bd9e899ce5"><div class="ttname"><a href="../../d2/d8e/a01315.html#a3104bb7c29b83b4dfb4a38bd9e899ce5">&#x202A;Utils_CV::GetRect</a></div><div class="ttdeci">&#x202A;static cv::Rect GetRect(const cv::Mat &amp;img)</div><div class="ttdoc">&#x202A;返回图像的矩形区域</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00276">utils_cv.cc:276</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d7/d03/a00254.html">&#x202A;utils_string.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d7/d03/a00254.html">&#x202A;utils_cv.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

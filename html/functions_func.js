@@ -10,6 +10,7 @@ var functions_func =
     [ "\u202Ai", "functions_func_i.html", null ],
     [ "\u202Al", "functions_func_l.html", null ],
     [ "\u202Am", "functions_func_m.html", null ],
+    [ "\u202An", "functions_func_n.html", null ],
     [ "\u202Ao", "functions_func_o.html", null ],
     [ "\u202Ap", "functions_func_p.html", null ],
     [ "\u202Aq", "functions_func_q.html", null ],

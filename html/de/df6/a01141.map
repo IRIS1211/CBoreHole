@@ -1,6 +1,4 @@
-<map id="FrameData" name="FrameData">
-<area shape="rect" id="node1" title="定义数据帧头像" alt="" coords="217,95,303,121"/>
-<area shape="rect" id="node2" href="$db/db2/a01143.html#db/d07/a01155" title="电子罗盘" alt="" coords="5,5,168,32"/>
-<area shape="rect" id="node3" href="$db/db2/a01143.html#de/df1/a01151" title="记录电压当前值" alt="" coords="193,5,327,32"/>
-<area shape="rect" id="node4" href="$db/db2/a01143.html#d8/ddb/a01147" title="编码器 的值 保留当前值 上次值 以及运算的中值" alt="" coords="351,5,486,32"/>
+<map id="RunPara::StUI" name="RunPara::StUI">
+<area shape="rect" id="node1" title="设置用户UI 参数" alt="" coords="31,124,137,151"/>
+<area shape="rect" id="node2" href="$d2/d4d/a01079.html#d8/ddb/a01147" title=" " alt="" coords="5,5,163,32"/>
 </map>

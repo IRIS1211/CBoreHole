@@ -1,5 +1,5 @@
-<map id="RunPara::StDevice::StSerial" name="RunPara::StDevice::StSerial">
-<area shape="rect" id="node1" title="窗口状态信息" alt="" coords="5,185,144,227"/>
-<area shape="rect" id="node2" title="STL class" alt="" coords="35,96,115,123"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="11,5,138,47"/>
+<map id="RunPara::StHole" name="RunPara::StHole">
+<area shape="rect" id="node1" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="9,244,128,271"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="29,96,109,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="5,5,132,47"/>
 </map>

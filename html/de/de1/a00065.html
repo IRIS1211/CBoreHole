@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/Serial.h 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/runpara.h 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -91,34 +91,1296 @@ $(document).ready(function(){initNavTree('de/de1/a00065.html','../../');});
   <div class="summary">
 <a href="#nested-classes">结构体</a>  </div>
   <div class="headertitle">
-<div class="title">Serial.h 文件参考</div>  </div>
+<div class="title">runpara.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>&#x202A;Declares the serial class @changelog 2019/11/7 IRIS_Chen Created.  
+<p>&#x202A;声明 运行参数, 包含系统运行中的所有参数 @changelog 2019/11/26 IRIS_Chen Created.  
 <a href="#details">更多...</a></p>
 
 <p><a href="../../de/de1/a00065_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 结构体</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d59/a01013.html">CQueue&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html">RunPara</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换  <a href="../../d2/d4d/a01079.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d17/a01129.html">Serial</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;A serial.  <a href="../../d9/d17/a01129.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d6/d9a/a01083"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d6/d9a/a01083">RunPara::StFileHeader</a></td></tr>
+<tr class="memdesc:d6/d9a/a01083"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;文件头参数 文件验证信息 文件块值 每行数据长度 数据计数  <a href="../../d2/d4d/a01079.html#d6/d9a/a01083">更多...</a><br /></td></tr>
+<tr class="separator:d6/d9a/a01083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/d1f/a01087"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d0/d1f/a01087">RunPara::StProject</a></td></tr>
+<tr class="memdesc:d0/d1f/a01087"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;记录 路径以及其他路径信息  <a href="../../d2/d4d/a01079.html#d0/d1f/a01087">更多...</a><br /></td></tr>
+<tr class="separator:d0/d1f/a01087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d6/d0d/a01091"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d6/d0d/a01091">RunPara::StHole</a></td></tr>
+<tr class="memdesc:d6/d0d/a01091"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位  <a href="../../d2/d4d/a01079.html#d6/d0d/a01091">更多...</a><br /></td></tr>
+<tr class="separator:d6/d0d/a01091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/d6d/a01095"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#de/d6d/a01095">RunPara::StImage</a></td></tr>
+<tr class="memdesc:de/d6d/a01095"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;运行过程中的 图像参数  <a href="../../d2/d4d/a01079.html#de/d6d/a01095">更多...</a><br /></td></tr>
+<tr class="separator:de/d6d/a01095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d6/dbc/a01099"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d6/dbc/a01099">RunPara::StImage::StImagePolar</a></td></tr>
+<tr class="memdesc:d6/dbc/a01099"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Image 处理参数, 作为图像展开参数  <a href="../../d2/d4d/a01079.html#d6/dbc/a01099">更多...</a><br /></td></tr>
+<tr class="separator:d6/dbc/a01099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d9/d10/a01103"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d9/d10/a01103">RunPara::StImage::StImagePara</a></td></tr>
+<tr class="memdesc:d9/d10/a01103"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Image Para 参数  <a href="../../d2/d4d/a01079.html#d9/d10/a01103">更多...</a><br /></td></tr>
+<tr class="separator:d9/d10/a01103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/d4a/a01107"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#de/d4a/a01107">RunPara::StImage::StImageProc</a></td></tr>
+<tr class="separator:de/d4a/a01107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d3/de1/a01111"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d3/de1/a01111">RunPara::StDevice</a></td></tr>
+<tr class="memdesc:d3/de1/a01111"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设置硬件的参数信息  <a href="../../d2/d4d/a01079.html#d3/de1/a01111">更多...</a><br /></td></tr>
+<tr class="separator:d3/de1/a01111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:df/dd5/a01115"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#df/dd5/a01115">RunPara::StDevice::StPulse</a></td></tr>
+<tr class="memdesc:df/dd5/a01115"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;脉冲参数  <a href="../../d2/d4d/a01079.html#df/dd5/a01115">更多...</a><br /></td></tr>
+<tr class="separator:df/dd5/a01115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/d02/a01119"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d0/d02/a01119">RunPara::StDevice::StProbe</a></td></tr>
+<tr class="memdesc:d0/d02/a01119"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;探头参数  <a href="../../d2/d4d/a01079.html#d0/d02/a01119">更多...</a><br /></td></tr>
+<tr class="separator:d0/d02/a01119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/de5/a01123"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#de/de5/a01123">RunPara::StDevice::StCompass</a></td></tr>
+<tr class="memdesc:de/de5/a01123"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;电子罗盘参数 调整罗盘数据  <a href="../../d2/d4d/a01079.html#de/de5/a01123">更多...</a><br /></td></tr>
+<tr class="separator:de/de5/a01123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d9/d5b/a01127"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d9/d5b/a01127">RunPara::StDevice::StCamera</a></td></tr>
+<tr class="memdesc:d9/d5b/a01127"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;相机参数结构体  <a href="../../d2/d4d/a01079.html#d9/d5b/a01127">更多...</a><br /></td></tr>
+<tr class="separator:d9/d5b/a01127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d8/d84/a01131"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d8/d84/a01131">RunPara::StDevice::StSerial</a></td></tr>
+<tr class="memdesc:d8/d84/a01131"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;窗口状态信息  <a href="../../d2/d4d/a01079.html#d8/d84/a01131">更多...</a><br /></td></tr>
+<tr class="separator:d8/d84/a01131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/de4/a01135"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#de/de4/a01135">RunPara::StDevice::StDisk</a></td></tr>
+<tr class="memdesc:de/de4/a01135"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;硬盘对象 存储 硬盘使用量和总量 其他硬盘参数  <a href="../../d2/d4d/a01079.html#de/de4/a01135">更多...</a><br /></td></tr>
+<tr class="separator:de/de4/a01135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d5/d3e/a01139"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d5/d3e/a01139">RunPara::StDevice::StExtra</a></td></tr>
+<tr class="memdesc:d5/d3e/a01139"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;额外信息  <a href="../../d2/d4d/a01079.html#d5/d3e/a01139">更多...</a><br /></td></tr>
+<tr class="separator:d5/d3e/a01139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:db/db2/a01143"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#db/db2/a01143">RunPara::StUI</a></td></tr>
+<tr class="memdesc:db/db2/a01143"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设置用户UI 参数  <a href="../../d2/d4d/a01079.html#db/db2/a01143">更多...</a><br /></td></tr>
+<tr class="separator:db/db2/a01143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d8/ddb/a01147"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d8/ddb/a01147">RunPara::StUI::StLabel</a></td></tr>
+<tr class="separator:d8/ddb/a01147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/df1/a01151"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#de/df1/a01151">RunPara::StCFG</a></td></tr>
+<tr class="memdesc:de/df1/a01151"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;主要 如果能见执行的配置参数 包括软件执行以及  <a href="../../d2/d4d/a01079.html#de/df1/a01151">更多...</a><br /></td></tr>
+<tr class="separator:de/df1/a01151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:db/d07/a01155"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#db/d07/a01155">RunPara::StCFG::StCFGConfig</a></td></tr>
+<tr class="memdesc:db/d07/a01155"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;可以存储的文件参数  <a href="../../d2/d4d/a01079.html#db/d07/a01155">更多...</a><br /></td></tr>
+<tr class="separator:db/d07/a01155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d7/de8/a01159"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/a01079.html#d7/de8/a01159">RunPara::StCFG::StDebug</a></td></tr>
+<tr class="memdesc:d7/de8/a01159"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;配置 debug 参数  <a href="../../d2/d4d/a01079.html#d7/de8/a01159">更多...</a><br /></td></tr>
+<tr class="separator:d7/de8/a01159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">Declares the serial class @changelog 2019/11/7 IRIS_Chen Created. </p>
+<div class="textblock"><p class="DocNodeLTR">声明 运行参数, 包含系统运行中的所有参数 @changelog 2019/11/26 IRIS_Chen Created. </p>
 <dl class="section copyright DocNodeLTR"><dt>版权所有</dt><dd>&#x202A;Copyright (c) 2019 IRIS_Chen IRIS Lab </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">Serial.h</a> 中定义.</p>
-</div></div><!-- contents -->
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 中定义.</p>
+</div><hr/><h2 class="groupheader">结构体说明</h2>
+<a name="d6/d9a/a01083" id="d6/d9a/a01083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d6/d9a/a01083">&#9670;&nbsp;</a></span>RunPara::StFileHeader</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StFileHeader</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">文件头参数 文件验证信息 文件块值 每行数据长度 数据计数 </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;版本号 可以使用 101 这种结构 主版本号*100 + 副版本号 进行数值上的判断 <br  />
+</li>
+<li>&#x202A;新加的参数 增加开始支持的版本, 处理的时候 增加判断才能读取 </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00038">38</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StFileHeader 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dee/a01081.png" border="0" usemap="#_run_para_1_1_st_file_header_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_file_header_coll__map" id="_run_para_1_1_st_file_header_coll__map">
+<area shape="rect" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="5,244,160,271"/>
+<area shape="rect" title="STL class" alt="" coords="43,96,123,123"/>
+<area shape="rect" title="STL class" alt="" coords="19,5,146,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a3d5a2443efef91ef80afa26ff3a26205"></a>int</td>
+<td class="fieldname">
+nFileNo</td>
+<td class="fielddoc">
+&#x202A;标识当前文档的序号 按照顺序 填入当前块的值 //起始为1 </td></tr>
+<tr><td class="fieldtype">
+<a id="a7e859464419451fd97fe735265b5ff14"></a>int</td>
+<td class="fieldname">
+nIDOIFileHeaderLength</td>
+<td class="fielddoc">
+&#x202A;版本对应的文件头长度 // 根据这个值判断数据开始的地方 </td></tr>
+<tr><td class="fieldtype">
+<a id="afd3e73c8203778b6c02fc0a544604ef2"></a>int</td>
+<td class="fieldname">
+nIDOIFileVersion</td>
+<td class="fielddoc">
+&#x202A;计算出来的文件版本 101 这种格式 </td></tr>
+<tr><td class="fieldtype">
+<a id="afce00056b91ac03c37dbbd836cc0b528"></a>int</td>
+<td class="fieldname">
+nRowCnt</td>
+<td class="fielddoc">
+&#x202A;记录 文件数据的总的行数 </td></tr>
+<tr><td class="fieldtype">
+<a id="ab7f346556f26608382de86662f4c49aa"></a>int</td>
+<td class="fieldname">
+nRowLength</td>
+<td class="fielddoc">
+&#x202A;一行数据的长度 // 用于读取 </td></tr>
+<tr><td class="fieldtype">
+<a id="a9e7fa44ef89fb9e07edd71950e20f395"></a>string</td>
+<td class="fieldname">
+strFileVerify</td>
+<td class="fielddoc">
+&#x202A;文件自定义格式标识 IRIS </td></tr>
+<tr><td class="fieldtype">
+<a id="a8a929b9b6debfa1ee6e02ce4185af9ac"></a>string</td>
+<td class="fieldname">
+strHardWareVersion</td>
+<td class="fielddoc">
+&#x202A;系统嵌入式版本&ndash; 硬件版本 </td></tr>
+<tr><td class="fieldtype">
+<a id="a9ea4283c57c2fc38193e128c85cbb5d7"></a>string</td>
+<td class="fieldname">
+strIDOIFileVersion</td>
+<td class="fielddoc">
+&#x202A;自定义文件格式版本 </td></tr>
+<tr><td class="fieldtype">
+<a id="a29a9050a70b9c5be13a09fd432ed592f"></a>string</td>
+<td class="fieldname">
+strSoftWareVersion</td>
+<td class="fielddoc">
+&#x202A;系统软件版本&ndash;上位机版本 </td></tr>
+<tr><td class="fieldtype">
+<a id="a388e5bcf6b0447c80013c4f14e5d6464"></a>string</td>
+<td class="fieldname">
+strYMLConfigVersion</td>
+<td class="fielddoc">
+&#x202A;配置文件版本 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="d0/d1f/a01087" id="d0/d1f/a01087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d0/d1f/a01087">&#9670;&nbsp;</a></span>RunPara::StProject</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StProject</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">记录 路径以及其他路径信息 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00059">59</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StProject 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/df3/a01085.png" border="0" usemap="#_run_para_1_1_st_project_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_project_coll__map" id="_run_para_1_1_st_project_coll__map">
+<area shape="rect" title="记录 路径以及其他路径信息" alt="" coords="5,332,140,359"/>
+<area shape="rect" title="STL class" alt="" coords="33,96,113,123"/>
+<area shape="rect" title="STL class" alt="" coords="9,5,136,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="af97671d6d8398508afe72afce92aab00"></a>string</td>
+<td class="fieldname">
+strCaptureDir</td>
+<td class="fielddoc">
+&#x202A;抓取图片文件夹 "/pic/" </td></tr>
+<tr><td class="fieldtype">
+<a id="a8e1da1b5538c6607a4b2f1e88e6263d6"></a>string</td>
+<td class="fieldname">
+strCaptureSuffix</td>
+<td class="fielddoc">
+&#x202A;抓取图片后缀名 "png" </td></tr>
+<tr><td class="fieldtype">
+<a id="ada06068cd33b89340e5e14e6d168b85c"></a>string</td>
+<td class="fieldname">
+strConfigSuffix</td>
+<td class="fielddoc">
+&#x202A;配置文件后缀名 yml </td></tr>
+<tr><td class="fieldtype">
+<a id="a0f3e36b4eb0bbf041ae4298a1a7ecca5"></a>string</td>
+<td class="fieldname">
+strCurrentPath</td>
+<td class="fielddoc">
+&#x202A;项目当前运行目录 // 运行生成 //从盘符 到 运行文件夹 </td></tr>
+<tr><td class="fieldtype">
+<a id="a08d4f56388d9a2d653f075185f5f62e9"></a>string</td>
+<td class="fieldname">
+strDebugPath</td>
+<td class="fielddoc">
+&#x202A;调试模式下 文件存放路径 </td></tr>
+<tr><td class="fieldtype">
+<a id="ad0d9ce6b82ce7ee2f0da670cd4d91e7e"></a>string</td>
+<td class="fieldname">
+strProDir</td>
+<td class="fielddoc">
+&#x202A;工程文件文件夹 "/pro/" </td></tr>
+<tr><td class="fieldtype">
+<a id="a124285f898af8492034ac471c39c8757"></a>string</td>
+<td class="fieldname">
+strProjectDir</td>
+<td class="fielddoc">
+&#x202A;工程文件夹路径父路径 工程新建在此目录下 "/media/testpro/" </td></tr>
+<tr><td class="fieldtype">
+<a id="a2e37be011ca35dcb5648661c659e0f51"></a>string</td>
+<td class="fieldname">
+strProjectDirPrefix</td>
+<td class="fielddoc">
+&#x202A;工程文件夹前缀 "Project" </td></tr>
+<tr><td class="fieldtype">
+<a id="ab75b4a0e3dc051ecba64676e81c66c10"></a>string</td>
+<td class="fieldname">
+strProjectName</td>
+<td class="fielddoc">
+&#x202A;工程文件名 前缀加时间生成 </td></tr>
+<tr><td class="fieldtype">
+<a id="ade4767762e0d68450f48bc770a22832d"></a>string</td>
+<td class="fieldname">
+strProjectPath</td>
+<td class="fielddoc">
+&#x202A;存储工程目录 // 计算生成 从 运行路径 到 功能文件所在目录 </td></tr>
+<tr><td class="fieldtype">
+<a id="a0af11b07a11c3c2681eac42d2dfe1610"></a>string</td>
+<td class="fieldname">
+strProSuffix</td>
+<td class="fielddoc">
+&#x202A;自定义文件后缀名 "idoi" </td></tr>
+<tr><td class="fieldtype">
+<a id="a8414abc9120618bb79172b94e5057216"></a>string</td>
+<td class="fieldname">
+strVideoDir</td>
+<td class="fielddoc">
+&#x202A;原始视频或者录制文件夹 "/video/" </td></tr>
+<tr><td class="fieldtype">
+<a id="aab25e9ce963c06f21bf10939605e5a36"></a>string</td>
+<td class="fieldname">
+strVideoSuffix</td>
+<td class="fielddoc">
+&#x202A;视频文件后缀 "avi " </td></tr>
+</table>
+
+</div>
+</div>
+<a name="d6/d0d/a01091" id="d6/d0d/a01091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d6/d0d/a01091">&#9670;&nbsp;</a></span>RunPara::StHole</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StHole</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00090">90</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StHole 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/dc4/a01089.png" border="0" usemap="#_run_para_1_1_st_hole_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_hole_coll__map" id="_run_para_1_1_st_hole_coll__map">
+<area shape="rect" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="9,244,128,271"/>
+<area shape="rect" title="STL class" alt="" coords="29,96,109,123"/>
+<area shape="rect" title="STL class" alt="" coords="5,5,132,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="abb44297d47dd8d69a6f8d662e49ec484"></a>int</td>
+<td class="fieldname">
+bHoleType</td>
+<td class="fielddoc">
+&#x202A;测孔类型 水平0 竖直1 </td></tr>
+<tr><td class="fieldtype">
+<a id="a1a119e29703368cf9932b4c59ad4c82f"></a>int</td>
+<td class="fieldname">
+bWorkDir</td>
+<td class="fielddoc">
+&#x202A;工作方式 前进1 后退0 </td></tr>
+<tr><td class="fieldtype">
+<a id="aaedb0fdf28501768e74fc3f568b473cc"></a>int</td>
+<td class="fieldname">
+nBeginDepth</td>
+<td class="fielddoc">
+&#x202A;开始深度 表示设备开始工作的深度 mm </td></tr>
+<tr><td class="fieldtype">
+<a id="aa0249e294d79faf8723f35dcf0876f90"></a>int</td>
+<td class="fieldname">
+nDiameter</td>
+<td class="fielddoc">
+&#x202A;钻孔直径 </td></tr>
+<tr><td class="fieldtype">
+<a id="a29b297a2a299ff3b7446ae127e0872cf"></a>string</td>
+<td class="fieldname">
+strCompany</td>
+<td class="fielddoc">
+&#x202A;测孔单位 </td></tr>
+<tr><td class="fieldtype">
+<a id="a0d562c9e8f1b2e70a2798051f250aaeb"></a>string</td>
+<td class="fieldname">
+strLocation</td>
+<td class="fielddoc">
+&#x202A;测孔地点 </td></tr>
+<tr><td class="fieldtype">
+<a id="ae45d52024dc8fefee05c2f41d92ed380"></a>string</td>
+<td class="fieldname">
+strNum</td>
+<td class="fielddoc">
+&#x202A;测孔编号 </td></tr>
+<tr><td class="fieldtype">
+<a id="a352cc91b87c9ae95872f2a394b14fa35"></a>string</td>
+<td class="fieldname">
+strPerson</td>
+<td class="fielddoc">
+&#x202A;测孔人员 </td></tr>
+<tr><td class="fieldtype">
+<a id="a733a40ab4e0dc170b6ac9e25e7a70797"></a>string</td>
+<td class="fieldname">
+strTime</td>
+<td class="fielddoc">
+&#x202A;测孔时间 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="de/d6d/a01095" id="de/d6d/a01095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#de/d6d/a01095">&#9670;&nbsp;</a></span>RunPara::StImage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StImage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">运行过程中的 图像参数 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00106">106</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StImage 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d1c/a01093.png" border="0" usemap="#_run_para_1_1_st_image_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_image_coll__map" id="_run_para_1_1_st_image_coll__map">
+<area shape="rect" title="运行过程中的 图像参数" alt="" coords="709,80,837,107"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#de/d4a/a01107" title=" " alt="" coords="416,21,627,48"/>
+<area shape="rect" title="STL class" alt="" coords="181,21,261,48"/>
+<area shape="rect" title="STL class" alt="" coords="5,14,132,55"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d6/dbc/a01099" title="Image 处理参数, 作为图像展开参数" alt="" coords="429,73,613,114"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d9/d10/a01103" title="Image Para 参数" alt="" coords="416,139,627,165"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="afb560717c0614d01e778cae78b09ae48"></a>struct <a class="el" href="../../d2/d4d/a01079.html#d9/d10/a01103">StImagePara</a></td>
+<td class="fieldname">
+Para</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a76b56f70107ff342985f6d8bef2fa3ba"></a>struct <a class="el" href="../../d2/d4d/a01079.html#d6/dbc/a01099">StImagePolar</a></td>
+<td class="fieldname">
+Polar</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a915ef6b24b692d511745dcced2778c8a"></a>struct <a class="el" href="../../d2/d4d/a01079.html#de/d4a/a01107">StImageProc</a></td>
+<td class="fieldname">
+Proc</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="d6/dbc/a01099" id="d6/dbc/a01099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d6/dbc/a01099">&#9670;&nbsp;</a></span>RunPara::StImage::StImagePolar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StImage::StImagePolar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">Image 处理参数, 作为图像展开参数 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00111">111</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a1f8c6937a5479cf7be87ec579c92ae0b"></a>int</td>
+<td class="fieldname">
+nImgCenterX</td>
+<td class="fielddoc">
+&#x202A;中心 X 座标 </td></tr>
+<tr><td class="fieldtype">
+<a id="a32a897b4e7267880e0487ccfa093f0b1"></a>int</td>
+<td class="fieldname">
+nImgCenterY</td>
+<td class="fielddoc">
+&#x202A;中心 Y 座标 </td></tr>
+<tr><td class="fieldtype">
+<a id="aa721cf6d68764a514708e2407c4ff6bf"></a>int</td>
+<td class="fieldname">
+nImgHeight</td>
+<td class="fielddoc">
+&#x202A;图像高度 </td></tr>
+<tr><td class="fieldtype">
+<a id="a7e46989d0421ca554f06927f2c28b99a"></a>int</td>
+<td class="fieldname">
+nImgMaxR</td>
+<td class="fielddoc">
+&#x202A;外径 最大范围 </td></tr>
+<tr><td class="fieldtype">
+<a id="aaa0951944900aab9f998b309431fcd90"></a>int</td>
+<td class="fieldname">
+nImgMinR</td>
+<td class="fielddoc">
+&#x202A;内径 </td></tr>
+<tr><td class="fieldtype">
+<a id="acb3c5e4b73c1f5b57d9ce565ab9ac44e"></a>int</td>
+<td class="fieldname">
+nImgOneRowLength</td>
+<td class="fielddoc">
+&#x202A;展开图像存储的每行的 宽度值 等于展开图像的宽度值 *3 </td></tr>
+<tr><td class="fieldtype">
+<a id="abd3e4d4b94d8280f95940260c4dd4661"></a>int</td>
+<td class="fieldname">
+nImgPolarHeight</td>
+<td class="fielddoc">
+&#x202A;展开图像的高度, 默认是内外圆半径之差 </td></tr>
+<tr><td class="fieldtype">
+<a id="aaac086bb3673fe5d55178bc3aba39782"></a>int</td>
+<td class="fieldname">
+nImgPolarWidth</td>
+<td class="fielddoc">
+&#x202A;展开图像 的宽度 </td></tr>
+<tr><td class="fieldtype">
+<a id="a20bacc2aeb213d0bbdc756dcac1f91dd"></a>int</td>
+<td class="fieldname">
+nImgWidth</td>
+<td class="fielddoc">
+&#x202A;图像宽度 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="d9/d10/a01103" id="d9/d10/a01103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d9/d10/a01103">&#9670;&nbsp;</a></span>RunPara::StImage::StImagePara</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StImage::StImagePara</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">Image Para 参数 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00127">127</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="aa2a6fad46e60df3e65f81b8d6ca4571a"></a>int</td>
+<td class="fieldname">
+nImgContrast</td>
+<td class="fielddoc">
+&#x202A;图像对比度 </td></tr>
+<tr><td class="fieldtype">
+<a id="aa4c10c6d50e5c182856dd54ba9ba9b55"></a>int</td>
+<td class="fieldname">
+nImgHPixalPerMM</td>
+<td class="fielddoc">
+&#x202A;水平方向 分辨率 像素每毫米 </td></tr>
+<tr><td class="fieldtype">
+<a id="a8de5c607b94a0a34bbeee675efffb54f"></a>int</td>
+<td class="fieldname">
+nImgLight</td>
+<td class="fielddoc">
+&#x202A;图像亮度 </td></tr>
+<tr><td class="fieldtype">
+<a id="ab8385cb26de5f689dd47cdf1feb9f9d5"></a>int</td>
+<td class="fieldname">
+nImgSharp</td>
+<td class="fielddoc">
+&#x202A;图像锐度 </td></tr>
+<tr><td class="fieldtype">
+<a id="a4df61b83e327216214dd45ce509d8ead"></a>int</td>
+<td class="fieldname">
+nImgVPixalPerMM</td>
+<td class="fielddoc">
+&#x202A;竖直方向 分辨率 像素每毫米 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="de/d4a/a01107" id="de/d4a/a01107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#de/d4a/a01107">&#9670;&nbsp;</a></span>RunPara::StImage::StImageProc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StImage::StImageProc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00136">136</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StImage::StImageProc 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d1d/a01105.png" border="0" usemap="#_run_para_1_1_st_image_1_1_st_image_proc_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_image_1_1_st_image_proc_coll__map" id="_run_para_1_1_st_image_1_1_st_image_proc_coll__map">
+<area shape="rect" title=" " alt="" coords="5,200,216,227"/>
+<area shape="rect" title="STL class" alt="" coords="71,96,151,123"/>
+<area shape="rect" title="STL class" alt="" coords="47,5,174,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="aed87c747ea80ba4da5c285750e9df65c"></a>int</td>
+<td class="fieldname">
+nCameraBufferSize</td>
+<td class="fielddoc">
+&#x202A;正式处理缓冲区大小 </td></tr>
+<tr><td class="fieldtype">
+<a id="ab3e87063e376b31047d472bfdf82a1d6"></a>int</td>
+<td class="fieldname">
+nPreviewCameraBuffer</td>
+<td class="fielddoc">
+&#x202A;预览线程 图像缓冲区 </td></tr>
+<tr><td class="fieldtype">
+<a id="a0a4317d9497665db219339f5fa586875"></a>Rect</td>
+<td class="fieldname">
+rCurImageRect</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a26b11f580f9aae1373b7e64fc1c6f8c2"></a>Rect</td>
+<td class="fieldname">
+rLastImageRect</td>
+<td class="fielddoc">
+&#x202A;当前图像的选择区域 <p class="DocNodeLTR">上一副图像的裁剪区域, </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab7cc6df0f8c82aa6f455d449b98e6350"></a>string</td>
+<td class="fieldname">
+strCurImageRect</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a62d9d9e415b6659921c7f67b21c48acb"></a>string</td>
+<td class="fieldname">
+strLastImageRect</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="d3/de1/a01111" id="d3/de1/a01111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d3/de1/a01111">&#9670;&nbsp;</a></span>RunPara::StDevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StDevice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">设置硬件的参数信息 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00153">153</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StDevice 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/dbf/a01109.png" border="0" usemap="#_run_para_1_1_st_device_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_device_coll__map" id="_run_para_1_1_st_device_coll__map">
+<area shape="rect" title="设置硬件的参数信息" alt="" coords="653,209,784,235"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#de/de4/a01135" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="407,5,545,47"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#df/dd5/a01115" title="脉冲参数" alt="" coords="407,71,545,112"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#de/de5/a01123" title="电子罗盘参数 调整罗盘数据" alt="" coords="407,136,545,177"/>
+<area shape="rect" title="STL class" alt="" coords="181,174,261,201"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d8/d84/a01131" title="窗口状态信息" alt="" coords="407,201,545,243"/>
+<area shape="rect" title="STL class" alt="" coords="5,167,132,208"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d5/d3e/a01139" title="额外信息" alt="" coords="407,267,545,308"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d9/d5b/a01127" title="相机参数结构体" alt="" coords="407,332,545,373"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d0/d02/a01119" title="探头参数" alt="" coords="407,397,545,439"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="af6d9fdf36076101d9677d1cdc2f8302b"></a>struct <a class="el" href="../../d2/d4d/a01079.html#d9/d5b/a01127">StCamera</a></td>
+<td class="fieldname">
+Camera</td>
+<td class="fielddoc">
+&#x202A;初始化参数构造 </td></tr>
+<tr><td class="fieldtype">
+<a id="a19d6531d32671e61021a6185e30eba7a"></a>struct <a class="el" href="../../d2/d4d/a01079.html#de/de5/a01123">StCompass</a></td>
+<td class="fieldname">
+Compass</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aebb207ab03b76e5453e28c7bc4606afa"></a>struct <a class="el" href="../../d2/d4d/a01079.html#de/de4/a01135">StDisk</a></td>
+<td class="fieldname">
+Disk</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a6bc72d9e3a8fa235623c693cc83a02fd"></a>struct <a class="el" href="../../d2/d4d/a01079.html#d5/d3e/a01139">StExtra</a></td>
+<td class="fieldname">
+Extra</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a0a2bf36449613696cab4ed6cc76af2c4"></a>struct <a class="el" href="../../d2/d4d/a01079.html#d0/d02/a01119">StProbe</a></td>
+<td class="fieldname">
+Probe</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aff08b751819830cd437a5a0f3d5dc2a4"></a>struct <a class="el" href="../../d2/d4d/a01079.html#df/dd5/a01115">StPulse</a></td>
+<td class="fieldname">
+Pulse</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a398126d54ee5504ddea300b512a6a632"></a>struct <a class="el" href="../../d2/d4d/a01079.html#d8/d84/a01131">StSerial</a></td>
+<td class="fieldname">
+Serial</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="df/dd5/a01115" id="df/dd5/a01115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#df/dd5/a01115">&#9670;&nbsp;</a></span>RunPara::StDevice::StPulse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StDevice::StPulse</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">脉冲参数 </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;每个脉冲对应的实际距离 um/Pluse *1000</li>
+<li>&#x202A;每个脉冲对应的像素单位 px/pluse *1000 </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00160">160</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a05421b7aff626afc7ee598320b9793d4"></a>int</td>
+<td class="fieldname">
+nPixalPerPulse</td>
+<td class="fielddoc">
+&#x202A;每个脉冲对应的像素数目 的千倍 int nPulseCnt; // 总脉冲计数 // 避免溢出 可以使用 int 足够 </td></tr>
+<tr><td class="fieldtype">
+<a id="a9c1829f455bfd94bb6d53fea0e54a5ef"></a>int</td>
+<td class="fieldname">
+nPulseUm</td>
+<td class="fielddoc">
+&#x202A;脉冲距离 光电编码器 每个脉冲走过的距离 单位 1um 最大 65536 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="d0/d02/a01119" id="d0/d02/a01119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d0/d02/a01119">&#9670;&nbsp;</a></span>RunPara::StDevice::StProbe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StDevice::StProbe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">探头参数 </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;探头类型</li>
+<li>&#x202A;探头工作方向 </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00172">172</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a8daf9e2fd3bfe272de59cfa876a0a72d"></a>int</td>
+<td class="fieldname">
+bProbeDirAhead</td>
+<td class="fielddoc">
+&#x202A;工作方向 1向前 0 向后 </td></tr>
+<tr><td class="fieldtype">
+<a id="ae20977fd7df99f9aea8dc614aed81eea"></a>int</td>
+<td class="fieldname">
+nProbeType</td>
+<td class="fielddoc">
+&#x202A;探头型号 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="de/de5/a01123" id="de/de5/a01123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#de/de5/a01123">&#9670;&nbsp;</a></span>RunPara::StDevice::StCompass</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StDevice::StCompass</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">电子罗盘参数 调整罗盘数据 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00181">181</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StDevice::StCompass 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/de4/a01121.png" border="0" usemap="#_run_para_1_1_st_device_1_1_st_compass_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_device_1_1_st_compass_coll__map" id="_run_para_1_1_st_device_1_1_st_compass_coll__map">
+<area shape="rect" title="电子罗盘参数 调整罗盘数据" alt="" coords="5,200,144,241"/>
+<area shape="rect" title="STL class" alt="" coords="35,96,115,123"/>
+<area shape="rect" title="STL class" alt="" coords="11,5,138,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="ab412b9d6cf3e0fe95bdeb011f31c571a"></a><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> **</td>
+<td class="fieldname">
+cComHeader</td>
+<td class="fielddoc">
+&#x202A;罗盘数据帧头 按照格式存储 [K_COMPASS_TYPE][K_COMPASS_HEAD_LEN] </td></tr>
+<tr><td class="fieldtype">
+<a id="a5b87f448f50d9abd4f2284ce36f9168e"></a>int</td>
+<td class="fieldname">
+nComAngleOffset</td>
+<td class="fielddoc">
+&#x202A;探头内部罗盘安装角度误差 // 等于罗盘补偿 </td></tr>
+<tr><td class="fieldtype">
+<a id="aed5eaa3e779c7bc536d229c6d522a09b"></a>int</td>
+<td class="fieldname">
+nComCompen</td>
+<td class="fielddoc">
+&#x202A;罗盘补偿 </td></tr>
+<tr><td class="fieldtype">
+<a id="a8c1cbd58f723cebf6b5e2823f888d8af"></a>int</td>
+<td class="fieldname">
+nComDataLen</td>
+<td class="fielddoc">
+&#x202A;罗盘一帧数据的长度 // 串口数据长度 计算 见 串口数据文档 </td></tr>
+<tr><td class="fieldtype">
+<a id="a50428d9137a56d778ab1b36d0aa267ce"></a>int</td>
+<td class="fieldname">
+nComEnable</td>
+<td class="fielddoc">
+&#x202A;是否启用 默认 启用1 不启用 0 </td></tr>
+<tr><td class="fieldtype">
+<a id="ab8d11f37e39075596a2c36850d75a753"></a>int</td>
+<td class="fieldname">
+nComFixModeHor</td>
+<td class="fielddoc">
+&#x202A;罗盘安装方式 水平1 竖直0 </td></tr>
+<tr><td class="fieldtype">
+<a id="a15fe499e4b2050a53880aa99049ac839"></a>int</td>
+<td class="fieldname">
+nComType</td>
+<td class="fielddoc">
+&#x202A;当前使用的罗盘类 </td></tr>
+<tr><td class="fieldtype">
+<a id="a7bd7da88b98cfe10761ba55b98cb8f3d"></a>int</td>
+<td class="fieldname">
+nComTypeAll</td>
+<td class="fielddoc">
+&#x202A;目前 罗盘总类型 </td></tr>
+<tr><td class="fieldtype">
+<a id="a1d4760b7b745640fb36cd47eca16cb2b"></a>string</td>
+<td class="fieldname">
+strComDataLens</td>
+<td class="fielddoc">
+&#x202A;定义不同类型罗盘帧长度 string 分割成两个二位数 </td></tr>
+<tr><td class="fieldtype">
+<a id="a79e68b3d25e42986c13647545c0f0c5b"></a>string</td>
+<td class="fieldname">
+strComHeader</td>
+<td class="fielddoc">
+&#x202A;存储所有的和文件头信息 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="d9/d5b/a01127" id="d9/d5b/a01127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d9/d5b/a01127">&#9670;&nbsp;</a></span>RunPara::StDevice::StCamera</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StDevice::StCamera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">相机参数结构体 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00198">198</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="ae260c7f68f927a03887d6634f6f623ca"></a>int</td>
+<td class="fieldname">
+bEnable</td>
+<td class="fielddoc">
+&#x202A;使用相机标志位 1 使用相机 0 不使用 </td></tr>
+<tr><td class="fieldtype">
+<a id="a42cf59cfae146a36d92a7df8edb79703"></a>int</td>
+<td class="fieldname">
+nFPS</td>
+<td class="fielddoc">
+&#x202A;相机抓取 FPS </td></tr>
+<tr><td class="fieldtype">
+<a id="a5288812e400a6e98299e79f3eb702fa2"></a>int</td>
+<td class="fieldname">
+nHeight</td>
+<td class="fielddoc">
+&#x202A;相机抓取高度 </td></tr>
+<tr><td class="fieldtype">
+<a id="acaa30247055f1edde2658734280e1b9f"></a>int</td>
+<td class="fieldname">
+nIndex</td>
+<td class="fielddoc">
+&#x202A;定义摄像头索引值 </td></tr>
+<tr><td class="fieldtype">
+<a id="ab6f31a3e1c372230fb0ae7ec82ae7aa0"></a>int</td>
+<td class="fieldname">
+nWidth</td>
+<td class="fielddoc">
+&#x202A;相机抓取宽度 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="d8/d84/a01131" id="d8/d84/a01131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d8/d84/a01131">&#9670;&nbsp;</a></span>RunPara::StDevice::StSerial</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StDevice::StSerial</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">窗口状态信息 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00210">210</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StDevice::StSerial 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d17/a01129.png" border="0" usemap="#_run_para_1_1_st_device_1_1_st_serial_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_device_1_1_st_serial_coll__map" id="_run_para_1_1_st_device_1_1_st_serial_coll__map">
+<area shape="rect" title="窗口状态信息" alt="" coords="5,185,144,227"/>
+<area shape="rect" title="STL class" alt="" coords="35,96,115,123"/>
+<area shape="rect" title="STL class" alt="" coords="11,5,138,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="af0cd89a1ff90aa1136e2a8b038d092ce"></a>int</td>
+<td class="fieldname">
+nBaudRate</td>
+<td class="fielddoc">
+&#x202A;串口baudrate 默认 19200 </td></tr>
+<tr><td class="fieldtype">
+<a id="a96cd2af6fabd5279e5ee8db1cf6309be"></a>int</td>
+<td class="fieldname">
+nFrameLength</td>
+<td class="fielddoc">
+&#x202A;每帧数据的长度 </td></tr>
+<tr><td class="fieldtype">
+<a id="a56c24d12cdaf4cc5c749b609ba5e086e"></a>int</td>
+<td class="fieldname">
+nFrameMax</td>
+<td class="fielddoc">
+&#x202A;存储的 Frame 的最大数量 </td></tr>
+<tr><td class="fieldtype">
+<a id="aa4e0416b2441e3488c1b50211bb6f569"></a>int</td>
+<td class="fieldname">
+nPortNum</td>
+<td class="fielddoc">
+&#x202A;串口号 </td></tr>
+<tr><td class="fieldtype">
+<a id="ad645843ea7a279989ea32dc37b442544"></a>int</td>
+<td class="fieldname">
+nTimer</td>
+<td class="fielddoc">
+&#x202A;用于串口事件不触发时候定时读取 </td></tr>
+<tr><td class="fieldtype">
+<a id="abaf01987f8812fd37cde1399cda8ccfc"></a>int</td>
+<td class="fieldname">
+nTimerOut</td>
+<td class="fielddoc">
+&#x202A;串口最大时间问题, 超时提醒 默认 5s没数据 为超时 </td></tr>
+<tr><td class="fieldtype">
+<a id="a1906e11245c8b152b3f3a11aff1a074c"></a>string</td>
+<td class="fieldname">
+sFrameHeader</td>
+<td class="fielddoc">
+&#x202A;根据字符串 创建 串口数据帧头 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="de/de4/a01135" id="de/de4/a01135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#de/de4/a01135">&#9670;&nbsp;</a></span>RunPara::StDevice::StDisk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StDevice::StDisk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">硬盘对象 存储 硬盘使用量和总量 其他硬盘参数 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00224">224</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="aef119328e7820c1c02157b9e92f3ac1d"></a>int</td>
+<td class="fieldname">
+nDiskGBAll</td>
+<td class="fielddoc">
+&#x202A;磁盘总空间 GB </td></tr>
+<tr><td class="fieldtype">
+<a id="a23ea7efdb75cf2e99d81b3682d7080fb"></a>int</td>
+<td class="fieldname">
+nDiskGBUsed</td>
+<td class="fielddoc">
+&#x202A;磁盘占用 GB </td></tr>
+</table>
+
+</div>
+</div>
+<a name="d5/d3e/a01139" id="d5/d3e/a01139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d5/d3e/a01139">&#9670;&nbsp;</a></span>RunPara::StDevice::StExtra</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StDevice::StExtra</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">额外信息 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00233">233</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a71601028f8b9c2775eda7c2d916a8b63"></a>int</td>
+<td class="fieldname">
+nBattaryV</td>
+<td class="fielddoc">
+&#x202A;电池电压 // 0.01V 单位 </td></tr>
+<tr><td class="fieldtype">
+<a id="a2dba004e292c7fe3c8aa7bbc094f3c7e"></a>int</td>
+<td class="fieldname">
+nCompress</td>
+<td class="fielddoc">
+&#x202A;压缩? // 弃用 </td></tr>
+<tr><td class="fieldtype">
+<a id="a36f7f1a7d60a5ce9517dee33477c0e75"></a>int</td>
+<td class="fieldname">
+nLighterLight</td>
+<td class="fielddoc">
+&#x202A;探灯亮度 </td></tr>
+<tr><td class="fieldtype">
+<a id="a43e40f9f0882dcfa462ff7129c382c69"></a>int</td>
+<td class="fieldname">
+nScreenLight</td>
+<td class="fielddoc">
+&#x202A;屏幕亮度 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="db/db2/a01143" id="db/db2/a01143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#db/db2/a01143">&#9670;&nbsp;</a></span>RunPara::StUI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StUI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">设置用户UI 参数 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00245">245</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StUI 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/df6/a01141.png" border="0" usemap="#_run_para_1_1_st_u_i_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_u_i_coll__map" id="_run_para_1_1_st_u_i_coll__map">
+<area shape="rect" title="设置用户UI 参数" alt="" coords="31,124,137,151"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d8/ddb/a01147" title=" " alt="" coords="5,5,163,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a85a53f5efa042b291b236ac325fc5d72"></a>struct <a class="el" href="../../d2/d4d/a01079.html#d8/ddb/a01147">StLabel</a></td>
+<td class="fieldname">
+DstImgLabel</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9f8d3285763ce4ba3ba8d469fa0b5a41"></a>struct <a class="el" href="../../d2/d4d/a01079.html#d8/ddb/a01147">StLabel</a></td>
+<td class="fieldname">
+PolarImgLabel</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a985a1c5fe42b198c1411864a7524d1c3"></a>struct <a class="el" href="../../d2/d4d/a01079.html#d8/ddb/a01147">StLabel</a></td>
+<td class="fieldname">
+SrcImgLabel</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="d8/ddb/a01147" id="d8/ddb/a01147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d8/ddb/a01147">&#9670;&nbsp;</a></span>RunPara::StUI::StLabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StUI::StLabel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00247">247</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a5c8a75db5d0f3051dcf25a034370c9ce"></a>int</td>
+<td class="fieldname">
+nHeight</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="af17ea17a7ba6b27eaee99e5b1e4c91f1"></a>int</td>
+<td class="fieldname">
+nWidth</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="de/df1/a01151" id="de/df1/a01151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#de/df1/a01151">&#9670;&nbsp;</a></span>RunPara::StCFG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StCFG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">主要 如果能见执行的配置参数 包括软件执行以及 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00256">256</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StCFG 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d02/a01149.png" border="0" usemap="#_run_para_1_1_st_c_f_g_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_c_f_g_coll__map" id="_run_para_1_1_st_c_f_g_coll__map">
+<area shape="rect" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="196,319,316,345"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d7/de8/a01159" title="配置 debug 参数" alt="" coords="5,229,184,256"/>
+<area shape="rect" title="STL class" alt="" coords="55,96,135,123"/>
+<area shape="rect" title="STL class" alt="" coords="31,5,158,47"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#db/d07/a01155" title="可以存储的文件参数" alt="" coords="209,229,413,256"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a6b34660c4ef35f5664d6a2bde04ee8ba"></a>struct <a class="el" href="../../d2/d4d/a01079.html#db/d07/a01155">StCFGConfig</a></td>
+<td class="fieldname">
+CFGConfig</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a55676b481748b3169abcad0b15dab03f"></a>struct <a class="el" href="../../d2/d4d/a01079.html#d7/de8/a01159">StDebug</a></td>
+<td class="fieldname">
+Debug</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="db/d07/a01155" id="db/d07/a01155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#db/d07/a01155">&#9670;&nbsp;</a></span>RunPara::StCFG::StCFGConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StCFG::StCFGConfig</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">可以存储的文件参数 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00261">261</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a2cf168184d4d4b5d6a1bc6c88f5442a7"></a>int</td>
+<td class="fieldname">
+nShowStackIndex</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="d7/de8/a01159" id="d7/de8/a01159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d7/de8/a01159">&#9670;&nbsp;</a></span>RunPara::StCFG::StDebug</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct RunPara::StCFG::StDebug</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">配置 debug 参数 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">runpara.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00269">269</a> 行定义.</p>
+</div><div class="dynheader">
+RunPara::StCFG::StDebug 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d25/a01157.png" border="0" usemap="#_run_para_1_1_st_c_f_g_1_1_st_debug_coll__map" alt="Collaboration graph"/></div>
+<map name="_run_para_1_1_st_c_f_g_1_1_st_debug_coll__map" id="_run_para_1_1_st_c_f_g_1_1_st_debug_coll__map">
+<area shape="rect" title="配置 debug 参数" alt="" coords="5,229,184,256"/>
+<area shape="rect" title="STL class" alt="" coords="55,96,135,123"/>
+<area shape="rect" title="STL class" alt="" coords="31,5,158,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a17d047ca991630963bb004404e25cbda"></a>int</td>
+<td class="fieldname">
+nDebugEnable</td>
+<td class="fielddoc">
+&#x202A;是否使能 测试 </td></tr>
+<tr><td class="fieldtype">
+<a id="a54b647846cffc7e384175df7d8d62b64"></a>int</td>
+<td class="fieldname">
+nDocTestEnable</td>
+<td class="fielddoc">
+&#x202A;doctest 是否使用 </td></tr>
+<tr><td class="fieldtype">
+<a id="a8db2980fe61924859ca70adfefda20fc"></a>int</td>
+<td class="fieldname">
+nShowWork</td>
+<td class="fielddoc">
+&#x202A;直接进入工作不进入设置 </td></tr>
+<tr><td class="fieldtype">
+<a id="a41f6c379ebf02ee3dabeea7361dfe488"></a>int</td>
+<td class="fieldname">
+nTestVar1</td>
+<td class="fielddoc">
+&#x202A;测试变量1 </td></tr>
+<tr><td class="fieldtype">
+<a id="a9cdf264e3a514be43bdcf8d729e81da5"></a>int</td>
+<td class="fieldname">
+nTestVar2</td>
+<td class="fielddoc">
+&#x202A;测试变量2 </td></tr>
+<tr><td class="fieldtype">
+<a id="a5a7b3d37220b4b478aaa714245a25b1d"></a>int</td>
+<td class="fieldname">
+nWriteVideoEnable</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a456e606693e3ff12de516092cd24a607"></a>string</td>
+<td class="fieldname">
+strDebugFilePath</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a141c7eb438c551a5c2cffbec65a2a2cd"></a>string</td>
+<td class="fieldname">
+strSerialFilePath</td>
+<td class="fielddoc">
+&#x202A;同步测试窗口文件数据 </td></tr>
+<tr><td class="fieldtype">
+<a id="ac58c09a2c05c756961c2b5bfbca90d4e"></a>string</td>
+<td class="fieldname">
+strShowMode</td>
+<td class="fielddoc">
+&#x202A;显示模式是否显示 原图 大图 展开图 </td></tr>
+<tr><td class="fieldtype">
+<a id="a4aec1c4c7f23cbb0f485afcd56633c54"></a>string</td>
+<td class="fieldname">
+strVideoFilePath</td>
+<td class="fielddoc">
+&#x202A;测试视频文件路径 </td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../de/de1/a00065.html">&#x202A;Serial.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../de/de1/a00065.html">&#x202A;runpara.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

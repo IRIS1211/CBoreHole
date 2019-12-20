@@ -1,4 +1,4 @@
-<map id="CSlider" name="CSlider">
-<area shape="rect" id="node1" title="自定义滑动条实现, 滑动之后更改相应的值和相应的关系" alt="" coords="6,80,70,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,71,32"/>
+<map id="CamProc" name="CamProc">
+<area shape="rect" id="node1" title="处理线程 单独执行过程" alt="" coords="5,80,81,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="8,5,79,32"/>
 </map>

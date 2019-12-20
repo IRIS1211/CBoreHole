@@ -1,5 +1,25 @@
-<map id="RunPara::StImage::StImageProc" name="RunPara::StImage::StImageProc">
-<area shape="rect" id="node1" title=" " alt="" coords="5,200,216,227"/>
-<area shape="rect" id="node2" title="STL class" alt="" coords="71,96,151,123"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="47,5,174,47"/>
+<map id="RunPara" name="RunPara">
+<area shape="rect" id="node1" title="系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换" alt="" coords="1067,551,1139,577"/>
+<area shape="rect" id="node2" href="$d2/d4d/a01079.html#db/db2/a01143" title="设置用户UI 参数" alt="" coords="858,52,963,79"/>
+<area shape="rect" id="node3" href="$d2/d4d/a01079.html#d8/ddb/a01147" title=" " alt="" coords="459,27,616,53"/>
+<area shape="rect" id="node4" href="$d2/d4d/a01079.html#d3/de1/a01111" title="设置硬件的参数信息" alt="" coords="845,551,976,577"/>
+<area shape="rect" id="node5" href="$d2/d4d/a01079.html#de/de4/a01135" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="468,609,607,650"/>
+<area shape="rect" id="node6" href="$d2/d4d/a01079.html#df/dd5/a01115" title="脉冲参数" alt="" coords="468,674,607,715"/>
+<area shape="rect" id="node7" href="$d2/d4d/a01079.html#de/de5/a01123" title="电子罗盘参数 调整罗盘数据" alt="" coords="468,478,607,519"/>
+<area shape="rect" id="node8" title="STL class" alt="" coords="181,551,261,577"/>
+<area shape="rect" id="node13" href="$d2/d4d/a01079.html#d8/d84/a01131" title="窗口状态信息" alt="" coords="468,543,607,585"/>
+<area shape="rect" id="node14" href="$d2/d4d/a01079.html#d6/d9a/a01083" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="667,797,821,824"/>
+<area shape="rect" id="node15" href="$d2/d4d/a01079.html#d6/d0d/a01091" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="685,843,803,869"/>
+<area shape="rect" id="node17" href="$d2/d4d/a01079.html#d7/de8/a01159" title="配置 debug 参数" alt="" coords="448,128,627,155"/>
+<area shape="rect" id="node20" href="$d2/d4d/a01079.html#de/d4a/a01107" title=" " alt="" coords="432,296,643,323"/>
+<area shape="rect" id="node23" href="$d2/d4d/a01079.html#d0/d1f/a01087" title="记录 路径以及其他路径信息" alt="" coords="677,961,811,988"/>
+<area shape="rect" id="node9" title="STL class" alt="" coords="5,543,132,585"/>
+<area shape="rect" id="node10" href="$d2/d4d/a01079.html#d5/d3e/a01139" title="额外信息" alt="" coords="468,413,607,454"/>
+<area shape="rect" id="node11" href="$d2/d4d/a01079.html#d9/d5b/a01127" title="相机参数结构体" alt="" coords="468,739,607,781"/>
+<area shape="rect" id="node12" href="$d2/d4d/a01079.html#d0/d02/a01119" title="探头参数" alt="" coords="468,347,607,389"/>
+<area shape="rect" id="node16" href="$d2/d4d/a01079.html#de/df1/a01151" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="851,128,971,155"/>
+<area shape="rect" id="node18" href="$d2/d4d/a01079.html#db/d07/a01155" title="可以存储的文件参数" alt="" coords="435,77,639,104"/>
+<area shape="rect" id="node19" href="$d2/d4d/a01079.html#de/d6d/a01095" title="运行过程中的 图像参数" alt="" coords="847,269,975,296"/>
+<area shape="rect" id="node21" href="$d2/d4d/a01079.html#d6/dbc/a01099" title="Image 处理参数, 作为图像展开参数" alt="" coords="445,179,629,221"/>
+<area shape="rect" id="node22" href="$d2/d4d/a01079.html#d9/d10/a01103" title="Image Para 参数" alt="" coords="432,245,643,272"/>
 </map>

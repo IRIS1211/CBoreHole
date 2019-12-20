@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/init.cc æºæ–‡ä»¶</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/main.cpp æºæ–‡ä»¶</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.0</span>
    </div>
    <div id="projectbrief">&#x202A;æµ‹å­”å›¾ç‰‡æ‹¼æ¥å…¨æ™¯æ˜¾ç¤ºç³»ç»Ÿ</div>
   </td>
@@ -89,599 +89,106 @@ $(document).ready(function(){initNavTree('d6/d7d/a00161_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">init.cc</div>  </div>
+<div class="title">main.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d6/d7d/a00161.html">æµè§ˆè¯¥æ–‡ä»¶çš„æ–‡æ¡£.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../inc/runpara.h&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../inc/init.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../inc/Config.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QDir&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// ¶¨ÒåÒ»¸öÅäÖÃÎÄ¼şÂ·¾¶, ºóĞø²ÎÊı¾ù¿É´ÓÀïÃæ¶ÁÈ¡</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d6/d7d/a00161.html#a2a9f04bfacf960af31719d8377b44ea6">    9</a></span>&#160;std::string <a class="code" href="../../d6/d7d/a00161.html#a2a9f04bfacf960af31719d8377b44ea6">&#x202A;K_MAIN_CONFIG_FILE</a> = <span class="stringliteral">&quot;./Config/Config.yml&quot;</span>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#afb07b00f2611777025031d20adb34ce5">   11</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/d41/a01037.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a>()</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">bool</span> res = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    res = <a class="code" href="../../d2/d41/a01037.html#a3dd823273154e1bb5cd2e85efd872662">&#x202A;CurrentDirInit</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Q_ASSERT(res);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    res = <a class="code" href="../../d2/d41/a01037.html#a35da6087778cac1ec6b3b2e21d471c53">&#x202A;YMLConfigInit</a>(<a class="code" href="../../db/ddf/a00164.html#af5c9cce7978a6dc022e79146aa3f9e68">&#x202A;gFS</a>, <a class="code" href="../../d6/d7d/a00161.html#a2a9f04bfacf960af31719d8377b44ea6">&#x202A;K_MAIN_CONFIG_FILE</a>,cv::FileStorage::READ);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_ASSERT(res);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    res = <a class="code" href="../../d2/d41/a01037.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;GlobalVarInit</a>(<a class="code" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>,<a class="code" href="../../db/ddf/a00164.html#af5c9cce7978a6dc022e79146aa3f9e68">&#x202A;gFS</a>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_ASSERT(res);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#a3dd823273154e1bb5cd2e85efd872662">   24</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/d41/a01037.html#a3dd823273154e1bb5cd2e85efd872662">&#x202A;Init::CurrentDirInit</a>()</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// ÉèÖÃ¹¤×÷Â·¾¶</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QString cur_path = QDir::currentPath();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Èç¹ûÊÇÔÚ VS2015 »·¾³ÏÂ Ö±½ÓÊ¹ÓÃ ¹¤×÷Ä¿Â¼</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// »ñÈ¡´ÓºóÍùÇ°µÄ µÚÒ»¸ö/ Î»ÖÃ</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> index = cur_path.lastIndexOf(<span class="stringliteral">&quot;/&quot;</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Èç¹û×îºóÒ»¸ö×Ö·û / ÔòÉ¾³ıÖ®ºóÖØĞÂ¼ÆËã/ Î»ÖÃ</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (index == cur_path.size() - 1)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        cur_path = cur_path.left(index);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        index = cur_path.lastIndexOf(<span class="stringliteral">&quot;/&quot;</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QString my_dir = cur_path.right(cur_path.size() - index);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// TODO: ´Ë´¦ÅĞ¶¨Èç¹û¸ü¸ÄÄ¿Â¼¿ÉÄÜ²»Í¨¹ı     // Èç¹ûµÈÓÚµ±Ç°Ä¿Â¼Ãû, ²»ÓÃ´¦Àí, ·ñÔò ºóÍËÒ»²ã
-    if (my_dir == &quot;CBoreHole&quot;)
-    {
-        return true;
-    }
-
-    cur_path = cur_path.left(index);
-    // ½«Ä¿Â¼ÉèÖÃÎª ¹¤×÷Ä¿Â¼, ±£³ÖQT ºÍVS ¹¤×÷Â·¾¶Ò»ÖÂ
-    QDir::setCurrent(cur_path);
-    LTrace(&quot;Current Dir:{}&quot;, QDir::currentPath().toStdString());
-    return true;
-}
-
-bool Init::YMLConfigInit(cv::FileStorage &amp; fs, 
-                         std::string &amp; filename, 
-                         const int flg)
-{
-    LInfo(&quot;Config File:{}&quot;, filename);
-    if (filename.empty())
-    {
-        filename = &quot;./Config/Config.yml&quot;;
-    }
-
-    // ³¢ÊÔ´ò¿ªÎÄ¼ş, ²¢¼ì²âÊÇ¹»´ò¿ª³É¹¦
-    try
-    {
-        fs.open(filename, flg);
-    }
-    catch (...)
-    {
-        LError(&quot;YML File Error&quot;);
-        return false;
-    }
-
-    // ²âÊÔ¶ÁÈ¡ÅĞ¶Ï ÊÇ·ñ ÕıÈ·ÅäÖÃÎÄ¼ş
-    std::string s_cfg_ver = fs[&quot;config_version&quot;];
-    if (!s_cfg_ver.empty())
-        LInfo(&quot;YML Config Read OK! Config Version:{}&quot;, s_cfg_ver);
-
-    return fs.isOpened();
-}
-
-bool Init::GlobalVarInit(Config *&amp; config, 
-                         const cv::FileStorage &amp; fs)
-{
-    if (!fs.isOpened())
-        return false;
-
-    // ³õÊ¼»¯ Config ²ÎÊı
-    config = new Config();
-
-    //  ¶ÁÈ¡Éè¶¨ ºÃ¸ñÊ½µÄ ÅäÖÃÎÄ¼ş
-    // config-&gt;mRunPara-&gt;LoadRunParaFromYML(fs[&quot;RunPara&quot;]);
-    config-&gt;mRunPara.LoadRunParaFromYML(fs);
-
-    // ¼ÆÊıÃ¿´ÎÅäÖÃ²ÎÊıµÄÀÛ¼ÓÖµ 
-    static int si_ConfigPara_Cnt = 0;
-
-    // ¸üĞÂ¹¤×÷ÎÄ¼ş¼ĞºÍ ¹¤×÷Â·¾¶
-    RunPara::StProject *project = &amp;(config-&gt;mRunPara.Project);
-    project-&gt;strCurrentPath = QDir::currentPath().toStdString();
-    project-&gt;strProjectDir = project-&gt;strProjectDirPrefix
-        + GetDateStr() + &#39;_&#39; + num2Str(si_ConfigPara_Cnt++);
-
-    // ÅĞ¶Ï¹¤³ÌÎÄ¼ş¼ĞÊÇ·ñ´æÔÚ, ²»´æÔÚÔòĞÂ½¨
-    std::string project_abs_path = project-&gt;strCurrentPath + project-&gt;strProjectDir;
-    if (!QTDirExist(project_abs_path))
-    {
-        LError(&quot;Project Dir Create Error&quot;);
-        throw(Error_Project_Dir_Create_Error, &quot;Error_Project_Dir_Create_Error&quot;);
-    }
-
-    // ½øĞĞ±äÁ¿Öµ¸üĞÂ²¢´´½¨ÏàÓ¦ÎÄ¼ş¼Ğ
-    GlobalVarUpdate(config);
-
-    return true;
-}
-
-/**
- * @fn  bool Init::GlobalVarUpdate(Config *&amp;config)
- *
- * @brief   È«¾Ö²ÎÊı¸üĞÂ °üº¬ ²â¿×±àºÅĞÅÏ¢ÒÔ¼°²â¿×Êı¾İĞÅÏ¢
- *
- * @author  IRIS_Chen
- * @date    2019/11/28
- *
- * @param [in,out]  config  [in,out] If non-null, the configuration
- *
- * @return  True if it succeeds, false if it fails
- */
-
-bool Init::GlobalVarUpdate(Config *&amp;config)
-{
-    static int si_HoleNum_Cnt = 0;
-
-    RunPara::StHole *hole = &amp;(config-&gt;mRunPara.Hole);
-
-    // »ñÈ¡²â¿×±àºÅºÍ²â¿×Êı¾İ
-    std::string time_str = getTimeStr(&#39;_&#39;);
-    std::string hole_num_str = time_str + &quot;_&quot; + num2Str(++si_HoleNum_Cnt);
-    hole-&gt;strTime = time_str;
-    hole-&gt;strNum = hole_num_str;
-
-
-    std::string cur_path = QDir::currentPath().toStdString();
-    //  »ñÈ¡µÚÒ»¸ö×Ö·ûÅÌ·û// #LINUX  ´æÔÚÎÊÌâ
-    const std::string disk_name = cur_path.substr(0, 1);
-
-    Q_ASSERT(disk_name == &quot;D&quot;); // #assert ÅÌ·û
-    RunPara::StDevice::StDisk *disk = &amp;(config-&gt;mRunPara.Device.Disk);
-    disk-&gt;nDiskGBAll = static_cast&lt;int&gt;(GetDiskAll(disk_name));
-    disk-&gt;nDiskGBUsed = static_cast&lt;int&gt;(GetDiskUsed(disk_name));
-
-    return true;
-}
-
-bool Init::ProjectDirInit()
-{
-    return false;
-}
-</span> </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Èç¹ûµÈÓÚµ±Ç°Ä¿Â¼Ãû, ²»ÓÃ´¦Àí, ·ñÔò ºóÍËÒ»²ã     if (my_dir == &quot;CBoreHole&quot;)
-    {
-        return true;
-    }
-
-    cur_path = cur_path.left(index);
-    // ½«Ä¿Â¼ÉèÖÃÎª ¹¤×÷Ä¿Â¼, ±£³ÖQT ºÍVS ¹¤×÷Â·¾¶Ò»ÖÂ
-    QDir::setCurrent(cur_path);
-    LTrace(&quot;Current Dir:{}&quot;, QDir::currentPath().toStdString());
-    return true;
-}
-
-bool Init::YMLConfigInit(cv::FileStorage &amp; fs, 
-                         std::string &amp; filename, 
-                         const int flg)
-{
-    LInfo(&quot;Config File:{}&quot;, filename);
-    if (filename.empty())
-    {
-        filename = &quot;./Config/Config.yml&quot;;
-    }
-
-    // ³¢ÊÔ´ò¿ªÎÄ¼ş, ²¢¼ì²âÊÇ¹»´ò¿ª³É¹¦
-    try
-    {
-        fs.open(filename, flg);
-    }
-    catch (...)
-    {
-        LError(&quot;YML File Error&quot;);
-        return false;
-    }
-
-    // ²âÊÔ¶ÁÈ¡ÅĞ¶Ï ÊÇ·ñ ÕıÈ·ÅäÖÃÎÄ¼ş
-    std::string s_cfg_ver = fs[&quot;config_version&quot;];
-    if (!s_cfg_ver.empty())
-        LInfo(&quot;YML Config Read OK! Config Version:{}&quot;, s_cfg_ver);
-
-    return fs.isOpened();
-}
-
-bool Init::GlobalVarInit(Config *&amp; config, 
-                         const cv::FileStorage &amp; fs)
-{
-    if (!fs.isOpened())
-        return false;
-
-    // ³õÊ¼»¯ Config ²ÎÊı
-    config = new Config();
-
-    //  ¶ÁÈ¡Éè¶¨ ºÃ¸ñÊ½µÄ ÅäÖÃÎÄ¼ş
-    // config-&gt;mRunPara-&gt;LoadRunParaFromYML(fs[&quot;RunPara&quot;]);
-    config-&gt;mRunPara.LoadRunParaFromYML(fs);
-
-    // ¼ÆÊıÃ¿´ÎÅäÖÃ²ÎÊıµÄÀÛ¼ÓÖµ 
-    static int si_ConfigPara_Cnt = 0;
-
-    // ¸üĞÂ¹¤×÷ÎÄ¼ş¼ĞºÍ ¹¤×÷Â·¾¶
-    RunPara::StProject *project = &amp;(config-&gt;mRunPara.Project);
-    project-&gt;strCurrentPath = QDir::currentPath().toStdString();
-    project-&gt;strProjectDir = project-&gt;strProjectDirPrefix
-        + GetDateStr() + &#39;_&#39; + num2Str(si_ConfigPara_Cnt++);
-
-    // ÅĞ¶Ï¹¤³ÌÎÄ¼ş¼ĞÊÇ·ñ´æÔÚ, ²»´æÔÚÔòĞÂ½¨
-    std::string project_abs_path = project-&gt;strCurrentPath + project-&gt;strProjectDir;
-    if (!QTDirExist(project_abs_path))
-    {
-        LError(&quot;Project Dir Create Error&quot;);
-        throw(Error_Project_Dir_Create_Error, &quot;Error_Project_Dir_Create_Error&quot;);
-    }
-
-    // ½øĞĞ±äÁ¿Öµ¸üĞÂ²¢´´½¨ÏàÓ¦ÎÄ¼ş¼Ğ
-    GlobalVarUpdate(config);
-
-    return true;
-}
-
-/**
- * @fn  bool Init::GlobalVarUpdate(Config *&amp;config)
- *
- * @brief   È«¾Ö²ÎÊı¸üĞÂ °üº¬ ²â¿×±àºÅĞÅÏ¢ÒÔ¼°²â¿×Êı¾İĞÅÏ¢
- *
- * @author  IRIS_Chen
- * @date    2019/11/28
- *
- * @param [in,out]  config  [in,out] If non-null, the configuration
- *
- * @return  True if it succeeds, false if it fails
- */
-
-bool Init::GlobalVarUpdate(Config *&amp;config)
-{
-    static int si_HoleNum_Cnt = 0;
-
-    RunPara::StHole *hole = &amp;(config-&gt;mRunPara.Hole);
-
-    // »ñÈ¡²â¿×±àºÅºÍ²â¿×Êı¾İ
-    std::string time_str = getTimeStr(&#39;_&#39;);
-    std::string hole_num_str = time_str + &quot;_&quot; + num2Str(++si_HoleNum_Cnt);
-    hole-&gt;strTime = time_str;
-    hole-&gt;strNum = hole_num_str;
-
-
-    std::string cur_path = QDir::currentPath().toStdString();
-    //  »ñÈ¡µÚÒ»¸ö×Ö·ûÅÌ·û// #LINUX  ´æÔÚÎÊÌâ
-    const std::string disk_name = cur_path.substr(0, 1);
-
-    Q_ASSERT(disk_name == &quot;D&quot;); // #assert ÅÌ·û
-    RunPara::StDevice::StDisk *disk = &amp;(config-&gt;mRunPara.Device.Disk);
-    disk-&gt;nDiskGBAll = static_cast&lt;int&gt;(GetDiskAll(disk_name));
-    disk-&gt;nDiskGBUsed = static_cast&lt;int&gt;(GetDiskUsed(disk_name));
-
-    return true;
-}
-
-bool Init::ProjectDirInit()
-{
-    return false;
-}
-</span> </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (my_dir == <span class="stringliteral">&quot;CBoreHole&quot;</span>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    cur_path = cur_path.left(index);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// ½«Ä¿Â¼ÉèÖÃÎª ¹¤×÷Ä¿Â¼, ±£³ÖQT ºÍVS ¹¤×÷Â·¾¶Ò»ÖÂ</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QDir::setCurrent(cur_path);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    LTrace(<span class="stringliteral">&quot;Current Dir:{}&quot;</span>, QDir::currentPath().toStdString());</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#a35da6087778cac1ec6b3b2e21d471c53">   54</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/d41/a01037.html#a35da6087778cac1ec6b3b2e21d471c53">&#x202A;Init::YMLConfigInit</a>(cv::FileStorage &amp; fs, </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                         std::string &amp; filename, </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">int</span> flg)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    LInfo(<span class="stringliteral">&quot;Config File:{}&quot;</span>, filename);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (filename.empty())</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        filename = <span class="stringliteral">&quot;./Config/Config.yml&quot;</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// ³¢ÊÔ´ò¿ªÎÄ¼ş, ²¢¼ì²âÊÇ¹»´ò¿ª³É¹¦</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        fs.open(filename, flg);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        LError(<span class="stringliteral">&quot;YML File Error&quot;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// ²âÊÔ¶ÁÈ¡ÅĞ¶Ï ÊÇ·ñ ÕıÈ·ÅäÖÃÎÄ¼ş</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::string s_cfg_ver = fs[<span class="stringliteral">&quot;config_version&quot;</span>];</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (!s_cfg_ver.empty())</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        LInfo(<span class="stringliteral">&quot;YML Config Read OK! Config Version:{}&quot;</span>, s_cfg_ver);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> fs.isOpened();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#ac6c5c0e3086cf28a96387e32ffc5bebf">   83</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/d41/a01037.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a>(<a class="code" href="../../d7/ded/a01009.html">&#x202A;Config</a> *&amp; config, </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                         <span class="keyword">const</span> cv::FileStorage &amp; fs)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (!fs.isOpened())</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// ³õÊ¼»¯ Config ²ÎÊı     config = new Config();
-
-    //  ¶ÁÈ¡Éè¶¨ ºÃ¸ñÊ½µÄ ÅäÖÃÎÄ¼ş
-    // config-&gt;mRunPara-&gt;LoadRunParaFromYML(fs[&quot;RunPara&quot;]);
-    config-&gt;mRunPara.LoadRunParaFromYML(fs);
-
-    // ¼ÆÊıÃ¿´ÎÅäÖÃ²ÎÊıµÄÀÛ¼ÓÖµ 
-    static int si_ConfigPara_Cnt = 0;
-
-    // ¸üĞÂ¹¤×÷ÎÄ¼ş¼ĞºÍ ¹¤×÷Â·¾¶
-    RunPara::StProject *project = &amp;(config-&gt;mRunPara.Project);
-    project-&gt;strCurrentPath = QDir::currentPath().toStdString();
-    project-&gt;strProjectDir = project-&gt;strProjectDirPrefix
-        + GetDateStr() + &#39;_&#39; + num2Str(si_ConfigPara_Cnt++);
-
-    // ÅĞ¶Ï¹¤³ÌÎÄ¼ş¼ĞÊÇ·ñ´æÔÚ, ²»´æÔÚÔòĞÂ½¨
-    std::string project_abs_path = project-&gt;strCurrentPath + project-&gt;strProjectDir;
-    if (!QTDirExist(project_abs_path))
-    {
-        LError(&quot;Project Dir Create Error&quot;);
-        throw(Error_Project_Dir_Create_Error, &quot;Error_Project_Dir_Create_Error&quot;);
-    }
-
-    // ½øĞĞ±äÁ¿Öµ¸üĞÂ²¢´´½¨ÏàÓ¦ÎÄ¼ş¼Ğ
-    GlobalVarUpdate(config);
-
-    return true;
-}
-
-/**
- * @fn  bool Init::GlobalVarUpdate(Config *&amp;config)
- *
- * @brief   È«¾Ö²ÎÊı¸üĞÂ °üº¬ ²â¿×±àºÅĞÅÏ¢ÒÔ¼°²â¿×Êı¾İĞÅÏ¢
- *
- * @author  IRIS_Chen
- * @date    2019/11/28
- *
- * @param [in,out]  config  [in,out] If non-null, the configuration
- *
- * @return  True if it succeeds, false if it fails
- */
-
-bool Init::GlobalVarUpdate(Config *&amp;config)
-{
-    static int si_HoleNum_Cnt = 0;
-
-    RunPara::StHole *hole = &amp;(config-&gt;mRunPara.Hole);
-
-    // »ñÈ¡²â¿×±àºÅºÍ²â¿×Êı¾İ
-    std::string time_str = getTimeStr(&#39;_&#39;);
-    std::string hole_num_str = time_str + &quot;_&quot; + num2Str(++si_HoleNum_Cnt);
-    hole-&gt;strTime = time_str;
-    hole-&gt;strNum = hole_num_str;
-
-
-    std::string cur_path = QDir::currentPath().toStdString();
-    //  »ñÈ¡µÚÒ»¸ö×Ö·ûÅÌ·û// #LINUX  ´æÔÚÎÊÌâ
-    const std::string disk_name = cur_path.substr(0, 1);
-
-    Q_ASSERT(disk_name == &quot;D&quot;); // #assert ÅÌ·û
-    RunPara::StDevice::StDisk *disk = &amp;(config-&gt;mRunPara.Device.Disk);
-    disk-&gt;nDiskGBAll = static_cast&lt;int&gt;(GetDiskAll(disk_name));
-    disk-&gt;nDiskGBUsed = static_cast&lt;int&gt;(GetDiskUsed(disk_name));
-
-    return true;
-}
-
-bool Init::ProjectDirInit()
-{
-    return false;
-}
-</span> </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    config = <span class="keyword">new</span> <a class="code" href="../../d7/ded/a01009.html">&#x202A;Config</a>();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//  ¶ÁÈ¡Éè¶¨ ºÃ¸ñÊ½µÄ ÅäÖÃÎÄ¼ş</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// config-&gt;mRunPara-&gt;LoadRunParaFromYML(fs[&quot;RunPara&quot;]);</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    config-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#aad8567884f1564ee1657671892c7ad06">&#x202A;LoadRunParaFromYML</a>(fs);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// ¼ÆÊıÃ¿´ÎÅäÖÃ²ÎÊıµÄÀÛ¼ÓÖµ </span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> si_ConfigPara_Cnt = 0;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// ¸üĞÂ¹¤×÷ÎÄ¼ş¼ĞºÍ ¹¤×÷Â·¾¶</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../d7/d46/a01045.html#dc/d99/a01053">&#x202A;RunPara::StProject</a> *project = &amp;(config-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;Project</a>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    project-&gt;<a class="code" href="../../d7/d46/a01045.html#a0f3e36b4eb0bbf041ae4298a1a7ecca5">&#x202A;strCurrentPath</a> = QDir::currentPath().toStdString();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    project-&gt;<a class="code" href="../../d7/d46/a01045.html#a124285f898af8492034ac471c39c8757">&#x202A;strProjectDir</a> = project-&gt;<a class="code" href="../../d7/d46/a01045.html#a2e37be011ca35dcb5648661c659e0f51">&#x202A;strProjectDirPrefix</a></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        + <a class="code" href="../../d4/d8c/a00035.html#ad097a2be5d255a589cb0c58b1e65fac1">&#x202A;GetDateStr</a>() + <span class="charliteral">&#39;_&#39;</span> + <a class="code" href="../../d4/d8c/a00035.html#a1c11ea4eddb168aee72861c8397c20a2">&#x202A;num2Str</a>(si_ConfigPara_Cnt++);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// ÅĞ¶Ï¹¤³ÌÎÄ¼ş¼ĞÊÇ·ñ´æÔÚ, ²»´æÔÚÔòĞÂ½¨</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::string project_abs_path = project-&gt;<a class="code" href="../../d7/d46/a01045.html#a0f3e36b4eb0bbf041ae4298a1a7ecca5">&#x202A;strCurrentPath</a> + project-&gt;<a class="code" href="../../d7/d46/a01045.html#a124285f898af8492034ac471c39c8757">&#x202A;strProjectDir</a>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d4/d8c/a00035.html#a417ad9bc43db4f2f4eda91598d39e883">&#x202A;QTDirExist</a>(project_abs_path))</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        LError(<span class="stringliteral">&quot;Project Dir Create Error&quot;</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">throw</span>(<a class="code" href="../../d6/d22/a00245.html#a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d">&#x202A;Error_Project_Dir_Create_Error</a>, <span class="stringliteral">&quot;Error_Project_Dir_Create_Error&quot;</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// ½øĞĞ±äÁ¿Öµ¸üĞÂ²¢´´½¨ÏàÓ¦ÎÄ¼ş¼Ğ     GlobalVarUpdate(config);
-
-    return true;
-}
-
-/**
- * @fn  bool Init::GlobalVarUpdate(Config *&amp;config)
- *
- * @brief   È«¾Ö²ÎÊı¸üĞÂ °üº¬ ²â¿×±àºÅĞÅÏ¢ÒÔ¼°²â¿×Êı¾İĞÅÏ¢
- *
- * @author  IRIS_Chen
- * @date    2019/11/28
- *
- * @param [in,out]  config  [in,out] If non-null, the configuration
- *
- * @return  True if it succeeds, false if it fails
- */
-
-bool Init::GlobalVarUpdate(Config *&amp;config)
-{
-    static int si_HoleNum_Cnt = 0;
-
-    RunPara::StHole *hole = &amp;(config-&gt;mRunPara.Hole);
-
-    // »ñÈ¡²â¿×±àºÅºÍ²â¿×Êı¾İ
-    std::string time_str = getTimeStr(&#39;_&#39;);
-    std::string hole_num_str = time_str + &quot;_&quot; + num2Str(++si_HoleNum_Cnt);
-    hole-&gt;strTime = time_str;
-    hole-&gt;strNum = hole_num_str;
-
-
-    std::string cur_path = QDir::currentPath().toStdString();
-    //  »ñÈ¡µÚÒ»¸ö×Ö·ûÅÌ·û// #LINUX  ´æÔÚÎÊÌâ
-    const std::string disk_name = cur_path.substr(0, 1);
-
-    Q_ASSERT(disk_name == &quot;D&quot;); // #assert ÅÌ·û
-    RunPara::StDevice::StDisk *disk = &amp;(config-&gt;mRunPara.Device.Disk);
-    disk-&gt;nDiskGBAll = static_cast&lt;int&gt;(GetDiskAll(disk_name));
-    disk-&gt;nDiskGBUsed = static_cast&lt;int&gt;(GetDiskUsed(disk_name));
-
-    return true;
-}
-
-bool Init::ProjectDirInit()
-{
-    return false;
-}
-</span> </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="../../d2/d41/a01037.html#a5714027a2cc07f9c5c0ae84a177631be">&#x202A;GlobalVarUpdate</a>(config);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#a5714027a2cc07f9c5c0ae84a177631be">  132</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/d41/a01037.html#a5714027a2cc07f9c5c0ae84a177631be">&#x202A;Init::GlobalVarUpdate</a>(<a class="code" href="../../d7/ded/a01009.html">&#x202A;Config</a> *&amp;config)</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> si_HoleNum_Cnt = 0;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="../../d7/d46/a01045.html#d2/db8/a01057">&#x202A;RunPara::StHole</a> *hole = &amp;(config-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#afd733ae61a9e00508ef1c95697ab1e52">&#x202A;Hole</a>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// »ñÈ¡²â¿×±àºÅºÍ²â¿×Êı¾İ     std::string time_str = getTimeStr(&#39;_&#39;);
-    std::string hole_num_str = time_str + &quot;_&quot; + num2Str(++si_HoleNum_Cnt);
-    hole-&gt;strTime = time_str;
-    hole-&gt;strNum = hole_num_str;
-
-
-    std::string cur_path = QDir::currentPath().toStdString();
-    //  »ñÈ¡µÚÒ»¸ö×Ö·ûÅÌ·û// #LINUX  ´æÔÚÎÊÌâ
-    const std::string disk_name = cur_path.substr(0, 1);
-
-    Q_ASSERT(disk_name == &quot;D&quot;); // #assert ÅÌ·û
-    RunPara::StDevice::StDisk *disk = &amp;(config-&gt;mRunPara.Device.Disk);
-    disk-&gt;nDiskGBAll = static_cast&lt;int&gt;(GetDiskAll(disk_name));
-    disk-&gt;nDiskGBUsed = static_cast&lt;int&gt;(GetDiskUsed(disk_name));
-
-    return true;
-}
-
-bool Init::ProjectDirInit()
-{
-    return false;
-}
-</span> </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    std::string time_str = <a class="code" href="../../d4/d8c/a00035.html#aa132dc7ddfc38fed5cdbc20ae1eddd55">&#x202A;getTimeStr</a>(<span class="charliteral">&#39;_&#39;</span>);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    std::string hole_num_str = time_str + <span class="stringliteral">&quot;_&quot;</span> + <a class="code" href="../../d4/d8c/a00035.html#a1c11ea4eddb168aee72861c8397c20a2">&#x202A;num2Str</a>(++si_HoleNum_Cnt);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    hole-&gt;<a class="code" href="../../d7/d46/a01045.html#a733a40ab4e0dc170b6ac9e25e7a70797">&#x202A;strTime</a> = time_str;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    hole-&gt;<a class="code" href="../../d7/d46/a01045.html#ae45d52024dc8fefee05c2f41d92ed380">&#x202A;strNum</a> = hole_num_str;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    std::string cur_path = QDir::currentPath().toStdString();</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">//  »ñÈ¡µÚÒ»¸ö×Ö·ûÅÌ·û// #LINUX  ´æÔÚÎÊÌâ     const std::string disk_name = cur_path.substr(0, 1);
-
-    Q_ASSERT(disk_name == &quot;D&quot;); // #assert ÅÌ·û
-    RunPara::StDevice::StDisk *disk = &amp;(config-&gt;mRunPara.Device.Disk);
-    disk-&gt;nDiskGBAll = static_cast&lt;int&gt;(GetDiskAll(disk_name));
-    disk-&gt;nDiskGBUsed = static_cast&lt;int&gt;(GetDiskUsed(disk_name));
-
-    return true;
-}
-
-bool Init::ProjectDirInit()
-{
-    return false;
-}
-</span> </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">const</span> std::string disk_name = cur_path.substr(0, 1);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    Q_ASSERT(disk_name == <span class="stringliteral">&quot;D&quot;</span>); <span class="comment">// #assert ÅÌ·û     RunPara::StDevice::StDisk *disk = &amp;(config-&gt;mRunPara.Device.Disk);
-    disk-&gt;nDiskGBAll = static_cast&lt;int&gt;(GetDiskAll(disk_name));
-    disk-&gt;nDiskGBUsed = static_cast&lt;int&gt;(GetDiskUsed(disk_name));
-
-    return true;
-}
-
-bool Init::ProjectDirInit()
-{
-    return false;
-}
-</span> </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="../../d7/d46/a01045.html#de/d99/a01101">&#x202A;RunPara::StDevice::StDisk</a> *disk = &amp;(config-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../d7/d46/a01045.html#aebb207ab03b76e5453e28c7bc4606afa">&#x202A;Disk</a>);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    disk-&gt;<a class="code" href="../../d7/d46/a01045.html#aef119328e7820c1c02157b9e92f3ac1d">&#x202A;nDiskGBAll</a> = static_cast&lt;int&gt;(<a class="code" href="../../d4/d8c/a00035.html#a3aca825d905b529f9d670f92483b932c">&#x202A;GetDiskAll</a>(disk_name));</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    disk-&gt;<a class="code" href="../../d7/d46/a01045.html#a23ea7efdb75cf2e99d81b3682d7080fb">&#x202A;nDiskGBUsed</a> = static_cast&lt;int&gt;(<a class="code" href="../../d4/d8c/a00035.html#a9801f793edfff4024a3ddca0f674e258">&#x202A;GetDiskUsed</a>(disk_name));</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../d2/d41/a01037.html#ab51a131ea214156e180acfd39a0c95d4">  157</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/d41/a01037.html#ab51a131ea214156e180acfd39a0c95d4">&#x202A;Init::ProjectDirInit</a>()</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<a href="../../d6/d7d/a00161.html">æµè§ˆè¯¥æ–‡ä»¶çš„æ–‡æ¡£.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// ä½¿ç”¨æ ‡å‡†å¤´æ–‡ä»¶</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// #include &quot;../stdafx.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// å…¨å±€å˜é‡å®šä¹‰åŒºåŸŸ</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// å®šä¹‰å…¨å±€å‚æ•°å˜é‡  åŒ…æ‹¬ è¿è¡Œå‚æ•°å’Œé…ç½®å‚æ•°</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../da/d15/a00188.html#a21a3f473a04332ba5d1dd033517f0570">   14</a></span>&#160;<a class="code" href="../../d8/d27/a01043.html">&#x202A;Config</a> *<a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define DOCTEST_CONFIG_IMPLEMENT</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// #include &quot;doctest.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../../Depend/doctest/doctest.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97">   33</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97">&#x202A;main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// é»˜è®¤æ˜¾ç¤ºè¿›ç¨‹ </span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QApplication application(argc, argv);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d8/df3/a01195.html">&#x202A;WorkWindow</a> *work_windows = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//  å¼€å§‹ç•Œé¢ åªæ˜¾ç¤ºä¸»çª—ä½“åˆ‡æ¢æ˜¾ç¤º</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d1/d0d/a01191.html">&#x202A;SetWindow</a> *set_windows = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// qmlRegisterType&lt;ALPaintedItem&gt;(&quot;ALPaintedItem&quot;, 1, 0, &quot;ALPaintedItem&quot;);</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// åˆå§‹åŒ–ç³»ç»Ÿ å®Œæˆç³»ç»Ÿå‚æ•°ä»¥åŠå…¶ä»–å†…å®¹</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../df/d18/a01071.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a>())</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        LError(<span class="stringliteral">&quot;System Init Error!, Please Check Log&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// ç³»ç»Ÿåˆå§‹åŒ–å¤±è´¥  ç»“æŸæ‰§è¡Œç¨‹åº</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        system(<span class="stringliteral">&quot;pause&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// æ­£å¸¸ ç›´æ¥è¿›å…¥å·¥ä½œçª—å£</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> nshow_work = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> (nshow_work == 1)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        work_windows = <span class="keyword">new</span> <a class="code" href="../../d8/df3/a01195.html">&#x202A;WorkWindow</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        work_windows-&gt;show();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// æ„å»ºçº¿ç¨‹ä¹‹å è¿›è¡Œ åˆå§‹åŒ– è·å–ç›¸åº”å‚æ•° æˆ–è€…è®¾ç½®ç›¸åº”å‚æ•°</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        work_windows-&gt;<a class="code" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;Init</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nshow_work == 2)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        work_windows = <span class="keyword">new</span> <a class="code" href="../../d8/df3/a01195.html">&#x202A;WorkWindow</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        work_windows-&gt;setWindowFlags(work_windows-&gt;windowFlags()</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                     &amp; ~Qt::WindowMaximizeButtonHint</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                     &amp; ~Qt::WindowMinimizeButtonHint);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        work_windows-&gt;showMaximized();  <span class="comment">// æœ€å¤§åŒ–æ˜¾ç¤ºçª—å£</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        work_windows-&gt;showFullScreen(); <span class="comment">// å…¨å±æ˜¾ç¤º</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        work_windows-&gt;show(); </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        work_windows-&gt;<a class="code" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;Init</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        set_windows = <span class="keyword">new</span> <a class="code" href="../../d1/d0d/a01191.html">&#x202A;SetWindow</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        set_windows-&gt;show();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// set_windows-&gt;hide();</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// åœ¨å‡½æ•°åˆå§‹åŒ–ä¹‹å æ‰§è¡Œ  å•å…ƒæµ‹è¯•</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../d2/d4d/a01079.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>.<a class="code" href="../../d2/d4d/a01079.html#a54b647846cffc7e384175df7d8d62b64">&#x202A;nDocTestEnable</a>)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">// æµ‹è¯• doc test æ˜¯å¤Ÿå·¥ä½œ</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        doctest::Context context;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">// context.applyCommandLine(argc, argv);</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// context.addFilter(&quot;test-case-exclude&quot;, &quot;*math*&quot;); // exclude test cases with &quot;math&quot; in the name</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">// context.setOption(&quot;rand-seed&quot;, 324);              // if order-by is set to &quot;rand&quot; use this seed</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        context.setOption(<span class="stringliteral">&quot;order-by&quot;</span>, <span class="stringliteral">&quot;file&quot;</span>);            <span class="comment">// sort the test cases by file and line</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">// overrides</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        context.setOption(<span class="stringliteral">&quot;no-breaks&quot;</span>, <span class="keyword">true</span>); <span class="comment">// don&#39;t break in the debugger when assertions fail</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        context.run(); <span class="comment">// run doctest</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// system(&quot;pause&quot;);</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// return 0;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> application.exec();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00035_html_ad097a2be5d255a589cb0c58b1e65fac1"><div class="ttname"><a href="../../d4/d8c/a00035.html#ad097a2be5d255a589cb0c58b1e65fac1">&#x202A;GetDateStr</a></div><div class="ttdeci">&#x202A;std::string GetDateStr(void)</div><div class="ttdoc">&#x202A;Gets date string è¿”å› 8ä½ æ—¥æœŸå€¼</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00584">common.cc:584</a></div></div>
-<div class="ttc" id="aa01037_html_a35da6087778cac1ec6b3b2e21d471c53"><div class="ttname"><a href="../../d2/d41/a01037.html#a35da6087778cac1ec6b3b2e21d471c53">&#x202A;Init::YMLConfigInit</a></div><div class="ttdeci">&#x202A;static bool YMLConfigInit(cv::FileStorage &amp;fs, std::string &amp;filename, const int flg=cv::FileStorage::READ)</div><div class="ttdoc">&#x202A;¸ù¾İ yml ÅäÖÃÎÄ¼ş³õÊ¼»¯ÎÄ¼ş²ÎÊı //Ä¬ÈÏÊÇ¶ÁµÄ·½Ê½´ò¿ªÅäÖÃÎÄ¼ş</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00054">init.cc:54</a></div></div>
-<div class="ttc" id="aa01045_html_a23ea7efdb75cf2e99d81b3682d7080fb"><div class="ttname"><a href="../../d7/d46/a01045.html#a23ea7efdb75cf2e99d81b3682d7080fb">&#x202A;RunPara::StDevice::StDisk::nDiskGBUsed</a></div><div class="ttdeci">&#x202A;int nDiskGBUsed</div><div class="ttdoc">&#x202A;ç£ç›˜å ç”¨ GB</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00226">runpara.h:226</a></div></div>
-<div class="ttc" id="aa01045_html_d2/db8/a01057"><div class="ttname"><a href="../../d7/d46/a01045.html#d2/db8/a01057">&#x202A;RunPara::StHole</a></div><div class="ttdoc">&#x202A;æµ‹å­”å‚æ•°ä¿¡æ¯ æµ‹å­”ç›´å¾„ mm å¼€å§‹æ·±åº¦ mm æµ‹å­”ç±»å‹ æ°´å¹³ 0 æ•°å€¼ 1 å·¥ä½œæ–¹å¼ å‰è¿› 0 åé€€ 1 æµ‹å­”ç¼–å· æµ‹å­”æ—¶é—´ æµ‹å­”åœ°ç‚¹ æµ‹å­”äººå‘˜ æµ‹å­”å•ä½</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00089">runpara.h:89</a></div></div>
-<div class="ttc" id="aa01045_html_afd733ae61a9e00508ef1c95697ab1e52"><div class="ttname"><a href="../../d7/d46/a01045.html#afd733ae61a9e00508ef1c95697ab1e52">&#x202A;RunPara::Hole</a></div><div class="ttdeci">&#x202A;struct RunPara::StHole Hole</div></div>
-<div class="ttc" id="aa00164_html_af5c9cce7978a6dc022e79146aa3f9e68"><div class="ttname"><a href="../../db/ddf/a00164.html#af5c9cce7978a6dc022e79146aa3f9e68">&#x202A;gFS</a></div><div class="ttdeci">&#x202A;cv::FileStorage gFS</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00014">main.cpp:14</a></div></div>
-<div class="ttc" id="aa00164_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00016">main.cpp:16</a></div></div>
-<div class="ttc" id="aa01045_html_a1b1f21581cf398c15060fe53199662d9"><div class="ttname"><a href="../../d7/d46/a01045.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;RunPara::Device</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice Device</div></div>
-<div class="ttc" id="aa01009_html"><div class="ttname"><a href="../../d7/ded/a01009.html">&#x202A;Config</a></div><div class="ttdoc">&#x202A;å…¨éƒ¨å‚æ•°ä¿¡æ¯ åŒ…æ‹¬è¿è¡Œå‚æ•°å’Œç³»ç»Ÿé…ç½®å‚æ•° æœ‰è¿è¡Œå‚æ•°æ˜¯ç³»ç»Ÿçš„å…¨éƒ¨å‚æ•°, å¦‚æœéœ€è¦å­˜å‚¨, å°†å†…å®¹å¤åˆ¶åˆ°å­˜å‚¨å‚æ•°ä¸­,</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00029">Config.h:29</a></div></div>
-<div class="ttc" id="aa01045_html_ae45d52024dc8fefee05c2f41d92ed380"><div class="ttname"><a href="../../d7/d46/a01045.html#ae45d52024dc8fefee05c2f41d92ed380">&#x202A;RunPara::StHole::strNum</a></div><div class="ttdeci">&#x202A;std::string strNum</div><div class="ttdoc">&#x202A;æµ‹å­”ç¼–å·</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00095">runpara.h:95</a></div></div>
-<div class="ttc" id="aa00035_html_a3aca825d905b529f9d670f92483b932c"><div class="ttname"><a href="../../d4/d8c/a00035.html#a3aca825d905b529f9d670f92483b932c">&#x202A;GetDiskAll</a></div><div class="ttdeci">&#x202A;double GetDiskAll(const std::string disk=&quot;D&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l02104">common.cc:2104</a></div></div>
-<div class="ttc" id="aa00035_html_aa132dc7ddfc38fed5cdbc20ae1eddd55"><div class="ttname"><a href="../../d4/d8c/a00035.html#aa132dc7ddfc38fed5cdbc20ae1eddd55">&#x202A;getTimeStr</a></div><div class="ttdeci">&#x202A;std::string getTimeStr(char c='-', int flg_rand=0)</div><div class="ttdoc">&#x202A;æ ¹æ®å½“å‰æ—¶é—´ åˆ›å»ºå­—ç¬¦ä¸²</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00553">common.cc:553</a></div></div>
-<div class="ttc" id="aa00035_html_a1c11ea4eddb168aee72861c8397c20a2"><div class="ttname"><a href="../../d4/d8c/a00035.html#a1c11ea4eddb168aee72861c8397c20a2">&#x202A;num2Str</a></div><div class="ttdeci">&#x202A;std::string num2Str(int num, int cnt=3)</div><div class="ttdoc">&#x202A;æ•°å­— è½¬æ¢æˆå­—ç¬¦ä¸² // è‡ªå®šä½æ•°.// é¦–ä½è¡¥0</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00628">common.cc:628</a></div></div>
-<div class="ttc" id="aa01045_html_aef119328e7820c1c02157b9e92f3ac1d"><div class="ttname"><a href="../../d7/d46/a01045.html#aef119328e7820c1c02157b9e92f3ac1d">&#x202A;RunPara::StDevice::StDisk::nDiskGBAll</a></div><div class="ttdeci">&#x202A;int nDiskGBAll</div><div class="ttdoc">&#x202A;ç£ç›˜æ€»ç©ºé—´ GB</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00225">runpara.h:225</a></div></div>
-<div class="ttc" id="aa01037_html_ab51a131ea214156e180acfd39a0c95d4"><div class="ttname"><a href="../../d2/d41/a01037.html#ab51a131ea214156e180acfd39a0c95d4">&#x202A;Init::ProjectDirInit</a></div><div class="ttdeci">&#x202A;static bool ProjectDirInit()</div><div class="ttdoc">&#x202A;³õÊ¼»¯ÔËĞĞÄ¿Â¼ÒÔ¼°Î´À´´æ´¢µÄ¹¤³ÌÎÄ¼şÄ¿Â¼</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00157">init.cc:157</a></div></div>
-<div class="ttc" id="aa01045_html_a124285f898af8492034ac471c39c8757"><div class="ttname"><a href="../../d7/d46/a01045.html#a124285f898af8492034ac471c39c8757">&#x202A;RunPara::StProject::strProjectDir</a></div><div class="ttdeci">&#x202A;std::string strProjectDir</div><div class="ttdoc">&#x202A;å·¥ç¨‹æ–‡ä»¶å¤¹è·¯å¾„çˆ¶è·¯å¾„ å·¥ç¨‹æ–°å»ºåœ¨æ­¤ç›®å½•ä¸‹ &quot;/media/testpro/&quot;</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00062">runpara.h:62</a></div></div>
-<div class="ttc" id="aa01037_html_afb07b00f2611777025031d20adb34ce5"><div class="ttname"><a href="../../d2/d41/a01037.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a></div><div class="ttdeci">&#x202A;static bool AllInit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00011">init.cc:11</a></div></div>
-<div class="ttc" id="aa01045_html_a4e6644435b7546b92c9d1f74b9d828da"><div class="ttname"><a href="../../d7/d46/a01045.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;RunPara::Project</a></div><div class="ttdeci">&#x202A;struct RunPara::StProject Project</div></div>
-<div class="ttc" id="aa01045_html_a733a40ab4e0dc170b6ac9e25e7a70797"><div class="ttname"><a href="../../d7/d46/a01045.html#a733a40ab4e0dc170b6ac9e25e7a70797">&#x202A;RunPara::StHole::strTime</a></div><div class="ttdeci">&#x202A;std::string strTime</div><div class="ttdoc">&#x202A;æµ‹å­”æ—¶é—´</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00096">runpara.h:96</a></div></div>
-<div class="ttc" id="aa01045_html_aebb207ab03b76e5453e28c7bc4606afa"><div class="ttname"><a href="../../d7/d46/a01045.html#aebb207ab03b76e5453e28c7bc4606afa">&#x202A;RunPara::StDevice::Disk</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice::StDisk Disk</div></div>
-<div class="ttc" id="aa01009_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;ç³»ç»Ÿè¿è¡Œå‚æ•°</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00034">Config.h:34</a></div></div>
-<div class="ttc" id="aa00035_html_a9801f793edfff4024a3ddca0f674e258"><div class="ttname"><a href="../../d4/d8c/a00035.html#a9801f793edfff4024a3ddca0f674e258">&#x202A;GetDiskUsed</a></div><div class="ttdeci">&#x202A;double GetDiskUsed(const std::string disk=&quot;D&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l02143">common.cc:2143</a></div></div>
-<div class="ttc" id="aa01045_html_dc/d99/a01053"><div class="ttname"><a href="../../d7/d46/a01045.html#dc/d99/a01053">&#x202A;RunPara::StProject</a></div><div class="ttdoc">&#x202A;è®°å½• è·¯å¾„ä»¥åŠå…¶ä»–è·¯å¾„ä¿¡æ¯</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00060">runpara.h:60</a></div></div>
-<div class="ttc" id="aa01037_html_a5714027a2cc07f9c5c0ae84a177631be"><div class="ttname"><a href="../../d2/d41/a01037.html#a5714027a2cc07f9c5c0ae84a177631be">&#x202A;Init::GlobalVarUpdate</a></div><div class="ttdeci">&#x202A;static bool GlobalVarUpdate(Config *&amp;config)</div><div class="ttdoc">&#x202A;¸ù¾İÔËĞĞ²ÎÊı ¸üĞÂ²ÎÊı</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00132">init.cc:132</a></div></div>
-<div class="ttc" id="aa00245_html_a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d"><div class="ttname"><a href="../../d6/d22/a00245.html#a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d">&#x202A;Error_Project_Dir_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00046">Utils_Exception.h:46</a></div></div>
-<div class="ttc" id="aa00035_html_a417ad9bc43db4f2f4eda91598d39e883"><div class="ttname"><a href="../../d4/d8c/a00035.html#a417ad9bc43db4f2f4eda91598d39e883">&#x202A;QTDirExist</a></div><div class="ttdeci">&#x202A;bool QTDirExist(const std::string &amp;path, bool flg_=true)</div><div class="ttdoc">&#x202A;åˆ¤æ–­æ–‡ä»¶å¤¹æ˜¯å¦å­˜åœ¨å¦‚æœå­˜åœ¨ æ ¹æ®æƒ…å†µåˆ¤æ–­æ˜¯å¦åˆ›å»º</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l02178">common.cc:2178</a></div></div>
-<div class="ttc" id="aa01045_html_aad8567884f1564ee1657671892c7ad06"><div class="ttname"><a href="../../d7/d46/a01045.html#aad8567884f1564ee1657671892c7ad06">&#x202A;RunPara::LoadRunParaFromYML</a></div><div class="ttdeci">&#x202A;bool LoadRunParaFromYML(const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;ä» yml æ–‡ä»¶ è¯»å–å‚æ•°, ä½¿ç”¨</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00022">Config.cc:22</a></div></div>
-<div class="ttc" id="aa01037_html_ac6c5c0e3086cf28a96387e32ffc5bebf"><div class="ttname"><a href="../../d2/d41/a01037.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a></div><div class="ttdeci">&#x202A;static bool GlobalVarInit(Config *&amp;config, const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;³õÊ¼»¯ È«¾Ö²ÎÊı</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00083">init.cc:83</a></div></div>
-<div class="ttc" id="aa01045_html_a2e37be011ca35dcb5648661c659e0f51"><div class="ttname"><a href="../../d7/d46/a01045.html#a2e37be011ca35dcb5648661c659e0f51">&#x202A;RunPara::StProject::strProjectDirPrefix</a></div><div class="ttdeci">&#x202A;std::string strProjectDirPrefix</div><div class="ttdoc">&#x202A;å·¥ç¨‹æ–‡ä»¶å¤¹å‰ç¼€ &quot;Project&quot;</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00066">runpara.h:66</a></div></div>
-<div class="ttc" id="aa01037_html_a3dd823273154e1bb5cd2e85efd872662"><div class="ttname"><a href="../../d2/d41/a01037.html#a3dd823273154e1bb5cd2e85efd872662">&#x202A;Init::CurrentDirInit</a></div><div class="ttdeci">&#x202A;static bool CurrentDirInit()</div><div class="ttdoc">&#x202A;³õÊ¼»¯ÔËĞĞÄ¿Â¼, ÔÚ¹¤³ÌÄ¿Â¼ÏÂÃæ, ±ÜÃâ³ÌĞò³öÏÖÕÒ²»µ½ÅäÖÃÎÄ¼ş</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00024">init.cc:24</a></div></div>
-<div class="ttc" id="aa01045_html_de/d99/a01101"><div class="ttname"><a href="../../d7/d46/a01045.html#de/d99/a01101">&#x202A;RunPara::StDevice::StDisk</a></div><div class="ttdoc">&#x202A;ç¡¬ç›˜å¯¹è±¡ å­˜å‚¨ ç¡¬ç›˜ä½¿ç”¨é‡å’Œæ€»é‡ å…¶ä»–ç¡¬ç›˜å‚æ•°</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00223">runpara.h:223</a></div></div>
-<div class="ttc" id="aa01045_html_a0f3e36b4eb0bbf041ae4298a1a7ecca5"><div class="ttname"><a href="../../d7/d46/a01045.html#a0f3e36b4eb0bbf041ae4298a1a7ecca5">&#x202A;RunPara::StProject::strCurrentPath</a></div><div class="ttdeci">&#x202A;std::string strCurrentPath</div><div class="ttdoc">&#x202A;é¡¹ç›®å½“å‰è¿è¡Œç›®å½• // è¿è¡Œç”Ÿæˆ</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00073">runpara.h:73</a></div></div>
-<div class="ttc" id="aa00161_html_a2a9f04bfacf960af31719d8377b44ea6"><div class="ttname"><a href="../../d6/d7d/a00161.html#a2a9f04bfacf960af31719d8377b44ea6">&#x202A;K_MAIN_CONFIG_FILE</a></div><div class="ttdeci">&#x202A;std::string K_MAIN_CONFIG_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00009">init.cc:9</a></div></div>
+<div class="ttc" id="aa01079_html_a1ca5d1037652d0b772952ae0716d7a63"><div class="ttname"><a href="../../d2/d4d/a01079.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG CFG</div></div>
+<div class="ttc" id="aa00161_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00014">main.cpp:14</a></div></div>
+<div class="ttc" id="aa01195_html"><div class="ttname"><a href="../../d8/df3/a01195.html">&#x202A;WorkWindow</a></div><div class="ttdoc">&#x202A;å£°æ˜æœ¬ç±»,ç”¨äºè‡ªèº«UI å®ç° @seealso QT ui å®ç°å’Œ pImpl åŸåˆ™ https://blog.csdn.net/hebbely/article/details/79267348</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/a00080_source.html#l00054">WorkWindow.h:54</a></div></div>
+<div class="ttc" id="aa00161_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97">&#x202A;main</a></div><div class="ttdeci">&#x202A;int main(int argc, char *argv[])</div><div class="ttdoc">&#x202A;Main entry-point for this application</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00033">main.cpp:33</a></div></div>
+<div class="ttc" id="aa01079_html_a54b647846cffc7e384175df7d8d62b64"><div class="ttname"><a href="../../d2/d4d/a01079.html#a54b647846cffc7e384175df7d8d62b64">&#x202A;RunPara::StCFG::StDebug::nDocTestEnable</a></div><div class="ttdeci">&#x202A;int nDocTestEnable</div><div class="ttdoc">&#x202A;doctest æ˜¯å¦ä½¿ç”¨</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00278">runpara.h:278</a></div></div>
+<div class="ttc" id="aa01195_html_a98cc99469cf7af144c013870cd2a31e1"><div class="ttname"><a href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;WorkWindow::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdoc">&#x202A;ä¸»çº¿ç¨‹ åˆå§‹åŒ–</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00052">WorkWindow.cc:52</a></div></div>
+<div class="ttc" id="aa01079_html_a55676b481748b3169abcad0b15dab03f"><div class="ttname"><a href="../../d2/d4d/a01079.html#a55676b481748b3169abcad0b15dab03f">&#x202A;RunPara::StCFG::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG::StDebug Debug</div></div>
+<div class="ttc" id="aa01043_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;ç³»ç»Ÿè¿è¡Œå‚æ•°</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01191_html"><div class="ttname"><a href="../../d1/d0d/a01191.html">&#x202A;SetWindow</a></div><div class="ttdoc">&#x202A;Window for setting the . è®¾ç½®çª—å£</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d09/a00077_source.html#l00037">setwindow.h:37</a></div></div>
+<div class="ttc" id="aa01043_html"><div class="ttname"><a href="../../d8/d27/a01043.html">&#x202A;Config</a></div><div class="ttdoc">&#x202A;å…¨éƒ¨å‚æ•°ä¿¡æ¯ åŒ…æ‹¬è¿è¡Œå‚æ•°å’Œç³»ç»Ÿé…ç½®å‚æ•° æœ‰è¿è¡Œå‚æ•°æ˜¯ç³»ç»Ÿçš„å…¨éƒ¨å‚æ•°, å¦‚æœéœ€è¦å­˜å‚¨, å°†å†…å®¹å¤åˆ¶åˆ°å­˜å‚¨å‚æ•°ä¸­,</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00029">Config.h:29</a></div></div>
+<div class="ttc" id="aa01071_html_afb07b00f2611777025031d20adb34ce5"><div class="ttname"><a href="../../df/d18/a01071.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a></div><div class="ttdeci">&#x202A;static bool AllInit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00010">init.cc:10</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">&#x202A;init.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">&#x202A;main.cpp</a></li>
     <li class="footer">åˆ¶ä½œè€…
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

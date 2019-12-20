@@ -1,5 +1,5 @@
-<map id="RunPara::StDevice::StCompass" name="RunPara::StDevice::StCompass">
-<area shape="rect" id="node1" title="电子罗盘参数 调整罗盘数据" alt="" coords="5,200,144,241"/>
-<area shape="rect" id="node2" title="STL class" alt="" coords="35,96,115,123"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="11,5,138,47"/>
+<map id="RunPara::StFileHeader" name="RunPara::StFileHeader">
+<area shape="rect" id="node1" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="5,244,160,271"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="43,96,123,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="19,5,146,47"/>
 </map>
