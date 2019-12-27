@@ -1,0 +1,8 @@
+<map id="Init::GlobalVarUpdate" name="Init::GlobalVarUpdate">
+<area shape="rect" id="node1" title="�������в��� ���²���" alt="" coords="5,81,151,108"/>
+<area shape="rect" id="node2" href="$db/dec/a01337.html#a7633fa3b94fd8dc3002b58fa4b649d06" title=" " alt="" coords="206,5,349,32"/>
+<area shape="rect" id="node3" href="$db/dec/a01337.html#a553a41d404d98f4329915467ffa34b44" title=" " alt="" coords="199,56,356,83"/>
+<area shape="rect" id="node4" href="$de/da0/a01341.html#aa797e5e8119ca57f492ea5641817d49a" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="204,107,351,133"/>
+<area shape="rect" id="node6" href="$de/da0/a01341.html#a8664e17ac3f5987d6f5d1169bc865071" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="203,157,351,184"/>
+<area shape="rect" id="node5" href="$de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93" title=" " alt="" coords="404,132,576,159"/>
+</map>

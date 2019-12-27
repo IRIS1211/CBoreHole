@@ -1,0 +1,7 @@
+<map id="CamProc::Init" name="CamProc::Init">
+<area shape="rect" id="node1" title="初始化线程 初始化完成后 开始运行" alt="" coords="5,56,107,83"/>
+<area shape="rect" id="node2" href="$d3/da4/a01343.html#aa797e5e8119ca57f492ea5641817d49a" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="157,5,303,32"/>
+<area shape="rect" id="node4" href="$dc/d70/a01187.html#a2eb103016c9d0b4a4e13368ff3e9236c" title="默认初始化方式 初始化串口和定时器" alt="" coords="155,56,305,83"/>
+<area shape="rect" id="node5" href="$de/de6/a01063.html#ab0e31dfdd11ff5a789178ff0e70dc15c" title="Writes the para" alt="" coords="165,107,295,133"/>
+<area shape="rect" id="node3" href="$d3/da4/a01343.html#ab0bd05f35427650f2e295c18ba6938b3" title="num 转换成 字符串 前 补零" alt="" coords="353,5,525,32"/>
+</map>

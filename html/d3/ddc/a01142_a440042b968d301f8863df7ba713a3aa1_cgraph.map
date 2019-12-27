@@ -1,0 +1,8 @@
+<map id="ImageProc::GetImageOffset" name="ImageProc::GetImageOffset">
+<area shape="rect" id="node1" title="Match image" alt="" coords="5,81,188,108"/>
+<area shape="rect" id="node2" href="$d3/ddc/a01142.html#ac0da2340c4281d03a051b8bab1eddabe" title="计算两个 小区块 图像的偏移值" alt="" coords="236,5,423,32"/>
+<area shape="rect" id="node3" href="$d6/d2f/a01394.html#a29dc0b093427ee4ca1a9e195d4c78433" title="获取图像中心区域 的值" alt="" coords="246,56,413,83"/>
+<area shape="rect" id="node4" href="$d6/d2f/a01394.html#abd858a9d1a7a0b329bc960a3fe0019b1" title="根据当前区域相对于上次区域的偏移值定位出来 上次矩形框的外扩范围" alt="" coords="248,107,411,133"/>
+<area shape="rect" id="node6" href="$d6/d2f/a01394.html#a3104bb7c29b83b4dfb4a38bd9e899ce5" title="返回图像的矩形区域" alt="" coords="265,157,394,184"/>
+<area shape="rect" id="node5" href="$d6/d2f/a01394.html#ac488a0830a690dbdbb48f0b999b771d3" title="矩形外扩一定范围" alt="" coords="471,107,617,133"/>
+</map>

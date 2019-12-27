@@ -1,0 +1,8 @@
+<map id="CamCapture::run" name="CamCapture::run">
+<area shape="rect" id="node1" title="线程循环进程, 重写 run 函数" alt="" coords="5,107,125,133"/>
+<area shape="rect" id="node2" href="$d7/d59/a01013.html#aef66b544a9f5bbf861f21767a75227ea" title=" " alt="" coords="177,5,276,32"/>
+<area shape="rect" id="node3" href="$d4/d8c/a00035.html#a15bfdd88e937e375aca09f8c2994579d" title="根据一副图像的尺寸和要生成的图像尺寸 生成居中 的一个矩形框" alt="" coords="181,56,272,83"/>
+<area shape="rect" id="node4" href="$d4/d8c/a00035.html#a2b33969147c46958972d8f7d5d8e66b3" title="返回图像的 矩形区域" alt="" coords="183,107,271,133"/>
+<area shape="rect" id="node5" href="$d7/d59/a01013.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="173,157,280,184"/>
+<area shape="rect" id="node6" href="$d7/d59/a01013.html#a979820688e76c1997aa0d36d120df98f" title="Gets the Size 返回当前队列长度" alt="" coords="175,208,278,235"/>
+</map>

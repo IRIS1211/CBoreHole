@@ -1,0 +1,8 @@
+<map id="RunPara::StDevice" name="RunPara::StDevice">
+<area shape="rect" id="node1" title="设置状态, 包含相机 和串口 ,设备硬盘参数" alt="" coords="172,289,303,316"/>
+<area shape="rect" id="node2" href="$d0/d82/a00857.html#df/d41/a00881" title="硬盘对象 存储 硬盘使用量和总量" alt="" coords="5,185,144,227"/>
+<area shape="rect" id="node3" href="$d0/d82/a00857.html#d9/d22/a00873" title="相机结构体" alt="" coords="168,185,307,227"/>
+<area shape="rect" id="node4" href="$d0/d82/a00857.html#d1/de7/a00877" title="窗口状态信息" alt="" coords="331,185,469,227"/>
+<area shape="rect" id="node5" title="STL class" alt="" coords="360,96,440,123"/>
+<area shape="rect" id="node6" title="STL class" alt="" coords="337,5,463,47"/>
+</map>

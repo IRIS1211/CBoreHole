@@ -1,0 +1,6 @@
+<map id="CLineEdit::Associate" name="CLineEdit::Associate">
+<area shape="rect" id="node1" title="将内存与组件关联" alt="" coords="407,42,551,69"/>
+<area shape="rect" id="node2" href="$d6/d27/a01163.html#a0393c0a0d64fafce49cfb6b3eccafcd1" title="Initializes the user interface" alt="" coords="233,42,359,69"/>
+<area shape="rect" id="node3" href="$d6/d27/a01163.html#ae102c72b4049bec2a4c5c41fd8185a28" title="Handles button cancel clicked signals" alt="" coords="5,5,185,47"/>
+<area shape="rect" id="node4" href="$d6/d27/a01163.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="14,71,177,98"/>
+</map>

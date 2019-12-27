@@ -1,0 +1,11 @@
+<map id="Serial::signal_close_serial" name="Serial::signal_close_serial">
+<area shape="rect" id="node1" title="关闭串口信号" alt="" coords="927,103,1061,145"/>
+<area shape="rect" id="node2" href="$d9/d25/a01157.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="733,85,847,112"/>
+<area shape="rect" id="node8" href="$de/db5/a01181.html#a3be336ed4e3805324cc4b7a5f3589b36" title=" " alt="" coords="701,136,879,163"/>
+<area shape="rect" id="node3" href="$d3/d10/a01189.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" id="node7" href="$d5/df1/a00206.html#a3bcd6efee1d07328d9c4022ac4061bf4" title=" " alt="" coords="490,85,587,112"/>
+<area shape="rect" id="node4" href="$d3/d10/a01189.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" id="node5" href="$d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" id="node6" href="$d3/dd3/a01185.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+<area shape="rect" id="node9" href="$de/db5/a01181.html#aecefe574a943886a31f529a16c5b4869" title="设置 当前" alt="" coords="443,136,634,163"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="CQtOpenCVViewerGl::RecalculatePosition" name="CQtOpenCVViewerGl::RecalculatePosition">
+<area shape="rect" id="node1" title="Calculates the position" alt="" coords="1141,39,1296,80"/>
+<area shape="rect" id="node2" href="$d0/daa/a01029.html#af600300a7d884e2c7321df87d95a0f0e" title="Resize gl" alt="" coords="939,5,1093,47"/>
+<area shape="rect" id="node3" href="$d0/daa/a01029.html#a054256077ab572adcbad2c9c7e8db3e2" title="Shows the image" alt="" coords="939,71,1093,112"/>
+<area shape="rect" id="node4" href="$d7/ded/a01009.html#a41a95073fcd146be53bf16c5649b00b0" title="跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示" alt="" coords="701,71,891,112"/>
+<area shape="rect" id="node5" href="$d7/ded/a01009.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,78,653,105"/>
+<area shape="rect" id="node6" href="$d7/ded/a01009.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,78,376,105"/>
+<area shape="rect" id="node7" href="$d7/d9a/a00152.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="79,49,130,75"/>
+<area shape="rect" id="node8" href="$da/d45/a00961.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,100,204,141"/>
+</map>

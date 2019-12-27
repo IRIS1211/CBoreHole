@@ -1,0 +1,4 @@
+<map id="GaugeCompass::GetValue" name="GaugeCompass::GetValue">
+<area shape="rect" id="node1" title="Gets the value" alt="" coords="256,5,433,32"/>
+<area shape="rect" id="node2" href="$da/d00/a01270.html#aa9997b06ec6c5369f4ea442a014f40cf" title="// 获取罗盘当前值" alt="" coords="5,5,208,32"/>
+</map>

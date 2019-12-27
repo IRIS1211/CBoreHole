@@ -1,5 +1,4 @@
-<map id="RunPara::StFileHeader" name="RunPara::StFileHeader">
-<area shape="rect" id="node1" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="5,244,160,271"/>
-<area shape="rect" id="node2" title="STL class" alt="" coords="43,96,123,123"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="19,5,146,47"/>
+<map id="UnitTest" name="UnitTest">
+<area shape="rect" id="node1" title="A unit test." alt="" coords="5,80,76,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,76,32"/>
 </map>

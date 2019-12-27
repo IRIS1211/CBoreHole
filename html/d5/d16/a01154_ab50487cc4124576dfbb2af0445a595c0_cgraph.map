@@ -1,0 +1,6 @@
+<map id="RunPara::ReadRunParaFromFile" name="RunPara::ReadRunParaFromFile">
+<area shape="rect" id="node1" title="从二进制流文件中读取文件" alt="" coords="5,23,216,50"/>
+<area shape="rect" id="node2" href="$d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c" title="Character 2 string" alt="" coords="504,23,669,50"/>
+<area shape="rect" id="node3" href="$dc/d25/a01406.html#a5523926cd82a36f59589a82da8adf31b" title="读取基本数据类型" alt="" coords="286,23,434,50"/>
+<area shape="rect" id="node4" href="$dc/d25/a01406.html#a866a76a1d5720a62a03dc7ef7502cd25" title="从文件流中读取一个 字符串" alt="" coords="264,74,456,101"/>
+</map>

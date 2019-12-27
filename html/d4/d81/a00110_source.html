@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/model/cslider.cpp 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/model/cqtopencvviewergl/cqtopencvviewergl.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.0</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,56 +89,92 @@ $(document).ready(function(){initNavTree('d4/d81/a00110_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">cslider.cpp</div>  </div>
+<div class="title">cqtopencvviewergl.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d4/d81/a00110.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d00/a00113.html">&#x202A;cslider.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d5/d39/a01219.html#ab966c6a53f642a1ead50b2dbee480adf">   22</a></span>&#160;<a class="code" href="../../d5/d39/a01219.html#ab966c6a53f642a1ead50b2dbee480adf">&#x202A;CSlider::CSlider</a>(QWidget  *parent ):</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QSlider(parent),</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    m_label_(nullptr),</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    m_data_(nullptr)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// 根据具体情况 设置相应的内容</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QObject::connect(<span class="keyword">this</span>, &amp;QSlider::valueChanged, <span class="keyword">this</span>,&amp;<a class="code" href="../../d5/d39/a01219.html#a5c72f14d929ce90921f0d99491f2b33c">&#x202A;CSlider::SetData</a>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CQTOPENCVVIEWERGL_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CQTOPENCVVIEWERGL_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QOpenGLWidget&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QOpenGLFunctions_2_0&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;opencv2/core.hpp&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/d88/a01294.html">&#x202A;CQtOpenCVViewerGl</a> : <span class="keyword">public</span> QOpenGLWidget, <span class="keyword">protected</span> QOpenGLFunctions_2_0</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d5/d39/a01219.html#a2a5d6a071ffbe6f0f5727afc211b5fb9">   46</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d5/d39/a01219.html#a2a5d6a071ffbe6f0f5727afc211b5fb9">&#x202A;CSlider::Associate</a>(QLabel *label,<span class="keywordtype">int</span> *data,<span class="keywordtype">bool</span> over)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// 有值的情况 返回出错 否则直接进行</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>(!over &amp;&amp; (<a class="code" href="../../d5/d39/a01219.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;m_label_</a> || <a class="code" href="../../d5/d39/a01219.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a>))</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 如果需要覆盖 直接将值覆盖掉原有值</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../d5/d39/a01219.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;m_label_</a> = label;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d5/d39/a01219.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a>  = data;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d5/d39/a01219.html#a5c72f14d929ce90921f0d99491f2b33c">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d39/a01219.html#a5c72f14d929ce90921f0d99491f2b33c">&#x202A;CSlider::SetData</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/d39/a01219.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a>)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        *<a class="code" href="../../d5/d39/a01219.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a> = this-&gt;value();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        qDebug() &lt;&lt; QString(<span class="stringliteral">&quot;slider:%1&quot;</span>).arg(*<a class="code" href="../../d5/d39/a01219.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/d39/a01219.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;m_label_</a>)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="../../d5/d39/a01219.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;m_label_</a>-&gt;setNum(this-&gt;value());</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d7/d88/a01294.html#afc97987d0aa42507e939e5b5b54d20bc">&#x202A;CQtOpenCVViewerGl</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;signals:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="../../d7/d88/a01294.html#aa8f28e647ba6460b1bcf48fc32fdd053">&#x202A;ImageSizeChanged</a>( <span class="keywordtype">int</span> outW, <span class="keywordtype">int</span> outH ); </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span>    <a class="code" href="../../d7/d88/a01294.html#a054256077ab572adcbad2c9c7e8db3e2">&#x202A;ShowImage</a>(<span class="keyword">const</span> cv::Mat&amp; image); </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="../../d7/d88/a01294.html#ac7beac60dfc007f5f0b8863fb12bb935">&#x202A;initializeGL</a>(); </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="../../d7/d88/a01294.html#afdba75376fb433f3c86aa9a205b11687">&#x202A;paintGL</a>(); </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span>    <a class="code" href="../../d7/d88/a01294.html#af600300a7d884e2c7321df87d95a0f0e">&#x202A;resizeGL</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);        </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span>        <a class="code" href="../../d7/d88/a01294.html#ac937ca5ac6f721398fab75e26f227532">&#x202A;updateScene</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">void</span>        <a class="code" href="../../d7/d88/a01294.html#a2183c4cbaee29fea3192cbfd743b5be2">&#x202A;renderImage</a>();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a43f35ef1c95944efeea68fa9bb9d81df">  139</a></span>&#160;    QImage      <a class="code" href="../../d7/d88/a01294.html#a43f35ef1c95944efeea68fa9bb9d81df">&#x202A;mRenderQtImg</a>;   </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a6881c7dd7ec26e69e669d2fd38065095">  140</a></span>&#160;    QImage      <a class="code" href="../../d7/d88/a01294.html#a6881c7dd7ec26e69e669d2fd38065095">&#x202A;mResizedImg</a>;    </div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a18bb820bf58f19c9b2552d1c20e948bb">  141</a></span>&#160;    cv::Mat     <a class="code" href="../../d7/d88/a01294.html#a18bb820bf58f19c9b2552d1c20e948bb">&#x202A;mOrigImage</a>; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#af8245b4c48ac60eb1261f16d41082b34">  143</a></span>&#160;    QColor      <a class="code" href="../../d7/d88/a01294.html#af8245b4c48ac60eb1261f16d41082b34">&#x202A;mBgColor</a>;   </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#aecba2ee34a9eca77e4a617467bd65910">  145</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="../../d7/d88/a01294.html#aecba2ee34a9eca77e4a617467bd65910">&#x202A;mImgRatio</a>;  </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a8d812b451dfa0124f1b9a8f94318e78c">  147</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d7/d88/a01294.html#a8d812b451dfa0124f1b9a8f94318e78c">&#x202A;mRenderWidth</a>;   </div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#afa09df78688c599622b96b343dbcc50d">  148</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d7/d88/a01294.html#afa09df78688c599622b96b343dbcc50d">&#x202A;mRenderHeight</a>;  </div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a8a10bf40dcf8d6512408999e312edc55">  149</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d7/d88/a01294.html#a8a10bf40dcf8d6512408999e312edc55">&#x202A;mRenderPosX</a>;    </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#acd30d5acb4c8ab91ca8837a4b34aa1f3">  150</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d7/d88/a01294.html#acd30d5acb4c8ab91ca8837a4b34aa1f3">&#x202A;mRenderPosY</a>;    </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d88/a01294.html#a68cd096eb4b3acfc5a6a0bee0ba447d4">&#x202A;RecalculatePosition</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html#a0e0d7fd14bf978e790ed24c7d7718bbd">  163</a></span>&#160;    std::mutex <a class="code" href="../../d7/d88/a01294.html#a0e0d7fd14bf978e790ed24c7d7718bbd">&#x202A;drawMutex</a>;   </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;};</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif // CQTOPENCVVIEWERGL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01219_html_a5c72f14d929ce90921f0d99491f2b33c"><div class="ttname"><a href="../../d5/d39/a01219.html#a5c72f14d929ce90921f0d99491f2b33c">&#x202A;CSlider::SetData</a></div><div class="ttdeci">&#x202A;void SetData(void)</div><div class="ttdoc">&#x202A;Sets the data 根据滑动条的值 实时更新 label 的值</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00066">cslider.cpp:66</a></div></div>
-<div class="ttc" id="aa00113_html"><div class="ttname"><a href="../../d3/d00/a00113.html">&#x202A;cslider.h</a></div><div class="ttdoc">&#x202A;Declares the cslider class @changelog 2019/11/10 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01219_html_aad318afb125d485c019f9d54b3e92fd5"><div class="ttname"><a href="../../d5/d39/a01219.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;CSlider::m_data_</a></div><div class="ttdeci">&#x202A;int * m_data_</div><div class="ttdoc">&#x202A;相关连的值, 更改之后相应的值 会改变</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00082">cslider.h:82</a></div></div>
-<div class="ttc" id="aa01219_html_a2a5d6a071ffbe6f0f5727afc211b5fb9"><div class="ttname"><a href="../../d5/d39/a01219.html#a2a5d6a071ffbe6f0f5727afc211b5fb9">&#x202A;CSlider::Associate</a></div><div class="ttdeci">&#x202A;bool Associate(QLabel *label, int *data, bool over=true)</div><div class="ttdoc">&#x202A;Associates</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00046">cslider.cpp:46</a></div></div>
-<div class="ttc" id="aa01219_html_a9d13acd7b5c46c5bd77118a58ab1e393"><div class="ttname"><a href="../../d5/d39/a01219.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;CSlider::m_label_</a></div><div class="ttdeci">&#x202A;QLabel * m_label_</div><div class="ttdoc">&#x202A;记录显示数据的label 指针</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00081">cslider.h:81</a></div></div>
-<div class="ttc" id="aa01219_html_ab966c6a53f642a1ead50b2dbee480adf"><div class="ttname"><a href="../../d5/d39/a01219.html#ab966c6a53f642a1ead50b2dbee480adf">&#x202A;CSlider::CSlider</a></div><div class="ttdeci">&#x202A;CSlider(QWidget *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the CSlider class</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00022">cslider.cpp:22</a></div></div>
+<div class="ttc" id="aa01294_html_a054256077ab572adcbad2c9c7e8db3e2"><div class="ttname"><a href="../../d7/d88/a01294.html#a054256077ab572adcbad2c9c7e8db3e2">&#x202A;CQtOpenCVViewerGl::ShowImage</a></div><div class="ttdeci">&#x202A;bool ShowImage(const cv::Mat &amp;image)</div><div class="ttdoc">&#x202A;Shows the image</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00210">cqtopencvviewergl.cpp:210</a></div></div>
+<div class="ttc" id="aa01294_html_a68cd096eb4b3acfc5a6a0bee0ba447d4"><div class="ttname"><a href="../../d7/d88/a01294.html#a68cd096eb4b3acfc5a6a0bee0ba447d4">&#x202A;CQtOpenCVViewerGl::RecalculatePosition</a></div><div class="ttdeci">&#x202A;void RecalculatePosition()</div><div class="ttdoc">&#x202A;Calculates the position</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00178">cqtopencvviewergl.cpp:178</a></div></div>
+<div class="ttc" id="aa01294_html_a8d812b451dfa0124f1b9a8f94318e78c"><div class="ttname"><a href="../../d7/d88/a01294.html#a8d812b451dfa0124f1b9a8f94318e78c">&#x202A;CQtOpenCVViewerGl::mRenderWidth</a></div><div class="ttdeci">&#x202A;int mRenderWidth</div><div class="ttdoc">&#x202A;Width of the render</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00147">cqtopencvviewergl.h:147</a></div></div>
+<div class="ttc" id="aa01294_html"><div class="ttname"><a href="../../d7/d88/a01294.html">&#x202A;CQtOpenCVViewerGl</a></div><div class="ttdoc">&#x202A;A qt open cv viewer gl.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00026">cqtopencvviewergl.h:26</a></div></div>
+<div class="ttc" id="aa01294_html_acd30d5acb4c8ab91ca8837a4b34aa1f3"><div class="ttname"><a href="../../d7/d88/a01294.html#acd30d5acb4c8ab91ca8837a4b34aa1f3">&#x202A;CQtOpenCVViewerGl::mRenderPosY</a></div><div class="ttdeci">&#x202A;int mRenderPosY</div><div class="ttdoc">&#x202A;The render position y coordinate</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00150">cqtopencvviewergl.h:150</a></div></div>
+<div class="ttc" id="aa01294_html_a43f35ef1c95944efeea68fa9bb9d81df"><div class="ttname"><a href="../../d7/d88/a01294.html#a43f35ef1c95944efeea68fa9bb9d81df">&#x202A;CQtOpenCVViewerGl::mRenderQtImg</a></div><div class="ttdeci">&#x202A;QImage mRenderQtImg</div><div class="ttdoc">&#x202A;/ Qt image to be rendered</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00139">cqtopencvviewergl.h:139</a></div></div>
+<div class="ttc" id="aa01294_html_afc97987d0aa42507e939e5b5b54d20bc"><div class="ttname"><a href="../../d7/d88/a01294.html#afc97987d0aa42507e939e5b5b54d20bc">&#x202A;CQtOpenCVViewerGl::CQtOpenCVViewerGl</a></div><div class="ttdeci">&#x202A;CQtOpenCVViewerGl(QWidget *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the CQtOpenCVViewerGl class</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00022">cqtopencvviewergl.cpp:22</a></div></div>
+<div class="ttc" id="aa01294_html_a18bb820bf58f19c9b2552d1c20e948bb"><div class="ttname"><a href="../../d7/d88/a01294.html#a18bb820bf58f19c9b2552d1c20e948bb">&#x202A;CQtOpenCVViewerGl::mOrigImage</a></div><div class="ttdeci">&#x202A;cv::Mat mOrigImage</div><div class="ttdoc">&#x202A;/ original OpenCV image to be shown</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00141">cqtopencvviewergl.h:141</a></div></div>
+<div class="ttc" id="aa01294_html_afa09df78688c599622b96b343dbcc50d"><div class="ttname"><a href="../../d7/d88/a01294.html#afa09df78688c599622b96b343dbcc50d">&#x202A;CQtOpenCVViewerGl::mRenderHeight</a></div><div class="ttdeci">&#x202A;int mRenderHeight</div><div class="ttdoc">&#x202A;Height of the render</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00148">cqtopencvviewergl.h:148</a></div></div>
+<div class="ttc" id="aa01294_html_ac7beac60dfc007f5f0b8863fb12bb935"><div class="ttname"><a href="../../d7/d88/a01294.html#ac7beac60dfc007f5f0b8863fb12bb935">&#x202A;CQtOpenCVViewerGl::initializeGL</a></div><div class="ttdeci">&#x202A;void initializeGL()</div><div class="ttdoc">&#x202A;Initializes the gl</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00043">cqtopencvviewergl.cpp:43</a></div></div>
+<div class="ttc" id="aa01294_html_ac937ca5ac6f721398fab75e26f227532"><div class="ttname"><a href="../../d7/d88/a01294.html#ac937ca5ac6f721398fab75e26f227532">&#x202A;CQtOpenCVViewerGl::updateScene</a></div><div class="ttdeci">&#x202A;void updateScene()</div><div class="ttdoc">&#x202A;Updates the scene</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00094">cqtopencvviewergl.cpp:94</a></div></div>
+<div class="ttc" id="aa01294_html_a0e0d7fd14bf978e790ed24c7d7718bbd"><div class="ttname"><a href="../../d7/d88/a01294.html#a0e0d7fd14bf978e790ed24c7d7718bbd">&#x202A;CQtOpenCVViewerGl::drawMutex</a></div><div class="ttdeci">&#x202A;std::mutex drawMutex</div><div class="ttdoc">&#x202A;The draw mutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00163">cqtopencvviewergl.h:163</a></div></div>
+<div class="ttc" id="aa01294_html_af600300a7d884e2c7321df87d95a0f0e"><div class="ttname"><a href="../../d7/d88/a01294.html#af600300a7d884e2c7321df87d95a0f0e">&#x202A;CQtOpenCVViewerGl::resizeGL</a></div><div class="ttdeci">&#x202A;void resizeGL(int width, int height)</div><div class="ttdoc">&#x202A;Resize gl</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00066">cqtopencvviewergl.cpp:66</a></div></div>
+<div class="ttc" id="aa01294_html_aecba2ee34a9eca77e4a617467bd65910"><div class="ttname"><a href="../../d7/d88/a01294.html#aecba2ee34a9eca77e4a617467bd65910">&#x202A;CQtOpenCVViewerGl::mImgRatio</a></div><div class="ttdeci">&#x202A;float mImgRatio</div><div class="ttdoc">&#x202A;/ height/width ratio</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00145">cqtopencvviewergl.h:145</a></div></div>
+<div class="ttc" id="aa01294_html_af8245b4c48ac60eb1261f16d41082b34"><div class="ttname"><a href="../../d7/d88/a01294.html#af8245b4c48ac60eb1261f16d41082b34">&#x202A;CQtOpenCVViewerGl::mBgColor</a></div><div class="ttdeci">&#x202A;QColor mBgColor</div><div class="ttdoc">&#x202A;/ Background color</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00143">cqtopencvviewergl.h:143</a></div></div>
+<div class="ttc" id="aa01294_html_a8a10bf40dcf8d6512408999e312edc55"><div class="ttname"><a href="../../d7/d88/a01294.html#a8a10bf40dcf8d6512408999e312edc55">&#x202A;CQtOpenCVViewerGl::mRenderPosX</a></div><div class="ttdeci">&#x202A;int mRenderPosX</div><div class="ttdoc">&#x202A;The render position x coordinate</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00149">cqtopencvviewergl.h:149</a></div></div>
+<div class="ttc" id="aa01294_html_a6881c7dd7ec26e69e669d2fd38065095"><div class="ttname"><a href="../../d7/d88/a01294.html#a6881c7dd7ec26e69e669d2fd38065095">&#x202A;CQtOpenCVViewerGl::mResizedImg</a></div><div class="ttdeci">&#x202A;QImage mResizedImg</div><div class="ttdoc">&#x202A;The resized image</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00140">cqtopencvviewergl.h:140</a></div></div>
+<div class="ttc" id="aa01294_html_aa8f28e647ba6460b1bcf48fc32fdd053"><div class="ttname"><a href="../../d7/d88/a01294.html#aa8f28e647ba6460b1bcf48fc32fdd053">&#x202A;CQtOpenCVViewerGl::ImageSizeChanged</a></div><div class="ttdeci">&#x202A;void ImageSizeChanged(int outW, int outH)</div><div class="ttdoc">&#x202A;Image size changed</div></div>
+<div class="ttc" id="aa01294_html_a2183c4cbaee29fea3192cbfd743b5be2"><div class="ttname"><a href="../../d7/d88/a01294.html#a2183c4cbaee29fea3192cbfd743b5be2">&#x202A;CQtOpenCVViewerGl::renderImage</a></div><div class="ttdeci">&#x202A;void renderImage()</div><div class="ttdoc">&#x202A;Renders the image</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00127">cqtopencvviewergl.cpp:127</a></div></div>
+<div class="ttc" id="aa01294_html_afdba75376fb433f3c86aa9a205b11687"><div class="ttname"><a href="../../d7/d88/a01294.html#afdba75376fb433f3c86aa9a205b11687">&#x202A;CQtOpenCVViewerGl::paintGL</a></div><div class="ttdeci">&#x202A;void paintGL()</div><div class="ttdoc">&#x202A;Paints the gl</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00109">cqtopencvviewergl.cpp:109</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_a97d35b535b8178474d1d1f002503b39.html">&#x202A;model</a></li><li class="navelem"><a class="el" href="../../d4/d81/a00110.html">&#x202A;cslider.cpp</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_a97d35b535b8178474d1d1f002503b39.html">&#x202A;model</a></li><li class="navelem"><a class="el" href="../../dir_f76d91f718e022f88e4bab4c2028a4f7.html">&#x202A;cqtopencvviewergl</a></li><li class="navelem"><a class="el" href="../../d4/d81/a00110.html">&#x202A;cqtopencvviewergl.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

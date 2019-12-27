@@ -1,0 +1,8 @@
+<map id="FrameData::Update" name="FrameData::Update">
+<area shape="rect" id="node1" title="根据串口数据 更新当前类的值" alt="" coords="5,56,140,83"/>
+<area shape="rect" id="node2" href="$d7/d04/a01246.html#a493001549dcfab8bf1a682b1d3e5763b" title="更新两字节值" alt="" coords="193,5,346,32"/>
+<area shape="rect" id="node5" href="$d7/d04/a01246.html#a53026c1637704e9053f734b36e5810bc" title="计算磁力数据 磁力值 &#45; 8,388,608～+ 8,388,607 （单位nT， 3字节有符号整型0x800000 ~0x7FFFFF）" alt="" coords="188,56,351,83"/>
+<area shape="rect" id="node6" href="$d7/d04/a01246.html#a48e314ad1c6067b2cdf67a86bda5e1e6" title="计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据" alt="" coords="196,107,343,133"/>
+<area shape="rect" id="node3" href="$da/de3/a01398.html#a3608435d58a43711699c72db402154fb" title="通用计算函数 计算从 指针开始的指定位数的 计算结果" alt="" coords="399,31,515,57"/>
+<area shape="rect" id="node4" href="$d8/df1/a01414.html#a3d87ca32cf1959251d87988a5b7f1b45" title="Uchar 2 char 的相互转换" alt="" coords="563,31,729,57"/>
+</map>

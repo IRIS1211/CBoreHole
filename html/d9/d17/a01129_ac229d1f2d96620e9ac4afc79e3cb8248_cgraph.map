@@ -1,0 +1,8 @@
+<map id="Serial::ReadData" name="Serial::ReadData">
+<area shape="rect" id="node1" title="Reads the data" alt="" coords="5,107,125,133"/>
+<area shape="rect" id="node2" href="$d4/d8c/a00035.html#a82fcc922ef1115cdffa3d2bd7f25db87" title="Gets time FPS // 计算出来 以当前时间计算出来的 每秒可以执行的次数" alt="" coords="173,5,308,32"/>
+<area shape="rect" id="node3" href="$d4/d8c/a00035.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="185,56,297,83"/>
+<area shape="rect" id="node4" href="$d8/d41/a00038.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="197,107,284,133"/>
+<area shape="rect" id="node5" href="$d8/d41/a00038.html#a2bccd732252a844a62b3e0bdc7de82d8" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="188,157,293,184"/>
+<area shape="rect" id="node6" href="$d7/d59/a01013.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="187,208,294,235"/>
+</map>

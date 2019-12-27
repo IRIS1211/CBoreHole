@@ -1,0 +1,5 @@
+<map id="SetWindow::InitUI" name="SetWindow::InitUI">
+<area shape="rect" id="node1" title="Initializes the user interface" alt="" coords="233,42,359,69"/>
+<area shape="rect" id="node2" href="$de/df1/a01151.html#ae102c72b4049bec2a4c5c41fd8185a28" title="Handles button cancel clicked signals" alt="" coords="5,5,185,47"/>
+<area shape="rect" id="node3" href="$de/df1/a01151.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="14,71,177,98"/>
+</map>

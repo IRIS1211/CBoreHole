@@ -1,6 +1,6 @@
-<map id="MyException" name="MyException">
-<area shape="rect" id="node1" title="直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类" alt="" coords="48,185,147,212"/>
-<area shape="rect" id="node2" title="STL class" alt="" coords="5,96,109,123"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="133,96,213,123"/>
-<area shape="rect" id="node4" title="STL class" alt="" coords="110,5,237,47"/>
+<map id="StorePara::StImage" name="StorePara::StImage">
+<area shape="rect" id="node1" title="运行过程中的 图像参数" alt="" coords="224,78,360,105"/>
+<area shape="rect" id="node2" href="$df/dce/a00974.html#d2/dd5/a01002" title=" " alt="" coords="5,5,141,47"/>
+<area shape="rect" id="node3" href="$df/dce/a00974.html#d4/dd0/a00994" title="Image 处理参数, 作为图像展开参数" alt="" coords="5,71,141,112"/>
+<area shape="rect" id="node4" href="$df/dce/a00974.html#d9/d9a/a00998" title="Image Para 参数" alt="" coords="5,136,141,177"/>
 </map>

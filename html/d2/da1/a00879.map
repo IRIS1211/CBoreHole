@@ -1,0 +1,14 @@
+<map id="RunPara" name="RunPara">
+<area shape="rect" id="node1" title="系统运行参数" alt="" coords="909,234,981,261"/>
+<area shape="rect" id="node2" href="$df/d41/a00881.html#dc/d2c/a00893" title="设置状态, 包含相机 和串口 ,设备硬盘参数" alt="" coords="641,110,772,137"/>
+<area shape="rect" id="node3" href="$df/d41/a00881.html#da/d5b/a00905" title="硬盘对象 存储 硬盘使用量和总量" alt="" coords="403,5,541,47"/>
+<area shape="rect" id="node4" href="$df/d41/a00881.html#de/d01/a00897" title="相机结构体" alt="" coords="403,71,541,112"/>
+<area shape="rect" id="node5" href="$df/d41/a00881.html#d0/dac/a00901" title="窗口状态信息" alt="" coords="403,136,541,177"/>
+<area shape="rect" id="node6" title="STL class" alt="" coords="181,189,261,215"/>
+<area shape="rect" id="node10" href="$df/d41/a00881.html#d9/dfb/a00913" title="A show mode." alt="" coords="403,201,541,243"/>
+<area shape="rect" id="node11" href="$df/d41/a00881.html#d4/ddc/a00917" title="调试 使用的配置路径" alt="" coords="403,269,541,311"/>
+<area shape="rect" id="node7" title="STL class" alt="" coords="5,181,132,223"/>
+<area shape="rect" id="node8" href="$df/d41/a00881.html#de/dc8/a00889" title="根据 UI 尺寸记录 包含 原始图像 展开图像 拼接图像" alt="" coords="639,271,775,298"/>
+<area shape="rect" id="node9" href="$df/d41/a00881.html#de/dc3/a00909" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="642,209,771,235"/>
+<area shape="rect" id="node12" href="$db/d18/a00885.html" title="运行过程中的 图像参数" alt="" coords="643,322,771,349"/>
+</map>

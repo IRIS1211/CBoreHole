@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;QcArcItem类 参考</title>
+<title>&#x202A;CBoreHole: &#x202A;ReadWindow类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,117 +89,126 @@ $(document).ready(function(){initNavTree('d2/d7b/a01150.html','../../');});
 
 <div class="header">
   <div class="summary">
+<a href="#signals">信号</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-slots">Private 槽</a> &#124;
 <a href="#pri-attribs">Private 属性</a>  </div>
   <div class="headertitle">
-<div class="title">QcArcItem类 参考</div>  </div>
+<div class="title">ReadWindow类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a>&gt;</code></p>
+<p>&#x202A;读取文件的界面类实现 能够读取自定义文件并进行浏览显示  
+ <a href="../../d2/d7b/a01150.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../de/de1/a00065_source.html">Code\inc\readwindow.h</a>&gt;</code></p>
 <div class="dynheader">
-类 QcArcItem 继承关系图:</div>
+类 ReadWindow 继承关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d8/d02/a01149.png" border="0" usemap="#_qc_arc_item_inherit__map" alt="Inheritance graph"/></div>
-<map name="_qc_arc_item_inherit__map" id="_qc_arc_item_inherit__map">
-<area shape="rect" title=" " alt="" coords="12,229,96,256"/>
-<area shape="rect" href="../../dd/de2/a01134.html" title=" " alt="" coords="5,155,103,181"/>
-<area shape="rect" href="../../d0/d61/a01130.html" title=" " alt="" coords="22,80,86,107"/>
-<area shape="rect" title=" " alt="" coords="19,5,89,32"/>
+<div class="center"><img src="../../d8/d02/a01149.png" border="0" usemap="#_read_window_inherit__map" alt="Inheritance graph"/></div>
+<map name="_read_window_inherit__map" id="_read_window_inherit__map">
+<area shape="rect" title="读取文件的界面类实现 能够读取自定义文件并进行浏览显示" alt="" coords="9,80,108,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,112,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
 <div class="dynheader">
-QcArcItem 的协作图:</div>
+ReadWindow 的协作图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../db/d17/a01148.png" border="0" usemap="#_qc_arc_item_coll__map" alt="Collaboration graph"/></div>
-<map name="_qc_arc_item_coll__map" id="_qc_arc_item_coll__map">
-<area shape="rect" title=" " alt="" coords="12,229,96,256"/>
-<area shape="rect" href="../../dd/de2/a01134.html" title=" " alt="" coords="5,155,103,181"/>
-<area shape="rect" href="../../d0/d61/a01130.html" title=" " alt="" coords="22,80,86,107"/>
-<area shape="rect" title=" " alt="" coords="19,5,89,32"/>
+<div class="center"><img src="../../db/d17/a01148.png" border="0" usemap="#_read_window_coll__map" alt="Collaboration graph"/></div>
+<map name="_read_window_coll__map" id="_read_window_coll__map">
+<area shape="rect" title="读取文件的界面类实现 能够读取自定义文件并进行浏览显示" alt="" coords="2364,1043,2463,1070"/>
+<area shape="rect" title=" " alt="" coords="2133,993,2239,1019"/>
+<area shape="rect" href="../../d0/d39/a01138.html" title="An idoi file." alt="" coords="2152,1043,2220,1070"/>
+<area shape="rect" title="STL class" alt="" coords="1865,569,1956,595"/>
+<area shape="rect" title="STL class" alt="" coords="1631,85,1761,127"/>
+<area shape="rect" title="STL class" alt="" coords="1317,45,1453,87"/>
+<area shape="rect" title="STL class" alt="" coords="939,5,1068,47"/>
+<area shape="rect" title="STL class" alt="" coords="533,46,688,73"/>
+<area shape="rect" title="STL class" alt="" coords="937,71,1070,112"/>
+<area shape="rect" title="STL class" alt="" coords="244,46,344,73"/>
+<area shape="rect" href="../../d5/d16/a01154.html" title="系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换" alt="" coords="1875,733,1947,759"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d8/d15/a01218" title="设置用户UI 参数" alt="" coords="1643,219,1749,246"/>
+<area shape="rect" href="../../d5/d16/a01154.html#de/d7e/a01222" title=" " alt="" coords="1307,114,1464,141"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d9/dbb/a01186" title="设置硬件的参数信息" alt="" coords="1631,402,1761,429"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d2/da6/a01210" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="1316,165,1455,207"/>
+<area shape="rect" href="../../d5/d16/a01154.html#dc/d19/a01190" title="脉冲参数" alt="" coords="1316,231,1455,272"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d0/d32/a01198" title="电子罗盘参数 调整罗盘数据" alt="" coords="1316,296,1455,337"/>
+<area shape="rect" title=" " alt="" coords="926,236,1081,277"/>
+<area shape="rect" title=" " alt="" coords="551,218,671,245"/>
+<area shape="rect" title="STL class" alt="" coords="237,270,351,297"/>
+<area shape="rect" title=" " alt="" coords="903,365,1104,391"/>
+<area shape="rect" title=" " alt="" coords="49,270,88,297"/>
+<area shape="rect" href="../../d3/d53/a01262.html" title="罗盘类型 结构体 用于列出不同种类的 罗盘" alt="" coords="552,398,669,425"/>
+<area shape="rect" title="STL class" alt="" coords="254,662,334,689"/>
+<area shape="rect" href="../../d5/d16/a01154.html#dc/d9e/a01206" title="窗口状态信息" alt="" coords="740,521,879,563"/>
+<area shape="rect" href="../../d5/d16/a01154.html#df/db5/a01158" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="1128,619,1283,646"/>
+<area shape="rect" href="../../d5/d16/a01154.html#dc/dee/a01166" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="1488,702,1607,729"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d6/d1e/a01234" title="配置 debug 参数" alt="" coords="521,723,700,750"/>
+<area shape="rect" href="../../d5/d16/a01154.html#dd/de9/a01182" title=" " alt="" coords="505,825,716,851"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d4/d13/a01162" title="记录 路径以及其他路径信息" alt="" coords="742,990,877,1017"/>
+<area shape="rect" title="STL class" alt="" coords="5,655,132,696"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d5/d32/a01214" title="额外信息" alt="" coords="1316,361,1455,403"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d4/d5d/a01202" title="相机参数结构体" alt="" coords="1316,427,1455,468"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d9/d2e/a01194" title="探头参数" alt="" coords="1316,492,1455,533"/>
+<area shape="rect" href="../../d5/d16/a01154.html#dd/d9e/a01226" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="943,763,1063,790"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d0/d58/a01230" title="可以存储的文件参数" alt="" coords="509,774,713,801"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d3/dc7/a01170" title="运行过程中的 图像参数" alt="" coords="939,854,1067,881"/>
+<area shape="rect" href="../../d5/d16/a01154.html#da/dfb/a01174" title="Image 处理参数, 作为图像展开参数" alt="" coords="519,876,703,917"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d8/d11/a01178" title="Image Para 参数" alt="" coords="505,942,716,969"/>
+<area shape="rect" href="../../dd/de2/a01134.html" title="#TODO(SChen): 完善拓展信息内容 定义拓展信息内容" alt="" coords="1874,1094,1947,1121"/>
+<area shape="rect" href="../../d8/dbe/a01370.html" title=" " alt="" coords="2127,1119,2245,1146"/>
+<area shape="rect" href="../../d6/dfe/a01366.html" title=" " alt="" coords="1852,1145,1969,1171"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a19ddfc33b6e10f52fe08e2ed2bb72a64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#a19ddfc33b6e10f52fe08e2ed2bb72a64">signal_CloseWindow</a> ()</td></tr>
+<tr class="memdesc:a19ddfc33b6e10f52fe08e2ed2bb72a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Sends the signal // 发射 关闭 窗口信号  <a href="../../d2/d7b/a01150.html#a19ddfc33b6e10f52fe08e2ed2bb72a64">更多...</a><br /></td></tr>
+<tr class="separator:a19ddfc33b6e10f52fe08e2ed2bb72a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a45439b5b5bcc72d5845589c6aeaf1ccc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#a45439b5b5bcc72d5845589c6aeaf1ccc">QcArcItem</a> (QObject *parent=nullptr)</td></tr>
-<tr class="separator:a45439b5b5bcc72d5845589c6aeaf1ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef101056b0b6904ac2ef16ab423330fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#aef101056b0b6904ac2ef16ab423330fa">draw</a> (QPainter *)</td></tr>
-<tr class="separator:aef101056b0b6904ac2ef16ab423330fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44d262398b943e31f48ceab6d1d656ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#a44d262398b943e31f48ceab6d1d656ec">setColor</a> (const QColor &amp;color)</td></tr>
-<tr class="separator:a44d262398b943e31f48ceab6d1d656ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a01134"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01134')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;Public 成员函数 继承自 <a class="el" href="../../dd/de2/a01134.html">&#x202A;QcScaleItem</a></td></tr>
-<tr class="memitem:acb0ea787d56bd70f6cd7a4f15c075db0 inherit pub_methods_a01134"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#acb0ea787d56bd70f6cd7a4f15c075db0">QcScaleItem</a> (QObject *parent=nullptr)</td></tr>
-<tr class="separator:acb0ea787d56bd70f6cd7a4f15c075db0 inherit pub_methods_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988dfdf20616c0ce7b1600c89b13eb93 inherit pub_methods_a01134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a988dfdf20616c0ce7b1600c89b13eb93">setValueRange</a> (float minValue, float maxValue)</td></tr>
-<tr class="separator:a988dfdf20616c0ce7b1600c89b13eb93 inherit pub_methods_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23dc4837402b3f00571398807245d1fa inherit pub_methods_a01134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a23dc4837402b3f00571398807245d1fa">setDgereeRange</a> (float minDegree, float maxDegree)</td></tr>
-<tr class="separator:a23dc4837402b3f00571398807245d1fa inherit pub_methods_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ffbb0504bcc7ebe2b64fd32dce943b2 inherit pub_methods_a01134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a7ffbb0504bcc7ebe2b64fd32dce943b2">setMinValue</a> (float minValue)</td></tr>
-<tr class="separator:a7ffbb0504bcc7ebe2b64fd32dce943b2 inherit pub_methods_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f6888bcf8655d82440d7325b07fa0d6 inherit pub_methods_a01134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a1f6888bcf8655d82440d7325b07fa0d6">setMaxValue</a> (float maxValue)</td></tr>
-<tr class="separator:a1f6888bcf8655d82440d7325b07fa0d6 inherit pub_methods_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ea296e3cefb5efd32db98b3d4fdc032 inherit pub_methods_a01134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a0ea296e3cefb5efd32db98b3d4fdc032">setMinDegree</a> (float minDegree)</td></tr>
-<tr class="separator:a0ea296e3cefb5efd32db98b3d4fdc032 inherit pub_methods_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95a38bcec62192a5af223b37cd97a10a inherit pub_methods_a01134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a95a38bcec62192a5af223b37cd97a10a">setMaxDegree</a> (float maxDegree)</td></tr>
-<tr class="separator:a95a38bcec62192a5af223b37cd97a10a inherit pub_methods_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a01130"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01130')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;Public 成员函数 继承自 <a class="el" href="../../d0/d61/a01130.html">&#x202A;QcItem</a></td></tr>
-<tr class="memitem:a22f153ab8a6e3b0f8f698b9ac97e3d79 inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a22f153ab8a6e3b0f8f698b9ac97e3d79">QcItem</a> (QObject *parent=nullptr)</td></tr>
-<tr class="separator:a22f153ab8a6e3b0f8f698b9ac97e3d79 inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51789b5e2b3a042fa5faa9e9e1d2d247 inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a51789b5e2b3a042fa5faa9e9e1d2d247">type</a> ()</td></tr>
-<tr class="separator:a51789b5e2b3a042fa5faa9e9e1d2d247 inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a954ca7fd1b5c0f726a899ed53f584ac7 inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a954ca7fd1b5c0f726a899ed53f584ac7">setPosition</a> (float percentage)</td></tr>
-<tr class="separator:a954ca7fd1b5c0f726a899ed53f584ac7 inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a37ec6e418d1b40651f8d2eb0a15575 inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a7a37ec6e418d1b40651f8d2eb0a15575">position</a> ()</td></tr>
-<tr class="separator:a7a37ec6e418d1b40651f8d2eb0a15575 inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa051f0fd3884f03ddb9c93e481ad59b7 inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#aa051f0fd3884f03ddb9c93e481ad59b7">rect</a> ()</td></tr>
-<tr class="separator:aa051f0fd3884f03ddb9c93e481ad59b7 inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa399218166bcdcd386abbbcbfaa6e9db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#aa399218166bcdcd386abbbcbfaa6e9db">ReadWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aa399218166bcdcd386abbbcbfaa6e9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../d2/d7b/a01150.html" title="&#x202A;读取文件的界面类实现 能够读取自定义文件并进行浏览显示">ReadWindow</a> class  <a href="../../d2/d7b/a01150.html#aa399218166bcdcd386abbbcbfaa6e9db">更多...</a><br /></td></tr>
+<tr class="separator:aa399218166bcdcd386abbbcbfaa6e9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbeaee958736886d2b19bb97c8491c43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#abbeaee958736886d2b19bb97c8491c43">~ReadWindow</a> ()</td></tr>
+<tr class="memdesc:abbeaee958736886d2b19bb97c8491c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Finalizes an instance of the <a class="el" href="../../d2/d7b/a01150.html" title="&#x202A;读取文件的界面类实现 能够读取自定义文件并进行浏览显示">ReadWindow</a> class  <a href="../../d2/d7b/a01150.html#abbeaee958736886d2b19bb97c8491c43">更多...</a><br /></td></tr>
+<tr class="separator:abbeaee958736886d2b19bb97c8491c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private 槽</h2></td></tr>
+<tr class="memitem:a95fcda8a05bce42033ab50c78c3f8a44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#a95fcda8a05bce42033ab50c78c3f8a44">on_btn_openFile_clicked</a> ()</td></tr>
+<tr class="memdesc:a95fcda8a05bce42033ab50c78c3f8a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Handles button open file clicked signals  <a href="../../d2/d7b/a01150.html#a95fcda8a05bce42033ab50c78c3f8a44">更多...</a><br /></td></tr>
+<tr class="separator:a95fcda8a05bce42033ab50c78c3f8a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03aefcbea38fe4b8bef79cbea4a28c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#ad03aefcbea38fe4b8bef79cbea4a28c3">on_btn_closeFile_clicked</a> ()</td></tr>
+<tr class="memdesc:ad03aefcbea38fe4b8bef79cbea4a28c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Handles button close file clicked signals  <a href="../../d2/d7b/a01150.html#ad03aefcbea38fe4b8bef79cbea4a28c3">更多...</a><br /></td></tr>
+<tr class="separator:ad03aefcbea38fe4b8bef79cbea4a28c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ba7c9f45797caf826c4c9fb2145d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#a60ba7c9f45797caf826c4c9fb2145d59">on_btn_read_exit_clicked</a> ()</td></tr>
+<tr class="memdesc:a60ba7c9f45797caf826c4c9fb2145d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Handles button read exit clicked signals  <a href="../../d2/d7b/a01150.html#a60ba7c9f45797caf826c4c9fb2145d59">更多...</a><br /></td></tr>
+<tr class="separator:a60ba7c9f45797caf826c4c9fb2145d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private 属性</h2></td></tr>
-<tr class="memitem:af2e4d2f0a3c9aae01c992aa9b3046146"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#af2e4d2f0a3c9aae01c992aa9b3046146">mColor</a></td></tr>
-<tr class="separator:af2e4d2f0a3c9aae01c992aa9b3046146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-额外继承的成员函数</h2></td></tr>
-<tr class="inherit_header pub_types_a01130"><td colspan="2" onclick="javascript:toggleInherit('pub_types_a01130')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;Public 类型 继承自 <a class="el" href="../../d0/d61/a01130.html">&#x202A;QcItem</a></td></tr>
-<tr class="memitem:a0ef5112d89cda1d9105683533079431a inherit pub_types_a01130"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431a">Error</a> { <a class="el" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695">InvalidValueRange</a>, 
-<a class="el" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06">InvalidDegreeRange</a>, 
-<a class="el" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aab597c8e8a25a168105e84edc20dda514">InvalidStep</a>
- }</td></tr>
-<tr class="separator:a0ef5112d89cda1d9105683533079431a inherit pub_types_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_a01134"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a01134')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;Protected 成员函数 继承自 <a class="el" href="../../dd/de2/a01134.html">&#x202A;QcScaleItem</a></td></tr>
-<tr class="memitem:a13498bbd7518227db9eb9a40d750d00d inherit pro_methods_a01134"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a13498bbd7518227db9eb9a40d750d00d">getDegFromValue</a> (float)</td></tr>
-<tr class="separator:a13498bbd7518227db9eb9a40d750d00d inherit pro_methods_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_a01130"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a01130')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;Protected 成员函数 继承自 <a class="el" href="../../d0/d61/a01130.html">&#x202A;QcItem</a></td></tr>
-<tr class="memitem:a9872c616e918a7e823307cfa9dbcccb7 inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a9872c616e918a7e823307cfa9dbcccb7">adjustRect</a> (float percentage)</td></tr>
-<tr class="separator:a9872c616e918a7e823307cfa9dbcccb7 inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c9ba2372149a249b9cf658e8ab4249 inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#af2c9ba2372149a249b9cf658e8ab4249">getRadius</a> (const QRectF &amp;)</td></tr>
-<tr class="separator:af2c9ba2372149a249b9cf658e8ab4249 inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98810f4748e2fa4c78d4a21947b8076b inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a98810f4748e2fa4c78d4a21947b8076b">getAngle</a> (const QPointF &amp;, const QRectF &amp;tmpRect)</td></tr>
-<tr class="separator:a98810f4748e2fa4c78d4a21947b8076b inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5869fbd4b51c9f72f50b0b220b8ec72d inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a5869fbd4b51c9f72f50b0b220b8ec72d">getPoint</a> (float deg, const QRectF &amp;tmpRect)</td></tr>
-<tr class="separator:a5869fbd4b51c9f72f50b0b220b8ec72d inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a822b523a847064dc2f86dab13d0d25a3 inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a822b523a847064dc2f86dab13d0d25a3">resetRect</a> ()</td></tr>
-<tr class="separator:a822b523a847064dc2f86dab13d0d25a3 inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0a19af45e689ad291bf448a269aede inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede">update</a> ()</td></tr>
-<tr class="separator:a3a0a19af45e689ad291bf448a269aede inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_a01134"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_a01134')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;Protected 属性 继承自 <a class="el" href="../../dd/de2/a01134.html">&#x202A;QcScaleItem</a></td></tr>
-<tr class="memitem:ac7d5fd3b6e7891e39a497b912e2f65c6 inherit pro_attribs_a01134"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#ac7d5fd3b6e7891e39a497b912e2f65c6">mMinValue</a></td></tr>
-<tr class="separator:ac7d5fd3b6e7891e39a497b912e2f65c6 inherit pro_attribs_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa265b0f81fd4187b1135d85d22492f2a inherit pro_attribs_a01134"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#aa265b0f81fd4187b1135d85d22492f2a">mMaxValue</a></td></tr>
-<tr class="separator:aa265b0f81fd4187b1135d85d22492f2a inherit pro_attribs_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b8865ec400e3856d83bb382ec459fe inherit pro_attribs_a01134"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">mMinDegree</a></td></tr>
-<tr class="separator:a06b8865ec400e3856d83bb382ec459fe inherit pro_attribs_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e785bd400a2c287be68ddfad824a54f inherit pro_attribs_a01134"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a2e785bd400a2c287be68ddfad824a54f">mMaxDegree</a></td></tr>
-<tr class="separator:a2e785bd400a2c287be68ddfad824a54f inherit pro_attribs_a01134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01056a0dc4d03ab9d9a7fbd502237e1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d39/a01138.html">IDOIFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">m_IdoiFile_</a></td></tr>
+<tr class="memdesc:a01056a0dc4d03ab9d9a7fbd502237e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;文件类指针  <a href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">更多...</a><br /></td></tr>
+<tr class="separator:a01056a0dc4d03ab9d9a7fbd502237e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03fe548569bca2b66da6be93755bf3b"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">ma_ReadImage_</a></td></tr>
+<tr class="memdesc:ab03fe548569bca2b66da6be93755bf3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;读取到的图像 可能只是一部分数据  <a href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">更多...</a><br /></td></tr>
+<tr class="separator:ab03fe548569bca2b66da6be93755bf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a81e2d13d0192e610471c49bd35da76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dbe/a01370.html">Ui::ReadWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">ui</a></td></tr>
+<tr class="memdesc:a8a81e2d13d0192e610471c49bd35da76"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;读取界面 窗口 ui  <a href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">更多...</a><br /></td></tr>
+<tr class="separator:a8a81e2d13d0192e610471c49bd35da76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock">
-<p class="definition">在文件 <a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d4/d81/a00110_source.html#l00213">213</a> 行定义.</p>
+<div class="textblock"><p class="DocNodeLTR">读取文件的界面类实现 能够读取自定义文件并进行浏览显示 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">readwindow.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00032">32</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="a45439b5b5bcc72d5845589c6aeaf1ccc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45439b5b5bcc72d5845589c6aeaf1ccc">&#9670;&nbsp;</a></span>QcArcItem()</h2>
+<a id="aa399218166bcdcd386abbbcbfaa6e9db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa399218166bcdcd386abbbcbfaa6e9db">&#9670;&nbsp;</a></span>ReadWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,9 +217,9 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QcArcItem::QcArcItem </td>
+          <td class="memname">ReadWindow::ReadWindow </td>
           <td>(</td>
-          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramtype">QWidget *&#160;</td>
           <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
@@ -222,29 +231,78 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00457">457</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                                    :</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#acb0ea787d56bd70f6cd7a4f15c075db0">&#x202A;QcScaleItem</a>(parent)</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;{</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <a class="code" href="../../d0/d61/a01130.html#a954ca7fd1b5c0f726a899ed53f584ac7">&#x202A;setPosition</a>(80);</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#af2e4d2f0a3c9aae01c992aa9b3046146">&#x202A;mColor</a> = Qt::black;</div>
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../d2/d7b/a01150.html" title="&#x202A;读取文件的界面类实现 能够读取自定义文件并进行浏览显示">ReadWindow</a> class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;(Optional) If non-null, the parent</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;If non-null, the parent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/dcb/a00170_source.html">readwindow.cc</a> 第 <a class="el" href="../../d5/dcb/a00170_source.html#l00026">26</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                      :</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QMainWindow(parent),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>(<span class="keyword">new</span> <a class="code" href="../../d8/dbe/a01370.html">&#x202A;Ui::ReadWindow</a>)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/dfe/a01366.html#a45d7b0a78d984b9adb25941f04a12721">&#x202A;setupUi</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 显示当前路径</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/dfe/a01366.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;lb_work_dir</a>-&gt;setText(QDir::currentPath());</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d2/d7b/a01150_a45439b5b5bcc72d5845589c6aeaf1ccc_cgraph.png" border="0" usemap="#d2/d7b/a01150_a45439b5b5bcc72d5845589c6aeaf1ccc_cgraph" alt=""/></div>
-<map name="d2/d7b/a01150_a45439b5b5bcc72d5845589c6aeaf1ccc_cgraph" id="d2/d7b/a01150_a45439b5b5bcc72d5845589c6aeaf1ccc_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,160,57"/>
-<area shape="rect" href="../../d0/d61/a01130.html#a954ca7fd1b5c0f726a899ed53f584ac7" title=" " alt="" coords="208,31,345,57"/>
-<area shape="rect" href="../../d0/d61/a01130.html#a7a37ec6e418d1b40651f8d2eb0a15575" title=" " alt="" coords="393,5,511,32"/>
-<area shape="rect" href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede" title=" " alt="" coords="397,56,507,83"/>
+<div class="center"><img src="../../d2/d7b/a01150_aa399218166bcdcd386abbbcbfaa6e9db_cgraph.png" border="0" usemap="#d2/d7b/a01150_aa399218166bcdcd386abbbcbfaa6e9db_cgraph" alt=""/></div>
+<map name="d2/d7b/a01150_aa399218166bcdcd386abbbcbfaa6e9db_cgraph" id="d2/d7b/a01150_aa399218166bcdcd386abbbcbfaa6e9db_cgraph">
+<area shape="rect" title="Initializes a new instance of the ReadWindow class" alt="" coords="5,5,188,32"/>
+<area shape="rect" href="../../d6/dfe/a01366.html#a45d7b0a78d984b9adb25941f04a12721" title=" " alt="" coords="236,5,405,32"/>
+<area shape="rect" href="../../d6/dfe/a01366.html#a585a56ba69efb334e018833371a23d9c" title=" " alt="" coords="453,5,652,32"/>
 </map>
 </div>
 
 </div>
 </div>
+<a id="abbeaee958736886d2b19bb97c8491c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbeaee958736886d2b19bb97c8491c43">&#9670;&nbsp;</a></span>~ReadWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadWindow::~ReadWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Finalizes an instance of the <a class="el" href="../../d2/d7b/a01150.html" title="&#x202A;读取文件的界面类实现 能够读取自定义文件并进行浏览显示">ReadWindow</a> class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/dcb/a00170_source.html">readwindow.cc</a> 第 <a class="el" href="../../d5/dcb/a00170_source.html#l00044">44</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="aef101056b0b6904ac2ef16ab423330fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef101056b0b6904ac2ef16ab423330fa">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="ad03aefcbea38fe4b8bef79cbea4a28c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03aefcbea38fe4b8bef79cbea4a28c3">&#9670;&nbsp;</a></span>on_btn_closeFile_clicked</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,73 +311,47 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void QcArcItem::draw </td>
+          <td class="memname">void ReadWindow::on_btn_closeFile_clicked </td>
           <td>(</td>
-          <td class="paramtype">QPainter *&#160;</td>
-          <td class="paramname"><em>painter</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>实现了 <a class="el" href="../../d0/d61/a01130.html#ae40f3896384b75c63a8ed5dca76f884b">QcItem</a>.</p>
+<p>&#x202A;Handles button close file clicked signals </p>
+<p class="DocNodeLTR">点击关闭文件</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/23 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00464">464</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;{</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <a class="code" href="../../d0/d61/a01130.html#a822b523a847064dc2f86dab13d0d25a3">&#x202A;resetRect</a>();</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    QRectF tmpRect= <a class="code" href="../../d0/d61/a01130.html#a9872c616e918a7e823307cfa9dbcccb7">&#x202A;adjustRect</a>(<a class="code" href="../../d0/d61/a01130.html#a7a37ec6e418d1b40651f8d2eb0a15575">&#x202A;position</a>());</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordtype">float</span> r = <a class="code" href="../../d0/d61/a01130.html#af2c9ba2372149a249b9cf658e8ab4249">&#x202A;getRadius</a>(tmpRect);</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    QPen pen;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    pen.setColor(<a class="code" href="../../d2/d7b/a01150.html#af2e4d2f0a3c9aae01c992aa9b3046146">&#x202A;mColor</a>);</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    pen.setWidthF(static_cast&lt;qreal&gt;(r/40.0f));</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    painter-&gt;setPen(pen);</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    painter-&gt;drawArc(tmpRect,static_cast&lt;int&gt;(-16*(<a class="code" href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">&#x202A;mMinDegree</a>+180)),static_cast&lt;int&gt;(-16*(<a class="code" href="../../dd/de2/a01134.html#a2e785bd400a2c287be68ddfad824a54f">&#x202A;mMaxDegree</a>-<a class="code" href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">&#x202A;mMinDegree</a>)));</div>
+<p class="definition">在文件 <a class="el" href="../../d5/dcb/a00170_source.html">readwindow.cc</a> 第 <a class="el" href="../../d5/dcb/a00170_source.html#l00122">122</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a>.release();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#a70c5db6374434b417972bb28a1144029">&#x202A;release</a>();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d2/d7b/a01150_aef101056b0b6904ac2ef16ab423330fa_cgraph.png" border="0" usemap="#d2/d7b/a01150_aef101056b0b6904ac2ef16ab423330fa_cgraph" alt=""/></div>
-<map name="d2/d7b/a01150_aef101056b0b6904ac2ef16ab423330fa_cgraph" id="d2/d7b/a01150_aef101056b0b6904ac2ef16ab423330fa_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,124,108"/>
-<area shape="rect" href="../../d0/d61/a01130.html#a9872c616e918a7e823307cfa9dbcccb7" title=" " alt="" coords="172,5,307,32"/>
-<area shape="rect" href="../../d0/d61/a01130.html#af2c9ba2372149a249b9cf658e8ab4249" title=" " alt="" coords="355,56,485,83"/>
-<area shape="rect" href="../../d0/d61/a01130.html#a7a37ec6e418d1b40651f8d2eb0a15575" title=" " alt="" coords="181,107,298,133"/>
-<area shape="rect" href="../../d0/d61/a01130.html#a822b523a847064dc2f86dab13d0d25a3" title=" " alt="" coords="175,157,303,184"/>
+<div class="center"><img src="../../d2/d7b/a01150_ad03aefcbea38fe4b8bef79cbea4a28c3_cgraph.png" border="0" usemap="#d2/d7b/a01150_ad03aefcbea38fe4b8bef79cbea4a28c3_cgraph" alt=""/></div>
+<map name="d2/d7b/a01150_ad03aefcbea38fe4b8bef79cbea4a28c3_cgraph" id="d2/d7b/a01150_ad03aefcbea38fe4b8bef79cbea4a28c3_cgraph">
+<area shape="rect" title="Handles button close file clicked signals" alt="" coords="5,5,151,47"/>
+<area shape="rect" href="../../d0/d39/a01138.html#a70c5db6374434b417972bb28a1144029" title="文件操作" alt="" coords="199,13,317,39"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a44d262398b943e31f48ceab6d1d656ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44d262398b943e31f48ceab6d1d656ec">&#9670;&nbsp;</a></span>setColor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QcArcItem::setColor </td>
-          <td>(</td>
-          <td class="paramtype">const QColor &amp;&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00477">477</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;{</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#af2e4d2f0a3c9aae01c992aa9b3046146">&#x202A;mColor</a> = color;</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">结构体成员变量说明</h2>
-<a id="af2e4d2f0a3c9aae01c992aa9b3046146"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2e4d2f0a3c9aae01c992aa9b3046146">&#9670;&nbsp;</a></span>mColor</h2>
+<a id="a95fcda8a05bce42033ab50c78c3f8a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95fcda8a05bce42033ab50c78c3f8a44">&#9670;&nbsp;</a></span>on_btn_openFile_clicked</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +360,190 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QColor QcArcItem::mColor</td>
+          <td class="memname">void ReadWindow::on_btn_openFile_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Handles button open file clicked signals </p>
+<p class="DocNodeLTR">点击浏览窗口 点击浏览文件</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/23 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/dcb/a00170_source.html">readwindow.cc</a> 第 <a class="el" href="../../d5/dcb/a00170_source.html#l00057">57</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// 获取要打开的文件名</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::string file_name = </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        QFileDialog::getOpenFileName(<span class="keyword">this</span>, </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                     tr(<span class="stringliteral">&quot;OpenFile&quot;</span>),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                     tr(<span class="stringliteral">&quot;.&quot;</span>),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                     tr(<span class="stringliteral">&quot;IDOI File(*.idoi);All Files(*.*)&quot;</span>)).toStdString();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    LDebug(<span class="stringliteral">&quot;select file:{}&quot;</span>, file_name);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (file_name.empty())</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        return ;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">// 显示文件名</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/dfe/a01366.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;lb_work_dir</a>-&gt;setText(QString::fromStdString(file_name));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// 以只读的方式打开文件</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a> = <span class="keyword">new</span> <a class="code" href="../../d0/d39/a01138.html">&#x202A;IDOIFile</a>(file_name, 1, <a class="code" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb">&#x202A;OREAD</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#aca27d2fd88c3c80c26dd57f4d8404a1e">&#x202A;ReadPara</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a> = *(<a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#a44750044d708954b8393a6e15355a58a">&#x202A;m_para_</a>);  <span class="comment">// 直接将值取出</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// 清楚之前的数据</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a> = cv::Mat::zeros(0, <a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#a44750044d708954b8393a6e15355a58a">&#x202A;m_para_</a>-&gt;<a class="code" href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a20bacc2aeb213d0bbdc756dcac1f91dd">&#x202A;nImgWidth</a>, CV_8UC3);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#a866e2bf6ee5717435128e3a07500a957">&#x202A;ReadMat</a>(<a class="code" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a>, 0, -1);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// #TODO(SChen): 优化 读取内容, 实现读取跳跃, </span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//  丰富文件 API</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#if 1</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::string tmp_png = file_name.substr(0, file_name.size() - 4) + <span class="stringliteral">&quot;.png&quot;</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// imwrite(tmp_png, ma_ReadImage_);</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// imshow(&quot;gImage&quot;, ma_ReadImage_);</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// ShowImageOnLable(ma_ReadImage_, ui-&gt;lb_show, 540, 1400);</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    cv::Mat <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    cv::resize(<a class="code" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a>, <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>, cv::Size(540, 1400));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    QPixmap img2 = QPixmap::fromImage(<a class="code" href="../../d6/d2f/a01394.html#a988f9de91b15040f5376a6d3b33d108b">&#x202A;Utils_CV::CvMat2QImage</a>(&amp;<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>));</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/dfe/a01366.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;lb_show</a>-&gt;setPixmap(img2);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    LDebug(<span class="stringliteral">&quot;show GImage:{}&quot;</span>, <a class="code" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a>.rows);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d7b/a01150_a95fcda8a05bce42033ab50c78c3f8a44_cgraph.png" border="0" usemap="#d2/d7b/a01150_a95fcda8a05bce42033ab50c78c3f8a44_cgraph" alt=""/></div>
+<map name="d2/d7b/a01150_a95fcda8a05bce42033ab50c78c3f8a44_cgraph" id="d2/d7b/a01150_a95fcda8a05bce42033ab50c78c3f8a44_cgraph">
+<area shape="rect" title="Handles button open file clicked signals" alt="" coords="5,62,151,103"/>
+<area shape="rect" href="../../d6/d2f/a01394.html#a988f9de91b15040f5376a6d3b33d108b" title="将opencv mat 转换成 QT image" alt="" coords="199,19,368,45"/>
+<area shape="rect" href="../../d0/d39/a01138.html#a866e2bf6ee5717435128e3a07500a957" title="bool ReadMat(cv::Mat &amp;img,int ) ; // 考虑循环读取文件操作 , 可能存在问题" alt="" coords="219,69,347,96"/>
+<area shape="rect" href="../../d0/d39/a01138.html#aca27d2fd88c3c80c26dd57f4d8404a1e" title="读文件 参数" alt="" coords="217,145,350,172"/>
+<area shape="rect" href="../../d0/d39/a01138.html#a44bebcfa4609689ed618201d45a0f027" title="Reads one row extent // 读取一行附加数据" alt="" coords="416,5,591,32"/>
+<area shape="rect" href="../../d0/d39/a01138.html#a2fe58433b8df4ab155d7e0c325021cdf" title="Reads one row matrix" alt="" coords="417,56,589,83"/>
+<area shape="rect" href="../../d0/d39/a01138.html#a5fec0ab1ea64f58af14e26f7e4ad0aac" title="Resets the p 将指针重置到最开始的地方 //0–最开始,//1–数据开始" alt="" coords="433,107,573,133"/>
+<area shape="rect" href="../../d0/d39/a01138.html#a4ba4a9e516d1015d96767e94e16fd91f" title=" " alt="" coords="425,157,581,184"/>
+<area shape="rect" href="../../d5/d16/a01154.html#ab50487cc4124576dfbb2af0445a595c0" title="从二进制流文件中读取文件" alt="" coords="639,157,849,184"/>
+<area shape="rect" href="../../d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c" title="Character 2 string" alt="" coords="1137,157,1303,184"/>
+<area shape="rect" href="../../dc/d25/a01406.html#a5523926cd82a36f59589a82da8adf31b" title="读取基本数据类型" alt="" coords="919,157,1067,184"/>
+<area shape="rect" href="../../dc/d25/a01406.html#a866a76a1d5720a62a03dc7ef7502cd25" title="从文件流中读取一个 字符串" alt="" coords="897,208,1089,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60ba7c9f45797caf826c4c9fb2145d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ba7c9f45797caf826c4c9fb2145d59">&#9670;&nbsp;</a></span>on_btn_read_exit_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadWindow::on_btn_read_exit_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Handles button read exit clicked signals </p>
+<p class="DocNodeLTR">关闭窗口 发射信号回去既可</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/dcb/a00170_source.html">readwindow.cc</a> 第 <a class="el" href="../../d5/dcb/a00170_source.html#l00138">138</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    emit <a class="code" href="../../d2/d7b/a01150.html#a19ddfc33b6e10f52fe08e2ed2bb72a64">&#x202A;signal_CloseWindow</a>();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a19ddfc33b6e10f52fe08e2ed2bb72a64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ddfc33b6e10f52fe08e2ed2bb72a64">&#9670;&nbsp;</a></span>signal_CloseWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReadWindow::signal_CloseWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Sends the signal // 发射 关闭 窗口信号 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d7b/a01150_a19ddfc33b6e10f52fe08e2ed2bb72a64_icgraph.png" border="0" usemap="#d2/d7b/a01150_a19ddfc33b6e10f52fe08e2ed2bb72a64_icgraph" alt=""/></div>
+<map name="d2/d7b/a01150_a19ddfc33b6e10f52fe08e2ed2bb72a64_icgraph" id="d2/d7b/a01150_a19ddfc33b6e10f52fe08e2ed2bb72a64_icgraph">
+<area shape="rect" title="Sends the signal // 发射 关闭 窗口信号" alt="" coords="216,35,356,76"/>
+<area shape="rect" href="../../d2/d7b/a01150.html#a60ba7c9f45797caf826c4c9fb2145d59" title="Handles button read exit clicked signals" alt="" coords="14,5,159,47"/>
+<area shape="rect" href="../../da/d00/a01270.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,71,168,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a01056a0dc4d03ab9d9a7fbd502237e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01056a0dc4d03ab9d9a7fbd502237e1c">&#9670;&nbsp;</a></span>m_IdoiFile_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d39/a01138.html">IDOIFile</a>* ReadWindow::m_IdoiFile_</td>
         </tr>
       </table>
   </td>
@@ -338,29 +553,95 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d4/d81/a00110_source.html#l00222">222</a> 行定义.</p>
+<p>&#x202A;文件类指针 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">readwindow.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab03fe548569bca2b66da6be93755bf3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab03fe548569bca2b66da6be93755bf3b">&#9670;&nbsp;</a></span>ma_ReadImage_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat ReadWindow::ma_ReadImage_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;读取到的图像 可能只是一部分数据 </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">readwindow.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8a81e2d13d0192e610471c49bd35da76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a81e2d13d0192e610471c49bd35da76">&#9670;&nbsp;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/dbe/a01370.html">Ui::ReadWindow</a>* ReadWindow::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;读取界面 窗口 ui </p>
+
+<p class="definition">在文件 <a class="el" href="../../de/de1/a00065_source.html">readwindow.h</a> 第 <a class="el" href="../../de/de1/a00065_source.html#l00039">39</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/model/<a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a></li>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/model/<a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../de/de1/a00065_source.html">readwindow.h</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/src/<a class="el" href="../../d5/dcb/a00170_source.html">readwindow.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01130_html_a9872c616e918a7e823307cfa9dbcccb7"><div class="ttname"><a href="../../d0/d61/a01130.html#a9872c616e918a7e823307cfa9dbcccb7">&#x202A;QcItem::adjustRect</a></div><div class="ttdeci">&#x202A;QRectF adjustRect(float percentage)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00188">qcgaugewidget.cc:188</a></div></div>
-<div class="ttc" id="aa01134_html_a2e785bd400a2c287be68ddfad824a54f"><div class="ttname"><a href="../../dd/de2/a01134.html#a2e785bd400a2c287be68ddfad824a54f">&#x202A;QcScaleItem::mMaxDegree</a></div><div class="ttdeci">&#x202A;float mMaxDegree</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00150">qcgaugewidget.h:150</a></div></div>
-<div class="ttc" id="aa01130_html_a954ca7fd1b5c0f726a899ed53f584ac7"><div class="ttname"><a href="../../d0/d61/a01130.html#a954ca7fd1b5c0f726a899ed53f584ac7">&#x202A;QcItem::setPosition</a></div><div class="ttdeci">&#x202A;void setPosition(float percentage)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00177">qcgaugewidget.cc:177</a></div></div>
-<div class="ttc" id="aa01130_html_a7a37ec6e418d1b40651f8d2eb0a15575"><div class="ttname"><a href="../../d0/d61/a01130.html#a7a37ec6e418d1b40651f8d2eb0a15575">&#x202A;QcItem::position</a></div><div class="ttdeci">&#x202A;float position()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00167">qcgaugewidget.cc:167</a></div></div>
-<div class="ttc" id="aa01130_html_a822b523a847064dc2f86dab13d0d25a3"><div class="ttname"><a href="../../d0/d61/a01130.html#a822b523a847064dc2f86dab13d0d25a3">&#x202A;QcItem::resetRect</a></div><div class="ttdeci">&#x202A;QRectF resetRect()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00206">qcgaugewidget.cc:206</a></div></div>
-<div class="ttc" id="aa01130_html_af2c9ba2372149a249b9cf658e8ab4249"><div class="ttname"><a href="../../d0/d61/a01130.html#af2c9ba2372149a249b9cf658e8ab4249">&#x202A;QcItem::getRadius</a></div><div class="ttdeci">&#x202A;float getRadius(const QRectF &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00196">qcgaugewidget.cc:196</a></div></div>
-<div class="ttc" id="aa01150_html_af2e4d2f0a3c9aae01c992aa9b3046146"><div class="ttname"><a href="../../d2/d7b/a01150.html#af2e4d2f0a3c9aae01c992aa9b3046146">&#x202A;QcArcItem::mColor</a></div><div class="ttdeci">&#x202A;QColor mColor</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00222">qcgaugewidget.h:222</a></div></div>
-<div class="ttc" id="aa01134_html_acb0ea787d56bd70f6cd7a4f15c075db0"><div class="ttname"><a href="../../dd/de2/a01134.html#acb0ea787d56bd70f6cd7a4f15c075db0">&#x202A;QcScaleItem::QcScaleItem</a></div><div class="ttdeci">&#x202A;QcScaleItem(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00242">qcgaugewidget.cc:242</a></div></div>
-<div class="ttc" id="aa01134_html_a06b8865ec400e3856d83bb382ec459fe"><div class="ttname"><a href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">&#x202A;QcScaleItem::mMinDegree</a></div><div class="ttdeci">&#x202A;float mMinDegree</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00149">qcgaugewidget.h:149</a></div></div>
+<div class="ttc" id="aa01366_html_ad5693c3692cac43d7b71142c3262ec6c"><div class="ttname"><a href="../../d6/dfe/a01366.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;Ui_ReadWindow::lb_show</a></div><div class="ttdeci">&#x202A;QLabel * lb_show</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d01/a00227_source.html#l00052">ui_readwindow.h:52</a></div></div>
+<div class="ttc" id="aa01138_html_a44750044d708954b8393a6e15355a58a"><div class="ttname"><a href="../../d0/d39/a01138.html#a44750044d708954b8393a6e15355a58a">&#x202A;IDOIFile::m_para_</a></div><div class="ttdeci">&#x202A;Para * m_para_</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00196">IDOIFile.h:196</a></div></div>
+<div class="ttc" id="aa01154_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
+<div class="ttc" id="aa01138_html_a70c5db6374434b417972bb28a1144029"><div class="ttname"><a href="../../d0/d39/a01138.html#a70c5db6374434b417972bb28a1144029">&#x202A;IDOIFile::release</a></div><div class="ttdeci">&#x202A;bool release()</div><div class="ttdoc">&#x202A;文件操作</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df8/a00155_source.html#l00657">IDOIFile.cc:657</a></div></div>
+<div class="ttc" id="aa00131_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d06/a00131_source.html#l00037">QImgLabel.cc:37</a></div></div>
+<div class="ttc" id="aa01154_html_a76b56f70107ff342985f6d8bef2fa3ba"><div class="ttname"><a href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;RunPara::StImage::Polar</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage::StImagePolar Polar</div></div>
+<div class="ttc" id="aa01394_html_a988f9de91b15040f5376a6d3b33d108b"><div class="ttname"><a href="../../d6/d2f/a01394.html#a988f9de91b15040f5376a6d3b33d108b">&#x202A;Utils_CV::CvMat2QImage</a></div><div class="ttdeci">&#x202A;static QImage CvMat2QImage(const cv::Mat *mat)</div><div class="ttdoc">&#x202A;将opencv mat 转换成 QT image</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00260_source.html#l00487">utils_cv.cc:487</a></div></div>
+<div class="ttc" id="aa00062_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00020">main.cpp:20</a></div></div>
+<div class="ttc" id="aa01138_html_a866e2bf6ee5717435128e3a07500a957"><div class="ttname"><a href="../../d0/d39/a01138.html#a866e2bf6ee5717435128e3a07500a957">&#x202A;IDOIFile::ReadMat</a></div><div class="ttdeci">&#x202A;cv::Mat ReadMat(int row, int hight=100)</div><div class="ttdoc">&#x202A;bool ReadMat(cv::Mat &amp;img,int ) ; // 考虑循环读取文件操作 , 可能存在问题</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df8/a00155_source.html#l00478">IDOIFile.cc:478</a></div></div>
+<div class="ttc" id="aa01138_html"><div class="ttname"><a href="../../d0/d39/a01138.html">&#x202A;IDOIFile</a></div><div class="ttdoc">&#x202A;An idoi file.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00193">IDOIFile.h:193</a></div></div>
+<div class="ttc" id="aa01138_html_aca27d2fd88c3c80c26dd57f4d8404a1e"><div class="ttname"><a href="../../d0/d39/a01138.html#aca27d2fd88c3c80c26dd57f4d8404a1e">&#x202A;IDOIFile::ReadPara</a></div><div class="ttdeci">&#x202A;bool ReadPara(void)</div><div class="ttdoc">&#x202A;读文件 参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df8/a00155_source.html#l00150">IDOIFile.cc:150</a></div></div>
+<div class="ttc" id="aa01150_html_ab03fe548569bca2b66da6be93755bf3b"><div class="ttname"><a href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ReadWindow::ma_ReadImage_</a></div><div class="ttdeci">&#x202A;cv::Mat ma_ReadImage_</div><div class="ttdoc">&#x202A;读取到的图像 可能只是一部分数据</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00037">readwindow.h:37</a></div></div>
+<div class="ttc" id="aa01150_html_a01056a0dc4d03ab9d9a7fbd502237e1c"><div class="ttname"><a href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;ReadWindow::m_IdoiFile_</a></div><div class="ttdeci">&#x202A;IDOIFile * m_IdoiFile_</div><div class="ttdoc">&#x202A;文件类指针</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00036">readwindow.h:36</a></div></div>
+<div class="ttc" id="aa01154_html_a20bacc2aeb213d0bbdc756dcac1f91dd"><div class="ttname"><a href="../../d5/d16/a01154.html#a20bacc2aeb213d0bbdc756dcac1f91dd">&#x202A;RunPara::StImage::StImagePolar::nImgWidth</a></div><div class="ttdeci">&#x202A;int nImgWidth</div><div class="ttdoc">&#x202A;图像宽度</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00116">runpara.h:116</a></div></div>
+<div class="ttc" id="aa01366_html_acfa4ef50e36a18148403cd60fdba0028"><div class="ttname"><a href="../../d6/dfe/a01366.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;Ui_ReadWindow::lb_work_dir</a></div><div class="ttdeci">&#x202A;QLineEdit * lb_work_dir</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d01/a00227_source.html#l00041">ui_readwindow.h:41</a></div></div>
+<div class="ttc" id="aa00056_html_af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb"><div class="ttname"><a href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb">&#x202A;OREAD</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00175">IDOIFile.h:175</a></div></div>
+<div class="ttc" id="aa01370_html"><div class="ttname"><a href="../../d8/dbe/a01370.html">&#x202A;Ui::ReadWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d01/a00227_source.html#l00233">ui_readwindow.h:233</a></div></div>
+<div class="ttc" id="aa01366_html_a45d7b0a78d984b9adb25941f04a12721"><div class="ttname"><a href="../../d6/dfe/a01366.html#a45d7b0a78d984b9adb25941f04a12721">&#x202A;Ui_ReadWindow::setupUi</a></div><div class="ttdeci">&#x202A;void setupUi(QMainWindow *ReadWindow)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d01/a00227_source.html#l00057">ui_readwindow.h:57</a></div></div>
+<div class="ttc" id="aa01118_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01150_html_a19ddfc33b6e10f52fe08e2ed2bb72a64"><div class="ttname"><a href="../../d2/d7b/a01150.html#a19ddfc33b6e10f52fe08e2ed2bb72a64">&#x202A;ReadWindow::signal_CloseWindow</a></div><div class="ttdeci">&#x202A;void signal_CloseWindow()</div><div class="ttdoc">&#x202A;Sends the signal // 发射 关闭 窗口信号</div></div>
+<div class="ttc" id="aa01150_html_a8a81e2d13d0192e610471c49bd35da76"><div class="ttname"><a href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ReadWindow::ui</a></div><div class="ttdeci">&#x202A;Ui::ReadWindow * ui</div><div class="ttdoc">&#x202A;读取界面 窗口 ui</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00039">readwindow.h:39</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d2/d7b/a01150.html">&#x202A;QcArcItem</a></li>
+    <li class="navelem"><a class="el" href="../../d2/d7b/a01150.html">&#x202A;ReadWindow</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

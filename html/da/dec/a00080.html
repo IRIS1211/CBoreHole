@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/WorkWindow.h 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/setwindow.h 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.0</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -90,69 +90,32 @@ $(document).ready(function(){initNavTree('da/dec/a00080.html','../../');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">结构体</a> &#124;
-<a href="#namespaces">命名空间</a> &#124;
-<a href="#var-members">变量</a>  </div>
+<a href="#namespaces">命名空间</a>  </div>
   <div class="headertitle">
-<div class="title">WorkWindow.h 文件参考</div>  </div>
+<div class="title">setwindow.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>&#x202A;声明工作类 实现工作窗口 ui 更新程序  
-<a href="#details">更多...</a></p>
 
 <p><a href="../../da/dec/a00080_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 结构体</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html">WorkWindow</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 <a href="https://blog.csdn.net/hebbely/article/details/79267348">https://blog.csdn.net/hebbely/article/details/79267348</a>  <a href="../../d8/df3/a01195.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d00/a01270.html">SetWindow</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Window for setting the . 设置窗口  <a href="../../da/d00/a01270.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 命名空间</h2></td></tr>
-<tr class="memitem:d9/d9b/a00363"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9b/a00363.html">Ui</a></td></tr>
-<tr class="memdesc:d9/d9b/a00363"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br /></td></tr>
+<tr class="memitem:de/df7/a00418"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df7/a00418.html">Ui</a></td></tr>
+<tr class="memdesc:de/df7/a00418"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;QT UI 用于生成 ui组件 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-变量</h2></td></tr>
-<tr class="memitem:a8109678940135e75e59bb64819c1004d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dec/a00080.html#a8109678940135e75e59bb64819c1004d">K_BUFFER_MAX_SIZE</a> = 6</td></tr>
-<tr class="memdesc:a8109678940135e75e59bb64819c1004d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;缓冲队列的最大长度  <a href="../../da/dec/a00080.html#a8109678940135e75e59bb64819c1004d">更多...</a><br /></td></tr>
-<tr class="separator:a8109678940135e75e59bb64819c1004d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">声明工作类 实现工作窗口 ui 更新程序 </p>
-<dl class="section copyright DocNodeLTR"><dt>版权所有</dt><dd>&#x202A;Copyright (c) 2019 IRIS_Chen IRIS Lab</dd></dl>
-<ul class="DocNodeLTR">
-<li>&#x202A;负责拼图程序的开始的地方 点击执行会触发视频抓取,图像处理,图像存储 @changelog 2019/10/17 IRIS_Chen Created. </li>
-</ul>
-
-<p class="definition">在文件 <a class="el" href="../../da/dec/a00080_source.html">WorkWindow.h</a> 中定义.</p>
-</div><h2 class="groupheader">变量说明</h2>
-<a id="a8109678940135e75e59bb64819c1004d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8109678940135e75e59bb64819c1004d">&#9670;&nbsp;</a></span>K_BUFFER_MAX_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int K_BUFFER_MAX_SIZE = 6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;缓冲队列的最大长度 </p>
-
-<p class="definition">在文件 <a class="el" href="../../da/dec/a00080_source.html">WorkWindow.h</a> 第 <a class="el" href="../../da/dec/a00080_source.html#l00041">41</a> 行定义.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../da/dec/a00080.html">&#x202A;WorkWindow.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../da/dec/a00080.html">&#x202A;setwindow.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

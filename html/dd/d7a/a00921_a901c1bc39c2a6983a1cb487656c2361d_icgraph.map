@@ -1,0 +1,5 @@
+<map id="ImageProc::GetDstImg" name="ImageProc::GetDstImg">
+<area shape="rect" id="node1" title="// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然..." alt="" coords="201,31,356,57"/>
+<area shape="rect" id="node2" href="$db/deb/a00853.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,5,131,32"/>
+<area shape="rect" id="node3" href="$d5/dac/a00841.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,56,153,83"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="CQtOpenCVViewerGl::ShowImage" name="CQtOpenCVViewerGl::ShowImage">
+<area shape="rect" id="node1" title="Shows the image" alt="" coords="939,27,1093,69"/>
+<area shape="rect" id="node2" href="$d8/df3/a01195.html#a41a95073fcd146be53bf16c5649b00b0" title="跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示" alt="" coords="701,27,891,69"/>
+<area shape="rect" id="node3" href="$d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" id="node4" href="$d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" id="node5" href="$d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" id="node6" href="$d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="CalcPeriodTimeFps" name="CalcPeriodTimeFps">
+<area shape="rect" id="node1" title="Gets time FPS // 计算出来 以当前时间计算出来的 每秒可以执行的次数" alt="" coords="525,56,660,83"/>
+<area shape="rect" id="node2" href="$d0/d5b/a00933.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="357,31,477,57"/>
+<area shape="rect" id="node6" href="$db/deb/a00853.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="366,81,469,108"/>
+<area shape="rect" id="node3" href="$d0/d5b/a00933.html#ab4d98e474b554e318508d1f26a053998" title="Handles the read data" alt="" coords="149,5,309,32"/>
+<area shape="rect" id="node5" href="$d0/d5b/a00933.html#a7f33b441ca3c2e17c8d673a997437bd4" title="Handles the timeout" alt="" coords="155,56,304,83"/>
+<area shape="rect" id="node4" href="$d0/d5b/a00933.html#adda4ed09582ac92c92b16b55b471a6d4" title="Initializes a new instance of the Serial class" alt="" coords="5,31,101,57"/>
+</map>

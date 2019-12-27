@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;QcScaleItem类 参考</title>
+<title>&#x202A;CBoreHole: &#x202A;ExtraInfo类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,115 +89,102 @@ $(document).ready(function(){initNavTree('dd/de2/a01134.html','../../');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pro-methods">Protected 成员函数</a> &#124;
-<a href="#pro-attribs">Protected 属性</a>  </div>
+<a href="#pub-attribs">成员变量</a>  </div>
   <div class="headertitle">
-<div class="title">QcScaleItem类 参考</div>  </div>
+<div class="title">ExtraInfo类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a>&gt;</code></p>
-<div class="dynheader">
-类 QcScaleItem 继承关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../db/d28/a01133.png" border="0" usemap="#_qc_scale_item_inherit__map" alt="Inheritance graph"/></div>
-<map name="_qc_scale_item_inherit__map" id="_qc_scale_item_inherit__map">
-<area shape="rect" title=" " alt="" coords="244,155,341,181"/>
-<area shape="rect" href="../../d2/d7b/a01150.html" title=" " alt="" coords="5,229,89,256"/>
-<area shape="rect" href="../../d5/d16/a01154.html" title=" " alt="" coords="114,229,213,256"/>
-<area shape="rect" href="../../df/db5/a01158.html" title=" " alt="" coords="237,229,349,256"/>
-<area shape="rect" href="../../d4/d13/a01162.html" title=" " alt="" coords="373,229,477,256"/>
-<area shape="rect" href="../../dc/dee/a01166.html" title=" " alt="" coords="501,229,605,256"/>
-<area shape="rect" href="../../d0/d61/a01130.html" title=" " alt="" coords="261,80,325,107"/>
-<area shape="rect" title=" " alt="" coords="257,5,328,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
-<div class="dynheader">
-QcScaleItem 的协作图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d6/de6/a01132.png" border="0" usemap="#_qc_scale_item_coll__map" alt="Collaboration graph"/></div>
-<map name="_qc_scale_item_coll__map" id="_qc_scale_item_coll__map">
-<area shape="rect" title=" " alt="" coords="5,155,103,181"/>
-<area shape="rect" href="../../d0/d61/a01130.html" title=" " alt="" coords="22,80,86,107"/>
-<area shape="rect" title=" " alt="" coords="19,5,89,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<p>&#x202A;#TODO(SChen): 完善拓展信息内容 定义拓展信息内容  
+ <a href="../../dd/de2/a01134.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d9/d2e/a00056_source.html">Code\inc\IDOIFile.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a6ca7d8de93a474781db6109c7f4893d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a537fbb28661acd6f27d87032d4d40442">HEADER</a> = 0, 
+<a class="el" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8ad1e0dcec5d3f762c9b75acf9673d0854">LENGTH</a> = 2, 
+<a class="el" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a34a34829b830fa782cdf9932d849e48d">ANGLE</a> = 4, 
+<a class="el" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a3b42e23211b87c9ad5b233196a1e1521">MAGNET</a> = 10, 
+<br />
+&#160;&#160;<a class="el" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8acc272196fae262a9a43d35d54202cd8e">ENCODE</a> = 19, 
+<a class="el" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8acc2f93abf1d9950939f0ca6d28221cb1">AD</a> = 23, 
+<a class="el" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8af910e0fd02c760a4354e6dccbd9fe4f3">EXTRA</a> = 24
+<br />
+ }</td></tr>
+<tr class="separator:a6ca7d8de93a474781db6109c7f4893d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:acb0ea787d56bd70f6cd7a4f15c075db0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#acb0ea787d56bd70f6cd7a4f15c075db0">QcScaleItem</a> (QObject *parent=nullptr)</td></tr>
-<tr class="separator:acb0ea787d56bd70f6cd7a4f15c075db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988dfdf20616c0ce7b1600c89b13eb93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a988dfdf20616c0ce7b1600c89b13eb93">setValueRange</a> (float minValue, float maxValue)</td></tr>
-<tr class="separator:a988dfdf20616c0ce7b1600c89b13eb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23dc4837402b3f00571398807245d1fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a23dc4837402b3f00571398807245d1fa">setDgereeRange</a> (float minDegree, float maxDegree)</td></tr>
-<tr class="separator:a23dc4837402b3f00571398807245d1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ffbb0504bcc7ebe2b64fd32dce943b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a7ffbb0504bcc7ebe2b64fd32dce943b2">setMinValue</a> (float minValue)</td></tr>
-<tr class="separator:a7ffbb0504bcc7ebe2b64fd32dce943b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f6888bcf8655d82440d7325b07fa0d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a1f6888bcf8655d82440d7325b07fa0d6">setMaxValue</a> (float maxValue)</td></tr>
-<tr class="separator:a1f6888bcf8655d82440d7325b07fa0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ea296e3cefb5efd32db98b3d4fdc032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a0ea296e3cefb5efd32db98b3d4fdc032">setMinDegree</a> (float minDegree)</td></tr>
-<tr class="separator:a0ea296e3cefb5efd32db98b3d4fdc032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95a38bcec62192a5af223b37cd97a10a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a95a38bcec62192a5af223b37cd97a10a">setMaxDegree</a> (float maxDegree)</td></tr>
-<tr class="separator:a95a38bcec62192a5af223b37cd97a10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a01130"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01130')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;Public 成员函数 继承自 <a class="el" href="../../d0/d61/a01130.html">&#x202A;QcItem</a></td></tr>
-<tr class="memitem:a22f153ab8a6e3b0f8f698b9ac97e3d79 inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a22f153ab8a6e3b0f8f698b9ac97e3d79">QcItem</a> (QObject *parent=nullptr)</td></tr>
-<tr class="separator:a22f153ab8a6e3b0f8f698b9ac97e3d79 inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae40f3896384b75c63a8ed5dca76f884b inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#ae40f3896384b75c63a8ed5dca76f884b">draw</a> (QPainter *)=0</td></tr>
-<tr class="separator:ae40f3896384b75c63a8ed5dca76f884b inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51789b5e2b3a042fa5faa9e9e1d2d247 inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a51789b5e2b3a042fa5faa9e9e1d2d247">type</a> ()</td></tr>
-<tr class="separator:a51789b5e2b3a042fa5faa9e9e1d2d247 inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a954ca7fd1b5c0f726a899ed53f584ac7 inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a954ca7fd1b5c0f726a899ed53f584ac7">setPosition</a> (float percentage)</td></tr>
-<tr class="separator:a954ca7fd1b5c0f726a899ed53f584ac7 inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a37ec6e418d1b40651f8d2eb0a15575 inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a7a37ec6e418d1b40651f8d2eb0a15575">position</a> ()</td></tr>
-<tr class="separator:a7a37ec6e418d1b40651f8d2eb0a15575 inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa051f0fd3884f03ddb9c93e481ad59b7 inherit pub_methods_a01130"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#aa051f0fd3884f03ddb9c93e481ad59b7">rect</a> ()</td></tr>
-<tr class="separator:aa051f0fd3884f03ddb9c93e481ad59b7 inherit pub_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6859bf561a1eca8139e4028e618b3c87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a6859bf561a1eca8139e4028e618b3c87">ExtraInfo</a> (void)</td></tr>
+<tr class="memdesc:a6859bf561a1eca8139e4028e618b3c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;初始化 实例  <a href="../../dd/de2/a01134.html#a6859bf561a1eca8139e4028e618b3c87">更多...</a><br /></td></tr>
+<tr class="separator:a6859bf561a1eca8139e4028e618b3c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437c648b69a3ca386efa04f393bb4b93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a437c648b69a3ca386efa04f393bb4b93">LoadDefault</a> (int flg=1)</td></tr>
+<tr class="memdesc:a437c648b69a3ca386efa04f393bb4b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;加载默认参数 // 其他信息每行不一样 长度取 1080*3+28 == 3268 == 0x0CC4 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 11 22 0C C4 [00 00 00 00 00 00] [00 00 00 00 00 00 00 00 00] [00 00 00 00] [00] 00 00 00 00  <a href="../../dd/de2/a01134.html#a437c648b69a3ca386efa04f393bb4b93">更多...</a><br /></td></tr>
+<tr class="separator:a437c648b69a3ca386efa04f393bb4b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbc80088952eac8dc21fe798fbdf832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a3dbc80088952eac8dc21fe798fbdf832">CopySerialData</a> (const <a class="el" href="../../d7/dc5/a01242.html">SerialData</a> &amp;ser) const</td></tr>
+<tr class="memdesc:a3dbc80088952eac8dc21fe798fbdf832"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设置 串口数据 serial 根据串口数据 设置更新值  <a href="../../dd/de2/a01134.html#a3dbc80088952eac8dc21fe798fbdf832">更多...</a><br /></td></tr>
+<tr class="separator:a3dbc80088952eac8dc21fe798fbdf832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e6b3884cc6354c6e1bb830ee2fab64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#ae0e6b3884cc6354c6e1bb830ee2fab64">Update</a> (const <a class="el" href="../../dd/de2/a01134.html">ExtraInfo</a> &amp;ext)</td></tr>
+<tr class="memdesc:ae0e6b3884cc6354c6e1bb830ee2fab64"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;如果传入了同类, 直接复制数据  <a href="../../dd/de2/a01134.html#ae0e6b3884cc6354c6e1bb830ee2fab64">更多...</a><br /></td></tr>
+<tr class="separator:ae0e6b3884cc6354c6e1bb830ee2fab64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected 成员函数</h2></td></tr>
-<tr class="memitem:a13498bbd7518227db9eb9a40d750d00d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a13498bbd7518227db9eb9a40d750d00d">getDegFromValue</a> (float)</td></tr>
-<tr class="separator:a13498bbd7518227db9eb9a40d750d00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_a01130"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a01130')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;Protected 成员函数 继承自 <a class="el" href="../../d0/d61/a01130.html">&#x202A;QcItem</a></td></tr>
-<tr class="memitem:a9872c616e918a7e823307cfa9dbcccb7 inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a9872c616e918a7e823307cfa9dbcccb7">adjustRect</a> (float percentage)</td></tr>
-<tr class="separator:a9872c616e918a7e823307cfa9dbcccb7 inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c9ba2372149a249b9cf658e8ab4249 inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#af2c9ba2372149a249b9cf658e8ab4249">getRadius</a> (const QRectF &amp;)</td></tr>
-<tr class="separator:af2c9ba2372149a249b9cf658e8ab4249 inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98810f4748e2fa4c78d4a21947b8076b inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a98810f4748e2fa4c78d4a21947b8076b">getAngle</a> (const QPointF &amp;, const QRectF &amp;tmpRect)</td></tr>
-<tr class="separator:a98810f4748e2fa4c78d4a21947b8076b inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5869fbd4b51c9f72f50b0b220b8ec72d inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a5869fbd4b51c9f72f50b0b220b8ec72d">getPoint</a> (float deg, const QRectF &amp;tmpRect)</td></tr>
-<tr class="separator:a5869fbd4b51c9f72f50b0b220b8ec72d inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a822b523a847064dc2f86dab13d0d25a3 inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a822b523a847064dc2f86dab13d0d25a3">resetRect</a> ()</td></tr>
-<tr class="separator:a822b523a847064dc2f86dab13d0d25a3 inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0a19af45e689ad291bf448a269aede inherit pro_methods_a01130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede">update</a> ()</td></tr>
-<tr class="separator:a3a0a19af45e689ad291bf448a269aede inherit pro_methods_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected 属性</h2></td></tr>
-<tr class="memitem:ac7d5fd3b6e7891e39a497b912e2f65c6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#ac7d5fd3b6e7891e39a497b912e2f65c6">mMinValue</a></td></tr>
-<tr class="separator:ac7d5fd3b6e7891e39a497b912e2f65c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa265b0f81fd4187b1135d85d22492f2a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#aa265b0f81fd4187b1135d85d22492f2a">mMaxValue</a></td></tr>
-<tr class="separator:aa265b0f81fd4187b1135d85d22492f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b8865ec400e3856d83bb382ec459fe"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">mMinDegree</a></td></tr>
-<tr class="separator:a06b8865ec400e3856d83bb382ec459fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e785bd400a2c287be68ddfad824a54f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#a2e785bd400a2c287be68ddfad824a54f">mMaxDegree</a></td></tr>
-<tr class="separator:a2e785bd400a2c287be68ddfad824a54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-额外继承的成员函数</h2></td></tr>
-<tr class="inherit_header pub_types_a01130"><td colspan="2" onclick="javascript:toggleInherit('pub_types_a01130')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;Public 类型 继承自 <a class="el" href="../../d0/d61/a01130.html">&#x202A;QcItem</a></td></tr>
-<tr class="memitem:a0ef5112d89cda1d9105683533079431a inherit pub_types_a01130"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431a">Error</a> { <a class="el" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695">InvalidValueRange</a>, 
-<a class="el" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06">InvalidDegreeRange</a>, 
-<a class="el" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aab597c8e8a25a168105e84edc20dda514">InvalidStep</a>
- }</td></tr>
-<tr class="separator:a0ef5112d89cda1d9105683533079431a inherit pub_types_a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:ac6dca585c0fe66b6aec274565474f93e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#ac6dca585c0fe66b6aec274565474f93e">len_</a> = 28</td></tr>
+<tr class="memdesc:ac6dca585c0fe66b6aec274565474f93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;默认28个字节  <a href="../../dd/de2/a01134.html#ac6dca585c0fe66b6aec274565474f93e">更多...</a><br /></td></tr>
+<tr class="separator:ac6dca585c0fe66b6aec274565474f93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe8c5daa97cd7977165b088c5b7b345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">data_</a></td></tr>
+<tr class="memdesc:adfe8c5daa97cd7977165b088c5b7b345"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;The data  <a href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">更多...</a><br /></td></tr>
+<tr class="separator:adfe8c5daa97cd7977165b088c5b7b345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock">
-<p class="definition">在文件 <a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d4/d81/a00110_source.html#l00127">127</a> 行定义.</p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="acb0ea787d56bd70f6cd7a4f15c075db0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb0ea787d56bd70f6cd7a4f15c075db0">&#9670;&nbsp;</a></span>QcScaleItem()</h2>
+<div class="textblock"><p class="DocNodeLTR">#TODO(SChen): 完善拓展信息内容 定义拓展信息内容 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00055">55</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a6ca7d8de93a474781db6109c7f4893d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca7d8de93a474781db6109c7f4893d8">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a6ca7d8de93a474781db6109c7f4893d8a537fbb28661acd6f27d87032d4d40442"></a>HEADER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6ca7d8de93a474781db6109c7f4893d8ad1e0dcec5d3f762c9b75acf9673d0854"></a>LENGTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6ca7d8de93a474781db6109c7f4893d8a34a34829b830fa782cdf9932d849e48d"></a>ANGLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6ca7d8de93a474781db6109c7f4893d8a3b42e23211b87c9ad5b233196a1e1521"></a>MAGNET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6ca7d8de93a474781db6109c7f4893d8acc272196fae262a9a43d35d54202cd8e"></a>ENCODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6ca7d8de93a474781db6109c7f4893d8acc2f93abf1d9950939f0ca6d28221cb1"></a>AD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6ca7d8de93a474781db6109c7f4893d8af910e0fd02c760a4354e6dccbd9fe4f3"></a>EXTRA&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00086">86</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a537fbb28661acd6f27d87032d4d40442">&#x202A;HEADER</a>  = 0,     <span class="comment">// 帧头数据</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8ad1e0dcec5d3f762c9b75acf9673d0854">&#x202A;LENGTH</a>  = 2,     <span class="comment">// 长度位置</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a34a34829b830fa782cdf9932d849e48d">&#x202A;ANGLE</a>   = 4,     <span class="comment">// 角度位置</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a3b42e23211b87c9ad5b233196a1e1521">&#x202A;MAGNET</a>  = 10,    <span class="comment">// 磁力位置</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8acc272196fae262a9a43d35d54202cd8e">&#x202A;ENCODE</a>  = 19,    <span class="comment">// 编码器位置</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8acc2f93abf1d9950939f0ca6d28221cb1">&#x202A;AD</a>      = 23,    <span class="comment">// AD值位置</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8af910e0fd02c760a4354e6dccbd9fe4f3">&#x202A;EXTRA</a>   = 24     <span class="comment">// 额外信息位置</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a6859bf561a1eca8139e4028e618b3c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6859bf561a1eca8139e4028e618b3c87">&#9670;&nbsp;</a></span>ExtraInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,34 +193,44 @@ Protected 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QcScaleItem::QcScaleItem </td>
+          <td class="memname">ExtraInfo::ExtraInfo </td>
           <td>(</td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00242">242</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                        :</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="../../d0/d61/a01130.html#a22f153ab8a6e3b0f8f698b9ac97e3d79">&#x202A;QcItem</a>(parent)</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">&#x202A;mMinDegree</a> = -45;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#a2e785bd400a2c287be68ddfad824a54f">&#x202A;mMaxDegree</a> = 225;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#ac7d5fd3b6e7891e39a497b912e2f65c6">&#x202A;mMinValue</a> = 0;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#aa265b0f81fd4187b1135d85d22492f2a">&#x202A;mMaxValue</a> = 100;</div>
-</div><!-- fragment -->
+<p>&#x202A;初始化 实例 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00075">75</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a> = <span class="keyword">new</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>[<a class="code" href="../../dd/de2/a01134.html#ac6dca585c0fe66b6aec274565474f93e">&#x202A;len_</a>]();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#a437c648b69a3ca386efa04f393bb4b93">&#x202A;LoadDefault</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/de2/a01134_a6859bf561a1eca8139e4028e618b3c87_cgraph.png" border="0" usemap="#dd/de2/a01134_a6859bf561a1eca8139e4028e618b3c87_cgraph" alt=""/></div>
+<map name="dd/de2/a01134_a6859bf561a1eca8139e4028e618b3c87_cgraph" id="dd/de2/a01134_a6859bf561a1eca8139e4028e618b3c87_cgraph">
+<area shape="rect" title="初始化 实例" alt="" coords="5,5,137,32"/>
+<area shape="rect" href="../../dd/de2/a01134.html#a437c648b69a3ca386efa04f393bb4b93" title="加载默认参数 // 其他信息每行不一样 长度取 1080*3+28 == 3268 == 0x0CC4 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 1..." alt="" coords="185,5,335,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="a13498bbd7518227db9eb9a40d750d00d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13498bbd7518227db9eb9a40d750d00d">&#9670;&nbsp;</a></span>getDegFromValue()</h2>
+<a id="a3dbc80088952eac8dc21fe798fbdf832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dbc80088952eac8dc21fe798fbdf832">&#9670;&nbsp;</a></span>CopySerialData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,380 +239,225 @@ Protected 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float QcScaleItem::getDegFromValue </td>
+          <td class="memname">void ExtraInfo::CopySerialData </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../d7/dc5/a01242.html">SerialData</a> &amp;&#160;</td>
+          <td class="paramname"><em>ser</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;设置 串口数据 serial 根据串口数据 设置更新值 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ser</td><td>&#x202A;The ser </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00133">133</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">// 将串口数据 罗盘区域数据 依次复制过来</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 15; i++)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            *(<a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a> + i + <a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a34a34829b830fa782cdf9932d849e48d">&#x202A;ANGLE</a>) = *(ser.<a class="code" href="../../d7/dc5/a01242.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;mc_Data_</a> + <a class="code" href="../../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">&#x202A;FrameBit::FPitch</a> + i);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="comment">// 将 编码器 ADC 数据复制过来</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 5; i++)</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            *(<a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a> + i + <a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8acc272196fae262a9a43d35d54202cd8e">&#x202A;ENCODE</a>) = *(ser.<a class="code" href="../../d7/dc5/a01242.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;mc_Data_</a> + <a class="code" href="../../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">&#x202A;FrameBit::FDPCAS</a> + i);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/de2/a01134_a3dbc80088952eac8dc21fe798fbdf832_icgraph.png" border="0" usemap="#dd/de2/a01134_a3dbc80088952eac8dc21fe798fbdf832_icgraph" alt=""/></div>
+<map name="dd/de2/a01134_a3dbc80088952eac8dc21fe798fbdf832_icgraph" id="dd/de2/a01134_a3dbc80088952eac8dc21fe798fbdf832_icgraph">
+<area shape="rect" title="设置 串口数据 serial 根据串口数据 设置更新值" alt="" coords="200,5,371,32"/>
+<area shape="rect" href="../../d0/d39/a01138.html#a1713f68550ac077f74ccdad29f2ed74e" title="Appends a data" alt="" coords="5,5,152,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a437c648b69a3ca386efa04f393bb4b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437c648b69a3ca386efa04f393bb4b93">&#9670;&nbsp;</a></span>LoadDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ExtraInfo::LoadDefault </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flg</em> = <code>1</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00268">268</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;{</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">float</span> a = (<a class="code" href="../../dd/de2/a01134.html#a2e785bd400a2c287be68ddfad824a54f">&#x202A;mMaxDegree</a>-<a class="code" href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">&#x202A;mMinDegree</a>)/(<a class="code" href="../../dd/de2/a01134.html#aa265b0f81fd4187b1135d85d22492f2a">&#x202A;mMaxValue</a>-<a class="code" href="../../dd/de2/a01134.html#ac7d5fd3b6e7891e39a497b912e2f65c6">&#x202A;mMinValue</a>);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">float</span> b = -a*<a class="code" href="../../dd/de2/a01134.html#ac7d5fd3b6e7891e39a497b912e2f65c6">&#x202A;mMinValue</a>+<a class="code" href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">&#x202A;mMinDegree</a>;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">return</span> a*v+b;</div>
+<p>&#x202A;加载默认参数 // 其他信息每行不一样 长度取 1080*3+28 == 3268 == 0x0CC4 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 11 22 0C C4 [00 00 00 00 00 00] [00 00 00 00 00 00 00 00 00] [00 00 00 00] [00] 00 00 00 00 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flg</td><td>&#x202A;(Optional) The flg 暂时未使用 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00111">111</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        flg = 1;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a>[<a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a537fbb28661acd6f27d87032d4d40442">&#x202A;HEADER</a> + 0] = 0x11;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a>[<a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a537fbb28661acd6f27d87032d4d40442">&#x202A;HEADER</a> + 1] = 0x22;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a>[<a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8af910e0fd02c760a4354e6dccbd9fe4f3">&#x202A;EXTRA</a> + 0] = 0x00;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a>[<a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8af910e0fd02c760a4354e6dccbd9fe4f3">&#x202A;EXTRA</a> + 1] = 0x00;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a>[<a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8af910e0fd02c760a4354e6dccbd9fe4f3">&#x202A;EXTRA</a> + 2] = 0x00;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a>[<a class="code" href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8af910e0fd02c760a4354e6dccbd9fe4f3">&#x202A;EXTRA</a> + 3] = 0x00;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dd/de2/a01134_a13498bbd7518227db9eb9a40d750d00d_icgraph.png" border="0" usemap="#dd/de2/a01134_a13498bbd7518227db9eb9a40d750d00d_icgraph" alt=""/></div>
-<map name="dd/de2/a01134_a13498bbd7518227db9eb9a40d750d00d_icgraph" id="dd/de2/a01134_a13498bbd7518227db9eb9a40d750d00d_icgraph">
-<area shape="rect" title=" " alt="" coords="200,81,409,108"/>
-<area shape="rect" href="../../d5/d16/a01154.html#a3e797b84f087007636fc85fc8c1185b0" title=" " alt="" coords="11,5,146,32"/>
-<area shape="rect" href="../../df/db5/a01158.html#a4bdba32ed37b37a5b67cdcbb7431d32c" title=" " alt="" coords="5,56,152,83"/>
-<area shape="rect" href="../../d4/d13/a01162.html#aad774985d2725e44d2509e393213d1d5" title=" " alt="" coords="9,107,148,133"/>
-<area shape="rect" href="../../dc/dee/a01166.html#acac454cfd99f40089d88ae92be536449" title=" " alt="" coords="9,157,148,184"/>
+<div class="center"><img src="../../dd/de2/a01134_a437c648b69a3ca386efa04f393bb4b93_icgraph.png" border="0" usemap="#dd/de2/a01134_a437c648b69a3ca386efa04f393bb4b93_icgraph" alt=""/></div>
+<map name="dd/de2/a01134_a437c648b69a3ca386efa04f393bb4b93_icgraph" id="dd/de2/a01134_a437c648b69a3ca386efa04f393bb4b93_icgraph">
+<area shape="rect" title="加载默认参数 // 其他信息每行不一样 长度取 1080*3+28 == 3268 == 0x0CC4 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 1..." alt="" coords="185,5,335,32"/>
+<area shape="rect" href="../../dd/de2/a01134.html#a6859bf561a1eca8139e4028e618b3c87" title="初始化 实例" alt="" coords="5,5,137,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a23dc4837402b3f00571398807245d1fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23dc4837402b3f00571398807245d1fa">&#9670;&nbsp;</a></span>setDgereeRange()</h2>
+<a id="ae0e6b3884cc6354c6e1bb830ee2fab64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e6b3884cc6354c6e1bb830ee2fab64">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void QcScaleItem::setDgereeRange </td>
+          <td class="memname">void ExtraInfo::Update </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>minDegree</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>maxDegree</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00260">260</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">if</span>(!(minDegree&lt;maxDegree))</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">throw</span>( <a class="code" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695">&#x202A;InvalidValueRange</a>);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">&#x202A;mMinDegree</a> = minDegree;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#a2e785bd400a2c287be68ddfad824a54f">&#x202A;mMaxDegree</a> = maxDegree;</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a95a38bcec62192a5af223b37cd97a10a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95a38bcec62192a5af223b37cd97a10a">&#9670;&nbsp;</a></span>setMaxDegree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QcScaleItem::setMaxDegree </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>maxDegree</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../dd/de2/a01134.html">ExtraInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>ext</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00300">300</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;{</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">if</span>(maxDegree&lt;<a class="code" href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">&#x202A;mMinDegree</a>)</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">throw</span> (<a class="code" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06">&#x202A;InvalidDegreeRange</a>);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#a2e785bd400a2c287be68ddfad824a54f">&#x202A;mMaxDegree</a> = maxDegree;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede">&#x202A;update</a>();</div>
+<p>&#x202A;如果传入了同类, 直接复制数据 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ext</td><td>&#x202A;The extent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00157">157</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ext.<a class="code" href="../../dd/de2/a01134.html#ac6dca585c0fe66b6aec274565474f93e">&#x202A;len_</a>; i++)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            this-&gt;<a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a>[i] = ext.<a class="code" href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;data_</a>[i];</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dd/de2/a01134_a95a38bcec62192a5af223b37cd97a10a_icgraph.png" border="0" usemap="#dd/de2/a01134_a95a38bcec62192a5af223b37cd97a10a_icgraph" alt=""/></div>
-<map name="dd/de2/a01134_a95a38bcec62192a5af223b37cd97a10a_icgraph" id="dd/de2/a01134_a95a38bcec62192a5af223b37cd97a10a_icgraph">
-<area shape="rect" title=" " alt="" coords="269,5,459,32"/>
-<area shape="rect" href="../../db/d32/a01122.html#aa64a89868f350934162deec6001bbb8b" title=" " alt="" coords="5,5,221,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a1f6888bcf8655d82440d7325b07fa0d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f6888bcf8655d82440d7325b07fa0d6">&#9670;&nbsp;</a></span>setMaxValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QcScaleItem::setMaxValue </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>maxValue</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00285">285</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">if</span>(maxValue&lt;<a class="code" href="../../dd/de2/a01134.html#ac7d5fd3b6e7891e39a497b912e2f65c6">&#x202A;mMinValue</a> )</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">throw</span> (<a class="code" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695">&#x202A;InvalidValueRange</a>);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#aa265b0f81fd4187b1135d85d22492f2a">&#x202A;mMaxValue</a> = maxValue;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="code" href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede">&#x202A;update</a>();</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dd/de2/a01134_a1f6888bcf8655d82440d7325b07fa0d6_cgraph.png" border="0" usemap="#dd/de2/a01134_a1f6888bcf8655d82440d7325b07fa0d6_cgraph" alt=""/></div>
-<map name="dd/de2/a01134_a1f6888bcf8655d82440d7325b07fa0d6_cgraph" id="dd/de2/a01134_a1f6888bcf8655d82440d7325b07fa0d6_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,187,32"/>
-<area shape="rect" href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede" title=" " alt="" coords="235,5,345,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a0ea296e3cefb5efd32db98b3d4fdc032"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ea296e3cefb5efd32db98b3d4fdc032">&#9670;&nbsp;</a></span>setMinDegree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QcScaleItem::setMinDegree </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>minDegree</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00293">293</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">if</span>(minDegree&gt;<a class="code" href="../../dd/de2/a01134.html#a2e785bd400a2c287be68ddfad824a54f">&#x202A;mMaxDegree</a>)</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">throw</span> (<a class="code" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06">&#x202A;InvalidDegreeRange</a>);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">&#x202A;mMinDegree</a> = minDegree;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede">&#x202A;update</a>();</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dd/de2/a01134_a0ea296e3cefb5efd32db98b3d4fdc032_cgraph.png" border="0" usemap="#dd/de2/a01134_a0ea296e3cefb5efd32db98b3d4fdc032_cgraph" alt=""/></div>
-<map name="dd/de2/a01134_a0ea296e3cefb5efd32db98b3d4fdc032_cgraph" id="dd/de2/a01134_a0ea296e3cefb5efd32db98b3d4fdc032_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,191,32"/>
-<area shape="rect" href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede" title=" " alt="" coords="239,5,349,32"/>
-</map>
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dd/de2/a01134_a0ea296e3cefb5efd32db98b3d4fdc032_icgraph.png" border="0" usemap="#dd/de2/a01134_a0ea296e3cefb5efd32db98b3d4fdc032_icgraph" alt=""/></div>
-<map name="dd/de2/a01134_a0ea296e3cefb5efd32db98b3d4fdc032_icgraph" id="dd/de2/a01134_a0ea296e3cefb5efd32db98b3d4fdc032_icgraph">
-<area shape="rect" title=" " alt="" coords="269,5,455,32"/>
-<area shape="rect" href="../../db/d32/a01122.html#aa64a89868f350934162deec6001bbb8b" title=" " alt="" coords="5,5,221,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a7ffbb0504bcc7ebe2b64fd32dce943b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ffbb0504bcc7ebe2b64fd32dce943b2">&#9670;&nbsp;</a></span>setMinValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QcScaleItem::setMinValue </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>minValue</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00276">276</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;{</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">if</span>(minValue&gt;<a class="code" href="../../dd/de2/a01134.html#aa265b0f81fd4187b1135d85d22492f2a">&#x202A;mMaxValue</a>)</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">throw</span> (<a class="code" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695">&#x202A;InvalidValueRange</a>);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#ac7d5fd3b6e7891e39a497b912e2f65c6">&#x202A;mMinValue</a> = minValue;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede">&#x202A;update</a>();</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dd/de2/a01134_a7ffbb0504bcc7ebe2b64fd32dce943b2_cgraph.png" border="0" usemap="#dd/de2/a01134_a7ffbb0504bcc7ebe2b64fd32dce943b2_cgraph" alt=""/></div>
-<map name="dd/de2/a01134_a7ffbb0504bcc7ebe2b64fd32dce943b2_cgraph" id="dd/de2/a01134_a7ffbb0504bcc7ebe2b64fd32dce943b2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,183,32"/>
-<area shape="rect" href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede" title=" " alt="" coords="231,5,341,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a988dfdf20616c0ce7b1600c89b13eb93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a988dfdf20616c0ce7b1600c89b13eb93">&#9670;&nbsp;</a></span>setValueRange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QcScaleItem::setValueRange </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>minValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>maxValue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../df/d98/a00107_source.html#l00251">251</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;{</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">if</span>(!(minValue&lt;maxValue))</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">throw</span>( <a class="code" href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695">&#x202A;InvalidValueRange</a>);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#ac7d5fd3b6e7891e39a497b912e2f65c6">&#x202A;mMinValue</a> = minValue;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="../../dd/de2/a01134.html#aa265b0f81fd4187b1135d85d22492f2a">&#x202A;mMaxValue</a> = maxValue;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dd/de2/a01134_a988dfdf20616c0ce7b1600c89b13eb93_icgraph.png" border="0" usemap="#dd/de2/a01134_a988dfdf20616c0ce7b1600c89b13eb93_icgraph" alt=""/></div>
-<map name="dd/de2/a01134_a988dfdf20616c0ce7b1600c89b13eb93_icgraph" id="dd/de2/a01134_a988dfdf20616c0ce7b1600c89b13eb93_icgraph">
-<area shape="rect" title=" " alt="" coords="269,5,463,32"/>
-<area shape="rect" href="../../db/d32/a01122.html#aa64a89868f350934162deec6001bbb8b" title=" " alt="" coords="5,5,221,32"/>
+<div class="center"><img src="../../dd/de2/a01134_ae0e6b3884cc6354c6e1bb830ee2fab64_icgraph.png" border="0" usemap="#dd/de2/a01134_ae0e6b3884cc6354c6e1bb830ee2fab64_icgraph" alt=""/></div>
+<map name="dd/de2/a01134_ae0e6b3884cc6354c6e1bb830ee2fab64_icgraph" id="dd/de2/a01134_ae0e6b3884cc6354c6e1bb830ee2fab64_icgraph">
+<area shape="rect" title="如果传入了同类, 直接复制数据" alt="" coords="200,5,323,32"/>
+<area shape="rect" href="../../d0/d39/a01138.html#ae1d66344327880ba6329fe7d3ddf10f4" title="Appends a data// 将图像数据和附加数据写入" alt="" coords="5,5,152,32"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">结构体成员变量说明</h2>
-<a id="a2e785bd400a2c287be68ddfad824a54f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e785bd400a2c287be68ddfad824a54f">&#9670;&nbsp;</a></span>mMaxDegree</h2>
+<a id="adfe8c5daa97cd7977165b088c5b7b345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfe8c5daa97cd7977165b088c5b7b345">&#9670;&nbsp;</a></span>data_</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float QcScaleItem::mMaxDegree</td>
+          <td class="memname"><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>* ExtraInfo::data_</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d4/d81/a00110_source.html#l00150">150</a> 行定义.</p>
+<p>&#x202A;The data </p>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00065">65</a> 行定义.</p>
 
 </div>
 </div>
-<a id="aa265b0f81fd4187b1135d85d22492f2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa265b0f81fd4187b1135d85d22492f2a">&#9670;&nbsp;</a></span>mMaxValue</h2>
+<a id="ac6dca585c0fe66b6aec274565474f93e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6dca585c0fe66b6aec274565474f93e">&#9670;&nbsp;</a></span>len_</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float QcScaleItem::mMaxValue</td>
+          <td class="memname">const int ExtraInfo::len_ = 28</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d4/d81/a00110_source.html#l00148">148</a> 行定义.</p>
+<p>&#x202A;默认28个字节 </p>
 
-</div>
-</div>
-<a id="a06b8865ec400e3856d83bb382ec459fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06b8865ec400e3856d83bb382ec459fe">&#9670;&nbsp;</a></span>mMinDegree</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float QcScaleItem::mMinDegree</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d4/d81/a00110_source.html#l00149">149</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ac7d5fd3b6e7891e39a497b912e2f65c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7d5fd3b6e7891e39a497b912e2f65c6">&#9670;&nbsp;</a></span>mMinValue</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float QcScaleItem::mMinValue</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d4/d81/a00110_source.html#l00147">147</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00064">64</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/model/<a class="el" href="../../d4/d81/a00110_source.html">qcgaugewidget.h</a></li>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/model/<a class="el" href="../../df/d98/a00107_source.html">qcgaugewidget.cc</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01134_html_a2e785bd400a2c287be68ddfad824a54f"><div class="ttname"><a href="../../dd/de2/a01134.html#a2e785bd400a2c287be68ddfad824a54f">&#x202A;QcScaleItem::mMaxDegree</a></div><div class="ttdeci">&#x202A;float mMaxDegree</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00150">qcgaugewidget.h:150</a></div></div>
-<div class="ttc" id="aa01134_html_aa265b0f81fd4187b1135d85d22492f2a"><div class="ttname"><a href="../../dd/de2/a01134.html#aa265b0f81fd4187b1135d85d22492f2a">&#x202A;QcScaleItem::mMaxValue</a></div><div class="ttdeci">&#x202A;float mMaxValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00148">qcgaugewidget.h:148</a></div></div>
-<div class="ttc" id="aa01130_html_a22f153ab8a6e3b0f8f698b9ac97e3d79"><div class="ttname"><a href="../../d0/d61/a01130.html#a22f153ab8a6e3b0f8f698b9ac97e3d79">&#x202A;QcItem::QcItem</a></div><div class="ttdeci">&#x202A;QcItem(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00149">qcgaugewidget.cc:149</a></div></div>
-<div class="ttc" id="aa01130_html_a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695"><div class="ttname"><a href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695">&#x202A;QcItem::InvalidValueRange</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00107">qcgaugewidget.h:107</a></div></div>
-<div class="ttc" id="aa01130_html_a3a0a19af45e689ad291bf448a269aede"><div class="ttname"><a href="../../d0/d61/a01130.html#a3a0a19af45e689ad291bf448a269aede">&#x202A;QcItem::update</a></div><div class="ttdeci">&#x202A;void update()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00162">qcgaugewidget.cc:162</a></div></div>
-<div class="ttc" id="aa01130_html_a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06"><div class="ttname"><a href="../../d0/d61/a01130.html#a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06">&#x202A;QcItem::InvalidDegreeRange</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00107">qcgaugewidget.h:107</a></div></div>
-<div class="ttc" id="aa01134_html_ac7d5fd3b6e7891e39a497b912e2f65c6"><div class="ttname"><a href="../../dd/de2/a01134.html#ac7d5fd3b6e7891e39a497b912e2f65c6">&#x202A;QcScaleItem::mMinValue</a></div><div class="ttdeci">&#x202A;float mMinValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00147">qcgaugewidget.h:147</a></div></div>
-<div class="ttc" id="aa01134_html_a06b8865ec400e3856d83bb382ec459fe"><div class="ttname"><a href="../../dd/de2/a01134.html#a06b8865ec400e3856d83bb382ec459fe">&#x202A;QcScaleItem::mMinDegree</a></div><div class="ttdeci">&#x202A;float mMinDegree</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00149">qcgaugewidget.h:149</a></div></div>
+<div class="ttc" id="aa01134_html_a6ca7d8de93a474781db6109c7f4893d8acc2f93abf1d9950939f0ca6d28221cb1"><div class="ttname"><a href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8acc2f93abf1d9950939f0ca6d28221cb1">&#x202A;ExtraInfo::AD</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00093">IDOIFile.h:93</a></div></div>
+<div class="ttc" id="aa00074_html_a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6"><div class="ttname"><a href="../../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">&#x202A;FDPCAS</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00129">serialdata.h:129</a></div></div>
+<div class="ttc" id="aa01134_html_a437c648b69a3ca386efa04f393bb4b93"><div class="ttname"><a href="../../dd/de2/a01134.html#a437c648b69a3ca386efa04f393bb4b93">&#x202A;ExtraInfo::LoadDefault</a></div><div class="ttdeci">&#x202A;void LoadDefault(int flg=1)</div><div class="ttdoc">&#x202A;加载默认参数 // 其他信息每行不一样 长度取 1080*3+28 == 3268 == 0x0CC4 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 1...</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00111">IDOIFile.h:111</a></div></div>
+<div class="ttc" id="aa00074_html_a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c"><div class="ttname"><a href="../../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">&#x202A;FPitch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00124">serialdata.h:124</a></div></div>
+<div class="ttc" id="aa01134_html_a6ca7d8de93a474781db6109c7f4893d8a537fbb28661acd6f27d87032d4d40442"><div class="ttname"><a href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a537fbb28661acd6f27d87032d4d40442">&#x202A;ExtraInfo::HEADER</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00088">IDOIFile.h:88</a></div></div>
+<div class="ttc" id="aa01134_html_a6ca7d8de93a474781db6109c7f4893d8a3b42e23211b87c9ad5b233196a1e1521"><div class="ttname"><a href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a3b42e23211b87c9ad5b233196a1e1521">&#x202A;ExtraInfo::MAGNET</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00091">IDOIFile.h:91</a></div></div>
+<div class="ttc" id="aa01134_html_a6ca7d8de93a474781db6109c7f4893d8af910e0fd02c760a4354e6dccbd9fe4f3"><div class="ttname"><a href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8af910e0fd02c760a4354e6dccbd9fe4f3">&#x202A;ExtraInfo::EXTRA</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00094">IDOIFile.h:94</a></div></div>
+<div class="ttc" id="aa01134_html_a6ca7d8de93a474781db6109c7f4893d8a34a34829b830fa782cdf9932d849e48d"><div class="ttname"><a href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8a34a34829b830fa782cdf9932d849e48d">&#x202A;ExtraInfo::ANGLE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00090">IDOIFile.h:90</a></div></div>
+<div class="ttc" id="aa01134_html_adfe8c5daa97cd7977165b088c5b7b345"><div class="ttname"><a href="../../dd/de2/a01134.html#adfe8c5daa97cd7977165b088c5b7b345">&#x202A;ExtraInfo::data_</a></div><div class="ttdeci">&#x202A;uchar * data_</div><div class="ttdoc">&#x202A;The data</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00065">IDOIFile.h:65</a></div></div>
+<div class="ttc" id="aa01242_html_a3790e9109615a7c93f395e45d0d6166c"><div class="ttname"><a href="../../d7/dc5/a01242.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;SerialData::mc_Data_</a></div><div class="ttdeci">&#x202A;uchar * mc_Data_</div><div class="ttdoc">&#x202A;帧数据</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00033">serialdata.h:33</a></div></div>
+<div class="ttc" id="aa01134_html_ac6dca585c0fe66b6aec274565474f93e"><div class="ttname"><a href="../../dd/de2/a01134.html#ac6dca585c0fe66b6aec274565474f93e">&#x202A;ExtraInfo::len_</a></div><div class="ttdeci">&#x202A;const int len_</div><div class="ttdoc">&#x202A;默认28个字节</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00064">IDOIFile.h:64</a></div></div>
+<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00026">Commu.h:26</a></div></div>
+<div class="ttc" id="aa01134_html_a6ca7d8de93a474781db6109c7f4893d8ad1e0dcec5d3f762c9b75acf9673d0854"><div class="ttname"><a href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8ad1e0dcec5d3f762c9b75acf9673d0854">&#x202A;ExtraInfo::LENGTH</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00089">IDOIFile.h:89</a></div></div>
+<div class="ttc" id="aa01134_html_a6ca7d8de93a474781db6109c7f4893d8acc272196fae262a9a43d35d54202cd8e"><div class="ttname"><a href="../../dd/de2/a01134.html#a6ca7d8de93a474781db6109c7f4893d8acc272196fae262a9a43d35d54202cd8e">&#x202A;ExtraInfo::ENCODE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00092">IDOIFile.h:92</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dd/de2/a01134.html">&#x202A;QcScaleItem</a></li>
+    <li class="navelem"><a class="el" href="../../dd/de2/a01134.html">&#x202A;ExtraInfo</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

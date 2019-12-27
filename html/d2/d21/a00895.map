@@ -1,0 +1,23 @@
+<map id="Config" name="Config">
+<area shape="rect" id="node1" title="全部参数信息 包括运行参数和系统配置参数" alt="" coords="1159,347,1217,374"/>
+<area shape="rect" id="node2" href="$d0/d82/a00857.html" title="系统运行参数" alt="" coords="962,273,1034,299"/>
+<area shape="rect" id="node3" href="$d0/d82/a00857.html#d3/db2/a00869" title="设置状态, 包含相机 和串口 ,设备硬盘参数" alt="" coords="662,106,793,133"/>
+<area shape="rect" id="node4" href="$d0/d82/a00857.html#df/d41/a00881" title="硬盘对象 存储 硬盘使用量和总量" alt="" coords="403,5,541,47"/>
+<area shape="rect" id="node5" href="$d0/d82/a00857.html#d9/d22/a00873" title="相机结构体" alt="" coords="403,71,541,112"/>
+<area shape="rect" id="node6" href="$d0/d82/a00857.html#d1/de7/a00877" title="窗口状态信息" alt="" coords="403,136,541,177"/>
+<area shape="rect" id="node7" title="STL class" alt="" coords="181,189,261,215"/>
+<area shape="rect" id="node11" href="$d0/d82/a00857.html#de/dc8/a00889" title="A show mode." alt="" coords="403,201,541,243"/>
+<area shape="rect" id="node12" href="$d0/d82/a00857.html#dc/d2c/a00893" title="调试 使用的配置路径" alt="" coords="403,269,541,311"/>
+<area shape="rect" id="node8" title="STL class" alt="" coords="5,181,132,223"/>
+<area shape="rect" id="node9" href="$d0/d82/a00857.html#dd/d7b/a00865" title="根据 UI 尺寸记录 包含 原始图像 展开图像 拼接图像" alt="" coords="659,270,795,297"/>
+<area shape="rect" id="node10" href="$d0/d82/a00857.html#db/d18/a00885" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="663,209,792,235"/>
+<area shape="rect" id="node13" href="$dd/dd5/a00861.html" title="运行过程中的 图像参数" alt="" coords="663,321,791,347"/>
+<area shape="rect" id="node14" href="$d3/da5/a00973.html" title="存储 系统运行参数 按照参数具体类型进行细分" alt="" coords="951,498,1045,525"/>
+<area shape="rect" id="node15" href="$d3/da5/a00973.html#d4/d95/a00989" title="A structure hole." alt="" coords="657,371,798,398"/>
+<area shape="rect" id="node16" href="$d3/da5/a00973.html#d5/d6c/a00977" title="默认类型使用 int 但是很多类型可以使用char 或者 bool 类型进行空间压缩 #TODO 按照类型考虑每种类型的 空间占用 自定义 文件个数 尽量使用简单类型 避免占用更多 存在字节对齐的情况,..." alt="" coords="639,422,816,449"/>
+<area shape="rect" id="node17" href="$d3/da5/a00973.html#da/deb/a00985" title="编码器信息 脉冲" alt="" coords="653,473,801,499"/>
+<area shape="rect" id="node18" href="$d3/da5/a00973.html#dd/d24/a00981" title="探头信息" alt="" coords="653,523,802,550"/>
+<area shape="rect" id="node19" href="$d3/da5/a00973.html#df/d59/a01001" title="额外信息" alt="" coords="654,574,801,601"/>
+<area shape="rect" id="node20" href="$d3/da5/a00973.html#da/d0a/a00993" title="A structure image." alt="" coords="652,625,803,651"/>
+<area shape="rect" id="node21" href="$d3/da5/a00973.html#d0/d28/a00997" title="电子罗盘参数" alt="" coords="642,675,813,702"/>
+</map>

@@ -1,15 +1,19 @@
 var searchData=
 [
-  ['fcrc_2470',['FCRC',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd',1,'serialdata.h']]],
-  ['fdad_2471',['FDAD',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69a32ad94a056c2ce90647fbe4b05917f69',1,'serialdata.h']]],
-  ['fdcrc_2472',['FDCRC',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69a674062e268d377e4b870d562c9ebbcda',1,'serialdata.h']]],
-  ['fdheader_2473',['FDHeader',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69ab04e525db8e7eed9e802a0e4482fc285',1,'serialdata.h']]],
-  ['fdpca_2474',['FDPCA',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69ae71e06fb880306f3478c2aea5672bf2c',1,'serialdata.h']]],
-  ['fdpcas_2475',['FDPCAS',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69afa388ab20b910d4664357cf983cbbaf1',1,'serialdata.h']]],
-  ['featherneedle_2476',['FeatherNeedle',['../de/dcb/a01263.html#a80aa5aff29babb027bc50f82d263627fae1d3d0716907de6d5c406d4472db2999',1,'QcNeedleItem']]],
-  ['fheader_2477',['FHeader',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69ab1a2a67df9eaf0ff5b5883c95225a398',1,'serialdata.h']]],
-  ['fheading_2478',['FHeading',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69acf0e468fbfa609a39473ec70afe86d90',1,'serialdata.h']]],
-  ['flength_2479',['FLength',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69a0321ee03c1f9549f7712e26e86bbaaa4',1,'serialdata.h']]],
-  ['fpitch_2480',['FPitch',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69a61bc27c007c019aea91ae29e6fa9e5cd',1,'serialdata.h']]],
-  ['froll_2481',['FRoll',['../d0/d89/a00071.html#a6de22e58cff280e195408775bbf9fb69a08fac792809abb7efbf40a4ba528fff7',1,'serialdata.h']]]
+  ['fcrc_2558',['FCRC',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd',1,'serialdata.h']]],
+  ['fdad_2559',['FDAD',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e',1,'serialdata.h']]],
+  ['fdcrc_2560',['FDCRC',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f',1,'serialdata.h']]],
+  ['fdheader_2561',['FDHeader',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33',1,'serialdata.h']]],
+  ['fdpca_2562',['FDPCA',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900',1,'serialdata.h']]],
+  ['fdpcas_2563',['FDPCAS',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6',1,'serialdata.h']]],
+  ['featherneedle_2564',['FeatherNeedle',['../d5/da0/a01342.html#a80aa5aff29babb027bc50f82d263627fae1d3d0716907de6d5c406d4472db2999',1,'QcNeedleItem']]],
+  ['fheader_2565',['FHeader',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1',1,'serialdata.h']]],
+  ['fheading_2566',['FHeading',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459',1,'serialdata.h']]],
+  ['flength_2567',['FLength',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010',1,'serialdata.h']]],
+  ['fmagnetx_2568',['FMagnetX',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff',1,'serialdata.h']]],
+  ['fmagnety_2569',['FMagnetY',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a2f5d2fce897e6c00658e0e841a7f60d2',1,'serialdata.h']]],
+  ['fmagnetz_2570',['FMagnetZ',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69aa4388aeb51d9f5e7291dfdeb776bb883',1,'serialdata.h']]],
+  ['fpitch_2571',['FPitch',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c',1,'serialdata.h']]],
+  ['froll_2572',['FRoll',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c',1,'serialdata.h']]],
+  ['fsumcheck_2573',['FSumCheck',['../db/db6/a00074.html#a6de22e58cff280e195408775bbf9fb69a83e8f8db18f7341eb2af494f29a60984',1,'serialdata.h']]]
 ];

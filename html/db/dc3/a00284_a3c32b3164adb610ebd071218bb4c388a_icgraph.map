@@ -1,0 +1,4 @@
+<map id="getDiskName" name="getDiskName">
+<area shape="rect" id="node1" title="获取电脑所有盘符名" alt="" coords="164,5,264,32"/>
+<area shape="rect" id="node2" href="$db/dc3/a00284.html#a09f96a1e0ee1aead4df603983e3176b2" title="获取本磁盘的占用" alt="" coords="5,5,116,32"/>
+</map>

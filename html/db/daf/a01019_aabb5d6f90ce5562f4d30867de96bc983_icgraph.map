@@ -1,0 +1,9 @@
+<map id="CQueue::Pop" name="CQueue::Pop">
+<area shape="rect" id="node1" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="736,97,836,123"/>
+<area shape="rect" id="node2" href="$d6/d27/a01163.html#a14c17111de0cbe2903eee9ab0f388e53" title="单次预览和连续预览" alt="" coords="489,5,674,47"/>
+<area shape="rect" id="node5" href="$dc/d2d/a01183.html#a0883915d51196a8c6f48eead87c1d05c" title=" " alt="" coords="525,71,637,98"/>
+<area shape="rect" id="node6" href="$d6/d36/a01011.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="530,122,633,149"/>
+<area shape="rect" id="node7" href="$d6/d27/a01163.html#a89c4f17fbaeaba0884d96a9932973256" title="Slot show camera" alt="" coords="475,173,688,199"/>
+<area shape="rect" id="node3" href="$d6/d27/a01163.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,93,427,119"/>
+<area shape="rect" id="node4" href="$d6/d27/a01163.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,93,168,119"/>
+</map>

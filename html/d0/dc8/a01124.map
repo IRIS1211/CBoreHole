@@ -1,4 +1,4 @@
-<map id="Ui::WorkWindow" name="Ui::WorkWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,124,107"/>
-<area shape="rect" id="node2" href="$dd/de4/a01121.html" title=" " alt="" coords="5,5,124,32"/>
+<map id="FileHead" name="FileHead">
+<area shape="rect" id="node1" title="定义文件头, 包含系统参数和文件工程参数" alt="" coords="47,95,120,121"/>
+<area shape="rect" id="node2" href="$d9/d2e/a00056.html#d0/d61/a01130" title="定义 文件头信息" alt="" coords="5,5,161,32"/>
 </map>

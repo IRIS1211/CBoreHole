@@ -1,0 +1,4 @@
+<map id="SerialData::CharArr2Str" name="SerialData::CharArr2Str">
+<area shape="rect" id="node1" title="将串口数据 转换成字符串 // 数组 char 转换成字符串 用于查看" alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$d8/d41/a00038.html#a2bccd732252a844a62b3e0bdc7de82d8" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="212,5,317,32"/>
+</map>

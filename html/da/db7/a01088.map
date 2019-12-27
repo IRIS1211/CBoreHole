@@ -1,4 +1,9 @@
-<map id="QImgLabel" name="QImgLabel">
-<area shape="rect" id="node1" title="自定义 label 能够完成图像显示, 继承事件," alt="" coords="5,80,89,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="16,5,79,32"/>
+<map id="CamCapture" name="CamCapture">
+<area shape="rect" id="node1" title="摄像头 抓取对象, 循环抓取对象数据到缓冲队列中" alt="" coords="37,421,131,448"/>
+<area shape="rect" id="node2" title=" " alt="" coords="6,288,77,315"/>
+<area shape="rect" id="node3" href="$db/d32/a01122.html" title=" " alt="" coords="101,288,235,315"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,184,155,211"/>
+<area shape="rect" id="node5" title="STL class" alt="" coords="23,95,137,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="61,5,99,32"/>
+<area shape="rect" id="node7" href="$db/d32/a01122.html" title=" " alt="" coords="179,184,279,211"/>
 </map>

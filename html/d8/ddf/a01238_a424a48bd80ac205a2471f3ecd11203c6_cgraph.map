@@ -1,0 +1,19 @@
+<map id="Serial::SerialInit" name="Serial::SerialInit">
+<area shape="rect" id="node1" title="Initializes this object" alt="" coords="5,183,119,209"/>
+<area shape="rect" id="node2" href="$d8/ddf/a01238.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="385,5,555,32"/>
+<area shape="rect" id="node4" href="$d8/ddf/a01238.html#a97f68664ea64cf379c2e35390a0b8ab3" title="Handles the open serial" alt="" coords="169,81,335,108"/>
+<area shape="rect" id="node7" href="$d8/ddf/a01238.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="607,132,771,159"/>
+<area shape="rect" id="node8" href="$d8/ddf/a01238.html#ad4bdb6d6267f052b1768659da61d58c0" title="Handles the read data" alt="" coords="167,183,337,209"/>
+<area shape="rect" id="node9" href="$d8/ddf/a01238.html#aa7833e90f2e6f7f6fb3a1b4e6ae908a1" title="Handles the timer described by t // 初始化时间" alt="" coords="195,233,309,260"/>
+<area shape="rect" id="node10" href="$d8/ddf/a01238.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="178,284,326,311"/>
+<area shape="rect" id="node15" href="$d8/ddf/a01238.html#abdab3f6eff663933b5b0a293035418fd" title="Slot write data // 将字符串写入到串口中去" alt="" coords="177,336,327,363"/>
+<area shape="rect" id="node3" href="$d8/ddf/a01238.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="828,31,981,57"/>
+<area shape="rect" id="node5" href="$d8/ddf/a01238.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="395,81,545,108"/>
+<area shape="rect" id="node6" href="$d8/ddf/a01238.html#a1b596e9793b3e992968d7b50392b43c0" title="Gets serial by port no" alt="" coords="603,81,776,108"/>
+<area shape="rect" id="node11" href="$d8/ddf/a01238.html#a7620016be54cb445876b796aad0e062f" title="Reads the data" alt="" coords="392,283,548,309"/>
+<area shape="rect" id="node12" href="$d8/d01/a01410.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="2 q byte array" alt="" coords="603,281,775,308"/>
+<area shape="rect" id="node13" href="$d8/df1/a01414.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="824,281,985,308"/>
+<area shape="rect" id="node14" href="$d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="1033,281,1188,308"/>
+<area shape="rect" id="node16" href="$d8/ddf/a01238.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data" alt="" coords="391,336,549,363"/>
+<area shape="rect" id="node17" href="$d8/df1/a01414.html#a93b60f1fbf52d3b43700bfab7e4eb2bb" title="char 类型与 string的相互转换" alt="" coords="607,333,772,374"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Main entry&#45;point for this application" alt="" coords="5,107,56,133"/>
+<area shape="rect" id="node2" href="$d9/db6/a00146.html#a0293ef3ef3375c9894fe3db505a60769" title="Gets CPU information" alt="" coords="119,5,202,32"/>
+<area shape="rect" id="node3" href="$d9/db6/a00146.html#a2cc7b6540ef4aeed6f2769b805aecebd" title="Gets hard disk information" alt="" coords="104,56,217,83"/>
+<area shape="rect" id="node5" href="$d9/db6/a00146.html#aeba0daa882e5c27c24b426b3416b6ac0" title="Gets memory information" alt="" coords="107,107,214,133"/>
+<area shape="rect" id="node6" href="$d9/db6/a00146.html#ace9993989d019391a09896185362111a" title="Gets network information" alt="" coords="107,157,214,184"/>
+<area shape="rect" id="node7" href="$d9/db6/a00146.html#a1703af237cc11284e31f549d41d29d4e" title="Gets operating system information" alt="" coords="122,208,199,235"/>
+<area shape="rect" id="node4" href="$d9/db6/a00146.html#abb6b293a88f87694a7ee2665cc2146c3" title="Executes the command operation" alt="" coords="265,56,343,83"/>
+</map>

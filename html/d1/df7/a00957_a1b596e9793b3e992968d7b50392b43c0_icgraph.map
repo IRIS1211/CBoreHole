@@ -1,0 +1,12 @@
+<map id="Serial::GetSerialByPortNo" name="Serial::GetSerialByPortNo">
+<area shape="rect" id="node1" title="Gets serial by port no" alt="" coords="1115,31,1288,57"/>
+<area shape="rect" id="node2" href="$d1/df7/a00957.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="916,31,1067,57"/>
+<area shape="rect" id="node3" href="$d1/df7/a00957.html#aebd603c06e40ba598d0f3f2cbf7ea8c4" title="Handles the open serial" alt="" coords="701,5,868,32"/>
+<area shape="rect" id="node5" href="$d1/df7/a00957.html#ad1a697720cbc1f1022a4f620d8fd8de2" title="Initializes this object" alt="" coords="745,56,825,83"/>
+<area shape="rect" id="node4" href="$d1/df7/a00957.html#adda4ed09582ac92c92b16b55b471a6d4" title="Initializes a new instance of the Serial class" alt="" coords="491,5,587,32"/>
+<area shape="rect" id="node6" href="$d2/d57/a01033.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,56,653,83"/>
+<area shape="rect" id="node10" href="$de/db1/a00197.html#ad86addbaf197fc6470e8c8c197efed66" title=" " alt="" coords="490,107,587,133"/>
+<area shape="rect" id="node7" href="$d2/d57/a01033.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,56,376,83"/>
+<area shape="rect" id="node8" href="$d7/d9a/a00152.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="79,27,130,53"/>
+<area shape="rect" id="node9" href="$da/deb/a00985.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,78,204,119"/>
+</map>

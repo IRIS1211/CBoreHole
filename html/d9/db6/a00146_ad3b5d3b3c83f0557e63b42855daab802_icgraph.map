@@ -1,0 +1,4 @@
+<map id="CalcPCA" name="CalcPCA">
+<area shape="rect" id="node1" title="计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据" alt="" coords="188,5,263,32"/>
+<area shape="rect" id="node2" href="$d6/d6e/a01137.html#a071b93d33a06aea86d23514be375d4cd" title="根据串口数据 更新当前类的值" alt="" coords="5,5,140,32"/>
+</map>

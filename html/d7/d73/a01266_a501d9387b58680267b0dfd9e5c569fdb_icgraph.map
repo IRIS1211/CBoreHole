@@ -1,0 +1,9 @@
+<map id="SerialProc::ProcData" name="SerialProc::ProcData">
+<area shape="rect" id="node1" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="1073,42,1217,69"/>
+<area shape="rect" id="node2" href="$d7/d73/a01266.html#a2d4464068d1094563166f6f26976c825" title="循环处理 串口 数据" alt="" coords="848,42,1025,69"/>
+<area shape="rect" id="node3" href="$d7/d73/a01266.html#a7a4d2b37a6f00109fdde7b593b596d36" title="Slot timer run 设置定时器时间到了之后执行的循环操作" alt="" coords="653,35,800,76"/>
+<area shape="rect" id="node4" href="$d7/d73/a01266.html#a4d356bce746d2a91ab02ec10914a34b2" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="439,42,605,69"/>
+<area shape="rect" id="node5" href="$d7/d73/a01266.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="200,42,391,69"/>
+<area shape="rect" id="node6" href="$de/d33/a01274.html#a7597205c96689c706eea3c64d87ba180" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node7" href="$d5/ddf/a00224.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="30,71,127,98"/>
+</map>

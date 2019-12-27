@@ -1,0 +1,6 @@
+<map id="Serial::OpenSerialPort" name="Serial::OpenSerialPort">
+<area shape="rect" id="node1" title="Opens serial port" alt="" coords="5,23,156,50"/>
+<area shape="rect" id="node2" href="$d0/d5b/a00933.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="425,23,579,50"/>
+<area shape="rect" id="node3" href="$d0/d5b/a00933.html#a1b596e9793b3e992968d7b50392b43c0" title="Gets serial by port no" alt="" coords="204,23,377,50"/>
+<area shape="rect" id="node4" href="$d0/d5b/a00933.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="209,74,373,101"/>
+</map>

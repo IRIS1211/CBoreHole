@@ -1,0 +1,8 @@
+<map id="SetWindow::on_btn_cancel_clicked" name="SetWindow::on_btn_cancel_clicked">
+<area shape="rect" id="node1" title="Handles button cancel clicked signals" alt="" coords="5,49,185,90"/>
+<area shape="rect" id="node2" href="$d1/d0d/a01191.html#a0393c0a0d64fafce49cfb6b3eccafcd1" title="Initializes the user interface" alt="" coords="233,56,359,83"/>
+<area shape="rect" id="node3" href="$d1/d34/a01211.html#a360026a5aa3f54d505b0a6deba81201e" title="将内存与组件关联" alt="" coords="407,31,551,57"/>
+<area shape="rect" id="node6" href="$d5/d39/a01219.html#a2a5d6a071ffbe6f0f5727afc211b5fb9" title="Associates" alt="" coords="413,81,544,108"/>
+<area shape="rect" id="node4" href="$d1/d34/a01211.html#a8bebc9d382cfe7dac27fcfbd17d1193d" title="数据输入完成 将数据存储相应内存中 暂时只考虑 数据部分, 将填入的数据内容给 获取出来" alt="" coords="599,5,785,32"/>
+<area shape="rect" id="node5" href="$d1/d34/a01211.html#ac9586e57923f41790ae07939ec14ccd1" title="将数据同一显示" alt="" coords="619,56,765,83"/>
+</map>

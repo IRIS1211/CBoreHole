@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_data.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.6.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d5/d42/a00269_source.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">utils_data.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/d42/a00269.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef UTILS_DATA_H__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define  UTILS_DATA_H__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; <span class="comment">// 定义 简单使用 的 FLOAT 类型的PI 参数</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d5/d42/a00269.html#af9ba998534fe82018ab3f06b05fa1bcb">   13</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span>  <a class="code" href="../../d5/d42/a00269.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a> = 3.141592f;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../da/de3/a01398.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../da/de3/a01398.html">&#x202A;Utils_Data</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../da/de3/a01398.html#a8f7b3582112c35f160f4f8a433bc6427">   36</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../da/de3/a01398.html#a8f7b3582112c35f160f4f8a433bc6427">&#x202A;LeastSquare</a>(<span class="keyword">const</span> std::vector&lt;T1&gt; &amp;data_x,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                            <span class="keyword">const</span> std::vector&lt;T2&gt;&amp; data_y,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                            <span class="keywordtype">float</span> &amp;var_a,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                            <span class="keywordtype">float</span> &amp;var_b)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">float</span> t1 = 0.0f, t2 = 0.0f, t3 = 0.0f, t4 = 0.0f;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (data_x.empty() || data_y.empty())</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">size_t</span> N = data_x.size();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">// 两个数组的长度一致</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        assert(data_x.size() == data_y.size());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        T1 x;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        T2 y;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        var_a = 0.0f, var_b = 0.0f;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; data_x.size(); i++)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            x = data_x[i];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            y = data_y[i];</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            t1 += x*x;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            t2 += x;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            t3 += x*y;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            t4 += y;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">// 计算 分子</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">float</span> down = (t1*N - t2*t2);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (abs(down) &lt; 0.1f)    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        var_a = (t3*N - t2*t4) / down;  <span class="comment">// 得到参数 a</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        var_b = (t1*t4 - t2*t3) / down;        <span class="comment">// 得到参数 b</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../da/de3/a01398.html#a79f31a9b6dfaf1b83d2c35b85746c464">   70</a></span>&#160;    <span class="keyword">static</span> std::vector&lt;T&gt; <a class="code" href="../../da/de3/a01398.html#a79f31a9b6dfaf1b83d2c35b85746c464">&#x202A;MediaBlur</a>(<span class="keyword">const</span> std::vector&lt;T&gt; &amp;src, <span class="keywordtype">int</span> ksize)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        std::vector&lt;T&gt; dst(src.size());</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">size_t</span> H = src.size();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = ksize / 2; i &lt; H - ksize / 2; i++)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            std::vector&lt;T&gt; tmp_windows(ksize);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="comment">// 定义窗口 滑动滤波</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; ksize; j++)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                tmp_windows[j] = src[i - ksize / 2 + j];</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="comment">//   Order elements (only half of them)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; ksize / 2 + 1; ++j)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="comment">//   Find position of minimum element</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordtype">int</span> min = j;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = j + 1; k &lt; ksize; ++k)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <span class="keywordflow">if</span> (tmp_windows[k] &lt; tmp_windows[min])</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                        min = k;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="comment">//   Put found minimum element in its place</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordtype">int</span> temp = tmp_windows[j];</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                tmp_windows[j] = tmp_windows[min];</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                tmp_windows[min] = temp;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            dst[i] = tmp_windows[ksize / 2];</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> dst;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="../../da/de3/a01398.html#a687394b49f27b840644efcd9fd4939d7">  101</a></span>&#160;    <span class="keyword">static</span> std::vector&lt;T&gt; <a class="code" href="../../da/de3/a01398.html#a687394b49f27b840644efcd9fd4939d7">&#x202A;MeanBlur</a>(<span class="keyword">const</span> std::vector&lt;T&gt; &amp;src, <span class="keywordtype">int</span> ksize)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        std::vector&lt;T&gt; dst(src.size());</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">size_t</span> H = src.size();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = ksize / 2; i &lt; H - ksize / 2; i++)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordtype">float</span> avg = 0.0f;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; ksize; j++)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                avg += (float)src[i - ksize / 2 + j] / ksize;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            dst[i] = avg;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ksize / 2; i++)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            dst[i] = (float)src[i];</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            dst[H - 1 - i] = (float)src[H - 1 - i];</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> dst;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="../../da/de3/a01398.html#a9aeccc7a52077e9fa2494a2033879391">&#x202A;FastSin</a>(<span class="keywordtype">float</span> x);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="../../da/de3/a01398.html#aa86beee7623347a625d209cb2d4e9d6d">&#x202A;FastCos</a>(<span class="keywordtype">float</span> x);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="../../da/de3/a01398.html#a3608435d58a43711699c72db402154fb">&#x202A;Calc</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *dat, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;};</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif // UTILS_DATA_H__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01398_html_a8f7b3582112c35f160f4f8a433bc6427"><div class="ttname"><a href="../../da/de3/a01398.html#a8f7b3582112c35f160f4f8a433bc6427">&#x202A;Utils_Data::LeastSquare</a></div><div class="ttdeci">&#x202A;static void LeastSquare(const std::vector&lt; T1 &gt; &amp;data_x, const std::vector&lt; T2 &gt; &amp;data_y, float &amp;var_a, float &amp;var_b)</div><div class="ttdoc">&#x202A;閫氳繃xy 寰楀埌 鏁版嵁鐨?鏈€灏忎簩涔樺弬鏁?</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00036">utils_data.h:36</a></div></div>
+<div class="ttc" id="aa01398_html_a79f31a9b6dfaf1b83d2c35b85746c464"><div class="ttname"><a href="../../da/de3/a01398.html#a79f31a9b6dfaf1b83d2c35b85746c464">&#x202A;Utils_Data::MediaBlur</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; MediaBlur(const std::vector&lt; T &gt; &amp;src, int ksize)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00070">utils_data.h:70</a></div></div>
+<div class="ttc" id="aa01398_html_a9aeccc7a52077e9fa2494a2033879391"><div class="ttname"><a href="../../da/de3/a01398.html#a9aeccc7a52077e9fa2494a2033879391">&#x202A;Utils_Data::FastSin</a></div><div class="ttdeci">&#x202A;static float FastSin(float x)</div><div class="ttdoc">&#x202A;Utilities data class</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/a00266_source.html#l00023">utils_data.cc:23</a></div></div>
+<div class="ttc" id="aa01398_html_a3608435d58a43711699c72db402154fb"><div class="ttname"><a href="../../da/de3/a01398.html#a3608435d58a43711699c72db402154fb">&#x202A;Utils_Data::Calc</a></div><div class="ttdeci">&#x202A;static int Calc(uchar *dat, int len)</div><div class="ttdoc">&#x202A;通用计算函数 计算从 指针开始的指定位数的 计算结果</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/a00266_source.html#l00078">utils_data.cc:78</a></div></div>
+<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00026">Commu.h:26</a></div></div>
+<div class="ttc" id="aa00269_html_af9ba998534fe82018ab3f06b05fa1bcb"><div class="ttname"><a href="../../d5/d42/a00269.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a></div><div class="ttdeci">&#x202A;const float FLOAT_PI</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00013">utils_data.h:13</a></div></div>
+<div class="ttc" id="aa01398_html_aa86beee7623347a625d209cb2d4e9d6d"><div class="ttname"><a href="../../da/de3/a01398.html#aa86beee7623347a625d209cb2d4e9d6d">&#x202A;Utils_Data::FastCos</a></div><div class="ttdeci">&#x202A;static float FastCos(float x)</div><div class="ttdoc">&#x202A;Fast cosine</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/a00266_source.html#l00060">utils_data.cc:60</a></div></div>
+<div class="ttc" id="aa01398_html"><div class="ttname"><a href="../../da/de3/a01398.html">&#x202A;Utils_Data</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00016">utils_data.h:16</a></div></div>
+<div class="ttc" id="aa01398_html_a687394b49f27b840644efcd9fd4939d7"><div class="ttname"><a href="../../da/de3/a01398.html#a687394b49f27b840644efcd9fd4939d7">&#x202A;Utils_Data::MeanBlur</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; MeanBlur(const std::vector&lt; T &gt; &amp;src, int ksize)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00101">utils_data.h:101</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d5/d42/a00269.html">&#x202A;utils_data.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

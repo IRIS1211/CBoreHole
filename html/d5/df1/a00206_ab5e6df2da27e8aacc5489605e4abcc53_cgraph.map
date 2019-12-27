@@ -1,0 +1,19 @@
+<map id="TEST_CASE" name="TEST_CASE">
+<area shape="rect" id="node1" title=" " alt="" coords="5,208,103,235"/>
+<area shape="rect" id="node2" href="$de/de6/a01063.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2" title="写入新一批的图像" alt="" coords="163,5,309,32"/>
+<area shape="rect" id="node3" href="$d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="151,56,321,83"/>
+<area shape="rect" id="node5" href="$d3/da4/a01343.html#aa797e5e8119ca57f492ea5641817d49a" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="163,107,309,133"/>
+<area shape="rect" id="node7" href="$de/de6/a01063.html#a866e2bf6ee5717435128e3a07500a957" title="bool ReadMat(cv::Mat &amp;img,int ) ; // 考虑循环读取文件操作 , 可能存在问题" alt="" coords="172,208,300,235"/>
+<area shape="rect" id="node8" href="$de/de6/a01063.html#a44bebcfa4609689ed618201d45a0f027" title="Reads one row extent" alt="" coords="369,157,544,184"/>
+<area shape="rect" id="node9" href="$de/de6/a01063.html#a2fe58433b8df4ab155d7e0c325021cdf" title="Reads one row matrix" alt="" coords="371,259,543,285"/>
+<area shape="rect" id="node11" href="$de/de6/a01063.html#a70c5db6374434b417972bb28a1144029" title="文件操作" alt="" coords="177,309,295,336"/>
+<area shape="rect" id="node12" href="$d7/dd6/a01167.html#a73c1b6474d82fb88844ea63d54a19b1d" title="字符串 转 数组 // 将string 字符串转换成 数组数据 将人工输入的字符串转换成用于处理的数据" alt="" coords="157,360,315,387"/>
+<area shape="rect" id="node16" href="$de/de6/a01063.html#a5c968f9f3721c77545c419d5ea519ca0" title="Updates the para" alt="" coords="165,411,307,437"/>
+<area shape="rect" id="node4" href="$d3/da4/a01343.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="379,56,534,83"/>
+<area shape="rect" id="node6" href="$d3/da4/a01343.html#ab0bd05f35427650f2e295c18ba6938b3" title="num 转换成 字符串 前 补零" alt="" coords="371,107,543,133"/>
+<area shape="rect" id="node10" href="$de/de6/a01063.html#a5fec0ab1ea64f58af14e26f7e4ad0aac" title="Resets the p file described by s" alt="" coords="387,208,527,235"/>
+<area shape="rect" id="node13" href="$d3/da4/a01343.html#ac881e47f67b62f0e112ad8778404720c" title="Hexadecimal 2 character array hex 字符串 转换成 数组" alt="" coords="371,360,542,387"/>
+<area shape="rect" id="node14" href="$d3/da4/a01343.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="592,360,753,387"/>
+<area shape="rect" id="node15" href="$d3/da4/a01343.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="801,360,956,387"/>
+<area shape="rect" id="node17" href="$de/de6/a01063.html#ab0e31dfdd11ff5a789178ff0e70dc15c" title="Writes the para" alt="" coords="391,411,522,437"/>
+</map>

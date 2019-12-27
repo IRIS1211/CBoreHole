@@ -1,4 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,84,32"/>
-<area shape="rect" id="node2" href="$d1/d34/a01211.html" title="继承Qt 自定义文件 提升成为自己的组件, 修改窗口的值之后 保证相应的值 直接赋值到相应的内存中 如果关联了相应的 点击按钮, 按钮点击之后可以触发 数据更改" alt="" coords="132,5,211,32"/>
+<area shape="rect" id="node2" href="$dc/ded/a01290.html" title="继承Qt 自定义文件 提升成为自己的组件, 修改窗口的值之后 保证相应的值 直接赋值到相应的内存中 如果关联了相应的 点击按钮, 按钮点击之后可以触发 数据更改" alt="" coords="132,5,211,32"/>
 </map>

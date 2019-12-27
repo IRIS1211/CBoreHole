@@ -1,23 +1,20 @@
-<map id="ImageProc" name="ImageProc">
-<area shape="rect" id="node1" title="An image show." alt="" coords="1609,161,1693,187"/>
-<area shape="rect" id="node2" href="$d2/d6e/a00966.html" title="An idoi file." alt="" coords="1455,161,1523,187"/>
-<area shape="rect" id="node3" href="$d2/d6e/a00966.html#d0/daf/a00970" title="定义指针组,指向不同的位置 不要直接使用此处指针操作, 只能获取值, 不能更新值" alt="" coords="1217,91,1341,118"/>
-<area shape="rect" id="node4" title="STL class" alt="" coords="959,54,1049,81"/>
-<area shape="rect" id="node5" title="STL class" alt="" coords="727,47,856,88"/>
-<area shape="rect" id="node6" title="STL class" alt="" coords="541,47,677,88"/>
-<area shape="rect" id="node7" title="STL class" alt="" coords="361,5,490,47"/>
-<area shape="rect" id="node8" title="STL class" alt="" coords="155,42,309,69"/>
-<area shape="rect" id="node10" title="STL class" alt="" coords="359,71,492,112"/>
-<area shape="rect" id="node9" title="STL class" alt="" coords="5,42,105,69"/>
-<area shape="rect" id="node11" title="STL class" alt="" coords="1239,146,1319,173"/>
-<area shape="rect" id="node12" title="STL class" alt="" coords="941,131,1067,172"/>
-<area shape="rect" id="node13" href="$df/d88/a00962.html" title="#TODO: 完善拓展信息内容 定义拓展信息内容" alt="" coords="1257,206,1302,233"/>
-<area shape="rect" id="node14" href="$de/d41/a01030.html" title="存储 系统运行参数 按照参数具体类型进行细分" alt="" coords="1232,325,1327,351"/>
-<area shape="rect" id="node15" href="$de/d41/a01030.html#dd/d57/a01054" title="电子罗盘参数" alt="" coords="909,197,1099,223"/>
-<area shape="rect" id="node16" href="$de/d41/a01030.html#d4/d56/a01042" title="编码器信息 脉冲" alt="" coords="920,247,1088,274"/>
-<area shape="rect" id="node17" href="$de/d41/a01030.html#de/d91/a01034" title="默认类型使用 int 但是很多类型可以使用char 或者 bool 类型进行空间压缩 #TODO 按照类型考虑每种类型的 空间占用 自定义 文件个数 尽量使用简单类型 避免占用更多 存在字节对齐的情况,..." alt="" coords="905,298,1103,325"/>
-<area shape="rect" id="node18" href="$de/d41/a01030.html#da/d17/a01046" title="A structure hole." alt="" coords="923,349,1085,375"/>
-<area shape="rect" id="node19" href="$de/d41/a01030.html#d4/dbc/a01038" title="探头信息" alt="" coords="919,399,1089,426"/>
-<area shape="rect" id="node20" href="$de/d41/a01030.html#d9/d8e/a01050" title="A structure image." alt="" coords="919,450,1089,477"/>
-<area shape="rect" id="node21" href="$de/d41/a01030.html#d5/d4c/a01058" title="额外信息" alt="" coords="921,501,1087,527"/>
+<map id="StorePara" name="StorePara">
+<area shape="rect" id="node1" title="需要存储的系统 para" alt="" coords="611,548,691,575"/>
+<area shape="rect" id="node2" href="$df/dce/a00974.html#d4/dbc/a01038" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="351,108,479,135"/>
+<area shape="rect" id="node3" href="$df/dce/a00974.html#d4/d56/a01042" title="可以存储的文件参数" alt="" coords="5,5,217,32"/>
+<area shape="rect" id="node4" href="$df/dce/a00974.html#dc/d81/a01006" title="设置硬件的参数信息" alt="" coords="345,293,484,320"/>
+<area shape="rect" id="node5" href="$df/dce/a00974.html#de/d02/a01026" title="窗口状态信息" alt="" coords="42,57,181,98"/>
+<area shape="rect" id="node6" href="$df/dce/a00974.html#d3/d08/a01018" title="电子罗盘参数 调整罗盘数据" alt="" coords="42,122,181,163"/>
+<area shape="rect" id="node7" href="$df/dce/a00974.html#d0/d2b/a01010" title="脉冲参数" alt="" coords="42,187,181,229"/>
+<area shape="rect" id="node8" href="$df/dce/a00974.html#de/d41/a01030" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="42,253,181,294"/>
+<area shape="rect" id="node9" href="$df/dce/a00974.html#de/d91/a01034" title="额外信息" alt="" coords="42,318,181,359"/>
+<area shape="rect" id="node10" href="$df/dce/a00974.html#d0/d56/a01014" title="探头参数" alt="" coords="42,383,181,425"/>
+<area shape="rect" id="node11" href="$df/dce/a00974.html#d1/dd8/a01022" title="相机参数结构体" alt="" coords="42,449,181,490"/>
+<area shape="rect" id="node12" href="$df/dce/a00974.html#dd/d7a/a00990" title="运行过程中的 图像参数" alt="" coords="347,521,483,548"/>
+<area shape="rect" id="node13" href="$df/dce/a00974.html#d2/dd5/a01002" title=" " alt="" coords="43,514,179,555"/>
+<area shape="rect" id="node14" href="$df/dce/a00974.html#d4/dd0/a00994" title="Image 处理参数, 作为图像展开参数" alt="" coords="43,579,179,621"/>
+<area shape="rect" id="node15" href="$df/dce/a00974.html#d9/d9a/a00998" title="Image Para 参数" alt="" coords="43,645,179,686"/>
+<area shape="rect" id="node16" href="$df/dce/a00974.html#d2/ddd/a00978" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="333,572,496,599"/>
+<area shape="rect" id="node17" href="$df/dce/a00974.html#d1/d7a/a00982" title="记录 路径以及其他路径信息" alt="" coords="343,623,486,649"/>
+<area shape="rect" id="node18" href="$df/dce/a00974.html#d3/d7b/a00986" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="351,673,478,700"/>
 </map>

@@ -1,4 +1,5 @@
-<map id="Ui_SetWindow" name="Ui_SetWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="6,5,113,32"/>
-<area shape="rect" id="node2" href="$d6/d8b/a01117.html" title=" " alt="" coords="5,80,113,107"/>
+<map id="StProtocol::StOutputMode" name="StProtocol::StOutputMode">
+<area shape="rect" id="node1" title=" " alt="" coords="5,215,180,241"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="53,96,133,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="29,5,156,47"/>
 </map>

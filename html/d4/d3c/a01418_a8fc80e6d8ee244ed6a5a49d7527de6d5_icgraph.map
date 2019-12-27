@@ -1,0 +1,17 @@
+<map id="Utils_Time::GetTime" name="Utils_Time::GetTime">
+<area shape="rect" id="node1" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="952,107,1092,133"/>
+<area shape="rect" id="node2" href="$de/d07/a01146.html#a5714027a2cc07f9c5c0ae84a177631be" title="根据运行参数 更新参数" alt="" coords="747,5,893,32"/>
+<area shape="rect" id="node5" href="$d4/d10/a01278.html#ad53bb8340bb6b761bd6236688970c463" title=" " alt="" coords="741,56,899,83"/>
+<area shape="rect" id="node7" href="$d3/ddc/a01142.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60" title="将数据存储下来" alt="" coords="741,107,899,133"/>
+<area shape="rect" id="node11" href="$da/d00/a01270.html#a42f3ec35c315231b8af2beb1c6423e47" title=" " alt="" coords="736,157,904,184"/>
+<area shape="rect" id="node15" href="$dd/dc1/a00212.html#ab5e6df2da27e8aacc5489605e4abcc53" title=" " alt="" coords="771,208,869,235"/>
+<area shape="rect" id="node3" href="$de/d07/a01146.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="542,5,621,32"/>
+<area shape="rect" id="node4" href="$db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="296,5,347,32"/>
+<area shape="rect" id="node6" href="$d4/d10/a01278.html#a8537b4c963467314c61eb26616087b1b" title="Initializes a new instance of the WriteVideo class 开始写入视频流" alt="" coords="502,56,661,83"/>
+<area shape="rect" id="node8" href="$d3/ddc/a01142.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="520,107,643,133"/>
+<area shape="rect" id="node9" href="$d6/dea/a01094.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="270,56,373,83"/>
+<area shape="rect" id="node10" href="$dd/df1/a01082.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="247,107,395,133"/>
+<area shape="rect" id="node12" href="$da/d00/a01270.html#a89c4f17fbaeaba0884d96a9932973256" title="Slot show camera" alt="" coords="475,157,688,184"/>
+<area shape="rect" id="node13" href="$da/d00/a01270.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,157,427,184"/>
+<area shape="rect" id="node14" href="$da/d00/a01270.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,157,168,184"/>
+</map>

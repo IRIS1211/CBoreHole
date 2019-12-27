@@ -1,4 +1,9 @@
-<map id="Ui::GaugeCompass" name="Ui::GaugeCompass">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,140,107"/>
-<area shape="rect" id="node2" href="$de/d1c/a01093.html" title=" " alt="" coords="5,5,140,32"/>
+<map id="StProtocol" name="StProtocol">
+<area shape="rect" id="node1" title=" " alt="" coords="687,141,769,168"/>
+<area shape="rect" id="node2" href="$d5/df9/a00044.html#d1/d3d/a01110" title="执行特殊功能的指令" alt="" coords="401,19,555,45"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="181,139,261,165"/>
+<area shape="rect" id="node5" href="$d5/df9/a00044.html#d6/d40/a01114" title=" " alt="" coords="391,99,565,125"/>
+<area shape="rect" id="node6" href="$d5/df9/a00044.html#da/d4e/a01106" title="设置 波特率的指令" alt="" coords="397,183,559,209"/>
+<area shape="rect" id="node7" href="$d5/df9/a00044.html#d4/da7/a01102" title="设置 安装模式的方式" alt="" coords="392,245,564,272"/>
+<area shape="rect" id="node4" title="STL class" alt="" coords="5,131,132,173"/>
 </map>

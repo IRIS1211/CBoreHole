@@ -1,0 +1,7 @@
+<map id="CamProc::Init" name="CamProc::Init">
+<area shape="rect" id="node1" title="初始化线程 初始化完成后 开始运行" alt="" coords="5,56,107,83"/>
+<area shape="rect" id="node2" href="$d5/d16/a00029.html#aa132dc7ddfc38fed5cdbc20ae1eddd55" title="根据当前时间 创建字符串" alt="" coords="187,5,273,32"/>
+<area shape="rect" id="node4" href="$dd/d24/a00981.html#a2eb103016c9d0b4a4e13368ff3e9236c" title="Initializes a new instance of the SerialProc class" alt="" coords="155,56,305,83"/>
+<area shape="rect" id="node5" href="$d6/dad/a00941.html#ab0e31dfdd11ff5a789178ff0e70dc15c" title="Writes the para" alt="" coords="165,107,295,133"/>
+<area shape="rect" id="node3" href="$d2/df5/a00137.html#a14a80b1b4ca3930978eab4f774c0ec9d" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="353,5,424,32"/>
+</map>

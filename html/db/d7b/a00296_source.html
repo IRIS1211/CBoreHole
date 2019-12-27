@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_time.cc 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.6.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('db/d7b/a00296_source.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">utils_time.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/d7b/a00296.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;direct.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d39/a00257.html">&#x202A;./utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d95/a00299.html">&#x202A;./utils_time.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d4/d3c/a01418.html#aa78dd00ccf89801b7fde76113bb5281e">   29</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="../../d4/d3c/a01418.html#aa78dd00ccf89801b7fde76113bb5281e">&#x202A;Utils_Time::CalcPeriodMs</a>(<span class="keywordtype">int</span> flg, std::string str)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span>  clock_t gTime_tmp = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">float</span> time_ms = -1;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (!flg)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        gTime_tmp = clock();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// 计算得到的ms 值  生成 字符串输出</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        time_ms = static_cast&lt;float&gt;(clock() - gTime_tmp)*1000.0f / CLOCKS_PER_SEC;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        str = <span class="stringliteral">&quot;Funciton [ &quot;</span> + str + <span class="stringliteral">&quot; ] in &quot;</span> \</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            + __FILE__ + <span class="stringliteral">&quot; - &quot;</span> + std::to_string(__LINE__) \</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            + <span class="stringliteral">&quot;:  &quot;</span> + std::to_string(time_ms) + <span class="stringliteral">&quot;ms&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        LDebug(str);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> time_ms;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d4/d3c/a01418.html#ac5d31743c8d57b5a70caa94b55356477">   62</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="../../d4/d3c/a01418.html#ac5d31743c8d57b5a70caa94b55356477">&#x202A;Utils_Time::CalcPeriodFps</a>(<span class="keywordtype">int</span> flg <span class="comment">/*= 0*/</span>, std::string str <span class="comment">/*= &quot;funcPeroidFPS&quot;*/</span>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span>  clock_t gFps_tmp = 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">float</span> time_fps = -1;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (!flg)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        gFps_tmp = clock();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">// 计算得到的ms 值  生成 字符串输出</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        time_fps = CLOCKS_PER_SEC / static_cast&lt;float&gt;(clock() - gFps_tmp);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        gFps_tmp = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        str = <span class="stringliteral">&quot;Processs [ &quot;</span> + str + <span class="stringliteral">&quot; ] in&quot;</span> \</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            + __FILE__ + std::to_string(__LINE__) \</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            + <span class="stringliteral">&quot;:  &quot;</span> + std::to_string(time_fps) + <span class="stringliteral">&quot;fps&quot;</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        LDebug(str);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> time_fps;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d4/d3c/a01418.html#a8fc80e6d8ee244ed6a5a49d7527de6d5">   98</a></span>&#160;std::string <a class="code" href="../../d4/d3c/a01418.html#a8fc80e6d8ee244ed6a5a49d7527de6d5">&#x202A;Utils_Time::GetTime</a>(<span class="keywordtype">char</span> c, <span class="keywordtype">bool</span> rand_flg)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    time_t t = time(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">struct </span>tm ltm;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    localtime_s(&amp;ltm, &amp;t);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::string str = <a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(1900 + ltm.tm_year, 4) + <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        + <a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(1 + ltm.tm_mon, 2) + <span class="stringliteral">&quot;&quot;</span>   <span class="comment">// 设置月份</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        + <a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(ltm.tm_mday, 2) + c     <span class="comment">// 设置 时间分割字符串</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        + <a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(ltm.tm_hour, 2) + <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        + <a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(ltm.tm_min, 2);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// 如果随机 加入三位随机值</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">if</span> (rand_flg)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        str += c + std::to_string(rand() % 100);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="../../d4/d3c/a01418.html#aacca407ae262280a9ade27ac4d16a98c">  128</a></span>&#160;std::string <a class="code" href="../../d4/d3c/a01418.html#aacca407ae262280a9ade27ac4d16a98c">&#x202A;Utils_Time::GetDate</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    time_t t = time(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">struct </span>tm ltm;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    localtime_s(&amp;ltm, &amp;t);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    std::string str = <a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(1900 + ltm.tm_year, 4)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        + <a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(1 + ltm.tm_mon, 2)   <span class="comment">// 设置月份</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        + <a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(ltm.tm_mday, 2);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00299_html"><div class="ttname"><a href="../../df/d95/a00299.html">&#x202A;utils_time.h</a></div></div>
+<div class="ttc" id="aa01418_html_ac5d31743c8d57b5a70caa94b55356477"><div class="ttname"><a href="../../d4/d3c/a01418.html#ac5d31743c8d57b5a70caa94b55356477">&#x202A;Utils_Time::CalcPeriodFps</a></div><div class="ttdeci">&#x202A;static float CalcPeriodFps(int flg=0, std::string str=&quot;funcPeroidFPS&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7b/a00296_source.html#l00062">utils_time.cc:62</a></div></div>
+<div class="ttc" id="aa01418_html_aacca407ae262280a9ade27ac4d16a98c"><div class="ttname"><a href="../../d4/d3c/a01418.html#aacca407ae262280a9ade27ac4d16a98c">&#x202A;Utils_Time::GetDate</a></div><div class="ttdeci">&#x202A;static std::string GetDate(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7b/a00296_source.html#l00128">utils_time.cc:128</a></div></div>
+<div class="ttc" id="aa01418_html_a8fc80e6d8ee244ed6a5a49d7527de6d5"><div class="ttname"><a href="../../d4/d3c/a01418.html#a8fc80e6d8ee244ed6a5a49d7527de6d5">&#x202A;Utils_Time::GetTime</a></div><div class="ttdeci">&#x202A;static std::string GetTime(char c='_', bool rand_flg=false)</div><div class="ttdoc">&#x202A;Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7b/a00296_source.html#l00098">utils_time.cc:98</a></div></div>
+<div class="ttc" id="aa01414_html_ab0bd05f35427650f2e295c18ba6938b3"><div class="ttname"><a href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a></div><div class="ttdeci">&#x202A;static std::string NumToString(int num, int width=3, int base=10)</div><div class="ttdoc">&#x202A;Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00373">utils_string.cc:373</a></div></div>
+<div class="ttc" id="aa01418_html_aa78dd00ccf89801b7fde76113bb5281e"><div class="ttname"><a href="../../d4/d3c/a01418.html#aa78dd00ccf89801b7fde76113bb5281e">&#x202A;Utils_Time::CalcPeriodMs</a></div><div class="ttdeci">&#x202A;static float CalcPeriodMs(int flg=0, std::string str=&quot;funcPeroidMS&quot;)</div><div class="ttdoc">&#x202A;计算经过的 时间 ms 单位</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7b/a00296_source.html#l00029">utils_time.cc:29</a></div></div>
+<div class="ttc" id="aa00257_html"><div class="ttname"><a href="../../d9/d39/a00257.html">&#x202A;utils.h</a></div><div class="ttdoc">&#x202A;通用 utils 组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../db/d7b/a00296.html">&#x202A;utils_time.cc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

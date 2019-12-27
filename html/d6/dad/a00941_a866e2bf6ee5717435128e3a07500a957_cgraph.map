@@ -1,0 +1,6 @@
+<map id="IDOIFile::ReadMat" name="IDOIFile::ReadMat">
+<area shape="rect" id="node1" title="bool ReadMat(cv::Mat &amp;img,int ) ; // 考虑循环读取文件操作 , 可能存在问题" alt="" coords="5,56,133,83"/>
+<area shape="rect" id="node2" href="$d6/dad/a00941.html#a44bebcfa4609689ed618201d45a0f027" title="Reads one row extent" alt="" coords="181,5,356,32"/>
+<area shape="rect" id="node3" href="$d6/dad/a00941.html#a2fe58433b8df4ab155d7e0c325021cdf" title="Reads one row matrix" alt="" coords="183,56,355,83"/>
+<area shape="rect" id="node4" href="$d6/dad/a00941.html#a5fec0ab1ea64f58af14e26f7e4ad0aac" title="Resets the p file described by s" alt="" coords="199,107,339,133"/>
+</map>

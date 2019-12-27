@@ -1,0 +1,5 @@
+<map id="Utils_Time::GetTime" name="Utils_Time::GetTime">
+<area shape="rect" id="node1" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="5,5,145,32"/>
+<area shape="rect" id="node2" href="$d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3" title="Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \" alt="" coords="193,5,365,32"/>
+<area shape="rect" id="node3" href="$d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="413,5,568,32"/>
+</map>

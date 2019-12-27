@@ -1,0 +1,11 @@
+<map id="RenderNumberOnLabel" name="RenderNumberOnLabel">
+<area shape="rect" id="node1" title=" " alt="" coords="1175,78,1331,105"/>
+<area shape="rect" id="node2" href="$d7/d0c/a01173.html#a1ac8d28317aadd53446419ac8b353a82" title="将位置信息实时更新到界面的label 上" alt="" coords="927,21,1119,47"/>
+<area shape="rect" id="node8" href="$d7/d0c/a01173.html#af92af3ed8f61e4fd9eaf4d1b14446683" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="701,71,872,112"/>
+<area shape="rect" id="node9" href="$d7/d0c/a01173.html#ae9dcd6afdb5b4cd7811eda08b9223de1" title="更新电子罗盘数据" alt="" coords="920,133,1127,159"/>
+<area shape="rect" id="node3" href="$d7/d0c/a01173.html#a01083e6fa8585bbe6302affa302bd4d7" title="更新 编码器 位置信息" alt="" coords="701,5,872,47"/>
+<area shape="rect" id="node4" href="$d7/d0c/a01173.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,78,653,105"/>
+<area shape="rect" id="node5" href="$d7/d0c/a01173.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,78,376,105"/>
+<area shape="rect" id="node6" href="$db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="79,49,130,75"/>
+<area shape="rect" id="node7" href="$d9/d25/a01157.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,100,204,141"/>
+</map>

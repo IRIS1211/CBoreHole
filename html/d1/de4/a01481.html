@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;通讯协议文档说明</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.5.2</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d1/de4/a01481.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc PageDocLTR-title"><div class="header">
+  <div class="headertitle">
+<div class="title">&#x202A;通讯协议文档说明 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p class="DocNodeLTR">文档表示在使用过程中的使用指令说明</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md23"></a>
+使用操作说明</h2>
+<p class="DocNodeLTR">上电操作表示 系统每次上电对嵌入式设备发送的命令, 串口实际实现可见文档串口通讯</p>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md24"></a>
+接线操作</h3>
+<p class="DocNodeLTR">3085芯片与4插针连线 </p><blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">左侧1脚 &ndash;RXD0 左侧4脚 &ndash; RXD485 TXD0&ndash; TXD2PC </p>
+</blockquote>
+<blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">TXD0&ndash;TXD2PC：主机通过串口发送 PCA+ADC 数据，直接发送到电脑端； RXD0&ndash;TXD485：主机接收电脑串口发送的命令，以启动或结束 PCA 计数； </p>
+</blockquote>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md25"></a>
+上电操作步骤</h3>
+<blockquote class="doxtable DocNodeLTR">
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;发送 <b>查询模式</b> 是罗盘停止连续模式, 进入查询模式,等待下一步指令, 一句查询一次返回</li>
+<li>&#x202A;发送 <b>开启PCA</b> 进行PCA计数,获取编码器数据</li>
+<li>&#x202A;发送 <b>启动罗盘连续模式</b> 连续性的获取罗盘数据 + PCA+ADC 值, 同一返回 <blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">示例格式: 括号扩出来的是 关键数据 68 0D 00 84 [00 04 09 11 79 45 00 81 13] 01 FF [80 00 00 00 00] 80 68 0D 00 84 00 04 09 11 79 45 00 81 13 01 FF 80 01 02 03 04 8A </p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md26"></a>
+查询PCA ADC 值</h3>
+<blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">发送 <b>查询PCA ADC</b> 指令查询ADC值,跟随陀螺仪数据后面发送 </p>
+</blockquote>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md27"></a>
+掉电操作</h3>
+<blockquote class="doxtable DocNodeLTR">
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;发送 <b>关闭PCA</b> 关闭PCA计数, </li>
+</ol>
+</blockquote>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md28"></a>
+操作指令表</h3>
+<p class="DocNodeLTR">具体操作可以参考<a href="&#x202A;../../../files/通信协议技术文档_V1.2_1014.pdf">通讯协议</a> 和做出来的简单内容的<a href="&#x202A;../../../assets/file/串口通讯指令表.xlsx">串口通讯指令表</a> 具体可见下表 可以使用<a href="&#x202A;http://www.tablesgenerator.com/markdown_tables">在线表格生成网站</a> 生成的 $Markdown$ 表格 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

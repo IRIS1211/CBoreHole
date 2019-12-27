@@ -1,0 +1,9 @@
+<map id="CSerialPort" name="CSerialPort">
+<area shape="rect" id="node1" title="串口通信类" alt="" coords="155,377,243,404"/>
+<area shape="rect" id="node2" href="$db/dbb/a01047.html" title=" " alt="" coords="122,288,275,315"/>
+<area shape="rect" id="node3" title=" " alt="" coords="7,184,174,211"/>
+<area shape="rect" id="node4" href="$d7/dd6/a01167.html" title="暂存 串口发送回来的 分组数据 保存串口发送的原始数据" alt="" coords="5,95,88,121"/>
+<area shape="rect" id="node5" title="STL class" alt="" coords="112,95,227,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="150,5,189,32"/>
+<area shape="rect" id="node7" href="$db/dbb/a01047.html" title=" " alt="" coords="198,184,298,211"/>
+</map>

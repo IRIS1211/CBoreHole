@@ -1,0 +1,5 @@
+<map id="StCompassPara" name="StCompassPara">
+<area shape="rect" id="node1" title="罗盘类型 结构体 用于列出不同种类的 罗盘" alt="" coords="10,185,127,212"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="29,96,109,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="5,5,132,47"/>
+</map>

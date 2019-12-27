@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;通用内用设计</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.6.0</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d6/d02/a01542.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc PageDocLTR-title"><div class="header">
+  <div class="headertitle">
+<div class="title">&#x202A;通用内用设计 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md82"></a>
+通用字符串操作</h1>
+<p class="DocNodeLTR">自后详细讲解各个函数的设计过程</p>
+<div class="fragment"><div class="line"><span class="comment">// 通用字符串操作类 </span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="../../db/dc3/a00284.html">&#x202A;utils_string.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 字符串 分割成数组</span></div>
+<div class="line">std::vector&lt;std::string&gt; <a class="code" href="../../d3/da4/a01343.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a>(<span class="keyword">const</span> std::string &amp; str, <span class="keyword">const</span> <span class="keywordtype">char</span> separator, <span class="keywordtype">bool</span> skip_empty)</div>
+<div class="line">{</div>
+<div class="line">    std::vector&lt;std::string&gt; res;</div>
+<div class="line">    std::istringstream iss(str);</div>
+<div class="line">    <span class="keywordflow">for</span> (std::string item; getline(iss, item, separator);)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span> (skip_empty &amp;&amp; item.empty())</div>
+<div class="line">            <span class="keywordflow">continue</span>;</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">            res.push_back(item);</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> res;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 完成字符串分割</span></div>
+<div class="line">std::vector&lt;std::string&gt; <a class="code" href="../../d3/da4/a01343.html#a09734b79282d4132596b4a11dcb8175d">&#x202A;Utils_String::Str2Vector</a>(<span class="keyword">const</span> std::string &amp; str, <span class="keyword">const</span> std::string &amp; delimiters, <span class="keywordtype">bool</span> skip_empty)</div>
+<div class="line">{</div>
+<div class="line">    std::vector&lt;std::string&gt; res;</div>
+<div class="line">    string::size_type pos, prev = 0;</div>
+<div class="line">    <span class="keywordflow">while</span> ((pos = str.find_first_of(delimiters, prev)) != string::npos)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">if</span> (pos &gt; prev)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">if</span> (skip_empty &amp;&amp; 1 == pos - prev)</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            res.emplace_back(str, prev, pos - prev);</div>
+<div class="line">        }</div>
+<div class="line">        prev = pos + 1;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span> (prev &lt; str.size())</div>
+<div class="line">        res.emplace_back(str, prev, str.size() - prev);</div>
+<div class="line">    <span class="keywordflow">return</span> res;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../d3/da4/a01343.html#ab0655ea746432bac89754a8e71caa5cc">&#x202A;Utils_String::String2ConstChar</a>(<span class="keyword">const</span> std::string &amp;str)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> str.c_str();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">char</span> * <a class="code" href="../../d3/da4/a01343.html#afdd80557e406c33ce221395db601f196">&#x202A;Utils_String::String2Char</a>(<span class="keyword">const</span> std::string &amp; str)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">char</span> *ch = <span class="keyword">new</span> <span class="keywordtype">char</span>[str.size() + 1];</div>
+<div class="line">    strcpy(ch, str.c_str());</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> ch;</div>
+<div class="line"> </div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> * <a class="code" href="../../d3/da4/a01343.html#a518cb647622b31947f638b48320fc646">&#x202A;Utils_String::String2Uchar</a>(<span class="keyword">const</span> std::string &amp; str)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> (<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>*)str.c_str();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">std::string <a class="code" href="../../d3/da4/a01343.html#a6c1e2edd1365b94dff05468194611770">&#x202A;Utils_String::ConstChar2String</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *buffer)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> std::string(buffer);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">std::string <a class="code" href="../../d3/da4/a01343.html#a5ed8c8e05cada7d7334a213dd8ff1050">&#x202A;Utils_String::Char2String</a>(<span class="keywordtype">char</span> * buffer)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> std::string(buffer);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">std::string <a class="code" href="../../d3/da4/a01343.html#a89d9fe1b4fd0eb7f266cce483fdaaced">&#x202A;Utils_String::Uchar2String</a>(<span class="keyword">const</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> * buffer)</div>
+<div class="line">{   </div>
+<div class="line">    std::string str = (<span class="keywordtype">char</span>*)buffer;</div>
+<div class="line">    <span class="keywordflow">return</span> str;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">char</span> * <a class="code" href="../../d3/da4/a01343.html#a778ef548491bb4f043fb0111f87f80ae">&#x202A;Utils_String::ConstChar2Char</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* buffer)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">char</span>* res = <span class="keyword">new</span> <span class="keywordtype">char</span>[100];  <span class="comment">// 足够的长度避免溢出</span></div>
+<div class="line">    strcpy(res, buffer);</div>
+<div class="line">    <span class="keywordflow">return</span> res;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="../../d3/da4/a01343.html#acd89201285eb22950b500376627a9194">&#x202A;Utils_String::Char2ConstChar</a>(<span class="keywordtype">char</span> * buffer)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> buffer;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">std::string <a class="code" href="../../d3/da4/a01343.html#afe216aed245f8f433cfc9b5e8c611754">&#x202A;Utils_String::AddQuoteString</a>(std::string str, <span class="keyword">const</span> std::string q)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> (q + str + q);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="../../d3/da4/a01343.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a>(<span class="keyword">const</span> std::string &amp; str)</div>
+<div class="line">{</div>
+<div class="line">    std::vector&lt;std::string&gt; tmp_str = <a class="code" href="../../d3/da4/a01343.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Str2Vec</a>(str, <span class="charliteral">&#39;.&#39;</span>);</div>
+<div class="line">    assert(tmp_str.size() == 2);</div>
+<div class="line">    <span class="keywordtype">int</span> res = 0;</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; s : tmp_str)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordtype">int</span> <a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = std::stoi(s);</div>
+<div class="line">        <span class="keywordflow">if</span> (<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> &lt; 0)</div>
+<div class="line">            <a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = -<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
+<div class="line">        res = res * 100 + <a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> res;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md83"></a>
+通用文件操作设计</h1>
+<p class="DocNodeLTR">包含常用的文件读写以及文件目录操作</p>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">bool</span> WriteData(std::fstream *pfile, T &amp;num)</div>
+<div class="line">{</div>
+<div class="line">    pfile-&gt;write((<span class="keywordtype">char</span>*)&amp;num, <span class="keyword">sizeof</span>(T));</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">bool</span> ReadData(std::fstream *pfile, T &amp;num)</div>
+<div class="line">{</div>
+<div class="line">    pfile-&gt;read((<span class="keywordtype">char</span>*)&amp;num, <span class="keyword">sizeof</span>(T));</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> Utils_Files::WriteString(std::fstream * pfile, <span class="keyword">const</span> std::string &amp; str, <span class="keywordtype">int</span> len)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">char</span> *<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[len];</div>
+<div class="line">    <a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <a class="code" href="../../d3/da4/a01343.html#afdd80557e406c33ce221395db601f196">&#x202A;Utils_String::String2Char</a>(str);</div>
+<div class="line">    pfile-&gt;write(<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>, len);</div>
+<div class="line">    <span class="keyword">delete</span> []<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">bool</span> Utils_Files::ReadString(std::fstream * pfile, std::string &amp; str, <span class="keywordtype">int</span> len)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">char</span> *<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[len];</div>
+<div class="line">    pfile-&gt;read(<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>, len);</div>
+<div class="line">    str = <a class="code" href="../../d3/da4/a01343.html#a5ed8c8e05cada7d7334a213dd8ff1050">&#x202A;Utils_String::Char2String</a>(<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>);</div>
+<div class="line">    <span class="keyword">delete</span> []<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01343_html_afe216aed245f8f433cfc9b5e8c611754"><div class="ttname"><a href="../../d3/da4/a01343.html#afe216aed245f8f433cfc9b5e8c611754">&#x202A;Utils_String::AddQuoteString</a></div><div class="ttdeci">&#x202A;static std::string AddQuoteString(std::string str, const std::string q=&quot;\&quot;&quot;)</div><div class="ttdoc">&#x202A;在字符串前后 添加 引号 双引号 用于YML 写入</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00241">utils_string.cc:241</a></div></div>
+<div class="ttc" id="aa01343_html_a518cb647622b31947f638b48320fc646"><div class="ttname"><a href="../../d3/da4/a01343.html#a518cb647622b31947f638b48320fc646">&#x202A;Utils_String::String2Uchar</a></div><div class="ttdeci">&#x202A;static const uchar * String2Uchar(const std::string &amp;str)</div><div class="ttdoc">&#x202A;String 2 uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00133">utils_string.cc:133</a></div></div>
+<div class="ttc" id="aa01343_html_ab0655ea746432bac89754a8e71caa5cc"><div class="ttname"><a href="../../d3/da4/a01343.html#ab0655ea746432bac89754a8e71caa5cc">&#x202A;Utils_String::String2ConstChar</a></div><div class="ttdeci">&#x202A;static const char * String2ConstChar(const std::string &amp;str)</div><div class="ttdoc">&#x202A;String 2 character 直接返回数据字符串</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00094">utils_string.cc:94</a></div></div>
+<div class="ttc" id="aa00128_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00035">QImgLabel.cc:35</a></div></div>
+<div class="ttc" id="aa01343_html_afdd80557e406c33ce221395db601f196"><div class="ttname"><a href="../../d3/da4/a01343.html#afdd80557e406c33ce221395db601f196">&#x202A;Utils_String::String2Char</a></div><div class="ttdeci">&#x202A;static char * String2Char(const std::string &amp;str)</div><div class="ttdoc">&#x202A;String 2 character</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00112">utils_string.cc:112</a></div></div>
+<div class="ttc" id="aa01343_html_a778ef548491bb4f043fb0111f87f80ae"><div class="ttname"><a href="../../d3/da4/a01343.html#a778ef548491bb4f043fb0111f87f80ae">&#x202A;Utils_String::ConstChar2Char</a></div><div class="ttdeci">&#x202A;static char * ConstChar2Char(const char *buffer)</div><div class="ttdoc">&#x202A;Constant character 2 character</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00203">utils_string.cc:203</a></div></div>
+<div class="ttc" id="aa01343_html_acd89201285eb22950b500376627a9194"><div class="ttname"><a href="../../d3/da4/a01343.html#acd89201285eb22950b500376627a9194">&#x202A;Utils_String::Char2ConstChar</a></div><div class="ttdeci">&#x202A;static const char * Char2ConstChar(char *buffer)</div><div class="ttdoc">&#x202A;Character 2 constant character</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00222">utils_string.cc:222</a></div></div>
+<div class="ttc" id="aa00284_html"><div class="ttname"><a href="../../db/dc3/a00284.html">&#x202A;utils_string.h</a></div><div class="ttdoc">&#x202A;通用字符串操作类 继承使用, 方便使用 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00036">Commu.h:36</a></div></div>
+<div class="ttc" id="aa01343_html_a707dfc08a28c18474486ca8ca43d6b39"><div class="ttname"><a href="../../d3/da4/a01343.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vec(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const char separator, bool skip_empty=true)</div><div class="ttdoc">&#x202A;将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00077">utils_string.h:77</a></div></div>
+<div class="ttc" id="aa01343_html_a82ed3e2282101b5d3326df68e6098898"><div class="ttname"><a href="../../d3/da4/a01343.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a></div><div class="ttdeci">&#x202A;static int StringVersionToInt(const std::string &amp;str)</div><div class="ttdoc">&#x202A;将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00258">utils_string.cc:258</a></div></div>
+<div class="ttc" id="aa01343_html_a89d9fe1b4fd0eb7f266cce483fdaaced"><div class="ttname"><a href="../../d3/da4/a01343.html#a89d9fe1b4fd0eb7f266cce483fdaaced">&#x202A;Utils_String::Uchar2String</a></div><div class="ttdeci">&#x202A;static std::string Uchar2String(const uchar *buffer)</div><div class="ttdoc">&#x202A;Uchar 2 string</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00185">utils_string.cc:185</a></div></div>
+<div class="ttc" id="aa01343_html_a09734b79282d4132596b4a11dcb8175d"><div class="ttname"><a href="../../d3/da4/a01343.html#a09734b79282d4132596b4a11dcb8175d">&#x202A;Utils_String::Str2Vector</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vector(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const std::string &amp;delimiters, bool skip_empty=true)</div><div class="ttdoc">&#x202A;返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 https://segmentfault.com/a/1190000002483483</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00114">utils_string.h:114</a></div></div>
+<div class="ttc" id="aa01343_html_a5ed8c8e05cada7d7334a213dd8ff1050"><div class="ttname"><a href="../../d3/da4/a01343.html#a5ed8c8e05cada7d7334a213dd8ff1050">&#x202A;Utils_String::Char2String</a></div><div class="ttdeci">&#x202A;static std::string Char2String(char *buffer)</div><div class="ttdoc">&#x202A;Character 2 string</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00168">utils_string.cc:168</a></div></div>
+<div class="ttc" id="aa01343_html_a6c1e2edd1365b94dff05468194611770"><div class="ttname"><a href="../../d3/da4/a01343.html#a6c1e2edd1365b94dff05468194611770">&#x202A;Utils_String::ConstChar2String</a></div><div class="ttdeci">&#x202A;static std::string ConstChar2String(const char *buffer)</div><div class="ttdoc">&#x202A;char 类型与 string的相互转换</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00151">utils_string.cc:151</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

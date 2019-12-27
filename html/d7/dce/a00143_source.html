@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/common.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/camProc.cc 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.0</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,411 +89,274 @@ $(document).ready(function(){initNavTree('d7/dce/a00143_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">common.cc</div>  </div>
+<div class="title">camProc.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d7/dce/a00143.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../inc/common.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#a475a60f278f15fdbbdffb826f87fba72">   25</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="../../d7/dce/a00143.html#a475a60f278f15fdbbdffb826f87fba72">&#x202A;CalcPeriodTimeMs</a>(<span class="keywordtype">int</span> flg, std::string str)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span>  clock_t gTime_tmp = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">float</span> time_ms = -1;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (!flg)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        gTime_tmp = clock();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment">// 计算得到的ms 值  生成 字符串输出</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        time_ms = static_cast&lt;float&gt;(clock() - gTime_tmp)*1000.0f / CLOCKS_PER_SEC;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        str = <span class="stringliteral">&quot;Funciton [ &quot;</span> + str + <span class="stringliteral">&quot; ] in &quot;</span> + __FILE__ + <span class="stringliteral">&quot; - &quot;</span> + std::to_string(__LINE__) + <span class="stringliteral">&quot;:  &quot;</span> + std::to_string(time_ms) + <span class="stringliteral">&quot;ms&quot;</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        qDebug() &lt;&lt; QString::fromStdString(str);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../inc/CamProc.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../inc/init.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../inc/SerialProc.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../inc/ImageProc.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../utils/utils.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d6/dea/a01094.html#abdadde506cc0c5a3f3e04fbb56da6729">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/d73/a01266.html">&#x202A;SerialProc</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="../../d6/dea/a01094.html#abdadde506cc0c5a3f3e04fbb56da6729">&#x202A;CamProc::CamProc</a>(QObject *parent)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    : QThread(parent)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// 创建 remap 的map 图 便于后续展开图像</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../d6/d2f/a01394.html#a5ed9b9316107e1ede0fefb0d53610e40">&#x202A;Utils_CV::CreatMapMat</a>(<a class="code" href="../../d6/dea/a01094.html#a572f6fa8541790a724328a3cc2841876">&#x202A;ma_PolarImg_Map_X_</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <a class="code" href="../../d6/dea/a01094.html#ab0e126c14abcbff7745b0426918ae2ff">&#x202A;ma_PolarImg_Map_Y_</a>, </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#aaa0951944900aab9f998b309431fcd90">&#x202A;nImgMinR</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;nImgMaxR</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#aaac086bb3673fe5d55178bc3aba39782">&#x202A;nImgPolarWidth</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="../../d6/dea/a01094.html#a02db1c471da2f6bb668046098c41136e">&#x202A;mb_CamProc_WorkEnable_</a> = <span class="keyword">false</span>;     <span class="comment">// 默认 不工作, 等待 开启工作之后才能继续</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../d6/dea/a01094.html#a5197ccf0c3a931a873fe4d8a1395ab3c">&#x202A;mva_DstImg_V_</a> = std::vector&lt;cv::Mat&gt;(<a class="code" href="../../d5/de0/a00050.html#a1befdeb2254bebc2b90f845a52bb9f7d">&#x202A;K_Dst_Img_Max_Num</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> time_ms;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#a1b766d952edae9adfd918d4b2e8c43d7">   59</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="../../d7/dce/a00143.html#a1b766d952edae9adfd918d4b2e8c43d7">&#x202A;CalcPeriodTimeFps</a>(<span class="keywordtype">int</span> flg, std::string str)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span>  clock_t gFps_tmp = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">float</span> time_fps = -1;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (!flg)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        gFps_tmp = clock();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// 计算得到的ms 值  生成 字符串输出</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        time_fps = CLOCKS_PER_SEC / static_cast&lt;float&gt;(clock() - gFps_tmp);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        gFps_tmp = 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        str = <span class="stringliteral">&quot;Processs [ &quot;</span> + str + <span class="stringliteral">&quot; ] in&quot;</span> + __FILE__ + std::to_string(__LINE__) + <span class="stringliteral">&quot;:  &quot;</span> + std::to_string(time_fps) + <span class="stringliteral">&quot;fps&quot;</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">// qDebug() &lt;&lt; QString::fromStdString(str);</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> time_fps;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#a51b816b14fb11dbdb1d0e7986cb0aca9">   92</a></span>&#160;QImage <a class="code" href="../../d7/dce/a00143.html#a51b816b14fb11dbdb1d0e7986cb0aca9">&#x202A;CvMat2QImage</a>(<span class="keyword">const</span> cv::Mat&amp; mat)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (mat.empty())</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Mat Image is Empty!&quot;</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// 8-bits unsigned, NO. OF CHANNELS = 1</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (mat.type() == CV_8UC1)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        QImage image(mat.data, mat.cols, mat.rows, static_cast&lt;int&gt;(mat.step), QImage::Format_Grayscale8);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> image;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// 8-bits unsigned, NO. OF CHANNELS = 3</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mat.type() == CV_8UC3)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">// Copy input Mat</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">// const uchar *pSrc = static_cast&lt;const uchar*&gt;(mat.data);</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">// Create QImage with same dimensions as input Mat</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        QImage image(mat.data, mat.cols, mat.rows, static_cast&lt;int&gt;(mat.step), QImage::Format_RGB888);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> image.rgbSwapped();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mat.type() == CV_8UC4)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        QImage image(mat.data, mat.cols, mat.rows, static_cast&lt;int&gt;(mat.step), QImage::Format_ARGB32);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> image;   <span class="comment">//  .copy();</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;ERROR: Mat could not be converted to QImage.&quot;</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> QImage();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#a0eeb818cd8623175cafd977ba37ffd2a">  137</a></span>&#160;QImage <a class="code" href="../../d7/dce/a00143.html#a0eeb818cd8623175cafd977ba37ffd2a">&#x202A;MatToQImage</a>(cv::Mat src_bgr)</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span> (src_bgr.empty())</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Mat Image is Empty!&quot;</span>;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    QImage img;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">if</span> (src_bgr.channels() != 1)</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        cv::cvtColor(src_bgr, src_bgr, CV_BGR2RGB);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="comment">// 根据图像尺寸 转换图像, 避免图像尺寸不对造成的图像倾斜</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        img = QImage(static_cast&lt;const unsigned char*&gt;(src_bgr.data),</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                     src_bgr.cols,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                     src_bgr.rows,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                     static_cast&lt;int&gt;(src_bgr.step),</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                     QImage::Format_RGB888);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="comment">// 根据图像尺寸 转换图像, 避免图像尺寸不对造成的图像倾斜</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        img = QImage(static_cast&lt;const unsigned char*&gt;(src_bgr.data),</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                     src_bgr.cols,</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                     src_bgr.rows,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                     static_cast&lt;int&gt;(src_bgr.step),</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                     QImage::Format_RGB888);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">//static int i = 1;</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">//std::string filename = &quot;./Media/pic/tmp_show_&quot; + to_string(i) + &quot;-&quot; + to_string(rand()) + &quot;.png&quot;;</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">//img.save(QString::fromStdString(filename), &quot;PNG&quot;, 100);</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">return</span> img;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#ad13dba3fc65c16e774fde626887d7d71">  183</a></span>&#160;cv::Mat <a class="code" href="../../d7/dce/a00143.html#ad13dba3fc65c16e774fde626887d7d71">&#x202A;QImage2cvMat</a>(QImage image)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    cv::Mat mat;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    qDebug() &lt;&lt; image.format();</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">switch</span> (image.format())</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">case</span> QImage::Format_ARGB32:</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">case</span> QImage::Format_RGB32:</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">case</span> QImage::Format_ARGB32_Premultiplied:</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            mat = cv::Mat(image.height(), image.width(), CV_8UC4);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">case</span> QImage::Format_RGB888:</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="comment">// mat = cv::Mat(image.height(), image.width(), CV_8UC3, (void*)image.constBits(), image.bytesPerLine());</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            mat = cv::Mat(image.height(), image.width(), CV_8UC3);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            cv::cvtColor(mat, mat, CV_BGR2RGB);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">case</span> QImage::Format_Indexed8:</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="comment">// mat = cv::Mat(image.height(), image.width(), CV_8UC1, (void*)image.constBits(), image.bytesPerLine());</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            mat = cv::Mat(image.height(), image.width(), CV_8UC1);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">default</span>: <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">return</span> mat;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;} </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d6/dea/a01094.html#a4cbb35add0157613618515e7820302ce">   50</a></span>&#160;<a class="code" href="../../d6/dea/a01094.html#a4cbb35add0157613618515e7820302ce">&#x202A;CamProc::~CamProc</a>()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d6/dea/a01094.html#a4fd7a30375554ef9df2ef322db87c32d">   64</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d6/dea/a01094.html#a4fd7a30375554ef9df2ef322db87c32d">&#x202A;CamProc::Init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// 创建一个 显示对象 图像比率按照 设定比例生成</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> lbShowHeight = static_cast&lt;int&gt;(<a class="code" href="../../d6/dea/a01094.html#ab0e126c14abcbff7745b0426918ae2ff">&#x202A;ma_PolarImg_Map_Y_</a>.cols \</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    *(static_cast&lt;int&gt;(<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d5/d16/a01154.html#ac277eb8822dafb2f25391ad8274a078c">&#x202A;DstImgLabel</a>.<a class="code" href="../../d5/d16/a01154.html#a5c8a75db5d0f3051dcf25a034370c9ce">&#x202A;nHeight</a>) \</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                     / <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d5/d16/a01154.html#ac277eb8822dafb2f25391ad8274a078c">&#x202A;DstImgLabel</a>.<a class="code" href="../../d5/d16/a01154.html#af17ea17a7ba6b27eaee99e5b1e4c91f1">&#x202A;nWidth</a>));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="../../d6/dea/a01094.html#ab7fbe6672e2a11b8f6fd141c8f0ab708">&#x202A;m_ImageProc_</a> = <span class="keyword">new</span> <a class="code" href="../../d3/ddc/a01142.html">&#x202A;ImageProc</a>(<a class="code" href="../../d6/dea/a01094.html#ab0e126c14abcbff7745b0426918ae2ff">&#x202A;ma_PolarImg_Map_Y_</a>.cols, lbShowHeight);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// TODO(SChen): 设置调试文件</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a80d3a8bcb64807efd5755b4028a0ebf9">&#x202A;mDebug</a>-&gt;<a class="code" href="../../d5/d16/a01154.html#a17d047ca991630963bb004404e25cbda">&#x202A;nDebugEnable</a>)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::string test_serial = <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;Project</a>.<a class="code" href="../../d5/d16/a01154.html#ade4767762e0d68450f48bc770a22832d">&#x202A;strProjectPath</a> + <span class="stringliteral">&quot;test_Serial1.txt&quot;</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// m_SerialProc_ = new SerialProc(test_serial);</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="../../d6/dea/a01094.html#acea51160009fb429624f023f15345747">&#x202A;m_SerialProc_</a> = <span class="keyword">new</span> <a class="code" href="../../d7/d73/a01266.html#a2eb103016c9d0b4a4e13368ff3e9236c">&#x202A;SerialProc</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="../../d6/dea/a01094.html#acea51160009fb429624f023f15345747">&#x202A;m_SerialProc_</a> = <span class="keyword">new</span> <a class="code" href="../../d7/d73/a01266.html#a2eb103016c9d0b4a4e13368ff3e9236c">&#x202A;SerialProc</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// #FEAT: 考虑 project 下面设立文件夹避免文件过乱  目前只有</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// 设置最终文件 名 为 工作路径下面 的 工程名+ 后缀</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../d5/d16/a01154.html#d4/d13/a01162">&#x202A;RunPara::StProject</a> *project = &amp;(<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;Project</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::string idoi_file = project-&gt;<a class="code" href="../../d5/d16/a01154.html#ade4767762e0d68450f48bc770a22832d">&#x202A;strProjectPath</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    idoi_file += project-&gt;<a class="code" href="../../d5/d16/a01154.html#ab75b4a0e3dc051ecba64676e81c66c10">&#x202A;strProjectName</a> + project-&gt;<a class="code" href="../../d5/d16/a01154.html#a0af11b07a11c3c2681eac42d2dfe1610">&#x202A;strProSuffix</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// 直接建立文件 然后将参数写入进去</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d6/dea/a01094.html#ab7fbe6672e2a11b8f6fd141c8f0ab708">&#x202A;m_ImageProc_</a>-&gt;<a class="code" href="../../d3/ddc/a01142.html#a7bb4ca506020613343dace9f8014093e">&#x202A;m_IdoiFile_</a> = <span class="keyword">new</span> <a class="code" href="../../d0/d39/a01138.html">&#x202A;IDOIFile</a>(idoi_file, 0, <a class="code" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afef364d1f6a87dd77999ec49e3317fe9">&#x202A;FileOperateType::OWRITE</a>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../d6/dea/a01094.html#ab7fbe6672e2a11b8f6fd141c8f0ab708">&#x202A;m_ImageProc_</a>-&gt;<a class="code" href="../../d3/ddc/a01142.html#a7bb4ca506020613343dace9f8014093e">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#a82958295317ee47afc54276cb3520f14">&#x202A;WriteRunPara</a>(&amp;<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="../../d6/dea/a01094.html#a13541699698270bd507e5d5ed69d2e9a">  107</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/dea/a01094.html#a13541699698270bd507e5d5ed69d2e9a">&#x202A;CamProc::run</a>()</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    LDebug(<span class="stringliteral">&quot;cam Proc Thread--{}!&quot;</span>, QThread::currentThreadId());</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span> img_cnt = 0;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// 配置显示模式, 如果配置模式出错 默认模式</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::string show_mode = <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../d5/d16/a01154.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>.<a class="code" href="../../d5/d16/a01154.html#ac58c09a2c05c756961c2b5bfbca90d4e">&#x202A;strShowMode</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span> (show_mode.size() &lt; 4)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        LError(<span class="stringliteral">&quot;Error_Debug_ShowMode!&quot;</span>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        show_mode = <span class="stringliteral">&quot;1110&quot;</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// 读取脉冲和像素对应关系</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// TODO(SChen): 此处存在精度问题, 需要后续考虑处理</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">float</span> nPixalPerPulse = static_cast&lt;float&gt;(<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../d5/d16/a01154.html#aff08b751819830cd437a5a0f3d5dc2a4">&#x202A;Pulse</a>.<a class="code" href="../../d5/d16/a01154.html#a05421b7aff626afc7ee598320b9793d4">&#x202A;nPixalPerPulse</a> \</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    / 1000.0f);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// 函数 执行 </span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">while</span> (!isInterruptionRequested())  <span class="comment">// 避免无法结束</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">// 不开始工作的 情况 循环 阻塞在此处</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/dea/a01094.html#a02db1c471da2f6bb668046098c41136e">&#x202A;mb_CamProc_WorkEnable_</a>)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">// mutex_proc.lock();</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/dea/a01094.html#aa7371a962cfcec0e0aeb9cf2150d0608">&#x202A;mqa_CaptureBuffer_</a>-&gt;<a class="code" href="../../db/d32/a01122.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;Empty</a> ())</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            img_cnt++;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <a class="code" href="../../d6/dea/a01094.html#aa7371a962cfcec0e0aeb9cf2150d0608">&#x202A;mqa_CaptureBuffer_</a>-&gt;<a class="code" href="../../db/d32/a01122.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;Pop</a>(<a class="code" href="../../d6/dea/a01094.html#ad0001f040ac55e8b3a0847a2569beeae">&#x202A;ma_SrcImg_</a>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="comment">// 检测是否为空</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d6/dea/a01094.html#ad0001f040ac55e8b3a0847a2569beeae">&#x202A;ma_SrcImg_</a>.cols == 0 ||<a class="code" href="../../d6/dea/a01094.html#ad0001f040ac55e8b3a0847a2569beeae">&#x202A;ma_SrcImg_</a>.rows == 0)</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="comment">// #BUG(Schen00)  完成 罗盘数据的获取与解析</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="comment">// 获取当前 帧 串口数据偏移</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordtype">int</span> ser_encoder = 0;   <span class="comment">// m_SerialProc_-&gt;m_FrameData_.PCA.cur; // 获取编码器数据值 差值</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="comment">// 显示脉冲计算值 太大之后 硬限制</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <a class="code" href="../../d5/d8e/a01390.html#a8caf43f80697158f648269f7964fffdd">&#x202A;Utils::Limit</a>(ser_encoder, 0, 5);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="comment">// 计算 硬件偏差值</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordtype">int</span> offset_x = 0, offset_y = 0, rand_px = 3;;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            offset_y = static_cast&lt;int&gt;(ser_encoder*nPixalPerPulse);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">// #DELETE(Schen00) 取消此处 模拟噪声</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            offset_x = rand() % (2*rand_px-1) - rand_px;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="comment">// 此图像的展开</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            cv::remap(<a class="code" href="../../d6/dea/a01094.html#ad0001f040ac55e8b3a0847a2569beeae">&#x202A;ma_SrcImg_</a>, </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                      <a class="code" href="../../d6/dea/a01094.html#a498ba20c930051ecb85c613d75388acb">&#x202A;ma_PolarImg_</a>, </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                      <a class="code" href="../../d6/dea/a01094.html#a572f6fa8541790a724328a3cc2841876">&#x202A;ma_PolarImg_Map_X_</a>, </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                      <a class="code" href="../../d6/dea/a01094.html#ab0e126c14abcbff7745b0426918ae2ff">&#x202A;ma_PolarImg_Map_Y_</a>,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                      cv::INTER_LINEAR, </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                      cv::BORDER_CONSTANT, </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                      cv::Scalar(255, 0, 0));</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">if</span> (img_cnt == 1)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <a class="code" href="../../d6/dea/a01094.html#ab7fbe6672e2a11b8f6fd141c8f0ab708">&#x202A;m_ImageProc_</a>-&gt;<a class="code" href="../../d3/ddc/a01142.html#acd18773a822c007ea0d9242b24f86e4d">&#x202A;Push</a>(<a class="code" href="../../d6/dea/a01094.html#a498ba20c930051ecb85c613d75388acb">&#x202A;ma_PolarImg_</a>, 0, 0);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <a class="code" href="../../d6/dea/a01094.html#ab7fbe6672e2a11b8f6fd141c8f0ab708">&#x202A;m_ImageProc_</a>-&gt;<a class="code" href="../../d3/ddc/a01142.html#acd18773a822c007ea0d9242b24f86e4d">&#x202A;Push</a>(<a class="code" href="../../d6/dea/a01094.html#a498ba20c930051ecb85c613d75388acb">&#x202A;ma_PolarImg_</a>, offset_x, offset_y);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="comment">// 图像画出来 画线  参考线 后续删除</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="comment">// #delete</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <a class="code" href="../../d5/d16/a01154.html#d3/dc7/a01170">&#x202A;RunPara::StImage</a> *st_img = &amp;<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="comment">// 画出来 内外圆</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                cv::circle(<a class="code" href="../../d6/dea/a01094.html#ad0001f040ac55e8b3a0847a2569beeae">&#x202A;ma_SrcImg_</a>, \</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                           cv::Point(st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, \</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                     st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), \</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                           st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#aaa0951944900aab9f998b309431fcd90">&#x202A;nImgMinR</a>, \</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                           cv::Scalar(0, 255, 0),  \</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                           2);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                cv::circle(<a class="code" href="../../d6/dea/a01094.html#ad0001f040ac55e8b3a0847a2569beeae">&#x202A;ma_SrcImg_</a>, \</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                           cv::Point(st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, \</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                     st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), \</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                           st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;nImgMaxR</a>, \</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                           cv::Scalar(0, 255, 0), \</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                           2);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="comment">// 划出来 圆心</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                cv::circle(<a class="code" href="../../d6/dea/a01094.html#ad0001f040ac55e8b3a0847a2569beeae">&#x202A;ma_SrcImg_</a>, \</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                           cv::Point(st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, \</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                     st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), \</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                           4, \</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                           cv::Scalar(255, 0, 0), \</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                           -1);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                cv::line(<a class="code" href="../../d6/dea/a01094.html#ad0001f040ac55e8b3a0847a2569beeae">&#x202A;ma_SrcImg_</a>, \</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                         cv::Point(st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, \</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                                   st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), \</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                         cv::Point(st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, \</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                   st_img-&gt;<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a> + 540), \</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                         cv::Scalar(255, 0, 0), \</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                         2);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            }</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#acbe03cac2d706c0f6d5a11f8c0e26946">  224</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/dce/a00143.html#acbe03cac2d706c0f6d5a11f8c0e26946">&#x202A;ReleaseThread</a>(QThread *qthread)</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">if</span> (qthread == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        qthread-&gt;requestInterruption();</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        qthread-&gt;quit();</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        qthread-&gt;wait();</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keyword">delete</span> qthread;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e)</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Thread Quit Error!&quot;</span>&lt;&lt;e.what ();</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#ad3b5d3b3c83f0557e63b42855daab802">  262</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d7/dce/a00143.html#ad3b5d3b3c83f0557e63b42855daab802">&#x202A;CalcPCA</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> * dat)</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">int</span> res = static_cast&lt;int&gt;(((*(dat + 1)) &lt;&lt; 16) + (*(dat + 2) &lt;&lt; 8) + *(dat + 3));</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">return</span> *(dat) == <a class="code" href="../../d0/d89/a00071.html#af029f43dfa3e14b6c8988a307d32fa02ab1ec3017acb6a3acf7ce57b7b5bdcdce">&#x202A;VDPCASignal</a> ? -res : res;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#acab6a3f3a0d0970b03b4b6de388ba319">  286</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="../../d7/dce/a00143.html#acab6a3f3a0d0970b03b4b6de388ba319">&#x202A;CalcHCMData</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> * dat)</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="comment">// 按照对应的位计算相应的值</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">float</span> res = (*dat % 16) * 100</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        + (*(dat + 1) / 16) * 10</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        + (*(dat + 1) % 16) * 1.0f</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        + (*(dat + 2) / 16) * 0.1f</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        + (*(dat + 2) % 16) * 0.01f;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">// 根据符号为返回相应的值信息</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">return</span> *dat &gt; 16 ? -res : res;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;}</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#ae6a4d471be78a55fdeef64b3a950052b">  315</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="../../d7/dce/a00143.html#ae6a4d471be78a55fdeef64b3a950052b">&#x202A;CalcAngle</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>* dat)</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">float</span> res = (((*dat &amp; 0x0F) &lt;&lt; 8) + (*(dat + 1))) / 10.0f;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">return</span> ((*dat) &amp; 0x10) ? -res : res;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;}</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#a1f26c02f30bde495edb12a04ca26904a">  338</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d7/dce/a00143.html#a1f26c02f30bde495edb12a04ca26904a">&#x202A;CalcMagnet</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *dat)</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;{</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">int</span> res = (((*dat) &amp; 0x7F) &lt;&lt; 16) + ((*(dat + 1)) &lt;&lt; 8) + (*(dat + 2));</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">return</span> (*dat &amp; 0x80) ? -res : res;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#aef339f85a20df81dbcd0c9b54fc2f9a5">  360</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/dce/a00143.html#aef339f85a20df81dbcd0c9b54fc2f9a5">&#x202A;CalcSumCheck</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *dat, <span class="keywordtype">int</span> len)</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;{</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> sum = 0;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; len; i++)</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        sum += *dat++;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordflow">return</span> sum == *dat; <span class="comment">// 判断校验值是否等于结果值</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;}</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#abfb3a3ea04a2dd20e925608df2cc3640">  389</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/dce/a00143.html#abfb3a3ea04a2dd20e925608df2cc3640">&#x202A;SplitFileName</a>(std::string &amp;file_name, std::string &amp;file_path, <span class="keyword">const</span> std::string &amp;filename)</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;{</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="comment">// 根据 filename 更新 file_name_, 和 file_path_  找到最后一个 &quot;/&quot; 如果找不到 pos = -1</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordtype">size_t</span> pos = filename.find_last_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="comment">// 如果 找不到前置 /  表示当层目录, 对应的是 &quot;&quot; &quot;/&quot; &quot;./&quot; </span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">if</span> (pos &lt; 2)</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        file_path = <span class="stringliteral">&quot;./&quot;</span>;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        file_path = filename.substr(0, pos + 1);    <span class="comment">// 将 /  包含到 path 中</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="comment">// 从找到的pos 后一位开始就可</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    file_name = filename.substr(pos + 1); <span class="comment">// 从/ 开始到最后的结尾</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    pos = file_name.find_last_of(<span class="stringliteral">&quot;.&quot;</span>);     <span class="comment">// 计算最后一个 &quot;. &quot;  去除 拓展名</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="comment">// 表示找到了字符串</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordflow">if</span> (pos &gt; 0)</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        file_name = file_name.substr(0, pos);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;}</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
-<div class="line"><a name="l00424"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#ac36f7da215866e6e1cd05a52aa5bc0b6">  424</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/dce/a00143.html#ac36f7da215866e6e1cd05a52aa5bc0b6">&#x202A;IsDirExist</a>(<span class="keyword">const</span> std::string &amp; path,<span class="keywordtype">bool</span> create_)</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;{</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordflow">if</span> (_access(path.c_str (), 0) == -1)</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    {</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keywordflow">if</span> (create_)</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        {</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#ifdef WIN32  </span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            <span class="keywordtype">int</span> flag = _mkdir(path.c_str());</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#endif  </span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">#ifdef linux   </span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            <span class="keywordtype">int</span> flag = mkdir(dir.c_str(), 0777);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#endif  </span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            <span class="keywordflow">return</span> (flag == 0);</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        }</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    }</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;}</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
-<div class="line"><a name="l00463"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#a146efc099cbdee49a56b4547d272db9b">  463</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/dce/a00143.html#a146efc099cbdee49a56b4547d272db9b">&#x202A;IsFileExist</a>(<span class="keyword">const</span> std::string &amp; file, <span class="keywordtype">bool</span> create_)</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;{</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">if</span> ((_access(file.c_str(), 0)) == -1)</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    {</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <span class="keywordflow">if</span> (create_)</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        {</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            <span class="comment">// 创建文件</span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            std::string name_, path_;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <a class="code" href="../../d7/dce/a00143.html#abfb3a3ea04a2dd20e925608df2cc3640">&#x202A;SplitFileName</a>(name_, path_, file);</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d7/dce/a00143.html#ac36f7da215866e6e1cd05a52aa5bc0b6">&#x202A;IsDirExist</a>(path_, create_))</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            {</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                <span class="keywordflow">if</span> ((_access(file.c_str(), 0)) != -1)</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            }</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        }</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    }</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;}</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
-<div class="line"><a name="l00502"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#a757663ba676f98ccb99aa73062ec0f15">  502</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/dce/a00143.html#a757663ba676f98ccb99aa73062ec0f15">&#x202A;ShowImageOnLable</a>(<span class="keyword">const</span> cv::Mat &amp;srcImg, QLabel *lb_label, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height)</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;{</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="comment">// tCamProc-&gt;procMutex.lock(); // 处理线程  锁定</span></div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="comment">// #TODO: 寻找减少转换的方案</span></div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="comment">// 首先根据label 大小 缩放对应的图像</span></div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160; </div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    Q_ASSERT(srcImg.rows != 0);</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    cv::Mat tmp_img;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="comment">// 进行 图像缩放 进行进一步尺寸限制</span></div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    {</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="comment">// LDebug(&quot;start resize Image {}!&quot;,img_cnt);</span></div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="comment">// #FIXME 解决图像缩放问题</span></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        <span class="comment">// float src_ratio = (float)srcImg.rows / srcImg.cols;</span></div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        LTrace(<span class="stringliteral">&quot;Show Image On Lable Resize Start!&quot;</span>);</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        cv::resize(srcImg, tmp_img, cv::Size(width, height));</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="comment">// tmp_show_img = srcImg(cv::Rect(0, 0, width, height));</span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="comment">// LTrace(&quot;end Image{}&quot;, img_cnt);</span></div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="comment">// tmp_show_img = srcImg;</span></div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    }</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    {</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        LError(<span class="stringliteral">&quot;resize Error!&quot;</span>);</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    }</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160; </div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="comment">// 将原始图像转换成 QImage</span></div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    QImage img = <a class="code" href="../../d7/dce/a00143.html#a51b816b14fb11dbdb1d0e7986cb0aca9">&#x202A;CvMat2QImage</a>(tmp_img);</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160; </div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <span class="comment">// 将QImage 转换成 QPixmap</span></div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    QPixmap pixmap = QPixmap::fromImage(img);</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="comment">// 在相应的lable 上 显示图片</span></div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="comment">// pixmap.scaled(QSize(lb_label-&gt;width(),lb_label-&gt;height ()));</span></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="comment">// lb_label-&gt;setScaledContents(true);</span></div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    lb_label-&gt;setPixmap(pixmap);</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;}</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160; </div>
-<div class="line"><a name="l00553"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#ada508f63f55e790426a4a235ee420303">  553</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/dce/a00143.html#ada508f63f55e790426a4a235ee420303">&#x202A;emitTimeoutAndStop</a>(QTimer * timer)</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;{</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    Q_ASSERT(timer);</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    Q_ASSERT(QAbstractEventDispatcher::instance()); <span class="comment">// event loop must be on the stack </span></div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordflow">if</span> (!timer-&gt;isActive()) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    QTimerEvent <span class="keyword">event</span>{timer-&gt;timerId()};</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    QCoreApplication::sendEvent(timer, &amp;event);</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    timer-&gt;stop();</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;}</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160; </div>
-<div class="line"><a name="l00575"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#ac4398c20ecda27598d99d9a661a2ea9c">  575</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/dce/a00143.html#ac4398c20ecda27598d99d9a661a2ea9c">&#x202A;RenderNumberOnLabel</a>(QLabel *label, <span class="keywordtype">float</span> num)</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;{</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    label-&gt;setText(QString::number(num, <span class="charliteral">&#39;f&#39;</span>, 1));</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;}</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160; </div>
-<div class="line"><a name="l00592"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#a516438d193b466735a44c169cae10b05">  592</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/dce/a00143.html#ac4398c20ecda27598d99d9a661a2ea9c">&#x202A;RenderNumberOnLabel</a>(QLabel * label, <span class="keywordtype">int</span> num)</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;{</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    label-&gt;setText(QString::number(num));</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;}</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160; </div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160; </div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="preprocessor">#include &lt;QStorageInfo&gt;</span> </div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160; </div>
-<div class="line"><a name="l00601"></a><span class="lineno"><a class="line" href="../../d7/dce/a00143.html#a0dd08ab91977a2738f33adbd7e8306b2">  601</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/dce/a00143.html#a0dd08ab91977a2738f33adbd7e8306b2">&#x202A;AddImageInfo</a>(cv::Mat &amp;img)</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;{</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    <a class="code" href="../../d2/d4d/a01079.html#d6/dbc/a01099">&#x202A;RunPara::StImage::StImagePolar</a> *polar_para = &amp;(<a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d2/d4d/a01079.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>);</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    {</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="comment">// 画出来 内外圆</span></div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        cv::circle(img, </div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                             polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>),</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                   polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#aaa0951944900aab9f998b309431fcd90">&#x202A;nImgMinR</a>, </div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                   cv::Scalar(0, 255, 0), </div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                   4);</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        cv::circle(img, </div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;                             polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;                   polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;nImgMaxR</a>, </div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;                   cv::Scalar(0, 255, 0), </div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                   4);</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160; </div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <span class="comment">// 划出来 圆心</span></div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        cv::circle(img, </div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;                             polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                   8, </div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;                   cv::Scalar(255, 0, 0), </div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                   -1);</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <span class="comment">// 画出 分割线 标识 展开的起点</span></div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        cv::arrowedLine(img,</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                 cv::Point(polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                           polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                 cv::Point(polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                           polar_para-&gt;<a class="code" href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a> + 540), </div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                 cv::Scalar(255, 0, 0), </div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                 2);</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    }</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160; </div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="keywordflow">return</span>  <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;}</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="comment">// #FIXME SD 一起显示就会崩溃</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <span class="comment">// 根据配置参数配置相应的执行顺序</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordflow">if</span> (show_mode[0] == <span class="charliteral">&#39;1&#39;</span>)</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="comment">// 显示原始图像</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                emit <a class="code" href="../../d6/dea/a01094.html#a59f8eddb9aaffcc5e39d6cadbe1aa913">&#x202A;signal_show_frame</a>(&amp;<a class="code" href="../../d6/dea/a01094.html#ad0001f040ac55e8b3a0847a2569beeae">&#x202A;ma_SrcImg_</a>, 0);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                 </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                <span class="comment">// #KEEPIT 删除延时后 会出现数据访问冲突</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                Sleep(3);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="keywordflow">if</span> (show_mode[2] == <span class="charliteral">&#39;1&#39;</span>)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="comment">// 显示展开图像</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                emit <a class="code" href="../../d6/dea/a01094.html#a59f8eddb9aaffcc5e39d6cadbe1aa913">&#x202A;signal_show_frame</a>(&amp;<a class="code" href="../../d6/dea/a01094.html#a498ba20c930051ecb85c613d75388acb">&#x202A;ma_PolarImg_</a>, 2);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                Sleep(1);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">if</span> (show_mode[1] == <span class="charliteral">&#39;1&#39;</span>)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                <a class="code" href="../../d6/dea/a01094.html#a81cbcfb10df949bfb1fc9905ccc86229">&#x202A;mx_ProcMutex_</a>.lock();</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                <span class="comment">// 显示拼接图像 </span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <a class="code" href="../../d6/dea/a01094.html#ab7fbe6672e2a11b8f6fd141c8f0ab708">&#x202A;m_ImageProc_</a>-&gt;<a class="code" href="../../d3/ddc/a01142.html#a901c1bc39c2a6983a1cb487656c2361d">&#x202A;GetDstImg</a>(<a class="code" href="../../d6/dea/a01094.html#a5197ccf0c3a931a873fe4d8a1395ab3c">&#x202A;mva_DstImg_V_</a>[img_cnt%<a class="code" href="../../d5/de0/a00050.html#a1befdeb2254bebc2b90f845a52bb9f7d">&#x202A;K_Dst_Img_Max_Num</a>]);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                emit <a class="code" href="../../d6/dea/a01094.html#a59f8eddb9aaffcc5e39d6cadbe1aa913">&#x202A;signal_show_frame</a>(&amp;<a class="code" href="../../d6/dea/a01094.html#a5197ccf0c3a931a873fe4d8a1395ab3c">&#x202A;mva_DstImg_V_</a>[img_cnt%<a class="code" href="../../d5/de0/a00050.html#a1befdeb2254bebc2b90f845a52bb9f7d">&#x202A;K_Dst_Img_Max_Num</a>], 1);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <span class="comment">// Sleep(2);</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                <a class="code" href="../../d6/dea/a01094.html#a81cbcfb10df949bfb1fc9905ccc86229">&#x202A;mx_ProcMutex_</a>.unlock();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="comment">// 测算时间 FPS </span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="comment">// float trig_show_img_fps =</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <a class="code" href="../../d4/d3c/a01418.html#ac5d31743c8d57b5a70caa94b55356477">&#x202A;Utils_Time::CalcPeriodFps</a>(1, <span class="stringliteral">&quot;CamProc Frame&quot;</span>);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <a class="code" href="../../d4/d3c/a01418.html#ac5d31743c8d57b5a70caa94b55356477">&#x202A;Utils_Time::CalcPeriodFps</a>(0);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01079_html_a32a897b4e7267880e0487ccfa093f0b1"><div class="ttname"><a href="../../d2/d4d/a01079.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;RunPara::StImage::StImagePolar::nImgCenterY</a></div><div class="ttdeci">&#x202A;int nImgCenterY</div><div class="ttdoc">&#x202A;中心 Y 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00114">runpara.h:114</a></div></div>
-<div class="ttc" id="aa01079_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../d2/d4d/a01079.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
-<div class="ttc" id="aa00143_html_a0dd08ab91977a2738f33adbd7e8306b2"><div class="ttname"><a href="../../d7/dce/a00143.html#a0dd08ab91977a2738f33adbd7e8306b2">&#x202A;AddImageInfo</a></div><div class="ttdeci">&#x202A;bool AddImageInfo(cv::Mat &amp;img)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00601">common.cc:601</a></div></div>
-<div class="ttc" id="aa00143_html_ad3b5d3b3c83f0557e63b42855daab802"><div class="ttname"><a href="../../d7/dce/a00143.html#ad3b5d3b3c83f0557e63b42855daab802">&#x202A;CalcPCA</a></div><div class="ttdeci">&#x202A;int CalcPCA(uchar *dat)</div><div class="ttdoc">&#x202A;计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00262">common.cc:262</a></div></div>
-<div class="ttc" id="aa00143_html_a146efc099cbdee49a56b4547d272db9b"><div class="ttname"><a href="../../d7/dce/a00143.html#a146efc099cbdee49a56b4547d272db9b">&#x202A;IsFileExist</a></div><div class="ttdeci">&#x202A;bool IsFileExist(const std::string &amp;file, bool create_)</div><div class="ttdoc">&#x202A;判断指定的文件是否存在 // 给定flg 如果不存在则建立文件</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00463">common.cc:463</a></div></div>
-<div class="ttc" id="aa00161_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00014">main.cpp:14</a></div></div>
-<div class="ttc" id="aa00143_html_a0eeb818cd8623175cafd977ba37ffd2a"><div class="ttname"><a href="../../d7/dce/a00143.html#a0eeb818cd8623175cafd977ba37ffd2a">&#x202A;MatToQImage</a></div><div class="ttdeci">&#x202A;QImage MatToQImage(cv::Mat src_bgr)</div><div class="ttdoc">&#x202A;Matrix to q image 将 MAT 类型的数据 转换成 QImage</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00137">common.cc:137</a></div></div>
-<div class="ttc" id="aa01079_html_a1f8c6937a5479cf7be87ec579c92ae0b"><div class="ttname"><a href="../../d2/d4d/a01079.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;RunPara::StImage::StImagePolar::nImgCenterX</a></div><div class="ttdeci">&#x202A;int nImgCenterX</div><div class="ttdoc">&#x202A;中心 X 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00113">runpara.h:113</a></div></div>
-<div class="ttc" id="aa00143_html_aef339f85a20df81dbcd0c9b54fc2f9a5"><div class="ttname"><a href="../../d7/dce/a00143.html#aef339f85a20df81dbcd0c9b54fc2f9a5">&#x202A;CalcSumCheck</a></div><div class="ttdeci">&#x202A;bool CalcSumCheck(uchar *dat, int len)</div><div class="ttdoc">&#x202A;Calculates the sum check 计算开始的len 数据的sum 和,</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00360">common.cc:360</a></div></div>
-<div class="ttc" id="aa00143_html_a51b816b14fb11dbdb1d0e7986cb0aca9"><div class="ttname"><a href="../../d7/dce/a00143.html#a51b816b14fb11dbdb1d0e7986cb0aca9">&#x202A;CvMat2QImage</a></div><div class="ttdeci">&#x202A;QImage CvMat2QImage(const cv::Mat &amp;mat)</div><div class="ttdoc">&#x202A;opencv Mat格式转换为 QT 的 QImage</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00092">common.cc:92</a></div></div>
-<div class="ttc" id="aa01079_html_aaa0951944900aab9f998b309431fcd90"><div class="ttname"><a href="../../d2/d4d/a01079.html#aaa0951944900aab9f998b309431fcd90">&#x202A;RunPara::StImage::StImagePolar::nImgMinR</a></div><div class="ttdeci">&#x202A;int nImgMinR</div><div class="ttdoc">&#x202A;内径</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00116">runpara.h:116</a></div></div>
-<div class="ttc" id="aa01079_html_a76b56f70107ff342985f6d8bef2fa3ba"><div class="ttname"><a href="../../d2/d4d/a01079.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;RunPara::StImage::Polar</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage::StImagePolar Polar</div></div>
-<div class="ttc" id="aa00143_html_a757663ba676f98ccb99aa73062ec0f15"><div class="ttname"><a href="../../d7/dce/a00143.html#a757663ba676f98ccb99aa73062ec0f15">&#x202A;ShowImageOnLable</a></div><div class="ttdeci">&#x202A;bool ShowImageOnLable(const cv::Mat &amp;srcImg, QLabel *lb_label, int width, int height)</div><div class="ttdoc">&#x202A;在相应的label 上显示图片</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00502">common.cc:502</a></div></div>
-<div class="ttc" id="aa00143_html_ad13dba3fc65c16e774fde626887d7d71"><div class="ttname"><a href="../../d7/dce/a00143.html#ad13dba3fc65c16e774fde626887d7d71">&#x202A;QImage2cvMat</a></div><div class="ttdeci">&#x202A;cv::Mat QImage2cvMat(QImage image)</div><div class="ttdoc">&#x202A;QT QImage 转换成 opencv Mat 格式图像</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00183">common.cc:183</a></div></div>
-<div class="ttc" id="aa00143_html_acab6a3f3a0d0970b03b4b6de388ba319"><div class="ttname"><a href="../../d7/dce/a00143.html#acab6a3f3a0d0970b03b4b6de388ba319">&#x202A;CalcHCMData</a></div><div class="ttdeci">&#x202A;float CalcHCMData(uchar *dat)</div><div class="ttdoc">&#x202A;根据磁力计 返回的 三个UCHAR值 解算成相应的十进制值</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00286">common.cc:286</a></div></div>
-<div class="ttc" id="aa00143_html_ac36f7da215866e6e1cd05a52aa5bc0b6"><div class="ttname"><a href="../../d7/dce/a00143.html#ac36f7da215866e6e1cd05a52aa5bc0b6">&#x202A;IsDirExist</a></div><div class="ttdeci">&#x202A;bool IsDirExist(const std::string &amp;path, bool create_)</div><div class="ttdoc">&#x202A;判断文件夹是否存在, 如果不存在 则新建 文件夹 // 不确定能否递归建立</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00424">common.cc:424</a></div></div>
-<div class="ttc" id="aa00143_html_ada508f63f55e790426a4a235ee420303"><div class="ttname"><a href="../../d7/dce/a00143.html#ada508f63f55e790426a4a235ee420303">&#x202A;emitTimeoutAndStop</a></div><div class="ttdeci">&#x202A;void emitTimeoutAndStop(QTimer *timer)</div><div class="ttdoc">&#x202A;Emit timeout and stop</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00553">common.cc:553</a></div></div>
-<div class="ttc" id="aa01079_html_a7e46989d0421ca554f06927f2c28b99a"><div class="ttname"><a href="../../d2/d4d/a01079.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;RunPara::StImage::StImagePolar::nImgMaxR</a></div><div class="ttdeci">&#x202A;int nImgMaxR</div><div class="ttdoc">&#x202A;外径 最大范围</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00115">runpara.h:115</a></div></div>
-<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00036">Commu.h:36</a></div></div>
-<div class="ttc" id="aa01079_html_d6/dbc/a01099"><div class="ttname"><a href="../../d2/d4d/a01079.html#d6/dbc/a01099">&#x202A;RunPara::StImage::StImagePolar</a></div><div class="ttdoc">&#x202A;Image 处理参数, 作为图像展开参数</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00111">runpara.h:111</a></div></div>
-<div class="ttc" id="aa00143_html_a1b766d952edae9adfd918d4b2e8c43d7"><div class="ttname"><a href="../../d7/dce/a00143.html#a1b766d952edae9adfd918d4b2e8c43d7">&#x202A;CalcPeriodTimeFps</a></div><div class="ttdeci">&#x202A;float CalcPeriodTimeFps(int flg, std::string str)</div><div class="ttdoc">&#x202A;Gets time FPS // 计算出来 以当前时间计算出来的 每秒可以执行的次数</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00059">common.cc:59</a></div></div>
-<div class="ttc" id="aa00071_html_af029f43dfa3e14b6c8988a307d32fa02ab1ec3017acb6a3acf7ce57b7b5bdcdce"><div class="ttname"><a href="../../d0/d89/a00071.html#af029f43dfa3e14b6c8988a307d32fa02ab1ec3017acb6a3acf7ce57b7b5bdcdce">&#x202A;VDPCASignal</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d89/a00071_source.html#l00144">serialdata.h:144</a></div></div>
-<div class="ttc" id="aa00143_html_ac4398c20ecda27598d99d9a661a2ea9c"><div class="ttname"><a href="../../d7/dce/a00143.html#ac4398c20ecda27598d99d9a661a2ea9c">&#x202A;RenderNumberOnLabel</a></div><div class="ttdeci">&#x202A;void RenderNumberOnLabel(QLabel *label, float num)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00575">common.cc:575</a></div></div>
-<div class="ttc" id="aa00143_html_abfb3a3ea04a2dd20e925608df2cc3640"><div class="ttname"><a href="../../d7/dce/a00143.html#abfb3a3ea04a2dd20e925608df2cc3640">&#x202A;SplitFileName</a></div><div class="ttdeci">&#x202A;bool SplitFileName(std::string &amp;file_name, std::string &amp;file_path, const std::string &amp;filename)</div><div class="ttdoc">&#x202A;将文件路径拆分为 文件路径和文件名称 删除拓展名</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00389">common.cc:389</a></div></div>
-<div class="ttc" id="aa01043_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00034">Config.h:34</a></div></div>
-<div class="ttc" id="aa00143_html_a1f26c02f30bde495edb12a04ca26904a"><div class="ttname"><a href="../../d7/dce/a00143.html#a1f26c02f30bde495edb12a04ca26904a">&#x202A;CalcMagnet</a></div><div class="ttdeci">&#x202A;int CalcMagnet(uchar *dat)</div><div class="ttdoc">&#x202A;Calculates the magnet</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00338">common.cc:338</a></div></div>
-<div class="ttc" id="aa00143_html_acbe03cac2d706c0f6d5a11f8c0e26946"><div class="ttname"><a href="../../d7/dce/a00143.html#acbe03cac2d706c0f6d5a11f8c0e26946">&#x202A;ReleaseThread</a></div><div class="ttdeci">&#x202A;bool ReleaseThread(QThread *qthread)</div><div class="ttdoc">&#x202A;停止进程并同时 删除对象</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00224">common.cc:224</a></div></div>
-<div class="ttc" id="aa00143_html_a475a60f278f15fdbbdffb826f87fba72"><div class="ttname"><a href="../../d7/dce/a00143.html#a475a60f278f15fdbbdffb826f87fba72">&#x202A;CalcPeriodTimeMs</a></div><div class="ttdeci">&#x202A;float CalcPeriodTimeMs(int flg, std::string str)</div><div class="ttdoc">&#x202A;计算经过的 时间 ms 单位</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00025">common.cc:25</a></div></div>
-<div class="ttc" id="aa00143_html_ae6a4d471be78a55fdeef64b3a950052b"><div class="ttname"><a href="../../d7/dce/a00143.html#ae6a4d471be78a55fdeef64b3a950052b">&#x202A;CalcAngle</a></div><div class="ttdeci">&#x202A;float CalcAngle(uchar *dat)</div><div class="ttdoc">&#x202A;Calculates the Angle data</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00315">common.cc:315</a></div></div>
+<div class="ttc" id="aa00056_html_af8e4def8f3de31b2d7ea0d2077ca3473afef364d1f6a87dd77999ec49e3317fe9"><div class="ttname"><a href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afef364d1f6a87dd77999ec49e3317fe9">&#x202A;OWRITE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00174">IDOIFile.h:174</a></div></div>
+<div class="ttc" id="aa01154_html_ab75b4a0e3dc051ecba64676e81c66c10"><div class="ttname"><a href="../../d5/d16/a01154.html#ab75b4a0e3dc051ecba64676e81c66c10">&#x202A;RunPara::StProject::strProjectName</a></div><div class="ttdeci">&#x202A;std::string strProjectName</div><div class="ttdoc">&#x202A;工程文件名 前缀加时间生成</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00071">runpara.h:71</a></div></div>
+<div class="ttc" id="aa01154_html_a4e6644435b7546b92c9d1f74b9d828da"><div class="ttname"><a href="../../d5/d16/a01154.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;RunPara::Project</a></div><div class="ttdeci">&#x202A;struct RunPara::StProject Project</div></div>
+<div class="ttc" id="aa01154_html_af17ea17a7ba6b27eaee99e5b1e4c91f1"><div class="ttname"><a href="../../d5/d16/a01154.html#af17ea17a7ba6b27eaee99e5b1e4c91f1">&#x202A;RunPara::StUI::StLabel::nWidth</a></div><div class="ttdeci">&#x202A;int nWidth</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00251">runpara.h:251</a></div></div>
+<div class="ttc" id="aa01094_html_a4fd7a30375554ef9df2ef322db87c32d"><div class="ttname"><a href="../../d6/dea/a01094.html#a4fd7a30375554ef9df2ef322db87c32d">&#x202A;CamProc::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdoc">&#x202A;初始化线程 初始化完成后 开始运行</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00064">camProc.cc:64</a></div></div>
+<div class="ttc" id="aa01094_html_acea51160009fb429624f023f15345747"><div class="ttname"><a href="../../d6/dea/a01094.html#acea51160009fb429624f023f15345747">&#x202A;CamProc::m_SerialProc_</a></div><div class="ttdeci">&#x202A;SerialProc * m_SerialProc_</div><div class="ttdoc">&#x202A;串口数据处理程序</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00058">CamProc.h:58</a></div></div>
+<div class="ttc" id="aa01094_html_a81cbcfb10df949bfb1fc9905ccc86229"><div class="ttname"><a href="../../d6/dea/a01094.html#a81cbcfb10df949bfb1fc9905ccc86229">&#x202A;CamProc::mx_ProcMutex_</a></div><div class="ttdeci">&#x202A;QMutex mx_ProcMutex_</div><div class="ttdoc">&#x202A;处理线程锁</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00056">CamProc.h:56</a></div></div>
+<div class="ttc" id="aa01094_html_aa7371a962cfcec0e0aeb9cf2150d0608"><div class="ttname"><a href="../../d6/dea/a01094.html#aa7371a962cfcec0e0aeb9cf2150d0608">&#x202A;CamProc::mqa_CaptureBuffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * mqa_CaptureBuffer_</div><div class="ttdoc">&#x202A;摄像头抓取的图像队列</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00061">CamProc.h:61</a></div></div>
+<div class="ttc" id="aa01142_html_a7bb4ca506020613343dace9f8014093e"><div class="ttname"><a href="../../d3/ddc/a01142.html#a7bb4ca506020613343dace9f8014093e">&#x202A;ImageProc::m_IdoiFile_</a></div><div class="ttdeci">&#x202A;IDOIFile * m_IdoiFile_</div><div class="ttdoc">&#x202A;文件处理 写入自定义文件指针</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00032">ImageProc.h:32</a></div></div>
+<div class="ttc" id="aa01154_html_ac277eb8822dafb2f25391ad8274a078c"><div class="ttname"><a href="../../d5/d16/a01154.html#ac277eb8822dafb2f25391ad8274a078c">&#x202A;RunPara::StUI::DstImgLabel</a></div><div class="ttdeci">&#x202A;struct RunPara::StUI::StLabel DstImgLabel</div></div>
+<div class="ttc" id="aa01266_html_a2eb103016c9d0b4a4e13368ff3e9236c"><div class="ttname"><a href="../../d7/d73/a01266.html#a2eb103016c9d0b4a4e13368ff3e9236c">&#x202A;SerialProc::SerialProc</a></div><div class="ttdeci">&#x202A;SerialProc(QObject *parent=nullptr)</div><div class="ttdoc">&#x202A;默认初始化方式 初始化串口和定时器</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd9/a00179_source.html#l00029">SerialProc.cc:29</a></div></div>
+<div class="ttc" id="aa01154_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
+<div class="ttc" id="aa01154_html_a7e46989d0421ca554f06927f2c28b99a"><div class="ttname"><a href="../../d5/d16/a01154.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;RunPara::StImage::StImagePolar::nImgMaxR</a></div><div class="ttdeci">&#x202A;int nImgMaxR</div><div class="ttdoc">&#x202A;外径 最大范围</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00114">runpara.h:114</a></div></div>
+<div class="ttc" id="aa01138_html_a82958295317ee47afc54276cb3520f14"><div class="ttname"><a href="../../d0/d39/a01138.html#a82958295317ee47afc54276cb3520f14">&#x202A;IDOIFile::WriteRunPara</a></div><div class="ttdeci">&#x202A;bool WriteRunPara(std::fstream *pfile, RunPara *run_para)</div><div class="ttdoc">&#x202A;将参数写入进去 二进制文件中</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df8/a00155_source.html#l00202">IDOIFile.cc:202</a></div></div>
+<div class="ttc" id="aa01154_html_aaa0951944900aab9f998b309431fcd90"><div class="ttname"><a href="../../d5/d16/a01154.html#aaa0951944900aab9f998b309431fcd90">&#x202A;RunPara::StImage::StImagePolar::nImgMinR</a></div><div class="ttdeci">&#x202A;int nImgMinR</div><div class="ttdoc">&#x202A;内径</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00115">runpara.h:115</a></div></div>
+<div class="ttc" id="aa01154_html_ac58c09a2c05c756961c2b5bfbca90d4e"><div class="ttname"><a href="../../d5/d16/a01154.html#ac58c09a2c05c756961c2b5bfbca90d4e">&#x202A;RunPara::StCFG::StDebug::strShowMode</a></div><div class="ttdeci">&#x202A;std::string strShowMode</div><div class="ttdoc">&#x202A;显示模式是否显示 原图 大图 展开图</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00276">runpara.h:276</a></div></div>
+<div class="ttc" id="aa01094_html_ad0001f040ac55e8b3a0847a2569beeae"><div class="ttname"><a href="../../d6/dea/a01094.html#ad0001f040ac55e8b3a0847a2569beeae">&#x202A;CamProc::ma_SrcImg_</a></div><div class="ttdeci">&#x202A;cv::Mat ma_SrcImg_</div><div class="ttdoc">&#x202A;原始采集到的图像</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00048">CamProc.h:48</a></div></div>
+<div class="ttc" id="aa01142_html"><div class="ttname"><a href="../../d3/ddc/a01142.html">&#x202A;ImageProc</a></div><div class="ttdoc">&#x202A;图片处理类实现</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00029">ImageProc.h:29</a></div></div>
+<div class="ttc" id="aa01154_html_a17d047ca991630963bb004404e25cbda"><div class="ttname"><a href="../../d5/d16/a01154.html#a17d047ca991630963bb004404e25cbda">&#x202A;RunPara::StCFG::StDebug::nDebugEnable</a></div><div class="ttdeci">&#x202A;int nDebugEnable</div><div class="ttdoc">&#x202A;是否使能 测试</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00273">runpara.h:273</a></div></div>
+<div class="ttc" id="aa01094_html_a4cbb35add0157613618515e7820302ce"><div class="ttname"><a href="../../d6/dea/a01094.html#a4cbb35add0157613618515e7820302ce">&#x202A;CamProc::~CamProc</a></div><div class="ttdeci">&#x202A;~CamProc()</div><div class="ttdoc">&#x202A;Finalizes an instance of the CamProc class</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00050">camProc.cc:50</a></div></div>
+<div class="ttc" id="aa01154_html_a55676b481748b3169abcad0b15dab03f"><div class="ttname"><a href="../../d5/d16/a01154.html#a55676b481748b3169abcad0b15dab03f">&#x202A;RunPara::StCFG::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG::StDebug Debug</div></div>
+<div class="ttc" id="aa01154_html_a76b56f70107ff342985f6d8bef2fa3ba"><div class="ttname"><a href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;RunPara::StImage::Polar</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage::StImagePolar Polar</div></div>
+<div class="ttc" id="aa01266_html"><div class="ttname"><a href="../../d7/d73/a01266.html">&#x202A;SerialProc</a></div><div class="ttdoc">&#x202A;设定串口 处理 函数 解析串口的数据 到系统运行参数中</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d09/a00077_source.html#l00035">SerialProc.h:35</a></div></div>
+<div class="ttc" id="aa01418_html_ac5d31743c8d57b5a70caa94b55356477"><div class="ttname"><a href="../../d4/d3c/a01418.html#ac5d31743c8d57b5a70caa94b55356477">&#x202A;Utils_Time::CalcPeriodFps</a></div><div class="ttdeci">&#x202A;static float CalcPeriodFps(int flg=0, std::string str=&quot;funcPeroidFPS&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7b/a00296_source.html#l00062">utils_time.cc:62</a></div></div>
+<div class="ttc" id="aa01154_html_a0af11b07a11c3c2681eac42d2dfe1610"><div class="ttname"><a href="../../d5/d16/a01154.html#a0af11b07a11c3c2681eac42d2dfe1610">&#x202A;RunPara::StProject::strProSuffix</a></div><div class="ttdeci">&#x202A;std::string strProSuffix</div><div class="ttdoc">&#x202A;自定义文件后缀名 &quot;idoi&quot;</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00069">runpara.h:69</a></div></div>
+<div class="ttc" id="aa01094_html_a5197ccf0c3a931a873fe4d8a1395ab3c"><div class="ttname"><a href="../../d6/dea/a01094.html#a5197ccf0c3a931a873fe4d8a1395ab3c">&#x202A;CamProc::mva_DstImg_V_</a></div><div class="ttdeci">&#x202A;std::vector&lt; cv::Mat &gt; mva_DstImg_V_</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00052">CamProc.h:52</a></div></div>
+<div class="ttc" id="aa01122_html_a4d55a1a82ab1aa26325a0c93e2603c3f"><div class="ttname"><a href="../../db/d32/a01122.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;CQueue::Empty</a></div><div class="ttdeci">&#x202A;bool Empty(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00321">CQueue.h:321</a></div></div>
+<div class="ttc" id="aa01094_html_ab0e126c14abcbff7745b0426918ae2ff"><div class="ttname"><a href="../../d6/dea/a01094.html#ab0e126c14abcbff7745b0426918ae2ff">&#x202A;CamProc::ma_PolarImg_Map_Y_</a></div><div class="ttdeci">&#x202A;cv::Mat ma_PolarImg_Map_Y_</div><div class="ttdoc">&#x202A;图像展开对应map Y</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00065">CamProc.h:65</a></div></div>
+<div class="ttc" id="aa01122_html_aabb5d6f90ce5562f4d30867de96bc983"><div class="ttname"><a href="../../db/d32/a01122.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;CQueue::Pop</a></div><div class="ttdeci">&#x202A;bool Pop(T &amp;data)</div><div class="ttdoc">&#x202A;返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00150">CQueue.h:150</a></div></div>
+<div class="ttc" id="aa01154_html_aff08b751819830cd437a5a0f3d5dc2a4"><div class="ttname"><a href="../../d5/d16/a01154.html#aff08b751819830cd437a5a0f3d5dc2a4">&#x202A;RunPara::StDevice::Pulse</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice::StPulse Pulse</div></div>
+<div class="ttc" id="aa01094_html_a02db1c471da2f6bb668046098c41136e"><div class="ttname"><a href="../../d6/dea/a01094.html#a02db1c471da2f6bb668046098c41136e">&#x202A;CamProc::mb_CamProc_WorkEnable_</a></div><div class="ttdeci">&#x202A;bool mb_CamProc_WorkEnable_</div><div class="ttdoc">&#x202A;标志 图像处理循环 标志位</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00060">CamProc.h:60</a></div></div>
+<div class="ttc" id="aa01154_html_ac03a8d44b70c096024ea909ec73d56c4"><div class="ttname"><a href="../../d5/d16/a01154.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;RunPara::UI</a></div><div class="ttdeci">&#x202A;struct RunPara::StUI UI</div></div>
+<div class="ttc" id="aa00062_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00020">main.cpp:20</a></div></div>
+<div class="ttc" id="aa00050_html_a1befdeb2254bebc2b90f845a52bb9f7d"><div class="ttname"><a href="../../d5/de0/a00050.html#a1befdeb2254bebc2b90f845a52bb9f7d">&#x202A;K_Dst_Img_Max_Num</a></div><div class="ttdeci">&#x202A;const int K_Dst_Img_Max_Num</div><div class="ttdoc">&#x202A;目标大图的 最大数量, 做轮换 处理</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00036">constdefine.h:36</a></div></div>
+<div class="ttc" id="aa01154_html_d4/d13/a01162"><div class="ttname"><a href="../../d5/d16/a01154.html#d4/d13/a01162">&#x202A;RunPara::StProject</a></div><div class="ttdoc">&#x202A;记录 路径以及其他路径信息</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00059">runpara.h:59</a></div></div>
+<div class="ttc" id="aa01138_html"><div class="ttname"><a href="../../d0/d39/a01138.html">&#x202A;IDOIFile</a></div><div class="ttdoc">&#x202A;An idoi file.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00193">IDOIFile.h:193</a></div></div>
+<div class="ttc" id="aa01094_html_a13541699698270bd507e5d5ed69d2e9a"><div class="ttname"><a href="../../d6/dea/a01094.html#a13541699698270bd507e5d5ed69d2e9a">&#x202A;CamProc::run</a></div><div class="ttdeci">&#x202A;void run() override</div><div class="ttdoc">&#x202A;Runs this object</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00107">camProc.cc:107</a></div></div>
+<div class="ttc" id="aa01154_html_d3/dc7/a01170"><div class="ttname"><a href="../../d5/d16/a01154.html#d3/dc7/a01170">&#x202A;RunPara::StImage</a></div><div class="ttdoc">&#x202A;运行过程中的 图像参数</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00105">runpara.h:105</a></div></div>
+<div class="ttc" id="aa01142_html_acd18773a822c007ea0d9242b24f86e4d"><div class="ttname"><a href="../../d3/ddc/a01142.html#acd18773a822c007ea0d9242b24f86e4d">&#x202A;ImageProc::Push</a></div><div class="ttdeci">&#x202A;bool Push(cv::Mat &amp;newImage, int offset_x=0, int offset_y=0)</div><div class="ttdoc">&#x202A;提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00093">ImageProc.cc:93</a></div></div>
+<div class="ttc" id="aa01390_html_a8caf43f80697158f648269f7964fffdd"><div class="ttname"><a href="../../d5/d8e/a01390.html#a8caf43f80697158f648269f7964fffdd">&#x202A;Utils::Limit</a></div><div class="ttdeci">&#x202A;static T Limit(T &amp;q, const T minV, const T maxV)</div><div class="ttdoc">&#x202A;定义 函数限定函数， 根据 输入的值现象参数的范围</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00047">utils.h:47</a></div></div>
+<div class="ttc" id="aa01118_html_a80d3a8bcb64807efd5755b4028a0ebf9"><div class="ttname"><a href="../../dd/d09/a01118.html#a80d3a8bcb64807efd5755b4028a0ebf9">&#x202A;Config::mDebug</a></div><div class="ttdeci">&#x202A;RunPara::StCFG::StDebug * mDebug</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00035">Config.h:35</a></div></div>
+<div class="ttc" id="aa01094_html_a498ba20c930051ecb85c613d75388acb"><div class="ttname"><a href="../../d6/dea/a01094.html#a498ba20c930051ecb85c613d75388acb">&#x202A;CamProc::ma_PolarImg_</a></div><div class="ttdeci">&#x202A;cv::Mat ma_PolarImg_</div><div class="ttdoc">&#x202A;展开之后的图像</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00049">CamProc.h:49</a></div></div>
+<div class="ttc" id="aa01154_html_a1b1f21581cf398c15060fe53199662d9"><div class="ttname"><a href="../../d5/d16/a01154.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;RunPara::Device</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice Device</div></div>
+<div class="ttc" id="aa01154_html_aaac086bb3673fe5d55178bc3aba39782"><div class="ttname"><a href="../../d5/d16/a01154.html#aaac086bb3673fe5d55178bc3aba39782">&#x202A;RunPara::StImage::StImagePolar::nImgPolarWidth</a></div><div class="ttdeci">&#x202A;int nImgPolarWidth</div><div class="ttdoc">&#x202A;展开图像 的宽度</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00118">runpara.h:118</a></div></div>
+<div class="ttc" id="aa01154_html_a5c8a75db5d0f3051dcf25a034370c9ce"><div class="ttname"><a href="../../d5/d16/a01154.html#a5c8a75db5d0f3051dcf25a034370c9ce">&#x202A;RunPara::StUI::StLabel::nHeight</a></div><div class="ttdeci">&#x202A;int nHeight</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00252">runpara.h:252</a></div></div>
+<div class="ttc" id="aa01094_html_a572f6fa8541790a724328a3cc2841876"><div class="ttname"><a href="../../d6/dea/a01094.html#a572f6fa8541790a724328a3cc2841876">&#x202A;CamProc::ma_PolarImg_Map_X_</a></div><div class="ttdeci">&#x202A;cv::Mat ma_PolarImg_Map_X_</div><div class="ttdoc">&#x202A;图像展开对应map X</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00064">CamProc.h:64</a></div></div>
+<div class="ttc" id="aa01154_html_a1f8c6937a5479cf7be87ec579c92ae0b"><div class="ttname"><a href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;RunPara::StImage::StImagePolar::nImgCenterX</a></div><div class="ttdeci">&#x202A;int nImgCenterX</div><div class="ttdoc">&#x202A;中心 X 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00112">runpara.h:112</a></div></div>
+<div class="ttc" id="aa01394_html_a5ed9b9316107e1ede0fefb0d53610e40"><div class="ttname"><a href="../../d6/d2f/a01394.html#a5ed9b9316107e1ede0fefb0d53610e40">&#x202A;Utils_CV::CreatMapMat</a></div><div class="ttdeci">&#x202A;static void CreatMapMat(cv::Mat &amp;map_x, \ cv::Mat &amp;map_y, \ int cen_x, \ int cen_y, \ int min_r, \ int max_r, \ int Width=-1, \ int Height=-1)</div><div class="ttdoc">&#x202A;为 展开图像创建 map 后续执行起来很快 展开思路 参考 https://blog.csdn.net/guduruyu/article/details/65436931 见附件 pdf 公式推导 展开...</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00260_source.html#l00411">utils_cv.cc:411</a></div></div>
+<div class="ttc" id="aa01154_html_ade4767762e0d68450f48bc770a22832d"><div class="ttname"><a href="../../d5/d16/a01154.html#ade4767762e0d68450f48bc770a22832d">&#x202A;RunPara::StProject::strProjectPath</a></div><div class="ttdeci">&#x202A;std::string strProjectPath</div><div class="ttdoc">&#x202A;存储工程目录 // 从 运行路径 到 功能文件所在目录</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00073">runpara.h:73</a></div></div>
+<div class="ttc" id="aa01154_html_a05421b7aff626afc7ee598320b9793d4"><div class="ttname"><a href="../../d5/d16/a01154.html#a05421b7aff626afc7ee598320b9793d4">&#x202A;RunPara::StDevice::StPulse::nPixalPerPulse</a></div><div class="ttdeci">&#x202A;int nPixalPerPulse</div><div class="ttdoc">&#x202A;每个脉冲对应的像素数目 的千倍 int nPulseCnt; // 总脉冲计数 // 避免溢出 可以使用 int 足够</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00162">runpara.h:162</a></div></div>
+<div class="ttc" id="aa01118_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01094_html_abdadde506cc0c5a3f3e04fbb56da6729"><div class="ttname"><a href="../../d6/dea/a01094.html#abdadde506cc0c5a3f3e04fbb56da6729">&#x202A;CamProc::CamProc</a></div><div class="ttdeci">&#x202A;CamProc(QObject *parent=nullptr)</div><div class="ttdoc">&#x202A;初始化 相机处理对象</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00012">camProc.cc:12</a></div></div>
+<div class="ttc" id="aa01094_html_a59f8eddb9aaffcc5e39d6cadbe1aa913"><div class="ttname"><a href="../../d6/dea/a01094.html#a59f8eddb9aaffcc5e39d6cadbe1aa913">&#x202A;CamProc::signal_show_frame</a></div><div class="ttdeci">&#x202A;void signal_show_frame(cv::Mat *img, int flg=0)</div><div class="ttdoc">&#x202A;发射显示frame 信号</div></div>
+<div class="ttc" id="aa01094_html_ab7fbe6672e2a11b8f6fd141c8f0ab708"><div class="ttname"><a href="../../d6/dea/a01094.html#ab7fbe6672e2a11b8f6fd141c8f0ab708">&#x202A;CamProc::m_ImageProc_</a></div><div class="ttdeci">&#x202A;ImageProc * m_ImageProc_</div><div class="ttdoc">&#x202A;图像后台内存管理</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00057">CamProc.h:57</a></div></div>
+<div class="ttc" id="aa01154_html_a1ca5d1037652d0b772952ae0716d7a63"><div class="ttname"><a href="../../d5/d16/a01154.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG CFG</div></div>
+<div class="ttc" id="aa01142_html_a901c1bc39c2a6983a1cb487656c2361d"><div class="ttname"><a href="../../d3/ddc/a01142.html#a901c1bc39c2a6983a1cb487656c2361d">&#x202A;ImageProc::GetDstImg</a></div><div class="ttdeci">&#x202A;bool GetDstImg(cv::Mat &amp;dstImg)</div><div class="ttdoc">&#x202A;// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00234">ImageProc.cc:234</a></div></div>
+<div class="ttc" id="aa01154_html_a32a897b4e7267880e0487ccfa093f0b1"><div class="ttname"><a href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;RunPara::StImage::StImagePolar::nImgCenterY</a></div><div class="ttdeci">&#x202A;int nImgCenterY</div><div class="ttdoc">&#x202A;中心 Y 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00113">runpara.h:113</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d7/dce/a00143.html">&#x202A;common.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d7/dce/a00143.html">&#x202A;camProc.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

@@ -1,0 +1,4 @@
+<map id="getDiskSpace" name="getDiskSpace">
+<area shape="rect" id="node1" title="获取磁盘容量" alt="" coords="164,5,267,32"/>
+<area shape="rect" id="node2" href="$d2/df5/a00137.html#a09f96a1e0ee1aead4df603983e3176b2" title="获取本磁盘的占用" alt="" coords="5,5,116,32"/>
+</map>

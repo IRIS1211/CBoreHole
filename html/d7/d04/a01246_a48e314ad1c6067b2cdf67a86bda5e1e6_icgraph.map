@@ -1,0 +1,11 @@
+<map id="FrameData::CalcPCA" name="FrameData::CalcPCA">
+<area shape="rect" id="node1" title="计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据" alt="" coords="1256,67,1403,94"/>
+<area shape="rect" id="node2" href="$d7/d04/a01246.html#a071b93d33a06aea86d23514be375d4cd" title="根据串口数据 更新当前类的值" alt="" coords="1073,67,1208,94"/>
+<area shape="rect" id="node3" href="$d7/d73/a01266.html#a2d4464068d1094563166f6f26976c825" title="循环处理 串口 数据" alt="" coords="848,42,1025,69"/>
+<area shape="rect" id="node9" href="$dd/d52/a00221.html#a67f60ab92ddb871595158e28582a90eb" title=" " alt="" coords="888,93,985,119"/>
+<area shape="rect" id="node4" href="$d7/d73/a01266.html#a7a4d2b37a6f00109fdde7b593b596d36" title="Slot timer run 设置定时器时间到了之后执行的循环操作" alt="" coords="653,35,800,76"/>
+<area shape="rect" id="node5" href="$d7/d73/a01266.html#a4d356bce746d2a91ab02ec10914a34b2" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="439,42,605,69"/>
+<area shape="rect" id="node6" href="$d7/d73/a01266.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="200,42,391,69"/>
+<area shape="rect" id="node7" href="$de/d33/a01274.html#a7597205c96689c706eea3c64d87ba180" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node8" href="$d5/ddf/a00224.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="30,71,127,98"/>
+</map>

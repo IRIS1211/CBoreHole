@@ -1,0 +1,1261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;SerialProc类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.6.0</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dc/d70/a01187.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">成员变量</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a>  </div>
+  <div class="headertitle">
+<div class="title">SerialProc类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>&#x202A;设定串口 处理 函数 解析串口的数据 到系统运行参数中  
+ <a href="../../dc/d70/a01187.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/db6/a00074_source.html">Code\inc\SerialProc.h</a>&gt;</code></p>
+<div class="dynheader">
+类 SerialProc 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/dbb/a01186.png" border="0" usemap="#_serial_proc_inherit__map" alt="Inheritance graph"/></div>
+<map name="_serial_proc_inherit__map" id="_serial_proc_inherit__map">
+<area shape="rect" title="设定串口 处理 函数 解析串口的数据 到系统运行参数中" alt="" coords="5,80,88,107"/>
+<area shape="rect" title=" " alt="" coords="11,5,82,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+SerialProc 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/dd3/a01185.png" border="0" usemap="#_serial_proc_coll__map" alt="Collaboration graph"/></div>
+<map name="_serial_proc_coll__map" id="_serial_proc_coll__map">
+<area shape="rect" title="设定串口 处理 函数 解析串口的数据 到系统运行参数中" alt="" coords="373,663,456,689"/>
+<area shape="rect" title=" " alt="" coords="127,484,198,511"/>
+<area shape="rect" href="../../d6/d27/a01163.html" title="A serial." alt="" coords="253,573,307,600"/>
+<area shape="rect" href="../../db/dbb/a01047.html" title=" " alt="" coords="505,484,658,511"/>
+<area shape="rect" title=" " alt="" coords="437,373,603,399"/>
+<area shape="rect" href="../../d7/dd6/a01167.html" title="暂存 串口发送回来的 分组数据 保存串口发送的原始数据" alt="" coords="183,269,265,295"/>
+<area shape="rect" title="STL class" alt="" coords="588,269,703,295"/>
+<area shape="rect" title=" " alt="" coords="768,373,933,399"/>
+<area shape="rect" title=" " alt="" coords="626,165,665,191"/>
+<area shape="rect" href="../../db/dbb/a01047.html" title=" " alt="" coords="638,373,738,399"/>
+<area shape="rect" href="../../db/dbb/a01047.html" title=" " alt="" coords="697,484,847,511"/>
+<area shape="rect" title="STL class" alt="" coords="303,484,393,511"/>
+<area shape="rect" title="STL class" alt="" coords="283,365,413,407"/>
+<area shape="rect" title="STL class" alt="" coords="289,261,425,303"/>
+<area shape="rect" title="STL class" alt="" coords="199,157,329,199"/>
+<area shape="rect" title="STL class" alt="" coords="233,81,388,108"/>
+<area shape="rect" title="STL class" alt="" coords="353,157,487,199"/>
+<area shape="rect" title="STL class" alt="" coords="261,5,361,32"/>
+<area shape="rect" title="STL class" alt="" coords="811,269,891,295"/>
+<area shape="rect" title="STL class" alt="" coords="787,157,914,199"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:ab481e15af6902cba13410c1e665100ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#ab481e15af6902cba13410c1e665100ff">slot_timer_run</a> (void)</td></tr>
+<tr class="memdesc:ab481e15af6902cba13410c1e665100ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Slot timer run 设置定时器时间到了之后执行的循环操作  <a href="../../dc/d70/a01187.html#ab481e15af6902cba13410c1e665100ff">更多...</a><br /></td></tr>
+<tr class="separator:ab481e15af6902cba13410c1e665100ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ddf623a0ee307c203a11d4e46e967c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a1ddf623a0ee307c203a11d4e46e967c7">slot_SetTimerTime</a> (int t)</td></tr>
+<tr class="memdesc:a1ddf623a0ee307c203a11d4e46e967c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设置相关函数的执行 设置 -1 表示不开启执行 将定时器 停止即可  <a href="../../dc/d70/a01187.html#a1ddf623a0ee307c203a11d4e46e967c7">更多...</a><br /></td></tr>
+<tr class="separator:a1ddf623a0ee307c203a11d4e46e967c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d356bce746d2a91ab02ec10914a34b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2">SerialProcInit</a> (void)</td></tr>
+<tr class="memdesc:a4d356bce746d2a91ab02ec10914a34b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;完成 参数初始化 串口处理 初始化参数  <a href="../../dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2">更多...</a><br /></td></tr>
+<tr class="separator:a4d356bce746d2a91ab02ec10914a34b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be336ed4e3805324cc4b7a5f3589b36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a3be336ed4e3805324cc4b7a5f3589b36">SerialProcStop</a> (void)</td></tr>
+<tr class="memdesc:a3be336ed4e3805324cc4b7a5f3589b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;串口处理对象 停止 关闭窗口并处理窗口  <a href="../../dc/d70/a01187.html#a3be336ed4e3805324cc4b7a5f3589b36">更多...</a><br /></td></tr>
+<tr class="separator:a3be336ed4e3805324cc4b7a5f3589b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2eb103016c9d0b4a4e13368ff3e9236c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a2eb103016c9d0b4a4e13368ff3e9236c">SerialProc</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a2eb103016c9d0b4a4e13368ff3e9236c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;默认初始化方式 初始化串口和定时器  <a href="../../dc/d70/a01187.html#a2eb103016c9d0b4a4e13368ff3e9236c">更多...</a><br /></td></tr>
+<tr class="separator:a2eb103016c9d0b4a4e13368ff3e9236c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a66594c8c7135fe1b433b7ff0ce079"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a47a66594c8c7135fe1b433b7ff0ce079">SerialProc</a> (const std::string &amp;input_file, QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a47a66594c8c7135fe1b433b7ff0ce079"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设置输入文件 实现串口内容的处理  <a href="../../dc/d70/a01187.html#a47a66594c8c7135fe1b433b7ff0ce079">更多...</a><br /></td></tr>
+<tr class="separator:a47a66594c8c7135fe1b433b7ff0ce079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a5970045e50bbb739a674cf61ef102"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a31a5970045e50bbb739a674cf61ef102">~SerialProc</a> ()</td></tr>
+<tr class="memdesc:a31a5970045e50bbb739a674cf61ef102"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Finalizes an instance of the <a class="el" href="../../dc/d70/a01187.html" title="&#x202A;设定串口 处理 函数 解析串口的数据 到系统运行参数中">SerialProc</a> class  <a href="../../dc/d70/a01187.html#a31a5970045e50bbb739a674cf61ef102">更多...</a><br /></td></tr>
+<tr class="separator:a31a5970045e50bbb739a674cf61ef102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac112d2c916ab12042aeca02c7f9f0dd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#ac112d2c916ab12042aeca02c7f9f0dd4">SetOutPutPath</a> (const std::string &amp;outFileName)</td></tr>
+<tr class="memdesc:ac112d2c916ab12042aeca02c7f9f0dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;执行之后 会将文件数据依次写入文件中, 不执行默认不写入文件  <a href="../../dc/d70/a01187.html#ac112d2c916ab12042aeca02c7f9f0dd4">更多...</a><br /></td></tr>
+<tr class="separator:ac112d2c916ab12042aeca02c7f9f0dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecefe574a943886a31f529a16c5b4869"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#aecefe574a943886a31f529a16c5b4869">SetCurrentThread</a> (QThread *thread)</td></tr>
+<tr class="memdesc:aecefe574a943886a31f529a16c5b4869"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Sets current thread  <a href="../../dc/d70/a01187.html#aecefe574a943886a31f529a16c5b4869">更多...</a><br /></td></tr>
+<tr class="separator:aecefe574a943886a31f529a16c5b4869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:ab0efbcfcb776f3339e6d35468a902a5e"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#ab0efbcfcb776f3339e6d35468a902a5e">mx_SerialProc_</a></td></tr>
+<tr class="memdesc:ab0efbcfcb776f3339e6d35468a902a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;串口处理线程 锁 进行线程同步  <a href="../../dc/d70/a01187.html#ab0efbcfcb776f3339e6d35468a902a5e">更多...</a><br /></td></tr>
+<tr class="separator:ab0efbcfcb776f3339e6d35468a902a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b75e1268073be5bf79694b758c8128"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dbb/a01047.html">CQueue</a>&lt; <a class="el" href="../../d7/dd6/a01167.html">SerialData</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a57b75e1268073be5bf79694b758c8128">mq_Read_Buffer_</a></td></tr>
+<tr class="separator:a57b75e1268073be5bf79694b758c8128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60e9b12cc8252da2056087cf1c30279"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dbb/a01047.html">CQueue</a>&lt; std::string &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#ae60e9b12cc8252da2056087cf1c30279">mq_Write_Buffer_</a></td></tr>
+<tr class="separator:ae60e9b12cc8252da2056087cf1c30279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2fa673b460b127ef35bb49b51e8456"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d27/a01163.html">Serial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">m_Serial_</a></td></tr>
+<tr class="memdesc:a8d2fa673b460b127ef35bb49b51e8456"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;The serial  <a href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">更多...</a><br /></td></tr>
+<tr class="separator:a8d2fa673b460b127ef35bb49b51e8456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9f98b06cf86f3c91df7b7793bbe4cc"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">m_Timer_</a></td></tr>
+<tr class="memdesc:a6b9f98b06cf86f3c91df7b7793bbe4cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设置定时执行功能, 完成之后  <a href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">更多...</a><br /></td></tr>
+<tr class="separator:a6b9f98b06cf86f3c91df7b7793bbe4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a2d4464068d1094563166f6f26976c825"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a2d4464068d1094563166f6f26976c825">ProcSerialData</a> (void)</td></tr>
+<tr class="memdesc:a2d4464068d1094563166f6f26976c825"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;循环处理 串口 数据  <a href="../../dc/d70/a01187.html#a2d4464068d1094563166f6f26976c825">更多...</a><br /></td></tr>
+<tr class="separator:a2d4464068d1094563166f6f26976c825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501d9387b58680267b0dfd9e5c569fdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a501d9387b58680267b0dfd9e5c569fdb">ProcData</a> (const QByteArray &amp;recv, <a class="el" href="../../db/dbb/a01047.html">CQueue</a>&lt; <a class="el" href="../../d7/dd6/a01167.html">SerialData</a> &gt; *read_queue)</td></tr>
+<tr class="memdesc:a501d9387b58680267b0dfd9e5c569fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将数据处理 如果正确 加入到自己的队列中  <a href="../../dc/d70/a01187.html#a501d9387b58680267b0dfd9e5c569fdb">更多...</a><br /></td></tr>
+<tr class="separator:a501d9387b58680267b0dfd9e5c569fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a89e30d5dcb4a81c043f3db49600b04f9"><td class="memItemLeft" align="right" valign="top">QThread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a89e30d5dcb4a81c043f3db49600b04f9">mt_selfThread_</a></td></tr>
+<tr class="memdesc:a89e30d5dcb4a81c043f3db49600b04f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;记录当前的线程指针  <a href="../../dc/d70/a01187.html#a89e30d5dcb4a81c043f3db49600b04f9">更多...</a><br /></td></tr>
+<tr class="separator:a89e30d5dcb4a81c043f3db49600b04f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9b7b8c21e584ca95ca43328f1c2e89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dd6/a01167.html">SerialData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">m_SerialHeader</a></td></tr>
+<tr class="separator:aed9b7b8c21e584ca95ca43328f1c2e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14fc4ba2d36db04123aa0a1862156945"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#a14fc4ba2d36db04123aa0a1862156945">mb_enWrite</a> = false</td></tr>
+<tr class="memdesc:a14fc4ba2d36db04123aa0a1862156945"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;是否写入数据  <a href="../../dc/d70/a01187.html#a14fc4ba2d36db04123aa0a1862156945">更多...</a><br /></td></tr>
+<tr class="separator:a14fc4ba2d36db04123aa0a1862156945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb83fa2df574548f4764ca9e2c78c815"><td class="memItemLeft" align="right" valign="top">std::fstream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html#adb83fa2df574548f4764ca9e2c78c815">mf_writeFile_</a></td></tr>
+<tr class="separator:adb83fa2df574548f4764ca9e2c78c815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p class="DocNodeLTR">设定串口 处理 函数 解析串口的数据 到系统运行参数中 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a> 第 <a class="el" href="../../db/db6/a00074_source.html#l00026">26</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a2eb103016c9d0b4a4e13368ff3e9236c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eb103016c9d0b4a4e13368ff3e9236c">&#9670;&nbsp;</a></span>SerialProc() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SerialProc::SerialProc </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;默认初始化方式 初始化串口和定时器 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;If non-null, the parent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00239">239</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    :QObject(parent),</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>(<span class="keyword">new</span> <a class="code" href="../../d6/d27/a01163.html">&#x202A;Serial</a>()),</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#x202A;m_Timer_</a>(<span class="keyword">new</span> QTimer())</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_a2eb103016c9d0b4a4e13368ff3e9236c_icgraph.png" border="0" usemap="#dc/d70/a01187_a2eb103016c9d0b4a4e13368ff3e9236c_icgraph" alt=""/></div>
+<map name="dc/d70/a01187_a2eb103016c9d0b4a4e13368ff3e9236c_icgraph" id="dc/d70/a01187_a2eb103016c9d0b4a4e13368ff3e9236c_icgraph">
+<area shape="rect" title="默认初始化方式 初始化串口和定时器" alt="" coords="573,60,724,87"/>
+<area shape="rect" href="../../df/d21/a01039.html#a4fd7a30375554ef9df2ef322db87c32d" title="初始化线程 初始化完成后 开始运行" alt="" coords="424,35,525,61"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="426,85,523,112"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a47a66594c8c7135fe1b433b7ff0ce079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47a66594c8c7135fe1b433b7ff0ce079">&#9670;&nbsp;</a></span>SerialProc() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SerialProc::SerialProc </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;设置输入文件 实现串口内容的处理 </p>
+<p class="DocNodeLTR">通过文件开始的处理函数 相应的将 串口使用文件处理</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">input_file</td><td>&#x202A;The input file </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;(Optional) If non-null, the parent</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">input_file</td><td>&#x202A;The input file </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;If non-null, the parent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00259">259</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    : QObject(parent),</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>(<span class="keyword">new</span> <a class="code" href="../../d6/d27/a01163.html">&#x202A;Serial</a>(input_file)),</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#x202A;m_Timer_</a>(<span class="keyword">new</span> QTimer())</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a31a5970045e50bbb739a674cf61ef102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31a5970045e50bbb739a674cf61ef102">&#9670;&nbsp;</a></span>~SerialProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SerialProc::~SerialProc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Finalizes an instance of the <a class="el" href="../../dc/d70/a01187.html" title="&#x202A;设定串口 处理 函数 解析串口的数据 到系统运行参数中">SerialProc</a> class </p>
+<p class="DocNodeLTR">析构 删除 进程</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/27 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00316">316</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;{</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a501d9387b58680267b0dfd9e5c569fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501d9387b58680267b0dfd9e5c569fdb">&#9670;&nbsp;</a></span>ProcData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialProc::ProcData </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>recv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/dbb/a01047.html">CQueue</a>&lt; <a class="el" href="../../d7/dd6/a01167.html">SerialData</a> &gt; *&#160;</td>
+          <td class="paramname"><em>read_queue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;将数据处理 如果正确 加入到自己的队列中 </p>
+<p class="DocNodeLTR">Proc data 根据给定的函数头 进行数据 串口数据处理过程</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">recv</td><td>&#x202A;The receive </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">read_queue</td><td>&#x202A;If non-null, queue of reads</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00130">130</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> data_cnt = 0;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> flg_status = 0;  <span class="comment">// 0 普通数据,与数据头1 比较, 1 数据头1,2 数据头2, 3 数据头3,</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                <span class="comment">// 每次将缓冲区 数据全部读出来,</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                                <span class="comment">// 判断上一帧读取到了什么状态, 数据分为 前4个字节的帧头数据和 后面的数据</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                <span class="comment">// 1.读取到了帧头 // 2. 读取到了一般数据帧</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                                <span class="comment">// 每次计数, 读取到帧头的时候, 判断数据是否已经满了, 已经满了进行数据校验, 满足就加入数据</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                                <span class="comment">// 数据未满, 则可能数据未满, </span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">int</span> N = recv.size();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">if</span> (recv.isEmpty())</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        LError(<span class="stringliteral">&quot;recv data is empty&quot;</span>);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// LDebug(&quot;Recv Serial Data:{}&quot;, recv.toHex(&#39; &#39;).toStdString());</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// 遍历得到的数据数组</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> <a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <a class="code" href="../../dd/d32/a00041.html#aafd0fa284e789b2457c507239b376d82">&#x202A;char2uchar</a>(recv[i]);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="comment">// 每次来了数据与上次的置位比较, 如果一致, 比较后一位, </span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="comment">//  如果前面4位都一致,表示已经开始了新的一帧, 将数据依次复制</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">//    如果数据已经满足帧头, 将之前的数据 校验满足之后加入队列中, 其他线程处理</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> == <a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>.<a class="code" href="../../d7/dd6/a01167.html#a381a10030c4ed28b8cb7fc1b01de3ff6">&#x202A;mc_Head_</a>[flg_status])</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            flg_status++;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span> (flg_status &gt;= 4)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="comment">// 计算最后数据域的5个字节的 和校验 // 如果满足  压入数据</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordflow">if</span>(!<a class="code" href="../../d8/d41/a00038.html#aef339f85a20df81dbcd0c9b54fc2f9a5">&#x202A;CalcSumCheck</a>(&amp;<a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>.<a class="code" href="../../d7/dd6/a01167.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;mc_Data_</a>[<a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>.<a class="code" href="../../d7/dd6/a01167.html#afbf0962dd2da4322a2bff07859685a01">&#x202A;mi_DataLength_</a> - 6], 5))</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    LError(<span class="stringliteral">&quot;Data Sum Check:False  data-{}&quot;</span>, <a class="code" href="../../d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda">&#x202A;Utils_String::CharArr2Hex</a>(<a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>.<a class="code" href="../../d7/dd6/a01167.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;mc_Data_</a>, <a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>.<a class="code" href="../../d7/dd6/a01167.html#afbf0962dd2da4322a2bff07859685a01">&#x202A;mi_DataLength_</a>));</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="comment">// 由于存在每次存入数据的时候存在上一帧的数据 问题 所以这里校验可能失败</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                read_queue-&gt;<a class="code" href="../../db/dbb/a01047.html#a282e80149935f212e9c6c6e8ef9d7374">&#x202A;Push</a>(<a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <span class="comment">// 更新前面4个字节的帧头数据</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 4; i++)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    <a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>.<a class="code" href="../../d7/dd6/a01167.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;mc_Data_</a>[i] = <a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>.<a class="code" href="../../d7/dd6/a01167.html#a381a10030c4ed28b8cb7fc1b01de3ff6">&#x202A;mc_Head_</a>[i];</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="comment">// 匹配重新置零, 同时将数据前面数据复制过去</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                flg_status = 0;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            flg_status = 0; <span class="comment">// 如果前面的匹配上了, 后面匹配不上, 则重新开始进行匹配</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>.<a class="code" href="../../d7/dd6/a01167.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;mc_Data_</a>[data_cnt++] = <a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;    <span class="comment">// 移动指针, 将数据存储到数组中</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                                     <span class="comment">// 超过设定值, 减去一个长度,避免越界  // 与取与操作 % 处理一致 </span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                                     <span class="comment">// 重新开始的位置 从可以刷新的数据开始</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">if</span> (data_cnt == <a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>.<a class="code" href="../../d7/dd6/a01167.html#afbf0962dd2da4322a2bff07859685a01">&#x202A;mi_DataLength_</a>)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            data_cnt = 0;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_a501d9387b58680267b0dfd9e5c569fdb_cgraph.png" border="0" usemap="#dc/d70/a01187_a501d9387b58680267b0dfd9e5c569fdb_cgraph" alt=""/></div>
+<map name="dc/d70/a01187_a501d9387b58680267b0dfd9e5c569fdb_cgraph" id="dc/d70/a01187_a501d9387b58680267b0dfd9e5c569fdb_cgraph">
+<area shape="rect" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="5,81,149,108"/>
+<area shape="rect" href="../../d8/d41/a00038.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="227,5,339,32"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="239,56,326,83"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="197,107,368,133"/>
+<area shape="rect" href="../../db/dbb/a01047.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="229,157,336,184"/>
+<area shape="rect" href="../../d3/da4/a01343.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="416,107,571,133"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_a501d9387b58680267b0dfd9e5c569fdb_icgraph.png" border="0" usemap="#dc/d70/a01187_a501d9387b58680267b0dfd9e5c569fdb_icgraph" alt=""/></div>
+<map name="dc/d70/a01187_a501d9387b58680267b0dfd9e5c569fdb_icgraph" id="dc/d70/a01187_a501d9387b58680267b0dfd9e5c569fdb_icgraph">
+<area shape="rect" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="1049,5,1193,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a2d4464068d1094563166f6f26976c825" title="循环处理 串口 数据" alt="" coords="824,5,1001,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#ab481e15af6902cba13410c1e665100ff" title="Slot timer run 设置定时器时间到了之后执行的循环操作" alt="" coords="604,5,776,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="389,5,556,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="151,5,341,32"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d4464068d1094563166f6f26976c825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4464068d1094563166f6f26976c825">&#9670;&nbsp;</a></span>ProcSerialData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialProc::ProcSerialData </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;循环处理 串口 数据 </p>
+<p class="DocNodeLTR">Determines if we can proc serial data 定义串口数据处理逻辑, 循环进入 如果有内容需要写 则 测试写入过程</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00085">85</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        std::string write_data;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        QString str;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// 将数据输出</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        QByteArray read_data;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../dc/d70/a01187.html#ae60e9b12cc8252da2056087cf1c30279">&#x202A;mq_Write_Buffer_</a>-&gt;<a class="code" href="../../db/dbb/a01047.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;Empty</a>())</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="../../dc/d70/a01187.html#ae60e9b12cc8252da2056087cf1c30279">&#x202A;mq_Write_Buffer_</a>-&gt;<a class="code" href="../../db/dbb/a01047.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;Pop</a>(write_data);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="comment">// str = QString::fromStdString(write_data);</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="comment">// LDebug(&quot;write:{},\n str:{}&quot;, write_data, str.toStdString());</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>-&gt;<a class="code" href="../../d6/d27/a01163.html#abdab3f6eff663933b5b0a293035418fd">&#x202A;slot_write_data</a>(&amp;write_data);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">// 读取一帧数据</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>-&gt;<a class="code" href="../../d6/d27/a01163.html#ab3ea56749f8b01fa4da75d8164cb8dc5">&#x202A;slot_read_data</a>(&amp;read_data);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="../../dc/d70/a01187.html#a501d9387b58680267b0dfd9e5c569fdb">&#x202A;ProcData</a>(read_data, <a class="code" href="../../dc/d70/a01187.html#a57b75e1268073be5bf79694b758c8128">&#x202A;mq_Read_Buffer_</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">// 如果开启写入 将数据写入到文件中</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../dc/d70/a01187.html#a14fc4ba2d36db04123aa0a1862156945">&#x202A;mb_enWrite</a>)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="../../d4/d2c/a01327.html#a0100eaf1e914cee3b70157898026a375">&#x202A;Utils_Files::WriteStringTxt</a>(<a class="code" href="../../dc/d70/a01187.html#adb83fa2df574548f4764ca9e2c78c815">&#x202A;mf_writeFile_</a>, read_data.toHex(<span class="charliteral">&#39; &#39;</span>).toStdString());</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_a2d4464068d1094563166f6f26976c825_cgraph.png" border="0" usemap="#dc/d70/a01187_a2d4464068d1094563166f6f26976c825_cgraph" alt=""/></div>
+<map name="dc/d70/a01187_a2d4464068d1094563166f6f26976c825_cgraph" id="dc/d70/a01187_a2d4464068d1094563166f6f26976c825_cgraph">
+<area shape="rect" title="循环处理 串口 数据" alt="" coords="5,157,183,184"/>
+<area shape="rect" href="../../db/dbb/a01047.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="261,31,375,57"/>
+<area shape="rect" href="../../db/dbb/a01047.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="268,81,368,108"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a501d9387b58680267b0dfd9e5c569fdb" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="246,132,390,159"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="244,183,392,209"/>
+<area shape="rect" href="../../d6/d27/a01163.html#abdab3f6eff663933b5b0a293035418fd" title="Slot write data // 将字符串写入到串口中去" alt="" coords="243,233,393,260"/>
+<area shape="rect" href="../../d4/d2c/a01327.html#a0100eaf1e914cee3b70157898026a375" title="将文件写入txt 文档中 每次写入一行" alt="" coords="231,284,405,311"/>
+<area shape="rect" href="../../d8/d41/a00038.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="483,5,595,32"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="495,56,582,83"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="453,107,624,133"/>
+<area shape="rect" href="../../db/dbb/a01047.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="485,157,592,184"/>
+<area shape="rect" href="../../d3/da4/a01343.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="681,107,835,133"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a7620016be54cb445876b796aad0e062f" title="Single read data 单存读取函数 串口读取一次或者 文件读取一行" alt="" coords="461,208,617,235"/>
+<area shape="rect" href="../../dd/d6e/a01339.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="将字符串 转换成 QByteArray 字符串默认有空格" alt="" coords="672,205,844,232"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aa4d8cf50c0a13481ceb04c5a0581c959" title="2uchars the given string" alt="" coords="892,205,968,232"/>
+<area shape="rect" href="../../d6/d27/a01163.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data" alt="" coords="460,260,617,287"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a6c1e2edd1365b94dff05468194611770" title="char 类型与 string的相互转换" alt="" coords="675,257,841,298"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_a2d4464068d1094563166f6f26976c825_icgraph.png" border="0" usemap="#dc/d70/a01187_a2d4464068d1094563166f6f26976c825_icgraph" alt=""/></div>
+<map name="dc/d70/a01187_a2d4464068d1094563166f6f26976c825_icgraph" id="dc/d70/a01187_a2d4464068d1094563166f6f26976c825_icgraph">
+<area shape="rect" title="循环处理 串口 数据" alt="" coords="824,5,1001,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#ab481e15af6902cba13410c1e665100ff" title="Slot timer run 设置定时器时间到了之后执行的循环操作" alt="" coords="604,5,776,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="389,5,556,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="151,5,341,32"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4d356bce746d2a91ab02ec10914a34b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d356bce746d2a91ab02ec10914a34b2">&#9670;&nbsp;</a></span>SerialProcInit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialProc::SerialProcInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;完成 参数初始化 串口处理 初始化参数 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00275">275</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;{</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="comment">// 定时器周期执行 // 一定要 直接连接</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    QObject::connect(<a class="code" href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#x202A;m_Timer_</a>, &amp;QTimer::timeout, <span class="keyword">this</span>, &amp;<a class="code" href="../../dc/d70/a01187.html#ab481e15af6902cba13410c1e665100ff">&#x202A;SerialProc::slot_timer_run</a>,Qt::DirectConnection);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="comment">// 设置 缓冲区 大小</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#ae60e9b12cc8252da2056087cf1c30279">&#x202A;mq_Write_Buffer_</a> = <span class="keyword">new</span> <a class="code" href="../../db/dbb/a01047.html">&#x202A;CQueue&lt;std::string&gt;</a>(<a class="code" href="../../d6/d2d/a00047.html#ac60069129c58962246d410472c9469eb">&#x202A;K_Serial_Buffer</a>);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a57b75e1268073be5bf79694b758c8128">&#x202A;mq_Read_Buffer_</a> = <span class="keyword">new</span> <a class="code" href="../../db/dbb/a01047.html">&#x202A;CQueue&lt;SerialData&gt;</a>(<a class="code" href="../../d6/d2d/a00047.html#ac60069129c58962246d410472c9469eb">&#x202A;K_Serial_Buffer</a>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="comment">// 设置 串口的函数头</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;m_SerialHeader</a>.<a class="code" href="../../d7/dd6/a01167.html#a2ac9f822ecfccdf37a42fea9f510422f">&#x202A;SetFrameByConfig</a>(<a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../d2/d4d/a01079.html#a19d6531d32671e61021a6185e30eba7a">&#x202A;Compass</a>.<a class="code" href="../../d2/d4d/a01079.html#a15fe499e4b2050a53880aa99049ac839">&#x202A;nComType</a>);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="comment">// 设置 循环更新时间</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a1ddf623a0ee307c203a11d4e46e967c7">&#x202A;slot_SetTimerTime</a>(33);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>-&gt;<a class="code" href="../../d6/d27/a01163.html#a97f68664ea64cf379c2e35390a0b8ab3">&#x202A;HandleOpenSerial</a>(<a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../d2/d4d/a01079.html#a398126d54ee5504ddea300b512a6a632">&#x202A;Serial</a>.<a class="code" href="../../d2/d4d/a01079.html#aa4e0416b2441e3488c1b50211bb6f569">&#x202A;nPortNum</a>);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    return ;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_a4d356bce746d2a91ab02ec10914a34b2_cgraph.png" border="0" usemap="#dc/d70/a01187_a4d356bce746d2a91ab02ec10914a34b2_cgraph" alt=""/></div>
+<map name="dc/d70/a01187_a4d356bce746d2a91ab02ec10914a34b2_cgraph" id="dc/d70/a01187_a4d356bce746d2a91ab02ec10914a34b2_cgraph">
+<area shape="rect" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="5,131,172,158"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a97f68664ea64cf379c2e35390a0b8ab3" title="Handles the open serial" alt="" coords="236,53,403,79"/>
+<area shape="rect" href="../../d7/dd6/a01167.html#a2ac9f822ecfccdf37a42fea9f510422f" title="Sets frame header 根据罗盘类型设置通信协议" alt="" coords="220,106,419,133"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a1ddf623a0ee307c203a11d4e46e967c7" title="设置相关函数的执行 设置 &#45;1 表示不开启执行 将定时器 停止即可" alt="" coords="220,157,419,183"/>
+<area shape="rect" href="../../dc/d70/a01187.html#ab481e15af6902cba13410c1e665100ff" title="Slot timer run 设置定时器时间到了之后执行的循环操作" alt="" coords="233,214,405,241"/>
+<area shape="rect" href="../../d6/d27/a01163.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="480,27,631,54"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="923,23,1077,50"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a1b596e9793b3e992968d7b50392b43c0" title="Gets serial by port no" alt="" coords="693,23,866,50"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="697,74,861,101"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a2d4464068d1094563166f6f26976c825" title="循环处理 串口 数据" alt="" coords="467,226,644,253"/>
+<area shape="rect" href="../../db/dbb/a01047.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="722,125,837,151"/>
+<area shape="rect" href="../../db/dbb/a01047.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="729,175,829,202"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a501d9387b58680267b0dfd9e5c569fdb" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="707,226,851,253"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="705,277,853,303"/>
+<area shape="rect" href="../../d6/d27/a01163.html#abdab3f6eff663933b5b0a293035418fd" title="Slot write data // 将字符串写入到串口中去" alt="" coords="704,327,855,354"/>
+<area shape="rect" href="../../d4/d2c/a01327.html#a0100eaf1e914cee3b70157898026a375" title="将文件写入txt 文档中 每次写入一行" alt="" coords="692,378,867,405"/>
+<area shape="rect" href="../../d8/d41/a00038.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="944,99,1056,126"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="957,150,1043,177"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="915,201,1085,227"/>
+<area shape="rect" href="../../db/dbb/a01047.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="947,251,1053,278"/>
+<area shape="rect" href="../../d3/da4/a01343.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="1142,201,1297,227"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a7620016be54cb445876b796aad0e062f" title="Single read data 单存读取函数 串口读取一次或者 文件读取一行" alt="" coords="922,302,1078,329"/>
+<area shape="rect" href="../../dd/d6e/a01339.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="将字符串 转换成 QByteArray 字符串默认有空格" alt="" coords="1133,299,1305,326"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aa4d8cf50c0a13481ceb04c5a0581c959" title="2uchars the given string" alt="" coords="1353,299,1429,326"/>
+<area shape="rect" href="../../d6/d27/a01163.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data" alt="" coords="921,354,1079,381"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a6c1e2edd1365b94dff05468194611770" title="char 类型与 string的相互转换" alt="" coords="1137,351,1302,392"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_a4d356bce746d2a91ab02ec10914a34b2_icgraph.png" border="0" usemap="#dc/d70/a01187_a4d356bce746d2a91ab02ec10914a34b2_icgraph" alt=""/></div>
+<map name="dc/d70/a01187_a4d356bce746d2a91ab02ec10914a34b2_icgraph" id="dc/d70/a01187_a4d356bce746d2a91ab02ec10914a34b2_icgraph">
+<area shape="rect" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="389,5,556,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="151,5,341,32"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3be336ed4e3805324cc4b7a5f3589b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be336ed4e3805324cc4b7a5f3589b36">&#9670;&nbsp;</a></span>SerialProcStop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialProc::SerialProcStop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;串口处理对象 停止 关闭窗口并处理窗口 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00303">303</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;{</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>-&gt;<a class="code" href="../../d6/d27/a01163.html#ab7106342a338373afe7f670fa1dae510">&#x202A;HandleCloseSerial</a>();</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_a3be336ed4e3805324cc4b7a5f3589b36_cgraph.png" border="0" usemap="#dc/d70/a01187_a3be336ed4e3805324cc4b7a5f3589b36_cgraph" alt=""/></div>
+<map name="dc/d70/a01187_a3be336ed4e3805324cc4b7a5f3589b36_cgraph" id="dc/d70/a01187_a3be336ed4e3805324cc4b7a5f3589b36_cgraph">
+<area shape="rect" title="串口处理对象 停止 关闭窗口并处理窗口" alt="" coords="5,5,183,32"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="231,5,400,32"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="448,5,601,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_a3be336ed4e3805324cc4b7a5f3589b36_icgraph.png" border="0" usemap="#dc/d70/a01187_a3be336ed4e3805324cc4b7a5f3589b36_icgraph" alt=""/></div>
+<map name="dc/d70/a01187_a3be336ed4e3805324cc4b7a5f3589b36_icgraph" id="dc/d70/a01187_a3be336ed4e3805324cc4b7a5f3589b36_icgraph">
+<area shape="rect" title="串口处理对象 停止 关闭窗口并处理窗口" alt="" coords="389,5,567,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="151,5,341,32"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aecefe574a943886a31f529a16c5b4869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecefe574a943886a31f529a16c5b4869">&#9670;&nbsp;</a></span>SetCurrentThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialProc::SetCurrentThread </td>
+          <td>(</td>
+          <td class="paramtype">QThread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Sets current thread </p>
+<p class="DocNodeLTR">设置 当前</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">thread</td><td>&#x202A;If non-null, the thread</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">thread</td><td>&#x202A;If non-null, the thread</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00053">53</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> (thread == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// 设置当前线程</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a89e30d5dcb4a81c043f3db49600b04f9">&#x202A;mt_selfThread_</a> = thread;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// 将串口 移动到线程中</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>-&gt;moveToThread(thread);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// 将定时器 移动到线程中</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#x202A;m_Timer_</a>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#x202A;m_Timer_</a>-&gt;moveToThread(thread);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// 设置线程信号的 开始与关闭</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QObject::connect(<a class="code" href="../../dc/d70/a01187.html#a89e30d5dcb4a81c043f3db49600b04f9">&#x202A;mt_selfThread_</a>, &amp;QThread::started, <span class="keyword">this</span>, &amp;<a class="code" href="../../dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2">&#x202A;SerialProc::SerialProcInit</a>,Qt::DirectConnection);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QObject::connect(<a class="code" href="../../dc/d70/a01187.html#a89e30d5dcb4a81c043f3db49600b04f9">&#x202A;mt_selfThread_</a>, &amp;QThread::finished, <span class="keyword">this</span>, &amp;<a class="code" href="../../dc/d70/a01187.html#a3be336ed4e3805324cc4b7a5f3589b36">&#x202A;SerialProc::SerialProcStop</a>,Qt::DirectConnection);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_aecefe574a943886a31f529a16c5b4869_cgraph.png" border="0" usemap="#dc/d70/a01187_aecefe574a943886a31f529a16c5b4869_cgraph" alt=""/></div>
+<map name="dc/d70/a01187_aecefe574a943886a31f529a16c5b4869_cgraph" id="dc/d70/a01187_aecefe574a943886a31f529a16c5b4869_cgraph">
+<area shape="rect" title="Sets current thread" alt="" coords="5,537,196,564"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="249,512,416,539"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a3be336ed4e3805324cc4b7a5f3589b36" title="串口处理对象 停止 关闭窗口并处理窗口" alt="" coords="244,588,421,615"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a97f68664ea64cf379c2e35390a0b8ab3" title="Handles the open serial" alt="" coords="485,461,652,488"/>
+<area shape="rect" href="../../d7/dd6/a01167.html#a2ac9f822ecfccdf37a42fea9f510422f" title="Sets frame header 根据罗盘类型设置通信协议" alt="" coords="469,512,668,539"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a1ddf623a0ee307c203a11d4e46e967c7" title="设置相关函数的执行 设置 &#45;1 表示不开启执行 将定时器 停止即可" alt="" coords="469,563,668,589"/>
+<area shape="rect" href="../../dc/d70/a01187.html#ab481e15af6902cba13410c1e665100ff" title="Slot timer run 设置定时器时间到了之后执行的循环操作" alt="" coords="483,360,655,387"/>
+<area shape="rect" href="../../d6/d27/a01163.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="729,487,880,513"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="1173,512,1326,539"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a1b596e9793b3e992968d7b50392b43c0" title="Gets serial by port no" alt="" coords="942,563,1115,589"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="947,461,1111,488"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a2d4464068d1094563166f6f26976c825" title="循环处理 串口 数据" alt="" coords="716,309,893,336"/>
+<area shape="rect" href="../../db/dbb/a01047.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="971,360,1086,387"/>
+<area shape="rect" href="../../db/dbb/a01047.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="979,411,1079,437"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a501d9387b58680267b0dfd9e5c569fdb" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="957,107,1101,133"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="955,208,1103,235"/>
+<area shape="rect" href="../../d6/d27/a01163.html#abdab3f6eff663933b5b0a293035418fd" title="Slot write data // 将字符串写入到串口中去" alt="" coords="953,259,1104,285"/>
+<area shape="rect" href="../../d4/d2c/a01327.html#a0100eaf1e914cee3b70157898026a375" title="将文件写入txt 文档中 每次写入一行" alt="" coords="941,309,1116,336"/>
+<area shape="rect" href="../../d8/d41/a00038.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="1193,157,1305,184"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="1206,5,1293,32"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="1164,56,1335,83"/>
+<area shape="rect" href="../../db/dbb/a01047.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="1196,107,1303,133"/>
+<area shape="rect" href="../../d3/da4/a01343.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="1391,56,1546,83"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a7620016be54cb445876b796aad0e062f" title="Single read data 单存读取函数 串口读取一次或者 文件读取一行" alt="" coords="1171,208,1327,235"/>
+<area shape="rect" href="../../dd/d6e/a01339.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="将字符串 转换成 QByteArray 字符串默认有空格" alt="" coords="1383,205,1555,232"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aa4d8cf50c0a13481ceb04c5a0581c959" title="2uchars the given string" alt="" coords="1603,205,1679,232"/>
+<area shape="rect" href="../../d6/d27/a01163.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data" alt="" coords="1171,260,1328,287"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a6c1e2edd1365b94dff05468194611770" title="char 类型与 string的相互转换" alt="" coords="1386,257,1551,298"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="720,613,889,640"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_aecefe574a943886a31f529a16c5b4869_icgraph.png" border="0" usemap="#dc/d70/a01187_aecefe574a943886a31f529a16c5b4869_icgraph" alt=""/></div>
+<map name="dc/d70/a01187_aecefe574a943886a31f529a16c5b4869_icgraph" id="dc/d70/a01187_aecefe574a943886a31f529a16c5b4869_icgraph">
+<area shape="rect" title="Sets current thread" alt="" coords="151,5,341,32"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac112d2c916ab12042aeca02c7f9f0dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac112d2c916ab12042aeca02c7f9f0dd4">&#9670;&nbsp;</a></span>SetOutPutPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialProc::SetOutPutPath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>outFileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;执行之后 会将文件数据依次写入文件中, 不执行默认不写入文件 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outFileName</td><td>&#x202A;Filename of the out file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00025">25</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a14fc4ba2d36db04123aa0a1862156945">&#x202A;mb_enWrite</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="../../dc/d70/a01187.html#adb83fa2df574548f4764ca9e2c78c815">&#x202A;mf_writeFile_</a> = <span class="keyword">new</span> std::fstream(outFileName, std::fstream::out);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        LError(<span class="stringliteral">&quot;Out File Create Error: {}&quot;</span>, outFileName);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1ddf623a0ee307c203a11d4e46e967c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ddf623a0ee307c203a11d4e46e967c7">&#9670;&nbsp;</a></span>slot_SetTimerTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialProc::slot_SetTimerTime </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;设置相关函数的执行 设置 -1 表示不开启执行 将定时器 停止即可 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>&#x202A;An int to process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00217">217</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#x202A;m_Timer_</a>)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#x202A;m_Timer_</a>-&gt;isActive())</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <a class="code" href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#x202A;m_Timer_</a>-&gt;stop();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">if</span>(t != -1)</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <a class="code" href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#x202A;m_Timer_</a>-&gt;start(t);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_a1ddf623a0ee307c203a11d4e46e967c7_icgraph.png" border="0" usemap="#dc/d70/a01187_a1ddf623a0ee307c203a11d4e46e967c7_icgraph" alt=""/></div>
+<map name="dc/d70/a01187_a1ddf623a0ee307c203a11d4e46e967c7_icgraph" id="dc/d70/a01187_a1ddf623a0ee307c203a11d4e46e967c7_icgraph">
+<area shape="rect" title="设置相关函数的执行 设置 &#45;1 表示不开启执行 将定时器 停止即可" alt="" coords="604,5,803,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="389,5,556,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="151,5,341,32"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab481e15af6902cba13410c1e665100ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab481e15af6902cba13410c1e665100ff">&#9670;&nbsp;</a></span>slot_timer_run</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialProc::slot_timer_run </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Slot timer run 设置定时器时间到了之后执行的循环操作 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/16 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a> 第 <a class="el" href="../../d5/de9/a00176_source.html#l00199">199</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;{</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="../../dc/d70/a01187.html#a2d4464068d1094563166f6f26976c825">&#x202A;ProcSerialData</a>();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_ab481e15af6902cba13410c1e665100ff_cgraph.png" border="0" usemap="#dc/d70/a01187_ab481e15af6902cba13410c1e665100ff_cgraph" alt=""/></div>
+<map name="dc/d70/a01187_ab481e15af6902cba13410c1e665100ff_cgraph" id="dc/d70/a01187_ab481e15af6902cba13410c1e665100ff_cgraph">
+<area shape="rect" title="Slot timer run 设置定时器时间到了之后执行的循环操作" alt="" coords="5,157,177,184"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a2d4464068d1094563166f6f26976c825" title="循环处理 串口 数据" alt="" coords="225,157,403,184"/>
+<area shape="rect" href="../../db/dbb/a01047.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="481,31,595,57"/>
+<area shape="rect" href="../../db/dbb/a01047.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="488,81,588,108"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a501d9387b58680267b0dfd9e5c569fdb" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="466,132,610,159"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="464,183,612,209"/>
+<area shape="rect" href="../../d6/d27/a01163.html#abdab3f6eff663933b5b0a293035418fd" title="Slot write data // 将字符串写入到串口中去" alt="" coords="463,233,613,260"/>
+<area shape="rect" href="../../d4/d2c/a01327.html#a0100eaf1e914cee3b70157898026a375" title="将文件写入txt 文档中 每次写入一行" alt="" coords="451,284,625,311"/>
+<area shape="rect" href="../../d8/d41/a00038.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="703,5,815,32"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="715,56,802,83"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="673,107,844,133"/>
+<area shape="rect" href="../../db/dbb/a01047.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="705,157,812,184"/>
+<area shape="rect" href="../../d3/da4/a01343.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="901,107,1055,133"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a7620016be54cb445876b796aad0e062f" title="Single read data 单存读取函数 串口读取一次或者 文件读取一行" alt="" coords="681,208,837,235"/>
+<area shape="rect" href="../../dd/d6e/a01339.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="将字符串 转换成 QByteArray 字符串默认有空格" alt="" coords="892,205,1064,232"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aa4d8cf50c0a13481ceb04c5a0581c959" title="2uchars the given string" alt="" coords="1112,205,1188,232"/>
+<area shape="rect" href="../../d6/d27/a01163.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data" alt="" coords="680,260,837,287"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a6c1e2edd1365b94dff05468194611770" title="char 类型与 string的相互转换" alt="" coords="895,257,1061,298"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d70/a01187_ab481e15af6902cba13410c1e665100ff_icgraph.png" border="0" usemap="#dc/d70/a01187_ab481e15af6902cba13410c1e665100ff_icgraph" alt=""/></div>
+<map name="dc/d70/a01187_ab481e15af6902cba13410c1e665100ff_icgraph" id="dc/d70/a01187_ab481e15af6902cba13410c1e665100ff_icgraph">
+<area shape="rect" title="Slot timer run 设置定时器时间到了之后执行的循环操作" alt="" coords="604,5,776,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="389,5,556,32"/>
+<area shape="rect" href="../../dc/d70/a01187.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="151,5,341,32"/>
+<area shape="rect" href="../../d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a8d2fa673b460b127ef35bb49b51e8456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d2fa673b460b127ef35bb49b51e8456">&#9670;&nbsp;</a></span>m_Serial_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d27/a01163.html">Serial</a>* SerialProc::m_Serial_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;The serial </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a> 第 <a class="el" href="../../db/db6/a00074_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aed9b7b8c21e584ca95ca43328f1c2e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9b7b8c21e584ca95ca43328f1c2e89">&#9670;&nbsp;</a></span>m_SerialHeader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/dd6/a01167.html">SerialData</a> SerialProc::m_SerialHeader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a> 第 <a class="el" href="../../db/db6/a00074_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6b9f98b06cf86f3c91df7b7793bbe4cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#9670;&nbsp;</a></span>m_Timer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer* SerialProc::m_Timer_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;设置定时执行功能, 完成之后 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a> 第 <a class="el" href="../../db/db6/a00074_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a14fc4ba2d36db04123aa0a1862156945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14fc4ba2d36db04123aa0a1862156945">&#9670;&nbsp;</a></span>mb_enWrite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialProc::mb_enWrite = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;是否写入数据 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a> 第 <a class="el" href="../../db/db6/a00074_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adb83fa2df574548f4764ca9e2c78c815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb83fa2df574548f4764ca9e2c78c815">&#9670;&nbsp;</a></span>mf_writeFile_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::fstream* SerialProc::mf_writeFile_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a> 第 <a class="el" href="../../db/db6/a00074_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a57b75e1268073be5bf79694b758c8128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b75e1268073be5bf79694b758c8128">&#9670;&nbsp;</a></span>mq_Read_Buffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dbb/a01047.html">CQueue</a>&lt;<a class="el" href="../../d7/dd6/a01167.html">SerialData</a>&gt;* SerialProc::mq_Read_Buffer_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a> 第 <a class="el" href="../../db/db6/a00074_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae60e9b12cc8252da2056087cf1c30279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60e9b12cc8252da2056087cf1c30279">&#9670;&nbsp;</a></span>mq_Write_Buffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dbb/a01047.html">CQueue</a>&lt;std::string&gt;* SerialProc::mq_Write_Buffer_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a> 第 <a class="el" href="../../db/db6/a00074_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a89e30d5dcb4a81c043f3db49600b04f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e30d5dcb4a81c043f3db49600b04f9">&#9670;&nbsp;</a></span>mt_selfThread_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QThread* SerialProc::mt_selfThread_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;记录当前的线程指针 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a> 第 <a class="el" href="../../db/db6/a00074_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab0efbcfcb776f3339e6d35468a902a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0efbcfcb776f3339e6d35468a902a5e">&#9670;&nbsp;</a></span>mx_SerialProc_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex SerialProc::mx_SerialProc_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;串口处理线程 锁 进行线程同步 </p>
+
+<p class="definition">在文件 <a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a> 第 <a class="el" href="../../db/db6/a00074_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../db/db6/a00074_source.html">SerialProc.h</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/src/<a class="el" href="../../d5/de9/a00176_source.html">SerialProc.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01079_html_a398126d54ee5504ddea300b512a6a632"><div class="ttname"><a href="../../d2/d4d/a01079.html#a398126d54ee5504ddea300b512a6a632">&#x202A;RunPara::StDevice::Serial</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice::StSerial Serial</div></div>
+<div class="ttc" id="aa01187_html_a89e30d5dcb4a81c043f3db49600b04f9"><div class="ttname"><a href="../../dc/d70/a01187.html#a89e30d5dcb4a81c043f3db49600b04f9">&#x202A;SerialProc::mt_selfThread_</a></div><div class="ttdeci">&#x202A;QThread * mt_selfThread_</div><div class="ttdoc">&#x202A;记录当前的线程指针</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00049">SerialProc.h:49</a></div></div>
+<div class="ttc" id="aa00047_html_ac60069129c58962246d410472c9469eb"><div class="ttname"><a href="../../d6/d2d/a00047.html#ac60069129c58962246d410472c9469eb">&#x202A;K_Serial_Buffer</a></div><div class="ttdeci">&#x202A;const int K_Serial_Buffer</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00031">constdefine.h:31</a></div></div>
+<div class="ttc" id="aa01079_html_aa4e0416b2441e3488c1b50211bb6f569"><div class="ttname"><a href="../../d2/d4d/a01079.html#aa4e0416b2441e3488c1b50211bb6f569">&#x202A;RunPara::StDevice::StSerial::nPortNum</a></div><div class="ttdeci">&#x202A;int nPortNum</div><div class="ttdoc">&#x202A;串口号</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00212">runpara.h:212</a></div></div>
+<div class="ttc" id="aa01163_html_a97f68664ea64cf379c2e35390a0b8ab3"><div class="ttname"><a href="../../d6/d27/a01163.html#a97f68664ea64cf379c2e35390a0b8ab3">&#x202A;Serial::HandleOpenSerial</a></div><div class="ttdeci">&#x202A;void HandleOpenSerial(int port_no)</div><div class="ttdoc">&#x202A;Handles the open serial</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00233">Serial.cc:233</a></div></div>
+<div class="ttc" id="aa00161_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00014">main.cpp:14</a></div></div>
+<div class="ttc" id="aa00038_html_aef339f85a20df81dbcd0c9b54fc2f9a5"><div class="ttname"><a href="../../d8/d41/a00038.html#aef339f85a20df81dbcd0c9b54fc2f9a5">&#x202A;CalcSumCheck</a></div><div class="ttdeci">&#x202A;bool CalcSumCheck(uchar *dat, int len)</div><div class="ttdoc">&#x202A;Calculates the sum check 计算开始的len 数据的sum 和,</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00360">common.cc:360</a></div></div>
+<div class="ttc" id="aa01047_html_a282e80149935f212e9c6c6e8ef9d7374"><div class="ttname"><a href="../../db/dbb/a01047.html#a282e80149935f212e9c6c6e8ef9d7374">&#x202A;CQueue::Push</a></div><div class="ttdeci">&#x202A;bool Push(T &amp;data)</div><div class="ttdoc">&#x202A;队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00109">CQueue.h:109</a></div></div>
+<div class="ttc" id="aa01047_html_aabb5d6f90ce5562f4d30867de96bc983"><div class="ttname"><a href="../../db/dbb/a01047.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;CQueue::Pop</a></div><div class="ttdeci">&#x202A;bool Pop(T &amp;data)</div><div class="ttdoc">&#x202A;返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00145">CQueue.h:145</a></div></div>
+<div class="ttc" id="aa01187_html_a4d356bce746d2a91ab02ec10914a34b2"><div class="ttname"><a href="../../dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2">&#x202A;SerialProc::SerialProcInit</a></div><div class="ttdeci">&#x202A;void SerialProcInit(void)</div><div class="ttdoc">&#x202A;完成 参数初始化 串口处理 初始化参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de9/a00176_source.html#l00275">SerialProc.cc:275</a></div></div>
+<div class="ttc" id="aa01047_html_a4d55a1a82ab1aa26325a0c93e2603c3f"><div class="ttname"><a href="../../db/dbb/a01047.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;CQueue::Empty</a></div><div class="ttdeci">&#x202A;bool Empty(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00316">CQueue.h:316</a></div></div>
+<div class="ttc" id="aa00128_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00035">QImgLabel.cc:35</a></div></div>
+<div class="ttc" id="aa01187_html_a3be336ed4e3805324cc4b7a5f3589b36"><div class="ttname"><a href="../../dc/d70/a01187.html#a3be336ed4e3805324cc4b7a5f3589b36">&#x202A;SerialProc::SerialProcStop</a></div><div class="ttdeci">&#x202A;void SerialProcStop(void)</div><div class="ttdoc">&#x202A;串口处理对象 停止 关闭窗口并处理窗口</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de9/a00176_source.html#l00303">SerialProc.cc:303</a></div></div>
+<div class="ttc" id="aa01167_html_a381a10030c4ed28b8cb7fc1b01de3ff6"><div class="ttname"><a href="../../d7/dd6/a01167.html#a381a10030c4ed28b8cb7fc1b01de3ff6">&#x202A;SerialData::mc_Head_</a></div><div class="ttdeci">&#x202A;uchar * mc_Head_</div><div class="ttdoc">&#x202A;帧头数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d89/a00071_source.html#l00039">serialdata.h:39</a></div></div>
+<div class="ttc" id="aa01343_html_a343a35752b0575e884df5b0758cadfda"><div class="ttname"><a href="../../d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda">&#x202A;Utils_String::CharArr2Hex</a></div><div class="ttdeci">&#x202A;static std::string CharArr2Hex(uchar *buffer, int length=16, int flg_space=1)</div><div class="ttdoc">&#x202A;Character array 2 hexadecimal 数组 转换成 hex 字符</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00513">utils_string.cc:513</a></div></div>
+<div class="ttc" id="aa01187_html_a57b75e1268073be5bf79694b758c8128"><div class="ttname"><a href="../../dc/d70/a01187.html#a57b75e1268073be5bf79694b758c8128">&#x202A;SerialProc::mq_Read_Buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; SerialData &gt; * mq_Read_Buffer_</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00043">SerialProc.h:43</a></div></div>
+<div class="ttc" id="aa01187_html_a1ddf623a0ee307c203a11d4e46e967c7"><div class="ttname"><a href="../../dc/d70/a01187.html#a1ddf623a0ee307c203a11d4e46e967c7">&#x202A;SerialProc::slot_SetTimerTime</a></div><div class="ttdeci">&#x202A;void slot_SetTimerTime(int t)</div><div class="ttdoc">&#x202A;设置相关函数的执行 设置 -1 表示不开启执行 将定时器 停止即可</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de9/a00176_source.html#l00217">SerialProc.cc:217</a></div></div>
+<div class="ttc" id="aa01187_html_adb83fa2df574548f4764ca9e2c78c815"><div class="ttname"><a href="../../dc/d70/a01187.html#adb83fa2df574548f4764ca9e2c78c815">&#x202A;SerialProc::mf_writeFile_</a></div><div class="ttdeci">&#x202A;std::fstream * mf_writeFile_</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00052">SerialProc.h:52</a></div></div>
+<div class="ttc" id="aa01167_html_a2ac9f822ecfccdf37a42fea9f510422f"><div class="ttname"><a href="../../d7/dd6/a01167.html#a2ac9f822ecfccdf37a42fea9f510422f">&#x202A;SerialData::SetFrameByConfig</a></div><div class="ttdeci">&#x202A;bool SetFrameByConfig(int compass_type=0)</div><div class="ttdoc">&#x202A;Sets frame header 根据罗盘类型设置通信协议</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d3f/a00173_source.html#l00083">serialdata.cc:83</a></div></div>
+<div class="ttc" id="aa01187_html_a501d9387b58680267b0dfd9e5c569fdb"><div class="ttname"><a href="../../dc/d70/a01187.html#a501d9387b58680267b0dfd9e5c569fdb">&#x202A;SerialProc::ProcData</a></div><div class="ttdeci">&#x202A;bool ProcData(const QByteArray &amp;recv, CQueue&lt; SerialData &gt; *read_queue)</div><div class="ttdoc">&#x202A;将数据处理 如果正确 加入到自己的队列中</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de9/a00176_source.html#l00130">SerialProc.cc:130</a></div></div>
+<div class="ttc" id="aa01079_html_a19d6531d32671e61021a6185e30eba7a"><div class="ttname"><a href="../../d2/d4d/a01079.html#a19d6531d32671e61021a6185e30eba7a">&#x202A;RunPara::StDevice::Compass</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice::StCompass Compass</div></div>
+<div class="ttc" id="aa01079_html_a15fe499e4b2050a53880aa99049ac839"><div class="ttname"><a href="../../d2/d4d/a01079.html#a15fe499e4b2050a53880aa99049ac839">&#x202A;RunPara::StDevice::StCompass::nComType</a></div><div class="ttdeci">&#x202A;int nComType</div><div class="ttdoc">&#x202A;当前使用的罗盘类</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00185">runpara.h:185</a></div></div>
+<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00036">Commu.h:36</a></div></div>
+<div class="ttc" id="aa01079_html_a1b1f21581cf398c15060fe53199662d9"><div class="ttname"><a href="../../d2/d4d/a01079.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;RunPara::Device</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice Device</div></div>
+<div class="ttc" id="aa01167_html_a3790e9109615a7c93f395e45d0d6166c"><div class="ttname"><a href="../../d7/dd6/a01167.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;SerialData::mc_Data_</a></div><div class="ttdeci">&#x202A;uchar * mc_Data_</div><div class="ttdoc">&#x202A;帧数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d89/a00071_source.html#l00038">serialdata.h:38</a></div></div>
+<div class="ttc" id="aa00041_html_aafd0fa284e789b2457c507239b376d82"><div class="ttname"><a href="../../dd/d32/a00041.html#aafd0fa284e789b2457c507239b376d82">&#x202A;char2uchar</a></div><div class="ttdeci">&#x202A;uchar char2uchar(char c1)</div><div class="ttdoc">&#x202A;Character 2uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00809">Commu.cc:809</a></div></div>
+<div class="ttc" id="aa01187_html_aed9b7b8c21e584ca95ca43328f1c2e89"><div class="ttname"><a href="../../dc/d70/a01187.html#aed9b7b8c21e584ca95ca43328f1c2e89">&#x202A;SerialProc::m_SerialHeader</a></div><div class="ttdeci">&#x202A;SerialData m_SerialHeader</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00050">SerialProc.h:50</a></div></div>
+<div class="ttc" id="aa01327_html_a0100eaf1e914cee3b70157898026a375"><div class="ttname"><a href="../../d4/d2c/a01327.html#a0100eaf1e914cee3b70157898026a375">&#x202A;Utils_Files::WriteStringTxt</a></div><div class="ttdeci">&#x202A;static bool WriteStringTxt(std::fstream *pfile, const std::string &amp;str)</div><div class="ttdoc">&#x202A;将文件写入txt 文档中 每次写入一行</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/a00266_source.html#l00112">utils_files.cc:112</a></div></div>
+<div class="ttc" id="aa01163_html_ab3ea56749f8b01fa4da75d8164cb8dc5"><div class="ttname"><a href="../../d6/d27/a01163.html#ab3ea56749f8b01fa4da75d8164cb8dc5">&#x202A;Serial::slot_read_data</a></div><div class="ttdeci">&#x202A;void slot_read_data(QByteArray *data)</div><div class="ttdoc">&#x202A;读取数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00150">Serial.cc:150</a></div></div>
+<div class="ttc" id="aa01163_html_ab7106342a338373afe7f670fa1dae510"><div class="ttname"><a href="../../d6/d27/a01163.html#ab7106342a338373afe7f670fa1dae510">&#x202A;Serial::HandleCloseSerial</a></div><div class="ttdeci">&#x202A;void HandleCloseSerial(void)</div><div class="ttdoc">&#x202A;Handles the close serial</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00259">Serial.cc:259</a></div></div>
+<div class="ttc" id="aa01187_html_ab481e15af6902cba13410c1e665100ff"><div class="ttname"><a href="../../dc/d70/a01187.html#ab481e15af6902cba13410c1e665100ff">&#x202A;SerialProc::slot_timer_run</a></div><div class="ttdeci">&#x202A;void slot_timer_run(void)</div><div class="ttdoc">&#x202A;Slot timer run 设置定时器时间到了之后执行的循环操作</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de9/a00176_source.html#l00199">SerialProc.cc:199</a></div></div>
+<div class="ttc" id="aa01187_html_a14fc4ba2d36db04123aa0a1862156945"><div class="ttname"><a href="../../dc/d70/a01187.html#a14fc4ba2d36db04123aa0a1862156945">&#x202A;SerialProc::mb_enWrite</a></div><div class="ttdeci">&#x202A;bool mb_enWrite</div><div class="ttdoc">&#x202A;是否写入数据</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00051">SerialProc.h:51</a></div></div>
+<div class="ttc" id="aa01187_html_a6b9f98b06cf86f3c91df7b7793bbe4cc"><div class="ttname"><a href="../../dc/d70/a01187.html#a6b9f98b06cf86f3c91df7b7793bbe4cc">&#x202A;SerialProc::m_Timer_</a></div><div class="ttdeci">&#x202A;QTimer * m_Timer_</div><div class="ttdoc">&#x202A;设置定时执行功能, 完成之后</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00046">SerialProc.h:46</a></div></div>
+<div class="ttc" id="aa01047_html"><div class="ttname"><a href="../../db/dbb/a01047.html">&#x202A;CQueue&lt; std::string &gt;</a></div></div>
+<div class="ttc" id="aa01187_html_ae60e9b12cc8252da2056087cf1c30279"><div class="ttname"><a href="../../dc/d70/a01187.html#ae60e9b12cc8252da2056087cf1c30279">&#x202A;SerialProc::mq_Write_Buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; std::string &gt; * mq_Write_Buffer_</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00044">SerialProc.h:44</a></div></div>
+<div class="ttc" id="aa01043_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01163_html"><div class="ttname"><a href="../../d6/d27/a01163.html">&#x202A;Serial</a></div><div class="ttdoc">&#x202A;A serial.</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00037">Serial.h:37</a></div></div>
+<div class="ttc" id="aa01187_html_a8d2fa673b460b127ef35bb49b51e8456"><div class="ttname"><a href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;SerialProc::m_Serial_</a></div><div class="ttdeci">&#x202A;Serial * m_Serial_</div><div class="ttdoc">&#x202A;The serial</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00045">SerialProc.h:45</a></div></div>
+<div class="ttc" id="aa01187_html_a2d4464068d1094563166f6f26976c825"><div class="ttname"><a href="../../dc/d70/a01187.html#a2d4464068d1094563166f6f26976c825">&#x202A;SerialProc::ProcSerialData</a></div><div class="ttdeci">&#x202A;bool ProcSerialData(void)</div><div class="ttdoc">&#x202A;循环处理 串口 数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de9/a00176_source.html#l00085">SerialProc.cc:85</a></div></div>
+<div class="ttc" id="aa01163_html_abdab3f6eff663933b5b0a293035418fd"><div class="ttname"><a href="../../d6/d27/a01163.html#abdab3f6eff663933b5b0a293035418fd">&#x202A;Serial::slot_write_data</a></div><div class="ttdeci">&#x202A;void slot_write_data(std::string *str)</div><div class="ttdoc">&#x202A;Slot write data // 将字符串写入到串口中去</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00182">Serial.cc:182</a></div></div>
+<div class="ttc" id="aa01167_html_afbf0962dd2da4322a2bff07859685a01"><div class="ttname"><a href="../../d7/dd6/a01167.html#afbf0962dd2da4322a2bff07859685a01">&#x202A;SerialData::mi_DataLength_</a></div><div class="ttdeci">&#x202A;int mi_DataLength_</div><div class="ttdoc">&#x202A;数据帧长度</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d89/a00071_source.html#l00040">serialdata.h:40</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dc/d70/a01187.html">&#x202A;SerialProc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

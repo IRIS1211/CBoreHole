@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;工作窗口 具体设置</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.6.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('db/dad/a01616.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc PageDocLTR-title"><div class="header">
+  <div class="headertitle">
+<div class="title">&#x202A;工作窗口 具体设置 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><img src="&#x202A;../../../assets/pic/workWindows.png" alt="工作窗口预览界面" class="inline"/></p>
+<p class="DocNodeLTR">2.2.1 系统开启 摄像头,进入预览模式, 显示 <b>原始图像</b> 和 <b>展开图像</b> 2.2.1.1 可以根据原始图像或者展开图像 调整显示参数以及运行参数 2.2.2 点击 <b>开始拼接</b> 进入工作状态, 开始持续拼接 2.2.2.1 创建自定义文件 二进制 写入文件头内容, 2.2.2.2 抓取图像, 展开图像, 根据串口获取的数据 找到拼接图像的区域, 进行图像匹配获取图像的偏移值 2.2.2.3 将图像拼接之后, 显示出来 拼接图像. 2.2.2.4 将每次图像覆盖掉的区域 并列串口数据 写入串口文件中(每行图像外扩几个像素存储图像信息) 2.2.2.5 循环 写入图像 一定时间内 强制刷入图像避免图像过大造成内存崩溃</p>
+<p class="DocNodeLTR">2.2.3 点击 <b>完成拼接</b> 系统完成工作 2.2.3.1 释放文件, 刷入文件 刷入硬盘 2.2.3.2 关闭串口数据 关闭不必要线程, 程序进入基础状态</p>
+<p class="DocNodeLTR">2.2.4 其他部分</p><ol type="1" class="DocNodeLTR">
+<li>&#x202A;罗盘实时刷新电子罗盘角度,来自 串口数据实时接收, 1.1 罗盘样式为 提升的Wiget 组件, 需要考虑组件目录路径, 避免出现错误 1.2 罗盘使用 <a class="el" href="../../dc/de0/a01302.html">GaugeCompass</a> 样式 组件</li>
+</ol>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md111"></a>
+界面 UI 对应 name 标识</h2>
+<p class="DocNodeLTR">| <b>序号</b> | <b>界面标识(text)</b> | <b>对象类型</b> | <b>程序操作标识(objectName)</b> | <b>功能描述</b> | <b>备注</b> | |:---&mdash;:|:-----------&mdash;:|:--------------&mdash;:|:-------------------&mdash;:|:-----&mdash;:|:---&mdash;:| | 1 | 探灯亮度 | Qslider | hs_Light_light | 探灯亮度滑动调 | | 2 | 开始拼接 | QPushButton | btn_startWork | 开始工作点击按钮 | | 3 | 抓取图像 | QPushButton | btn_capture | 抓取一副图像 | | 4 | 开始录像 | QPushButton | btn_Record | 开始录像 | | 5 | 退出 | QPushButton | btn_work_exit | 退出窗口 | | 6 | 参数设置 | QPushButton | btn_vision_para | 设置显示参数 | | 7 | 硬件参数 | QPushButton | btn_syspara | 硬件参数设置 | | 8 | 缩小 | QPushButton | btn_zoomin | 缩放 缩小 | | 9 | 放大 | QPushButton | btn_zoomout | 缩放 放大 | | 10 | 上升 | QPushButton | btn_up | 上升移动 | | 11 | 下降 | QPushButton | btn_down | 下降移动 | | 12 | 左移 | QPushButton | btn_left | 左右移动 | | 13 | 右移 | QPushButton | btn_right | 左右移动 | | 14 | 重置 | QPushButton | btn_reset | 重置视图 | | 15 | 存储空间 | QProgressBar | pb_storage | 存储控件容量 | | 16 | 测孔编号 | QLineEdit | le_hole_num | 测孔编号 | | 17 | 原图像 | QLabel | lb_src | 原始图像 | | 18 | 探灯亮度 | QLabel | lb_Light_light | 探灯亮度 | | 19 | 电压 | QLabel | lb_battary | 电压值 | | 20 | Pitch角度 | QLabel | lb_pitch | | 21 | Roll 角度 | QLabel | lb_roll | | 22 | Head角度 | QLabel | lb_head | | 23 | 展开图像显示 | QLabel | lb_dst_p | 展开图像显示 | | 24 | 拼接大图显示 | QLabel | lb_dst | 大图显示 | | 25 | 深度位置 | QLabel | lb_loc | 深度值 | | 26 | 缩放比例 | QLabel | lb_ratio | 缩放深度 | | 27 | 罗盘控件 | <a class="el" href="../../dc/de0/a01302.html">GaugeCompass</a> | wg_compass | 罗盘显示 | | 28 | 图像显示控件 | <a class="el" href="../../d7/d88/a01294.html" title="&#x202A;A qt open cv viewer gl.">CQtOpenCVViewerGl</a> | img_dst | 图像显示 GL | </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

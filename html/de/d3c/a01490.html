@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;程序命名规则</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.5.2</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('de/d3c/a01490.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc PageDocLTR-title"><div class="header">
+  <div class="headertitle">
+<div class="title">&#x202A;程序命名规则 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p class="DocNodeLTR">函数命名参考 <a href="&#x202A;https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/naming/">google 命名规范</a>, 但是由于自己的项目实际存在其他的库以及其他的程序,所以不能完全依赖, 以及存在一些个人的命名习惯,所以仅供参考</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md44"></a>
+文件名</h2>
+<p class="DocNodeLTR">文件名一般是类名,部分是 单词的组合,有三种格式</p><ul class="DocNodeLTR">
+<li>&#x202A;FileName 首字母大写</li>
+<li>&#x202A;fileName 除第一个单词首字母大写</li>
+<li>&#x202A;filename 全小写</li>
+<li>&#x202A;xxx_1107 避免冲突的文件存储</li>
+<li>&#x202A;xxx_date_time_xx 根据日期时间以及 临时 避免数据重复</li>
+</ul>
+<p class="DocNodeLTR">一般来说, 同名文件存在 .cpp 和 .h 两种对应格式, 相应的 .cpp/.cc 存放在 <code>Code/src</code> 文件夹, .h 存放在 <code>Code/inc</code> 文件夹 具体的文件列表可以参考 项目文档里面列出的文档树以及文档里面详细介绍了每个文件的内容</p>
+<p class="DocNodeLTR">按照拓展名区分文件类型</p><ul class="DocNodeLTR">
+<li>&#x202A;C/C++ 文件 <br  />
+<ul class="DocNodeLTR">
+<li>&#x202A;.c 纯 c 文件</li>
+<li>&#x202A;.cpp 部分 QT 的提升组件 以及主要执行文件</li>
+<li>&#x202A;.cc 自定义类的实现文件</li>
+<li>&#x202A;.h 类的声明文件</li>
+<li>&#x202A;ui_xxx.h qt 使用 uic 编译 ui 生成的头文件</li>
+<li>&#x202A;moc_xxx.h qt 使用 moc 编译 Object 类生成的 moc 文件, 处理信号与槽</li>
+<li>&#x202A;test_xxx.cc 使用doctest 的写的测试函数</li>
+</ul>
+</li>
+<li>&#x202A;文档文件<ul class="DocNodeLTR">
+<li>&#x202A;.md 自己写的各个模块的文档</li>
+<li>&#x202A;.doc doc 格式文档, 后续生成即可</li>
+<li>&#x202A;.html doxygen 通过注释生成的文件</li>
+</ul>
+</li>
+<li>&#x202A;配置文件以及资源文件<ul class="DocNodeLTR">
+<li>&#x202A;.yml .xml opencv可以读取的配置文件</li>
+<li>&#x202A;.pro .pri QT 工程文件,配置工程参数 <br  />
+</li>
+<li>&#x202A;.rc QT 编译资源文件</li>
+<li>&#x202A;.ui QT 自己使用 ui 操作</li>
+<li>&#x202A;.qml QT QML 界面文件</li>
+<li>&#x202A;.ts QT 翻译家文件,用于多语言版本程序</li>
+</ul>
+</li>
+<li>&#x202A;资源文件<ul class="DocNodeLTR">
+<li>&#x202A;.txt log 文件存储文件 或临时文件</li>
+<li>&#x202A;.idoi 自定义存储文件结构</li>
+<li>&#x202A;.png 文档需要的图片或者读取文件存储的格式</li>
+<li>&#x202A;.xlsx 部分UI表 以及多无代码表 等表格存储 临时记录,最后会转进各个markdown 进行同一管理</li>
+<li>&#x202A;.pdf 文档的部分版本留存,暂定规则之类</li>
+</ul>
+</li>
+<li>&#x202A;其他文件<ul class="DocNodeLTR">
+<li>&#x202A;.bat 自己写的部分脚本 来实现操作的批量操作</li>
+<li>&#x202A;.properties SonarQube 配置文件</li>
+<li>&#x202A;.zip 程序压缩文件备份</li>
+</ul>
+</li>
+</ul>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md45"></a>
+类名</h2>
+<p class="DocNodeLTR">全部首字母大写 例如: <a class="el" href="../../d7/d06/a01005.html" title="&#x202A;处理线程 单独执行过程">CamProc</a>. <a class="el" href="../../df/d59/a01001.html" title="&#x202A;摄像头 抓取对象, 循环抓取对象数据到缓冲队列中">CamCapture</a>. <a class="el" href="../../d7/d0c/a01173.html" title="&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348">WorkWindow</a></p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md46"></a>
+函数名</h2>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;普通函数:<ul class="DocNodeLTR">
+<li>&#x202A;首字母大写 多个单词每个单词首字母大写, 例如: CreateMapMat, <a class="el" href="../../d2/d41/a01037.html">Init</a></li>
+<li>&#x202A;QT 这种全大写,,省事, 例如: ShowImageOnQTLabel, RenderHCM</li>
+</ul>
+</li>
+<li>&#x202A;QT的信号或者槽函数:<ul class="DocNodeLTR">
+<li>&#x202A;使用 slot_ 开头命名 如: slot_render_HCM</li>
+<li>&#x202A;使用 Slot_ 开头命名 例如: Slot_UpdateUIByRunPara</li>
+<li>&#x202A;按照QT的规则, on_xxx_clicked 这种形式,表明函数信号: 例如: on_btn_work_exit_clicked</li>
+<li>&#x202A;QT的信号函数, 完全自定义, 可以使用 signal 命名, 例如: signal_close_windows</li>
+</ul>
+</li>
+</ol>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md47"></a>
+变量名</h2>
+<p class="DocNodeLTR">变量参考匈牙利命名法, 使用 类型_变量名 来声明, 变量作用区域类型前缀</p><ul class="DocNodeLTR">
+<li>&#x202A;全局变量 g_</li>
+<li>&#x202A;局部变量 (无) 争取全部小写</li>
+<li>&#x202A;成员变量 m_</li>
+</ul>
+<p class="DocNodeLTR">容器类型前缀</p><ul class="DocNodeLTR">
+<li>&#x202A;q_ 自定义队列前缀</li>
+<li>&#x202A;v_ vector 类型数据</li>
+</ul>
+<p class="DocNodeLTR">变量类型前缀,基本使用类型的第一个字母小写来做</p><ul class="DocNodeLTR">
+<li>&#x202A;b_ bool 类型 变量</li>
+<li>&#x202A;k_ 常量</li>
+<li>&#x202A;c_ 字符类型</li>
+<li>&#x202A;f_ float 变量</li>
+<li>&#x202A;d_ double 类型变量</li>
+<li>&#x202A;s_ 字符串变量</li>
+<li>&#x202A;a_ 图片类型 cv::Mat 避免各种字母重复</li>
+<li>&#x202A;t_ 自定义 线程变量前缀</li>
+<li>&#x202A;x_ 线程处理锁</li>
+<li>&#x202A;ui 标识窗口的 ui 文件</li>
+<li>&#x202A;(无) 类型 Class类 实现 </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

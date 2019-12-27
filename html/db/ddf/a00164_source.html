@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -92,119 +92,105 @@ $(document).ready(function(){initNavTree('db/ddf/a00164_source.html','../../');}
 <div class="title">main.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../db/ddf/a00164.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<a href="../../db/ddf/a00164.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// 使用标准头文件</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../stdafx.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QtCore&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// 全局变量定义区域</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// 文件读写  xml 或者 yml  配置文件操作</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../dc/d57/a00194.html#af5c9cce7978a6dc022e79146aa3f9e68">   14</a></span>&#160;cv::FileStorage <a class="code" href="../../db/ddf/a00164.html#af5c9cce7978a6dc022e79146aa3f9e68">&#x202A;gFS</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// 定义全局参数变量  包括 运行参数和配置参数</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../dc/d57/a00194.html#a21a3f473a04332ba5d1dd033517f0570">   16</a></span>&#160;<a class="code" href="../../d7/ded/a01009.html">&#x202A;Config</a> *<a class="code" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../utils/utils.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../inc/Config.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../inc/WorkWindow.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../inc/setwindow.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../inc/init.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define DOCTEST_CONFIG_IMPLEMENT</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// #include &quot;doctest.h&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;../../Depend/doctest/doctest.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// 全局变量定义区域</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// 定义全局参数变量  包括 运行参数和配置参数</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">   20</a></span>&#160;<a class="code" href="../../dd/d09/a01118.html">&#x202A;Config</a> *<a class="code" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// DOC TEST   测试 样例</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../db/ddf/a00164.html#ae12453612a8813a35bc7a15eaf165b7e">   24</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../db/ddf/a00164.html#ae12453612a8813a35bc7a15eaf165b7e">&#x202A;factorial</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> number) {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> number &lt; 1 ? 1 : number &lt;= 1 ? number : <a class="code" href="../../db/ddf/a00164.html#ae12453612a8813a35bc7a15eaf165b7e">&#x202A;factorial</a>(number - 1) * number;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../db/ddf/a00164.html#af6e61735b97ba5845675d44a2e385c11">   28</a></span>&#160;<a class="code" href="../../db/ddf/a00164.html#af6e61735b97ba5845675d44a2e385c11">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;testing the factorial function&quot;</span>) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    CHECK(<a class="code" href="../../db/ddf/a00164.html#ae12453612a8813a35bc7a15eaf165b7e">&#x202A;factorial</a>(0) == 1);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    CHECK(<a class="code" href="../../db/ddf/a00164.html#ae12453612a8813a35bc7a15eaf165b7e">&#x202A;factorial</a>(1) == 1);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    CHECK(<a class="code" href="../../db/ddf/a00164.html#ae12453612a8813a35bc7a15eaf165b7e">&#x202A;factorial</a>(2) == 2);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    CHECK(<a class="code" href="../../db/ddf/a00164.html#ae12453612a8813a35bc7a15eaf165b7e">&#x202A;factorial</a>(3) == 6);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    CHECK(<a class="code" href="../../db/ddf/a00164.html#ae12453612a8813a35bc7a15eaf165b7e">&#x202A;factorial</a>(10) == 3628800);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97">   52</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97">&#x202A;main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// 默认显示进程 </span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    QApplication application(argc, argv);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d7/d0c/a01173.html">&#x202A;WorkWindow</a> *work_windows = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//  开始界面 只显示主窗体切换显示</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d9/d25/a01157.html">&#x202A;SetWindow</a> *set_windows = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// qmlRegisterType&lt;ALPaintedItem&gt;(&quot;ALPaintedItem&quot;, 1, 0, &quot;ALPaintedItem&quot;);</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// 初始化系统 完成系统参数以及其他内容</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d2/d41/a01037.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a>())</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        LError(<span class="stringliteral">&quot;System Init Error!, Please Check Log&quot;</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">// 系统初始化失败  结束执行程序</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        system(<span class="stringliteral">&quot;pause&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// 正常 直接进入工作窗口</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> nshow_work = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (nshow_work == 1)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        work_windows = <span class="keyword">new</span> <a class="code" href="../../d7/d0c/a01173.html">&#x202A;WorkWindow</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        work_windows-&gt;show();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">// 构建线程之后 进行 初始化 获取相应参数 或者设置相应参数</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        work_windows-&gt;<a class="code" href="../../d7/d0c/a01173.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;Init</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nshow_work == 2)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        work_windows = <span class="keyword">new</span> <a class="code" href="../../d7/d0c/a01173.html">&#x202A;WorkWindow</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        work_windows-&gt;setWindowFlags(work_windows-&gt;windowFlags()</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                     &amp; ~Qt::WindowMaximizeButtonHint</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                     &amp; ~Qt::WindowMinimizeButtonHint);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        work_windows-&gt;showMaximized();  <span class="comment">// 最大化显示窗口</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        work_windows-&gt;showFullScreen(); <span class="comment">// 全屏显示</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        work_windows-&gt;show(); </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        work_windows-&gt;<a class="code" href="../../d7/d0c/a01173.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;Init</a>();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        set_windows = <span class="keyword">new</span> <a class="code" href="../../d9/d25/a01157.html">&#x202A;SetWindow</a>();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        set_windows-&gt;show();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// set_windows-&gt;hide();</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// 在函数初始化之后 执行  单元测试</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d7/d46/a01045.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../d7/d46/a01045.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>.<a class="code" href="../../d7/d46/a01045.html#a54b647846cffc7e384175df7d8d62b64">&#x202A;nDocTestEnable</a>)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">// 测试 doc test 是够工作</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        doctest::Context context;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="comment">// context.applyCommandLine(argc, argv);</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="comment">// context.addFilter(&quot;test-case-exclude&quot;, &quot;*math*&quot;); // exclude test cases with &quot;math&quot; in the name</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">// context.setOption(&quot;rand-seed&quot;, 324);              // if order-by is set to &quot;rand&quot; use this seed</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        context.setOption(<span class="stringliteral">&quot;order-by&quot;</span>, <span class="stringliteral">&quot;file&quot;</span>);            <span class="comment">// sort the test cases by file and line</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">// overrides</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        context.setOption(<span class="stringliteral">&quot;no-breaks&quot;</span>, <span class="keyword">true</span>); <span class="comment">// don&#39;t break in the debugger when assertions fail</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        context.run(); <span class="comment">// run doctest</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> application.exec();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOCTEST_CONFIG_IMPLEMENT</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// #include &quot;doctest.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;../../Depend/doctest/doctest.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97">   39</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97">&#x202A;main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 默认显示进程 </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QApplication application(argc, argv);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../de/d33/a01274.html">&#x202A;WorkWindow</a> *work_windows = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//  开始界面 只显示主窗体切换显示</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../da/d00/a01270.html">&#x202A;SetWindow</a> *set_windows = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// qmlRegisterType&lt;ALPaintedItem&gt;(&quot;ALPaintedItem&quot;, 1, 0, &quot;ALPaintedItem&quot;);</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// 初始化系统 完成系统参数以及其他内容</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../de/d07/a01146.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a>())</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        LError(<span class="stringliteral">&quot;System Init Error!, Please Check Log {}&quot;</span>,1);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// 系统初始化失败  结束执行程序</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        system(<span class="stringliteral">&quot;pause&quot;</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// 正常 直接进入工作窗口</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> nshow_work = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (nshow_work == 1)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        work_windows = <span class="keyword">new</span> <a class="code" href="../../de/d33/a01274.html">&#x202A;WorkWindow</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        work_windows-&gt;show();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// 构建线程之后 进行 初始化 获取相应参数 或者设置相应参数</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        work_windows-&gt;<a class="code" href="../../de/d33/a01274.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;Init</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nshow_work == 2)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        work_windows = <span class="keyword">new</span> <a class="code" href="../../de/d33/a01274.html">&#x202A;WorkWindow</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        work_windows-&gt;setWindowFlags(work_windows-&gt;windowFlags()</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                     &amp; ~Qt::WindowMaximizeButtonHint</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                     &amp; ~Qt::WindowMinimizeButtonHint);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        work_windows-&gt;showMaximized();  <span class="comment">// 最大化显示窗口</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        work_windows-&gt;showFullScreen(); <span class="comment">// 全屏显示</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        work_windows-&gt;show(); </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        work_windows-&gt;<a class="code" href="../../de/d33/a01274.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;Init</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        set_windows = <span class="keyword">new</span> <a class="code" href="../../da/d00/a01270.html">&#x202A;SetWindow</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        set_windows-&gt;show();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">// set_windows-&gt;hide();</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// 在函数初始化之后 执行  单元测试</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../d5/d16/a01154.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>.<a class="code" href="../../d5/d16/a01154.html#a54b647846cffc7e384175df7d8d62b64">&#x202A;nDocTestEnable</a>)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">// 测试 doc test 是够工作</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        doctest::Context context;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="comment">// context.applyCommandLine(argc, argv);</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// context.addFilter(&quot;test-case-exclude&quot;, &quot;*math*&quot;); // exclude test cases with &quot;math&quot; in the name</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// context.setOption(&quot;rand-seed&quot;, 324);              // if order-by is set to &quot;rand&quot; use this seed</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        context.setOption(<span class="stringliteral">&quot;order-by&quot;</span>, <span class="stringliteral">&quot;file&quot;</span>);            <span class="comment">// sort the test cases by file and line</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// overrides</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        context.setOption(<span class="stringliteral">&quot;no-breaks&quot;</span>, <span class="keyword">true</span>); <span class="comment">// don&#39;t break in the debugger when assertions fail</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        context.run(); <span class="comment">// run doctest</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="comment">// system(&quot;pause&quot;);</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">// return 0;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> application.exec();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01045_html_a54b647846cffc7e384175df7d8d62b64"><div class="ttname"><a href="../../d7/d46/a01045.html#a54b647846cffc7e384175df7d8d62b64">&#x202A;RunPara::StCFG::StDebug::nDocTestEnable</a></div><div class="ttdeci">&#x202A;int nDocTestEnable</div><div class="ttdoc">&#x202A;doctest 是否使用</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00275">runpara.h:275</a></div></div>
-<div class="ttc" id="aa00164_html_af6e61735b97ba5845675d44a2e385c11"><div class="ttname"><a href="../../db/ddf/a00164.html#af6e61735b97ba5845675d44a2e385c11">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;testing the factorial function&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00028">main.cpp:28</a></div></div>
-<div class="ttc" id="aa01045_html_a1ca5d1037652d0b772952ae0716d7a63"><div class="ttname"><a href="../../d7/d46/a01045.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG CFG</div></div>
-<div class="ttc" id="aa01173_html_a98cc99469cf7af144c013870cd2a31e1"><div class="ttname"><a href="../../d7/d0c/a01173.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;WorkWindow::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdoc">&#x202A;主线程 初始化</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00053">WorkWindow.cc:53</a></div></div>
-<div class="ttc" id="aa00164_html_af5c9cce7978a6dc022e79146aa3f9e68"><div class="ttname"><a href="../../db/ddf/a00164.html#af5c9cce7978a6dc022e79146aa3f9e68">&#x202A;gFS</a></div><div class="ttdeci">&#x202A;cv::FileStorage gFS</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00014">main.cpp:14</a></div></div>
-<div class="ttc" id="aa00164_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00016">main.cpp:16</a></div></div>
-<div class="ttc" id="aa01009_html"><div class="ttname"><a href="../../d7/ded/a01009.html">&#x202A;Config</a></div><div class="ttdoc">&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00029">Config.h:29</a></div></div>
-<div class="ttc" id="aa00164_html_ae12453612a8813a35bc7a15eaf165b7e"><div class="ttname"><a href="../../db/ddf/a00164.html#ae12453612a8813a35bc7a15eaf165b7e">&#x202A;factorial</a></div><div class="ttdeci">&#x202A;int factorial(const int number)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00024">main.cpp:24</a></div></div>
-<div class="ttc" id="aa01037_html_afb07b00f2611777025031d20adb34ce5"><div class="ttname"><a href="../../d2/d41/a01037.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a></div><div class="ttdeci">&#x202A;static bool AllInit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00011">init.cc:11</a></div></div>
-<div class="ttc" id="aa01009_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d7/ded/a01009.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00034">Config.h:34</a></div></div>
-<div class="ttc" id="aa01157_html"><div class="ttname"><a href="../../d9/d25/a01157.html">&#x202A;SetWindow</a></div><div class="ttdoc">&#x202A;Window for setting the . 设置窗口</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00037">setwindow.h:37</a></div></div>
-<div class="ttc" id="aa00164_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="../../db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97">&#x202A;main</a></div><div class="ttdeci">&#x202A;int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00052">main.cpp:52</a></div></div>
-<div class="ttc" id="aa01173_html"><div class="ttname"><a href="../../d7/d0c/a01173.html">&#x202A;WorkWindow</a></div><div class="ttdoc">&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00054">WorkWindow.h:54</a></div></div>
-<div class="ttc" id="aa01045_html_a55676b481748b3169abcad0b15dab03f"><div class="ttname"><a href="../../d7/d46/a01045.html#a55676b481748b3169abcad0b15dab03f">&#x202A;RunPara::StCFG::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG::StDebug Debug</div></div>
+<div class="ttc" id="aa01274_html"><div class="ttname"><a href="../../de/d33/a01274.html">&#x202A;WorkWindow</a></div><div class="ttdoc">&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00054">WorkWindow.h:54</a></div></div>
+<div class="ttc" id="aa01154_html_a55676b481748b3169abcad0b15dab03f"><div class="ttname"><a href="../../d5/d16/a01154.html#a55676b481748b3169abcad0b15dab03f">&#x202A;RunPara::StCFG::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG::StDebug Debug</div></div>
+<div class="ttc" id="aa00164_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../db/ddf/a00164.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00020">main.cpp:20</a></div></div>
+<div class="ttc" id="aa01274_html_a98cc99469cf7af144c013870cd2a31e1"><div class="ttname"><a href="../../de/d33/a01274.html#a98cc99469cf7af144c013870cd2a31e1">&#x202A;WorkWindow::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdoc">&#x202A;主线程 初始化</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df3/a00185_source.html#l00045">WorkWindow.cc:45</a></div></div>
+<div class="ttc" id="aa01118_html"><div class="ttname"><a href="../../dd/d09/a01118.html">&#x202A;Config</a></div><div class="ttdoc">&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00029">Config.h:29</a></div></div>
+<div class="ttc" id="aa01146_html_afb07b00f2611777025031d20adb34ce5"><div class="ttname"><a href="../../de/d07/a01146.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a></div><div class="ttdeci">&#x202A;static bool AllInit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00018">init.cc:18</a></div></div>
+<div class="ttc" id="aa01154_html_a54b647846cffc7e384175df7d8d62b64"><div class="ttname"><a href="../../d5/d16/a01154.html#a54b647846cffc7e384175df7d8d62b64">&#x202A;RunPara::StCFG::StDebug::nDocTestEnable</a></div><div class="ttdeci">&#x202A;int nDocTestEnable</div><div class="ttdoc">&#x202A;doctest 是否使用</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00280">runpara.h:280</a></div></div>
+<div class="ttc" id="aa01270_html"><div class="ttname"><a href="../../da/d00/a01270.html">&#x202A;SetWindow</a></div><div class="ttdoc">&#x202A;Window for setting the . 设置窗口</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/a00080_source.html#l00040">setwindow.h:40</a></div></div>
+<div class="ttc" id="aa01118_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01154_html_a1ca5d1037652d0b772952ae0716d7a63"><div class="ttname"><a href="../../d5/d16/a01154.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG CFG</div></div>
+<div class="ttc" id="aa00164_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="../../db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97">&#x202A;main</a></div><div class="ttdeci">&#x202A;int main(int argc, char *argv[])</div><div class="ttdoc">&#x202A;Main entry-point for this application</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00039">main.cpp:39</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

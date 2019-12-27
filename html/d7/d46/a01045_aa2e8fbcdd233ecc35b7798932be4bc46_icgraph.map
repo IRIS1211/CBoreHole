@@ -1,0 +1,6 @@
+<map id="RunPara::WriteRunParaToFile" name="RunPara::WriteRunParaToFile">
+<area shape="rect" id="node1" title=" " alt="" coords="212,56,408,83"/>
+<area shape="rect" id="node2" href="$d0/daa/a01029.html#ad9fb6635d112a3e806762bd6d338605d" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据 对于写入数据, 使用 gConfig.sysPara 内容存储 到文件头信息中 对于读取数据,..." alt="" coords="23,5,146,32"/>
+<area shape="rect" id="node3" href="$d5/df1/a00206.html#a44733fb236621e4eaa4a2e26d628659f" title=" " alt="" coords="36,56,133,83"/>
+<area shape="rect" id="node4" href="$d7/ded/a01009.html#a414b3cc20d2f938a239c6723809bc904" title="将参数写入到文件中" alt="" coords="5,107,164,133"/>
+</map>

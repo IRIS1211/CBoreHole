@@ -1,0 +1,35 @@
+<map id="ImageProc" name="ImageProc">
+<area shape="rect" id="node1" title="图片处理类实现" alt="" coords="1732,197,1816,223"/>
+<area shape="rect" id="node2" href="$d2/db8/a01057.html" title="An idoi file." alt="" coords="1545,197,1613,223"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="1297,66,1388,93"/>
+<area shape="rect" id="node4" title="STL class" alt="" coords="1077,29,1206,71"/>
+<area shape="rect" id="node5" title="STL class" alt="" coords="700,29,836,71"/>
+<area shape="rect" id="node6" title="STL class" alt="" coords="361,71,490,112"/>
+<area shape="rect" id="node7" title="STL class" alt="" coords="155,54,309,81"/>
+<area shape="rect" id="node9" title="STL class" alt="" coords="359,5,492,47"/>
+<area shape="rect" id="node8" title="STL class" alt="" coords="5,54,105,81"/>
+<area shape="rect" id="node10" href="$d9/d7c/a01073.html" title="系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换" alt="" coords="1307,374,1379,401"/>
+<area shape="rect" id="node11" href="$d9/d7c/a01073.html#d6/d6e/a01137" title="设置用户UI 参数" alt="" coords="1089,301,1194,327"/>
+<area shape="rect" id="node12" href="$d9/d7c/a01073.html#de/df6/a01141" title=" " alt="" coords="689,265,847,291"/>
+<area shape="rect" id="node13" href="$d9/d7c/a01073.html#de/d1d/a01105" title="设置硬件的参数信息" alt="" coords="1076,885,1207,911"/>
+<area shape="rect" id="node14" href="$d9/d7c/a01073.html#d9/d17/a01129" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="699,844,837,885"/>
+<area shape="rect" id="node15" href="$d9/d7c/a01073.html#d8/dbf/a01109" title="脉冲参数" alt="" coords="699,909,837,951"/>
+<area shape="rect" id="node16" href="$d9/d7c/a01073.html#d6/d8b/a01117" title="电子罗盘参数 调整罗盘数据" alt="" coords="699,1040,837,1081"/>
+<area shape="rect" id="node17" title="STL class" alt="" coords="385,531,465,558"/>
+<area shape="rect" id="node22" href="$d9/d7c/a01073.html#d6/dc4/a01125" title="窗口状态信息" alt="" coords="699,1105,837,1147"/>
+<area shape="rect" id="node23" href="$d9/d7c/a01073.html#d0/dd3/a01077" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="897,214,1052,241"/>
+<area shape="rect" id="node24" href="$d9/d7c/a01073.html#d2/df3/a01085" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="915,551,1034,578"/>
+<area shape="rect" id="node26" href="$d9/d7c/a01073.html#dc/d06/a01153" title="配置 debug 参数" alt="" coords="679,611,857,638"/>
+<area shape="rect" id="node29" href="$d9/d7c/a01073.html#de/d99/a01101" title=" " alt="" coords="663,315,873,342"/>
+<area shape="rect" id="node32" href="$d9/d7c/a01073.html#dd/dee/a01081" title="记录 路径以及其他路径信息" alt="" coords="907,481,1042,507"/>
+<area shape="rect" id="node18" title="STL class" alt="" coords="169,524,295,565"/>
+<area shape="rect" id="node19" href="$d9/d7c/a01073.html#db/d28/a01133" title="额外信息" alt="" coords="699,713,837,755"/>
+<area shape="rect" id="node20" href="$d9/d7c/a01073.html#dd/de4/a01121" title="相机参数结构体" alt="" coords="699,779,837,820"/>
+<area shape="rect" id="node21" href="$d9/d7c/a01073.html#d8/ded/a01113" title="探头参数" alt="" coords="699,975,837,1016"/>
+<area shape="rect" id="node25" href="$d9/d7c/a01073.html#d9/d65/a01145" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="1081,611,1201,638"/>
+<area shape="rect" id="node27" href="$d9/d7c/a01073.html#d8/d02/a01149" title="可以存储的文件参数" alt="" coords="666,662,870,689"/>
+<area shape="rect" id="node28" href="$d9/d7c/a01073.html#d3/dc4/a01089" title="运行过程中的 图像参数" alt="" coords="1077,374,1205,401"/>
+<area shape="rect" id="node30" href="$d9/d7c/a01073.html#de/d1c/a01093" title="Image 处理参数, 作为图像展开参数" alt="" coords="676,367,860,408"/>
+<area shape="rect" id="node31" href="$d9/d7c/a01073.html#d1/dfa/a01097" title="Image Para 参数" alt="" coords="663,433,873,459"/>
+<area shape="rect" id="node33" href="$dc/d99/a01053.html" title="#TODO: 完善拓展信息内容 定义拓展信息内容" alt="" coords="1306,425,1379,451"/>
+</map>

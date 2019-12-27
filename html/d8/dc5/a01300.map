@@ -1,4 +1,10 @@
-<map id="Ui_WorkWindow" name="Ui_WorkWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,124,32"/>
-<area shape="rect" id="node2" href="$dc/d9e/a01305.html" title=" " alt="" coords="5,80,124,107"/>
+<map id="GaugeCompass" name="GaugeCompass">
+<area shape="rect" id="node1" title=" " alt="" coords="47,336,162,363"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,157,79,184"/>
+<area shape="rect" id="node8" href="$d7/d8c/a01306.html" title=" " alt="" coords="48,247,167,273"/>
+<area shape="rect" id="node3" href="$d5/da0/a01342.html" title=" " alt="" coords="193,247,297,273"/>
+<area shape="rect" id="node4" href="$d9/de6/a01314.html" title=" " alt="" coords="136,157,233,184"/>
+<area shape="rect" id="node5" href="$da/d79/a01310.html" title=" " alt="" coords="190,81,254,108"/>
+<area shape="rect" id="node7" href="$d1/d54/a01326.html" title=" " alt="" coords="257,157,352,184"/>
+<area shape="rect" id="node6" title=" " alt="" coords="187,5,257,32"/>
 </map>

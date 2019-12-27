@@ -1,0 +1,1798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;Utils_String类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.5.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('de/da0/a01341.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a>  </div>
+  <div class="headertitle">
+<div class="title">Utils_String类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../dc/d5d/a00278_source.html">utils_string.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Utils_String 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d51/a01340.png" border="0" usemap="#_utils___string_inherit__map" alt="Inheritance graph"/></div>
+<map name="_utils___string_inherit__map" id="_utils___string_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,5,95,32"/>
+<area shape="rect" href="../../db/d4b/a01309.html" title=" " alt="" coords="26,80,74,107"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a05693318f3f6e3e81055e4bf8ef1da69"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a05693318f3f6e3e81055e4bf8ef1da69"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a05693318f3f6e3e81055e4bf8ef1da69">CoutVectorIdx</a> (T &amp;vec, bool new_line=true)</td></tr>
+<tr class="separator:a05693318f3f6e3e81055e4bf8ef1da69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59fe67376160eb631f321bbaa8469cc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae59fe67376160eb631f321bbaa8469cc"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#ae59fe67376160eb631f321bbaa8469cc">CoutVector</a> (T &amp;vec, bool new_line=true)</td></tr>
+<tr class="separator:ae59fe67376160eb631f321bbaa8469cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707dfc08a28c18474486ca8ca43d6b39"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a707dfc08a28c18474486ca8ca43d6b39"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a707dfc08a28c18474486ca8ca43d6b39">Str2Vec</a> (const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const char separator, bool skip_empty=true)</td></tr>
+<tr class="memdesc:a707dfc08a28c18474486ca8ca43d6b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 <a href="https://segmentfault.com/a/1190000002483483">https://segmentfault.com/a/1190000002483483</a>  <a href="../../de/da0/a01341.html#a707dfc08a28c18474486ca8ca43d6b39">更多...</a><br /></td></tr>
+<tr class="separator:a707dfc08a28c18474486ca8ca43d6b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22cfa53ffee39ead69856b4a92eba02"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#ae22cfa53ffee39ead69856b4a92eba02">Str2Vec</a> (const std::string &amp;str, const char separator, bool skip_empty=true)</td></tr>
+<tr class="separator:ae22cfa53ffee39ead69856b4a92eba02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09734b79282d4132596b4a11dcb8175d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a09734b79282d4132596b4a11dcb8175d"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a09734b79282d4132596b4a11dcb8175d">Str2Vector</a> (const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const std::string &amp;delimiters, bool skip_empty=true)</td></tr>
+<tr class="memdesc:a09734b79282d4132596b4a11dcb8175d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 <a href="https://segmentfault.com/a/1190000002483483">https://segmentfault.com/a/1190000002483483</a>  <a href="../../de/da0/a01341.html#a09734b79282d4132596b4a11dcb8175d">更多...</a><br /></td></tr>
+<tr class="separator:a09734b79282d4132596b4a11dcb8175d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c37b345e4022fae88d29f9be940523"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#ae8c37b345e4022fae88d29f9be940523">Str2Vector</a> (const std::string &amp;str, const std::string &amp;delimiters, bool skip_empty=true)</td></tr>
+<tr class="separator:ae8c37b345e4022fae88d29f9be940523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0655ea746432bac89754a8e71caa5cc"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#ab0655ea746432bac89754a8e71caa5cc">String2ConstChar</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:ab0655ea746432bac89754a8e71caa5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;String 2 character 直接返回数据字符串  <a href="../../de/da0/a01341.html#ab0655ea746432bac89754a8e71caa5cc">更多...</a><br /></td></tr>
+<tr class="separator:ab0655ea746432bac89754a8e71caa5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd80557e406c33ce221395db601f196"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#afdd80557e406c33ce221395db601f196">String2Char</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:afdd80557e406c33ce221395db601f196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518cb647622b31947f638b48320fc646"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a518cb647622b31947f638b48320fc646">String2Uchar</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:a518cb647622b31947f638b48320fc646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1e2edd1365b94dff05468194611770"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a6c1e2edd1365b94dff05468194611770">ConstChar2String</a> (const char *buffer)</td></tr>
+<tr class="memdesc:a6c1e2edd1365b94dff05468194611770"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;char 类型与 string的相互转换  <a href="../../de/da0/a01341.html#a6c1e2edd1365b94dff05468194611770">更多...</a><br /></td></tr>
+<tr class="separator:a6c1e2edd1365b94dff05468194611770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed8c8e05cada7d7334a213dd8ff1050"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a5ed8c8e05cada7d7334a213dd8ff1050">Char2String</a> (char *buffer)</td></tr>
+<tr class="separator:a5ed8c8e05cada7d7334a213dd8ff1050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d9fe1b4fd0eb7f266cce483fdaaced"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a89d9fe1b4fd0eb7f266cce483fdaaced">Uchar2String</a> (const <a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buffer)</td></tr>
+<tr class="separator:a89d9fe1b4fd0eb7f266cce483fdaaced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cecc4c47f4630ce0c6321ca63b9bb27"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a5cecc4c47f4630ce0c6321ca63b9bb27">Uchar2String</a> (<a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buffer)</td></tr>
+<tr class="separator:a5cecc4c47f4630ce0c6321ca63b9bb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778ef548491bb4f043fb0111f87f80ae"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a778ef548491bb4f043fb0111f87f80ae">ConstChar2Char</a> (const char *buffer)</td></tr>
+<tr class="separator:a778ef548491bb4f043fb0111f87f80ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd89201285eb22950b500376627a9194"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#acd89201285eb22950b500376627a9194">Char2ConstChar</a> (char *buffer)</td></tr>
+<tr class="separator:acd89201285eb22950b500376627a9194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe216aed245f8f433cfc9b5e8c611754"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#afe216aed245f8f433cfc9b5e8c611754">AddQuoteString</a> (std::string str, const std::string q=&quot;\&quot;&quot;)</td></tr>
+<tr class="memdesc:afe216aed245f8f433cfc9b5e8c611754"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;在字符串前后 添加 引号 双引号 用于YML 写入  <a href="../../de/da0/a01341.html#afe216aed245f8f433cfc9b5e8c611754">更多...</a><br /></td></tr>
+<tr class="separator:afe216aed245f8f433cfc9b5e8c611754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ed3e2282101b5d3326df68e6098898"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a82ed3e2282101b5d3326df68e6098898">StringVersionToInt</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a82ed3e2282101b5d3326df68e6098898"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011  <a href="../../de/da0/a01341.html#a82ed3e2282101b5d3326df68e6098898">更多...</a><br /></td></tr>
+<tr class="separator:a82ed3e2282101b5d3326df68e6098898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d0fd6c4d6b6a911bbda3bbeb9bef93"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">NumToString</a> (int num, int width=3, int base=10)</td></tr>
+<tr class="separator:a20d0fd6c4d6b6a911bbda3bbeb9bef93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ef7d81d849050111b16e8a331a2d09"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#ab0ef7d81d849050111b16e8a331a2d09">NumToString</a> (const float &amp;num, int precision)</td></tr>
+<tr class="memdesc:ab0ef7d81d849050111b16e8a331a2d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;float 控制精度显示  <a href="../../de/da0/a01341.html#ab0ef7d81d849050111b16e8a331a2d09">更多...</a><br /></td></tr>
+<tr class="separator:ab0ef7d81d849050111b16e8a331a2d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a624c2e73e5b96a1ddad4d4f70537a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a80a624c2e73e5b96a1ddad4d4f70537a">Hex2Uchar</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:a80a624c2e73e5b96a1ddad4d4f70537a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ee9ebecd5f96f3d05272c44c37c5a8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a46ee9ebecd5f96f3d05272c44c37c5a8">Hex2Num</a> (const char ch)</td></tr>
+<tr class="separator:a46ee9ebecd5f96f3d05272c44c37c5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6015dc1e7f1948ceac43af88445dd7c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#ad6015dc1e7f1948ceac43af88445dd7c">Hex2Num</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:ad6015dc1e7f1948ceac43af88445dd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702a69e2821ebf9eb702b7774e7e548b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a702a69e2821ebf9eb702b7774e7e548b">StringToUcharArr</a> (<a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> **data, const std::string str, int row_)</td></tr>
+<tr class="memdesc:a702a69e2821ebf9eb702b7774e7e548b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+  <a href="../../de/da0/a01341.html#a702a69e2821ebf9eb702b7774e7e548b">更多...</a><br /></td></tr>
+<tr class="separator:a702a69e2821ebf9eb702b7774e7e548b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa797e5e8119ca57f492ea5641817d49a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#aa797e5e8119ca57f492ea5641817d49a">GetTime</a> (char c='_', bool rand_flg=false)</td></tr>
+<tr class="memdesc:aa797e5e8119ca57f492ea5641817d49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号  <a href="../../de/da0/a01341.html#aa797e5e8119ca57f492ea5641817d49a">更多...</a><br /></td></tr>
+<tr class="separator:aa797e5e8119ca57f492ea5641817d49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab548db2d3df066e33bcad0ec85404cb4"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#ab548db2d3df066e33bcad0ec85404cb4">GetDate</a> (void)</td></tr>
+<tr class="memdesc:ab548db2d3df066e33bcad0ec85404cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;获取日期 字符串 YYYYMMDD  <a href="../../de/da0/a01341.html#ab548db2d3df066e33bcad0ec85404cb4">更多...</a><br /></td></tr>
+<tr class="separator:ab548db2d3df066e33bcad0ec85404cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8664e17ac3f5987d6f5d1169bc865071"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da0/a01341.html#a8664e17ac3f5987d6f5d1169bc865071">Num2Str</a> (int num, int cnt=3)</td></tr>
+<tr class="memdesc:a8664e17ac3f5987d6f5d1169bc865071"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;数字 转换成字符串 // 自定位数.// 首位补0  <a href="../../de/da0/a01341.html#a8664e17ac3f5987d6f5d1169bc865071">更多...</a><br /></td></tr>
+<tr class="separator:a8664e17ac3f5987d6f5d1169bc865071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="../../dc/d5d/a00278_source.html">utils_string.h</a> 第 <a class="el" href="../../dc/d5d/a00278_source.html#l00016">16</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="afe216aed245f8f433cfc9b5e8c611754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe216aed245f8f433cfc9b5e8c611754">&#9670;&nbsp;</a></span>AddQuoteString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string Utils_String::AddQuoteString </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>q</em> = <code>&quot;\&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;在字符串前后 添加 引号 双引号 用于YML 写入 </p>
+<p class="DocNodeLTR">在字符串前后 添加 引号 双引号</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/28</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string </td></tr>
+    <tr><td class="paramname">q</td><td>&#x202A;A std::string to process</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/3</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string </td></tr>
+    <tr><td class="paramname">q</td><td>&#x202A;(Optional) A std::string to process</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00135">135</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> (q + str + q);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_afe216aed245f8f433cfc9b5e8c611754_icgraph.png" border="0" usemap="#de/da0/a01341_afe216aed245f8f433cfc9b5e8c611754_icgraph" alt=""/></div>
+<map name="de/da0/a01341_afe216aed245f8f433cfc9b5e8c611754_icgraph" id="de/da0/a01341_afe216aed245f8f433cfc9b5e8c611754_icgraph">
+<area shape="rect" title="在字符串前后 添加 引号 双引号 用于YML 写入" alt="" coords="615,5,804,32"/>
+<area shape="rect" href="../../d9/d7c/a01073.html#a4745d779fa1d892d5cb7bbb8fe499f55" title="将参数 写入到 YML 文件中" alt="" coords="364,5,567,32"/>
+<area shape="rect" href="../../d2/d41/a01037.html#adbb6ccd1f7a72de24216484582071010" title="将参数 写入到 yml 文件中" alt="" coords="151,5,316,32"/>
+<area shape="rect" href="../../de/db1/a00197.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="5,5,103,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acd89201285eb22950b500376627a9194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd89201285eb22950b500376627a9194">&#9670;&nbsp;</a></span>Char2ConstChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * Utils_String::Char2ConstChar </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00116">116</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> buffer;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5ed8c8e05cada7d7334a213dd8ff1050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed8c8e05cada7d7334a213dd8ff1050">&#9670;&nbsp;</a></span>Char2String()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Utils_String::Char2String </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00098">98</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> std::string(buffer);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a5ed8c8e05cada7d7334a213dd8ff1050_icgraph.png" border="0" usemap="#de/da0/a01341_a5ed8c8e05cada7d7334a213dd8ff1050_icgraph" alt=""/></div>
+<map name="de/da0/a01341_a5ed8c8e05cada7d7334a213dd8ff1050_icgraph" id="de/da0/a01341_a5ed8c8e05cada7d7334a213dd8ff1050_icgraph">
+<area shape="rect" title=" " alt="" coords="1144,81,1309,108"/>
+<area shape="rect" href="../../d9/d7c/a01073.html#ab50487cc4124576dfbb2af0445a595c0" title="从二进制流文件中读取文件" alt="" coords="645,81,856,108"/>
+<area shape="rect" href="../../dd/d5d/a01325.html#a01144c6da5c4f34ed8fb6bb7e1f23740" title="从文件流中读取一个 字符串" alt="" coords="904,107,1096,133"/>
+<area shape="rect" href="../../d2/db8/a01057.html#ad9fb6635d112a3e806762bd6d338605d" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据 对于写入数据, 使用 gConfig.sysPara 内容存储 到文件头信息中 对于读取数据,..." alt="" coords="450,5,573,32"/>
+<area shape="rect" href="../../d2/d41/a01037.html#abff2e60527d854a7f1d4b4f112881dcb" title="从 自定义文件中读取参数" alt="" coords="425,56,597,83"/>
+<area shape="rect" href="../../d2/db8/a01057.html#ac02eafbaf77c5675103d3bcebf6baa9a" title=" " alt="" coords="433,107,589,133"/>
+<area shape="rect" href="../../de/db1/a00197.html#a44733fb236621e4eaa4a2e26d628659f" title=" " alt="" coords="463,157,560,184"/>
+<area shape="rect" href="../../d2/db8/a01057.html#aca27d2fd88c3c80c26dd57f4d8404a1e" title="读文件 参数" alt="" coords="244,107,377,133"/>
+<area shape="rect" href="../../d8/d18/a01069.html#a95fcda8a05bce42033ab50c78c3f8a44" title="Handles button open file clicked signals" alt="" coords="28,41,173,82"/>
+<area shape="rect" href="../../d5/dfb/a01021.html#aec5351041b2e2d4f99899f17f8fa7f68" title="验证文件操作 读写" alt="" coords="27,107,174,133"/>
+<area shape="rect" href="../../d5/dfb/a01021.html#ad43d9c26d7651f17f60396a8a52fe217" title="验证文件 附加操作" alt="" coords="5,157,196,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a778ef548491bb4f043fb0111f87f80ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a778ef548491bb4f043fb0111f87f80ae">&#9670;&nbsp;</a></span>ConstChar2Char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * Utils_String::ConstChar2Char </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00109">109</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">char</span>* res = <span class="keyword">new</span> <span class="keywordtype">char</span>[100];  <span class="comment">// 足够的长度避免溢出</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    strcpy(res, buffer);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6c1e2edd1365b94dff05468194611770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1e2edd1365b94dff05468194611770">&#9670;&nbsp;</a></span>ConstChar2String()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Utils_String::ConstChar2String </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;char 类型与 string的相互转换 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/26</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>&#x202A;The buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00093">93</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> std::string(buffer);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae59fe67376160eb631f321bbaa8469cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59fe67376160eb631f321bbaa8469cc">&#9670;&nbsp;</a></span>CoutVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Utils_String::CoutVector </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>new_line</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d5d/a00278_source.html">utils_string.h</a> 第 <a class="el" href="../../dc/d5d/a00278_source.html#l00040">40</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::ostringstream buffer;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">size_t</span> n = vec.size();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::string new_line_char = new_line ? <span class="stringliteral">&quot;\n&quot;</span> : <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (n == 0)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            buffer &lt;&lt; <span class="stringliteral">&quot;Vector is Null&quot;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                buffer &lt;&lt; vec[i] &lt;&lt; new_line_char;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::cout &lt;&lt; buffer.str() &lt;&lt; endl;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a05693318f3f6e3e81055e4bf8ef1da69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05693318f3f6e3e81055e4bf8ef1da69">&#9670;&nbsp;</a></span>CoutVectorIdx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Utils_String::CoutVectorIdx </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>new_line</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d5d/a00278_source.html">utils_string.h</a> 第 <a class="el" href="../../dc/d5d/a00278_source.html#l00022">22</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::ostringstream buffer;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">size_t</span> n = vec.size();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::string new_line_char = new_line ? <span class="stringliteral">&quot;\n&quot;</span> : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">if</span> (n == 0)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            buffer &lt;&lt; <span class="stringliteral">&quot;Vector is Null&quot;</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                buffer &lt;&lt; <span class="stringliteral">&quot;\tidx:&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;\t:&quot;</span> &lt;&lt; vec[i] &lt;&lt; new_line_char;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::cout &lt;&lt; buffer.str() &lt;&lt; endl;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab548db2d3df066e33bcad0ec85404cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab548db2d3df066e33bcad0ec85404cb4">&#9670;&nbsp;</a></span>GetDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string Utils_String::GetDate </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;获取日期 字符串 YYYYMMDD </p>
+<p class="DocNodeLTR">Gets date string 返回 8位 日期值</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/12</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;日期字符串 8位</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>&#x202A;(Optional) The character</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The date string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00342">342</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    time_t t = time(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keyword">struct </span>tm ltm;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    localtime_s(&amp;ltm, &amp;t);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    std::string str = <a class="code" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;NumToString</a>(1900 + ltm.tm_year, 4)</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        + <a class="code" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;NumToString</a>(1 + ltm.tm_mon, 2)   <span class="comment">// 设置月份</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        + <a class="code" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;NumToString</a>(ltm.tm_mday, 2);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_ab548db2d3df066e33bcad0ec85404cb4_cgraph.png" border="0" usemap="#de/da0/a01341_ab548db2d3df066e33bcad0ec85404cb4_cgraph" alt=""/></div>
+<map name="de/da0/a01341_ab548db2d3df066e33bcad0ec85404cb4_cgraph" id="de/da0/a01341_ab548db2d3df066e33bcad0ec85404cb4_cgraph">
+<area shape="rect" title="获取日期 字符串 YYYYMMDD" alt="" coords="5,5,151,32"/>
+<area shape="rect" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93" title=" " alt="" coords="199,5,371,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_ab548db2d3df066e33bcad0ec85404cb4_icgraph.png" border="0" usemap="#de/da0/a01341_ab548db2d3df066e33bcad0ec85404cb4_icgraph" alt=""/></div>
+<map name="de/da0/a01341_ab548db2d3df066e33bcad0ec85404cb4_icgraph" id="de/da0/a01341_ab548db2d3df066e33bcad0ec85404cb4_icgraph">
+<area shape="rect" title="获取日期 字符串 YYYYMMDD" alt="" coords="419,31,564,57"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="��ʼ�� ȫ�ֲ���" alt="" coords="249,31,371,57"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="113,5,192,32"/>
+<area shape="rect" href="../../de/db1/a00197.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="104,56,201,83"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa797e5e8119ca57f492ea5641817d49a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa797e5e8119ca57f492ea5641817d49a">&#9670;&nbsp;</a></span>GetTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string Utils_String::GetTime </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em> = <code>'_'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rand_flg</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号 </p>
+<p class="DocNodeLTR">Gets time string 按照YYYYYmmDD-HHMM 的形式输出 默认字符为连符号</p>
+<ul class="DocNodeLTR">
+<li>&#x202A;可以修改为 - _ ~ / \</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/12</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>&#x202A;The character </td></tr>
+    <tr><td class="paramname">rand_flg</td><td>&#x202A;True to random flg</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The time</dd></dl>
+<ul class="DocNodeLTR">
+<li>&#x202A;可以修改为 - _ ~ / \</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/15</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>&#x202A;(Optional) The character </td></tr>
+    <tr><td class="paramname">rand_flg</td><td>&#x202A;(Optional) True to random flg</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The time string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00311">311</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;{</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    time_t t = time(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keyword">struct </span>tm ltm;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    localtime_s(&amp;ltm, &amp;t);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    std::string str = <a class="code" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;NumToString</a>(1900 + ltm.tm_year, 4) + <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        + <a class="code" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;NumToString</a>(1 + ltm.tm_mon, 2) + <span class="stringliteral">&quot;&quot;</span>   <span class="comment">// 设置月份</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        + <a class="code" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;NumToString</a>(ltm.tm_mday, 2) + c     <span class="comment">// 设置 时间分割字符串</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        + <a class="code" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;NumToString</a>(ltm.tm_hour, 2) + <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        + <a class="code" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;NumToString</a>(ltm.tm_min, 2);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="comment">// 如果随机 加入三位随机值</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span> (rand_flg)</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        str += c + std::to_string(rand() % 100);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">// char char_time[80];</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_aa797e5e8119ca57f492ea5641817d49a_cgraph.png" border="0" usemap="#de/da0/a01341_aa797e5e8119ca57f492ea5641817d49a_cgraph" alt=""/></div>
+<map name="de/da0/a01341_aa797e5e8119ca57f492ea5641817d49a_cgraph" id="de/da0/a01341_aa797e5e8119ca57f492ea5641817d49a_cgraph">
+<area shape="rect" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="5,5,152,32"/>
+<area shape="rect" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93" title=" " alt="" coords="200,5,372,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_aa797e5e8119ca57f492ea5641817d49a_icgraph.png" border="0" usemap="#de/da0/a01341_aa797e5e8119ca57f492ea5641817d49a_icgraph" alt=""/></div>
+<map name="de/da0/a01341_aa797e5e8119ca57f492ea5641817d49a_icgraph" id="de/da0/a01341_aa797e5e8119ca57f492ea5641817d49a_icgraph">
+<area shape="rect" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="952,139,1099,165"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#a5714027a2cc07f9c5c0ae84a177631be" title="�������в��� ���²���" alt="" coords="747,11,893,37"/>
+<area shape="rect" href="../../d2/d57/a01033.html#a4fd7a30375554ef9df2ef322db87c32d" title="初始化线程 初始化完成后 开始运行" alt="" coords="769,63,871,89"/>
+<area shape="rect" href="../../dd/d43/a01193.html#a0089a1003badc38250ed84d66b8c5fe3" title=" " alt="" coords="741,113,899,140"/>
+<area shape="rect" href="../../de/d9e/a01061.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60" title="将数据存储下来" alt="" coords="741,164,899,191"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a42f3ec35c315231b8af2beb1c6423e47" title=" " alt="" coords="736,215,904,241"/>
+<area shape="rect" href="../../d3/db1/a00200.html#ab5e6df2da27e8aacc5489605e4abcc53" title=" " alt="" coords="771,265,869,292"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="542,7,621,33"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="296,5,347,32"/>
+<area shape="rect" href="../../d3/d10/a01189.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="519,63,643,89"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="222,57,421,98"/>
+<area shape="rect" href="../../dd/d43/a01193.html#a8537b4c963467314c61eb26616087b1b" title="Initializes a new instance of the WriteVideo class ��ʼʵ�� ���г���" alt="" coords="502,113,661,140"/>
+<area shape="rect" href="../../de/d9e/a01061.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="520,164,643,191"/>
+<area shape="rect" href="../../d2/d57/a01033.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="270,123,373,149"/>
+<area shape="rect" href="../../d5/dfb/a01021.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="247,173,395,200"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a89c4f17fbaeaba0884d96a9932973256" title="Slot show camera" alt="" coords="475,220,688,247"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,224,427,251"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,224,168,251"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a46ee9ebecd5f96f3d05272c44c37c5a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ee9ebecd5f96f3d05272c44c37c5a8">&#9670;&nbsp;</a></span>Hex2Num() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Utils_String::Hex2Num </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00253">253</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;{</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">//int res = (ch &amp; &#39;@&#39; ? ch + 9 : ch) &amp; 0x0F;</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="comment">//LInfo(&quot;ch:{},res:{}&quot;, ch, res);</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> (ch &amp; <span class="charliteral">&#39;@&#39;</span> ? ch + 9 : ch) &amp; 0x0F;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a46ee9ebecd5f96f3d05272c44c37c5a8_icgraph.png" border="0" usemap="#de/da0/a01341_a46ee9ebecd5f96f3d05272c44c37c5a8_icgraph" alt=""/></div>
+<map name="de/da0/a01341_a46ee9ebecd5f96f3d05272c44c37c5a8_icgraph" id="de/da0/a01341_a46ee9ebecd5f96f3d05272c44c37c5a8_icgraph">
+<area shape="rect" title=" " alt="" coords="983,56,1137,83"/>
+<area shape="rect" href="../../de/da0/a01341.html#ad6015dc1e7f1948ceac43af88445dd7c" title=" " alt="" coords="759,5,914,32"/>
+<area shape="rect" href="../../de/da0/a01341.html#a702a69e2821ebf9eb702b7774e7e548b" title=" " alt="" coords="739,56,935,83"/>
+<area shape="rect" href="../../d7/d40/a00236.html#afdeddb2b747ef8488e8796ba7a6a8205" title=" " alt="" coords="788,107,885,133"/>
+<area shape="rect" href="../../d9/d7c/a01073.html#aad8567884f1564ee1657671892c7ad06" title="从 yml 文件 读取参数, 使用" alt="" coords="476,56,691,83"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="��ʼ�� ȫ�ֲ���" alt="" coords="278,31,399,57"/>
+<area shape="rect" href="../../d2/d41/a01037.html#aaa28b92aaa35102c72b3196a7a2295ef" title="从yml 中 读取参数" alt="" coords="249,81,428,108"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="113,31,192,57"/>
+<area shape="rect" href="../../de/db1/a00197.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="104,81,201,108"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="5,31,56,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad6015dc1e7f1948ceac43af88445dd7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6015dc1e7f1948ceac43af88445dd7c">&#9670;&nbsp;</a></span>Hex2Num() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Utils_String::Hex2Num </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00261">261</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">int</span> res = 0;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;s : str)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">if</span>(s != <span class="charliteral">&#39; &#39;</span> )</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            res = (res &lt;&lt; 4) + <a class="code" href="../../de/da0/a01341.html#a46ee9ebecd5f96f3d05272c44c37c5a8">&#x202A;Hex2Num</a>(s);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_ad6015dc1e7f1948ceac43af88445dd7c_cgraph.png" border="0" usemap="#de/da0/a01341_ad6015dc1e7f1948ceac43af88445dd7c_cgraph" alt=""/></div>
+<map name="de/da0/a01341_ad6015dc1e7f1948ceac43af88445dd7c_cgraph" id="de/da0/a01341_ad6015dc1e7f1948ceac43af88445dd7c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,32"/>
+<area shape="rect" href="../../de/da0/a01341.html#a46ee9ebecd5f96f3d05272c44c37c5a8" title=" " alt="" coords="208,5,363,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a80a624c2e73e5b96a1ddad4d4f70537a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a624c2e73e5b96a1ddad4d4f70537a">&#9670;&nbsp;</a></span>Hex2Uchar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> Utils_String::Hex2Uchar </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00241">241</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;{</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> res = 0;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;s:str)</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        res = (res &lt;&lt; 4) + s - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8664e17ac3f5987d6f5d1169bc865071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8664e17ac3f5987d6f5d1169bc865071">&#9670;&nbsp;</a></span>Num2Str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string Utils_String::Num2Str </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cnt</em> = <code>3</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;数字 转换成字符串 // 自定位数.// 首位补0 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>&#x202A;Number of </td></tr>
+    <tr><td class="paramname">cnt</td><td>&#x202A;Number of</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The total number of 2 string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00353">353</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;NumToString</a>(num, cnt);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a8664e17ac3f5987d6f5d1169bc865071_cgraph.png" border="0" usemap="#de/da0/a01341_a8664e17ac3f5987d6f5d1169bc865071_cgraph" alt=""/></div>
+<map name="de/da0/a01341_a8664e17ac3f5987d6f5d1169bc865071_cgraph" id="de/da0/a01341_a8664e17ac3f5987d6f5d1169bc865071_cgraph">
+<area shape="rect" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="5,5,153,32"/>
+<area shape="rect" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93" title=" " alt="" coords="201,5,373,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a8664e17ac3f5987d6f5d1169bc865071_icgraph.png" border="0" usemap="#de/da0/a01341_a8664e17ac3f5987d6f5d1169bc865071_icgraph" alt=""/></div>
+<map name="de/da0/a01341_a8664e17ac3f5987d6f5d1169bc865071_icgraph" id="de/da0/a01341_a8664e17ac3f5987d6f5d1169bc865071_icgraph">
+<area shape="rect" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="952,31,1100,57"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#a5714027a2cc07f9c5c0ae84a177631be" title="�������в��� ���²���" alt="" coords="747,5,893,32"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a42f3ec35c315231b8af2beb1c6423e47" title=" " alt="" coords="736,56,904,83"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="542,5,621,32"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="296,5,347,32"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a89c4f17fbaeaba0884d96a9932973256" title="Slot show camera" alt="" coords="475,56,688,83"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,56,427,83"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,56,168,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab0ef7d81d849050111b16e8a331a2d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ef7d81d849050111b16e8a331a2d09">&#9670;&nbsp;</a></span>NumToString() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Utils_String::NumToString </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>precision</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;float 控制精度显示 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/3</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>&#x202A;Number of </td></tr>
+    <tr><td class="paramname">precision</td><td>&#x202A;The precision</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The total number of to string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00233">233</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;{</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">char</span> *buf = <span class="keyword">new</span> <span class="keywordtype">char</span>[20];</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    std::string format_ = <span class="stringliteral">&quot;%.&quot;</span> + std::to_string(precision) + <span class="stringliteral">&quot;f&quot;</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    sprintf(buf, format_.c_str(), num);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">return</span> std::string(buf);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a20d0fd6c4d6b6a911bbda3bbeb9bef93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#9670;&nbsp;</a></span>NumToString() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Utils_String::NumToString </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em> = <code>3</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00183">183</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">// 二进制 特殊处理</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span> (base == 2)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        std::string str_8 = <a class="code" href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;NumToString</a>(num, width, 8);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="comment">// 取出</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::string&gt; table = { <span class="stringliteral">&quot;000&quot;</span>,<span class="stringliteral">&quot;001&quot;</span>,<span class="stringliteral">&quot;010&quot;</span>,<span class="stringliteral">&quot;011&quot;</span>,<span class="stringliteral">&quot;100&quot;</span>,<span class="stringliteral">&quot;101&quot;</span>,<span class="stringliteral">&quot;110&quot;</span>,<span class="stringliteral">&quot;111&quot;</span> };</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        std::string str_2 = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> s : str_8)</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordflow">if</span>(s ==<span class="charliteral">&#39;0&#39;</span>)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            str_2 += table[s - <span class="charliteral">&#39;0&#39;</span>];</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="comment">// 去掉前面所有的 0值 从1 开始</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordtype">int</span> pos = str_2.find_first_of(<span class="charliteral">&#39;1&#39;</span>);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">return</span> str_2.substr (pos);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    std::map&lt;int, char&gt; t_base = { </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    { 8,<span class="charliteral">&#39;o&#39;</span> },</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    { 10,<span class="charliteral">&#39;d&#39;</span> },</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    { 16,<span class="charliteral">&#39;x&#39;</span> } };</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">if</span> (!t_base.count(base))</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    std::string format = <span class="stringliteral">&quot;%0&quot;</span> + std::to_string(width) + t_base.find(base)-&gt;second;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">char</span> *buf = <span class="keyword">new</span> <span class="keywordtype">char</span>[20];</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    sprintf(buf, format.c_str(), num);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">return</span> std::string(buf);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a20d0fd6c4d6b6a911bbda3bbeb9bef93_icgraph.png" border="0" usemap="#de/da0/a01341_a20d0fd6c4d6b6a911bbda3bbeb9bef93_icgraph" alt=""/></div>
+<map name="de/da0/a01341_a20d0fd6c4d6b6a911bbda3bbeb9bef93_icgraph" id="de/da0/a01341_a20d0fd6c4d6b6a911bbda3bbeb9bef93_icgraph">
+<area shape="rect" title=" " alt="" coords="1148,111,1320,137"/>
+<area shape="rect" href="../../de/da0/a01341.html#ab548db2d3df066e33bcad0ec85404cb4" title="获取日期 字符串 YYYYMMDD" alt="" coords="953,60,1099,87"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="��ʼ�� ȫ�ֲ���" alt="" coords="759,9,881,36"/>
+<area shape="rect" href="../../de/da0/a01341.html#aa797e5e8119ca57f492ea5641817d49a" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="953,161,1099,188"/>
+<area shape="rect" href="../../de/da0/a01341.html#a8664e17ac3f5987d6f5d1169bc865071" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="952,111,1100,137"/>
+<area shape="rect" href="../../d7/d40/a00236.html#a3b1cf67c220186e82aaa58be8180a910" title=" " alt="" coords="977,212,1075,239"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="542,56,621,83"/>
+<area shape="rect" href="../../de/db1/a00197.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="533,5,630,32"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="296,53,347,80"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#a5714027a2cc07f9c5c0ae84a177631be" title="�������в��� ���²���" alt="" coords="747,60,893,87"/>
+<area shape="rect" href="../../d2/d57/a01033.html#a4fd7a30375554ef9df2ef322db87c32d" title="初始化线程 初始化完成后 开始运行" alt="" coords="769,111,871,137"/>
+<area shape="rect" href="../../dd/d43/a01193.html#a0089a1003badc38250ed84d66b8c5fe3" title=" " alt="" coords="741,212,899,239"/>
+<area shape="rect" href="../../de/d9e/a01061.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60" title="将数据存储下来" alt="" coords="741,263,899,289"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a42f3ec35c315231b8af2beb1c6423e47" title=" " alt="" coords="736,161,904,188"/>
+<area shape="rect" href="../../d3/db1/a00200.html#ab5e6df2da27e8aacc5489605e4abcc53" title=" " alt="" coords="771,313,869,340"/>
+<area shape="rect" href="../../d3/d10/a01189.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="519,111,643,137"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="222,105,421,146"/>
+<area shape="rect" href="../../dd/d43/a01193.html#a8537b4c963467314c61eb26616087b1b" title="Initializes a new instance of the WriteVideo class ��ʼʵ�� ���г���" alt="" coords="502,212,661,239"/>
+<area shape="rect" href="../../de/d9e/a01061.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="520,263,643,289"/>
+<area shape="rect" href="../../d2/d57/a01033.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="270,243,373,269"/>
+<area shape="rect" href="../../d5/dfb/a01021.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="247,293,395,320"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a89c4f17fbaeaba0884d96a9932973256" title="Slot show camera" alt="" coords="475,161,688,188"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,171,427,197"/>
+<area shape="rect" href="../../d3/dd3/a01185.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,171,168,197"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae22cfa53ffee39ead69856b4a92eba02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae22cfa53ffee39ead69856b4a92eba02">&#9670;&nbsp;</a></span>Str2Vec() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Utils_String::Str2Vec </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>separator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skip_empty</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00012">12</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::vector&lt;std::string&gt; res;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::istringstream iss(str);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">for</span> (std::string item; getline(iss, item, separator);)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span> (skip_empty &amp;&amp; item.empty())</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            res.push_back(item);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a707dfc08a28c18474486ca8ca43d6b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a707dfc08a28c18474486ca8ca43d6b39">&#9670;&nbsp;</a></span>Str2Vec() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">template&lt; typename T &gt; std::vector&lt; T &gt; Utils_String::Str2Vec </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>elem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>separator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skip_empty</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 <a href="https://segmentfault.com/a/1190000002483483">https://segmentfault.com/a/1190000002483483</a> </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/25</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>&#x202A;Generic type parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">str</td><td>&#x202A;The string 原始字符串 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>&#x202A;The element 输入输出结果 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">separator</td><td>&#x202A;The separator 分割符号 默认, </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">skip_empty</td><td>&#x202A;(Optional) True to skip empty 跳过空白, 否则 添加一个空元素</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;vector 输出分割结果值 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../dc/d5d/a00278_source.html">utils_string.h</a> 第 <a class="el" href="../../dc/d5d/a00278_source.html#l00077">77</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        std::istringstream iss(str);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span> (std::string item; getline(iss, item, separator);)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span> (skip_empty &amp;&amp; item.empty())</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                elem.push_back(item);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> elem;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a707dfc08a28c18474486ca8ca43d6b39_icgraph.png" border="0" usemap="#de/da0/a01341_a707dfc08a28c18474486ca8ca43d6b39_icgraph" alt=""/></div>
+<map name="de/da0/a01341_a707dfc08a28c18474486ca8ca43d6b39_icgraph" id="de/da0/a01341_a707dfc08a28c18474486ca8ca43d6b39_icgraph">
+<area shape="rect" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="961,96,1105,123"/>
+<area shape="rect" href="../../de/d90/a01313.html#a8387a1da4bd9a03f42b6037f5370a28e" title="将字符串按照分割字符分割之后 生成矩形" alt="" coords="760,27,892,53"/>
+<area shape="rect" href="../../de/da0/a01341.html#a82ed3e2282101b5d3326df68e6098898" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="739,89,913,130"/>
+<area shape="rect" href="../../d7/d40/a00236.html#a0c8356354e7084226f483b3c82f7c8e8" title=" " alt="" coords="777,155,875,181"/>
+<area shape="rect" href="../../d9/d7c/a01073.html#aad8567884f1564ee1657671892c7ad06" title="从 yml 文件 读取参数, 使用" alt="" coords="476,5,691,32"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="��ʼ�� ȫ�ֲ���" alt="" coords="278,5,399,32"/>
+<area shape="rect" href="../../d2/d41/a01037.html#aaa28b92aaa35102c72b3196a7a2295ef" title="从yml 中 读取参数" alt="" coords="249,56,428,83"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="113,5,192,32"/>
+<area shape="rect" href="../../de/db1/a00197.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="104,56,201,83"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="5,5,56,32"/>
+<area shape="rect" href="../../d7/d40/a00236.html#ace9271be2aa3d5065cc51196d96d8a5c" title=" " alt="" coords="535,107,632,133"/>
+<area shape="rect" href="../../d9/d7c/a01073.html#aa2e8fbcdd233ecc35b7798932be4bc46" title="通过文件指针 将数据写入到二进制数据流中" alt="" coords="485,157,681,184"/>
+<area shape="rect" href="../../d2/db8/a01057.html#ad9fb6635d112a3e806762bd6d338605d" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据 对于写入数据, 使用 gConfig.sysPara 内容存储 到文件头信息中 对于读取数据,..." alt="" coords="277,107,400,133"/>
+<area shape="rect" href="../../de/db1/a00197.html#a44733fb236621e4eaa4a2e26d628659f" title=" " alt="" coords="290,157,387,184"/>
+<area shape="rect" href="../../d2/d41/a01037.html#a414b3cc20d2f938a239c6723809bc904" title="将参数写入到文件中" alt="" coords="259,208,418,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae8c37b345e4022fae88d29f9be940523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c37b345e4022fae88d29f9be940523">&#9670;&nbsp;</a></span>Str2Vector() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Utils_String::Str2Vector </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>delimiters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skip_empty</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00027">27</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::vector&lt;std::string&gt; res;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    string::size_type pos, prev = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">while</span> ((pos = str.find_first_of(delimiters, prev)) != string::npos)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (pos &gt; prev)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">if</span> (skip_empty &amp;&amp; 1 == pos - prev)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            res.emplace_back(str, prev, pos - prev);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        prev = pos + 1;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (prev &lt; str.size())</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        res.emplace_back(str, prev, str.size() - prev);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a09734b79282d4132596b4a11dcb8175d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09734b79282d4132596b4a11dcb8175d">&#9670;&nbsp;</a></span>Str2Vector() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">template&lt; typename T &gt; std::vector&lt; T &gt; Utils_String::Str2Vector </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>elem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>delimiters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skip_empty</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 <a href="https://segmentfault.com/a/1190000002483483">https://segmentfault.com/a/1190000002483483</a> </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/25</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>&#x202A;Generic type parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">str</td><td>&#x202A;The string 原始字符串 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">elem</td><td>&#x202A;The element 输入输出结果数组 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">delimiters</td><td>&#x202A;The delimiters 分割符号字符串 多种 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">skip_empty</td><td>&#x202A;(Optional) True to skip empty 是否跳过空格</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;返回结果值 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../dc/d5d/a00278_source.html">utils_string.h</a> 第 <a class="el" href="../../dc/d5d/a00278_source.html#l00114">114</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        string::size_type pos, prev = 0;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">while</span> ((pos = str.find_first_of(delimiters, prev)) != string::npos)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">if</span> (pos &gt; prev)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">if</span> (skip_empty &amp;&amp; 1 == pos - prev)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                elem.emplace_back(str, prev, pos - prev);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            prev = pos + 1;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">if</span> (prev &lt; str.size())</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            elem.emplace_back(str, prev, str.size() - prev);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> elem;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a09734b79282d4132596b4a11dcb8175d_icgraph.png" border="0" usemap="#de/da0/a01341_a09734b79282d4132596b4a11dcb8175d_icgraph" alt=""/></div>
+<map name="de/da0/a01341_a09734b79282d4132596b4a11dcb8175d_icgraph" id="de/da0/a01341_a09734b79282d4132596b4a11dcb8175d_icgraph">
+<area shape="rect" title="返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 https://segmentfault.com/a/1190000002483483" alt="" coords="983,56,1141,83"/>
+<area shape="rect" href="../../de/da0/a01341.html#a702a69e2821ebf9eb702b7774e7e548b" title=" " alt="" coords="739,31,935,57"/>
+<area shape="rect" href="../../d7/d40/a00236.html#ab66fafdc4d4d512ca22125664739eb6a" title=" " alt="" coords="788,81,885,108"/>
+<area shape="rect" href="../../d9/d7c/a01073.html#aad8567884f1564ee1657671892c7ad06" title="从 yml 文件 读取参数, 使用" alt="" coords="476,31,691,57"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="��ʼ�� ȫ�ֲ���" alt="" coords="278,5,399,32"/>
+<area shape="rect" href="../../d2/d41/a01037.html#aaa28b92aaa35102c72b3196a7a2295ef" title="从yml 中 读取参数" alt="" coords="249,56,428,83"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="113,5,192,32"/>
+<area shape="rect" href="../../de/db1/a00197.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="104,56,201,83"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afdd80557e406c33ce221395db601f196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd80557e406c33ce221395db601f196">&#9670;&nbsp;</a></span>String2Char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * Utils_String::String2Char </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00066">66</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">char</span> *ch = <span class="keyword">new</span> <span class="keywordtype">char</span>[str.size() + 1];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    strcpy(ch, str.c_str());</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> ch;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_afdd80557e406c33ce221395db601f196_icgraph.png" border="0" usemap="#de/da0/a01341_afdd80557e406c33ce221395db601f196_icgraph" alt=""/></div>
+<map name="de/da0/a01341_afdd80557e406c33ce221395db601f196_icgraph" id="de/da0/a01341_afdd80557e406c33ce221395db601f196_icgraph">
+<area shape="rect" title=" " alt="" coords="660,56,825,83"/>
+<area shape="rect" href="../../d9/d7c/a01073.html#aa2e8fbcdd233ecc35b7798932be4bc46" title="通过文件指针 将数据写入到二进制数据流中" alt="" coords="212,56,408,83"/>
+<area shape="rect" href="../../dd/d5d/a01325.html#a4a4c5d6a24f0af7cdab940aa555dade6" title="将一个字符串写入到二进制文件流中" alt="" coords="456,78,612,119"/>
+<area shape="rect" href="../../d2/db8/a01057.html#ad9fb6635d112a3e806762bd6d338605d" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据 对于写入数据, 使用 gConfig.sysPara 内容存储 到文件头信息中 对于读取数据,..." alt="" coords="23,5,146,32"/>
+<area shape="rect" href="../../de/db1/a00197.html#a44733fb236621e4eaa4a2e26d628659f" title=" " alt="" coords="36,56,133,83"/>
+<area shape="rect" href="../../d2/d41/a01037.html#a414b3cc20d2f938a239c6723809bc904" title="将参数写入到文件中" alt="" coords="5,107,164,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab0655ea746432bac89754a8e71caa5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0655ea746432bac89754a8e71caa5cc">&#9670;&nbsp;</a></span>String2ConstChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * Utils_String::String2ConstChar </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;String 2 character 直接返回数据字符串 </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;c_str 与 data 的区别 见 <a href="https://www.cnblogs.com/devilmaycry812839668/p/6353807.html">https://www.cnblogs.com/devilmaycry812839668/p/6353807.html</a></li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/26</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;Null if it fails, else a pointer to a char </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00060">60</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> str.c_str();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a518cb647622b31947f638b48320fc646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a518cb647622b31947f638b48320fc646">&#9670;&nbsp;</a></span>String2Uchar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> * Utils_String::String2Uchar </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00075">75</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>*)str.c_str();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a702a69e2821ebf9eb702b7774e7e548b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702a69e2821ebf9eb702b7774e7e548b">&#9670;&nbsp;</a></span>StringToUcharArr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Utils_String::StringToUcharArr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><br  />
+ </p>
+<p class="DocNodeLTR">字符串转换成 数组 字符串 两个一组 空格分割 // 根据 col 进行区分</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/11</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>&#x202A;If non-null, the data </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">str</td><td>&#x202A;The string </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">row_</td><td>&#x202A;The row </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00283">283</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;{</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    std::vector&lt;std::string&gt; vec = <a class="code" href="../../de/da0/a01341.html#a09734b79282d4132596b4a11dcb8175d">&#x202A;Str2Vector</a>(str, <span class="stringliteral">&quot;, &quot;</span>);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">int</span> col_ = vec.size()/row_;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; vec.size(); i++)</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        data[i / col_][i%col_] = (<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>)<a class="code" href="../../de/da0/a01341.html#a46ee9ebecd5f96f3d05272c44c37c5a8">&#x202A;Utils_String::Hex2Num</a>(vec[i]);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">// TODO: 完成数组 转换</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a702a69e2821ebf9eb702b7774e7e548b_cgraph.png" border="0" usemap="#de/da0/a01341_a702a69e2821ebf9eb702b7774e7e548b_cgraph" alt=""/></div>
+<map name="de/da0/a01341_a702a69e2821ebf9eb702b7774e7e548b_cgraph" id="de/da0/a01341_a702a69e2821ebf9eb702b7774e7e548b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,201,57"/>
+<area shape="rect" href="../../de/da0/a01341.html#a46ee9ebecd5f96f3d05272c44c37c5a8" title=" " alt="" coords="251,5,406,32"/>
+<area shape="rect" href="../../de/da0/a01341.html#a09734b79282d4132596b4a11dcb8175d" title="返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 https://segmentfault.com/a/1190000002483483" alt="" coords="249,56,408,83"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a702a69e2821ebf9eb702b7774e7e548b_icgraph.png" border="0" usemap="#de/da0/a01341_a702a69e2821ebf9eb702b7774e7e548b_icgraph" alt=""/></div>
+<map name="de/da0/a01341_a702a69e2821ebf9eb702b7774e7e548b_icgraph" id="de/da0/a01341_a702a69e2821ebf9eb702b7774e7e548b_icgraph">
+<area shape="rect" title=" " alt="" coords="739,31,935,57"/>
+<area shape="rect" href="../../d9/d7c/a01073.html#aad8567884f1564ee1657671892c7ad06" title="从 yml 文件 读取参数, 使用" alt="" coords="476,31,691,57"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="��ʼ�� ȫ�ֲ���" alt="" coords="278,5,399,32"/>
+<area shape="rect" href="../../d2/d41/a01037.html#aaa28b92aaa35102c72b3196a7a2295ef" title="从yml 中 读取参数" alt="" coords="249,56,428,83"/>
+<area shape="rect" href="../../d0/dc9/a01065.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="113,5,192,32"/>
+<area shape="rect" href="../../de/db1/a00197.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="104,56,201,83"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a82ed3e2282101b5d3326df68e6098898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ed3e2282101b5d3326df68e6098898">&#9670;&nbsp;</a></span>StringVersionToInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int Utils_String::StringVersionToInt </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011 </p>
+<p class="DocNodeLTR">string 1.1 版本 生成 版本号 数字</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/28</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An int</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/3</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;An int </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00152">152</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;{</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    std::vector&lt;std::string&gt; tmp_str = <a class="code" href="../../de/da0/a01341.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Str2Vec</a>(str, <span class="charliteral">&#39;.&#39;</span>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    assert(tmp_str.size() == 2);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">int</span> res = 0;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; s : tmp_str)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = std::stoi(s);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> &lt; 0)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = -<a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        res = res * 100 + <a class="code" href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a82ed3e2282101b5d3326df68e6098898_cgraph.png" border="0" usemap="#de/da0/a01341_a82ed3e2282101b5d3326df68e6098898_cgraph" alt=""/></div>
+<map name="de/da0/a01341_a82ed3e2282101b5d3326df68e6098898_cgraph" id="de/da0/a01341_a82ed3e2282101b5d3326df68e6098898_cgraph">
+<area shape="rect" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="5,5,180,47"/>
+<area shape="rect" href="../../de/da0/a01341.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="228,13,372,39"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da0/a01341_a82ed3e2282101b5d3326df68e6098898_icgraph.png" border="0" usemap="#de/da0/a01341_a82ed3e2282101b5d3326df68e6098898_icgraph" alt=""/></div>
+<map name="de/da0/a01341_a82ed3e2282101b5d3326df68e6098898_icgraph" id="de/da0/a01341_a82ed3e2282101b5d3326df68e6098898_icgraph">
+<area shape="rect" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="456,49,631,90"/>
+<area shape="rect" href="../../d2/d41/a01037.html#aaa28b92aaa35102c72b3196a7a2295ef" title="从yml 中 读取参数" alt="" coords="221,5,399,32"/>
+<area shape="rect" href="../../d7/d40/a00236.html#ace9271be2aa3d5065cc51196d96d8a5c" title=" " alt="" coords="261,56,359,83"/>
+<area shape="rect" href="../../d9/d7c/a01073.html#aa2e8fbcdd233ecc35b7798932be4bc46" title="通过文件指针 将数据写入到二进制数据流中" alt="" coords="212,107,408,133"/>
+<area shape="rect" href="../../de/db1/a00197.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="36,5,133,32"/>
+<area shape="rect" href="../../d2/db8/a01057.html#ad9fb6635d112a3e806762bd6d338605d" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据 对于写入数据, 使用 gConfig.sysPara 内容存储 到文件头信息中 对于读取数据,..." alt="" coords="23,56,146,83"/>
+<area shape="rect" href="../../de/db1/a00197.html#a44733fb236621e4eaa4a2e26d628659f" title=" " alt="" coords="36,107,133,133"/>
+<area shape="rect" href="../../d2/d41/a01037.html#a414b3cc20d2f938a239c6723809bc904" title="将参数写入到文件中" alt="" coords="5,157,164,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a89d9fe1b4fd0eb7f266cce483fdaaced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d9fe1b4fd0eb7f266cce483fdaaced">&#9670;&nbsp;</a></span>Uchar2String() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Utils_String::Uchar2String </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a> 第 <a class="el" href="../../d3/d5e/a00275_source.html#l00103">103</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{   </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::string str = (<span class="keywordtype">char</span>*)buffer;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5cecc4c47f4630ce0c6321ca63b9bb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cecc4c47f4630ce0c6321ca63b9bb27">&#9670;&nbsp;</a></span>Uchar2String() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string Utils_String::Uchar2String </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/<a class="el" href="../../dc/d5d/a00278_source.html">utils_string.h</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/<a class="el" href="../../d3/d5e/a00275_source.html">utils_string.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00128_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d1/d88/a00128.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00035">QImgLabel.cc:35</a></div></div>
+<div class="ttc" id="aa01341_html_a46ee9ebecd5f96f3d05272c44c37c5a8"><div class="ttname"><a href="../../de/da0/a01341.html#a46ee9ebecd5f96f3d05272c44c37c5a8">&#x202A;Utils_String::Hex2Num</a></div><div class="ttdeci">&#x202A;static int Hex2Num(const char ch)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00253">utils_string.cc:253</a></div></div>
+<div class="ttc" id="aa01341_html_a707dfc08a28c18474486ca8ca43d6b39"><div class="ttname"><a href="../../de/da0/a01341.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vec(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const char separator, bool skip_empty=true)</div><div class="ttdoc">&#x202A;将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834...</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d5d/a00278_source.html#l00077">utils_string.h:77</a></div></div>
+<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00036">Commu.h:36</a></div></div>
+<div class="ttc" id="aa01341_html_a09734b79282d4132596b4a11dcb8175d"><div class="ttname"><a href="../../de/da0/a01341.html#a09734b79282d4132596b4a11dcb8175d">&#x202A;Utils_String::Str2Vector</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vector(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const std::string &amp;delimiters, bool skip_empty=true)</div><div class="ttdoc">&#x202A;返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 https://segmentfault.com/a/1190000002483483</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d5d/a00278_source.html#l00114">utils_string.h:114</a></div></div>
+<div class="ttc" id="aa01341_html_a20d0fd6c4d6b6a911bbda3bbeb9bef93"><div class="ttname"><a href="../../de/da0/a01341.html#a20d0fd6c4d6b6a911bbda3bbeb9bef93">&#x202A;Utils_String::NumToString</a></div><div class="ttdeci">&#x202A;static std::string NumToString(int num, int width=3, int base=10)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00183">utils_string.cc:183</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../de/da0/a01341.html">&#x202A;Utils_String</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

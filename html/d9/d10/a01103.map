@@ -1,0 +1,12 @@
+<map id="RunPara::StDevice" name="RunPara::StDevice">
+<area shape="rect" id="node1" title="设置硬件的参数信息" alt="" coords="653,209,784,235"/>
+<area shape="rect" id="node2" href="$d9/d7c/a01073.html#d9/d17/a01129" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="407,5,545,47"/>
+<area shape="rect" id="node3" href="$d9/d7c/a01073.html#d8/dbf/a01109" title="脉冲参数" alt="" coords="407,71,545,112"/>
+<area shape="rect" id="node4" href="$d9/d7c/a01073.html#d6/d8b/a01117" title="电子罗盘参数 调整罗盘数据" alt="" coords="407,136,545,177"/>
+<area shape="rect" id="node5" title="STL class" alt="" coords="181,174,261,201"/>
+<area shape="rect" id="node10" href="$d9/d7c/a01073.html#d6/dc4/a01125" title="窗口状态信息" alt="" coords="407,201,545,243"/>
+<area shape="rect" id="node6" title="STL class" alt="" coords="5,167,132,208"/>
+<area shape="rect" id="node7" href="$d9/d7c/a01073.html#db/d28/a01133" title="额外信息" alt="" coords="407,267,545,308"/>
+<area shape="rect" id="node8" href="$d9/d7c/a01073.html#dd/de4/a01121" title="相机参数结构体" alt="" coords="407,332,545,373"/>
+<area shape="rect" id="node9" href="$d9/d7c/a01073.html#d8/ded/a01113" title="探头参数" alt="" coords="407,397,545,439"/>
+</map>

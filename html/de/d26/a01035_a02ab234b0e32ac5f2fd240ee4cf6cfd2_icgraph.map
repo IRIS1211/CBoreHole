@@ -1,0 +1,9 @@
+<map id="IDOIFile::AppendData" name="IDOIFile::AppendData">
+<area shape="rect" id="node1" title="写入新一批的图像" alt="" coords="440,81,587,108"/>
+<area shape="rect" id="node2" href="$de/d26/a01035.html#a1713f68550ac077f74ccdad29f2ed74e" title="Appends a data" alt="" coords="223,5,370,32"/>
+<area shape="rect" id="node3" href="$df/d21/a01039.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="235,56,358,83"/>
+<area shape="rect" id="node6" href="$d3/de5/a00209.html#ab5e6df2da27e8aacc5489605e4abcc53" title=" " alt="" coords="248,107,345,133"/>
+<area shape="rect" id="node7" href="$de/de2/a00999.html#ad43d9c26d7651f17f60396a8a52fe217" title="验证文件 附加操作" alt="" coords="201,157,392,184"/>
+<area shape="rect" id="node4" href="$d6/d36/a01011.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,31,131,57"/>
+<area shape="rect" id="node5" href="$de/de2/a00999.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,81,153,108"/>
+</map>

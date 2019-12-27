@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.0</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('dir_f8d8e0a4ca34514f836ebac25097d4e4.h
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 文件</h2></td></tr>
 <tr class="memitem:dc/d87/a00032"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dc/d87/a00032.html">CamCapture.h</a> <a href="dc/d87/a00032_source.html">[代码]</a></td></tr>
-<tr class="memdesc:dc/d87/a00032"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;实现相机采集类, 能够在另一个线程完成图像采集任务, 将采集到的图像存入自己的采集队列中, @changelog 2019/11/7 IRIS_Chen Created. @TODO: 改用 QT5 的方式重写多进程程序 <br /></td></tr>
+<tr class="memdesc:dc/d87/a00032"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;实现相机采集类, 能够在另一个线程完成图像采集任务, 将采集到的图像存入自己的采集队列中, @changelog 2019/11/7 IRIS_Chen Created. @TODO(SChen): 改用 QT5 的方式重写多进程程序 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d4/d8c/a00035"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d4/d8c/a00035.html">CamProc.h</a> <a href="d4/d8c/a00035_source.html">[代码]</a></td></tr>
 <tr class="memdesc:d4/d8c/a00035"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the camera proc class @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
@@ -104,47 +104,51 @@ $(document).ready(function(){initNavTree('dir_f8d8e0a4ca34514f836ebac25097d4e4.h
 <tr class="memitem:d8/d41/a00038"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d8/d41/a00038.html">common.h</a> <a href="d8/d41/a00038_source.html">[代码]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dd/d32/a00041"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dd/d32/a00041.html">Commu.h</a> <a href="dd/d32/a00041_source.html">[代码]</a></td></tr>
-<tr class="memdesc:dd/d32/a00041"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the commu class @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
+<tr class="memdesc:dd/d32/a00041"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the commu class 通讯用到的所有函数头文件 @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d5/df9/a00044"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/df9/a00044.html">Config.h</a> <a href="d5/df9/a00044_source.html">[代码]</a></td></tr>
-<tr class="memdesc:d5/df9/a00044"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;声明全局的配置,同时实现两者之间的存储过程 @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:d5/df9/a00044"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/df9/a00044.html">CompassProtocol.h</a> <a href="d5/df9/a00044_source.html">[代码]</a></td></tr>
+<tr class="memdesc:d5/df9/a00044"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;定义串口通信 协议通用定义 @changelog 2019/12/24 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d6/d2d/a00047"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d6/d2d/a00047.html">constdefine.h</a> <a href="d6/d2d/a00047_source.html">[代码]</a></td></tr>
-<tr class="memdesc:d6/d2d/a00047"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;���� �󲿷ֵ�ȫ�� ����, ���� define �� const ���� @changelog 2019/11/28 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:d6/d2d/a00047"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d6/d2d/a00047.html">Config.h</a> <a href="d6/d2d/a00047_source.html">[代码]</a></td></tr>
+<tr class="memdesc:d6/d2d/a00047"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;声明全局的配置,同时实现两者之间的存储过程 @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d5/de0/a00050"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/de0/a00050.html">CQueue.h</a> <a href="d5/de0/a00050_source.html">[代码]</a></td></tr>
-<tr class="memdesc:d5/de0/a00050"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the queue class @changelog 2019/11/8 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:d5/de0/a00050"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d5/de0/a00050.html">constdefine.h</a> <a href="d5/de0/a00050_source.html">[代码]</a></td></tr>
+<tr class="memdesc:d5/de0/a00050"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;定义 大部分的全局 常量, 包含 define 和 const 变量 @changelog 2019/11/28 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dc/dee/a00053"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dc/dee/a00053.html">IDOIFile.h</a> <a href="dc/dee/a00053_source.html">[代码]</a></td></tr>
-<tr class="memdesc:dc/dee/a00053"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the idoi file class @changelog 2019/6/26 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:dc/dee/a00053"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dc/dee/a00053.html">CQueue.h</a> <a href="dc/dee/a00053_source.html">[代码]</a></td></tr>
+<tr class="memdesc:dc/dee/a00053"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the queue class @changelog 2019/11/8 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d9/d2e/a00056"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d9/d2e/a00056.html">ImageProc.h</a> <a href="d9/d2e/a00056_source.html">[代码]</a></td></tr>
-<tr class="memdesc:d9/d2e/a00056"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;声明 图片处理类 实时处理图片类 @changelog 2019/6/26 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:d9/d2e/a00056"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d9/d2e/a00056.html">IDOIFile.h</a> <a href="d9/d2e/a00056_source.html">[代码]</a></td></tr>
+<tr class="memdesc:d9/d2e/a00056"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the idoi file class @changelog 2019/6/26 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d3/d8b/a00059"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d8b/a00059.html">init.h</a> <a href="d3/d8b/a00059_source.html">[代码]</a></td></tr>
+<tr class="memitem:d3/d8b/a00059"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d3/d8b/a00059.html">ImageProc.h</a> <a href="d3/d8b/a00059_source.html">[代码]</a></td></tr>
+<tr class="memdesc:d3/d8b/a00059"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;声明 图片处理类 实时处理图片类 @changelog 2019/6/26 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:df/d03/a00062"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="df/d03/a00062.html">readwindow.h</a> <a href="df/d03/a00062_source.html">[代码]</a></td></tr>
-<tr class="memdesc:df/d03/a00062"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the readwindow class @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:df/d03/a00062"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="df/d03/a00062.html">init.h</a> <a href="df/d03/a00062_source.html">[代码]</a></td></tr>
+<tr class="memdesc:df/d03/a00062"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;声明一个初始化内容 @changelog 2019/6/26 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:de/de1/a00065"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/de1/a00065.html">runpara.h</a> <a href="de/de1/a00065_source.html">[代码]</a></td></tr>
-<tr class="memdesc:de/de1/a00065"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;声明 运行参数, 包含系统运行中的所有参数 @changelog 2019/11/26 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:de/de1/a00065"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="de/de1/a00065.html">readwindow.h</a> <a href="de/de1/a00065_source.html">[代码]</a></td></tr>
+<tr class="memdesc:de/de1/a00065"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the readwindow class @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:da/d24/a00068"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="da/d24/a00068.html">Serial.h</a> <a href="da/d24/a00068_source.html">[代码]</a></td></tr>
-<tr class="memdesc:da/d24/a00068"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the serial class @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:da/d24/a00068"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="da/d24/a00068.html">runpara.h</a> <a href="da/d24/a00068_source.html">[代码]</a></td></tr>
+<tr class="memdesc:da/d24/a00068"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;声明 运行参数, 包含系统运行中的所有参数 @changelog 2019/11/26 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d0/d89/a00071"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d0/d89/a00071.html">serialdata.h</a> <a href="d0/d89/a00071_source.html">[代码]</a></td></tr>
-<tr class="memdesc:d0/d89/a00071"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the serialdata class @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:d0/d89/a00071"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d0/d89/a00071.html">Serial.h</a> <a href="d0/d89/a00071_source.html">[代码]</a></td></tr>
+<tr class="memdesc:d0/d89/a00071"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the serial class @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:db/db6/a00074"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db/db6/a00074.html">SerialProc.h</a> <a href="db/db6/a00074_source.html">[代码]</a></td></tr>
-<tr class="memdesc:db/db6/a00074"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the serial proc class @changelog 2019/10/17 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:db/db6/a00074"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="db/db6/a00074.html">serialdata.h</a> <a href="db/db6/a00074_source.html">[代码]</a></td></tr>
+<tr class="memdesc:db/db6/a00074"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the serialdata class @changelog 2019/11/7 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d1/d09/a00077"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d1/d09/a00077.html">setwindow.h</a> <a href="d1/d09/a00077_source.html">[代码]</a></td></tr>
+<tr class="memitem:d1/d09/a00077"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d1/d09/a00077.html">SerialProc.h</a> <a href="d1/d09/a00077_source.html">[代码]</a></td></tr>
+<tr class="memdesc:d1/d09/a00077"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the serial proc class @changelog 2019/10/17 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:da/dec/a00080"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="da/dec/a00080.html">WorkWindow.h</a> <a href="da/dec/a00080_source.html">[代码]</a></td></tr>
-<tr class="memdesc:da/dec/a00080"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;声明工作类 实现工作窗口 ui 更新程序 <br /></td></tr>
+<tr class="memitem:da/dec/a00080"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="da/dec/a00080.html">setwindow.h</a> <a href="da/dec/a00080_source.html">[代码]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d2/d1f/a00083"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d2/d1f/a00083.html">WriteVideo.h</a> <a href="d2/d1f/a00083_source.html">[代码]</a></td></tr>
-<tr class="memdesc:d2/d1f/a00083"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the write video class @changelog 2019/11/19 IRIS_Chen Created. <br /></td></tr>
+<tr class="memitem:d2/d1f/a00083"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d2/d1f/a00083.html">WorkWindow.h</a> <a href="d2/d1f/a00083_source.html">[代码]</a></td></tr>
+<tr class="memdesc:d2/d1f/a00083"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;声明工作类 实现工作窗口 ui 更新程序 <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:da/d2a/a00086"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="da/d2a/a00086.html">WriteVideo.h</a> <a href="da/d2a/a00086_source.html">[代码]</a></td></tr>
+<tr class="memdesc:da/d2a/a00086"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Declares the write video class @changelog 2019/11/19 IRIS_Chen Created. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

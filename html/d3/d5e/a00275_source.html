@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_files.cc 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.6.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d3/d5e/a00275_source.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">utils_files.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/d5e/a00275.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d82/a00293.html">&#x202A;utils_string.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d5d/a00278.html">&#x202A;utils_files.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include  &lt;io.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;direct.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../dc/d25/a01406.html#a683e1e22cba7849ea561abb84aab0ce2">   22</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="../../dc/d25/a01406.html#a683e1e22cba7849ea561abb84aab0ce2">&#x202A;Utils_Files::ListAllFiles</a>(<span class="keyword">const</span> std::string &amp; file_path)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::vector&lt;std::string&gt; res;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../dc/d25/a01406.html#a683e1e22cba7849ea561abb84aab0ce2">&#x202A;ListAllFiles</a>(file_path, res);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// 递归列出文件</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../dc/d25/a01406.html#a877c971612ce4585687f9dd89c3573e9">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dc/d25/a01406.html#a683e1e22cba7849ea561abb84aab0ce2">&#x202A;Utils_Files::ListAllFiles</a>(<span class="keyword">const</span> std::string &amp;file_path, std::vector&lt;std::string&gt; &amp;filelist)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 在目录后面加上&quot;\\*.*&quot;进行第一次搜索</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string file_path_new = file_path + <span class="stringliteral">&quot;\\*.*&quot;</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    intptr_t handle;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    _finddata_t findData;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    handle = _findfirst(file_path_new.c_str (), &amp;findData);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (handle == -1)        <span class="comment">// 检查是否成功</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        return ;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// 如果是 目录 则递归 否则不处理</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (findData.attrib &amp; _A_SUBDIR)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="comment">// 如果找到的是 当前目录 .  或者上层目录 ..  继续</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (strcmp(findData.name, <span class="stringliteral">&quot;.&quot;</span>) == 0 || strcmp(findData.name, <span class="stringliteral">&quot;..&quot;</span>) == 0)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">// 在目录后面加上&quot;\\&quot;和搜索到的目录名进行下一次搜索</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            file_path_new = file_path + <span class="stringliteral">&quot;\\&quot;</span> + std::string(findData.name);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="../../dc/d25/a01406.html#a683e1e22cba7849ea561abb84aab0ce2">&#x202A;ListAllFiles</a>(file_path_new, filelist);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            file_path_new = file_path + <span class="stringliteral">&quot;\\&quot;</span> + std::string(findData.name);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            filelist.push_back(file_path_new);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">while</span> (_findnext(handle, &amp;findData) == 0);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    _findclose(handle);  <span class="comment">// 关闭搜索句柄</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// 从 字符路径中 获取文件名</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../dc/d25/a01406.html#acf62efcec3d612bee798260f99fceb2b">   66</a></span>&#160;std::string <a class="code" href="../../dc/d25/a01406.html#acf62efcec3d612bee798260f99fceb2b">&#x202A;Utils_Files::GetFileName</a>(<span class="keyword">const</span> std::string &amp; file)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">size_t</span> pos_backlash = file.find_last_of(<span class="charliteral">&#39;\\&#39;</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">size_t</span> pos_dot = file.find_last_of(<span class="charliteral">&#39;.&#39;</span>); <span class="comment">// 从后面找到.  避免出错</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// 找不到斜线则 首位, 找不到点 则最后一位</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    pos_backlash = (pos_backlash == std::string::npos) ? -1 : pos_backlash;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    pos_dot = (pos_dot == std::string::npos) ? file.size() : pos_dot;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> file.substr(pos_backlash + 1, pos_dot - pos_backlash - 1);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">// 二进制文件写入</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../dc/d25/a01406.html#ae9335a7520c43095ac8312c0901e9bd4">   80</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dc/d25/a01406.html#ae9335a7520c43095ac8312c0901e9bd4">&#x202A;Utils_Files::WriteStringBinary</a>(std::fstream * pfile, <span class="keyword">const</span> std::string &amp; str, <span class="keywordtype">int</span> len)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[len];</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <a class="code" href="../../d8/df1/a01414.html#ad98ced7a9727883c0f305e144db03024">&#x202A;Utils_String::String2Char</a>(str);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    pfile-&gt;write(<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>, len);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">delete</span> []<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="../../dc/d25/a01406.html#a866a76a1d5720a62a03dc7ef7502cd25">  103</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dc/d25/a01406.html#a866a76a1d5720a62a03dc7ef7502cd25">&#x202A;Utils_Files::ReadStringBinary</a>(std::fstream * pfile, std::string &amp; str, <span class="keywordtype">int</span> len)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[len];</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    pfile-&gt;read(<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>, len);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    str = <a class="code" href="../../d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c">&#x202A;Utils_String::Char2String</a>(<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">delete</span> []<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="../../dc/d25/a01406.html#a0100eaf1e914cee3b70157898026a375">  125</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dc/d25/a01406.html#a0100eaf1e914cee3b70157898026a375">&#x202A;Utils_Files::WriteStringTxt</a>(std::fstream *pfile, <span class="keyword">const</span> std::string &amp;str)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> (pfile==<span class="keyword">nullptr</span> &amp;&amp; !pfile-&gt;is_open ())</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    pfile-&gt;write(str.c_str(),str.size());</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    pfile-&gt;write(<span class="stringliteral">&quot;\n&quot;</span>, 1);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    pfile-&gt;flush();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="../../dc/d25/a01406.html#abc35c60bccab87740d6f315be7641bcb">  154</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dc/d25/a01406.html#abc35c60bccab87740d6f315be7641bcb">&#x202A;Utils_Files::SplitFileName</a>(std::string &amp;file_name, std::string &amp;file_path, <span class="keyword">const</span> std::string &amp;filename)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// 根据 filename 更新 file_name_, 和 file_path_  找到最后一个 &quot;/&quot; 如果找不到 pos = -1</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">size_t</span> pos = filename.find_last_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// 如果 找不到前置 /  表示当层目录, 对应的是 &quot;&quot; &quot;/&quot; &quot;./&quot; </span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span> (pos &lt; 2)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        file_path = <span class="stringliteral">&quot;./&quot;</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        file_path = filename.substr(0, pos + 1);    <span class="comment">// 将 /  包含到 path 中</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                                    <span class="comment">// 从找到的pos 后一位开始就可</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    file_name = filename.substr(pos + 1); <span class="comment">// 从/ 开始到最后的结尾</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    pos = file_name.find_last_of(<span class="stringliteral">&quot;.&quot;</span>);     <span class="comment">// 计算最后一个 &quot;. &quot;  去除 拓展名</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                           <span class="comment">// 表示找到了字符串</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span> (pos &gt; 0)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        file_name = file_name.substr(0, pos);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="../../dc/d25/a01406.html#ad809f617bf2f7e0850b105b5b5413108">  188</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dc/d25/a01406.html#ad809f617bf2f7e0850b105b5b5413108">&#x202A;Utils_Files::IsDirExist</a>(<span class="keyword">const</span> std::string &amp; path, <span class="keywordtype">bool</span> create_)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;{</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">if</span> (_access(path.c_str(), 0) == -1)</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (create_)</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#ifdef WIN32  </span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordtype">int</span> flag = _mkdir(path.c_str());</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif  </span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#ifdef linux   </span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordtype">int</span> flag = mkdir(dir.c_str(), 0777);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif  </span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="keywordflow">return</span> (flag == 0);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="../../dc/d25/a01406.html#a1c94c40595c31cd3be0d8ad5bccec259">  225</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../dc/d25/a01406.html#a1c94c40595c31cd3be0d8ad5bccec259">&#x202A;Utils_Files::IsFileExist</a>(<span class="keyword">const</span> std::string &amp; file, <span class="keywordtype">bool</span> create_)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">if</span> ((_access(file.c_str(), 0)) == -1)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">if</span> (create_)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="comment">// 创建文件</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            std::string name_, path_;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <a class="code" href="../../dc/d25/a01406.html#abc35c60bccab87740d6f315be7641bcb">&#x202A;SplitFileName</a>(name_, path_, file);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../dc/d25/a01406.html#ad809f617bf2f7e0850b105b5b5413108">&#x202A;IsDirExist</a>(path_, create_))</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                <span class="keywordflow">if</span> ((_access(file.c_str(), 0)) != -1)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00131_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d06/a00131_source.html#l00037">QImgLabel.cc:37</a></div></div>
+<div class="ttc" id="aa01406_html_a0100eaf1e914cee3b70157898026a375"><div class="ttname"><a href="../../dc/d25/a01406.html#a0100eaf1e914cee3b70157898026a375">&#x202A;Utils_Files::WriteStringTxt</a></div><div class="ttdeci">&#x202A;static bool WriteStringTxt(std::fstream *pfile, const std::string &amp;str)</div><div class="ttdoc">&#x202A;Writes a string text</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00125">utils_files.cc:125</a></div></div>
+<div class="ttc" id="aa01406_html_ad809f617bf2f7e0850b105b5b5413108"><div class="ttname"><a href="../../dc/d25/a01406.html#ad809f617bf2f7e0850b105b5b5413108">&#x202A;Utils_Files::IsDirExist</a></div><div class="ttdeci">&#x202A;static bool IsDirExist(const std::string &amp;path, bool create_=true)</div><div class="ttdoc">&#x202A;判断文件夹是否存在, 如果不存在 则新建 文件夹 // 不能否递归建立</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00188">utils_files.cc:188</a></div></div>
+<div class="ttc" id="aa01406_html_a1c94c40595c31cd3be0d8ad5bccec259"><div class="ttname"><a href="../../dc/d25/a01406.html#a1c94c40595c31cd3be0d8ad5bccec259">&#x202A;Utils_Files::IsFileExist</a></div><div class="ttdeci">&#x202A;static bool IsFileExist(const std::string &amp;file, bool create_=false)</div><div class="ttdoc">&#x202A;判断指定的文件是否存在 // 给定flg 如果不存在则建立文件 当path为文件时，_access函数判断文件是否存在，并判断文件是否可以用mode值指定的模式进行访问。</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00225">utils_files.cc:225</a></div></div>
+<div class="ttc" id="aa01406_html_a866a76a1d5720a62a03dc7ef7502cd25"><div class="ttname"><a href="../../dc/d25/a01406.html#a866a76a1d5720a62a03dc7ef7502cd25">&#x202A;Utils_Files::ReadStringBinary</a></div><div class="ttdeci">&#x202A;static bool ReadStringBinary(std::fstream *pfile, std::string &amp;str, int len)</div><div class="ttdoc">&#x202A;从文件流中读取一个 字符串</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00103">utils_files.cc:103</a></div></div>
+<div class="ttc" id="aa01406_html_abc35c60bccab87740d6f315be7641bcb"><div class="ttname"><a href="../../dc/d25/a01406.html#abc35c60bccab87740d6f315be7641bcb">&#x202A;Utils_Files::SplitFileName</a></div><div class="ttdeci">&#x202A;static bool SplitFileName(std::string &amp;file_name, std::string &amp;file_path, const std::string &amp;filename)</div><div class="ttdoc">&#x202A;将文件路径拆分为 文件路径和文件名称 删除拓展名</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00154">utils_files.cc:154</a></div></div>
+<div class="ttc" id="aa01414_html_ad98ced7a9727883c0f305e144db03024"><div class="ttname"><a href="../../d8/df1/a01414.html#ad98ced7a9727883c0f305e144db03024">&#x202A;Utils_String::String2Char</a></div><div class="ttdeci">&#x202A;static char * String2Char(const std::string &amp;str)</div><div class="ttdoc">&#x202A;String 2 character</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00113">utils_string.cc:113</a></div></div>
+<div class="ttc" id="aa01406_html_ae9335a7520c43095ac8312c0901e9bd4"><div class="ttname"><a href="../../dc/d25/a01406.html#ae9335a7520c43095ac8312c0901e9bd4">&#x202A;Utils_Files::WriteStringBinary</a></div><div class="ttdeci">&#x202A;static bool WriteStringBinary(std::fstream *pfile, const std::string &amp;str, int len)</div><div class="ttdoc">&#x202A;将一个字符串写入到二进制文件流中</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00080">utils_files.cc:80</a></div></div>
+<div class="ttc" id="aa00293_html"><div class="ttname"><a href="../../d6/d82/a00293.html">&#x202A;utils_string.h</a></div><div class="ttdoc">&#x202A;通用字符串操作类 继承使用, 方便使用 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa01414_html_a33967652245ef20659d0bedb6c69d47c"><div class="ttname"><a href="../../d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c">&#x202A;Utils_String::Char2String</a></div><div class="ttdeci">&#x202A;static std::string Char2String(char *buffer)</div><div class="ttdoc">&#x202A;Character 2 string</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00169">utils_string.cc:169</a></div></div>
+<div class="ttc" id="aa01406_html_a683e1e22cba7849ea561abb84aab0ce2"><div class="ttname"><a href="../../dc/d25/a01406.html#a683e1e22cba7849ea561abb84aab0ce2">&#x202A;Utils_Files::ListAllFiles</a></div><div class="ttdeci">&#x202A;static std::vector&lt; std::string &gt; ListAllFiles(const std::string &amp;file_path)</div><div class="ttdoc">&#x202A;给出路径 , 列出路径下面的所有文件, 如果路径为空,或者无内容 则返回 空</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00022">utils_files.cc:22</a></div></div>
+<div class="ttc" id="aa00278_html"><div class="ttname"><a href="../../dc/d5d/a00278.html">&#x202A;utils_files.h</a></div><div class="ttdoc">&#x202A;Declares the utilities files class</div></div>
+<div class="ttc" id="aa01406_html_acf62efcec3d612bee798260f99fceb2b"><div class="ttname"><a href="../../dc/d25/a01406.html#acf62efcec3d612bee798260f99fceb2b">&#x202A;Utils_Files::GetFileName</a></div><div class="ttdeci">&#x202A;static std::string GetFileName(const std::string &amp;file)</div><div class="ttdoc">&#x202A;从路径中 剥离出来文件名</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00066">utils_files.cc:66</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d3/d5e/a00275.html">&#x202A;utils_files.cc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

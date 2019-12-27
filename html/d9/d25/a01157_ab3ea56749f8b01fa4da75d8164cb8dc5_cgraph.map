@@ -1,0 +1,6 @@
+<map id="Serial::slot_read_data" name="Serial::slot_read_data">
+<area shape="rect" id="node1" title="读取数据 如果是文本数据 需要使用文本读取后转换成相应的数据" alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node2" href="$d9/d25/a01157.html#a7620016be54cb445876b796aad0e062f" title=" " alt="" coords="201,5,357,32"/>
+<area shape="rect" id="node3" href="$dd/d32/a00041.html#ad3557e201a0276ee8492aae3dbec7606" title="将字符串 转换成 QByteArray 字符串默认有空格" alt="" coords="405,5,520,32"/>
+<area shape="rect" id="node4" href="$d9/db6/a00146.html#aa4d8cf50c0a13481ceb04c5a0581c959" title="2uchars the given string" alt="" coords="568,5,644,32"/>
+</map>

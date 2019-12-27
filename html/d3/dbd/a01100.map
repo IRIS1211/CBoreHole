@@ -1,6 +1,5 @@
-<map id="QcNeedleItem" name="QcNeedleItem">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,109,256"/>
-<area shape="rect" id="node2" href="$d9/d7c/a01073.html" title=" " alt="" coords="9,155,106,181"/>
-<area shape="rect" id="node3" href="$d8/d18/a01069.html" title=" " alt="" coords="25,80,89,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="22,5,93,32"/>
+<map id="StProtocol::StMountMode" name="StProtocol::StMountMode">
+<area shape="rect" id="node1" title="设置 安装模式的方式" alt="" coords="5,215,177,241"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="51,96,131,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="28,5,155,47"/>
 </map>

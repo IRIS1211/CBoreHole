@@ -1,0 +1,9 @@
+<map id="CSerialPort::OpenListenThread" name="CSerialPort::OpenListenThread">
+<area shape="rect" id="node1" title="开启 监听线程" alt="" coords="5,107,207,133"/>
+<area shape="rect" id="node2" href="$de/dc3/a00909.html#a436eadf913d5a2ac0c0023707eb863c1" title="Listen thread" alt="" coords="255,107,425,133"/>
+<area shape="rect" id="node3" href="$dd/d32/a00041.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="525,5,612,32"/>
+<area shape="rect" id="node4" href="$dd/d32/a00041.html#a2bccd732252a844a62b3e0bdc7de82d8" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="516,56,621,83"/>
+<area shape="rect" id="node5" href="$de/dc3/a00909.html#abb85234d6f6d3774c8010fae51f7722f" title="Gets bytes in com" alt="" coords="473,107,664,133"/>
+<area shape="rect" id="node6" href="$d1/d83/a01041.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="515,157,622,184"/>
+<area shape="rect" id="node7" href="$de/dc3/a00909.html#a5c37ce285506e5b69b6c900c406f37b7" title="Reads a character" alt="" coords="492,208,645,235"/>
+</map>

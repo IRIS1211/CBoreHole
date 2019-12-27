@@ -1,0 +1,5 @@
+<map id="FrameData::CalcMagnet" name="FrameData::CalcMagnet">
+<area shape="rect" id="node1" title="计算磁力数据 磁力值 &#45; 8,388,608～+ 8,388,607 （单位nT， 3字节有符号整型0x800000 ~0x7FFFFF）" alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node2" href="$da/de3/a01398.html#a3608435d58a43711699c72db402154fb" title="通用计算函数 计算从 指针开始的指定位数的 计算结果" alt="" coords="216,5,332,32"/>
+<area shape="rect" id="node3" href="$d8/df1/a01414.html#a3d87ca32cf1959251d87988a5b7f1b45" title="Uchar 2 char 的相互转换" alt="" coords="380,5,547,32"/>
+</map>

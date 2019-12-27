@@ -1,0 +1,4 @@
+<map id="Utils_String::GetTime" name="Utils_String::GetTime">
+<area shape="rect" id="node1" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$d3/da4/a01343.html#ab0bd05f35427650f2e295c18ba6938b3" title="num 转换成 字符串 前 补零" alt="" coords="200,5,372,32"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="Serial::Serial" name="Serial::Serial">
+<area shape="rect" id="node1" title="Initializes a new instance of the Serial class" alt="" coords="5,157,101,184"/>
+<area shape="rect" id="node2" href="$d0/d5b/a00933.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="364,5,533,32"/>
+<area shape="rect" id="node4" href="$d0/d5b/a00933.html#aebd603c06e40ba598d0f3f2cbf7ea8c4" title="Handles the open serial" alt="" coords="149,81,316,108"/>
+<area shape="rect" id="node7" href="$d0/d5b/a00933.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="586,132,750,159"/>
+<area shape="rect" id="node8" href="$d0/d5b/a00933.html#ab4d98e474b554e318508d1f26a053998" title="Handles the read data" alt="" coords="153,183,313,209"/>
+<area shape="rect" id="node15" href="$d0/d5b/a00933.html#a7f33b441ca3c2e17c8d673a997437bd4" title="Handles the timeout" alt="" coords="158,233,307,260"/>
+<area shape="rect" id="node16" href="$d0/d5b/a00933.html#a0d6d78a8fde1029723a729529120b6f9" title="Handles the timer described by t" alt="" coords="175,284,290,311"/>
+<area shape="rect" id="node3" href="$d0/d5b/a00933.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="803,31,956,57"/>
+<area shape="rect" id="node5" href="$d0/d5b/a00933.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="373,81,524,108"/>
+<area shape="rect" id="node6" href="$d0/d5b/a00933.html#a1b596e9793b3e992968d7b50392b43c0" title="Gets serial by port no" alt="" coords="581,81,755,108"/>
+<area shape="rect" id="node9" href="$d0/d5b/a00933.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="389,233,509,260"/>
+<area shape="rect" id="node10" href="$d5/d16/a00029.html#a82fcc922ef1115cdffa3d2bd7f25db87" title="Gets time FPS // 计算出来 以当前时间计算出来的 每秒可以执行的次数" alt="" coords="601,183,735,209"/>
+<area shape="rect" id="node11" href="$d5/d16/a00029.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="612,233,724,260"/>
+<area shape="rect" id="node12" href="$dc/d87/a00032.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="625,284,711,311"/>
+<area shape="rect" id="node13" href="$dc/d87/a00032.html#a2bccd732252a844a62b3e0bdc7de82d8" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="615,335,721,361"/>
+<area shape="rect" id="node14" href="$d0/dac/a00901.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="615,385,721,412"/>
+</map>

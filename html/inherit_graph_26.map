@@ -1,3 +1,6 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$d8/d84/a00001.html#df/d96/a01347" title="线程安全队列实现" alt="" coords="5,5,65,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,112,83"/>
+<area shape="rect" id="node2" href="$d2/d7b/a01150.html" title="读取文件的界面类实现 能够读取自定义文件并进行浏览显示" alt="" coords="160,5,259,32"/>
+<area shape="rect" id="node3" href="$da/d00/a01270.html" title="Window for setting the . 设置窗口" alt="" coords="165,56,253,83"/>
+<area shape="rect" id="node4" href="$de/d33/a01274.html" title="声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348" alt="" coords="160,107,259,133"/>
 </map>

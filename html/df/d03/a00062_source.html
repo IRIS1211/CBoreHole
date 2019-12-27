@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/readwindow.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/init.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.0</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,70 +89,65 @@ $(document).ready(function(){initNavTree('df/d03/a00062_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">readwindow.h</div>  </div>
+<div class="title">init.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../df/d03/a00062.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_READWINDOW_H_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CBOREHOLE_READWINDOW_H_</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/dee/a00053.html">&#x202A;IDOIFile.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CODE_INC_INIT_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CODE_INC_INIT_H_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../utils/utils.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;opencv2/core.hpp&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../ui/ui_readwindow.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d9/d9b/a00363.html">&#x202A;Ui</a> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">class </span><a class="code" href="../../dd/d80/a01075.html">&#x202A;ReadWindow</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../dd/d80/a01075.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d80/a01075.html">&#x202A;ReadWindow</a> : <span class="keyword">public</span> QMainWindow</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../dd/d80/a01075.html#a01056a0dc4d03ab9d9a7fbd502237e1c">   39</a></span>&#160;    <a class="code" href="../../de/de6/a01063.html">&#x202A;IDOIFile</a> *<a class="code" href="../../dd/d80/a01075.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../dd/d80/a01075.html#ab03fe548569bca2b66da6be93755bf3b">   40</a></span>&#160;    cv::Mat <a class="code" href="../../dd/d80/a01075.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a>;    </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../dd/d80/a01075.html#a8a81e2d13d0192e610471c49bd35da76">   42</a></span>&#160;    <a class="code" href="../../d4/da0/a01291.html">&#x202A;Ui::ReadWindow</a> *<a class="code" href="../../dd/d80/a01075.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="../../dd/d80/a01075.html#aa399218166bcdcd386abbbcbfaa6e9db">&#x202A;ReadWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="../../dd/d80/a01075.html#abbeaee958736886d2b19bb97c8491c43">&#x202A;~ReadWindow</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dd/d80/a01075.html#a95fcda8a05bce42033ab50c78c3f8a44">&#x202A;on_btn_openFile_clicked</a>();     <span class="comment">// 点击浏览文件</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dd/d80/a01075.html#ad03aefcbea38fe4b8bef79cbea4a28c3">&#x202A;on_btn_closeFile_clicked</a>();    <span class="comment">// 点击关闭文件</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dd/d80/a01075.html#a60ba7c9f45797caf826c4c9fb2145d59">&#x202A;on_btn_read_exit_clicked</a>();    <span class="comment">// 点击退出浏览</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    signals:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../dd/d80/a01075.html#a19ddfc33b6e10f52fe08e2ed2bb72a64">&#x202A;signal_CloseWindow</a>(); <span class="comment">// 发射 关闭 窗口信号</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // CBOREHOLE_READWINDOW_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d24/a00068.html">&#x202A;./runpara.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// 全局 参数变量</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <a class="code" href="../../dd/d09/a01118.html">&#x202A;Config</a> *<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d09/a01118.html">&#x202A;Config</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// 用于完成 工程的启动过程, 完成工程的启动</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// 全部为静态函数, 提供外部的 util 通用组件 </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../de/d07/a01146.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../de/d07/a01146.html">&#x202A;Init</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// 统一初始化, 按照一定顺序初始化参数</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/d07/a01146.html#afb07b00f2611777025031d20adb34ce5">&#x202A;AllInit</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/d07/a01146.html#a3dd823273154e1bb5cd2e85efd872662">&#x202A;CurrentDirInit</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/d07/a01146.html#af348596369f10008277e9321bd9e6901">&#x202A;YMLConfigInit</a>(cv::FileStorage *fs, </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                              <span class="keyword">const</span> std::string &amp;filename, </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">int</span> flg = cv::FileStorage::READ);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/d07/a01146.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;GlobalVarInit</a>(<a class="code" href="../../dd/d09/a01118.html">&#x202A;Config</a> *&amp;config,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                              <span class="keyword">const</span> cv::FileStorage &amp;fs);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/d07/a01146.html#a5714027a2cc07f9c5c0ae84a177631be">&#x202A;GlobalVarUpdate</a>(<a class="code" href="../../dd/d09/a01118.html">&#x202A;Config</a> *&amp;config);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/d07/a01146.html#af90a5705e283acc4150060ea12833ab8">&#x202A;ProjectDirInit</a>(<a class="code" href="../../d5/d16/a01154.html#d4/d13/a01162">&#x202A;RunPara::StProject</a> *project);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif  // CODE_INC_INIT_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01075_html_ab03fe548569bca2b66da6be93755bf3b"><div class="ttname"><a href="../../dd/d80/a01075.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ReadWindow::ma_ReadImage_</a></div><div class="ttdeci">&#x202A;cv::Mat ma_ReadImage_</div><div class="ttdoc">&#x202A;读取到的图像 可能只是一部分数据</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00040">readwindow.h:40</a></div></div>
-<div class="ttc" id="aa01075_html_ad03aefcbea38fe4b8bef79cbea4a28c3"><div class="ttname"><a href="../../dd/d80/a01075.html#ad03aefcbea38fe4b8bef79cbea4a28c3">&#x202A;ReadWindow::on_btn_closeFile_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_closeFile_clicked()</div><div class="ttdoc">&#x202A;Handles button close file clicked signals</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/a00167_source.html#l00122">readwindow.cc:122</a></div></div>
-<div class="ttc" id="aa01075_html_a95fcda8a05bce42033ab50c78c3f8a44"><div class="ttname"><a href="../../dd/d80/a01075.html#a95fcda8a05bce42033ab50c78c3f8a44">&#x202A;ReadWindow::on_btn_openFile_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_openFile_clicked()</div><div class="ttdoc">&#x202A;Handles button open file clicked signals</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/a00167_source.html#l00057">readwindow.cc:57</a></div></div>
-<div class="ttc" id="aa01075_html_aa399218166bcdcd386abbbcbfaa6e9db"><div class="ttname"><a href="../../dd/d80/a01075.html#aa399218166bcdcd386abbbcbfaa6e9db">&#x202A;ReadWindow::ReadWindow</a></div><div class="ttdeci">&#x202A;ReadWindow(QWidget *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the ReadWindow class</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/a00167_source.html#l00026">readwindow.cc:26</a></div></div>
-<div class="ttc" id="aa01075_html_a19ddfc33b6e10f52fe08e2ed2bb72a64"><div class="ttname"><a href="../../dd/d80/a01075.html#a19ddfc33b6e10f52fe08e2ed2bb72a64">&#x202A;ReadWindow::signal_CloseWindow</a></div><div class="ttdeci">&#x202A;void signal_CloseWindow()</div><div class="ttdoc">&#x202A;Sends the signal</div></div>
-<div class="ttc" id="aa01075_html"><div class="ttname"><a href="../../dd/d80/a01075.html">&#x202A;ReadWindow</a></div><div class="ttdoc">&#x202A;读取文件的界面类实现 能够读取自定义文件并进行浏览显示</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00035">readwindow.h:35</a></div></div>
-<div class="ttc" id="aa01075_html_a8a81e2d13d0192e610471c49bd35da76"><div class="ttname"><a href="../../dd/d80/a01075.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ReadWindow::ui</a></div><div class="ttdeci">&#x202A;Ui::ReadWindow * ui</div><div class="ttdoc">&#x202A;读取界面 窗口 ui</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00042">readwindow.h:42</a></div></div>
-<div class="ttc" id="aa01075_html_a60ba7c9f45797caf826c4c9fb2145d59"><div class="ttname"><a href="../../dd/d80/a01075.html#a60ba7c9f45797caf826c4c9fb2145d59">&#x202A;ReadWindow::on_btn_read_exit_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_read_exit_clicked()</div><div class="ttdoc">&#x202A;Handles button read exit clicked signals</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/a00167_source.html#l00138">readwindow.cc:138</a></div></div>
-<div class="ttc" id="aa00363_html"><div class="ttname"><a href="../../d9/d9b/a00363.html">&#x202A;Ui</a></div></div>
-<div class="ttc" id="aa01075_html_a01056a0dc4d03ab9d9a7fbd502237e1c"><div class="ttname"><a href="../../dd/d80/a01075.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;ReadWindow::m_IdoiFile_</a></div><div class="ttdeci">&#x202A;IDOIFile * m_IdoiFile_</div><div class="ttdoc">&#x202A;文件类指针</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00039">readwindow.h:39</a></div></div>
-<div class="ttc" id="aa01063_html"><div class="ttname"><a href="../../de/de6/a01063.html">&#x202A;IDOIFile</a></div><div class="ttdoc">&#x202A;An idoi file.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00188">IDOIFile.h:188</a></div></div>
-<div class="ttc" id="aa01291_html"><div class="ttname"><a href="../../d4/da0/a01291.html">&#x202A;Ui::ReadWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d9a/a00218_source.html#l00233">ui_readwindow.h:233</a></div></div>
-<div class="ttc" id="aa00053_html"><div class="ttname"><a href="../../dc/dee/a00053.html">&#x202A;IDOIFile.h</a></div><div class="ttdoc">&#x202A;Declares the idoi file class @changelog 2019/6/26 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01075_html_abbeaee958736886d2b19bb97c8491c43"><div class="ttname"><a href="../../dd/d80/a01075.html#abbeaee958736886d2b19bb97c8491c43">&#x202A;ReadWindow::~ReadWindow</a></div><div class="ttdeci">&#x202A;~ReadWindow()</div><div class="ttdoc">&#x202A;Finalizes an instance of the ReadWindow class</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de6/a00167_source.html#l00044">readwindow.cc:44</a></div></div>
+<div class="ttc" id="aa01146_html_a5714027a2cc07f9c5c0ae84a177631be"><div class="ttname"><a href="../../de/d07/a01146.html#a5714027a2cc07f9c5c0ae84a177631be">&#x202A;Init::GlobalVarUpdate</a></div><div class="ttdeci">&#x202A;static bool GlobalVarUpdate(Config *&amp;config)</div><div class="ttdoc">&#x202A;根据运行参数 更新参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00149">init.cc:149</a></div></div>
+<div class="ttc" id="aa00062_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00020">main.cpp:20</a></div></div>
+<div class="ttc" id="aa01154_html_d4/d13/a01162"><div class="ttname"><a href="../../d5/d16/a01154.html#d4/d13/a01162">&#x202A;RunPara::StProject</a></div><div class="ttdoc">&#x202A;记录 路径以及其他路径信息</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00059">runpara.h:59</a></div></div>
+<div class="ttc" id="aa01146_html_ac6c5c0e3086cf28a96387e32ffc5bebf"><div class="ttname"><a href="../../de/d07/a01146.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a></div><div class="ttdeci">&#x202A;static bool GlobalVarInit(Config *&amp;config, const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;初始化 全局参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00119">init.cc:119</a></div></div>
+<div class="ttc" id="aa00068_html"><div class="ttname"><a href="../../da/d24/a00068.html">&#x202A;runpara.h</a></div><div class="ttdoc">&#x202A;声明 运行参数, 包含系统运行中的所有参数 @changelog 2019/11/26 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa01118_html"><div class="ttname"><a href="../../dd/d09/a01118.html">&#x202A;Config</a></div><div class="ttdoc">&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00029">Config.h:29</a></div></div>
+<div class="ttc" id="aa01146_html"><div class="ttname"><a href="../../de/d07/a01146.html">&#x202A;Init</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00025">init.h:25</a></div></div>
+<div class="ttc" id="aa01146_html_afb07b00f2611777025031d20adb34ce5"><div class="ttname"><a href="../../de/d07/a01146.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a></div><div class="ttdeci">&#x202A;static bool AllInit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00018">init.cc:18</a></div></div>
+<div class="ttc" id="aa01146_html_af348596369f10008277e9321bd9e6901"><div class="ttname"><a href="../../de/d07/a01146.html#af348596369f10008277e9321bd9e6901">&#x202A;Init::YMLConfigInit</a></div><div class="ttdeci">&#x202A;static bool YMLConfigInit(cv::FileStorage *fs, const std::string &amp;filename, const int flg=cv::FileStorage::READ)</div><div class="ttdoc">&#x202A;根据 yml 配置文件初始化文件参数 //默认是读的方式打开配置文件</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00076">init.cc:76</a></div></div>
+<div class="ttc" id="aa01146_html_af90a5705e283acc4150060ea12833ab8"><div class="ttname"><a href="../../de/d07/a01146.html#af90a5705e283acc4150060ea12833ab8">&#x202A;Init::ProjectDirInit</a></div><div class="ttdeci">&#x202A;static bool ProjectDirInit(RunPara::StProject *project)</div><div class="ttdoc">&#x202A;初始化运行目录以及未来存储的工程文件目录</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00188">init.cc:188</a></div></div>
+<div class="ttc" id="aa01146_html_a3dd823273154e1bb5cd2e85efd872662"><div class="ttname"><a href="../../de/d07/a01146.html#a3dd823273154e1bb5cd2e85efd872662">&#x202A;Init::CurrentDirInit</a></div><div class="ttdeci">&#x202A;static bool CurrentDirInit()</div><div class="ttdoc">&#x202A;初始化运行目录, 在工程目录下面, 避免程序出现找不到配置文件</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00031">init.cc:31</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../df/d03/a00062.html">&#x202A;readwindow.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../df/d03/a00062.html">&#x202A;init.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

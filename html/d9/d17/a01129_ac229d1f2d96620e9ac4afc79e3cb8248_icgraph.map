@@ -1,0 +1,6 @@
+<map id="Serial::ReadData" name="Serial::ReadData">
+<area shape="rect" id="node1" title="Reads the data" alt="" coords="357,31,477,57"/>
+<area shape="rect" id="node2" href="$d9/d17/a01129.html#ab4d98e474b554e318508d1f26a053998" title="Handles the read data" alt="" coords="149,5,309,32"/>
+<area shape="rect" id="node4" href="$d9/d17/a01129.html#a7f33b441ca3c2e17c8d673a997437bd4" title="Handles the timeout" alt="" coords="155,56,304,83"/>
+<area shape="rect" id="node3" href="$d9/d17/a01129.html#adda4ed09582ac92c92b16b55b471a6d4" title="Initializes a new instance of the Serial class" alt="" coords="5,31,101,57"/>
+</map>

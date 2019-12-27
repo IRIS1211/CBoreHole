@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;自定义文件结构</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.5.2</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('da/ddc/a01492.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc PageDocLTR-title"><div class="header">
+  <div class="headertitle">
+<div class="title">&#x202A;自定义文件结构 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p class="DocNodeLTR">初始化给出文件路径和文件名, 直接通过给定方式访问文件, 简历C++ filestream 文件读写流, 通过文件指针访问文件数据</p>
+<p class="DocNodeLTR">// TODO: 新思路</p><ol type="1" class="DocNodeLTR">
+<li>&#x202A;数据分块存储, 每次处理 20万行数据 断开 新建文件存储</li>
+</ol>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md52"></a>
+文件数据格式</h1>
+<p class="DocNodeLTR">文件通过二进制数据存储, 包括文件头信息和文件数据信息</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md53"></a>
+文件头格式</h2>
+<p class="DocNodeLTR">其中文件头 包含了详细的参数,具体内容可以参考 系统参数类, 图例仅供参考</p>
+<p><img src="&#x202A;../.././img/class_idoifile.png" alt="文件头信息" class="inline"/></p>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md54"></a>
+文件头代码定义</h3>
+<p class="DocNodeLTR">文件头信息 包含在了系统参数类中, 包含众多结构体的划分, 最开头的部分是文件头信息,用于判断文件所在块以及文件数据长度等信息 后续的包含工程中的很多参数, 可以直接使用 fstream.read 读取二进制留获取数据, 由于存在结构体字节对齐的问题, 导致计算比较麻烦,不建议自己进行计算读取,最好直接整块存储, 整块读取</p>
+<blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">文件头 一个版本 后续要调整 <b>后续要调整</b> </p>
+</blockquote>
+<div class="fragment"><div class="line"><span class="comment">// 系统参数类,  聚集所有的参数内容</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//  存储 系统运行参数  按照参数具体类型进行细分</span></div>
+<div class="line"><span class="keyword">class </span><a class="code" href="../../da/d45/a00961.html">&#x202A;SystemPara</a></div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// 默认类型使用 int  但是很多类型可以使用char 或者 bool 类型进行空间压缩</span></div>
+<div class="line">    <span class="comment">// #TODO 按照类型考虑每种类型的 空间占用</span></div>
+<div class="line">    <span class="comment">// 自定义 文件个数 尽量使用简单类型  避免占用更多</span></div>
+<div class="line">    <span class="keyword">struct </span>structFileHeader</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">//  CRC-32 校验 IRIS 得到的校验字符 // -0x04C11DB7 http://www.ip33.com/crc.html</span></div>
+<div class="line">        <span class="keywordtype">char</span> Verify[4] = { (char)0x7B,(<span class="keywordtype">char</span>)0xB9,(char)0xC6,(<span class="keywordtype">char</span>)0x77 };</div>
+<div class="line">        <span class="keywordtype">short</span> nFileNo;   <span class="comment">// 标识当前文档的序号  按照顺序  填入当前块的值   //起始为1    </span></div>
+<div class="line">        <span class="keywordtype">short</span> nOneRowDataSize;  <span class="comment">// 一行数据的长度</span></div>
+<div class="line">        <a class="code" href="../../d8/d41/a00038.html#a69aa29b598b851b0640aa225a9e5d61d">&#x202A;uint</a>  nRowCnt;   <span class="comment">// 记录 文件数据的总的行数</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// 旧版本参数 </span></div>
+<div class="line">        <span class="keywordtype">char</span> strConfigVersion[20];  <span class="comment">// 文件协议版本</span></div>
+<div class="line">        <span class="keywordtype">char</span> strWorkDir[60];        <span class="comment">// 工作文件夹</span></div>
+<div class="line">        <span class="comment">// int nFileHeaderSize; //Byte 字节  头文件 字节大小 // 废弃</span></div>
+<div class="line">        <span class="comment">// int nFileSize;       // MByte 文件大小    // 总文件大小 需要累计计算</span></div>
+<div class="line">        <span class="comment">// 使用自定义文件</span></div>
+<div class="line">    }<a class="code" href="../../da/d45/a00961.html#afc75de888fc770f646643e91691df6bf">&#x202A;FileHeader</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 探头信息</span></div>
+<div class="line">    <span class="keyword">struct </span>structProbe</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordtype">int</span>  nProbeType; <span class="comment">// 探头型号</span></div>
+<div class="line">        <span class="keywordtype">int</span>  bProbeDirAhead; <span class="comment">// 工作方向 1向前 0 向后</span></div>
+<div class="line">    }<a class="code" href="../../da/d45/a00961.html#a0e0bd6ce41390ffbaf5d660b5b2fad14">&#x202A;Probe</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 编码器信息 脉冲</span></div>
+<div class="line">    <span class="keyword">struct </span>structPulse</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordtype">int</span> nPulseUm; <span class="comment">// 脉冲距离  广电编码器 每个脉冲走过的距离  单位 1um  最大 65535</span></div>
+<div class="line">        <span class="comment">// int nPulseCnt; // 总脉冲计数 // 避免溢出 可以使用 int 足够</span></div>
+<div class="line">        <span class="keywordtype">int</span>   nPixalPerPulse;   <span class="comment">// 每个脉冲对应的像素数目 的千倍</span></div>
+<div class="line">    }<a class="code" href="../../da/d45/a00961.html#a33d9e689965c00a347f1df706ab3ed2f">&#x202A;Pulse</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">struct </span>structHole</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// 测孔参数信息</span></div>
+<div class="line">        <span class="keywordtype">int</span> nHoleDiameter; <span class="comment">// 钻孔直径</span></div>
+<div class="line">        <span class="keywordtype">int</span> nHoleBeginDepth; <span class="comment">// 开始深度 表示设备开始工作的深度 mm</span></div>
+<div class="line">        <span class="keywordtype">int</span> nHoleTypeVertical;  <span class="comment">// 测孔类型 水平0  竖直1</span></div>
+<div class="line">        <span class="keywordtype">int</span> nHoleWorkAhead;  <span class="comment">// 工作方式 前进1 后退0 </span></div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordtype">char</span> strHoleNum[20]; <span class="comment">// 测孔编号</span></div>
+<div class="line">        <span class="keywordtype">char</span> strHoleTime[20]; <span class="comment">// 测孔时间</span></div>
+<div class="line">        <span class="keywordtype">char</span> strHoleLocal[20]; <span class="comment">// 测孔地点</span></div>
+<div class="line">        <span class="keywordtype">char</span> strHolePerson[20]; <span class="comment">// 测孔人员</span></div>
+<div class="line">        <span class="keywordtype">char</span> strHoleCompany[20]; <span class="comment">// 测孔单位</span></div>
+<div class="line">    } <a class="code" href="../../da/d45/a00961.html#a7a6c6896f278ef3dec2522ad6ed12331">&#x202A;Hole</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">struct </span>structImage</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// 以下均为图像参数 有单位的 为像素</span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgCenterX; <span class="comment">// 中心 X 座标</span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgCenterY; <span class="comment">// 中心 Y 座标</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordtype">int</span> nImgMaxR;   <span class="comment">// 外径 最大范围 </span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgMinR;   <span class="comment">// 内径</span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgWidth;   <span class="comment">// 图像宽度</span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgHeight;  <span class="comment">// 图像高度</span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgFPS;      <span class="comment">// 图像采集帧速度 FPS</span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgOneRowSize; <span class="comment">// 一行图像的数据大小  3*nWidth</span></div>
+<div class="line">        <span class="comment">// int   nImgSize;    // 图像 空间大小  RGB= 3*nWidth*nHeight</span></div>
+<div class="line">        </div>
+<div class="line">        <span class="keywordtype">int</span> nImgLight;    <span class="comment">// 图像亮度</span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgSharp;    <span class="comment">// 图像锐度</span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgContrast;   <span class="comment">// 图像对比度</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// int nImgBitsPixal; // 每个像素  位数</span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgVPixalPerMM;  <span class="comment">// 竖直方向 分辨率 像素每毫米</span></div>
+<div class="line">        <span class="keywordtype">int</span> nImgHPixalPerMM;  <span class="comment">// 水平方向 分辨率 像素每毫米</span></div>
+<div class="line">    }<a class="code" href="../../da/d45/a00961.html#a4cd9dea8a20db105255947629566cb37">&#x202A;Image</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 电子罗盘参数</span></div>
+<div class="line">    <span class="keyword">struct </span>structCompass</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// 罗盘参数</span></div>
+<div class="line">        <span class="keywordtype">int</span> nComType; <span class="comment">// 罗盘类型</span></div>
+<div class="line">        <span class="keywordtype">int</span> nComFixModeHor; <span class="comment">// 罗盘安装方式  水平1 竖直0 </span></div>
+<div class="line">        <span class="keywordtype">int</span> nComUse;    <span class="comment">// 是否启用 默认 启用1  不启用 0</span></div>
+<div class="line">        <span class="keywordtype">int</span> nComCompen; <span class="comment">// 罗盘补偿</span></div>
+<div class="line">        <span class="keywordtype">int</span> nComAngleOffset; <span class="comment">// 探头内部罗盘安装角度误差   // 等于罗盘补偿? </span></div>
+<div class="line">    }<a class="code" href="../../da/d45/a00961.html#a980ba6df1a609c70651637d1c189baad">&#x202A;Compass</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 额外信息</span></div>
+<div class="line">    <span class="keyword">struct </span>structExtra</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordtype">int</span> nCompress; <span class="comment">// 压缩? // 弃用</span></div>
+<div class="line">        <span class="keywordtype">int</span> nScreenLight; <span class="comment">// 屏幕亮度</span></div>
+<div class="line">        <span class="keywordtype">int</span> nLighterLight; <span class="comment">// 探灯亮度 </span></div>
+<div class="line">        <span class="keywordtype">int</span> nStorageCur; <span class="comment">// 目前空间占用  0.01GB  已用</span></div>
+<div class="line">        <span class="keywordtype">int</span> nStorageAll; <span class="comment">// 总空间;  0.01 GB</span></div>
+<div class="line">        <span class="keywordtype">int</span> nBattaryV;   <span class="comment">// 电池电压 // 0.01V 单位</span></div>
+<div class="line">    }<a class="code" href="../../da/d45/a00961.html#abe9ad9f90611e2f0bfe6119967210703">&#x202A;Extra</a>;</div>
+<div class="line">};</div>
+</div><!-- fragment --><h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md55"></a>
+数据信息</h2>
+<p class="DocNodeLTR">指针维护数据头后数据 数据块, 按照每行数据依次堆叠, 每次连续写入 一行数据, 然后循环写入每行数据</p>
+<p class="DocNodeLTR">数据信息分为两块 左侧区域块存储额外信息, 使用 <b>11 22</b> 开头 便于识别数据</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md56"></a>
+文件读写 接口</h1>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md57"></a>
+构造函数</h2>
+<p class="DocNodeLTR">在构造函数中, 会考虑当前执行的读写操作的类型</p>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;对于写入操作 创建文件,将为而系统运行的参数复制给 该类参数,直接写入数据,等待后续写入其他内容</li>
+<li>&#x202A;对于读取操作, 根据名称找到文件, 读取文件,如果不存在会抛出错误, 提前将文件参数信息读取进来, 便于后续执行其他操作</li>
+</ol>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md58"></a>
+读写参数(文件头)</h2>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;读取参数的时候, 建议将文件指针偏移到文件的最开始, 读取或者写入 <b>sizeof(SystemPara)</b> 字节的参数,同时直接存在该类自己的参数中, 后续</li>
+</ol>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md59"></a>
+读写图像数据</h2>
+<p class="DocNodeLTR">主要包括, 批量写入整块数据, 写入一行,数据, 修改一行数据, 加入</p>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;将数据偏移到数据块开始的地方, 逐行开始读取数据, 或者从指定行读取 <blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">TODO: [ ] 完成 读写指定行的操作 [ ] 完成 文件指针的移动和读取确定某行操作 [ ] 完成图像数据的前移和后移 </p>
+</blockquote>
+</li>
+</ol>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md60"></a>
+更新数据</h3>
+<p class="DocNodeLTR">移动指针到需要调整的数据 更新 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00961_html_a0e0bd6ce41390ffbaf5d660b5b2fad14"><div class="ttname"><a href="../../da/d45/a00961.html#a0e0bd6ce41390ffbaf5d660b5b2fad14">&#x202A;SystemPara::Probe</a></div><div class="ttdeci">&#x202A;struct SystemPara::StProbe Probe</div></div>
+<div class="ttc" id="aa00038_html_a69aa29b598b851b0640aa225a9e5d61d"><div class="ttname"><a href="../../d8/d41/a00038.html#a69aa29b598b851b0640aa225a9e5d61d">&#x202A;uint</a></div><div class="ttdeci">&#x202A;unsigned int uint</div><div class="ttdoc">&#x202A;The uint</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00039">Commu.h:39</a></div></div>
+<div class="ttc" id="aa00961_html_abe9ad9f90611e2f0bfe6119967210703"><div class="ttname"><a href="../../da/d45/a00961.html#abe9ad9f90611e2f0bfe6119967210703">&#x202A;SystemPara::Extra</a></div><div class="ttdeci">&#x202A;struct SystemPara::StExtra Extra</div></div>
+<div class="ttc" id="aa00961_html"><div class="ttname"><a href="../../da/d45/a00961.html">&#x202A;SystemPara</a></div><div class="ttdoc">&#x202A;参数 需要存储下来, 记录到文件中</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d45/a00011_source.html#l00025">SystemPara.h:25</a></div></div>
+<div class="ttc" id="aa00961_html_a33d9e689965c00a347f1df706ab3ed2f"><div class="ttname"><a href="../../da/d45/a00961.html#a33d9e689965c00a347f1df706ab3ed2f">&#x202A;SystemPara::Pulse</a></div><div class="ttdeci">&#x202A;struct SystemPara::StPulse Pulse</div></div>
+<div class="ttc" id="aa00961_html_a4cd9dea8a20db105255947629566cb37"><div class="ttname"><a href="../../da/d45/a00961.html#a4cd9dea8a20db105255947629566cb37">&#x202A;SystemPara::Image</a></div><div class="ttdeci">&#x202A;struct SystemPara::StImage Image</div></div>
+<div class="ttc" id="aa00961_html_afc75de888fc770f646643e91691df6bf"><div class="ttname"><a href="../../da/d45/a00961.html#afc75de888fc770f646643e91691df6bf">&#x202A;SystemPara::FileHeader</a></div><div class="ttdeci">&#x202A;struct SystemPara::StFileHeader FileHeader</div></div>
+<div class="ttc" id="aa00961_html_a980ba6df1a609c70651637d1c189baad"><div class="ttname"><a href="../../da/d45/a00961.html#a980ba6df1a609c70651637d1c189baad">&#x202A;SystemPara::Compass</a></div><div class="ttdeci">&#x202A;struct SystemPara::StCompass Compass</div></div>
+<div class="ttc" id="aa00961_html_a7a6c6896f278ef3dec2522ad6ed12331"><div class="ttname"><a href="../../da/d45/a00961.html#a7a6c6896f278ef3dec2522ad6ed12331">&#x202A;SystemPara::Hole</a></div><div class="ttdeci">&#x202A;struct SystemPara::StHole Hole</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

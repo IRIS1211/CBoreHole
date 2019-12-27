@@ -1,0 +1,26 @@
+<map id="num2Str" name="num2Str">
+<area shape="rect" id="node1" title="数字 转换成字符串 // 自定位数.// 首位补0" alt="" coords="1109,94,1180,120"/>
+<area shape="rect" id="node2" href="$d2/df5/a00137.html#ad097a2be5d255a589cb0c58b1e65fac1" title="Gets date string 返回 8位 日期值" alt="" coords="975,43,1061,70"/>
+<area shape="rect" id="node3" href="$d2/df5/a00137.html#ab4e02a15fd849dbf13c3b9bb17fd2d58" title="初始化 全局变量 主要是读取主配置文件 并根据配置文件决定后续程序执行" alt="" coords="535,68,628,95"/>
+<area shape="rect" id="node6" href="$d2/df5/a00137.html#a1d1c6406eba7507200d5b79d6456d424" title="根据当前时间 创建字符串" alt="" coords="975,271,1061,298"/>
+<area shape="rect" id="node17" href="$da/d45/a00961.html#a42f3ec35c315231b8af2beb1c6423e47" title=" " alt="" coords="747,499,915,526"/>
+<area shape="rect" id="node24" href="$d3/da5/a00973.html#aab14749548a00b9a7fa626259355cdbe" title="更新参数 // 根据当前时间以及运行状态,更新文件内部信息" alt="" coords="746,94,917,120"/>
+<area shape="rect" id="node4" href="$d5/dac/a00841.html#ac43fc49189df29ccdf5e0724d29eb5e1" title=" " alt="" coords="263,68,379,95"/>
+<area shape="rect" id="node5" href="$d7/d9a/a00152.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="296,159,347,186"/>
+<area shape="rect" id="node7" href="$d5/dac/a00841.html#ad767a193d579f47ec9b66e1df49a102f" title="抓取数据" alt="" coords="766,296,897,323"/>
+<area shape="rect" id="node8" href="$db/deb/a00853.html#a4fd7a30375554ef9df2ef322db87c32d" title="初始化线程 初始化完成后 开始运行" alt="" coords="781,347,882,374"/>
+<area shape="rect" id="node11" href="$d7/d59/a01013.html#a0089a1003badc38250ed84d66b8c5fe3" title=" " alt="" coords="753,448,910,475"/>
+<area shape="rect" id="node13" href="$dd/d7a/a00921.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60" title="将数据存储下来" alt="" coords="752,398,911,424"/>
+<area shape="rect" id="node21" href="$dc/d57/a00194.html#ab5e6df2da27e8aacc5489605e4abcc53" title=" " alt="" coords="783,144,880,171"/>
+<area shape="rect" id="node22" href="$d5/dac/a00841.html#aec5351041b2e2d4f99899f17f8fa7f68" title="验证文件操作 读写" alt="" coords="758,195,905,222"/>
+<area shape="rect" id="node23" href="$d5/dac/a00841.html#ad43d9c26d7651f17f60396a8a52fe217" title="验证文件 附加操作" alt="" coords="736,246,927,272"/>
+<area shape="rect" id="node9" href="$d7/ded/a01009.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="519,298,643,324"/>
+<area shape="rect" id="node10" href="$da/d45/a00961.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="222,290,421,332"/>
+<area shape="rect" id="node12" href="$d7/d59/a01013.html#a8537b4c963467314c61eb26616087b1b" title="Initializes a new instance of the WriteVideo class ��ʼʵ�� ���г���" alt="" coords="502,448,661,475"/>
+<area shape="rect" id="node14" href="$dd/d7a/a00921.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="520,398,643,424"/>
+<area shape="rect" id="node15" href="$db/deb/a00853.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="270,378,373,404"/>
+<area shape="rect" id="node16" href="$d5/dac/a00841.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="247,428,395,455"/>
+<area shape="rect" id="node18" href="$da/d45/a00961.html#a89c4f17fbaeaba0884d96a9932973256" title="Slot show camera" alt="" coords="475,499,688,526"/>
+<area shape="rect" id="node19" href="$da/d45/a00961.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,499,427,526"/>
+<area shape="rect" id="node20" href="$da/d45/a00961.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,499,168,526"/>
+</map>

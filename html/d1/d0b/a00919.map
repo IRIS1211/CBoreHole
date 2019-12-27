@@ -1,0 +1,10 @@
+<map id="StorePara::StDevice" name="StorePara::StDevice">
+<area shape="rect" id="node1" title="设置硬件的参数信息" alt="" coords="252,209,391,235"/>
+<area shape="rect" id="node2" href="$de/dc8/a00889.html#d6/dad/a00941" title="窗口状态信息" alt="" coords="5,5,144,47"/>
+<area shape="rect" id="node3" href="$de/dc8/a00889.html#d0/d5b/a00933" title="电子罗盘参数 调整罗盘数据" alt="" coords="5,71,144,112"/>
+<area shape="rect" id="node4" href="$de/dc8/a00889.html#dc/d36/a00925" title="脉冲参数" alt="" coords="5,136,144,177"/>
+<area shape="rect" id="node5" href="$de/dc8/a00889.html#d1/db0/a00945" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="5,201,144,243"/>
+<area shape="rect" id="node6" href="$de/dc8/a00889.html#df/dc6/a00949" title="额外信息" alt="" coords="5,267,144,308"/>
+<area shape="rect" id="node7" href="$de/dc8/a00889.html#dc/d92/a00929" title="探头参数" alt="" coords="5,332,144,373"/>
+<area shape="rect" id="node8" href="$de/dc8/a00889.html#de/db9/a00937" title="相机参数结构体" alt="" coords="5,397,144,439"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CalcHCMData" name="CalcHCMData">
+<area shape="rect" id="node1" title="根据磁力计 返回的 三个UCHAR值 解算成相应的十进制值" alt="" coords="188,5,292,32"/>
+<area shape="rect" id="node2" href="$d6/dad/a00941.html#a071b93d33a06aea86d23514be375d4cd" title="根据串口数据 更新当前类的值" alt="" coords="5,5,140,32"/>
+</map>

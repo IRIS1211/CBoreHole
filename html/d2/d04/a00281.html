@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_string.cc 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_logger.h 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.0</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -88,26 +88,451 @@ $(document).ready(function(){initNavTree('d2/d04/a00281.html','../../');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
   <div class="headertitle">
-<div class="title">utils_string.cc 文件参考</div>  </div>
+<div class="title">utils_logger.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>&#x202A;Utilities string class @changelog 2019/12/16 IRIS_Chen Created.  
-<a href="#details">更多...</a></p>
-
 <p><a href="../../d2/d04/a00281_source.html">浏览源代码.</a></p>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">Utilities string class @changelog 2019/12/16 IRIS_Chen Created. </p>
-<dl class="section copyright DocNodeLTR"><dt>版权所有</dt><dd>&#x202A;Copyright (c) 2019 IRIS_Chen IRIS Lab </dd></dl>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:af71b12a6478721f866a5c30eb66d1530"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/a00281.html#af71b12a6478721f866a5c30eb66d1530">check_dir</a> (const char *dir)</td></tr>
+<tr class="memdesc:af71b12a6478721f866a5c30eb66d1530"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Check dir检查文件夹是否存在 不存在则新建 logs  <a href="../../d2/d04/a00281.html#af71b12a6478721f866a5c30eb66d1530">更多...</a><br /></td></tr>
+<tr class="separator:af71b12a6478721f866a5c30eb66d1530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a8ebc326e89dd354461f8e8322c395"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/a00281.html#a99a8ebc326e89dd354461f8e8322c395">append</a> (__func__)\ .append(&quot;()\&quot;</td></tr>
+<tr class="separator:a99a8ebc326e89dd354461f8e8322c395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aaea6bb2af04fa4fef95a1eda1a7ee5"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/a00281.html#a3aaea6bb2af04fa4fef95a1eda1a7ee5">GetLogger</a> ()</td></tr>
+<tr class="memdesc:a3aaea6bb2af04fa4fef95a1eda1a7ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets the logger  <a href="../../d2/d04/a00281.html#a3aaea6bb2af04fa4fef95a1eda1a7ee5">更多...</a><br /></td></tr>
+<tr class="separator:a3aaea6bb2af04fa4fef95a1eda1a7ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6363fe481724674897134ef2f0451cc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/a00281.html#a6363fe481724674897134ef2f0451cc9">SpdLogger</a> ()</td></tr>
+<tr class="memdesc:a6363fe481724674897134ef2f0451cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the SpdLogger class  <a href="../../d2/d04/a00281.html#a6363fe481724674897134ef2f0451cc9">更多...</a><br /></td></tr>
+<tr class="separator:a6363fe481724674897134ef2f0451cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9cfd8db33f52bb28ff2c05df68ce404"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/a00281.html#ad9cfd8db33f52bb28ff2c05df68ce404">~SpdLogger</a> ()</td></tr>
+<tr class="memdesc:ad9cfd8db33f52bb28ff2c05df68ce404"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Finalizes an instance of the SpdLogger class  <a href="../../d2/d04/a00281.html#ad9cfd8db33f52bb28ff2c05df68ce404">更多...</a><br /></td></tr>
+<tr class="separator:ad9cfd8db33f52bb28ff2c05df68ce404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac163f51a0c2b8fed094eea16157dcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/a00281.html#abac163f51a0c2b8fed094eea16157dcd">SpdLogger</a> (const SpdLogger &amp;)=delete</td></tr>
+<tr class="memdesc:abac163f51a0c2b8fed094eea16157dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the SpdLogger class  <a href="../../d2/d04/a00281.html#abac163f51a0c2b8fed094eea16157dcd">更多...</a><br /></td></tr>
+<tr class="separator:abac163f51a0c2b8fed094eea16157dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38d0b230123b6cdc9ec5add41ad2de6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d04/a00281.html#abac163f51a0c2b8fed094eea16157dcd">SpdLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/a00281.html#ac38d0b230123b6cdc9ec5add41ad2de6">operator=</a> (const <a class="el" href="../../d2/d04/a00281.html#abac163f51a0c2b8fed094eea16157dcd">SpdLogger</a> &amp;)=delete</td></tr>
+<tr class="memdesc:ac38d0b230123b6cdc9ec5add41ad2de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Assignment operator  <a href="../../d2/d04/a00281.html#ac38d0b230123b6cdc9ec5add41ad2de6">更多...</a><br /></td></tr>
+<tr class="separator:ac38d0b230123b6cdc9ec5add41ad2de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:abf99632984eacb1b8ce20e8bd2e25a08"><td class="memItemLeft" align="right" valign="top">Line&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/a00281.html#abf99632984eacb1b8ce20e8bd2e25a08">__pad0__</a></td></tr>
+<tr class="separator:abf99632984eacb1b8ce20e8bd2e25a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ee13d70e3dd2e9c1c80859e8614624"><td class="memItemLeft" align="right" valign="top">return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/a00281.html#a53ee13d70e3dd2e9c1c80859e8614624">m_instance</a></td></tr>
+<tr class="separator:a53ee13d70e3dd2e9c1c80859e8614624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e1a472bffc86ab9e87384621bbe203"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d04/a00281.html#ad6e1a472bffc86ab9e87384621bbe203">nml_logger</a></td></tr>
+<tr class="memdesc:ad6e1a472bffc86ab9e87384621bbe203"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;The nml logger  <a href="../../d2/d04/a00281.html#ad6e1a472bffc86ab9e87384621bbe203">更多...</a><br /></td></tr>
+<tr class="separator:ad6e1a472bffc86ab9e87384621bbe203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a99a8ebc326e89dd354461f8e8322c395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a8ebc326e89dd354461f8e8322c395">&#9670;&nbsp;</a></span>append()</h2>
 
-<p class="definition">在文件 <a class="el" href="../../d2/d04/a00281_source.html">utils_string.cc</a> 中定义.</p>
-</div></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">append </td>
+          <td>(</td>
+          <td class="paramtype">__func__&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af71b12a6478721f866a5c30eb66d1530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71b12a6478721f866a5c30eb66d1530">&#9670;&nbsp;</a></span>check_dir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool check_dir </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Check dir检查文件夹是否存在 不存在则新建 logs </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>&#x202A;The dir</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d2/d04/a00281_source.html">utils_logger.h</a> 第 <a class="el" href="../../d2/d04/a00281_source.html#l00041">41</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> res = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (_access(dir, 0) == -1)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        res = _mkdir(dir);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef linux</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        res = mkdir(dir.c_str(), 0777);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> (res == 0);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d04/a00281_af71b12a6478721f866a5c30eb66d1530_icgraph.png" border="0" usemap="#d2/d04/a00281_af71b12a6478721f866a5c30eb66d1530_icgraph" alt=""/></div>
+<map name="d2/d04/a00281_af71b12a6478721f866a5c30eb66d1530_icgraph" id="d2/d04/a00281_af71b12a6478721f866a5c30eb66d1530_icgraph">
+<area shape="rect" title="Check dir检查文件夹是否存在 不存在则新建 logs" alt="" coords="137,5,216,32"/>
+<area shape="rect" href="../../d2/d04/a00281.html#a6363fe481724674897134ef2f0451cc9" title="Initializes a new instance of the SpdLogger class" alt="" coords="5,5,89,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3aaea6bb2af04fa4fef95a1eda1a7ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aaea6bb2af04fa4fef95a1eda1a7ee5">&#9670;&nbsp;</a></span>GetLogger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto SpdLogger::GetLogger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets the logger </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The logger </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d2/d04/a00281_source.html">utils_logger.h</a> 第 <a class="el" href="../../d2/d04/a00281_source.html#l00198">198</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d2/d04/a00281.html#ad6e1a472bffc86ab9e87384621bbe203">&#x202A;nml_logger</a>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac38d0b230123b6cdc9ec5add41ad2de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38d0b230123b6cdc9ec5add41ad2de6">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d04/a00281.html#abac163f51a0c2b8fed094eea16157dcd">SpdLogger</a> &amp; SpdLogger::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d04/a00281.html#abac163f51a0c2b8fed094eea16157dcd">SpdLogger</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Assignment operator </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter1</td><td>&#x202A;The first parameter</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A shallow copy of this object </dd></dl>
+
+</div>
+</div>
+<a id="a6363fe481724674897134ef2f0451cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6363fe481724674897134ef2f0451cc9">&#9670;&nbsp;</a></span>SpdLogger() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpdLogger::SpdLogger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the SpdLogger class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d2/d04/a00281_source.html">utils_logger.h</a> 第 <a class="el" href="../../d2/d04/a00281_source.html#l00213">213</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="comment">// 检查文件夹是否存在</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <a class="code" href="../../d2/d04/a00281.html#af71b12a6478721f866a5c30eb66d1530">&#x202A;check_dir</a>(<span class="stringliteral">&quot;./logs&quot;</span>);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="comment">// combined_logger = std::make_shared&lt;spdlog::logger&gt;(file_name, begin(sinks), end(sinks));</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="comment">// 打印格式设置 https://github.com/gabime/spdlog/wiki/3.-Custom-formatting</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="comment">// 设置打印格式  年月日 时分秒.毫秒, 线程ID,日志等级,内容 );</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="comment">// combined_logger-&gt;set_pattern(&quot;[%Y-%m-%d %H:%M:%S.%e] [%t] [%l] %v&quot;);</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="comment">// combined_logger-&gt;set_level(spdlog::level::trace);</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="comment">// 设置为异步日志</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="comment">// spdlog::set_async_mode(32768);  // 必须为 2 的幂</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        std::vector&lt;spdlog::sink_ptr&gt; sinkList;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="comment">// #FIXME (schen00) 此处修复每次打开console 的问题</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="comment">// 命令行窗口输出 会打开console</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">        #ifdef _CONSOLE</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">        #ifdef _DEBUG</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keyword">auto</span> consoleSink = std::make_shared&lt;spdlog::sinks::stdout_color_sink_mt&gt;();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            consoleSink-&gt;set_level(spdlog::level::trace);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="comment">// consoleSink-&gt;set_pattern(&quot;[multi_sink_example] [%^%l%$] %v&quot;);</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            consoleSink-&gt;set_pattern(<span class="stringliteral">&quot;[%H:%M:%S][%t][%^%L%$] %v&quot;</span>);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            sinkList.push_back(consoleSink);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="comment">// VS 调试窗口 输出 debug 窗口输出内容</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">        #ifdef _DEBUG</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keyword">auto</span> debuggerSink = std::make_shared&lt;spdlog::sinks::msvc_sink_mt&gt;();</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            debuggerSink-&gt;set_level(spdlog::level::trace);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            debuggerSink-&gt;set_pattern(<span class="stringliteral">&quot;[%m-%d %H:%M:%S.%e] [%t] [%L] %v&quot;</span>);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            sinkList.push_back(debuggerSink);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#if LOG2FILE_</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="comment">// 使用 当前时间创建 log文件</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="comment">// 获取当前时间字符串</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        time_t t = time(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keyword">struct </span>tm ltm;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        localtime_s(&amp;ltm, &amp;t);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        std::string str = std::to_string(1900 + ltm.tm_year) + <span class="stringliteral">&quot;&quot;</span> \</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                        + std::to_string(ltm.tm_mon + 1) + <span class="stringliteral">&quot;&quot;</span> \</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                        + std::to_string(ltm.tm_mday) + <span class="stringliteral">&quot;-&quot;</span> \</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                        + std::to_string(ltm.tm_hour) + <span class="stringliteral">&quot;&quot;</span> \</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                        + std::to_string(ltm.tm_min);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="comment">// 日志文件 每次运行新建文件 按照时间格式明明</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        std::string log_file_name = <span class="stringliteral">&quot;logs/Bhole-Log-&quot;</span> + str + <span class="stringliteral">&quot;.txt&quot;</span>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="comment">// 文件输入 日志全部记录</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keyword">auto</span> basicSink = std::make_shared&lt;spdlog::sinks::basic_file_sink_mt&gt;(log_file_name);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        basicSink-&gt;set_level(spdlog::level::debug);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        basicSink-&gt;set_pattern(<span class="stringliteral">&quot;[%Y-%m-%d %H:%M:%S.%e] [%t] [%l] %v&quot;</span>);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        sinkList.push_back(basicSink);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="comment">// 设置异步模式</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <a class="code" href="../../d2/d04/a00281.html#ad6e1a472bffc86ab9e87384621bbe203">&#x202A;nml_logger</a> = std::make_shared&lt;spdlog::logger&gt;(<span class="stringliteral">&quot;both&quot;</span>, \</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                                    sinkList.begin(), \</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                                    sinkList.end());</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="comment">// register it if you need to access it globally</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        spdlog::register_logger(<a class="code" href="../../d2/d04/a00281.html#ad6e1a472bffc86ab9e87384621bbe203">&#x202A;nml_logger</a>);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="comment">// 设置日志记录级别</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="../../d2/d04/a00281.html#ad6e1a472bffc86ab9e87384621bbe203">&#x202A;nml_logger</a>-&gt;set_level(spdlog::level::trace);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <a class="code" href="../../d2/d04/a00281.html#ad6e1a472bffc86ab9e87384621bbe203">&#x202A;nml_logger</a>-&gt;set_level(spdlog::level::err);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="comment">// 设置 logger 格式[%^%L%$]</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="comment">// nml_logger-&gt;set_pattern(&quot;[%Y-%m-%d %H:%M:%S.%e] [%5l]  %v&quot;);</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="comment">// nml_logger-&gt;set_pattern(&quot;[%Y-%m-%d %H:%M:%S.%e] [%^%5l%$]  %v&quot;);</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="comment">// 设置当出发 err 或更严重的错误时立刻刷新日志到  disk</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <a class="code" href="../../d2/d04/a00281.html#ad6e1a472bffc86ab9e87384621bbe203">&#x202A;nml_logger</a>-&gt;flush_on(spdlog::level::err);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="comment">// 每3秒刷新 将数据 刷新到文件 避免日志崩溃未保存</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        spdlog::flush_every(std::chrono::seconds(3));</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <a class="code" href="../../d2/d04/a00281.html#ad6e1a472bffc86ab9e87384621bbe203">&#x202A;nml_logger</a>-&gt;info(<span class="stringliteral">&quot;======== Init SPDLOG ========&quot;</span>);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d04/a00281_a6363fe481724674897134ef2f0451cc9_cgraph.png" border="0" usemap="#d2/d04/a00281_a6363fe481724674897134ef2f0451cc9_cgraph" alt=""/></div>
+<map name="d2/d04/a00281_a6363fe481724674897134ef2f0451cc9_cgraph" id="d2/d04/a00281_a6363fe481724674897134ef2f0451cc9_cgraph">
+<area shape="rect" title="Initializes a new instance of the SpdLogger class" alt="" coords="5,5,89,32"/>
+<area shape="rect" href="../../d2/d04/a00281.html#af71b12a6478721f866a5c30eb66d1530" title="Check dir检查文件夹是否存在 不存在则新建 logs" alt="" coords="137,5,216,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abac163f51a0c2b8fed094eea16157dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abac163f51a0c2b8fed094eea16157dcd">&#9670;&nbsp;</a></span>SpdLogger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpdLogger::SpdLogger </td>
+          <td>(</td>
+          <td class="paramtype">const SpdLogger &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the SpdLogger class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameter1</td><td>&#x202A;The first parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad9cfd8db33f52bb28ff2c05df68ce404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9cfd8db33f52bb28ff2c05df68ce404">&#9670;&nbsp;</a></span>~SpdLogger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpdLogger::~SpdLogger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Finalizes an instance of the SpdLogger class </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d2/d04/a00281_source.html">utils_logger.h</a> 第 <a class="el" href="../../d2/d04/a00281_source.html#l00304">304</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        spdlog::drop_all();</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="abf99632984eacb1b8ce20e8bd2e25a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf99632984eacb1b8ce20e8bd2e25a08">&#9670;&nbsp;</a></span>__pad0__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Line __pad0__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d2/d04/a00281_source.html">utils_logger.h</a> 第 <a class="el" href="../../d2/d04/a00281_source.html#l00184">184</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a53ee13d70e3dd2e9c1c80859e8614624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ee13d70e3dd2e9c1c80859e8614624">&#9670;&nbsp;</a></span>m_instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">return m_instance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d2/d04/a00281_source.html">utils_logger.h</a> 第 <a class="el" href="../../d2/d04/a00281_source.html#l00185">185</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad6e1a472bffc86ab9e87384621bbe203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e1a472bffc86ab9e87384621bbe203">&#9670;&nbsp;</a></span>nml_logger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;spdlog::logger&gt; nml_logger</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;The nml logger </p>
+
+<p class="definition">在文件 <a class="el" href="../../d2/d04/a00281_source.html">utils_logger.h</a> 第 <a class="el" href="../../d2/d04/a00281_source.html#l00338">338</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa00281_html_ad6e1a472bffc86ab9e87384621bbe203"><div class="ttname"><a href="../../d2/d04/a00281.html#ad6e1a472bffc86ab9e87384621bbe203">&#x202A;nml_logger</a></div><div class="ttdeci">&#x202A;std::shared_ptr&lt; spdlog::logger &gt; nml_logger</div><div class="ttdoc">&#x202A;The nml logger</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00338">utils_logger.h:338</a></div></div>
+<div class="ttc" id="aa00281_html_af71b12a6478721f866a5c30eb66d1530"><div class="ttname"><a href="../../d2/d04/a00281.html#af71b12a6478721f866a5c30eb66d1530">&#x202A;check_dir</a></div><div class="ttdeci">&#x202A;static bool check_dir(const char *dir)</div><div class="ttdoc">&#x202A;Check dir检查文件夹是否存在 不存在则新建 logs</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00041">utils_logger.h:41</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d2/d04/a00281.html">&#x202A;utils_string.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d2/d04/a00281.html">&#x202A;utils_logger.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

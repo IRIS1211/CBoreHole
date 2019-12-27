@@ -1,0 +1,5 @@
+<map id="SplitFileName" name="SplitFileName">
+<area shape="rect" id="node1" title="将文件路径拆分为 文件路径和文件名称 删除拓展名" alt="" coords="176,31,279,57"/>
+<area shape="rect" id="node2" href="$d4/ddc/a00917.html#ad9fb6635d112a3e806762bd6d338605d" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据 对于写入数据, 使用 gConfig.sysPara 内容存储 到文件头信息中 对于读取数据,..." alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node3" href="$d2/df5/a00137.html#a146efc099cbdee49a56b4547d272db9b" title="判断指定的文件是否存在 // 给定flg 如果不存在则建立文件" alt="" coords="25,56,108,83"/>
+</map>

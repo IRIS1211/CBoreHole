@@ -1,0 +1,6 @@
+<map id="ImageProc::StoreImage" name="ImageProc::StoreImage">
+<area shape="rect" id="node1" title="将数据存储下来" alt="" coords="372,31,531,57"/>
+<area shape="rect" id="node2" href="$dd/d7a/a00921.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="201,31,324,57"/>
+<area shape="rect" id="node3" href="$db/deb/a00853.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,5,131,32"/>
+<area shape="rect" id="node4" href="$d5/dac/a00841.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,56,153,83"/>
+</map>

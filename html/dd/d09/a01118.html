@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;CSlider类 参考</title>
+<title>&#x202A;CBoreHole: &#x202A;Config类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -90,333 +90,448 @@ $(document).ready(function(){initNavTree('dd/d09/a01118.html','../../');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pri-slots">Private 槽</a> &#124;
-<a href="#pri-attribs">Private 属性</a>  </div>
+<a href="#pub-attribs">成员变量</a>  </div>
   <div class="headertitle">
-<div class="title">CSlider类 参考</div>  </div>
+<div class="title">Config类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>&#x202A;自定义滑动条实现, 滑动之后更改相应的值和相应的关系  
+<p>&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,  
  <a href="../../dd/d09/a01118.html#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d1/d44/a00098_source.html">Code\model\cslider.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d6/d2d/a00047_source.html">Code\inc\Config.h</a>&gt;</code></p>
 <div class="dynheader">
-类 CSlider 继承关系图:</div>
+Config 的协作图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d6/d8b/a01117.png" border="0" usemap="#_c_slider_inherit__map" alt="Inheritance graph"/></div>
-<map name="_c_slider_inherit__map" id="_c_slider_inherit__map">
-<area shape="rect" title="自定义滑动条实现, 滑动之后更改相应的值和相应的关系" alt="" coords="6,80,70,107"/>
-<area shape="rect" title=" " alt="" coords="5,5,71,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
-<div class="dynheader">
-CSlider 的协作图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d4/dc5/a01116.png" border="0" usemap="#_c_slider_coll__map" alt="Collaboration graph"/></div>
-<map name="_c_slider_coll__map" id="_c_slider_coll__map">
-<area shape="rect" title="自定义滑动条实现, 滑动之后更改相应的值和相应的关系" alt="" coords="6,80,70,107"/>
-<area shape="rect" title=" " alt="" coords="5,5,71,32"/>
+<div class="center"><img src="../../d4/dc5/a01116.png" border="0" usemap="#_config_coll__map" alt="Collaboration graph"/></div>
+<map name="_config_coll__map" id="_config_coll__map">
+<area shape="rect" title="全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中," alt="" coords="2095,776,2153,803"/>
+<area shape="rect" href="../../d5/d16/a01154.html" title="系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换" alt="" coords="1909,659,1981,685"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d8/d15/a01218" title="设置用户UI 参数" alt="" coords="1690,241,1795,268"/>
+<area shape="rect" href="../../d5/d16/a01154.html#de/d7e/a01222" title=" " alt="" coords="1330,132,1487,159"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d9/dbb/a01186" title="设置硬件的参数信息" alt="" coords="1677,420,1808,447"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d2/da6/a01210" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="1339,183,1478,225"/>
+<area shape="rect" href="../../d5/d16/a01154.html#dc/d19/a01190" title="脉冲参数" alt="" coords="1339,249,1478,290"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d0/d32/a01198" title="电子罗盘参数 调整罗盘数据" alt="" coords="1339,314,1478,355"/>
+<area shape="rect" title=" " alt="" coords="926,143,1081,185"/>
+<area shape="rect" title=" " alt="" coords="551,176,671,203"/>
+<area shape="rect" title="STL class" alt="" coords="237,176,351,203"/>
+<area shape="rect" title=" " alt="" coords="903,296,1104,323"/>
+<area shape="rect" title=" " alt="" coords="49,176,88,203"/>
+<area shape="rect" href="../../d3/d53/a01262.html" title="罗盘类型 结构体 用于列出不同种类的 罗盘" alt="" coords="552,305,669,332"/>
+<area shape="rect" title="STL class" alt="" coords="254,503,334,529"/>
+<area shape="rect" href="../../d5/d16/a01154.html#dc/d9e/a01206" title="窗口状态信息" alt="" coords="740,490,879,531"/>
+<area shape="rect" href="../../d5/d16/a01154.html#df/db5/a01158" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="1128,697,1283,724"/>
+<area shape="rect" href="../../d5/d16/a01154.html#dc/dee/a01166" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="1535,81,1653,108"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d6/d1e/a01234" title="配置 debug 参数" alt="" coords="1319,791,1498,817"/>
+<area shape="rect" href="../../d5/d16/a01154.html#dd/de9/a01182" title=" " alt="" coords="505,839,716,865"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d4/d13/a01162" title="记录 路径以及其他路径信息" alt="" coords="742,613,877,640"/>
+<area shape="rect" title="STL class" alt="" coords="5,495,132,537"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d5/d32/a01214" title="额外信息" alt="" coords="1339,379,1478,421"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d4/d5d/a01202" title="相机参数结构体" alt="" coords="1339,445,1478,486"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d9/d2e/a01194" title="探头参数" alt="" coords="1339,510,1478,551"/>
+<area shape="rect" href="../../d5/d16/a01154.html#dd/d9e/a01226" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="1683,740,1803,767"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d0/d58/a01230" title="可以存储的文件参数" alt="" coords="1307,740,1511,767"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d3/dc7/a01170" title="运行过程中的 图像参数" alt="" coords="939,887,1067,913"/>
+<area shape="rect" href="../../d5/d16/a01154.html#da/dfb/a01174" title="Image 处理参数, 作为图像展开参数" alt="" coords="519,941,703,982"/>
+<area shape="rect" href="../../d5/d16/a01154.html#d8/d11/a01178" title="Image Para 参数" alt="" coords="505,889,716,916"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:ab966c6a53f642a1ead50b2dbee480adf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#ab966c6a53f642a1ead50b2dbee480adf">CSlider</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:ab966c6a53f642a1ead50b2dbee480adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../dd/d09/a01118.html" title="&#x202A;自定义滑动条实现, 滑动之后更改相应的值和相应的关系">CSlider</a> class  <a href="../../dd/d09/a01118.html#ab966c6a53f642a1ead50b2dbee480adf">更多...</a><br /></td></tr>
-<tr class="separator:ab966c6a53f642a1ead50b2dbee480adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5d6a071ffbe6f0f5727afc211b5fb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#a2a5d6a071ffbe6f0f5727afc211b5fb9">Associate</a> (QLabel *label, int *data, bool over=true)</td></tr>
-<tr class="memdesc:a2a5d6a071ffbe6f0f5727afc211b5fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Associates  <a href="../../dd/d09/a01118.html#a2a5d6a071ffbe6f0f5727afc211b5fb9">更多...</a><br /></td></tr>
-<tr class="separator:a2a5d6a071ffbe6f0f5727afc211b5fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0c571c116924871e30444b192b792a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#abd0c571c116924871e30444b192b792a">Config</a> ()</td></tr>
+<tr class="memdesc:abd0c571c116924871e30444b192b792a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;构造函数, 可以初始化 或者 其他  <a href="../../dd/d09/a01118.html#abd0c571c116924871e30444b192b792a">更多...</a><br /></td></tr>
+<tr class="separator:abd0c571c116924871e30444b192b792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa28b92aaa35102c72b3196a7a2295ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#aaa28b92aaa35102c72b3196a7a2295ef">LoadParaFromYML</a> (const cv::FileStorage &amp;fs)</td></tr>
+<tr class="memdesc:aaa28b92aaa35102c72b3196a7a2295ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;从yml 中 读取参数  <a href="../../dd/d09/a01118.html#aaa28b92aaa35102c72b3196a7a2295ef">更多...</a><br /></td></tr>
+<tr class="separator:aaa28b92aaa35102c72b3196a7a2295ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb6ccd1f7a72de24216484582071010"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#adbb6ccd1f7a72de24216484582071010">WriteParaToYML</a> (cv::FileStorage &amp;fs)</td></tr>
+<tr class="memdesc:adbb6ccd1f7a72de24216484582071010"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将参数 写入到 yml 文件中  <a href="../../dd/d09/a01118.html#adbb6ccd1f7a72de24216484582071010">更多...</a><br /></td></tr>
+<tr class="separator:adbb6ccd1f7a72de24216484582071010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff2e60527d854a7f1d4b4f112881dcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#abff2e60527d854a7f1d4b4f112881dcb">LoadParaFromFile</a> (const <a class="el" href="../../d0/d39/a01138.html">IDOIFile</a> *file)</td></tr>
+<tr class="memdesc:abff2e60527d854a7f1d4b4f112881dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;从 自定义文件中读取参数  <a href="../../dd/d09/a01118.html#abff2e60527d854a7f1d4b4f112881dcb">更多...</a><br /></td></tr>
+<tr class="separator:abff2e60527d854a7f1d4b4f112881dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414b3cc20d2f938a239c6723809bc904"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#a414b3cc20d2f938a239c6723809bc904">WriteParaToFile</a> (const <a class="el" href="../../d0/d39/a01138.html">IDOIFile</a> *file)</td></tr>
+<tr class="memdesc:a414b3cc20d2f938a239c6723809bc904"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将参数写入到文件中  <a href="../../dd/d09/a01118.html#a414b3cc20d2f938a239c6723809bc904">更多...</a><br /></td></tr>
+<tr class="separator:a414b3cc20d2f938a239c6723809bc904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
-Private 槽</h2></td></tr>
-<tr class="memitem:a5c72f14d929ce90921f0d99491f2b33c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#a5c72f14d929ce90921f0d99491f2b33c">SetData</a> (void)</td></tr>
-<tr class="memdesc:a5c72f14d929ce90921f0d99491f2b33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Sets the data 根据滑动条的值 实时更新 label 的值  <a href="../../dd/d09/a01118.html#a5c72f14d929ce90921f0d99491f2b33c">更多...</a><br /></td></tr>
-<tr class="separator:a5c72f14d929ce90921f0d99491f2b33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private 属性</h2></td></tr>
-<tr class="memitem:a9d13acd7b5c46c5bd77118a58ab1e393"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#a9d13acd7b5c46c5bd77118a58ab1e393">m_label_</a></td></tr>
-<tr class="memdesc:a9d13acd7b5c46c5bd77118a58ab1e393"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;记录显示数据的label 指针  <a href="../../dd/d09/a01118.html#a9d13acd7b5c46c5bd77118a58ab1e393">更多...</a><br /></td></tr>
-<tr class="separator:a9d13acd7b5c46c5bd77118a58ab1e393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad318afb125d485c019f9d54b3e92fd5"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#aad318afb125d485c019f9d54b3e92fd5">m_data_</a></td></tr>
-<tr class="memdesc:aad318afb125d485c019f9d54b3e92fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;相关连的值, 更改之后相应的值 会改变  <a href="../../dd/d09/a01118.html#aad318afb125d485c019f9d54b3e92fd5">更多...</a><br /></td></tr>
-<tr class="separator:aad318afb125d485c019f9d54b3e92fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a45ca77cfacd4d77e062e2c8b10d4cd78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#a45ca77cfacd4d77e062e2c8b10d4cd78">VERSION_</a> = 100</td></tr>
+<tr class="memdesc:a45ca77cfacd4d77e062e2c8b10d4cd78"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;记录当前的版本 1.0  <a href="../../dd/d09/a01118.html#a45ca77cfacd4d77e062e2c8b10d4cd78">更多...</a><br /></td></tr>
+<tr class="separator:a45ca77cfacd4d77e062e2c8b10d4cd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1c590ef3c4492e16830021d2867c45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d16/a01154.html">RunPara</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">mRunPara</a></td></tr>
+<tr class="memdesc:a3f1c590ef3c4492e16830021d2867c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;系统运行参数  <a href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">更多...</a><br /></td></tr>
+<tr class="separator:a3f1c590ef3c4492e16830021d2867c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d3a8bcb64807efd5755b4028a0ebf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d16/a01154.html#d6/d1e/a01234">RunPara::StCFG::StDebug</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html#a80d3a8bcb64807efd5755b4028a0ebf9">mDebug</a></td></tr>
+<tr class="separator:a80d3a8bcb64807efd5755b4028a0ebf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">自定义滑动条实现, 滑动之后更改相应的值和相应的关系 </p>
+<div class="textblock"><p class="DocNodeLTR">全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中, </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;提供二者的相互转换, 便于后期分离参数</li>
+</ul>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/10 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d1/d44/a00098_source.html">cslider.h</a> 第 <a class="el" href="../../d1/d44/a00098_source.html#l00033">33</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d6/d2d/a00047_source.html">Config.h</a> 第 <a class="el" href="../../d6/d2d/a00047_source.html#l00029">29</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="ab966c6a53f642a1ead50b2dbee480adf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab966c6a53f642a1ead50b2dbee480adf">&#9670;&nbsp;</a></span>CSlider()</h2>
+<a id="abd0c571c116924871e30444b192b792a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0c571c116924871e30444b192b792a">&#9670;&nbsp;</a></span>Config()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CSlider::CSlider </td>
+          <td class="memname">Config::Config </td>
           <td>(</td>
-          <td class="paramtype">QWidget *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>&#x202A;Initializes a new instance of the <a class="el" href="../../dd/d09/a01118.html" title="&#x202A;自定义滑动条实现, 滑动之后更改相应的值和相应的关系">CSlider</a> class </p>
+<p>&#x202A;构造函数, 可以初始化 或者 其他 </p>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/10</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;If non-null, the parent</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/10</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;(Optional) If non-null, the parent </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/25 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d9/d77/a00095_source.html">cslider.cpp</a> 第 <a class="el" href="../../d9/d77/a00095_source.html#l00022">22</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                 :</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QSlider(parent),</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../dd/d09/a01118.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;m_label_</a>(<span class="keyword">nullptr</span>),</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../dd/d09/a01118.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a>(<span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// 根据具体情况 设置相应的内容</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QObject::connect(<span class="keyword">this</span>, &amp;QSlider::valueChanged, <span class="keyword">this</span>,&amp;<a class="code" href="../../dd/d09/a01118.html#a5c72f14d929ce90921f0d99491f2b33c">&#x202A;CSlider::SetData</a>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dd/d09/a01118_ab966c6a53f642a1ead50b2dbee480adf_cgraph.png" border="0" usemap="#dd/d09/a01118_ab966c6a53f642a1ead50b2dbee480adf_cgraph" alt=""/></div>
-<map name="dd/d09/a01118_ab966c6a53f642a1ead50b2dbee480adf_cgraph" id="dd/d09/a01118_ab966c6a53f642a1ead50b2dbee480adf_cgraph">
-<area shape="rect" title="Initializes a new instance of the CSlider class" alt="" coords="5,5,120,32"/>
-<area shape="rect" href="../../dd/d09/a01118.html#a5c72f14d929ce90921f0d99491f2b33c" title="Sets the data 根据滑动条的值 实时更新 label 的值" alt="" coords="168,5,287,32"/>
-</map>
-</div>
-
+<p class="definition">在文件 <a class="el" href="../../d7/d9a/a00152_source.html">Config.cc</a> 第 <a class="el" href="../../d7/d9a/a00152_source.html#l00712">712</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;{</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="a2a5d6a071ffbe6f0f5727afc211b5fb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a5d6a071ffbe6f0f5727afc211b5fb9">&#9670;&nbsp;</a></span>Associate()</h2>
+<a id="abff2e60527d854a7f1d4b4f112881dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff2e60527d854a7f1d4b4f112881dcb">&#9670;&nbsp;</a></span>LoadParaFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool CSlider::Associate </td>
+          <td class="memname">bool Config::LoadParaFromFile </td>
           <td>(</td>
-          <td class="paramtype">QLabel *&#160;</td>
-          <td class="paramname"><em>label</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d39/a01138.html">IDOIFile</a> *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>over</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>&#x202A;Associates </p>
+<p>&#x202A;从 自定义文件中读取参数 </p>
+<p class="DocNodeLTR">Loads para from file</p>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/10</dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/28</dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">label</td><td>&#x202A;If non-null, the label </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>&#x202A;If non-null, the data </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">over</td><td>&#x202A;True to over</td></tr>
+    <tr><td class="paramname">file</td><td>&#x202A;The file</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/10</dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/25</dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">label</td><td>&#x202A;If non-null, the label </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>&#x202A;If non-null, the data </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">over</td><td>&#x202A;(Optional) True to over</td></tr>
+    <tr><td class="paramname">file</td><td>&#x202A;The file</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d9/d77/a00095_source.html">cslider.cpp</a> 第 <a class="el" href="../../d9/d77/a00095_source.html#l00046">46</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// 有值的情况 返回出错 否则直接进行</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>(!over &amp;&amp; (<a class="code" href="../../dd/d09/a01118.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;m_label_</a> || <a class="code" href="../../dd/d09/a01118.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a>))</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 如果需要覆盖 直接将值覆盖掉原有值</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../dd/d09/a01118.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;m_label_</a> = label;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../dd/d09/a01118.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a>  = data;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<p class="definition">在文件 <a class="el" href="../../d7/d9a/a00152_source.html">Config.cc</a> 第 <a class="el" href="../../d7/d9a/a00152_source.html#l00766">766</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;{</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#ab50487cc4124576dfbb2af0445a595c0">&#x202A;ReadRunParaFromFile</a>(file-&gt;<a class="code" href="../../d0/d39/a01138.html#a1bf6bd70fa3480907b4390f92c7a125a">&#x202A;m_FStream_</a>);</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
+函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dd/d09/a01118_a2a5d6a071ffbe6f0f5727afc211b5fb9_icgraph.png" border="0" usemap="#dd/d09/a01118_a2a5d6a071ffbe6f0f5727afc211b5fb9_icgraph" alt=""/></div>
-<map name="dd/d09/a01118_a2a5d6a071ffbe6f0f5727afc211b5fb9_icgraph" id="dd/d09/a01118_a2a5d6a071ffbe6f0f5727afc211b5fb9_icgraph">
-<area shape="rect" title="Associates" alt="" coords="860,97,991,123"/>
-<area shape="rect" href="../../de/d91/a01034.html#ab19d4b6c6091b475253fabf838d92ccd" title="Initializes the user interface" alt="" coords="669,71,795,98"/>
-<area shape="rect" href="../../da/d73/a01090.html#a5ae6f45b6b134db391e806306eba0711" title="Updates the user interface 根据运行参数 更改目前程序界面上的参数" alt="" coords="652,122,812,149"/>
-<area shape="rect" href="../../de/d91/a01034.html#ae102c72b4049bec2a4c5c41fd8185a28" title="Handles button cancel clicked signals" alt="" coords="424,5,604,47"/>
-<area shape="rect" href="../../de/d91/a01034.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="433,71,595,98"/>
-<area shape="rect" href="../../da/d73/a01090.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,147,376,174"/>
-<area shape="rect" href="../../da/d73/a01090.html#a4b3c834d510144adafcb21791be6c86f" title="设定相关槽和信号的连接" alt="" coords="427,173,601,199"/>
-<area shape="rect" href="../../d7/dce/a00143.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="79,118,130,145"/>
-<area shape="rect" href="../../de/d91/a01034.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,169,204,211"/>
+<div class="center"><img src="../../dd/d09/a01118_abff2e60527d854a7f1d4b4f112881dcb_cgraph.png" border="0" usemap="#dd/d09/a01118_abff2e60527d854a7f1d4b4f112881dcb_cgraph" alt=""/></div>
+<map name="dd/d09/a01118_abff2e60527d854a7f1d4b4f112881dcb_cgraph" id="dd/d09/a01118_abff2e60527d854a7f1d4b4f112881dcb_cgraph">
+<area shape="rect" title="从 自定义文件中读取参数" alt="" coords="5,23,177,50"/>
+<area shape="rect" href="../../d5/d16/a01154.html#ab50487cc4124576dfbb2af0445a595c0" title="从二进制流文件中读取文件" alt="" coords="225,23,436,50"/>
+<area shape="rect" href="../../d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c" title="Character 2 string" alt="" coords="724,23,889,50"/>
+<area shape="rect" href="../../dc/d25/a01406.html#a5523926cd82a36f59589a82da8adf31b" title="读取基本数据类型" alt="" coords="506,23,654,50"/>
+<area shape="rect" href="../../dc/d25/a01406.html#a866a76a1d5720a62a03dc7ef7502cd25" title="从文件流中读取一个 字符串" alt="" coords="484,74,676,101"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a5c72f14d929ce90921f0d99491f2b33c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c72f14d929ce90921f0d99491f2b33c">&#9670;&nbsp;</a></span>SetData</h2>
+<a id="aaa28b92aaa35102c72b3196a7a2295ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa28b92aaa35102c72b3196a7a2295ef">&#9670;&nbsp;</a></span>LoadParaFromYML()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void CSlider::SetData </td>
+          <td class="memname">bool Config::LoadParaFromYML </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const cv::FileStorage &amp;&#160;</td>
+          <td class="paramname"><em>fs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>&#x202A;Sets the data 根据滑动条的值 实时更新 label 的值 </p>
+<p>&#x202A;从yml 中 读取参数 </p>
+<p class="DocNodeLTR">Loads para from yml</p>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/13 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/28</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>&#x202A;The file system</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/25</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>&#x202A;The file system</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d9/d77/a00095_source.html">cslider.cpp</a> 第 <a class="el" href="../../d9/d77/a00095_source.html#l00066">66</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dd/d09/a01118.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a>)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        *<a class="code" href="../../dd/d09/a01118.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a> = this-&gt;value();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        qDebug() &lt;&lt; QString(<span class="stringliteral">&quot;slider:%1&quot;</span>).arg(*<a class="code" href="../../dd/d09/a01118.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dd/d09/a01118.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;m_label_</a>)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="../../dd/d09/a01118.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;m_label_</a>-&gt;setNum(this-&gt;value());</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<p class="definition">在文件 <a class="el" href="../../d7/d9a/a00152_source.html">Config.cc</a> 第 <a class="el" href="../../d7/d9a/a00152_source.html#l00729">729</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;{</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    <a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#aad8567884f1564ee1657671892c7ad06">&#x202A;LoadRunParaFromYML</a>(fs);</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    this-&gt;<a class="code" href="../../dd/d09/a01118.html#a45ca77cfacd4d77e062e2c8b10d4cd78">&#x202A;VERSION_</a> = <a class="code" href="../../d8/df1/a01414.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a>(<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#abdb922f4f6c3aae4f0815fec2c5b5a28">&#x202A;FileHeader</a>.<a class="code" href="../../d5/d16/a01154.html#a9ea4283c57c2fc38193e128c85cbb5d7">&#x202A;strIDOIFileVersion</a>);</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    this-&gt;<a class="code" href="../../dd/d09/a01118.html#a80d3a8bcb64807efd5755b4028a0ebf9">&#x202A;mDebug</a> = &amp;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../d5/d16/a01154.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>;     <span class="comment">// 设置快捷访问</span></div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d09/a01118_aaa28b92aaa35102c72b3196a7a2295ef_cgraph.png" border="0" usemap="#dd/d09/a01118_aaa28b92aaa35102c72b3196a7a2295ef_cgraph" alt=""/></div>
+<map name="dd/d09/a01118_aaa28b92aaa35102c72b3196a7a2295ef_cgraph" id="dd/d09/a01118_aaa28b92aaa35102c72b3196a7a2295ef_cgraph">
+<area shape="rect" title="从yml 中 读取参数" alt="" coords="5,77,184,104"/>
+<area shape="rect" href="../../d5/d16/a01154.html#aad8567884f1564ee1657671892c7ad06" title="从 yml 文件 读取参数, 使用" alt="" coords="232,48,447,75"/>
+<area shape="rect" href="../../d8/df1/a01414.html#a82ed3e2282101b5d3326df68e6098898" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="252,99,427,141"/>
+<area shape="rect" href="../../d5/d16/a01154.html#ade25200381502a1035b48ff694f4e7c9" title="Reads com para form yml 解析 罗盘参数" alt="" coords="495,5,716,32"/>
+<area shape="rect" href="../../d6/d2f/a01394.html#a8387a1da4bd9a03f42b6037f5370a28e" title="将字符串按照分割字符分割之后 生成矩形" alt="" coords="539,56,671,83"/>
+<area shape="rect" href="../../d8/df1/a01414.html#a14c76ec9d896d7eaa7193444f3277c59" title="Hexadecimal 2 character array hex 字符串 转换成 数组" alt="" coords="764,5,935,32"/>
+<area shape="rect" href="../../d8/df1/a01414.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="983,5,1144,32"/>
+<area shape="rect" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="1192,5,1347,32"/>
+<area shape="rect" href="../../d8/df1/a01414.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="777,81,921,108"/>
+</map>
+</div>
+<div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dd/d09/a01118_a5c72f14d929ce90921f0d99491f2b33c_icgraph.png" border="0" usemap="#dd/d09/a01118_a5c72f14d929ce90921f0d99491f2b33c_icgraph" alt=""/></div>
-<map name="dd/d09/a01118_a5c72f14d929ce90921f0d99491f2b33c_icgraph" id="dd/d09/a01118_a5c72f14d929ce90921f0d99491f2b33c_icgraph">
-<area shape="rect" title="Sets the data 根据滑动条的值 实时更新 label 的值" alt="" coords="168,5,287,32"/>
-<area shape="rect" href="../../dd/d09/a01118.html#ab966c6a53f642a1ead50b2dbee480adf" title="Initializes a new instance of the CSlider class" alt="" coords="5,5,120,32"/>
+<div class="center"><img src="../../dd/d09/a01118_aaa28b92aaa35102c72b3196a7a2295ef_icgraph.png" border="0" usemap="#dd/d09/a01118_aaa28b92aaa35102c72b3196a7a2295ef_icgraph" alt=""/></div>
+<map name="dd/d09/a01118_aaa28b92aaa35102c72b3196a7a2295ef_icgraph" id="dd/d09/a01118_aaa28b92aaa35102c72b3196a7a2295ef_icgraph">
+<area shape="rect" title="从yml 中 读取参数" alt="" coords="419,31,597,57"/>
+<area shape="rect" href="../../de/d07/a01146.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="初始化 全局参数" alt="" coords="249,5,371,32"/>
+<area shape="rect" href="../../d3/de5/a00209.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="104,56,201,83"/>
+<area shape="rect" href="../../de/d07/a01146.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="113,5,192,32"/>
+<area shape="rect" href="../../db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a414b3cc20d2f938a239c6723809bc904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414b3cc20d2f938a239c6723809bc904">&#9670;&nbsp;</a></span>WriteParaToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Config::WriteParaToFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d39/a01138.html">IDOIFile</a> *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;将参数写入到文件中 </p>
+<p class="DocNodeLTR">Writes a para to file</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/28</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&#x202A;The file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/25</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&#x202A;The file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d9a/a00152_source.html">Config.cc</a> 第 <a class="el" href="../../d7/d9a/a00152_source.html#l00783">783</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;{</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#aa2e8fbcdd233ecc35b7798932be4bc46">&#x202A;WriteRunParaToFile</a> (file-&gt;<a class="code" href="../../d0/d39/a01138.html#a1bf6bd70fa3480907b4390f92c7a125a">&#x202A;m_FStream_</a>);</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d09/a01118_a414b3cc20d2f938a239c6723809bc904_cgraph.png" border="0" usemap="#dd/d09/a01118_a414b3cc20d2f938a239c6723809bc904_cgraph" alt=""/></div>
+<map name="dd/d09/a01118_a414b3cc20d2f938a239c6723809bc904_cgraph" id="dd/d09/a01118_a414b3cc20d2f938a239c6723809bc904_cgraph">
+<area shape="rect" title="将参数写入到文件中" alt="" coords="5,97,164,123"/>
+<area shape="rect" href="../../d5/d16/a01154.html#aa2e8fbcdd233ecc35b7798932be4bc46" title="通过文件指针 将数据写入到二进制数据流中" alt="" coords="212,97,408,123"/>
+<area shape="rect" href="../../d8/df1/a01414.html#ad98ced7a9727883c0f305e144db03024" title="String 2 character" alt="" coords="679,126,844,153"/>
+<area shape="rect" href="../../d8/df1/a01414.html#a82ed3e2282101b5d3326df68e6098898" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="456,5,631,47"/>
+<area shape="rect" href="../../dc/d25/a01406.html#a7fbb7bbb704161e7512dd9edc091bb23" title="Writes a data 写入基本数据类型" alt="" coords="469,122,618,149"/>
+<area shape="rect" href="../../dc/d25/a01406.html#ae9335a7520c43095ac8312c0901e9bd4" title="将一个字符串写入到二进制文件流中" alt="" coords="465,173,621,215"/>
+<area shape="rect" href="../../d8/df1/a01414.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="689,13,833,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adbb6ccd1f7a72de24216484582071010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb6ccd1f7a72de24216484582071010">&#9670;&nbsp;</a></span>WriteParaToYML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Config::WriteParaToYML </td>
+          <td>(</td>
+          <td class="paramtype">cv::FileStorage &amp;&#160;</td>
+          <td class="paramname"><em>fs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;将参数 写入到 yml 文件中 </p>
+<p class="DocNodeLTR">Writes a para to yml</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/28</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">fs</td><td>&#x202A;The file system</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/25</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">fs</td><td>&#x202A;The file system</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d9a/a00152_source.html">Config.cc</a> 第 <a class="el" href="../../d7/d9a/a00152_source.html#l00749">749</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;{</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a4745d779fa1d892d5cb7bbb8fe499f55">&#x202A;WriteRunParaToYML</a>(fs);</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d09/a01118_adbb6ccd1f7a72de24216484582071010_cgraph.png" border="0" usemap="#dd/d09/a01118_adbb6ccd1f7a72de24216484582071010_cgraph" alt=""/></div>
+<map name="dd/d09/a01118_adbb6ccd1f7a72de24216484582071010_cgraph" id="dd/d09/a01118_adbb6ccd1f7a72de24216484582071010_cgraph">
+<area shape="rect" title="将参数 写入到 yml 文件中" alt="" coords="5,5,171,32"/>
+<area shape="rect" href="../../d5/d16/a01154.html#a4745d779fa1d892d5cb7bbb8fe499f55" title="将参数 写入到 YML 文件中" alt="" coords="219,5,421,32"/>
+<area shape="rect" href="../../d8/df1/a01414.html#afe216aed245f8f433cfc9b5e8c611754" title="在字符串前后 添加 引号 双引号 用于YML 写入" alt="" coords="469,5,659,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d09/a01118_adbb6ccd1f7a72de24216484582071010_icgraph.png" border="0" usemap="#dd/d09/a01118_adbb6ccd1f7a72de24216484582071010_icgraph" alt=""/></div>
+<map name="dd/d09/a01118_adbb6ccd1f7a72de24216484582071010_icgraph" id="dd/d09/a01118_adbb6ccd1f7a72de24216484582071010_icgraph">
+<area shape="rect" title="将参数 写入到 yml 文件中" alt="" coords="151,5,316,32"/>
+<area shape="rect" href="../../d3/de5/a00209.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="5,5,103,32"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">结构体成员变量说明</h2>
-<a id="aad318afb125d485c019f9d54b3e92fd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad318afb125d485c019f9d54b3e92fd5">&#9670;&nbsp;</a></span>m_data_</h2>
+<a id="a80d3a8bcb64807efd5755b4028a0ebf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d3a8bcb64807efd5755b4028a0ebf9">&#9670;&nbsp;</a></span>mDebug</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int* CSlider::m_data_</td>
+          <td class="memname"><a class="el" href="../../d5/d16/a01154.html#d6/d1e/a01234">RunPara::StCFG::StDebug</a>* Config::mDebug</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>&#x202A;相关连的值, 更改之后相应的值 会改变 </p>
-
-<p class="definition">在文件 <a class="el" href="../../d1/d44/a00098_source.html">cslider.h</a> 第 <a class="el" href="../../d1/d44/a00098_source.html#l00082">82</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d6/d2d/a00047_source.html">Config.h</a> 第 <a class="el" href="../../d6/d2d/a00047_source.html#l00035">35</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a9d13acd7b5c46c5bd77118a58ab1e393"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d13acd7b5c46c5bd77118a58ab1e393">&#9670;&nbsp;</a></span>m_label_</h2>
+<a id="a3f1c590ef3c4492e16830021d2867c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1c590ef3c4492e16830021d2867c45">&#9670;&nbsp;</a></span>mRunPara</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QLabel* CSlider::m_label_</td>
+          <td class="memname"><a class="el" href="../../d5/d16/a01154.html">RunPara</a> Config::mRunPara</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>&#x202A;记录显示数据的label 指针 </p>
+<p>&#x202A;系统运行参数 </p>
 
-<p class="definition">在文件 <a class="el" href="../../d1/d44/a00098_source.html">cslider.h</a> 第 <a class="el" href="../../d1/d44/a00098_source.html#l00081">81</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d6/d2d/a00047_source.html">Config.h</a> 第 <a class="el" href="../../d6/d2d/a00047_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a45ca77cfacd4d77e062e2c8b10d4cd78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ca77cfacd4d77e062e2c8b10d4cd78">&#9670;&nbsp;</a></span>VERSION_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Config::VERSION_ = 100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;记录当前的版本 1.0 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d6/d2d/a00047_source.html">Config.h</a> 第 <a class="el" href="../../d6/d2d/a00047_source.html#l00032">32</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/model/<a class="el" href="../../d1/d44/a00098_source.html">cslider.h</a></li>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/model/<a class="el" href="../../d9/d77/a00095_source.html">cslider.cpp</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../d6/d2d/a00047_source.html">Config.h</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/src/<a class="el" href="../../d7/d9a/a00152_source.html">Config.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01118_html_a9d13acd7b5c46c5bd77118a58ab1e393"><div class="ttname"><a href="../../dd/d09/a01118.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;CSlider::m_label_</a></div><div class="ttdeci">&#x202A;QLabel * m_label_</div><div class="ttdoc">&#x202A;记录显示数据的label 指针</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00081">cslider.h:81</a></div></div>
-<div class="ttc" id="aa01118_html_a5c72f14d929ce90921f0d99491f2b33c"><div class="ttname"><a href="../../dd/d09/a01118.html#a5c72f14d929ce90921f0d99491f2b33c">&#x202A;CSlider::SetData</a></div><div class="ttdeci">&#x202A;void SetData(void)</div><div class="ttdoc">&#x202A;Sets the data 根据滑动条的值 实时更新 label 的值</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d77/a00095_source.html#l00066">cslider.cpp:66</a></div></div>
-<div class="ttc" id="aa01118_html_aad318afb125d485c019f9d54b3e92fd5"><div class="ttname"><a href="../../dd/d09/a01118.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;CSlider::m_data_</a></div><div class="ttdeci">&#x202A;int * m_data_</div><div class="ttdoc">&#x202A;相关连的值, 更改之后相应的值 会改变</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00082">cslider.h:82</a></div></div>
+<div class="ttc" id="aa01154_html_a9ea4283c57c2fc38193e128c85cbb5d7"><div class="ttname"><a href="../../d5/d16/a01154.html#a9ea4283c57c2fc38193e128c85cbb5d7">&#x202A;RunPara::StFileHeader::strIDOIFileVersion</a></div><div class="ttdeci">&#x202A;std::string strIDOIFileVersion</div><div class="ttdoc">&#x202A;自定义文件格式版本</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00044">runpara.h:44</a></div></div>
+<div class="ttc" id="aa01154_html_aad8567884f1564ee1657671892c7ad06"><div class="ttname"><a href="../../d5/d16/a01154.html#aad8567884f1564ee1657671892c7ad06">&#x202A;RunPara::LoadRunParaFromYML</a></div><div class="ttdeci">&#x202A;bool LoadRunParaFromYML(const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;从 yml 文件 读取参数, 使用</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00032">Config.cc:32</a></div></div>
+<div class="ttc" id="aa01154_html_aa2e8fbcdd233ecc35b7798932be4bc46"><div class="ttname"><a href="../../d5/d16/a01154.html#aa2e8fbcdd233ecc35b7798932be4bc46">&#x202A;RunPara::WriteRunParaToFile</a></div><div class="ttdeci">&#x202A;bool WriteRunParaToFile(std::fstream *pfile)</div><div class="ttdoc">&#x202A;通过文件指针 将数据写入到二进制数据流中</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00380">Config.cc:380</a></div></div>
+<div class="ttc" id="aa01154_html_a55676b481748b3169abcad0b15dab03f"><div class="ttname"><a href="../../d5/d16/a01154.html#a55676b481748b3169abcad0b15dab03f">&#x202A;RunPara::StCFG::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG::StDebug Debug</div></div>
+<div class="ttc" id="aa01414_html_a82ed3e2282101b5d3326df68e6098898"><div class="ttname"><a href="../../d8/df1/a01414.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a></div><div class="ttdeci">&#x202A;static int StringVersionToInt(const std::string &amp;str)</div><div class="ttdoc">&#x202A;将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00341">utils_string.cc:341</a></div></div>
+<div class="ttc" id="aa01138_html_a1bf6bd70fa3480907b4390f92c7a125a"><div class="ttname"><a href="../../d0/d39/a01138.html#a1bf6bd70fa3480907b4390f92c7a125a">&#x202A;IDOIFile::m_FStream_</a></div><div class="ttdeci">&#x202A;std::fstream * m_FStream_</div><div class="ttdoc">&#x202A;文件指针, 用于操作文件</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00197">IDOIFile.h:197</a></div></div>
+<div class="ttc" id="aa01154_html_ab50487cc4124576dfbb2af0445a595c0"><div class="ttname"><a href="../../d5/d16/a01154.html#ab50487cc4124576dfbb2af0445a595c0">&#x202A;RunPara::ReadRunParaFromFile</a></div><div class="ttdeci">&#x202A;bool ReadRunParaFromFile(std::fstream *pfile)</div><div class="ttdoc">&#x202A;从二进制流文件中读取文件</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00526">Config.cc:526</a></div></div>
+<div class="ttc" id="aa01154_html_abdb922f4f6c3aae4f0815fec2c5b5a28"><div class="ttname"><a href="../../d5/d16/a01154.html#abdb922f4f6c3aae4f0815fec2c5b5a28">&#x202A;RunPara::FileHeader</a></div><div class="ttdeci">&#x202A;struct RunPara::StFileHeader FileHeader</div></div>
+<div class="ttc" id="aa01118_html_a80d3a8bcb64807efd5755b4028a0ebf9"><div class="ttname"><a href="../../dd/d09/a01118.html#a80d3a8bcb64807efd5755b4028a0ebf9">&#x202A;Config::mDebug</a></div><div class="ttdeci">&#x202A;RunPara::StCFG::StDebug * mDebug</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00035">Config.h:35</a></div></div>
+<div class="ttc" id="aa01154_html_a4745d779fa1d892d5cb7bbb8fe499f55"><div class="ttname"><a href="../../d5/d16/a01154.html#a4745d779fa1d892d5cb7bbb8fe499f55">&#x202A;RunPara::WriteRunParaToYML</a></div><div class="ttdeci">&#x202A;bool WriteRunParaToYML(cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;将参数 写入到 YML 文件中</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00185">Config.cc:185</a></div></div>
+<div class="ttc" id="aa01118_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01118_html_a45ca77cfacd4d77e062e2c8b10d4cd78"><div class="ttname"><a href="../../dd/d09/a01118.html#a45ca77cfacd4d77e062e2c8b10d4cd78">&#x202A;Config::VERSION_</a></div><div class="ttdeci">&#x202A;int VERSION_</div><div class="ttdoc">&#x202A;记录当前的版本 1.0</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00032">Config.h:32</a></div></div>
+<div class="ttc" id="aa01154_html_a1ca5d1037652d0b772952ae0716d7a63"><div class="ttname"><a href="../../d5/d16/a01154.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG CFG</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dd/d09/a01118.html">&#x202A;CSlider</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d09/a01118.html">&#x202A;Config</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

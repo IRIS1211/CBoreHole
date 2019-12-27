@@ -1,0 +1,4 @@
+<map id="WorkWindow::ShowMatOnQtLabel" name="WorkWindow::ShowMatOnQtLabel">
+<area shape="rect" id="node1" title="将一副图像显示在 设定的 Label 上" alt="" coords="5,5,228,32"/>
+<area shape="rect" id="node2" href="$d8/d41/a00038.html#a51b816b14fb11dbdb1d0e7986cb0aca9" title="opencv Mat格式转换为 QT 的 QImage" alt="" coords="276,5,387,32"/>
+</map>

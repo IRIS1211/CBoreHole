@@ -1,0 +1,9 @@
+<map id="SerialData::SetFrameByConfig" name="SerialData::SetFrameByConfig">
+<area shape="rect" id="node1" title="Sets frame header 根据罗盘类型设置通信协议" alt="" coords="653,56,852,83"/>
+<area shape="rect" id="node2" href="$d7/dc5/a01242.html#ae35193380915a1a21e06d53d45e71e2b" title="默认构造长度" alt="" coords="447,5,597,32"/>
+<area shape="rect" id="node3" href="$d7/d73/a01266.html#a4d356bce746d2a91ab02ec10914a34b2" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="439,56,605,83"/>
+<area shape="rect" id="node7" href="$dd/d52/a00221.html#a67f60ab92ddb871595158e28582a90eb" title=" " alt="" coords="473,107,571,133"/>
+<area shape="rect" id="node4" href="$d7/d73/a01266.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="200,56,391,83"/>
+<area shape="rect" id="node5" href="$de/d33/a01274.html#a7597205c96689c706eea3c64d87ba180" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="5,19,152,61"/>
+<area shape="rect" id="node6" href="$d5/ddf/a00224.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="30,85,127,112"/>
+</map>

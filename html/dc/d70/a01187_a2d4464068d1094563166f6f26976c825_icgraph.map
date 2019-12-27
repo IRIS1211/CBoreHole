@@ -1,0 +1,7 @@
+<map id="SerialProc::ProcSerialData" name="SerialProc::ProcSerialData">
+<area shape="rect" id="node1" title="循环处理 串口 数据" alt="" coords="824,5,1001,32"/>
+<area shape="rect" id="node2" href="$dc/d70/a01187.html#ab481e15af6902cba13410c1e665100ff" title="Slot timer run 设置定时器时间到了之后执行的循环操作" alt="" coords="604,5,776,32"/>
+<area shape="rect" id="node3" href="$dc/d70/a01187.html#a4d356bce746d2a91ab02ec10914a34b2" title="完成 参数初始化 串口处理 初始化参数" alt="" coords="389,5,556,32"/>
+<area shape="rect" id="node4" href="$dc/d70/a01187.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="151,5,341,32"/>
+<area shape="rect" id="node5" href="$d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="5,5,103,32"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="UnitTest::testIDOIFileAppend" name="UnitTest::testIDOIFileAppend">
+<area shape="rect" id="node1" title="验证文件 附加操作" alt="" coords="5,81,196,108"/>
+<area shape="rect" id="node2" href="$d0/d39/a01138.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2" title="写入新一批的图像 TODO(SChen00) 改种指针处理原始数据" alt="" coords="244,5,391,32"/>
+<area shape="rect" id="node3" href="$d0/d39/a01138.html#aca27d2fd88c3c80c26dd57f4d8404a1e" title="读文件 参数" alt="" coords="251,56,384,83"/>
+<area shape="rect" id="node9" href="$d0/d39/a01138.html#a70c5db6374434b417972bb28a1144029" title="文件操作" alt="" coords="258,107,377,133"/>
+<area shape="rect" id="node10" href="$d0/d39/a01138.html#ab0e31dfdd11ff5a789178ff0e70dc15c" title="Writes the para" alt="" coords="252,157,383,184"/>
+<area shape="rect" id="node4" href="$d0/d39/a01138.html#a4ba4a9e516d1015d96767e94e16fd91f" title=" " alt="" coords="439,56,595,83"/>
+<area shape="rect" id="node5" href="$d5/d16/a01154.html#ab50487cc4124576dfbb2af0445a595c0" title="从二进制流文件中读取文件" alt="" coords="643,56,853,83"/>
+<area shape="rect" id="node6" href="$d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c" title="Character 2 string" alt="" coords="1141,56,1307,83"/>
+<area shape="rect" id="node7" href="$dc/d25/a01406.html#a5523926cd82a36f59589a82da8adf31b" title="读取基本数据类型" alt="" coords="923,56,1071,83"/>
+<area shape="rect" id="node8" href="$dc/d25/a01406.html#a866a76a1d5720a62a03dc7ef7502cd25" title="从文件流中读取一个 字符串" alt="" coords="901,107,1093,133"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="getDiskOccupy" name="getDiskOccupy">
+<area shape="rect" id="node1" title="获取本磁盘的占用" alt="" coords="5,31,116,57"/>
+<area shape="rect" id="node2" href="$d3/d5e/a00275.html#a3c32b3164adb610ebd071218bb4c388a" title="获取电脑所有盘符名" alt="" coords="165,5,265,32"/>
+<area shape="rect" id="node3" href="$d3/d5e/a00275.html#a2fa06e07e6a6dd1740cbc879aced80d1" title="获取磁盘容量" alt="" coords="164,56,267,83"/>
+</map>

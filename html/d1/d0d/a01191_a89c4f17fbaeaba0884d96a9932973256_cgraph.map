@@ -1,0 +1,13 @@
+<map id="SetWindow::slot_PreviewCamera" name="SetWindow::slot_PreviewCamera">
+<area shape="rect" id="node1" title="Slot show camera" alt="" coords="5,132,219,159"/>
+<area shape="rect" id="node2" href="$d8/d41/a00038.html#a0dd08ab91977a2738f33adbd7e8306b2" title=" " alt="" coords="301,5,401,32"/>
+<area shape="rect" id="node3" href="$db/dbb/a01047.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="293,56,408,83"/>
+<area shape="rect" id="node4" href="$db/dbb/a01047.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="301,107,401,133"/>
+<area shape="rect" id="node5" href="$d3/d42/a01275.html#a3f1a23663337082bc684229123014abb" title=" " alt="" coords="271,157,430,184"/>
+<area shape="rect" id="node7" href="$db/dbb/a01047.html#a979820688e76c1997aa0d36d120df98f" title="Gets the Size 返回当前队列长度" alt="" coords="299,208,402,235"/>
+<area shape="rect" id="node8" href="$d1/d0d/a01191.html#a42f3ec35c315231b8af2beb1c6423e47" title=" " alt="" coords="267,259,435,285"/>
+<area shape="rect" id="node6" href="$d8/d41/a00038.html#a51b816b14fb11dbdb1d0e7986cb0aca9" title="opencv Mat格式转换为 QT 的 QImage" alt="" coords="501,157,611,184"/>
+<area shape="rect" id="node9" href="$dd/d6e/a01339.html#a9b637d613ef70f27fd351be2b047f615" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="489,233,623,260"/>
+<area shape="rect" id="node10" href="$d3/da4/a01343.html#aa797e5e8119ca57f492ea5641817d49a" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="483,284,629,311"/>
+<area shape="rect" id="node11" href="$d3/da4/a01343.html#ab0bd05f35427650f2e295c18ba6938b3" title="num 转换成 字符串 前 补零" alt="" coords="677,284,849,311"/>
+</map>

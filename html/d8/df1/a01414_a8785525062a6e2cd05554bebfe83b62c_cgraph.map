@@ -1,0 +1,4 @@
+<map id="Utils_String::Hex2Num" name="Utils_String::Hex2Num">
+<area shape="rect" id="node1" title="连续的 16 进制字符 转换成数字 // 空格滤除" alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node2" href="$d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="208,5,363,32"/>
+</map>

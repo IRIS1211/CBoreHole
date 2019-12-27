@@ -1,0 +1,10 @@
+<map id="SystemPara" name="SystemPara">
+<area shape="rect" id="node1" title="参数 需要存储下来, 记录到文件中" alt="" coords="297,157,392,184"/>
+<area shape="rect" id="node2" href="$da/deb/a00985.html#df/d59/a01001" title="A structure hole." alt="" coords="23,5,165,32"/>
+<area shape="rect" id="node3" href="$da/deb/a00985.html#d4/d95/a00989" title="默认类型使用 int 但是很多类型可以使用char 或者 bool 类型进行空间压缩 #TODO 按照类型考虑每种类型的 空间占用 自定义 文件个数 尽量使用简单类型 避免占用更多 存在字节对齐的情况,..." alt="" coords="5,56,183,83"/>
+<area shape="rect" id="node4" href="$da/deb/a00985.html#d0/d28/a00997" title="编码器信息 脉冲" alt="" coords="20,107,168,133"/>
+<area shape="rect" id="node5" href="$da/deb/a00985.html#da/d0a/a00993" title="探头信息" alt="" coords="19,157,169,184"/>
+<area shape="rect" id="node6" href="$da/deb/a00985.html#d7/d59/a01013" title="额外信息" alt="" coords="21,208,167,235"/>
+<area shape="rect" id="node7" href="$da/deb/a00985.html#d7/d06/a01005" title="A structure image." alt="" coords="19,259,169,285"/>
+<area shape="rect" id="node8" href="$da/deb/a00985.html#d7/ded/a01009" title="电子罗盘参数" alt="" coords="9,309,179,336"/>
+</map>

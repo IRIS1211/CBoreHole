@@ -1,0 +1,4 @@
+<map id="CQueue::Pop" name="CQueue::Pop">
+<area shape="rect" id="node1" title="弹出一个元素 直接返回 出错无法报错" alt="" coords="196,13,296,39"/>
+<area shape="rect" id="node2" href="$d7/d59/a01013.html#aecb92693aa7f2b4eb791930203cc39ea" title="清空队列" alt="" coords="5,5,148,47"/>
+</map>

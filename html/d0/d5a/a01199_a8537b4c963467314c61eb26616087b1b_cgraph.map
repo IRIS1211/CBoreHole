@@ -1,0 +1,7 @@
+<map id="WriteVideo::WriteVideo" name="WriteVideo::WriteVideo">
+<area shape="rect" id="node1" title="Initializes a new instance of the WriteVideo class ��ʼʵ�� ���г���" alt="" coords="5,31,164,57"/>
+<area shape="rect" id="node2" href="$d0/d5a/a01199.html#a0089a1003badc38250ed84d66b8c5fe3" title=" " alt="" coords="212,31,369,57"/>
+<area shape="rect" id="node3" href="$dd/d6e/a01339.html#a9b637d613ef70f27fd351be2b047f615" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="424,5,557,32"/>
+<area shape="rect" id="node4" href="$d3/da4/a01343.html#aa797e5e8119ca57f492ea5641817d49a" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="417,56,564,83"/>
+<area shape="rect" id="node5" href="$d3/da4/a01343.html#ab0bd05f35427650f2e295c18ba6938b3" title="num 转换成 字符串 前 补零" alt="" coords="612,56,784,83"/>
+</map>

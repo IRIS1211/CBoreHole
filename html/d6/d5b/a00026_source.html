@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.0</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -106,22 +106,22 @@ $(document).ready(function(){initNavTree('d6/d5b/a00026_source.html','../../');}
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// using namespace cv;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d6/dcf/a01031.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/dcf/a01031.html">&#x202A;WriterThread</a> :<span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d9/df5/a01086.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/df5/a01086.html">&#x202A;WriterThread</a> :<span class="keyword">public</span> QObject</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d6/dcf/a01031.html">&#x202A;WriterThread</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ~<a class="code" href="../../d6/dcf/a01031.html">&#x202A;WriterThread</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d9/df5/a01086.html">&#x202A;WriterThread</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ~<a class="code" href="../../d9/df5/a01086.html">&#x202A;WriterThread</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d6/dcf/a01031.html#aeb5bc24e35be9fd1d65e85d5d51d7a8c">   46</a></span>&#160;    CvVideoWriter *<a class="code" href="../../d6/dcf/a01031.html#aeb5bc24e35be9fd1d65e85d5d51d7a8c">&#x202A;writer</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d6/dcf/a01031.html#ae77184c142376f5cd77f0a61a3cb9f43">   47</a></span>&#160;    QMutex <a class="code" href="../../d6/dcf/a01031.html#ae77184c142376f5cd77f0a61a3cb9f43">&#x202A;writerMutex</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d9/df5/a01086.html#aeb5bc24e35be9fd1d65e85d5d51d7a8c">   46</a></span>&#160;    CvVideoWriter *<a class="code" href="../../d9/df5/a01086.html#aeb5bc24e35be9fd1d65e85d5d51d7a8c">&#x202A;writer</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d9/df5/a01086.html#ae77184c142376f5cd77f0a61a3cb9f43">   47</a></span>&#160;    QMutex <a class="code" href="../../d9/df5/a01086.html#ae77184c142376f5cd77f0a61a3cb9f43">&#x202A;writerMutex</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d6/dcf/a01031.html#a4dd6b20164ab96068d991dc7a6d114f4">   49</a></span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="../../d6/dcf/a01031.html#a4dd6b20164ab96068d991dc7a6d114f4">&#x202A;writerIsOpened</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d6/dcf/a01031.html#a00aded496c1516b96dfe4ad97268ab1d">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d6/dcf/a01031.html#a00aded496c1516b96dfe4ad97268ab1d">&#x202A;img_index</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d6/dcf/a01031.html#a426faf6668ffc354fff7831c479fd5e3">   51</a></span>&#160;    QString <a class="code" href="../../d6/dcf/a01031.html#a426faf6668ffc354fff7831c479fd5e3">&#x202A;folder</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d9/df5/a01086.html#a4dd6b20164ab96068d991dc7a6d114f4">   49</a></span>&#160;    <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/df5/a01086.html#a4dd6b20164ab96068d991dc7a6d114f4">&#x202A;writerIsOpened</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d9/df5/a01086.html#a00aded496c1516b96dfe4ad97268ab1d">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d9/df5/a01086.html#a00aded496c1516b96dfe4ad97268ab1d">&#x202A;img_index</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d9/df5/a01086.html#a426faf6668ffc354fff7831c479fd5e3">   51</a></span>&#160;    QString <a class="code" href="../../d9/df5/a01086.html#a426faf6668ffc354fff7831c479fd5e3">&#x202A;folder</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span> slots:</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> getCapturedImage(IplImage *img);</div>
@@ -133,12 +133,12 @@ $(document).ready(function(){initNavTree('d6/d5b/a00026_source.html','../../');}
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // CBOREHOLE_WRITERTHREAD_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01031_html_a426faf6668ffc354fff7831c479fd5e3"><div class="ttname"><a href="../../d6/dcf/a01031.html#a426faf6668ffc354fff7831c479fd5e3">&#x202A;WriterThread::folder</a></div><div class="ttdeci">&#x202A;QString folder</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00051">WriterThread.h:51</a></div></div>
-<div class="ttc" id="aa01031_html_ae77184c142376f5cd77f0a61a3cb9f43"><div class="ttname"><a href="../../d6/dcf/a01031.html#ae77184c142376f5cd77f0a61a3cb9f43">&#x202A;WriterThread::writerMutex</a></div><div class="ttdeci">&#x202A;QMutex writerMutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00047">WriterThread.h:47</a></div></div>
-<div class="ttc" id="aa01031_html_a4dd6b20164ab96068d991dc7a6d114f4"><div class="ttname"><a href="../../d6/dcf/a01031.html#a4dd6b20164ab96068d991dc7a6d114f4">&#x202A;WriterThread::writerIsOpened</a></div><div class="ttdeci">&#x202A;volatile bool writerIsOpened</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00049">WriterThread.h:49</a></div></div>
-<div class="ttc" id="aa01031_html"><div class="ttname"><a href="../../d6/dcf/a01031.html">&#x202A;WriterThread</a></div><div class="ttdoc">&#x202A;A writer thread.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00028">WriterThread.h:28</a></div></div>
-<div class="ttc" id="aa01031_html_a00aded496c1516b96dfe4ad97268ab1d"><div class="ttname"><a href="../../d6/dcf/a01031.html#a00aded496c1516b96dfe4ad97268ab1d">&#x202A;WriterThread::img_index</a></div><div class="ttdeci">&#x202A;int img_index</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00050">WriterThread.h:50</a></div></div>
-<div class="ttc" id="aa01031_html_aeb5bc24e35be9fd1d65e85d5d51d7a8c"><div class="ttname"><a href="../../d6/dcf/a01031.html#aeb5bc24e35be9fd1d65e85d5d51d7a8c">&#x202A;WriterThread::writer</a></div><div class="ttdeci">&#x202A;CvVideoWriter * writer</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00046">WriterThread.h:46</a></div></div>
+<div class="ttc" id="aa01086_html"><div class="ttname"><a href="../../d9/df5/a01086.html">&#x202A;WriterThread</a></div><div class="ttdoc">&#x202A;A writer thread.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00028">WriterThread.h:28</a></div></div>
+<div class="ttc" id="aa01086_html_a426faf6668ffc354fff7831c479fd5e3"><div class="ttname"><a href="../../d9/df5/a01086.html#a426faf6668ffc354fff7831c479fd5e3">&#x202A;WriterThread::folder</a></div><div class="ttdeci">&#x202A;QString folder</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00051">WriterThread.h:51</a></div></div>
+<div class="ttc" id="aa01086_html_ae77184c142376f5cd77f0a61a3cb9f43"><div class="ttname"><a href="../../d9/df5/a01086.html#ae77184c142376f5cd77f0a61a3cb9f43">&#x202A;WriterThread::writerMutex</a></div><div class="ttdeci">&#x202A;QMutex writerMutex</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00047">WriterThread.h:47</a></div></div>
+<div class="ttc" id="aa01086_html_a00aded496c1516b96dfe4ad97268ab1d"><div class="ttname"><a href="../../d9/df5/a01086.html#a00aded496c1516b96dfe4ad97268ab1d">&#x202A;WriterThread::img_index</a></div><div class="ttdeci">&#x202A;int img_index</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00050">WriterThread.h:50</a></div></div>
+<div class="ttc" id="aa01086_html_aeb5bc24e35be9fd1d65e85d5d51d7a8c"><div class="ttname"><a href="../../d9/df5/a01086.html#aeb5bc24e35be9fd1d65e85d5d51d7a8c">&#x202A;WriterThread::writer</a></div><div class="ttdeci">&#x202A;CvVideoWriter * writer</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00046">WriterThread.h:46</a></div></div>
+<div class="ttc" id="aa01086_html_a4dd6b20164ab96068d991dc7a6d114f4"><div class="ttname"><a href="../../d9/df5/a01086.html#a4dd6b20164ab96068d991dc7a6d114f4">&#x202A;WriterThread::writerIsOpened</a></div><div class="ttdeci">&#x202A;volatile bool writerIsOpened</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5b/a00026_source.html#l00049">WriterThread.h:49</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

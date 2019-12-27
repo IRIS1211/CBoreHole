@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_string.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.6.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d6/d82/a00293_source.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">utils_string.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d6/d82/a00293.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef UTILS_STRING_H__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define UTILS_STRING_H__</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d8/df1/a01414.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d8/df1/a01414.html">&#x202A;Utils_String</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// 将vector 里面的内容转换成 字符串字符流输出</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d8/df1/a01414.html#a12d2d6e93f7a162ad4c595064b143537">   41</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/df1/a01414.html#a12d2d6e93f7a162ad4c595064b143537">&#x202A;CoutVectorIdx</a>(T &amp; vec,<span class="keywordtype">bool</span> new_line = <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::ostringstream buffer;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">size_t</span> n = vec.size();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        std::string new_line_char = new_line ? <span class="stringliteral">&quot;\n&quot;</span> : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (n == 0)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            buffer &lt;&lt; <span class="stringliteral">&quot;Vector is Null&quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                buffer &lt;&lt; <span class="stringliteral">&quot;\tidx:&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;\t:&quot;</span> &lt;&lt; vec[i] &lt;&lt; new_line_char;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::cout &lt;&lt; buffer.str() &lt;&lt; endl;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d8/df1/a01414.html#aa5be31c342aaf61f8a9355b6edc044a2">   70</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/df1/a01414.html#aa5be31c342aaf61f8a9355b6edc044a2">&#x202A;CoutVector</a>(T &amp; vec, <span class="keywordtype">bool</span> new_line = <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        std::ostringstream buffer;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">size_t</span> n = vec.size();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        std::string new_line_char = new_line ? <span class="stringliteral">&quot;\n&quot;</span> : <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span> (n == 0)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            buffer &lt;&lt; <span class="stringliteral">&quot;Vector is Null&quot;</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                buffer &lt;&lt; vec[i] &lt;&lt; new_line_char;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        std::cout &lt;&lt; buffer.str() &lt;&lt; endl;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="../../d8/df1/a01414.html#a707dfc08a28c18474486ca8ca43d6b39">  107</a></span>&#160;    <span class="keyword">static</span> std::vector&lt;T&gt; <a class="code" href="../../d8/df1/a01414.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Str2Vec</a>(<span class="keyword">const</span> std::string &amp;str,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                           std::vector&lt;T&gt; &amp;elem,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> separator,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                           <span class="keywordtype">bool</span> skip_empty = <span class="keyword">true</span>)  </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        std::istringstream iss(str);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">for</span> (std::string item; getline(iss, item, separator);)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">if</span> (skip_empty &amp;&amp; item.empty())</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                elem.push_back(item);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> elem;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code" href="../../d8/df1/a01414.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Str2Vec</a>(<span class="keyword">const</span> std::string &amp;str,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                            <span class="keyword">const</span> <span class="keywordtype">char</span> separator,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                                            <span class="keywordtype">bool</span> skip_empty = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="../../d8/df1/a01414.html#afcdfef32c38843d2b73a3428fcd9937c">  159</a></span>&#160;    <span class="keyword">static</span> std::vector&lt;T&gt; <a class="code" href="../../d8/df1/a01414.html#afcdfef32c38843d2b73a3428fcd9937c">&#x202A;Str2Vector</a>(<span class="keyword">const</span> std::string &amp;str,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                              std::vector&lt;T&gt; &amp;elem,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                              <span class="keyword">const</span> std::string &amp;delimiters,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                              <span class="keywordtype">bool</span> skip_empty = <span class="keyword">true</span>)   </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        std::string::size_type pos, prev = 0;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">while</span> ((pos = str.find_first_of(delimiters, prev)) != std::string::npos)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">if</span> (pos &gt; prev)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <span class="keywordflow">if</span> (skip_empty &amp;&amp; 1 == pos - prev)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                elem.emplace_back(str, prev, pos - prev);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            prev = pos + 1;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span> (prev &lt; str.size())</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            elem.emplace_back(str, prev, str.size() - prev);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> elem;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code" href="../../d8/df1/a01414.html#afcdfef32c38843d2b73a3428fcd9937c">&#x202A;Str2Vector</a>(<span class="keyword">const</span> std::string &amp;str,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                               <span class="keyword">const</span> std::string &amp;delimiters,</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                               <span class="keywordtype">bool</span> skip_empty = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../d8/df1/a01414.html#ad909ef9336a54ef015ec4e1ee0ea01fd">&#x202A;String2ConstChar</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span>* <a class="code" href="../../d8/df1/a01414.html#ad98ced7a9727883c0f305e144db03024">&#x202A;String2Char</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>* <a class="code" href="../../d8/df1/a01414.html#a268d0df6cdc9c605bd20605d9fd0019a">&#x202A;String2Uchar</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#a93b60f1fbf52d3b43700bfab7e4eb2bb">&#x202A;ConstChar2String</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *buffer);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c">&#x202A;Char2String</a>(<span class="keywordtype">char</span>* buffer);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#a5220010b7b1eb541bc0d84ca88676283">&#x202A;CharArr2String</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">int</span> len = -1);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="comment">// static char* String2Char(const std::string &amp;str);</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment"></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d8/df1/a01414.html#a5220010b7b1eb541bc0d84ca88676283">&#x202A;CharArr2String</a>(std::string *str, <span class="keywordtype">char</span> *buffer, <span class="keywordtype">int</span> len = -1);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#a16270cb7857217ad3fb4ca45b263379b">&#x202A;Hex2String</a>(<span class="keyword">const</span> std::string &amp;str, <span class="keywordtype">bool</span> flg_space = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#acfc71eb181df4f5678b8c6cbfb4b4f6f">&#x202A;Uchar2String</a>(<span class="keyword">const</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> * buffer);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#acfc71eb181df4f5678b8c6cbfb4b4f6f">&#x202A;Uchar2String</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *buffer);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> *<a class="code" href="../../d8/df1/a01414.html#a6d5b0f70bd68698285592dca2ebe9485">&#x202A;ConstChar2Char</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* buffer);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="../../d8/df1/a01414.html#a2d176a1dad0177d59cf7d53a4ab8057e">&#x202A;Char2ConstChar</a>(<span class="keywordtype">char</span> *buffer);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code" href="../../d8/df1/a01414.html#a3d87ca32cf1959251d87988a5b7f1b45">&#x202A;UChar2Char</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> c1);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> <a class="code" href="../../d8/df1/a01414.html#a04a1209c857981563358bcb266f20c0d">&#x202A;Char2UChar</a>(<span class="keywordtype">char</span> c1);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#a0e3fe37980c46c6cd37ad51a615fef63">&#x202A;UChar2Hex</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> c1);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#afe216aed245f8f433cfc9b5e8c611754">&#x202A;AddQuoteString</a>(std::string str,<span class="keyword">const</span> std::string q = <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="../../d8/df1/a01414.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;StringVersionToInt</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;NumToString</a>(<span class="keywordtype">int</span> num, <span class="keywordtype">int</span> width = 3,<span class="keywordtype">int</span> base=10);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;NumToString</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;num, <span class="keywordtype">int</span> precision);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="preprocessor">    #define Num2Str NumToString</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> <a class="code" href="../../d8/df1/a01414.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f">&#x202A;Hex2Uchar</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160; </div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Hex2Num</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> ch);</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160; </div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> <a class="code" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Num2Hex</a>(<span class="keywordtype">int</span> num,<span class="keywordtype">bool</span> Up = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    </div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Num2Hex</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> num, <span class="keywordtype">bool</span> Up = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;<span class="preprocessor">    #define  Uchar2Hex Num2Hex</span></div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160; </div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Hex2Num</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> * <a class="code" href="../../d8/df1/a01414.html#a14c76ec9d896d7eaa7193444f3277c59">&#x202A;Hex2CharArr</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *&amp;buffer, <span class="keyword">const</span> std::string &amp;str, <span class="keywordtype">bool</span> flg_space = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="comment">// static uchar * Hex2CharArr(uchar *buffer, const std::string &amp;str, bool flg_space = true);</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="comment"></span>    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#a343a35752b0575e884df5b0758cadfda">&#x202A;CharArr2Hex</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *buffer, <span class="keywordtype">int</span> length = 16, <span class="keywordtype">int</span> flg_space = 1);</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160; </div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="comment">// #define CharArr2String Uchar2String</span></div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="comment"></span><span class="preprocessor">#define UCharArr2String Uchar2String</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160; </div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;<span class="preprocessor">#define String2CharArr String2Uchar</span></div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;<span class="preprocessor">#define String2UCharArr String2Uchar</span></div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160; </div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#acd8962fc85144f4bd9db3428db6b916a">&#x202A;StringUpper</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160; </div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d8/df1/a01414.html#aded99d2cfe5f85e9301820b25da5790e">&#x202A;StringLowwer</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160; </div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160; </div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> <a class="code" href="../../d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08">&#x202A;Commu_CheckXOR</a>(<span class="keyword">const</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>* buffer, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160; </div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> <a class="code" href="../../d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08">&#x202A;Commu_CheckXOR</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> <a class="code" href="../../d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08">&#x202A;Commu_CheckXOR</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *dat, <span class="keywordtype">int</span> len=-1);</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    </div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> <a class="code" href="../../d8/df1/a01414.html#ac3b5b7bb59df157b42934895a67738e8">&#x202A;Commu_CheckSum</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160; </div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> <a class="code" href="../../d8/df1/a01414.html#ac3b5b7bb59df157b42934895a67738e8">&#x202A;Commu_CheckSum</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *dat, <span class="keywordtype">int</span> len = -1);</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160; </div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;};</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160; </div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="preprocessor">#endif  //UTILS_STRING_H__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01414_html_afcdfef32c38843d2b73a3428fcd9937c"><div class="ttname"><a href="../../d8/df1/a01414.html#afcdfef32c38843d2b73a3428fcd9937c">&#x202A;Utils_String::Str2Vector</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vector(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const std::string &amp;delimiters, bool skip_empty=true)</div><div class="ttdoc">&#x202A;返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 https://segmentfault.com/a/1190000002483483</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d82/a00293_source.html#l00159">utils_string.h:159</a></div></div>
+<div class="ttc" id="aa01414_html_acfc71eb181df4f5678b8c6cbfb4b4f6f"><div class="ttname"><a href="../../d8/df1/a01414.html#acfc71eb181df4f5678b8c6cbfb4b4f6f">&#x202A;Utils_String::Uchar2String</a></div><div class="ttdeci">&#x202A;static std::string Uchar2String(const uchar *buffer)</div><div class="ttdoc">&#x202A;Uchar 2 string</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00250">utils_string.cc:250</a></div></div>
+<div class="ttc" id="aa01414_html_a93b60f1fbf52d3b43700bfab7e4eb2bb"><div class="ttname"><a href="../../d8/df1/a01414.html#a93b60f1fbf52d3b43700bfab7e4eb2bb">&#x202A;Utils_String::ConstChar2String</a></div><div class="ttdeci">&#x202A;static std::string ConstChar2String(const char *buffer)</div><div class="ttdoc">&#x202A;char 类型与 string的相互转换</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00152">utils_string.cc:152</a></div></div>
+<div class="ttc" id="aa01414_html_a2d176a1dad0177d59cf7d53a4ab8057e"><div class="ttname"><a href="../../d8/df1/a01414.html#a2d176a1dad0177d59cf7d53a4ab8057e">&#x202A;Utils_String::Char2ConstChar</a></div><div class="ttdeci">&#x202A;static const char * Char2ConstChar(char *buffer)</div><div class="ttdoc">&#x202A;Character 2 constant character</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00287">utils_string.cc:287</a></div></div>
+<div class="ttc" id="aa01414_html_acd8962fc85144f4bd9db3428db6b916a"><div class="ttname"><a href="../../d8/df1/a01414.html#acd8962fc85144f4bd9db3428db6b916a">&#x202A;Utils_String::StringUpper</a></div><div class="ttdeci">&#x202A;static std::string StringUpper(const std::string &amp;str)</div><div class="ttdoc">&#x202A;将字符串全部转换成大写</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00680">utils_string.cc:680</a></div></div>
+<div class="ttc" id="aa01414_html_a6d5b0f70bd68698285592dca2ebe9485"><div class="ttname"><a href="../../d8/df1/a01414.html#a6d5b0f70bd68698285592dca2ebe9485">&#x202A;Utils_String::ConstChar2Char</a></div><div class="ttdeci">&#x202A;static char * ConstChar2Char(const char *buffer)</div><div class="ttdoc">&#x202A;Constant character 2 character</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00268">utils_string.cc:268</a></div></div>
+<div class="ttc" id="aa01414_html_a0e3fe37980c46c6cd37ad51a615fef63"><div class="ttname"><a href="../../d8/df1/a01414.html#a0e3fe37980c46c6cd37ad51a615fef63">&#x202A;Utils_String::UChar2Hex</a></div><div class="ttdeci">&#x202A;static std::string UChar2Hex(uchar c1)</div><div class="ttdoc">&#x202A;将 uchar 转换位 两位 hex 字符</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00305">utils_string.cc:305</a></div></div>
+<div class="ttc" id="aa01414_html_a82ed3e2282101b5d3326df68e6098898"><div class="ttname"><a href="../../d8/df1/a01414.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a></div><div class="ttdeci">&#x202A;static int StringVersionToInt(const std::string &amp;str)</div><div class="ttdoc">&#x202A;将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00341">utils_string.cc:341</a></div></div>
+<div class="ttc" id="aa01414_html_aded99d2cfe5f85e9301820b25da5790e"><div class="ttname"><a href="../../d8/df1/a01414.html#aded99d2cfe5f85e9301820b25da5790e">&#x202A;Utils_String::StringLowwer</a></div><div class="ttdeci">&#x202A;static std::string StringLowwer(const std::string &amp;str)</div><div class="ttdoc">&#x202A;将字符串全部转换成小写</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00705">utils_string.cc:705</a></div></div>
+<div class="ttc" id="aa01414_html_ad909ef9336a54ef015ec4e1ee0ea01fd"><div class="ttname"><a href="../../d8/df1/a01414.html#ad909ef9336a54ef015ec4e1ee0ea01fd">&#x202A;Utils_String::String2ConstChar</a></div><div class="ttdeci">&#x202A;static const char * String2ConstChar(const std::string &amp;str)</div><div class="ttdoc">&#x202A;String 2 character 直接返回数据字符串</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00095">utils_string.cc:95</a></div></div>
+<div class="ttc" id="aa01414_html_ad98ced7a9727883c0f305e144db03024"><div class="ttname"><a href="../../d8/df1/a01414.html#ad98ced7a9727883c0f305e144db03024">&#x202A;Utils_String::String2Char</a></div><div class="ttdeci">&#x202A;static char * String2Char(const std::string &amp;str)</div><div class="ttdoc">&#x202A;String 2 character</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00113">utils_string.cc:113</a></div></div>
+<div class="ttc" id="aa01414_html_a3d87ca32cf1959251d87988a5b7f1b45"><div class="ttname"><a href="../../d8/df1/a01414.html#a3d87ca32cf1959251d87988a5b7f1b45">&#x202A;Utils_String::UChar2Char</a></div><div class="ttdeci">&#x202A;static char UChar2Char(uchar c1)</div><div class="ttdoc">&#x202A;Uchar 2 char 的相互转换</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00293">utils_string.cc:293</a></div></div>
+<div class="ttc" id="aa01414_html_a707dfc08a28c18474486ca8ca43d6b39"><div class="ttname"><a href="../../d8/df1/a01414.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vec(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const char separator, bool skip_empty=true)</div><div class="ttdoc">&#x202A;将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d82/a00293_source.html#l00107">utils_string.h:107</a></div></div>
+<div class="ttc" id="aa01414_html_a14c76ec9d896d7eaa7193444f3277c59"><div class="ttname"><a href="../../d8/df1/a01414.html#a14c76ec9d896d7eaa7193444f3277c59">&#x202A;Utils_String::Hex2CharArr</a></div><div class="ttdeci">&#x202A;static uchar * Hex2CharArr(uchar *&amp;buffer, const std::string &amp;str, bool flg_space=true)</div><div class="ttdoc">&#x202A;Hexadecimal 2 character array hex 字符串 转换成 数组</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00578">utils_string.cc:578</a></div></div>
+<div class="ttc" id="aa01414_html_a16270cb7857217ad3fb4ca45b263379b"><div class="ttname"><a href="../../d8/df1/a01414.html#a16270cb7857217ad3fb4ca45b263379b">&#x202A;Utils_String::Hex2String</a></div><div class="ttdeci">&#x202A;static std::string Hex2String(const std::string &amp;str, bool flg_space=true)</div><div class="ttdoc">&#x202A;将 hex 字符串转换成 string 字符串</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00216">utils_string.cc:216</a></div></div>
+<div class="ttc" id="aa01414_html_aab400bb2ce4a6affa55b4afa5f4ae21b"><div class="ttname"><a href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Utils_String::Num2Hex</a></div><div class="ttdeci">&#x202A;static char Num2Hex(int num, bool Up=true)</div><div class="ttdoc">&#x202A;将 0-15 转换成 0-F</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00510">utils_string.cc:510</a></div></div>
+<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00026">Commu.h:26</a></div></div>
+<div class="ttc" id="aa01414_html_a04a1209c857981563358bcb266f20c0d"><div class="ttname"><a href="../../d8/df1/a01414.html#a04a1209c857981563358bcb266f20c0d">&#x202A;Utils_String::Char2UChar</a></div><div class="ttdeci">&#x202A;static uchar Char2UChar(char c1)</div><div class="ttdoc">&#x202A;Character 2 u character</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00299">utils_string.cc:299</a></div></div>
+<div class="ttc" id="aa01414_html_a268d0df6cdc9c605bd20605d9fd0019a"><div class="ttname"><a href="../../d8/df1/a01414.html#a268d0df6cdc9c605bd20605d9fd0019a">&#x202A;Utils_String::String2Uchar</a></div><div class="ttdeci">&#x202A;static const uchar * String2Uchar(const std::string &amp;str)</div><div class="ttdoc">&#x202A;String 2 uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00134">utils_string.cc:134</a></div></div>
+<div class="ttc" id="aa01414_html_afe216aed245f8f433cfc9b5e8c611754"><div class="ttname"><a href="../../d8/df1/a01414.html#afe216aed245f8f433cfc9b5e8c611754">&#x202A;Utils_String::AddQuoteString</a></div><div class="ttdeci">&#x202A;static std::string AddQuoteString(std::string str, const std::string q=&quot;\&quot;&quot;)</div><div class="ttdoc">&#x202A;在字符串前后 添加 引号 双引号 用于YML 写入</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00324">utils_string.cc:324</a></div></div>
+<div class="ttc" id="aa01414_html_ab0bd05f35427650f2e295c18ba6938b3"><div class="ttname"><a href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a></div><div class="ttdeci">&#x202A;static std::string NumToString(int num, int width=3, int base=10)</div><div class="ttdoc">&#x202A;Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00373">utils_string.cc:373</a></div></div>
+<div class="ttc" id="aa01414_html_a343a35752b0575e884df5b0758cadfda"><div class="ttname"><a href="../../d8/df1/a01414.html#a343a35752b0575e884df5b0758cadfda">&#x202A;Utils_String::CharArr2Hex</a></div><div class="ttdeci">&#x202A;static std::string CharArr2Hex(uchar *buffer, int length=16, int flg_space=1)</div><div class="ttdoc">&#x202A;Character array 2 hexadecimal 数组 转换成 hex 字符</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00652">utils_string.cc:652</a></div></div>
+<div class="ttc" id="aa01414_html"><div class="ttname"><a href="../../d8/df1/a01414.html">&#x202A;Utils_String</a></div><div class="ttdoc">&#x202A;The utilities string.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d82/a00293_source.html#l00024">utils_string.h:24</a></div></div>
+<div class="ttc" id="aa01414_html_a9f04ee936ee3b6fdf6384b0450506c21"><div class="ttname"><a href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a></div><div class="ttdeci">&#x202A;static int Hex2Num(const char ch)</div><div class="ttdoc">&#x202A;根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00489">utils_string.cc:489</a></div></div>
+<div class="ttc" id="aa01414_html_a33967652245ef20659d0bedb6c69d47c"><div class="ttname"><a href="../../d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c">&#x202A;Utils_String::Char2String</a></div><div class="ttdeci">&#x202A;static std::string Char2String(char *buffer)</div><div class="ttdoc">&#x202A;Character 2 string</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00169">utils_string.cc:169</a></div></div>
+<div class="ttc" id="aa01414_html_a5220010b7b1eb541bc0d84ca88676283"><div class="ttname"><a href="../../d8/df1/a01414.html#a5220010b7b1eb541bc0d84ca88676283">&#x202A;Utils_String::CharArr2String</a></div><div class="ttdeci">&#x202A;static std::string CharArr2String(char *buffer, int len=-1)</div><div class="ttdoc">&#x202A;如果不给定长度, 一直向后直到得到 \0 可能中途截断</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00174">utils_string.cc:174</a></div></div>
+<div class="ttc" id="aa01414_html_aa5be31c342aaf61f8a9355b6edc044a2"><div class="ttname"><a href="../../d8/df1/a01414.html#aa5be31c342aaf61f8a9355b6edc044a2">&#x202A;Utils_String::CoutVector</a></div><div class="ttdeci">&#x202A;static void CoutVector(T &amp;vec, bool new_line=true)</div><div class="ttdoc">&#x202A;Cout vector</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d82/a00293_source.html#l00070">utils_string.h:70</a></div></div>
+<div class="ttc" id="aa01414_html_a9c65f3ca9342a3ef5b8d91a5e9e0353f"><div class="ttname"><a href="../../d8/df1/a01414.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f">&#x202A;Utils_String::Hex2Uchar</a></div><div class="ttdeci">&#x202A;static uchar Hex2Uchar(const std::string &amp;str)</div><div class="ttdoc">&#x202A;Hexadecimal 2 uchar 将两个 hex 字符 转换成 0-256</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00466">utils_string.cc:466</a></div></div>
+<div class="ttc" id="aa01414_html_a12d2d6e93f7a162ad4c595064b143537"><div class="ttname"><a href="../../d8/df1/a01414.html#a12d2d6e93f7a162ad4c595064b143537">&#x202A;Utils_String::CoutVectorIdx</a></div><div class="ttdeci">&#x202A;static void CoutVectorIdx(T &amp;vec, bool new_line=true)</div><div class="ttdoc">&#x202A;Cout vector index</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d82/a00293_source.html#l00041">utils_string.h:41</a></div></div>
+<div class="ttc" id="aa01414_html_a37ab93c514c781bbb21d4360f8be5b08"><div class="ttname"><a href="../../d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08">&#x202A;Utils_String::Commu_CheckXOR</a></div><div class="ttdeci">&#x202A;static uchar Commu_CheckXOR(const uchar *buffer, int len)</div><div class="ttdoc">&#x202A;异或校验 8位 避免出现 0 数据造成的 截至</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00731">utils_string.cc:731</a></div></div>
+<div class="ttc" id="aa01414_html_ac3b5b7bb59df157b42934895a67738e8"><div class="ttname"><a href="../../d8/df1/a01414.html#ac3b5b7bb59df157b42934895a67738e8">&#x202A;Utils_String::Commu_CheckSum</a></div><div class="ttdeci">&#x202A;static uchar Commu_CheckSum(const std::string &amp;str)</div><div class="ttdoc">&#x202A;计算 校验和</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00743">utils_string.cc:743</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d6/d82/a00293.html">&#x202A;utils_string.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

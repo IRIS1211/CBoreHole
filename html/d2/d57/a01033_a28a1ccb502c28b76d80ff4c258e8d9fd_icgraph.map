@@ -1,0 +1,7 @@
+<map id="ImageProc::ShiftImage" name="ImageProc::ShiftImage">
+<area shape="rect" id="node1" title="右侧偏移图像修正 bool fixUpImage(cv::Mat &amp;subImg, cv::Mat &amp;fixImage, int offset_x = 0, int offset_y = 0); 通过 ..." alt="" coords="404,31,557,57"/>
+<area shape="rect" id="node2" href="$d2/d57/a01033.html#a901c1bc39c2a6983a1cb487656c2361d" title="// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然..." alt="" coords="201,5,356,32"/>
+<area shape="rect" id="node5" href="$d2/d57/a01033.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="217,56,340,83"/>
+<area shape="rect" id="node3" href="$d7/d06/a01005.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="28,5,131,32"/>
+<area shape="rect" id="node4" href="$da/d0a/a00993.html#a7267f43f7cbc41c0bbdd6fe73367f199" title="Tests image proc" alt="" coords="5,56,153,83"/>
+</map>

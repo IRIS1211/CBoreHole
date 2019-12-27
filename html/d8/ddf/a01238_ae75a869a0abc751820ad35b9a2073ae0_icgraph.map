@@ -1,0 +1,9 @@
+<map id="Serial::signal_read_data" name="Serial::signal_read_data">
+<area shape="rect" id="node1" title="将串口里面的数据全部 读取出来" alt="" coords="863,60,1024,87"/>
+<area shape="rect" id="node2" href="$d8/ddf/a01238.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="701,60,815,87"/>
+<area shape="rect" id="node3" href="$de/d33/a01274.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" id="node7" href="$dc/d9a/a00218.html#a3bcd6efee1d07328d9c4022ac4061bf4" title=" " alt="" coords="490,85,587,112"/>
+<area shape="rect" id="node4" href="$de/d33/a01274.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" id="node5" href="$db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" id="node6" href="$da/d00/a01270.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ComProtEncode" name="ComProtEncode">
+<area shape="rect" id="node1" title="参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 &#39;#&#39; 后缀 &#39;*&#39;" alt="" coords="316,31,433,57"/>
+<area shape="rect" id="node2" href="$d9/db6/a00146.html#af384f4673c5a034cd96544569651638e" title="直接 取 1&#45; (size&#45;4)的长度的值 计算结果看看是否匹配 然后返回" alt="" coords="151,5,268,32"/>
+<area shape="rect" id="node3" href="$d5/df1/a00206.html#a8e3ffd931526850976fd8de6062acaad" title=" " alt="" coords="5,31,103,57"/>
+</map>

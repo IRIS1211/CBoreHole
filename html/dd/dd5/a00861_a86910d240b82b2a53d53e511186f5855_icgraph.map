@@ -1,0 +1,5 @@
+<map id="CSerialPort::InitPort" name="CSerialPort::InitPort">
+<area shape="rect" id="node1" title="Initializes the port" alt="" coords="380,5,517,32"/>
+<area shape="rect" id="node2" href="$dd/dd5/a00861.html#a96ead81aea8f5c577586c595cb67bc26" title="打开串口 并开启监听进程" alt="" coords="184,5,332,32"/>
+<area shape="rect" id="node3" href="$dd/d7b/a00865.html#ad767a193d579f47ec9b66e1df49a102f" title="抓取数据" alt="" coords="5,5,136,32"/>
+</map>

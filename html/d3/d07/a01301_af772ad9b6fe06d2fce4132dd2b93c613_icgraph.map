@@ -1,0 +1,12 @@
+<map id="Utils_Files::ReadString" name="Utils_Files::ReadString">
+<area shape="rect" id="node1" title="���ļ����ж�ȡһ�� �ַ���" alt="" coords="904,81,1059,108"/>
+<area shape="rect" id="node2" href="$d7/d46/a01045.html#ab50487cc4124576dfbb2af0445a595c0" title=" " alt="" coords="645,81,856,108"/>
+<area shape="rect" id="node3" href="$d0/daa/a01029.html#ad9fb6635d112a3e806762bd6d338605d" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据 对于写入数据, 使用 gConfig.sysPara 内容存储 到文件头信息中 对于读取数据,..." alt="" coords="450,5,573,32"/>
+<area shape="rect" id="node4" href="$d7/ded/a01009.html#abff2e60527d854a7f1d4b4f112881dcb" title="从 自定义文件中读取参数" alt="" coords="425,56,597,83"/>
+<area shape="rect" id="node5" href="$d0/daa/a01029.html#ac02eafbaf77c5675103d3bcebf6baa9a" title=" " alt="" coords="433,107,589,133"/>
+<area shape="rect" id="node10" href="$d5/df1/a00206.html#a44733fb236621e4eaa4a2e26d628659f" title=" " alt="" coords="463,157,560,184"/>
+<area shape="rect" id="node6" href="$d0/daa/a01029.html#aca27d2fd88c3c80c26dd57f4d8404a1e" title="读文件 参数" alt="" coords="244,107,377,133"/>
+<area shape="rect" id="node7" href="$d1/d83/a01041.html#a95fcda8a05bce42033ab50c78c3f8a44" title="Handles button open file clicked signals" alt="" coords="28,41,173,82"/>
+<area shape="rect" id="node8" href="$da/d0a/a00993.html#aec5351041b2e2d4f99899f17f8fa7f68" title="验证文件操作 读写" alt="" coords="27,107,174,133"/>
+<area shape="rect" id="node9" href="$da/d0a/a00993.html#ad43d9c26d7651f17f60396a8a52fe217" title="验证文件 附加操作" alt="" coords="5,157,196,184"/>
+</map>

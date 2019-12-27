@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;Ui_ReadWindow类 参考</title>
+<title>&#x202A;CBoreHole: &#x202A;WriteVideo类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -92,86 +92,72 @@ $(document).ready(function(){initNavTree('d4/d10/a01278.html','../../');});
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-attribs">成员变量</a>  </div>
   <div class="headertitle">
-<div class="title">Ui_ReadWindow类 参考</div>  </div>
+<div class="title">WriteVideo类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a>&gt;</code></p>
+<p>&#x202A;A write video. 使用传统线程方式 处理, 程序循环执行 写入动作  
+ <a href="../../d4/d10/a01278.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/d2a/a00086_source.html">Code\inc\WriteVideo.h</a>&gt;</code></p>
 <div class="dynheader">
-类 Ui_ReadWindow 继承关系图:</div>
+类 WriteVideo 继承关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d2/d1d/a01277.png" border="0" usemap="#_ui___read_window_inherit__map" alt="Inheritance graph"/></div>
-<!-- MAP 0 -->
+<div class="center"><img src="../../d2/d1d/a01277.png" border="0" usemap="#_write_video_inherit__map" alt="Inheritance graph"/></div>
+<map name="_write_video_inherit__map" id="_write_video_inherit__map">
+<area shape="rect" title="A write video. 使用传统线程方式 处理, 程序循环执行 写入动作" alt="" coords="5,80,92,107"/>
+<area shape="rect" title=" " alt="" coords="13,5,84,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+WriteVideo 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d37/a01276.png" border="0" usemap="#_write_video_coll__map" alt="Collaboration graph"/></div>
+<map name="_write_video_coll__map" id="_write_video_coll__map">
+<area shape="rect" title="A write video. 使用传统线程方式 处理, 程序循环执行 写入动作" alt="" coords="41,377,127,404"/>
+<area shape="rect" title=" " alt="" coords="6,288,77,315"/>
+<area shape="rect" href="../../db/d32/a01122.html" title=" " alt="" coords="101,288,235,315"/>
+<area shape="rect" title=" " alt="" coords="5,184,155,211"/>
+<area shape="rect" title="STL class" alt="" coords="23,95,137,121"/>
+<area shape="rect" title=" " alt="" coords="61,5,99,32"/>
+<area shape="rect" href="../../db/d32/a01122.html" title=" " alt="" coords="179,184,279,211"/>
+</map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a45d7b0a78d984b9adb25941f04a12721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a45d7b0a78d984b9adb25941f04a12721">setupUi</a> (QMainWindow *<a class="el" href="../../d1/d7a/a00982.html">ReadWindow</a>)</td></tr>
-<tr class="separator:a45d7b0a78d984b9adb25941f04a12721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a585a56ba69efb334e018833371a23d9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a585a56ba69efb334e018833371a23d9c">retranslateUi</a> (QMainWindow *<a class="el" href="../../d1/d7a/a00982.html">ReadWindow</a>)</td></tr>
-<tr class="separator:a585a56ba69efb334e018833371a23d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8537b4c963467314c61eb26616087b1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a8537b4c963467314c61eb26616087b1b">WriteVideo</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a8537b4c963467314c61eb26616087b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../d4/d10/a01278.html" title="&#x202A;A write video. 使用传统线程方式 处理, 程序循环执行 写入动作">WriteVideo</a> class 开始写入视频流  <a href="../../d4/d10/a01278.html#a8537b4c963467314c61eb26616087b1b">更多...</a><br /></td></tr>
+<tr class="separator:a8537b4c963467314c61eb26616087b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac323b2953beb68b8fbafa30bd9370f4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ac323b2953beb68b8fbafa30bd9370f4c">~WriteVideo</a> ()</td></tr>
+<tr class="separator:ac323b2953beb68b8fbafa30bd9370f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad065ff730822bfeac57ed179617a61e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ad065ff730822bfeac57ed179617a61e2">Init</a> (void)</td></tr>
+<tr class="separator:ad065ff730822bfeac57ed179617a61e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53bb8340bb6b761bd6236688970c463"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ad53bb8340bb6b761bd6236688970c463">StartWriter</a> (const std::string file_name)</td></tr>
+<tr class="separator:ad53bb8340bb6b761bd6236688970c463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21abae28e88c5d6090d4377913ef61ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a21abae28e88c5d6090d4377913ef61ea">CloseWriter</a> ()</td></tr>
+<tr class="separator:a21abae28e88c5d6090d4377913ef61ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0883915d51196a8c6f48eead87c1d05c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a0883915d51196a8c6f48eead87c1d05c">run</a> (void) override</td></tr>
+<tr class="separator:a0883915d51196a8c6f48eead87c1d05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 成员变量</h2></td></tr>
-<tr class="memitem:acc82f4fb2731a1316e3f602d0cfd9d7d"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#acc82f4fb2731a1316e3f602d0cfd9d7d">centralwidget</a></td></tr>
-<tr class="separator:acc82f4fb2731a1316e3f602d0cfd9d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66980b936d7e3895be9711737170381e"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a66980b936d7e3895be9711737170381e">gridLayout</a></td></tr>
-<tr class="separator:a66980b936d7e3895be9711737170381e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a852ed4d2b7ff2977c5546768cd9cc349"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a852ed4d2b7ff2977c5546768cd9cc349">mainWindows</a></td></tr>
-<tr class="separator:a852ed4d2b7ff2977c5546768cd9cc349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e69ae0bee322dcc7b73cb6f60a78217"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a0e69ae0bee322dcc7b73cb6f60a78217">left</a></td></tr>
-<tr class="separator:a0e69ae0bee322dcc7b73cb6f60a78217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac654ab070a2a451bf3c9010c96fdd26c"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ac654ab070a2a451bf3c9010c96fdd26c">top</a></td></tr>
-<tr class="separator:ac654ab070a2a451bf3c9010c96fdd26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8caca35ea7914c8c42a85aa66068320"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ab8caca35ea7914c8c42a85aa66068320">verticalLayout_3</a></td></tr>
-<tr class="separator:ab8caca35ea7914c8c42a85aa66068320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f624ee5b39d6b012b16ad04e77464ee"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a3f624ee5b39d6b012b16ad04e77464ee">btn_openFile</a></td></tr>
-<tr class="separator:a3f624ee5b39d6b012b16ad04e77464ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43f89e86f61bf46c5f154ec00bdfff9"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ad43f89e86f61bf46c5f154ec00bdfff9">btn_closeFile</a></td></tr>
-<tr class="separator:ad43f89e86f61bf46c5f154ec00bdfff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b8a865b86f3dc4d274e14d3185556fc"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a8b8a865b86f3dc4d274e14d3185556fc">btn_read_exit</a></td></tr>
-<tr class="separator:a8b8a865b86f3dc4d274e14d3185556fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa30cc5775305ee779d5731c98c67dc2b"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#aa30cc5775305ee779d5731c98c67dc2b">verticalLayout_2</a></td></tr>
-<tr class="separator:aa30cc5775305ee779d5731c98c67dc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0e3bb7b2a863ee66c7ad924ca08dc18"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ac0e3bb7b2a863ee66c7ad924ca08dc18">label</a></td></tr>
-<tr class="separator:ac0e3bb7b2a863ee66c7ad924ca08dc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa4ef50e36a18148403cd60fdba0028"><td class="memItemLeft" align="right" valign="top">QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#acfa4ef50e36a18148403cd60fdba0028">lb_work_dir</a></td></tr>
-<tr class="separator:acfa4ef50e36a18148403cd60fdba0028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9e7131370801035af06377bf0ba45ea"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ac9e7131370801035af06377bf0ba45ea">center</a></td></tr>
-<tr class="separator:ac9e7131370801035af06377bf0ba45ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a775544df36513241c2789f3c0fa47ef3"><td class="memItemLeft" align="right" valign="top">QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a775544df36513241c2789f3c0fa47ef3">verticalSpacer_2</a></td></tr>
-<tr class="separator:a775544df36513241c2789f3c0fa47ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac18fe57377d75fc8e1cc233206d6f662"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ac18fe57377d75fc8e1cc233206d6f662">bot</a></td></tr>
-<tr class="separator:ac18fe57377d75fc8e1cc233206d6f662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ab1e26952fdc0ac7e745da7da7748f"><td class="memItemLeft" align="right" valign="top">QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#af5ab1e26952fdc0ac7e745da7da7748f">verticalSpacer_3</a></td></tr>
-<tr class="separator:af5ab1e26952fdc0ac7e745da7da7748f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b4373d6c3f25f59d9ed09ef9322800"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a65b4373d6c3f25f59d9ed09ef9322800">vspace</a></td></tr>
-<tr class="separator:a65b4373d6c3f25f59d9ed09ef9322800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f05437ab2100ebabc9f7616132f89be"><td class="memItemLeft" align="right" valign="top">QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a9f05437ab2100ebabc9f7616132f89be">verticalSpacer</a></td></tr>
-<tr class="separator:a9f05437ab2100ebabc9f7616132f89be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31adbef42569847c3d1aba6024d961ab"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a31adbef42569847c3d1aba6024d961ab">content</a></td></tr>
-<tr class="separator:a31adbef42569847c3d1aba6024d961ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa89d890bd6de9b20c1d34f3c10373d89"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#aa89d890bd6de9b20c1d34f3c10373d89">topContent</a></td></tr>
-<tr class="separator:aa89d890bd6de9b20c1d34f3c10373d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07c617627ed766cad71472c90525399"><td class="memItemLeft" align="right" valign="top">QScrollArea *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ae07c617627ed766cad71472c90525399">scrollArea</a></td></tr>
-<tr class="separator:ae07c617627ed766cad71472c90525399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cbb2edbe4553843d2fb8f871d790f4a"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a8cbb2edbe4553843d2fb8f871d790f4a">scrollAreaWidgetContents</a></td></tr>
-<tr class="separator:a8cbb2edbe4553843d2fb8f871d790f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5693c3692cac43d7b71142c3262ec6c"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ad5693c3692cac43d7b71142c3262ec6c">lb_show</a></td></tr>
-<tr class="separator:ad5693c3692cac43d7b71142c3262ec6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc05c40abda8253106654b5d26fb95ab"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#acc05c40abda8253106654b5d26fb95ab">hBar</a></td></tr>
-<tr class="separator:acc05c40abda8253106654b5d26fb95ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2e21ad2c65726b9e8fe9958bfbe26fc"><td class="memItemLeft" align="right" valign="top">QScrollBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#ad2e21ad2c65726b9e8fe9958bfbe26fc">horizontalScrollBar</a></td></tr>
-<tr class="separator:ad2e21ad2c65726b9e8fe9958bfbe26fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a023096e2a97eae34a69b41f4f1699770"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a023096e2a97eae34a69b41f4f1699770">right</a></td></tr>
-<tr class="separator:a023096e2a97eae34a69b41f4f1699770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6160a17554039c6133fd5cb7b418954f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d32/a01122.html">CQueue</a>&lt; cv::Mat &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#a6160a17554039c6133fd5cb7b418954f">m_write_buffer_</a></td></tr>
+<tr class="separator:a6160a17554039c6133fd5cb7b418954f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec15a690edf1e1a7af966b0fee59f71e"><td class="memItemLeft" align="right" valign="top">cv::VideoWriter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#aec15a690edf1e1a7af966b0fee59f71e">m_writer_</a></td></tr>
+<tr class="separator:aec15a690edf1e1a7af966b0fee59f71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf737843cc8706003350634de08b9e8"><td class="memItemLeft" align="right" valign="top">QMutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d10/a01278.html#abaf737843cc8706003350634de08b9e8">m_write_mutex_</a></td></tr>
+<tr class="separator:abaf737843cc8706003350634de08b9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock">
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00027">27</a> 行定义.</p>
-</div><h2 class="groupheader">成员函数说明</h2>
-<a id="a585a56ba69efb334e018833371a23d9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a585a56ba69efb334e018833371a23d9c">&#9670;&nbsp;</a></span>retranslateUi()</h2>
+<div class="textblock"><p class="DocNodeLTR">A write video. 使用传统线程方式 处理, 程序循环执行 写入动作 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/19 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d2a/a00086_source.html">WriteVideo.h</a> 第 <a class="el" href="../../da/d2a/a00086_source.html#l00032">32</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a8537b4c963467314c61eb26616087b1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8537b4c963467314c61eb26616087b1b">&#9670;&nbsp;</a></span>WriteVideo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,27 +166,140 @@ Public 成员函数</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ui_ReadWindow::retranslateUi </td>
+          <td class="memname">WriteVideo::WriteVideo </td>
           <td>(</td>
-          <td class="paramtype">QMainWindow *&#160;</td>
-          <td class="paramname"><em>ReadWindow</em></td><td>)</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00224">224</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;             {</div>
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../d4/d10/a01278.html" title="&#x202A;A write video. 使用传统线程方式 处理, 程序循环执行 写入动作">WriteVideo</a> class 开始写入视频流 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/19</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;If non-null, the parent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/d15/a00188_source.html">WriteVideo.cc</a> 第 <a class="el" href="../../da/d15/a00188_source.html#l00022">22</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                      : QThread(parent),</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                          <a class="code" href="../../d4/d10/a01278.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a>(<span class="keyword">new</span> <a class="code" href="../../db/d32/a01122.html">&#x202A;CQueue&lt;cv::Mat&gt;</a>(20)),</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                          <a class="code" href="../../d4/d10/a01278.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a>(<span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d4/d10/a01278.html#ad53bb8340bb6b761bd6236688970c463">&#x202A;StartWriter</a>(<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;Project</a>.<a class="code" href="../../d5/d16/a01154.html#ade4767762e0d68450f48bc770a22832d">&#x202A;strProjectPath</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d10/a01278_a8537b4c963467314c61eb26616087b1b_cgraph.png" border="0" usemap="#d4/d10/a01278_a8537b4c963467314c61eb26616087b1b_cgraph" alt=""/></div>
+<map name="d4/d10/a01278_a8537b4c963467314c61eb26616087b1b_cgraph" id="d4/d10/a01278_a8537b4c963467314c61eb26616087b1b_cgraph">
+<area shape="rect" title="Initializes a new instance of the WriteVideo class 开始写入视频流" alt="" coords="5,31,164,57"/>
+<area shape="rect" href="../../d4/d10/a01278.html#ad53bb8340bb6b761bd6236688970c463" title=" " alt="" coords="212,31,369,57"/>
+<area shape="rect" href="../../d8/d01/a01410.html#af9b1fae65fc91319a7f2ee2fefb86799" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="421,5,554,32"/>
+<area shape="rect" href="../../d4/d3c/a01418.html#a8fc80e6d8ee244ed6a5a49d7527de6d5" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="417,56,557,83"/>
+<area shape="rect" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3" title="Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \" alt="" coords="605,56,777,83"/>
+<area shape="rect" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="825,56,980,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac323b2953beb68b8fbafa30bd9370f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac323b2953beb68b8fbafa30bd9370f4c">&#9670;&nbsp;</a></span>~WriteVideo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WriteVideo::~WriteVideo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../da/d15/a00188_source.html">WriteVideo.cc</a> 第 <a class="el" href="../../da/d15/a00188_source.html#l00029">29</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a45d7b0a78d984b9adb25941f04a12721"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45d7b0a78d984b9adb25941f04a12721">&#9670;&nbsp;</a></span>setupUi()</h2>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a21abae28e88c5d6090d4377913ef61ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21abae28e88c5d6090d4377913ef61ea">&#9670;&nbsp;</a></span>CloseWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WriteVideo::CloseWriter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../da/d15/a00188_source.html">WriteVideo.cc</a> 第 <a class="el" href="../../da/d15/a00188_source.html#l00083">83</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    requestInterruption();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    Sleep((20));   <span class="comment">// 延时  等待线程停止</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d4/d10/a01278.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="../../d4/d10/a01278.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a>-&gt;release();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// delete m_writer_;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// m_writer_ = nullptr;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d10/a01278_a21abae28e88c5d6090d4377913ef61ea_icgraph.png" border="0" usemap="#d4/d10/a01278_a21abae28e88c5d6090d4377913ef61ea_icgraph" alt=""/></div>
+<map name="d4/d10/a01278_a21abae28e88c5d6090d4377913ef61ea_icgraph" id="d4/d10/a01278_a21abae28e88c5d6090d4377913ef61ea_icgraph">
+<area shape="rect" title=" " alt="" coords="200,13,363,39"/>
+<area shape="rect" href="../../de/d33/a01274.html#a7597205c96689c706eea3c64d87ba180" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="5,5,152,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad065ff730822bfeac57ed179617a61e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad065ff730822bfeac57ed179617a61e2">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WriteVideo::Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../da/d15/a00188_source.html">WriteVideo.cc</a> 第 <a class="el" href="../../da/d15/a00188_source.html#l00033">33</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0883915d51196a8c6f48eead87c1d05c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0883915d51196a8c6f48eead87c1d05c">&#9670;&nbsp;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,459 +308,222 @@ Public 成员函数</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ui_ReadWindow::setupUi </td>
+          <td class="memname">void WriteVideo::run </td>
           <td>(</td>
-          <td class="paramtype">QMainWindow *&#160;</td>
-          <td class="paramname"><em>ReadWindow</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00062">62</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <a class="code" href="../../d1/d7a/a00982.html">&#x202A;ReadWindow</a>-&gt;setWindowTitle(QApplication::translate(<span class="stringliteral">&quot;ReadWindow&quot;</span>, <span class="stringliteral">&quot;\346\265\217\350\247\210\346\226\207\344\273\266&quot;</span>, <span class="keyword">nullptr</span>));</div>
+<p class="definition">在文件 <a class="el" href="../../da/d15/a00188_source.html">WriteVideo.cc</a> 第 <a class="el" href="../../da/d15/a00188_source.html#l00097">97</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    cv::Mat write_img;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> img_cnt = 0;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// 循环 取出队列图像 然后写入到 视频流中</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">while</span> (!isInterruptionRequested())</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d10/a01278.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a>-&gt;<a class="code" href="../../db/d32/a01122.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;Empty</a>())</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            Sleep(10);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        LDebug(<span class="stringliteral">&quot;writeframe:{}&quot;</span>, img_cnt++);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">// 一次将队列全部写入</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">while</span> (<a class="code" href="../../d4/d10/a01278.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a> &amp;&amp; !<a class="code" href="../../d4/d10/a01278.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a>-&gt;<a class="code" href="../../db/d32/a01122.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;Empty</a>())</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="../../d4/d10/a01278.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a>-&gt;<a class="code" href="../../db/d32/a01122.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;Pop</a>(write_img);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../d5/d16/a01154.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>.<a class="code" href="../../d5/d16/a01154.html#a5a7b3d37220b4b478aaa714245a25b1d">&#x202A;nWriteVideoEnable</a>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="code" href="../../d4/d10/a01278.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a>-&gt;write(write_img);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d10/a01278_a0883915d51196a8c6f48eead87c1d05c_cgraph.png" border="0" usemap="#d4/d10/a01278_a0883915d51196a8c6f48eead87c1d05c_cgraph" alt=""/></div>
+<map name="d4/d10/a01278_a0883915d51196a8c6f48eead87c1d05c_cgraph" id="d4/d10/a01278_a0883915d51196a8c6f48eead87c1d05c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,117,57"/>
+<area shape="rect" href="../../db/d32/a01122.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="165,5,280,32"/>
+<area shape="rect" href="../../db/d32/a01122.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="173,56,273,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad53bb8340bb6b761bd6236688970c463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53bb8340bb6b761bd6236688970c463">&#9670;&nbsp;</a></span>StartWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WriteVideo::StartWriter </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../da/d15/a00188_source.html">WriteVideo.cc</a> 第 <a class="el" href="../../da/d15/a00188_source.html#l00038">38</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::string file_name;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a80d3a8bcb64807efd5755b4028a0ebf9">&#x202A;mDebug</a>-&gt;<a class="code" href="../../d5/d16/a01154.html#a17d047ca991630963bb004404e25cbda">&#x202A;nDebugEnable</a>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        file_name = file_path + <span class="stringliteral">&quot;test_CaptureVideo.avi&quot;</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> (file_path.empty())</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            file_path = <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;Project</a>.<a class="code" href="../../d5/d16/a01154.html#ade4767762e0d68450f48bc770a22832d">&#x202A;strProjectPath</a> + \</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            gConfig-&gt;mRunPara.Project.strVideoSuffix;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d8/d01/a01410.html#af9b1fae65fc91319a7f2ee2fefb86799">&#x202A;Utils_QT::CheckDir</a>(file_path))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">throw</span> <a class="code" href="../../d0/dc7/a01402.html">&#x202A;Utils_Exception</a>(<a class="code" href="../../d9/dd6/a00272.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">&#x202A;Error_Work_Dir_Video_Create_Error</a>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                  <span class="stringliteral">&quot;Error_Work_Dir_Video_Create_Error&quot;</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        file_name = file_path + <span class="stringliteral">&quot;CaptureVideo_&quot;</span> + <a class="code" href="../../d4/d3c/a01418.html#a8fc80e6d8ee244ed6a5a49d7527de6d5">&#x202A;Utils_Time::GetTime</a>(<span class="charliteral">&#39;_&#39;</span>) + <span class="stringliteral">&quot;.avi&quot;</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//# TODO(SChen) 改善写入方式</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d4/d10/a01278.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a> = <span class="keyword">new</span> cv::VideoWriter(file_name,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                    cv::CAP_FFMPEG,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                    CV_FOURCC(<span class="charliteral">&#39;X&#39;</span>, <span class="charliteral">&#39;2&#39;</span>, <span class="charliteral">&#39;6&#39;</span>, <span class="charliteral">&#39;4&#39;</span>),</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                    30,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                    cv::Size(1080, 1080));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Q_ASSERT(<a class="code" href="../../d4/d10/a01278.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d4/d10/a01278.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;m_writer_</a>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="../../d0/dc7/a01402.html">&#x202A;Utils_Exception</a>(<a class="code" href="../../d9/dd6/a00272.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">&#x202A;Error_Video_Writer_Null</a>, <span class="stringliteral">&quot;Error_Video_Writer_Null&quot;</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    start();   <span class="comment">// 开始循环线程, 等待写入</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d10/a01278_ad53bb8340bb6b761bd6236688970c463_cgraph.png" border="0" usemap="#d4/d10/a01278_ad53bb8340bb6b761bd6236688970c463_cgraph" alt=""/></div>
+<map name="d4/d10/a01278_ad53bb8340bb6b761bd6236688970c463_cgraph" id="d4/d10/a01278_ad53bb8340bb6b761bd6236688970c463_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,163,57"/>
+<area shape="rect" href="../../d8/d01/a01410.html#af9b1fae65fc91319a7f2ee2fefb86799" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="214,5,347,32"/>
+<area shape="rect" href="../../d4/d3c/a01418.html#a8fc80e6d8ee244ed6a5a49d7527de6d5" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="211,56,351,83"/>
+<area shape="rect" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3" title="Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \" alt="" coords="399,56,571,83"/>
+<area shape="rect" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="619,56,773,83"/>
+</map>
+</div>
+<div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d4/d10/a01278_a45d7b0a78d984b9adb25941f04a12721_icgraph.png" border="0" usemap="#d4/d10/a01278_a45d7b0a78d984b9adb25941f04a12721_icgraph" alt=""/></div>
-<!-- MAP 1 -->
+<div class="center"><img src="../../d4/d10/a01278_ad53bb8340bb6b761bd6236688970c463_icgraph.png" border="0" usemap="#d4/d10/a01278_ad53bb8340bb6b761bd6236688970c463_icgraph" alt=""/></div>
+<map name="d4/d10/a01278_ad53bb8340bb6b761bd6236688970c463_icgraph" id="d4/d10/a01278_ad53bb8340bb6b761bd6236688970c463_icgraph">
+<area shape="rect" title=" " alt="" coords="212,5,369,32"/>
+<area shape="rect" href="../../d4/d10/a01278.html#a8537b4c963467314c61eb26616087b1b" title="Initializes a new instance of the WriteVideo class 开始写入视频流" alt="" coords="5,5,164,32"/>
+</map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">结构体成员变量说明</h2>
-<a id="ac18fe57377d75fc8e1cc233206d6f662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac18fe57377d75fc8e1cc233206d6f662">&#9670;&nbsp;</a></span>bot</h2>
+<a id="a6160a17554039c6133fd5cb7b418954f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6160a17554039c6133fd5cb7b418954f">&#9670;&nbsp;</a></span>m_write_buffer_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QHBoxLayout* Ui_ReadWindow::bot</td>
+          <td class="memname"><a class="el" href="../../db/d32/a01122.html">CQueue</a>&lt;cv::Mat&gt;* WriteVideo::m_write_buffer_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00049">49</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../da/d2a/a00086_source.html">WriteVideo.h</a> 第 <a class="el" href="../../da/d2a/a00086_source.html#l00035">35</a> 行定义.</p>
 
 </div>
 </div>
-<a id="ad43f89e86f61bf46c5f154ec00bdfff9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad43f89e86f61bf46c5f154ec00bdfff9">&#9670;&nbsp;</a></span>btn_closeFile</h2>
+<a id="abaf737843cc8706003350634de08b9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf737843cc8706003350634de08b9e8">&#9670;&nbsp;</a></span>m_write_mutex_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QPushButton* Ui_ReadWindow::btn_closeFile</td>
+          <td class="memname">QMutex WriteVideo::m_write_mutex_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00042">42</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../da/d2a/a00086_source.html">WriteVideo.h</a> 第 <a class="el" href="../../da/d2a/a00086_source.html#l00037">37</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a3f624ee5b39d6b012b16ad04e77464ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f624ee5b39d6b012b16ad04e77464ee">&#9670;&nbsp;</a></span>btn_openFile</h2>
+<a id="aec15a690edf1e1a7af966b0fee59f71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec15a690edf1e1a7af966b0fee59f71e">&#9670;&nbsp;</a></span>m_writer_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QPushButton* Ui_ReadWindow::btn_openFile</td>
+          <td class="memname">cv::VideoWriter* WriteVideo::m_writer_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00041">41</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a8b8a865b86f3dc4d274e14d3185556fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b8a865b86f3dc4d274e14d3185556fc">&#9670;&nbsp;</a></span>btn_read_exit</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QPushButton* Ui_ReadWindow::btn_read_exit</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00043">43</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ac9e7131370801035af06377bf0ba45ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9e7131370801035af06377bf0ba45ea">&#9670;&nbsp;</a></span>center</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QHBoxLayout* Ui_ReadWindow::center</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00047">47</a> 行定义.</p>
-
-</div>
-</div>
-<a id="acc82f4fb2731a1316e3f602d0cfd9d7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc82f4fb2731a1316e3f602d0cfd9d7d">&#9670;&nbsp;</a></span>centralwidget</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QWidget* Ui_ReadWindow::centralwidget</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00035">35</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a31adbef42569847c3d1aba6024d961ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31adbef42569847c3d1aba6024d961ab">&#9670;&nbsp;</a></span>content</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QVBoxLayout* Ui_ReadWindow::content</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00053">53</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a66980b936d7e3895be9711737170381e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66980b936d7e3895be9711737170381e">&#9670;&nbsp;</a></span>gridLayout</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QGridLayout* Ui_ReadWindow::gridLayout</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00036">36</a> 行定义.</p>
-
-</div>
-</div>
-<a id="acc05c40abda8253106654b5d26fb95ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc05c40abda8253106654b5d26fb95ab">&#9670;&nbsp;</a></span>hBar</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QHBoxLayout* Ui_ReadWindow::hBar</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00058">58</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ad2e21ad2c65726b9e8fe9958bfbe26fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2e21ad2c65726b9e8fe9958bfbe26fc">&#9670;&nbsp;</a></span>horizontalScrollBar</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QScrollBar* Ui_ReadWindow::horizontalScrollBar</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00059">59</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ac0e3bb7b2a863ee66c7ad924ca08dc18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0e3bb7b2a863ee66c7ad924ca08dc18">&#9670;&nbsp;</a></span>label</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QLabel* Ui_ReadWindow::label</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00045">45</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ad5693c3692cac43d7b71142c3262ec6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5693c3692cac43d7b71142c3262ec6c">&#9670;&nbsp;</a></span>lb_show</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QLabel* Ui_ReadWindow::lb_show</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00057">57</a> 行定义.</p>
-
-</div>
-</div>
-<a id="acfa4ef50e36a18148403cd60fdba0028"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfa4ef50e36a18148403cd60fdba0028">&#9670;&nbsp;</a></span>lb_work_dir</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QLineEdit* Ui_ReadWindow::lb_work_dir</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00046">46</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a0e69ae0bee322dcc7b73cb6f60a78217"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e69ae0bee322dcc7b73cb6f60a78217">&#9670;&nbsp;</a></span>left</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QVBoxLayout* Ui_ReadWindow::left</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00038">38</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a852ed4d2b7ff2977c5546768cd9cc349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a852ed4d2b7ff2977c5546768cd9cc349">&#9670;&nbsp;</a></span>mainWindows</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QHBoxLayout* Ui_ReadWindow::mainWindows</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00037">37</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a023096e2a97eae34a69b41f4f1699770"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a023096e2a97eae34a69b41f4f1699770">&#9670;&nbsp;</a></span>right</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QVBoxLayout* Ui_ReadWindow::right</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00060">60</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ae07c617627ed766cad71472c90525399"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae07c617627ed766cad71472c90525399">&#9670;&nbsp;</a></span>scrollArea</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QScrollArea* Ui_ReadWindow::scrollArea</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00055">55</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a8cbb2edbe4553843d2fb8f871d790f4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cbb2edbe4553843d2fb8f871d790f4a">&#9670;&nbsp;</a></span>scrollAreaWidgetContents</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QWidget* Ui_ReadWindow::scrollAreaWidgetContents</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00056">56</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ac654ab070a2a451bf3c9010c96fdd26c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac654ab070a2a451bf3c9010c96fdd26c">&#9670;&nbsp;</a></span>top</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QVBoxLayout* Ui_ReadWindow::top</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00039">39</a> 行定义.</p>
-
-</div>
-</div>
-<a id="aa89d890bd6de9b20c1d34f3c10373d89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa89d890bd6de9b20c1d34f3c10373d89">&#9670;&nbsp;</a></span>topContent</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QHBoxLayout* Ui_ReadWindow::topContent</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00054">54</a> 行定义.</p>
-
-</div>
-</div>
-<a id="aa30cc5775305ee779d5731c98c67dc2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa30cc5775305ee779d5731c98c67dc2b">&#9670;&nbsp;</a></span>verticalLayout_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QVBoxLayout* Ui_ReadWindow::verticalLayout_2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00044">44</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ab8caca35ea7914c8c42a85aa66068320"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8caca35ea7914c8c42a85aa66068320">&#9670;&nbsp;</a></span>verticalLayout_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QVBoxLayout* Ui_ReadWindow::verticalLayout_3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00040">40</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a9f05437ab2100ebabc9f7616132f89be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f05437ab2100ebabc9f7616132f89be">&#9670;&nbsp;</a></span>verticalSpacer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QSpacerItem* Ui_ReadWindow::verticalSpacer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00052">52</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a775544df36513241c2789f3c0fa47ef3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a775544df36513241c2789f3c0fa47ef3">&#9670;&nbsp;</a></span>verticalSpacer_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QSpacerItem* Ui_ReadWindow::verticalSpacer_2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00048">48</a> 行定义.</p>
-
-</div>
-</div>
-<a id="af5ab1e26952fdc0ac7e745da7da7748f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5ab1e26952fdc0ac7e745da7da7748f">&#9670;&nbsp;</a></span>verticalSpacer_3</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QSpacerItem* Ui_ReadWindow::verticalSpacer_3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00050">50</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a65b4373d6c3f25f59d9ed09ef9322800"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b4373d6c3f25f59d9ed09ef9322800">&#9670;&nbsp;</a></span>vspace</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QHBoxLayout* Ui_ReadWindow::vspace</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a> 第 <a class="el" href="../../d3/d1a/a00251_source.html#l00051">51</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../da/d2a/a00086_source.html">WriteVideo.h</a> 第 <a class="el" href="../../da/d2a/a00086_source.html#l00036">36</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/ui/<a class="el" href="../../d3/d1a/a00251_source.html">ui_readwindow.h</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../da/d2a/a00086_source.html">WriteVideo.h</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/src/<a class="el" href="../../da/d15/a00188_source.html">WriteVideo.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00982_html"><div class="ttname"><a href="../../d1/d7a/a00982.html">&#x202A;ReadWindow</a></div><div class="ttdoc">&#x202A;Form for viewing the read.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00045">readwindow.h:45</a></div></div>
+<div class="ttc" id="aa01154_html_a4e6644435b7546b92c9d1f74b9d828da"><div class="ttname"><a href="../../d5/d16/a01154.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;RunPara::Project</a></div><div class="ttdeci">&#x202A;struct RunPara::StProject Project</div></div>
+<div class="ttc" id="aa01278_html_ad53bb8340bb6b761bd6236688970c463"><div class="ttname"><a href="../../d4/d10/a01278.html#ad53bb8340bb6b761bd6236688970c463">&#x202A;WriteVideo::StartWriter</a></div><div class="ttdeci">&#x202A;bool StartWriter(const std::string file_name)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d15/a00188_source.html#l00038">WriteVideo.cc:38</a></div></div>
+<div class="ttc" id="aa01154_html_a17d047ca991630963bb004404e25cbda"><div class="ttname"><a href="../../d5/d16/a01154.html#a17d047ca991630963bb004404e25cbda">&#x202A;RunPara::StCFG::StDebug::nDebugEnable</a></div><div class="ttdeci">&#x202A;int nDebugEnable</div><div class="ttdoc">&#x202A;是否使能 测试</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00273">runpara.h:273</a></div></div>
+<div class="ttc" id="aa01154_html_a5a7b3d37220b4b478aaa714245a25b1d"><div class="ttname"><a href="../../d5/d16/a01154.html#a5a7b3d37220b4b478aaa714245a25b1d">&#x202A;RunPara::StCFG::StDebug::nWriteVideoEnable</a></div><div class="ttdeci">&#x202A;int nWriteVideoEnable</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00279">runpara.h:279</a></div></div>
+<div class="ttc" id="aa01154_html_a55676b481748b3169abcad0b15dab03f"><div class="ttname"><a href="../../d5/d16/a01154.html#a55676b481748b3169abcad0b15dab03f">&#x202A;RunPara::StCFG::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG::StDebug Debug</div></div>
+<div class="ttc" id="aa01278_html_aec15a690edf1e1a7af966b0fee59f71e"><div class="ttname"><a href="../../d4/d10/a01278.html#aec15a690edf1e1a7af966b0fee59f71e">&#x202A;WriteVideo::m_writer_</a></div><div class="ttdeci">&#x202A;cv::VideoWriter * m_writer_</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00036">WriteVideo.h:36</a></div></div>
+<div class="ttc" id="aa01122_html"><div class="ttname"><a href="../../db/d32/a01122.html">&#x202A;CQueue&lt; cv::Mat &gt;</a></div></div>
+<div class="ttc" id="aa01410_html_af9b1fae65fc91319a7f2ee2fefb86799"><div class="ttname"><a href="../../d8/d01/a01410.html#af9b1fae65fc91319a7f2ee2fefb86799">&#x202A;Utils_QT::CheckDir</a></div><div class="ttdeci">&#x202A;static bool CheckDir(const std::string &amp;path, bool create_=true)</div><div class="ttdoc">&#x202A;判断文件夹是否存在如果存在 根据情况判断是否创建</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00057">utils_qt.cc:57</a></div></div>
+<div class="ttc" id="aa01122_html_a4d55a1a82ab1aa26325a0c93e2603c3f"><div class="ttname"><a href="../../db/d32/a01122.html#a4d55a1a82ab1aa26325a0c93e2603c3f">&#x202A;CQueue::Empty</a></div><div class="ttdeci">&#x202A;bool Empty(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00321">CQueue.h:321</a></div></div>
+<div class="ttc" id="aa01402_html"><div class="ttname"><a href="../../d0/dc7/a01402.html">&#x202A;Utils_Exception</a></div><div class="ttdoc">&#x202A;直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd6/a00272_source.html#l00073">Utils_Exception.h:73</a></div></div>
+<div class="ttc" id="aa01122_html_aabb5d6f90ce5562f4d30867de96bc983"><div class="ttname"><a href="../../db/d32/a01122.html#aabb5d6f90ce5562f4d30867de96bc983">&#x202A;CQueue::Pop</a></div><div class="ttdeci">&#x202A;bool Pop(T &amp;data)</div><div class="ttdoc">&#x202A;返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00150">CQueue.h:150</a></div></div>
+<div class="ttc" id="aa01278_html_a6160a17554039c6133fd5cb7b418954f"><div class="ttname"><a href="../../d4/d10/a01278.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;WriteVideo::m_write_buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * m_write_buffer_</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00035">WriteVideo.h:35</a></div></div>
+<div class="ttc" id="aa01418_html_a8fc80e6d8ee244ed6a5a49d7527de6d5"><div class="ttname"><a href="../../d4/d3c/a01418.html#a8fc80e6d8ee244ed6a5a49d7527de6d5">&#x202A;Utils_Time::GetTime</a></div><div class="ttdeci">&#x202A;static std::string GetTime(char c='_', bool rand_flg=false)</div><div class="ttdoc">&#x202A;Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7b/a00296_source.html#l00098">utils_time.cc:98</a></div></div>
+<div class="ttc" id="aa00062_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00020">main.cpp:20</a></div></div>
+<div class="ttc" id="aa01118_html_a80d3a8bcb64807efd5755b4028a0ebf9"><div class="ttname"><a href="../../dd/d09/a01118.html#a80d3a8bcb64807efd5755b4028a0ebf9">&#x202A;Config::mDebug</a></div><div class="ttdeci">&#x202A;RunPara::StCFG::StDebug * mDebug</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00035">Config.h:35</a></div></div>
+<div class="ttc" id="aa00272_html_a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86"><div class="ttname"><a href="../../d9/dd6/a00272.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">&#x202A;Error_Work_Dir_Video_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd6/a00272_source.html#l00049">Utils_Exception.h:49</a></div></div>
+<div class="ttc" id="aa01154_html_ade4767762e0d68450f48bc770a22832d"><div class="ttname"><a href="../../d5/d16/a01154.html#ade4767762e0d68450f48bc770a22832d">&#x202A;RunPara::StProject::strProjectPath</a></div><div class="ttdeci">&#x202A;std::string strProjectPath</div><div class="ttdoc">&#x202A;存储工程目录 // 从 运行路径 到 功能文件所在目录</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00073">runpara.h:73</a></div></div>
+<div class="ttc" id="aa00272_html_a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7"><div class="ttname"><a href="../../d9/dd6/a00272.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">&#x202A;Error_Video_Writer_Null</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd6/a00272_source.html#l00051">Utils_Exception.h:51</a></div></div>
+<div class="ttc" id="aa01118_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01154_html_a1ca5d1037652d0b772952ae0716d7a63"><div class="ttname"><a href="../../d5/d16/a01154.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG CFG</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d4/d10/a01278.html">&#x202A;Ui_ReadWindow</a></li>
+    <li class="navelem"><a class="el" href="../../d4/d10/a01278.html">&#x202A;WriteVideo</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

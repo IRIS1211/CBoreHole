@@ -1,0 +1,9 @@
+<map id="IDOIFile::ReadOneRowExt" name="IDOIFile::ReadOneRowExt">
+<area shape="rect" id="node1" title="Reads one row extent" alt="" coords="735,71,909,98"/>
+<area shape="rect" id="node2" href="$d6/dcd/a01023.html#a866e2bf6ee5717435128e3a07500a957" title="bool ReadMat(cv::Mat &amp;img,int ) ; // 考虑循环读取文件操作 , 可能存在问题" alt="" coords="531,21,659,47"/>
+<area shape="rect" id="node4" href="$d3/de5/a00209.html#ab5e6df2da27e8aacc5489605e4abcc53" title=" " alt="" coords="307,71,404,98"/>
+<area shape="rect" id="node5" href="$d6/dcd/a01023.html#a0502c78cb50fbdb8d9f6b29161f178d3" title="读取一行数据 按照指针位置读取" alt="" coords="504,122,687,149"/>
+<area shape="rect" id="node3" href="$de/d26/a01035.html#a95fcda8a05bce42033ab50c78c3f8a44" title="Handles button open file clicked signals" alt="" coords="283,5,428,47"/>
+<area shape="rect" id="node6" href="$d6/dcd/a01023.html#a40cfbe36eba4cad9b3bc35291b403b6b" title="Reads specify row data" alt="" coords="255,122,456,149"/>
+<area shape="rect" id="node7" href="$d6/dcd/a01023.html#a452cc199bffa3063d73983d9fed16968" title="Reads specify row data" alt="" coords="5,122,207,149"/>
+</map>

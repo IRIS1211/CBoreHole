@@ -1,0 +1,5 @@
+<map id="SerialProc::SerialProcStop" name="SerialProc::SerialProcStop">
+<area shape="rect" id="node1" title="串口处理对象 停止 关闭窗口并处理窗口" alt="" coords="5,5,183,32"/>
+<area shape="rect" id="node2" href="$d6/d27/a01163.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="231,5,400,32"/>
+<area shape="rect" id="node3" href="$d6/d27/a01163.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="448,5,601,32"/>
+</map>

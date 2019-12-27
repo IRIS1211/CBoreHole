@@ -1,0 +1,4 @@
+<map id="ComProtEncode" name="ComProtEncode">
+<area shape="rect" id="node1" title="参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 &#39;#&#39; 后缀 &#39;*&#39;" alt="" coords="5,13,123,39"/>
+<area shape="rect" id="node2" href="$d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08" title="异或校验 8位 避免出现 0 数据造成的 截至" alt="" coords="171,5,313,47"/>
+</map>

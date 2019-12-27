@@ -1,0 +1,22 @@
+<map id="charArr2String" name="charArr2String">
+<area shape="rect" id="node1" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="1715,145,1820,172"/>
+<area shape="rect" id="node2" href="$dc/d81/a01161.html#ade93d67c2ca12594170e9223af9c21b7" title="将串口数据 转换成字符串 // 数组 char 转换成字符串 用于查看" alt="" coords="1502,5,1661,32"/>
+<area shape="rect" id="node3" href="$d5/dfb/a01021.html#ad767a193d579f47ec9b66e1df49a102f" title="抓取数据" alt="" coords="830,107,961,133"/>
+<area shape="rect" id="node4" href="$de/dc3/a00909.html#a436eadf913d5a2ac0c0023707eb863c1" title="Listen thread" alt="" coords="1496,120,1667,147"/>
+<area shape="rect" id="node8" href="$de/db5/a01181.html#a501d9387b58680267b0dfd9e5c569fdb" title=" " alt="" coords="1509,171,1653,197"/>
+<area shape="rect" id="node19" href="$d9/d25/a01157.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="1521,221,1641,248"/>
+<area shape="rect" id="node20" href="$dc/d57/a00194.html#a5d4b06d9b49f5e6c501ccfccd5e19bfc" title=" " alt="" coords="1533,272,1630,299"/>
+<area shape="rect" id="node5" href="$de/dc3/a00909.html#a5166808d3063ff309f36f029768a1103" title="开启 监听线程" alt="" coords="1247,145,1448,172"/>
+<area shape="rect" id="node6" href="$de/dc3/a00909.html#a96ead81aea8f5c577586c595cb67bc26" title="打开串口 并开启监听进程" alt="" coords="1039,157,1187,184"/>
+<area shape="rect" id="node7" href="$d5/dfb/a01021.html#aca271d6667cb0934345bf0cc8b1124f7" title="// 测试串口" alt="" coords="1046,208,1179,235"/>
+<area shape="rect" id="node9" href="$de/db5/a01181.html#a2d4464068d1094563166f6f26976c825" title=" " alt="" coords="1259,233,1436,260"/>
+<area shape="rect" id="node10" href="$de/db5/a01181.html#ab481e15af6902cba13410c1e665100ff" title=" " alt="" coords="1027,259,1199,285"/>
+<area shape="rect" id="node11" href="$de/db5/a01181.html#a4d356bce746d2a91ab02ec10914a34b2" title=" " alt="" coords="812,259,979,285"/>
+<area shape="rect" id="node12" href="$de/db5/a01181.html#a2eb103016c9d0b4a4e13368ff3e9236c" title=" " alt="" coords="593,233,744,260"/>
+<area shape="rect" id="node18" href="$de/db5/a01181.html#aecefe574a943886a31f529a16c5b4869" title="设置 当前" alt="" coords="573,284,764,311"/>
+<area shape="rect" id="node13" href="$d2/d57/a01033.html#a4fd7a30375554ef9df2ef322db87c32d" title="初始化线程 初始化完成后 开始运行" alt="" coords="424,208,525,235"/>
+<area shape="rect" id="node17" href="$d3/de5/a00209.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="426,259,523,285"/>
+<area shape="rect" id="node14" href="$d3/d10/a01189.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,208,376,235"/>
+<area shape="rect" id="node15" href="$d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,179,130,205"/>
+<area shape="rect" id="node16" href="$d3/dd3/a01185.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,230,204,271"/>
+</map>

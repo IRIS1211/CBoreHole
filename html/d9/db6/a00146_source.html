@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/common.cc 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.6.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d9/db6/a00146_source.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">common.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d9/db6/a00146.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../inc/common.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d9/db6/a00146.html#a0dd08ab91977a2738f33adbd7e8306b2">   13</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/db6/a00146.html#a0dd08ab91977a2738f33adbd7e8306b2">&#x202A;AddImageInfo</a>(cv::Mat &amp;img)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d5/d16/a01154.html#da/dfb/a01174">&#x202A;RunPara::StImage::StImagePolar</a> *polar_para = &amp;(<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="comment">// 画出来 内外圆</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        cv::circle(img, </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                             polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>),</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                   polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#aaa0951944900aab9f998b309431fcd90">&#x202A;nImgMinR</a>, </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                   cv::Scalar(0, 255, 0), </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                   4);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        cv::circle(img, </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                             polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                   polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;nImgMaxR</a>, </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                   cv::Scalar(0, 255, 0), </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                   4);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// 划出来 圆心</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        cv::circle(img, </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                             polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                   8, </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                   cv::Scalar(255, 0, 0), </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                   -1);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// 画出 分割线 标识 展开的起点</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        cv::arrowedLine(img,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                 cv::Point(polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                           polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                 cv::Point(polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                           polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a> + 540), </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                 cv::Scalar(255, 0, 0), </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                 2);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span>  <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d9/db6/a00146.html#ad7df8e9072eb05862471c2fc24f4f5ce">   65</a></span>&#160;std::string <a class="code" href="../../d9/db6/a00146.html#ad7df8e9072eb05862471c2fc24f4f5ce">&#x202A;ComProtEncode</a>(<span class="keyword">const</span> std::string &amp;str)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// buffer =(uchar*) Utils_String::String2CharArr(res);</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> xor = <a class="code" href="../../d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08">&#x202A;Utils_String::Commu_CheckXOR</a>(str);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 生成两位小写 字符放在末尾, 用于 校验字符</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::string res = <span class="charliteral">&#39;#&#39;</span> + str + <span class="charliteral">&#39;*&#39;</span> + Utils_String::Uchar2Hex(xor, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../d9/db6/a00146.html#af384f4673c5a034cd96544569651638e">   87</a></span>&#160;std::string <a class="code" href="../../d9/db6/a00146.html#af384f4673c5a034cd96544569651638e">&#x202A;ComProtDecode</a>(<span class="keyword">const</span> std::string &amp;str)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (str.size() &lt; 4)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::string res = str.substr(1, str.size() - 4);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// 加密结果应该一致</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d9/db6/a00146.html#ad7df8e9072eb05862471c2fc24f4f5ce">&#x202A;ComProtEncode</a>(res) != str)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01154_html_da/dfb/a01174"><div class="ttname"><a href="../../d5/d16/a01154.html#da/dfb/a01174">&#x202A;RunPara::StImage::StImagePolar</a></div><div class="ttdoc">&#x202A;Image 处理参数, 作为图像展开参数</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00110">runpara.h:110</a></div></div>
+<div class="ttc" id="aa01154_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
+<div class="ttc" id="aa01154_html_a7e46989d0421ca554f06927f2c28b99a"><div class="ttname"><a href="../../d5/d16/a01154.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;RunPara::StImage::StImagePolar::nImgMaxR</a></div><div class="ttdeci">&#x202A;int nImgMaxR</div><div class="ttdoc">&#x202A;外径 最大范围</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00114">runpara.h:114</a></div></div>
+<div class="ttc" id="aa01154_html_aaa0951944900aab9f998b309431fcd90"><div class="ttname"><a href="../../d5/d16/a01154.html#aaa0951944900aab9f998b309431fcd90">&#x202A;RunPara::StImage::StImagePolar::nImgMinR</a></div><div class="ttdeci">&#x202A;int nImgMinR</div><div class="ttdoc">&#x202A;内径</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00115">runpara.h:115</a></div></div>
+<div class="ttc" id="aa00146_html_af384f4673c5a034cd96544569651638e"><div class="ttname"><a href="../../d9/db6/a00146.html#af384f4673c5a034cd96544569651638e">&#x202A;ComProtDecode</a></div><div class="ttdeci">&#x202A;std::string ComProtDecode(const std::string &amp;str)</div><div class="ttdoc">&#x202A;直接 取 1- (size-4)的长度的值 计算结果看看是否匹配 然后返回</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00087">common.cc:87</a></div></div>
+<div class="ttc" id="aa01154_html_a76b56f70107ff342985f6d8bef2fa3ba"><div class="ttname"><a href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;RunPara::StImage::Polar</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage::StImagePolar Polar</div></div>
+<div class="ttc" id="aa00146_html_ad7df8e9072eb05862471c2fc24f4f5ce"><div class="ttname"><a href="../../d9/db6/a00146.html#ad7df8e9072eb05862471c2fc24f4f5ce">&#x202A;ComProtEncode</a></div><div class="ttdeci">&#x202A;std::string ComProtEncode(const std::string &amp;str)</div><div class="ttdoc">&#x202A;参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 '#' 后缀 '*'</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00065">common.cc:65</a></div></div>
+<div class="ttc" id="aa00062_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00020">main.cpp:20</a></div></div>
+<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00026">Commu.h:26</a></div></div>
+<div class="ttc" id="aa01154_html_a1f8c6937a5479cf7be87ec579c92ae0b"><div class="ttname"><a href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;RunPara::StImage::StImagePolar::nImgCenterX</a></div><div class="ttdeci">&#x202A;int nImgCenterX</div><div class="ttdoc">&#x202A;中心 X 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00112">runpara.h:112</a></div></div>
+<div class="ttc" id="aa00146_html_a0dd08ab91977a2738f33adbd7e8306b2"><div class="ttname"><a href="../../d9/db6/a00146.html#a0dd08ab91977a2738f33adbd7e8306b2">&#x202A;AddImageInfo</a></div><div class="ttdeci">&#x202A;bool AddImageInfo(cv::Mat &amp;img)</div><div class="ttdoc">&#x202A;Adds an image information // 在原始图像上添加相应 图形 来标识 图像</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00013">common.cc:13</a></div></div>
+<div class="ttc" id="aa01118_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01154_html_a32a897b4e7267880e0487ccfa093f0b1"><div class="ttname"><a href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;RunPara::StImage::StImagePolar::nImgCenterY</a></div><div class="ttdeci">&#x202A;int nImgCenterY</div><div class="ttdoc">&#x202A;中心 Y 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00113">runpara.h:113</a></div></div>
+<div class="ttc" id="aa01414_html_a37ab93c514c781bbb21d4360f8be5b08"><div class="ttname"><a href="../../d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08">&#x202A;Utils_String::Commu_CheckXOR</a></div><div class="ttdeci">&#x202A;static uchar Commu_CheckXOR(const uchar *buffer, int len)</div><div class="ttdoc">&#x202A;异或校验 8位 避免出现 0 数据造成的 截至</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00731">utils_string.cc:731</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d9/db6/a00146.html">&#x202A;common.cc</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

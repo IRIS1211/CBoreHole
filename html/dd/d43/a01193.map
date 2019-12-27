@@ -1,0 +1,52 @@
+<map id="WorkWindow" name="WorkWindow">
+<area shape="rect" id="node1" title="声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348" alt="" coords="2165,557,2264,584"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1888,429,1995,456"/>
+<area shape="rect" id="node3" href="$db/dbb/a01047.html" title=" " alt="" coords="1563,797,1697,824"/>
+<area shape="rect" id="node21" href="$de/d26/a01035.html" title="摄像头 抓取对象, 循环抓取对象数据到缓冲队列中" alt="" coords="1894,581,1989,608"/>
+<area shape="rect" id="node23" href="$df/d21/a01039.html" title="处理线程 单独执行过程" alt="" coords="1903,721,1979,748"/>
+<area shape="rect" id="node50" href="$d0/d5a/a01199.html" title="A write video. 使用传统线程方式 处理, 程序循环执行 写入动作" alt="" coords="1898,531,1985,557"/>
+<area shape="rect" id="node4" title=" " alt="" coords="735,849,884,876"/>
+<area shape="rect" id="node5" title="STL class" alt="" coords="248,860,363,887"/>
+<area shape="rect" id="node43" title=" " alt="" coords="544,1063,711,1089"/>
+<area shape="rect" id="node47" title=" " alt="" coords="545,817,710,844"/>
+<area shape="rect" id="node6" title=" " alt="" coords="49,829,88,856"/>
+<area shape="rect" id="node49" title="STL class" alt="" coords="249,795,362,821"/>
+<area shape="rect" id="node7" href="$db/dbb/a01047.html" title=" " alt="" coords="577,928,677,955"/>
+<area shape="rect" id="node42" href="$db/dbb/a01047.html" title=" " alt="" coords="914,1052,1067,1079"/>
+<area shape="rect" id="node46" href="$db/dbb/a01047.html" title=" " alt="" coords="915,877,1066,904"/>
+<area shape="rect" id="node8" href="$d2/d4c/a01307.html" title=" " alt="" coords="1882,480,2001,507"/>
+<area shape="rect" id="node9" href="$d6/d07/a01303.html" title=" " alt="" coords="1571,172,1689,199"/>
+<area shape="rect" id="node10" href="$da/d3f/a01215.html" title="A qt open cv viewer gl." alt="" coords="1269,208,1416,235"/>
+<area shape="rect" id="node11" title=" " alt="" coords="930,259,1051,285"/>
+<area shape="rect" id="node12" title=" " alt="" coords="908,208,1073,235"/>
+<area shape="rect" id="node13" href="$d5/d39/a01219.html" title="自定义滑动条实现, 滑动之后更改相应的值和相应的关系" alt="" coords="1311,44,1375,71"/>
+<area shape="rect" id="node14" title=" " alt="" coords="958,5,1023,32"/>
+<area shape="rect" id="node15" href="$d7/ddd/a01223.html" title=" " alt="" coords="1285,133,1400,160"/>
+<area shape="rect" id="node16" title=" " alt="" coords="591,136,664,163"/>
+<area shape="rect" id="node20" href="$d9/da8/a01227.html" title=" " alt="" coords="931,107,1050,133"/>
+<area shape="rect" id="node17" href="$de/dcb/a01263.html" title=" " alt="" coords="939,56,1043,83"/>
+<area shape="rect" id="node18" href="$dd/dad/a01235.html" title=" " alt="" coords="579,17,676,44"/>
+<area shape="rect" id="node19" href="$dd/d95/a01247.html" title=" " alt="" coords="580,68,675,95"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1595,496,1665,523"/>
+<area shape="rect" id="node24" href="$d2/d49/a01067.html" title="图片处理类实现" alt="" coords="1588,689,1672,716"/>
+<area shape="rect" id="node25" href="$de/de6/a01063.html" title="An idoi file." alt="" coords="1309,651,1377,677"/>
+<area shape="rect" id="node26" title="STL class" alt="" coords="945,987,1036,1013"/>
+<area shape="rect" id="node40" href="$dc/d70/a01187.html" title="设定串口 处理 函数 解析串口的数据 到系统运行参数中" alt="" coords="1589,1035,1671,1061"/>
+<area shape="rect" id="node45" href="$d6/d27/a01163.html" title="A serial." alt="" coords="1315,1096,1370,1123"/>
+<area shape="rect" id="node27" title="STL class" alt="" coords="563,997,692,1038"/>
+<area shape="rect" id="node28" title="STL class" alt="" coords="237,997,373,1038"/>
+<area shape="rect" id="node29" href="$d2/d4d/a01079.html" title="系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换" alt="" coords="955,567,1027,593"/>
+<area shape="rect" id="node30" href="$d2/d4d/a01079.html#db/db2/a01143" title="设置用户UI 参数" alt="" coords="575,448,680,475"/>
+<area shape="rect" id="node31" href="$d2/d4d/a01079.html#d3/de1/a01111" title="设置硬件的参数信息" alt="" coords="562,499,693,525"/>
+<area shape="rect" id="node32" href="$d2/d4d/a01079.html#d6/d9a/a01083" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="550,651,705,677"/>
+<area shape="rect" id="node33" title="STL class" alt="" coords="265,507,345,533"/>
+<area shape="rect" id="node35" href="$d2/d4d/a01079.html#d6/d0d/a01091" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="568,397,687,424"/>
+<area shape="rect" id="node38" href="$d2/d4d/a01079.html#d0/d1f/a01087" title="记录 路径以及其他路径信息" alt="" coords="560,701,695,728"/>
+<area shape="rect" id="node34" title="STL class" alt="" coords="5,499,132,541"/>
+<area shape="rect" id="node36" href="$d2/d4d/a01079.html#de/df1/a01151" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="567,549,687,576"/>
+<area shape="rect" id="node37" href="$d2/d4d/a01079.html#de/d6d/a01095" title="运行过程中的 图像参数" alt="" coords="563,600,691,627"/>
+<area shape="rect" id="node39" href="$d0/d90/a01059.html" title="#TODO: 完善拓展信息内容 定义拓展信息内容" alt="" coords="954,651,1027,677"/>
+<area shape="rect" id="node41" title=" " alt="" coords="955,1192,1026,1219"/>
+<area shape="rect" id="node44" href="$d7/dd6/a01167.html" title="暂存 串口发送回来的 分组数据 保存串口发送的原始数据" alt="" coords="264,1135,347,1161"/>
+<area shape="rect" id="node48" title=" " alt="" coords="1097,712,1245,739"/>
+</map>

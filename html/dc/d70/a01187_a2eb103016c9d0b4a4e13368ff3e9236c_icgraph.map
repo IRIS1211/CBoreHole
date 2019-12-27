@@ -1,0 +1,8 @@
+<map id="SerialProc::SerialProc" name="SerialProc::SerialProc">
+<area shape="rect" id="node1" title="默认初始化方式 初始化串口和定时器" alt="" coords="573,60,724,87"/>
+<area shape="rect" id="node2" href="$df/d21/a01039.html#a4fd7a30375554ef9df2ef322db87c32d" title="初始化线程 初始化完成后 开始运行" alt="" coords="424,35,525,61"/>
+<area shape="rect" id="node6" href="$d3/dd5/a00215.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="426,85,523,112"/>
+<area shape="rect" id="node3" href="$d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" id="node4" href="$d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" id="node5" href="$d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>

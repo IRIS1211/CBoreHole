@@ -1,0 +1,8 @@
+<map id="CamCapture::Init" name="CamCapture::Init">
+<area shape="rect" id="node1" title="初始化相机参数, 并打开相机对象" alt="" coords="511,92,629,119"/>
+<area shape="rect" id="node2" href="$de/d1a/a01179.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="295,64,419,91"/>
+<area shape="rect" id="node5" href="$d6/d27/a01163.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="252,119,463,145"/>
+<area shape="rect" id="node3" href="$db/ddf/a00164.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="79,5,130,32"/>
+<area shape="rect" id="node4" href="$d6/d27/a01163.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+<area shape="rect" id="node6" href="$d6/d27/a01163.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="23,123,186,149"/>
+</map>

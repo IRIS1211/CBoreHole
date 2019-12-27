@@ -1,0 +1,22 @@
+<map id="SerialProc" name="SerialProc">
+<area shape="rect" id="node1" title="设定串口 处理 函数 解析串口的数据 到系统运行参数中" alt="" coords="373,663,456,689"/>
+<area shape="rect" id="node2" title=" " alt="" coords="127,484,198,511"/>
+<area shape="rect" id="node9" href="$d6/d27/a01163.html" title="A serial." alt="" coords="253,573,307,600"/>
+<area shape="rect" id="node3" href="$db/dbb/a01047.html" title=" " alt="" coords="505,484,658,511"/>
+<area shape="rect" id="node4" title=" " alt="" coords="437,373,603,399"/>
+<area shape="rect" id="node5" href="$d7/dd6/a01167.html" title="暂存 串口发送回来的 分组数据 保存串口发送的原始数据" alt="" coords="183,269,265,295"/>
+<area shape="rect" id="node6" title="STL class" alt="" coords="588,269,703,295"/>
+<area shape="rect" id="node18" title=" " alt="" coords="768,373,933,399"/>
+<area shape="rect" id="node7" title=" " alt="" coords="626,165,665,191"/>
+<area shape="rect" id="node8" href="$db/dbb/a01047.html" title=" " alt="" coords="638,373,738,399"/>
+<area shape="rect" id="node17" href="$db/dbb/a01047.html" title=" " alt="" coords="697,484,847,511"/>
+<area shape="rect" id="node10" title="STL class" alt="" coords="303,484,393,511"/>
+<area shape="rect" id="node11" title="STL class" alt="" coords="283,365,413,407"/>
+<area shape="rect" id="node12" title="STL class" alt="" coords="289,261,425,303"/>
+<area shape="rect" id="node13" title="STL class" alt="" coords="199,157,329,199"/>
+<area shape="rect" id="node14" title="STL class" alt="" coords="233,81,388,108"/>
+<area shape="rect" id="node16" title="STL class" alt="" coords="353,157,487,199"/>
+<area shape="rect" id="node15" title="STL class" alt="" coords="261,5,361,32"/>
+<area shape="rect" id="node19" title="STL class" alt="" coords="811,269,891,295"/>
+<area shape="rect" id="node20" title="STL class" alt="" coords="787,157,914,199"/>
+</map>

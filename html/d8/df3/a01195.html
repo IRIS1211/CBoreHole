@@ -1,0 +1,1971 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;WorkWindow类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.6.0</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d8/df3/a01195.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">成员变量</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pri-slots">Private 槽</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a>  </div>
+  <div class="headertitle">
+<div class="title">WorkWindow类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 <a href="https://blog.csdn.net/hebbely/article/details/79267348">https://blog.csdn.net/hebbely/article/details/79267348</a>  
+ <a href="../../d8/df3/a01195.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/dec/a00080_source.html">Code\inc\WorkWindow.h</a>&gt;</code></p>
+<div class="dynheader">
+类 WorkWindow 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d2e/a01194.png" border="0" usemap="#_work_window_inherit__map" alt="Inheritance graph"/></div>
+<map name="_work_window_inherit__map" id="_work_window_inherit__map">
+<area shape="rect" title="声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348" alt="" coords="9,80,108,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,112,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+WorkWindow 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d43/a01193.png" border="0" usemap="#_work_window_coll__map" alt="Collaboration graph"/></div>
+<map name="_work_window_coll__map" id="_work_window_coll__map">
+<area shape="rect" title="声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348" alt="" coords="2165,557,2264,584"/>
+<area shape="rect" title=" " alt="" coords="1888,429,1995,456"/>
+<area shape="rect" href="../../db/dbb/a01047.html" title=" " alt="" coords="1563,797,1697,824"/>
+<area shape="rect" href="../../de/d26/a01035.html" title="摄像头 抓取对象, 循环抓取对象数据到缓冲队列中" alt="" coords="1894,581,1989,608"/>
+<area shape="rect" href="../../df/d21/a01039.html" title="处理线程 单独执行过程" alt="" coords="1903,721,1979,748"/>
+<area shape="rect" href="../../d0/d5a/a01199.html" title="A write video. 使用传统线程方式 处理, 程序循环执行 写入动作" alt="" coords="1898,531,1985,557"/>
+<area shape="rect" title=" " alt="" coords="735,849,884,876"/>
+<area shape="rect" title="STL class" alt="" coords="248,860,363,887"/>
+<area shape="rect" title=" " alt="" coords="544,1063,711,1089"/>
+<area shape="rect" title=" " alt="" coords="545,817,710,844"/>
+<area shape="rect" title=" " alt="" coords="49,829,88,856"/>
+<area shape="rect" title="STL class" alt="" coords="249,795,362,821"/>
+<area shape="rect" href="../../db/dbb/a01047.html" title=" " alt="" coords="577,928,677,955"/>
+<area shape="rect" href="../../db/dbb/a01047.html" title=" " alt="" coords="914,1052,1067,1079"/>
+<area shape="rect" href="../../db/dbb/a01047.html" title=" " alt="" coords="915,877,1066,904"/>
+<area shape="rect" href="../../d2/d4c/a01307.html" title=" " alt="" coords="1882,480,2001,507"/>
+<area shape="rect" href="../../d6/d07/a01303.html" title=" " alt="" coords="1571,172,1689,199"/>
+<area shape="rect" href="../../da/d3f/a01215.html" title="A qt open cv viewer gl." alt="" coords="1269,208,1416,235"/>
+<area shape="rect" title=" " alt="" coords="930,259,1051,285"/>
+<area shape="rect" title=" " alt="" coords="908,208,1073,235"/>
+<area shape="rect" href="../../d5/d39/a01219.html" title="自定义滑动条实现, 滑动之后更改相应的值和相应的关系" alt="" coords="1311,44,1375,71"/>
+<area shape="rect" title=" " alt="" coords="958,5,1023,32"/>
+<area shape="rect" href="../../d7/ddd/a01223.html" title=" " alt="" coords="1285,133,1400,160"/>
+<area shape="rect" title=" " alt="" coords="591,136,664,163"/>
+<area shape="rect" href="../../d9/da8/a01227.html" title=" " alt="" coords="931,107,1050,133"/>
+<area shape="rect" href="../../de/dcb/a01263.html" title=" " alt="" coords="939,56,1043,83"/>
+<area shape="rect" href="../../dd/dad/a01235.html" title=" " alt="" coords="579,17,676,44"/>
+<area shape="rect" href="../../dd/d95/a01247.html" title=" " alt="" coords="580,68,675,95"/>
+<area shape="rect" title=" " alt="" coords="1595,496,1665,523"/>
+<area shape="rect" href="../../d2/d49/a01067.html" title="图片处理类实现" alt="" coords="1588,689,1672,716"/>
+<area shape="rect" href="../../de/de6/a01063.html" title="An idoi file." alt="" coords="1309,651,1377,677"/>
+<area shape="rect" title="STL class" alt="" coords="945,987,1036,1013"/>
+<area shape="rect" href="../../dc/d70/a01187.html" title="设定串口 处理 函数 解析串口的数据 到系统运行参数中" alt="" coords="1589,1035,1671,1061"/>
+<area shape="rect" href="../../d6/d27/a01163.html" title="A serial." alt="" coords="1315,1096,1370,1123"/>
+<area shape="rect" title="STL class" alt="" coords="563,997,692,1038"/>
+<area shape="rect" title="STL class" alt="" coords="237,997,373,1038"/>
+<area shape="rect" href="../../d2/d4d/a01079.html" title="系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换" alt="" coords="955,567,1027,593"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#db/db2/a01143" title="设置用户UI 参数" alt="" coords="575,448,680,475"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d3/de1/a01111" title="设置硬件的参数信息" alt="" coords="562,499,693,525"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d6/d9a/a01083" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="550,651,705,677"/>
+<area shape="rect" title="STL class" alt="" coords="265,507,345,533"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d6/d0d/a01091" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="568,397,687,424"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#d0/d1f/a01087" title="记录 路径以及其他路径信息" alt="" coords="560,701,695,728"/>
+<area shape="rect" title="STL class" alt="" coords="5,499,132,541"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#de/df1/a01151" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="567,549,687,576"/>
+<area shape="rect" href="../../d2/d4d/a01079.html#de/d6d/a01095" title="运行过程中的 图像参数" alt="" coords="563,600,691,627"/>
+<area shape="rect" href="../../d0/d90/a01059.html" title="#TODO: 完善拓展信息内容 定义拓展信息内容" alt="" coords="954,651,1027,677"/>
+<area shape="rect" title=" " alt="" coords="955,1192,1026,1219"/>
+<area shape="rect" href="../../d7/dd6/a01167.html" title="暂存 串口发送回来的 分组数据 保存串口发送的原始数据" alt="" coords="264,1135,347,1161"/>
+<area shape="rect" title=" " alt="" coords="1097,712,1245,739"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:a41a95073fcd146be53bf16c5649b00b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a41a95073fcd146be53bf16c5649b00b0">slot_ShowMatOnLabelByFlg</a> (cv::Mat *img, int flg=0)</td></tr>
+<tr class="memdesc:a41a95073fcd146be53bf16c5649b00b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示  <a href="../../d8/df3/a01195.html#a41a95073fcd146be53bf16c5649b00b0">更多...</a><br /></td></tr>
+<tr class="separator:a41a95073fcd146be53bf16c5649b00b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cd97fd58fbed431d25dd3055f084bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#ae0cd97fd58fbed431d25dd3055f084bd">Slot_UpdateUIByRunPara</a> ()</td></tr>
+<tr class="memdesc:ae0cd97fd58fbed431d25dd3055f084bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;根据运行参数 更改目前程序界面上的参数  <a href="../../d8/df3/a01195.html#ae0cd97fd58fbed431d25dd3055f084bd">更多...</a><br /></td></tr>
+<tr class="separator:ae0cd97fd58fbed431d25dd3055f084bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a079ea93a8e35136b245a4f19b9f380f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a079ea93a8e35136b245a4f19b9f380f5">signal_close_windows</a> ()</td></tr>
+<tr class="memdesc:a079ea93a8e35136b245a4f19b9f380f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;发送当前窗口关闭信号  <a href="../../d8/df3/a01195.html#a079ea93a8e35136b245a4f19b9f380f5">更多...</a><br /></td></tr>
+<tr class="separator:a079ea93a8e35136b245a4f19b9f380f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af811eab27901f7a9dac0a8700f13be49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#af811eab27901f7a9dac0a8700f13be49">signal_render_extra_info</a> ()</td></tr>
+<tr class="memdesc:af811eab27901f7a9dac0a8700f13be49"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;更新其他信息 &mdash;亮度,存储,电压等信息  <a href="../../d8/df3/a01195.html#af811eab27901f7a9dac0a8700f13be49">更多...</a><br /></td></tr>
+<tr class="separator:af811eab27901f7a9dac0a8700f13be49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043fda4cae901d1aa3566022c4b66b90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a043fda4cae901d1aa3566022c4b66b90">signal_updateUI</a> ()</td></tr>
+<tr class="memdesc:a043fda4cae901d1aa3566022c4b66b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Raises an Update user interface signal 提醒刷新界面 ui 参数  <a href="../../d8/df3/a01195.html#a043fda4cae901d1aa3566022c4b66b90">更多...</a><br /></td></tr>
+<tr class="separator:a043fda4cae901d1aa3566022c4b66b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae75fa8506f277a4bfd16ecf6854faa10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#ae75fa8506f277a4bfd16ecf6854faa10">WorkWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:ae75fa8506f277a4bfd16ecf6854faa10"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../d8/df3/a01195.html" title="&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348">WorkWindow</a> class 实现构造函数, 完成构造的设定 初始化部分单独处理  <a href="../../d8/df3/a01195.html#ae75fa8506f277a4bfd16ecf6854faa10">更多...</a><br /></td></tr>
+<tr class="separator:ae75fa8506f277a4bfd16ecf6854faa10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e99dde5e6e49f134243fbad6ded3a04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a0e99dde5e6e49f134243fbad6ded3a04">~WorkWindow</a> ()</td></tr>
+<tr class="memdesc:a0e99dde5e6e49f134243fbad6ded3a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Finalizes an instance of the <a class="el" href="../../d8/df3/a01195.html" title="&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348">WorkWindow</a> class  <a href="../../d8/df3/a01195.html#a0e99dde5e6e49f134243fbad6ded3a04">更多...</a><br /></td></tr>
+<tr class="separator:a0e99dde5e6e49f134243fbad6ded3a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c3f45662e1af9a6dd2071418d6a484"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a14c3f45662e1af9a6dd2071418d6a484">ListAllCameraDevice</a> ()</td></tr>
+<tr class="memdesc:a14c3f45662e1af9a6dd2071418d6a484"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;列出所有可以使用 的相机 使用 QDebug 输出  <a href="../../d8/df3/a01195.html#a14c3f45662e1af9a6dd2071418d6a484">更多...</a><br /></td></tr>
+<tr class="separator:a14c3f45662e1af9a6dd2071418d6a484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cc99469cf7af144c013870cd2a31e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1">Init</a> (void)</td></tr>
+<tr class="memdesc:a98cc99469cf7af144c013870cd2a31e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;主线程 初始化  <a href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1">更多...</a><br /></td></tr>
+<tr class="separator:a98cc99469cf7af144c013870cd2a31e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef97f32155274910902b00d7a327c84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a8ef97f32155274910902b00d7a327c84">ParaInit</a> (void)</td></tr>
+<tr class="memdesc:a8ef97f32155274910902b00d7a327c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;初始化 程序  <a href="../../d8/df3/a01195.html#a8ef97f32155274910902b00d7a327c84">更多...</a><br /></td></tr>
+<tr class="separator:a8ef97f32155274910902b00d7a327c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054b4913c0b0f87c7c285e122eaed7fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a054b4913c0b0f87c7c285e122eaed7fe">RunParaUpdate</a> ()</td></tr>
+<tr class="memdesc:a054b4913c0b0f87c7c285e122eaed7fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;根据运行状态 以及系统时间 更新运行 参数  <a href="../../d8/df3/a01195.html#a054b4913c0b0f87c7c285e122eaed7fe">更多...</a><br /></td></tr>
+<tr class="separator:a054b4913c0b0f87c7c285e122eaed7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac8d28317aadd53446419ac8b353a82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a1ac8d28317aadd53446419ac8b353a82">renderLocation</a> (int d_pluse)</td></tr>
+<tr class="memdesc:a1ac8d28317aadd53446419ac8b353a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将位置信息实时更新到界面的label 上  <a href="../../d8/df3/a01195.html#a1ac8d28317aadd53446419ac8b353a82">更多...</a><br /></td></tr>
+<tr class="separator:a1ac8d28317aadd53446419ac8b353a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a798f4301174eaffad296ad212a61b33d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dbb/a01047.html">CQueue</a>&lt; cv::Mat &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a798f4301174eaffad296ad212a61b33d">mq_CaptureImageBuffer_</a></td></tr>
+<tr class="separator:a798f4301174eaffad296ad212a61b33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:aedce215cbc9df3707f1371f28f63e9d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#aedce215cbc9df3707f1371f28f63e9d1">closeEvent</a> (QCloseEvent *event) override</td></tr>
+<tr class="memdesc:aedce215cbc9df3707f1371f28f63e9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;窗口关闭事件,  <a href="../../d8/df3/a01195.html#aedce215cbc9df3707f1371f28f63e9d1">更多...</a><br /></td></tr>
+<tr class="separator:aedce215cbc9df3707f1371f28f63e9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private 槽</h2></td></tr>
+<tr class="memitem:adf8cb1ec53fceb7ea6e54150b22ba590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#adf8cb1ec53fceb7ea6e54150b22ba590">on_btn_work_exit_clicked</a> ()</td></tr>
+<tr class="memdesc:adf8cb1ec53fceb7ea6e54150b22ba590"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;退出按钮点击之后的操作  <a href="../../d8/df3/a01195.html#adf8cb1ec53fceb7ea6e54150b22ba590">更多...</a><br /></td></tr>
+<tr class="separator:adf8cb1ec53fceb7ea6e54150b22ba590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7597205c96689c706eea3c64d87ba180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a7597205c96689c706eea3c64d87ba180">on_btn_startWork_clicked</a> ()</td></tr>
+<tr class="memdesc:a7597205c96689c706eea3c64d87ba180"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;开始工作按钮点击事件 开始执行拼图程序  <a href="../../d8/df3/a01195.html#a7597205c96689c706eea3c64d87ba180">更多...</a><br /></td></tr>
+<tr class="separator:a7597205c96689c706eea3c64d87ba180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdd485a69c246f9a2fb96ce22c7f9c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#afbdd485a69c246f9a2fb96ce22c7f9c2">on_btn_Record_clicked</a> ()</td></tr>
+<tr class="memdesc:afbdd485a69c246f9a2fb96ce22c7f9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;处理单纯的录制图像 功能  <a href="../../d8/df3/a01195.html#afbdd485a69c246f9a2fb96ce22c7f9c2">更多...</a><br /></td></tr>
+<tr class="separator:afbdd485a69c246f9a2fb96ce22c7f9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01083e6fa8585bbe6302affa302bd4d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a01083e6fa8585bbe6302affa302bd4d7">slot_render_location</a> (int dPluse)</td></tr>
+<tr class="memdesc:a01083e6fa8585bbe6302affa302bd4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;更新 编码器 位置信息  <a href="../../d8/df3/a01195.html#a01083e6fa8585bbe6302affa302bd4d7">更多...</a><br /></td></tr>
+<tr class="separator:a01083e6fa8585bbe6302affa302bd4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9dcd6afdb5b4cd7811eda08b9223de1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#ae9dcd6afdb5b4cd7811eda08b9223de1">slot_render_HCM</a> (<a class="el" href="../../d2/d22/a01171.html#dc/d2d/a01183">FrameData::StCompass</a> &amp;compass)</td></tr>
+<tr class="memdesc:ae9dcd6afdb5b4cd7811eda08b9223de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;更新电子罗盘数据  <a href="../../d8/df3/a01195.html#ae9dcd6afdb5b4cd7811eda08b9223de1">更多...</a><br /></td></tr>
+<tr class="separator:ae9dcd6afdb5b4cd7811eda08b9223de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92af3ed8f61e4fd9eaf4d1b14446683"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#af92af3ed8f61e4fd9eaf4d1b14446683">slot_render_extra_info</a> (void)</td></tr>
+<tr class="memdesc:af92af3ed8f61e4fd9eaf4d1b14446683"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;更新其他信息值 // 电压 // 亮度 // 存储信息  <a href="../../d8/df3/a01195.html#af92af3ed8f61e4fd9eaf4d1b14446683">更多...</a><br /></td></tr>
+<tr class="separator:af92af3ed8f61e4fd9eaf4d1b14446683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:aca648f5b3e1bd12006f0d2fd3fc5c8e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9">SetRelateConnection</a> ()</td></tr>
+<tr class="memdesc:aca648f5b3e1bd12006f0d2fd3fc5c8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设定相关槽和信号的连接  <a href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9">更多...</a><br /></td></tr>
+<tr class="separator:aca648f5b3e1bd12006f0d2fd3fc5c8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec884594b80adcfb3a7fa7181e216d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a4ec884594b80adcfb3a7fa7181e216d4">ShowMatOnQtLabel</a> (const cv::Mat &amp;srcImg, QLabel *lb_label, int width, int height)</td></tr>
+<tr class="memdesc:a4ec884594b80adcfb3a7fa7181e216d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将一副图像显示在 设定的 Label 上  <a href="../../d8/df3/a01195.html#a4ec884594b80adcfb3a7fa7181e216d4">更多...</a><br /></td></tr>
+<tr class="separator:a4ec884594b80adcfb3a7fa7181e216d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a0875afe0e956a7c16209a742b564309d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/a01307.html">Ui::WorkWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">ui</a></td></tr>
+<tr class="memdesc:a0875afe0e956a7c16209a742b564309d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;缓冲队列, 给采集和显示用的队列  <a href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">更多...</a><br /></td></tr>
+<tr class="separator:a0875afe0e956a7c16209a742b564309d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b65273b35191ec0675fe927b2a8fc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d21/a01039.html">CamProc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">m_CamProc_</a></td></tr>
+<tr class="memdesc:a61b65273b35191ec0675fe927b2a8fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;图像处理对象  <a href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">更多...</a><br /></td></tr>
+<tr class="separator:a61b65273b35191ec0675fe927b2a8fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db89bd52183aedfb5723bf4f41af7c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d26/a01035.html">CamCapture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">m_CamCapture_</a></td></tr>
+<tr class="memdesc:a5db89bd52183aedfb5723bf4f41af7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;相机采集 对象  <a href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">更多...</a><br /></td></tr>
+<tr class="separator:a5db89bd52183aedfb5723bf4f41af7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b24028f5fda51b3994e0ce589db5825"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d5a/a01199.html">WriteVideo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#a8b24028f5fda51b3994e0ce589db5825">m_WriteVideo__</a></td></tr>
+<tr class="memdesc:a8b24028f5fda51b3994e0ce589db5825"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;数据写入流  <a href="../../d8/df3/a01195.html#a8b24028f5fda51b3994e0ce589db5825">更多...</a><br /></td></tr>
+<tr class="separator:a8b24028f5fda51b3994e0ce589db5825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c42f345db9d961069023109afd18b2"><td class="memItemLeft" align="right" valign="top">QThread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01195.html#ab7c42f345db9d961069023109afd18b2">mt_serial_thread_</a></td></tr>
+<tr class="memdesc:ab7c42f345db9d961069023109afd18b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;串口线程 建立一个线程管理线程执行  <a href="../../d8/df3/a01195.html#ab7c42f345db9d961069023109afd18b2">更多...</a><br /></td></tr>
+<tr class="separator:ab7c42f345db9d961069023109afd18b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p class="DocNodeLTR">声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 <a href="https://blog.csdn.net/hebbely/article/details/79267348">https://blog.csdn.net/hebbely/article/details/79267348</a> </p>
+<p class="DocNodeLTR">主工作页面类实现, 获取队列&ndash;图像抓取队列&ndash;图像处理队列</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<ul class="DocNodeLTR">
+<li>&#x202A;存储队列&ndash;写入视频流队列</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../da/dec/a00080_source.html">WorkWindow.h</a> 第 <a class="el" href="../../da/dec/a00080_source.html#l00054">54</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ae75fa8506f277a4bfd16ecf6854faa10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae75fa8506f277a4bfd16ecf6854faa10">&#9670;&nbsp;</a></span>WorkWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WorkWindow::WorkWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Initializes a new instance of the <a class="el" href="../../d8/df3/a01195.html" title="&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348">WorkWindow</a> class 实现构造函数, 完成构造的设定 初始化部分单独处理 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parent</td><td>&#x202A;(Optional) 默认空,否则构造父对象 MainWindows </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00016">16</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                      :</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    QMainWindow(parent),</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>(<span class="keyword">new</span> <a class="code" href="../../d2/d4c/a01307.html">&#x202A;Ui::WorkWindow</a>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// 设置 控制UI 其余部分  放到初始化程序中</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#ae99e1d373bc2aca03cb84d59af908645">&#x202A;setupUi</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// 设置快捷键 开始拼接部分</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#a23fc25c32e1122f228abb5af184fba94">&#x202A;btn_startWork</a>-&gt;setShortcut(tr(<span class="stringliteral">&quot;ctrl+return&quot;</span>));</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// connect(&amp;m_timer_, &amp;QTimer::timeout, this, &amp;WorkWindow::HandleTimeOut);</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;   <span class="comment">//  m_Timer_-&gt;start(1000);</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//m_thread_serial_ = new QThread();</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//m_serial_ = new Serial();</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//connect(m_thread_serial_, &amp;QThread::started, m_serial_, &amp;Serial::Init, Qt::QueuedConnection);</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//connect(m_thread_serial_, &amp;QThread::finished, m_serial_, &amp;Serial::HandleCloseSerial, Qt::QueuedConnection);</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//m_thread_serial_-&gt;start(QThread::HighPriority);</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//m_serial_-&gt;moveToThread(m_thread_serial_);</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//m_serial_-&gt;m_QtSerial_-&gt;moveToThread(m_thread_serial_);</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//  m_QtSerial_-&gt;p</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_ae75fa8506f277a4bfd16ecf6854faa10_cgraph.png" border="0" usemap="#d8/df3/a01195_ae75fa8506f277a4bfd16ecf6854faa10_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_ae75fa8506f277a4bfd16ecf6854faa10_cgraph" id="d8/df3/a01195_ae75fa8506f277a4bfd16ecf6854faa10_cgraph">
+<area shape="rect" title="Initializes a new instance of the WorkWindow class 实现构造函数, 完成构造的设定 初始化部分单独处理" alt="" coords="5,5,189,32"/>
+<area shape="rect" href="../../d6/d07/a01303.html#ae99e1d373bc2aca03cb84d59af908645" title=" " alt="" coords="237,5,408,32"/>
+<area shape="rect" href="../../d6/d07/a01303.html#afc8b245e67572e9848d77a1695e9ebe1" title=" " alt="" coords="456,5,655,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0e99dde5e6e49f134243fbad6ded3a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e99dde5e6e49f134243fbad6ded3a04">&#9670;&nbsp;</a></span>~WorkWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WorkWindow::~WorkWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;Finalizes an instance of the <a class="el" href="../../d8/df3/a01195.html" title="&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348">WorkWindow</a> class </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;析构函数, 处理窗体的退出程序, 关闭拼图线程 删除指针</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00102">102</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// 关闭串口线程</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// m_CamProc_-&gt;m_SerialProc_-&gt;serPort-&gt;CloseListenTread();</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// 关闭相应进行</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#acbe03cac2d706c0f6d5a11f8c0e26946">&#x202A;ReleaseThread</a>(<a class="code" href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;m_CamCapture_</a>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#acbe03cac2d706c0f6d5a11f8c0e26946">&#x202A;ReleaseThread</a>(<a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    _CrtDumpMemoryLeaks();  <span class="comment">// NOTE: 在此处调用之前 进行检测内存泄漏</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// 关闭界面</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// delete ui;</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a0e99dde5e6e49f134243fbad6ded3a04_cgraph.png" border="0" usemap="#d8/df3/a01195_a0e99dde5e6e49f134243fbad6ded3a04_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_a0e99dde5e6e49f134243fbad6ded3a04_cgraph" id="d8/df3/a01195_a0e99dde5e6e49f134243fbad6ded3a04_cgraph">
+<area shape="rect" title="Finalizes an instance of the WorkWindow class" alt="" coords="5,5,197,32"/>
+<area shape="rect" href="../../d8/d41/a00038.html#acbe03cac2d706c0f6d5a11f8c0e26946" title="停止进程并同时 删除对象" alt="" coords="245,5,353,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aedce215cbc9df3707f1371f28f63e9d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedce215cbc9df3707f1371f28f63e9d1">&#9670;&nbsp;</a></span>closeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::closeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QCloseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;窗口关闭事件, </p>
+<p class="DocNodeLTR">窗口关闭 事件触发</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">event</td><td>&#x202A;If non-null, the event</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">event</td><td>&#x202A;If non-null, the event. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00314">314</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;{</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="comment">//#TODO 弹出窗口, 进行检测相应的进程是否关闭, 后续考虑更多参数执行</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="comment">// 弹出messsage 默认点击是</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    QMessageBox::critical(<span class="keyword">this</span>, </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                          tr(<span class="stringliteral">&quot;关闭窗口&quot;</span>), </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                          tr(<span class="stringliteral">&quot;确定关闭窗口?&quot;</span>), </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                          QMessageBox::Yes | QMessageBox::No, </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                          QMessageBox::Yes);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keyword">event</span>-&gt;accept();</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a98cc99469cf7af144c013870cd2a31e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98cc99469cf7af144c013870cd2a31e1">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WorkWindow::Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;主线程 初始化 </p>
+<p class="DocNodeLTR">初始化进程</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00052">52</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// 初始化 运行参数</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a054b4913c0b0f87c7c285e122eaed7fe">&#x202A;RunParaUpdate</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#ae0cd97fd58fbed431d25dd3055f084bd">&#x202A;Slot_UpdateUIByRunPara</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// 列出所有 相机</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a14c3f45662e1af9a6dd2071418d6a484">&#x202A;ListAllCameraDevice</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//  开启相机进程 打开相机并进行管理</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;m_CamCapture_</a> = <span class="keyword">new</span> <a class="code" href="../../de/d26/a01035.html">&#x202A;CamCapture</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;m_CamCapture_</a>-&gt;<a class="code" href="../../de/d26/a01035.html#a37280d2e0cfb79c0efc4cb2a26c54f86">&#x202A;Init</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// 创建 处理线程 并 独立运行</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//  空参数 建立线程,等待后续初始化参数之后执行 </span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a> = <span class="keyword">new</span> <a class="code" href="../../df/d21/a01039.html">&#x202A;CamProc</a>(<span class="keyword">this</span>);  <span class="comment">// 开始 建立线程进行运行</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>-&gt;<a class="code" href="../../df/d21/a01039.html#a4fd7a30375554ef9df2ef322db87c32d">&#x202A;Init</a>();  <span class="comment">// 处理进程初始化</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// 开启新线程, 连接 开启线程与串口初始化函数</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#ab7c42f345db9d961069023109afd18b2">&#x202A;mt_serial_thread_</a> = <span class="keyword">new</span> QThread(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9">&#x202A;SetRelateConnection</a>(); <span class="comment">// 设定连接</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// 初始化 自动绘图 程序</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// realtimePlotInit(ui-&gt;wg_plot);</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// 记录位置信息</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// ui-&gt;lb_loc-&gt;setText(QString::number(gConfig-&gt;mRunPara.Hole.nHoleBeginDepth));</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// RenderFloatNumberOnLabel(ui-&gt;lb_loc, gConfig-&gt;mRunPara.Hole.nHoleBeginDepth);</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// log ID</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// LDebug(&quot;GUI ThreadID is {}&quot;, QStringLiteral(&quot;@0x%1&quot;).arg(quintptr(QThread::currentThreadId()), 16, 16, QLatin1Char(&#39;0&#39;)).toStdString());</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// 建立相应 事件的连接 测试按钮部分</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// connect(ui-&gt;pushButton,SIGNAL(clicked()),this,SLOT(on_pushButton_clicked()));</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// connect(ui-&gt;btntestControl,SIGNAL(clicked()),this,SLOT(on_btntestControl_clicked()));</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a8b24028f5fda51b3994e0ce589db5825">&#x202A;m_WriteVideo__</a> = <span class="keyword">new</span> <a class="code" href="../../d0/d5a/a01199.html">&#x202A;WriteVideo</a>();   <span class="comment">// 初始建立文件</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a98cc99469cf7af144c013870cd2a31e1_cgraph.png" border="0" usemap="#d8/df3/a01195_a98cc99469cf7af144c013870cd2a31e1_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_a98cc99469cf7af144c013870cd2a31e1_cgraph" id="d8/df3/a01195_a98cc99469cf7af144c013870cd2a31e1_cgraph">
+<area shape="rect" title="主线程 初始化" alt="" coords="5,335,129,361"/>
+<area shape="rect" href="../../de/d26/a01035.html#a37280d2e0cfb79c0efc4cb2a26c54f86" title="初始化相机参数, 并打开相机对象" alt="" coords="233,157,351,184"/>
+<area shape="rect" href="../../df/d21/a01039.html#a4fd7a30375554ef9df2ef322db87c32d" title="初始化线程 初始化完成后 开始运行" alt="" coords="241,208,343,235"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a14c3f45662e1af9a6dd2071418d6a484" title="列出所有可以使用 的相机 使用 QDebug 输出" alt="" coords="198,298,386,339"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a054b4913c0b0f87c7c285e122eaed7fe" title="根据运行状态 以及系统时间 更新运行 参数" alt="" coords="193,364,391,391"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="177,453,407,480"/>
+<area shape="rect" href="../../d8/df3/a01195.html#ae0cd97fd58fbed431d25dd3055f084bd" title="根据运行参数 更改目前程序界面上的参数" alt="" coords="455,635,661,677"/>
+<area shape="rect" href="../../d3/da4/a01343.html#aa797e5e8119ca57f492ea5641817d49a" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="485,56,631,83"/>
+<area shape="rect" href="../../dc/d70/a01187.html#a2eb103016c9d0b4a4e13368ff3e9236c" title="默认初始化方式 初始化串口和定时器" alt="" coords="483,157,633,184"/>
+<area shape="rect" href="../../de/de6/a01063.html#ab0e31dfdd11ff5a789178ff0e70dc15c" title="Writes the para" alt="" coords="493,208,623,235"/>
+<area shape="rect" href="../../d3/da4/a01343.html#ab0bd05f35427650f2e295c18ba6938b3" title="num 转换成 字符串 前 补零" alt="" coords="735,5,907,32"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="501,259,615,285"/>
+<area shape="rect" href="../../d8/df3/a01195.html#af92af3ed8f61e4fd9eaf4d1b14446683" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="473,387,643,429"/>
+<area shape="rect" href="../../d8/df3/a01195.html#ae9dcd6afdb5b4cd7811eda08b9223de1" title="更新电子罗盘数据" alt="" coords="455,453,661,480"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a01083e6fa8585bbe6302affa302bd4d7" title="更新 编码器 位置信息" alt="" coords="473,505,643,546"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a41a95073fcd146be53bf16c5649b00b0" title="跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示" alt="" coords="463,570,653,611"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="1187,5,1357,32"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a97f68664ea64cf379c2e35390a0b8ab3" title="Handles the open serial" alt="" coords="737,107,904,133"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="1190,157,1354,184"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ad4bdb6d6267f052b1768659da61d58c0" title="Handles the read data" alt="" coords="735,208,906,235"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a91cd964b68534df3153349be46174907" title="Handles the timer described by t" alt="" coords="763,259,878,285"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="747,309,895,336"/>
+<area shape="rect" href="../../d6/d27/a01163.html#abdab3f6eff663933b5b0a293035418fd" title="Slot write data // 将字符串写入到串口中去" alt="" coords="745,360,896,387"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="1407,56,1560,83"/>
+<area shape="rect" href="../../d6/d27/a01163.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="983,107,1134,133"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a1b596e9793b3e992968d7b50392b43c0" title="Gets serial by port no" alt="" coords="1185,107,1359,133"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a7620016be54cb445876b796aad0e062f" title="Single read data 单存读取函数 串口读取一次或者 文件读取一行" alt="" coords="981,307,1137,333"/>
+<area shape="rect" href="../../dd/d6e/a01339.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="将字符串 转换成 QByteArray 字符串默认有空格" alt="" coords="1186,304,1358,331"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aa4d8cf50c0a13481ceb04c5a0581c959" title="2uchars the given string" alt="" coords="1445,304,1521,331"/>
+<area shape="rect" href="../../d6/d27/a01163.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data" alt="" coords="980,361,1137,388"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a6c1e2edd1365b94dff05468194611770" title="char 类型与 string的相互转换" alt="" coords="1189,355,1355,397"/>
+<area shape="rect" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c" title=" " alt="" coords="981,455,1137,481"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a1ac8d28317aadd53446419ac8b353a82" title="将位置信息实时更新到界面的label 上" alt="" coords="725,512,917,539"/>
+<area shape="rect" href="../../da/d3f/a01215.html#a054256077ab572adcbad2c9c7e8db3e2" title="Shows the image" alt="" coords="743,566,898,607"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a4ec884594b80adcfb3a7fa7181e216d4" title="将一副图像显示在 设定的 Label 上" alt="" coords="709,632,932,659"/>
+<area shape="rect" href="../../da/d3f/a01215.html#a68cd096eb4b3acfc5a6a0bee0ba447d4" title="Calculates the position" alt="" coords="981,506,1136,547"/>
+<area shape="rect" href="../../da/d3f/a01215.html#ac937ca5ac6f721398fab75e26f227532" title="Updates the scene" alt="" coords="981,571,1136,613"/>
+<area shape="rect" href="../../d8/d41/a00038.html#a51b816b14fb11dbdb1d0e7986cb0aca9" title="opencv Mat格式转换为 QT 的 QImage" alt="" coords="1003,637,1114,664"/>
+<area shape="rect" href="../../d5/d39/a01219.html#a2a5d6a071ffbe6f0f5727afc211b5fb9" title="Associates" alt="" coords="755,683,886,709"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a98cc99469cf7af144c013870cd2a31e1_icgraph.png" border="0" usemap="#d8/df3/a01195_a98cc99469cf7af144c013870cd2a31e1_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_a98cc99469cf7af144c013870cd2a31e1_icgraph" id="d8/df3/a01195_a98cc99469cf7af144c013870cd2a31e1_icgraph">
+<area shape="rect" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a14c3f45662e1af9a6dd2071418d6a484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c3f45662e1af9a6dd2071418d6a484">&#9670;&nbsp;</a></span>ListAllCameraDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WorkWindow::ListAllCameraDevice </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;列出所有可以使用 的相机 使用 QDebug 输出 </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;只列出前三个, 一般不会超过</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds 如果遇到不可访问 相机或者其他 返回 false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00127">127</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">// 列出设备连接的所有相机 // 限定最多显示 三个相机</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    QList&lt;QCameraInfo&gt; cameras = QCameraInfo::availableCameras();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; cameras.count() &amp;&amp; i &lt; 3; i++)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        std::string str = cameras[i].description().toStdString ();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        LInfo(<span class="stringliteral">&quot;Camera: {0}&quot;</span>, str);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a14c3f45662e1af9a6dd2071418d6a484_icgraph.png" border="0" usemap="#d8/df3/a01195_a14c3f45662e1af9a6dd2071418d6a484_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_a14c3f45662e1af9a6dd2071418d6a484_icgraph" id="d8/df3/a01195_a14c3f45662e1af9a6dd2071418d6a484_icgraph">
+<area shape="rect" title="列出所有可以使用 的相机 使用 QDebug 输出" alt="" coords="424,27,612,69"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afbdd485a69c246f9a2fb96ce22c7f9c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdd485a69c246f9a2fb96ce22c7f9c2">&#9670;&nbsp;</a></span>on_btn_Record_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::on_btn_Record_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;处理单纯的录制图像 功能 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00411">411</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;{</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> flg_btn_Record = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    flg_btn_Record = !flg_btn_Record;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#a05e1f9e90abe088589aae53326747fba">&#x202A;btn_Record</a>-&gt;setText(flg_btn_Record ? tr(<span class="stringliteral">&quot;Record&quot;</span>) : tr(<span class="stringliteral">&quot;StopRecord&quot;</span>));</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7597205c96689c706eea3c64d87ba180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7597205c96689c706eea3c64d87ba180">&#9670;&nbsp;</a></span>on_btn_startWork_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::on_btn_startWork_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;开始工作按钮点击事件 开始执行拼图程序 </p>
+<p class="DocNodeLTR">开始拼接工作 停止拼接</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00335">335</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;{</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">// 第一次点击 就进入开始工作  偶数次点击 停止工作</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> flg_btn_startWork = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#a23fc25c32e1122f228abb5af184fba94">&#x202A;btn_startWork</a>-&gt;setText(flg_btn_startWork ? tr(<span class="stringliteral">&quot;Stop Work&quot;</span>) : tr(<span class="stringliteral">&quot;Start Work&quot;</span>));</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">if</span> (flg_btn_startWork)</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="comment">// 建立队列, 链接三个内容</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a798f4301174eaffad296ad212a61b33d">&#x202A;mq_CaptureImageBuffer_</a> = <span class="keyword">new</span> <a class="code" href="../../db/dbb/a01047.html">&#x202A;CQueue&lt;cv::Mat&gt;</a>(<a class="code" href="../../da/dec/a00080.html#a8109678940135e75e59bb64819c1004d">&#x202A;K_BUFFER_MAX_SIZE</a>);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>-&gt;<a class="code" href="../../df/d21/a01039.html#aa7371a962cfcec0e0aeb9cf2150d0608">&#x202A;mqa_CaptureBuffer_</a> = <a class="code" href="../../d8/df3/a01195.html#a798f4301174eaffad296ad212a61b33d">&#x202A;mq_CaptureImageBuffer_</a>;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;m_CamCapture_</a>-&gt;<a class="code" href="../../de/d26/a01035.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;mqa_capture_buffer_</a> = <a class="code" href="../../d8/df3/a01195.html#a798f4301174eaffad296ad212a61b33d">&#x202A;mq_CaptureImageBuffer_</a>;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;m_CamCapture_</a>-&gt;start();</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>-&gt;start();</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="comment">// TODO 修改此处调用</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="comment">// 开启 串口监听线程 // 不仅要把数据加入线程, 同时要将内容加入结果中</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>-&gt;<a class="code" href="../../df/d21/a01039.html#acea51160009fb429624f023f15345747">&#x202A;m_SerialProc_</a>-&gt;<a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>-&gt;moveToThread(<a class="code" href="../../d8/df3/a01195.html#ab7c42f345db9d961069023109afd18b2">&#x202A;mt_serial_thread_</a>);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>-&gt;<a class="code" href="../../df/d21/a01039.html#acea51160009fb429624f023f15345747">&#x202A;m_SerialProc_</a>-&gt;<a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>-&gt;<a class="code" href="../../d6/d27/a01163.html#a9eb4a207b07b90e03d1e556a131ae174">&#x202A;m_QtSerial_</a>-&gt;moveToThread(<a class="code" href="../../d8/df3/a01195.html#ab7c42f345db9d961069023109afd18b2">&#x202A;mt_serial_thread_</a>);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>-&gt;<a class="code" href="../../df/d21/a01039.html#acea51160009fb429624f023f15345747">&#x202A;m_SerialProc_</a>-&gt;<a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>-&gt;<a class="code" href="../../d6/d27/a01163.html#a4a6ae431c635f68eebf693e27b84dbba">&#x202A;m_Timer_</a>-&gt;moveToThread(<a class="code" href="../../d8/df3/a01195.html#ab7c42f345db9d961069023109afd18b2">&#x202A;mt_serial_thread_</a>);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="comment">// 配置两个 对象共用队列</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;m_CamCapture_</a>-&gt;<a class="code" href="../../de/d26/a01035.html#af7fe40eb92e15b37ede3690ccddb523a">&#x202A;mqa_writevideo_buffer_</a> = <a class="code" href="../../d8/df3/a01195.html#a8b24028f5fda51b3994e0ce589db5825">&#x202A;m_WriteVideo__</a>-&gt;<a class="code" href="../../d0/d5a/a01199.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;m_write_buffer_</a>;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="comment">// m_WriteVideo__-&gt;StartWriter();</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d8/df3/a01195.html#a8b24028f5fda51b3994e0ce589db5825">&#x202A;m_WriteVideo__</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <a class="code" href="../../d8/df3/a01195.html#a8b24028f5fda51b3994e0ce589db5825">&#x202A;m_WriteVideo__</a> = <span class="keyword">new</span> <a class="code" href="../../d0/d5a/a01199.html">&#x202A;WriteVideo</a>();</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="comment">// emit m_CamProc_-&gt;m_SerialProc_-&gt;m_Serial_-&gt;signal_start_timer(100);</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#ab7c42f345db9d961069023109afd18b2">&#x202A;mt_serial_thread_</a>-&gt;start(QThread::HighPriority);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="comment">// emit m_CamProc_-&gt;m_SerialProc_-&gt;m_Serial_-&gt;signal_start_timer(100);</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>-&gt;<a class="code" href="../../df/d21/a01039.html#a0be89fd6aa425220576ce2d9ad14c94a">&#x202A;mb_CamProc_WorkFlag_</a> = <span class="keyword">true</span>;   <span class="comment">// 开始工作</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;m_CamCapture_</a>-&gt;<a class="code" href="../../de/d26/a01035.html#a8520541f0914714fe138b2bbe986c32d">&#x202A;mb_capture_enable_</a> = <span class="keyword">true</span>;  <span class="comment">// 开始采集</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="comment">// ui-&gt;btn_startWork-&gt;setText(&quot;StartWork&quot;);  // 设置为 开始工作 恢复最开始</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="comment">// 关闭串口接收</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="comment">// m_CamProc_-&gt;m_SerialProc_-&gt;serPort-&gt;CloseListenTread();</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="comment">// emit m_CamProc_-&gt;m_SerialProc_-&gt;m_Serial_-&gt;signal_close_serial();</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#ab7c42f345db9d961069023109afd18b2">&#x202A;mt_serial_thread_</a>-&gt;quit();</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="comment">// m_CamProc_-&gt;wait();</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>-&gt;<a class="code" href="../../df/d21/a01039.html#a0be89fd6aa425220576ce2d9ad14c94a">&#x202A;mb_CamProc_WorkFlag_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;m_CamCapture_</a>-&gt;<a class="code" href="../../de/d26/a01035.html#a8520541f0914714fe138b2bbe986c32d">&#x202A;mb_capture_enable_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <a class="code" href="../../d8/df3/a01195.html#a8b24028f5fda51b3994e0ce589db5825">&#x202A;m_WriteVideo__</a>-&gt;<a class="code" href="../../d0/d5a/a01199.html#a21abae28e88c5d6090d4377913ef61ea">&#x202A;CloseWriter</a>();</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="comment">// 暂停线程 </span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="comment">// m_CamCapture_-&gt;camCaptureMutex.try_lock();</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    }</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    flg_btn_startWork = !flg_btn_startWork;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a7597205c96689c706eea3c64d87ba180_cgraph.png" border="0" usemap="#d8/df3/a01195_a7597205c96689c706eea3c64d87ba180_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_a7597205c96689c706eea3c64d87ba180_cgraph" id="d8/df3/a01195_a7597205c96689c706eea3c64d87ba180_cgraph">
+<area shape="rect" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="5,5,152,47"/>
+<area shape="rect" href="../../d0/d5a/a01199.html#a21abae28e88c5d6090d4377913ef61ea" title=" " alt="" coords="200,13,363,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adf8cb1ec53fceb7ea6e54150b22ba590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8cb1ec53fceb7ea6e54150b22ba590">&#9670;&nbsp;</a></span>on_btn_work_exit_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::on_btn_work_exit_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;退出按钮点击之后的操作 </p>
+<p class="DocNodeLTR">退出按钮 点击 返回设置页面 如果启动模式是 单窗口启动 直接触发退出事件</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/11 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00286">286</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../d2/d4d/a01079.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>.<a class="code" href="../../d2/d4d/a01079.html#a8db2980fe61924859ca70adfefda20fc">&#x202A;nShowWork</a> != 0)</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="comment">// closeEvent ()</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        emit this-&gt;close();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        return ;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">// WorkWindow::~WorkWindow();</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="comment">// #TODO 设置正确的退出操作</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    emit <a class="code" href="../../d8/df3/a01195.html#a079ea93a8e35136b245a4f19b9f380f5">&#x202A;signal_close_windows</a>();</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="comment">// 执行测试函数</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// testFunction();</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">// testWrite();    // </span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8ef97f32155274910902b00d7a327c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef97f32155274910902b00d7a327c84">&#9670;&nbsp;</a></span>ParaInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WorkWindow::ParaInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;初始化 程序 </p>
+<p class="DocNodeLTR">初始化 实现</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/9</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00468">468</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;{</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="comment">// 读取 运行参数配置</span></div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="comment">// RunParaUpdate(); // 根据当前窗口状态初始化 运行参数</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1ac8d28317aadd53446419ac8b353a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ac8d28317aadd53446419ac8b353a82">&#9670;&nbsp;</a></span>renderLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WorkWindow::renderLocation </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>d_pluse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;将位置信息实时更新到界面的label 上 </p>
+<p class="DocNodeLTR">更新位置信息</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">两次差值</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/9</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d_pluse</td><td>&#x202A;The pluse.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00512">512</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;{</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <span class="comment">// 初始化位置信息  脉冲值</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> location = <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#afd733ae61a9e00508ef1c95697ab1e52">&#x202A;Hole</a>.<a class="code" href="../../d2/d4d/a01079.html#aaedb0fdf28501768e74fc3f568b473cc">&#x202A;nBeginDepth</a>  ;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    <span class="comment">// 每个脉冲对应的 mm 值</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> mm_pluse = <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../d2/d4d/a01079.html#aff08b751819830cd437a5a0f3d5dc2a4">&#x202A;Pulse</a>.<a class="code" href="../../d2/d4d/a01079.html#a9c1829f455bfd94bb6d53fea0e54a5ef">&#x202A;nPulseUm</a> / 1000.0f;   </div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160; </div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> cnt = 0;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    cnt++;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    </div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordflow">if</span>(cnt !=1)</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="comment">// 记录当前时刻位置信息</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    location += d_pluse * mm_pluse;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160; </div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="comment">// 更新 UI 值</span></div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c">&#x202A;RenderNumberOnLabel</a>(<a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#a37224fb98994e9bc1986de19ebdd9210">&#x202A;lb_loc</a>, location);</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a1ac8d28317aadd53446419ac8b353a82_cgraph.png" border="0" usemap="#d8/df3/a01195_a1ac8d28317aadd53446419ac8b353a82_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_a1ac8d28317aadd53446419ac8b353a82_cgraph" id="d8/df3/a01195_a1ac8d28317aadd53446419ac8b353a82_cgraph">
+<area shape="rect" title="将位置信息实时更新到界面的label 上" alt="" coords="5,5,197,32"/>
+<area shape="rect" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c" title=" " alt="" coords="245,5,401,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a1ac8d28317aadd53446419ac8b353a82_icgraph.png" border="0" usemap="#d8/df3/a01195_a1ac8d28317aadd53446419ac8b353a82_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_a1ac8d28317aadd53446419ac8b353a82_icgraph" id="d8/df3/a01195_a1ac8d28317aadd53446419ac8b353a82_icgraph">
+<area shape="rect" title="将位置信息实时更新到界面的label 上" alt="" coords="920,35,1112,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a01083e6fa8585bbe6302affa302bd4d7" title="更新 编码器 位置信息" alt="" coords="701,27,872,69"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a054b4913c0b0f87c7c285e122eaed7fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a054b4913c0b0f87c7c285e122eaed7fe">&#9670;&nbsp;</a></span>RunParaUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::RunParaUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;根据运行状态 以及系统时间 更新运行 参数 </p>
+<p class="DocNodeLTR">根据当前窗口 或者相关内容更新 运行参数</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/9</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+<p>&lt;</p>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00485">485</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;{</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="comment">// 根据运行 UI 更新参数中的label 尺寸</span></div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d2/d4d/a01079.html#a85a53f5efa042b291b236ac325fc5d72">&#x202A;DstImgLabel</a>.<a class="code" href="../../d2/d4d/a01079.html#af17ea17a7ba6b27eaee99e5b1e4c91f1">&#x202A;nWidth</a>  = <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#aa2d57e080444e7d4201af2863033d288">&#x202A;lb_dst</a>-&gt;width();      </div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d2/d4d/a01079.html#a85a53f5efa042b291b236ac325fc5d72">&#x202A;DstImgLabel</a>.<a class="code" href="../../d2/d4d/a01079.html#a5c8a75db5d0f3051dcf25a034370c9ce">&#x202A;nHeight</a> = <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#aa2d57e080444e7d4201af2863033d288">&#x202A;lb_dst</a>-&gt;height();</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d2/d4d/a01079.html#a9f8d3285763ce4ba3ba8d469fa0b5a41">&#x202A;PolarImgLabel</a>.<a class="code" href="../../d2/d4d/a01079.html#af17ea17a7ba6b27eaee99e5b1e4c91f1">&#x202A;nWidth</a>     = <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#a6e48d2e4567470e2a9148af7db4db017">&#x202A;lb_dst_p</a>-&gt;width();</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d2/d4d/a01079.html#a9f8d3285763ce4ba3ba8d469fa0b5a41">&#x202A;PolarImgLabel</a>.<a class="code" href="../../d2/d4d/a01079.html#a5c8a75db5d0f3051dcf25a034370c9ce">&#x202A;nHeight</a>    = <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#a6e48d2e4567470e2a9148af7db4db017">&#x202A;lb_dst_p</a>-&gt;height();</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d2/d4d/a01079.html#a985a1c5fe42b198c1411864a7524d1c3">&#x202A;SrcImgLabel</a>.<a class="code" href="../../d2/d4d/a01079.html#af17ea17a7ba6b27eaee99e5b1e4c91f1">&#x202A;nWidth</a>  = <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#ac4dac337a2b736603833e2c882fbc28a">&#x202A;lb_src</a>-&gt;width();</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d2/d4d/a01079.html#a985a1c5fe42b198c1411864a7524d1c3">&#x202A;SrcImgLabel</a>.<a class="code" href="../../d2/d4d/a01079.html#a5c8a75db5d0f3051dcf25a034370c9ce">&#x202A;nHeight</a> = <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#ac4dac337a2b736603833e2c882fbc28a">&#x202A;lb_src</a>-&gt;height();</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    LDebug(<span class="stringliteral">&quot;Run Para Update Finish!&quot;</span>);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a054b4913c0b0f87c7c285e122eaed7fe_icgraph.png" border="0" usemap="#d8/df3/a01195_a054b4913c0b0f87c7c285e122eaed7fe_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_a054b4913c0b0f87c7c285e122eaed7fe_icgraph" id="d8/df3/a01195_a054b4913c0b0f87c7c285e122eaed7fe_icgraph">
+<area shape="rect" title="根据运行状态 以及系统时间 更新运行 参数" alt="" coords="424,35,623,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca648f5b3e1bd12006f0d2fd3fc5c8e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca648f5b3e1bd12006f0d2fd3fc5c8e9">&#9670;&nbsp;</a></span>SetRelateConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WorkWindow::SetRelateConnection </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;设定相关槽和信号的连接 </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;ui 数据的渲染 和 图片的显示</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds</dd></dl>
+<ul class="DocNodeLTR">
+<li>&#x202A;ui 数据的渲染 和 图片的显示</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True 表示程序执行完毕 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00175">175</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">// 注册 传递 的类型</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    qRegisterMetaType&lt;FrameData::StCompass&gt;(<span class="stringliteral">&quot;FrameData::StCompass&amp;&quot;</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">// 设置实时绘图函数 的实现</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    connect(<a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>, &amp;<a class="code" href="../../df/d21/a01039.html#a6bcbec6e91c3f3574b6e6e6a0e23f865">&#x202A;CamProc::signal_render_location</a>, <span class="keyword">this</span>, &amp;<a class="code" href="../../d8/df3/a01195.html#a01083e6fa8585bbe6302affa302bd4d7">&#x202A;WorkWindow::slot_render_location</a>, Qt::QueuedConnection);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    connect(<a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>, &amp;<a class="code" href="../../df/d21/a01039.html#a1a3adf905013f71c98b5969a05821cd4">&#x202A;CamProc::signal_render_HCM</a>, <span class="keyword">this</span>, &amp;<a class="code" href="../../d8/df3/a01195.html#ae9dcd6afdb5b4cd7811eda08b9223de1">&#x202A;WorkWindow::slot_render_HCM</a>, Qt::QueuedConnection);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">// 渲染其他信息 // #TODO: 实现刷新信息的内容更改</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="../../d8/df3/a01195.html#af811eab27901f7a9dac0a8700f13be49">&#x202A;WorkWindow::signal_render_extra_info</a>, <span class="keyword">this</span>, &amp;<a class="code" href="../../d8/df3/a01195.html#af92af3ed8f61e4fd9eaf4d1b14446683">&#x202A;WorkWindow::slot_render_extra_info</a>, Qt::QueuedConnection);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">// 根据信号 更新UI</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="../../d8/df3/a01195.html#a043fda4cae901d1aa3566022c4b66b90">&#x202A;WorkWindow::signal_updateUI</a>, <span class="keyword">this</span>, &amp;<a class="code" href="../../d8/df3/a01195.html#ae0cd97fd58fbed431d25dd3055f084bd">&#x202A;WorkWindow::Slot_UpdateUIByRunPara</a>);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">// 处理完成一帧图像之后 后续进行处理</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    connect(<a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>, &amp;<a class="code" href="../../df/d21/a01039.html#a59f8eddb9aaffcc5e39d6cadbe1aa913">&#x202A;CamProc::signal_show_frame</a>, <span class="keyword">this</span>, &amp;<a class="code" href="../../d8/df3/a01195.html#a41a95073fcd146be53bf16c5649b00b0">&#x202A;WorkWindow::slot_ShowMatOnLabelByFlg</a>, Qt::QueuedConnection);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">// 串口线程的开启 触发串口实例初始化</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    QObject::connect(<a class="code" href="../../d8/df3/a01195.html#ab7c42f345db9d961069023109afd18b2">&#x202A;mt_serial_thread_</a>, &amp;QThread::started, <a class="code" href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;m_CamProc_</a>-&gt;<a class="code" href="../../df/d21/a01039.html#acea51160009fb429624f023f15345747">&#x202A;m_SerialProc_</a>-&gt;<a class="code" href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;m_Serial_</a>, &amp;<a class="code" href="../../d6/d27/a01163.html#a424a48bd80ac205a2471f3ecd11203c6">&#x202A;Serial::SerialInit</a>, Qt::QueuedConnection);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_aca648f5b3e1bd12006f0d2fd3fc5c8e9_cgraph.png" border="0" usemap="#d8/df3/a01195_aca648f5b3e1bd12006f0d2fd3fc5c8e9_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_aca648f5b3e1bd12006f0d2fd3fc5c8e9_cgraph" id="d8/df3/a01195_aca648f5b3e1bd12006f0d2fd3fc5c8e9_cgraph">
+<area shape="rect" title="设定相关槽和信号的连接" alt="" coords="5,491,235,517"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="329,233,443,260"/>
+<area shape="rect" href="../../d8/df3/a01195.html#af92af3ed8f61e4fd9eaf4d1b14446683" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="301,395,471,437"/>
+<area shape="rect" href="../../d8/df3/a01195.html#ae9dcd6afdb5b4cd7811eda08b9223de1" title="更新电子罗盘数据" alt="" coords="283,461,489,488"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a01083e6fa8585bbe6302affa302bd4d7" title="更新 编码器 位置信息" alt="" coords="301,513,471,554"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a41a95073fcd146be53bf16c5649b00b0" title="跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示" alt="" coords="291,578,481,619"/>
+<area shape="rect" href="../../d8/df3/a01195.html#ae0cd97fd58fbed431d25dd3055f084bd" title="根据运行参数 更改目前程序界面上的参数" alt="" coords="283,658,489,699"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="1015,5,1185,32"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a97f68664ea64cf379c2e35390a0b8ab3" title="Handles the open serial" alt="" coords="565,107,732,133"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="1018,157,1182,184"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ad4bdb6d6267f052b1768659da61d58c0" title="Handles the read data" alt="" coords="563,208,734,235"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a91cd964b68534df3153349be46174907" title="Handles the timer described by t" alt="" coords="591,259,706,285"/>
+<area shape="rect" href="../../d6/d27/a01163.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="575,309,723,336"/>
+<area shape="rect" href="../../d6/d27/a01163.html#abdab3f6eff663933b5b0a293035418fd" title="Slot write data // 将字符串写入到串口中去" alt="" coords="573,360,724,387"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="1235,56,1388,83"/>
+<area shape="rect" href="../../d6/d27/a01163.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="811,107,962,133"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a1b596e9793b3e992968d7b50392b43c0" title="Gets serial by port no" alt="" coords="1013,107,1187,133"/>
+<area shape="rect" href="../../d6/d27/a01163.html#a7620016be54cb445876b796aad0e062f" title="Single read data 单存读取函数 串口读取一次或者 文件读取一行" alt="" coords="809,307,965,333"/>
+<area shape="rect" href="../../dd/d6e/a01339.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="将字符串 转换成 QByteArray 字符串默认有空格" alt="" coords="1014,304,1186,331"/>
+<area shape="rect" href="../../dd/d32/a00041.html#aa4d8cf50c0a13481ceb04c5a0581c959" title="2uchars the given string" alt="" coords="1273,304,1349,331"/>
+<area shape="rect" href="../../d6/d27/a01163.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data" alt="" coords="808,361,965,388"/>
+<area shape="rect" href="../../d3/da4/a01343.html#a6c1e2edd1365b94dff05468194611770" title="char 类型与 string的相互转换" alt="" coords="1017,355,1183,397"/>
+<area shape="rect" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c" title=" " alt="" coords="809,459,965,485"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a1ac8d28317aadd53446419ac8b353a82" title="将位置信息实时更新到界面的label 上" alt="" coords="553,516,745,543"/>
+<area shape="rect" href="../../da/d3f/a01215.html#a054256077ab572adcbad2c9c7e8db3e2" title="Shows the image" alt="" coords="571,574,726,615"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a4ec884594b80adcfb3a7fa7181e216d4" title="将一副图像显示在 设定的 Label 上" alt="" coords="537,640,760,667"/>
+<area shape="rect" href="../../da/d3f/a01215.html#a68cd096eb4b3acfc5a6a0bee0ba447d4" title="Calculates the position" alt="" coords="809,510,964,551"/>
+<area shape="rect" href="../../da/d3f/a01215.html#ac937ca5ac6f721398fab75e26f227532" title="Updates the scene" alt="" coords="809,575,964,617"/>
+<area shape="rect" href="../../d8/d41/a00038.html#a51b816b14fb11dbdb1d0e7986cb0aca9" title="opencv Mat格式转换为 QT 的 QImage" alt="" coords="831,641,942,668"/>
+<area shape="rect" href="../../d5/d39/a01219.html#a2a5d6a071ffbe6f0f5727afc211b5fb9" title="Associates" alt="" coords="583,691,714,717"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_aca648f5b3e1bd12006f0d2fd3fc5c8e9_icgraph.png" border="0" usemap="#d8/df3/a01195_aca648f5b3e1bd12006f0d2fd3fc5c8e9_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_aca648f5b3e1bd12006f0d2fd3fc5c8e9_icgraph" id="d8/df3/a01195_aca648f5b3e1bd12006f0d2fd3fc5c8e9_icgraph">
+<area shape="rect" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4ec884594b80adcfb3a7fa7181e216d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ec884594b80adcfb3a7fa7181e216d4">&#9670;&nbsp;</a></span>ShowMatOnQtLabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WorkWindow::ShowMatOnQtLabel </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>srcImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QLabel *&#160;</td>
+          <td class="paramname"><em>lb_label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;将一副图像显示在 设定的 Label 上 </p>
+<p class="DocNodeLTR">将一副图像显示在 设定的 Label 将图像转换成 QImage 然后转换成 QPixmap 绘制在组件上</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">srcImg</td><td>&#x202A;原始图像 只读 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">lb_label</td><td>&#x202A;设定 label </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">width</td><td>&#x202A;显示 宽度 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">height</td><td>&#x202A;显示 高度</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00248">248</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> img_cnt = 0;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    img_cnt++;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="comment">//  首先根据label 大小 缩放对应的图像 进行尺寸限制,此处可能 存在 缩放问题</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;     <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="comment">// #FIXME resize image Crash</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        Q_ASSERT(!srcImg.empty ());</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        cv::resize(srcImg, <a class="code" href="../../d7/d25/a00182.html#a4a982268c951571967b94025cbd6e37e">&#x202A;tmp_resize_img</a>, cv::Size(width, height));</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        LError(<span class="stringliteral">&quot;Error_Image_Resize_Crash_On_Reszie_To_Show: labelName--{}&quot;</span>, </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;               lb_label-&gt;objectName().toStdString () );</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="../../db/da8/a01323.html">&#x202A;Utils_Exception</a>(<a class="code" href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa42cfa7783896b2c31ef38744358e4d9f">&#x202A;Error_Image_Resize_Crash_On_Reszie_To_Show</a>,</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;              <span class="stringliteral">&quot;Error_Image_Resize_Crash_On_Reszie_To_Show&quot;</span>);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="comment">// 将原始图像转换成 QImage</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    QImage img = <a class="code" href="../../d8/d41/a00038.html#a51b816b14fb11dbdb1d0e7986cb0aca9">&#x202A;CvMat2QImage</a>(<a class="code" href="../../d7/d25/a00182.html#a4a982268c951571967b94025cbd6e37e">&#x202A;tmp_resize_img</a>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="comment">// 将QImage 转换成 QPixmap</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    QPixmap pixmap = QPixmap::fromImage(img);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="comment">// 在相应的lable 上 显示图片</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    lb_label-&gt;setPixmap(pixmap);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a4ec884594b80adcfb3a7fa7181e216d4_cgraph.png" border="0" usemap="#d8/df3/a01195_a4ec884594b80adcfb3a7fa7181e216d4_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_a4ec884594b80adcfb3a7fa7181e216d4_cgraph" id="d8/df3/a01195_a4ec884594b80adcfb3a7fa7181e216d4_cgraph">
+<area shape="rect" title="将一副图像显示在 设定的 Label 上" alt="" coords="5,5,228,32"/>
+<area shape="rect" href="../../d8/d41/a00038.html#a51b816b14fb11dbdb1d0e7986cb0aca9" title="opencv Mat格式转换为 QT 的 QImage" alt="" coords="276,5,387,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a4ec884594b80adcfb3a7fa7181e216d4_icgraph.png" border="0" usemap="#d8/df3/a01195_a4ec884594b80adcfb3a7fa7181e216d4_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_a4ec884594b80adcfb3a7fa7181e216d4_icgraph" id="d8/df3/a01195_a4ec884594b80adcfb3a7fa7181e216d4_icgraph">
+<area shape="rect" title="将一副图像显示在 设定的 Label 上" alt="" coords="939,35,1161,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a41a95073fcd146be53bf16c5649b00b0" title="跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示" alt="" coords="701,27,891,69"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a079ea93a8e35136b245a4f19b9f380f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079ea93a8e35136b245a4f19b9f380f5">&#9670;&nbsp;</a></span>signal_close_windows</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::signal_close_windows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;发送当前窗口关闭信号 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a079ea93a8e35136b245a4f19b9f380f5_icgraph.png" border="0" usemap="#d8/df3/a01195_a079ea93a8e35136b245a4f19b9f380f5_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_a079ea93a8e35136b245a4f19b9f380f5_icgraph" id="d8/df3/a01195_a079ea93a8e35136b245a4f19b9f380f5_icgraph">
+<area shape="rect" title="发送当前窗口关闭信号" alt="" coords="216,35,357,76"/>
+<area shape="rect" href="../../d8/df3/a01195.html#adf8cb1ec53fceb7ea6e54150b22ba590" title="退出按钮点击之后的操作" alt="" coords="13,5,160,47"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,71,168,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af811eab27901f7a9dac0a8700f13be49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af811eab27901f7a9dac0a8700f13be49">&#9670;&nbsp;</a></span>signal_render_extra_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::signal_render_extra_info </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;更新其他信息 &mdash;亮度,存储,电压等信息 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_af811eab27901f7a9dac0a8700f13be49_icgraph.png" border="0" usemap="#d8/df3/a01195_af811eab27901f7a9dac0a8700f13be49_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_af811eab27901f7a9dac0a8700f13be49_icgraph" id="d8/df3/a01195_af811eab27901f7a9dac0a8700f13be49_icgraph">
+<area shape="rect" title="更新其他信息 —亮度,存储,电压等信息" alt="" coords="701,27,843,69"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a043fda4cae901d1aa3566022c4b66b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043fda4cae901d1aa3566022c4b66b90">&#9670;&nbsp;</a></span>signal_updateUI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::signal_updateUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Raises an Update user interface signal 提醒刷新界面 ui 参数 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a043fda4cae901d1aa3566022c4b66b90_icgraph.png" border="0" usemap="#d8/df3/a01195_a043fda4cae901d1aa3566022c4b66b90_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_a043fda4cae901d1aa3566022c4b66b90_icgraph" id="d8/df3/a01195_a043fda4cae901d1aa3566022c4b66b90_icgraph">
+<area shape="rect" title="Raises an Update user interface signal 提醒刷新界面 ui 参数" alt="" coords="701,27,843,69"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af92af3ed8f61e4fd9eaf4d1b14446683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92af3ed8f61e4fd9eaf4d1b14446683">&#9670;&nbsp;</a></span>slot_render_extra_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::slot_render_extra_info </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;更新其他信息值 // 电压 // 亮度 // 存储信息 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00452">452</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;{</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c">&#x202A;RenderNumberOnLabel</a>(<a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#ad448afd5f048d92b0be437ef0784c4be">&#x202A;lb_battary</a>, <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../d2/d4d/a01079.html#a6bc72d9e3a8fa235623c693cc83a02fd">&#x202A;Extra</a>.<a class="code" href="../../d2/d4d/a01079.html#a71601028f8b9c2775eda7c2d916a8b63">&#x202A;nBattaryV</a>);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="comment">// #TODO:  更新其他值</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_af92af3ed8f61e4fd9eaf4d1b14446683_cgraph.png" border="0" usemap="#d8/df3/a01195_af92af3ed8f61e4fd9eaf4d1b14446683_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_af92af3ed8f61e4fd9eaf4d1b14446683_cgraph" id="d8/df3/a01195_af92af3ed8f61e4fd9eaf4d1b14446683_cgraph">
+<area shape="rect" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="5,5,176,47"/>
+<area shape="rect" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c" title=" " alt="" coords="224,13,380,39"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_af92af3ed8f61e4fd9eaf4d1b14446683_icgraph.png" border="0" usemap="#d8/df3/a01195_af92af3ed8f61e4fd9eaf4d1b14446683_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_af92af3ed8f61e4fd9eaf4d1b14446683_icgraph" id="d8/df3/a01195_af92af3ed8f61e4fd9eaf4d1b14446683_icgraph">
+<area shape="rect" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="701,27,872,69"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae9dcd6afdb5b4cd7811eda08b9223de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9dcd6afdb5b4cd7811eda08b9223de1">&#9670;&nbsp;</a></span>slot_render_HCM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::slot_render_HCM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d22/a01171.html#dc/d2d/a01183">FrameData::StCompass</a> &amp;&#160;</td>
+          <td class="paramname"><em>compass</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;更新电子罗盘数据 </p>
+<p class="DocNodeLTR">更新电子罗盘值</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">compass</td><td>&#x202A;The compass</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">compass</td><td>&#x202A;The compass. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00443">443</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;{</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="comment">// 更新 UI 值</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c">&#x202A;RenderNumberOnLabel</a>(<a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#aca67e3f25aab47d7458c904ab8ca8cf6">&#x202A;lb_pitch</a>, compass.<a class="code" href="../../d2/d22/a01171.html#ad919552e6e35f65a398abc2b82910e95">&#x202A;Pitch</a>);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c">&#x202A;RenderNumberOnLabel</a>(<a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#a810faf7477fbe729411612748531a2e5">&#x202A;lb_roll</a>, compass.<a class="code" href="../../d2/d22/a01171.html#a1de25929cf75e9dde5b0e137f9e87ed7">&#x202A;Roll</a>);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <a class="code" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c">&#x202A;RenderNumberOnLabel</a>(<a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#aea4e9b523747eedfbe8010777ac3d611">&#x202A;lb_head</a>, compass.<a class="code" href="../../d2/d22/a01171.html#a0ae3cb002dd0724847626a7ba19b4e0b">&#x202A;Heading</a>);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_ae9dcd6afdb5b4cd7811eda08b9223de1_cgraph.png" border="0" usemap="#d8/df3/a01195_ae9dcd6afdb5b4cd7811eda08b9223de1_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_ae9dcd6afdb5b4cd7811eda08b9223de1_cgraph" id="d8/df3/a01195_ae9dcd6afdb5b4cd7811eda08b9223de1_cgraph">
+<area shape="rect" title="更新电子罗盘数据" alt="" coords="5,5,212,32"/>
+<area shape="rect" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c" title=" " alt="" coords="260,5,416,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_ae9dcd6afdb5b4cd7811eda08b9223de1_icgraph.png" border="0" usemap="#d8/df3/a01195_ae9dcd6afdb5b4cd7811eda08b9223de1_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_ae9dcd6afdb5b4cd7811eda08b9223de1_icgraph" id="d8/df3/a01195_ae9dcd6afdb5b4cd7811eda08b9223de1_icgraph">
+<area shape="rect" title="更新电子罗盘数据" alt="" coords="701,35,908,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a01083e6fa8585bbe6302affa302bd4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01083e6fa8585bbe6302affa302bd4d7">&#9670;&nbsp;</a></span>slot_render_location</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::slot_render_location </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dPluse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;更新 编码器 位置信息 </p>
+<p class="DocNodeLTR">Slot render location</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dPluse</td><td>&#x202A;The pluse</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dPluse</td><td>&#x202A;The pluse. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00428">428</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;{</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a1ac8d28317aadd53446419ac8b353a82">&#x202A;renderLocation</a>(dPluse);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a01083e6fa8585bbe6302affa302bd4d7_cgraph.png" border="0" usemap="#d8/df3/a01195_a01083e6fa8585bbe6302affa302bd4d7_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_a01083e6fa8585bbe6302affa302bd4d7_cgraph" id="d8/df3/a01195_a01083e6fa8585bbe6302affa302bd4d7_cgraph">
+<area shape="rect" title="更新 编码器 位置信息" alt="" coords="5,5,176,47"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a1ac8d28317aadd53446419ac8b353a82" title="将位置信息实时更新到界面的label 上" alt="" coords="224,13,416,39"/>
+<area shape="rect" href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c" title=" " alt="" coords="464,13,620,39"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a01083e6fa8585bbe6302affa302bd4d7_icgraph.png" border="0" usemap="#d8/df3/a01195_a01083e6fa8585bbe6302affa302bd4d7_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_a01083e6fa8585bbe6302affa302bd4d7_icgraph" id="d8/df3/a01195_a01083e6fa8585bbe6302affa302bd4d7_icgraph">
+<area shape="rect" title="更新 编码器 位置信息" alt="" coords="701,27,872,69"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41a95073fcd146be53bf16c5649b00b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a95073fcd146be53bf16c5649b00b0">&#9670;&nbsp;</a></span>slot_ShowMatOnLabelByFlg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::slot_ShowMatOnLabelByFlg </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flg</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">img</td><td>&#x202A;If non-null, 从其他线程传回来的 图像数据指针 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">flg</td><td>&#x202A;(Optional) 参数选择显示label 默认 原始图像 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00210">210</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;{</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">// 根据 flag 判断显示的label</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;     <span class="keywordflow">if</span> (flg==0)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;     {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;         <a class="code" href="../../d8/df3/a01195.html#a4ec884594b80adcfb3a7fa7181e216d4">&#x202A;ShowMatOnQtLabel</a>(*img_src, <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#ac4dac337a2b736603833e2c882fbc28a">&#x202A;lb_src</a>, <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d2/d4d/a01079.html#a985a1c5fe42b198c1411864a7524d1c3">&#x202A;SrcImgLabel</a>.<a class="code" href="../../d2/d4d/a01079.html#af17ea17a7ba6b27eaee99e5b1e4c91f1">&#x202A;nWidth</a>, </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                          <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d2/d4d/a01079.html#a985a1c5fe42b198c1411864a7524d1c3">&#x202A;SrcImgLabel</a>.<a class="code" href="../../d2/d4d/a01079.html#a5c8a75db5d0f3051dcf25a034370c9ce">&#x202A;nHeight</a>);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;     }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (flg == 1 )</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;     {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;         <span class="comment">// ShowMatOnQtLabel(*img_src, ui-&gt;lb_dst, gConfig-&gt;mRunPara.DstImgLabel.nWidth, gConfig-&gt;mRunPara.DstImgLabel.lbHeight);</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;         <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#ae9058a19fdf251d4f9347d9bc1d13c4a">&#x202A;img_dst</a>-&gt;<a class="code" href="../../da/d3f/a01215.html#a054256077ab572adcbad2c9c7e8db3e2">&#x202A;ShowImage</a>(*img_src);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;     }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(flg == 2 )</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;     {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;         <a class="code" href="../../d8/df3/a01195.html#a4ec884594b80adcfb3a7fa7181e216d4">&#x202A;ShowMatOnQtLabel</a>(*img_src, <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#a6e48d2e4567470e2a9148af7db4db017">&#x202A;lb_dst_p</a>, <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d2/d4d/a01079.html#a9f8d3285763ce4ba3ba8d469fa0b5a41">&#x202A;PolarImgLabel</a>.<a class="code" href="../../d2/d4d/a01079.html#af17ea17a7ba6b27eaee99e5b1e4c91f1">&#x202A;nWidth</a>,</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                          <a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;UI</a>.<a class="code" href="../../d2/d4d/a01079.html#a9f8d3285763ce4ba3ba8d469fa0b5a41">&#x202A;PolarImgLabel</a>.<a class="code" href="../../d2/d4d/a01079.html#a5c8a75db5d0f3051dcf25a034370c9ce">&#x202A;nHeight</a>);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;     }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a41a95073fcd146be53bf16c5649b00b0_cgraph.png" border="0" usemap="#d8/df3/a01195_a41a95073fcd146be53bf16c5649b00b0_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_a41a95073fcd146be53bf16c5649b00b0_cgraph" id="d8/df3/a01195_a41a95073fcd146be53bf16c5649b00b0_cgraph">
+<area shape="rect" title="跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示" alt="" coords="5,100,195,141"/>
+<area shape="rect" href="../../da/d3f/a01215.html#a054256077ab572adcbad2c9c7e8db3e2" title="Shows the image" alt="" coords="277,71,431,112"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a4ec884594b80adcfb3a7fa7181e216d4" title="将一副图像显示在 设定的 Label 上" alt="" coords="243,137,465,163"/>
+<area shape="rect" href="../../da/d3f/a01215.html#a68cd096eb4b3acfc5a6a0bee0ba447d4" title="Calculates the position" alt="" coords="513,5,668,47"/>
+<area shape="rect" href="../../da/d3f/a01215.html#ac937ca5ac6f721398fab75e26f227532" title="Updates the scene" alt="" coords="513,71,668,112"/>
+<area shape="rect" href="../../d8/d41/a00038.html#a51b816b14fb11dbdb1d0e7986cb0aca9" title="opencv Mat格式转换为 QT 的 QImage" alt="" coords="535,137,646,163"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_a41a95073fcd146be53bf16c5649b00b0_icgraph.png" border="0" usemap="#d8/df3/a01195_a41a95073fcd146be53bf16c5649b00b0_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_a41a95073fcd146be53bf16c5649b00b0_icgraph" id="d8/df3/a01195_a41a95073fcd146be53bf16c5649b00b0_icgraph">
+<area shape="rect" title="跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示" alt="" coords="701,27,891,69"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,35,653,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0cd97fd58fbed431d25dd3055f084bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0cd97fd58fbed431d25dd3055f084bd">&#9670;&nbsp;</a></span>Slot_UpdateUIByRunPara</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkWindow::Slot_UpdateUIByRunPara </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;根据运行参数 更改目前程序界面上的参数 </p>
+<p class="DocNodeLTR">Updates the user interface 根据运行参数 更改目前程序界面上的参数</p>
+<ul class="DocNodeLTR">
+<li>&#x202A;测孔编号 滑动条, 运行状态 <br  />
+</li>
+<li>&#x202A;界面刷新 参数值</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/10</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/10 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a> 第 <a class="el" href="../../d7/d25/a00182_source.html#l00150">150</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// 更新测孔编号</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#ad836600ebcd400d33f48003b979e489f">&#x202A;le_hole_num</a>-&gt;setText(QString::fromStdString(<a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#afd733ae61a9e00508ef1c95697ab1e52">&#x202A;Hole</a>.<a class="code" href="../../d2/d4d/a01079.html#ae45d52024dc8fefee05c2f41d92ed380">&#x202A;strNum</a>));     </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// 更新探灯 亮度</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// ui-&gt;lb_Light_light-&gt;setText(QString::number(gConfig-&gt;mRunPara.Extra.nLighterLight));</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// 设置滑动条对象的数据关联</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#a0b69237b6e5ec232655b929c5d5804b1">&#x202A;hs_Light_light</a>-&gt;<a class="code" href="../../d5/d39/a01219.html#a2a5d6a071ffbe6f0f5727afc211b5fb9">&#x202A;Associate</a>(<a class="code" href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/d07/a01303.html#ac50b3ec8c4b7b772a3c624b2ac2e5fd7">&#x202A;lb_Light_light</a>, </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                  &amp;<a class="code" href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d2/d4d/a01079.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../d2/d4d/a01079.html#a6bc72d9e3a8fa235623c693cc83a02fd">&#x202A;Extra</a>.<a class="code" href="../../d2/d4d/a01079.html#a36f7f1a7d60a5ce9517dee33477c0e75">&#x202A;nLighterLight</a>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">// ui-&gt;hs_Light_light-&gt;Associate(nullptr, &amp;gConfig-&gt;mRunPara.Extra.nLighterLight);</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_ae0cd97fd58fbed431d25dd3055f084bd_cgraph.png" border="0" usemap="#d8/df3/a01195_ae0cd97fd58fbed431d25dd3055f084bd_cgraph" alt=""/></div>
+<map name="d8/df3/a01195_ae0cd97fd58fbed431d25dd3055f084bd_cgraph" id="d8/df3/a01195_ae0cd97fd58fbed431d25dd3055f084bd_cgraph">
+<area shape="rect" title="根据运行参数 更改目前程序界面上的参数" alt="" coords="5,5,212,47"/>
+<area shape="rect" href="../../d5/d39/a01219.html#a2a5d6a071ffbe6f0f5727afc211b5fb9" title="Associates" alt="" coords="260,13,391,39"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df3/a01195_ae0cd97fd58fbed431d25dd3055f084bd_icgraph.png" border="0" usemap="#d8/df3/a01195_ae0cd97fd58fbed431d25dd3055f084bd_icgraph" alt=""/></div>
+<map name="d8/df3/a01195_ae0cd97fd58fbed431d25dd3055f084bd_icgraph" id="d8/df3/a01195_ae0cd97fd58fbed431d25dd3055f084bd_icgraph">
+<area shape="rect" title="根据运行参数 更改目前程序界面上的参数" alt="" coords="701,27,908,69"/>
+<area shape="rect" href="../../d8/df3/a01195.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,35,376,61"/>
+<area shape="rect" href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,60,653,87"/>
+<area shape="rect" href="../../d6/d7d/a00161.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d1/d0d/a01191.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a5db89bd52183aedfb5723bf4f41af7c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db89bd52183aedfb5723bf4f41af7c6">&#9670;&nbsp;</a></span>m_CamCapture_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d26/a01035.html">CamCapture</a>* WorkWindow::m_CamCapture_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;相机采集 对象 </p>
+
+<p class="definition">在文件 <a class="el" href="../../da/dec/a00080_source.html">WorkWindow.h</a> 第 <a class="el" href="../../da/dec/a00080_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a61b65273b35191ec0675fe927b2a8fc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b65273b35191ec0675fe927b2a8fc8">&#9670;&nbsp;</a></span>m_CamProc_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d21/a01039.html">CamProc</a>* WorkWindow::m_CamProc_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;图像处理对象 </p>
+
+<p class="definition">在文件 <a class="el" href="../../da/dec/a00080_source.html">WorkWindow.h</a> 第 <a class="el" href="../../da/dec/a00080_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8b24028f5fda51b3994e0ce589db5825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b24028f5fda51b3994e0ce589db5825">&#9670;&nbsp;</a></span>m_WriteVideo__</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d5a/a01199.html">WriteVideo</a>* WorkWindow::m_WriteVideo__</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;数据写入流 </p>
+
+<p class="definition">在文件 <a class="el" href="../../da/dec/a00080_source.html">WorkWindow.h</a> 第 <a class="el" href="../../da/dec/a00080_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a798f4301174eaffad296ad212a61b33d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a798f4301174eaffad296ad212a61b33d">&#9670;&nbsp;</a></span>mq_CaptureImageBuffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dbb/a01047.html">CQueue</a>&lt;cv::Mat&gt;* WorkWindow::mq_CaptureImageBuffer_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../da/dec/a00080_source.html">WorkWindow.h</a> 第 <a class="el" href="../../da/dec/a00080_source.html#l00059">59</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab7c42f345db9d961069023109afd18b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c42f345db9d961069023109afd18b2">&#9670;&nbsp;</a></span>mt_serial_thread_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QThread* WorkWindow::mt_serial_thread_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;串口线程 建立一个线程管理线程执行 </p>
+
+<p class="definition">在文件 <a class="el" href="../../da/dec/a00080_source.html">WorkWindow.h</a> 第 <a class="el" href="../../da/dec/a00080_source.html#l00068">68</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0875afe0e956a7c16209a742b564309d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0875afe0e956a7c16209a742b564309d">&#9670;&nbsp;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d4c/a01307.html">Ui::WorkWindow</a>* WorkWindow::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;缓冲队列, 给采集和显示用的队列 </p>
+<p class="DocNodeLTR">工作用户的 ui </p>
+
+<p class="definition">在文件 <a class="el" href="../../da/dec/a00080_source.html">WorkWindow.h</a> 第 <a class="el" href="../../da/dec/a00080_source.html#l00062">62</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../da/dec/a00080_source.html">WorkWindow.h</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/src/<a class="el" href="../../d7/d25/a00182_source.html">WorkWindow.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01307_html"><div class="ttname"><a href="../../d2/d4c/a01307.html">&#x202A;Ui::WorkWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00665">ui_workwindow.h:665</a></div></div>
+<div class="ttc" id="aa01195_html_af92af3ed8f61e4fd9eaf4d1b14446683"><div class="ttname"><a href="../../d8/df3/a01195.html#af92af3ed8f61e4fd9eaf4d1b14446683">&#x202A;WorkWindow::slot_render_extra_info</a></div><div class="ttdeci">&#x202A;void slot_render_extra_info(void)</div><div class="ttdoc">&#x202A;更新其他信息值 // 电压 // 亮度 // 存储信息</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00452">WorkWindow.cc:452</a></div></div>
+<div class="ttc" id="aa01195_html_a61b65273b35191ec0675fe927b2a8fc8"><div class="ttname"><a href="../../d8/df3/a01195.html#a61b65273b35191ec0675fe927b2a8fc8">&#x202A;WorkWindow::m_CamProc_</a></div><div class="ttdeci">&#x202A;CamProc * m_CamProc_</div><div class="ttdoc">&#x202A;图像处理对象</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/a00080_source.html#l00064">WorkWindow.h:64</a></div></div>
+<div class="ttc" id="aa01215_html_a054256077ab572adcbad2c9c7e8db3e2"><div class="ttname"><a href="../../da/d3f/a01215.html#a054256077ab572adcbad2c9c7e8db3e2">&#x202A;CQtOpenCVViewerGl::ShowImage</a></div><div class="ttdeci">&#x202A;bool ShowImage(const cv::Mat &amp;image)</div><div class="ttdoc">&#x202A;Shows the image</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc2/a00104_source.html#l00210">cqtopencvviewergl.cpp:210</a></div></div>
+<div class="ttc" id="aa01079_html_a85a53f5efa042b291b236ac325fc5d72"><div class="ttname"><a href="../../d2/d4d/a01079.html#a85a53f5efa042b291b236ac325fc5d72">&#x202A;RunPara::StUI::DstImgLabel</a></div><div class="ttdeci">&#x202A;struct RunPara::StUI::StLabel DstImgLabel</div></div>
+<div class="ttc" id="aa01079_html_aaedb0fdf28501768e74fc3f568b473cc"><div class="ttname"><a href="../../d2/d4d/a01079.html#aaedb0fdf28501768e74fc3f568b473cc">&#x202A;RunPara::StHole::nBeginDepth</a></div><div class="ttdeci">&#x202A;int nBeginDepth</div><div class="ttdoc">&#x202A;开始深度 表示设备开始工作的深度 mm</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00093">runpara.h:93</a></div></div>
+<div class="ttc" id="aa01323_html"><div class="ttname"><a href="../../db/da8/a01323.html">&#x202A;Utils_Exception</a></div><div class="ttdoc">&#x202A;直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类</div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00073">Utils_Exception.h:73</a></div></div>
+<div class="ttc" id="aa01195_html_a054b4913c0b0f87c7c285e122eaed7fe"><div class="ttname"><a href="../../d8/df3/a01195.html#a054b4913c0b0f87c7c285e122eaed7fe">&#x202A;WorkWindow::RunParaUpdate</a></div><div class="ttdeci">&#x202A;void RunParaUpdate()</div><div class="ttdoc">&#x202A;根据运行状态 以及系统时间 更新运行 参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00485">WorkWindow.cc:485</a></div></div>
+<div class="ttc" id="aa01303_html_a0b69237b6e5ec232655b929c5d5804b1"><div class="ttname"><a href="../../d6/d07/a01303.html#a0b69237b6e5ec232655b929c5d5804b1">&#x202A;Ui_WorkWindow::hs_Light_light</a></div><div class="ttdeci">&#x202A;CSlider * hs_Light_light</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00063">ui_workwindow.h:63</a></div></div>
+<div class="ttc" id="aa01163_html_a424a48bd80ac205a2471f3ecd11203c6"><div class="ttname"><a href="../../d6/d27/a01163.html#a424a48bd80ac205a2471f3ecd11203c6">&#x202A;Serial::SerialInit</a></div><div class="ttdeci">&#x202A;void SerialInit(void)</div><div class="ttdoc">&#x202A;Initializes this object</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00282">Serial.cc:282</a></div></div>
+<div class="ttc" id="aa01303_html_ac50b3ec8c4b7b772a3c624b2ac2e5fd7"><div class="ttname"><a href="../../d6/d07/a01303.html#ac50b3ec8c4b7b772a3c624b2ac2e5fd7">&#x202A;Ui_WorkWindow::lb_Light_light</a></div><div class="ttdeci">&#x202A;QLabel * lb_Light_light</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00062">ui_workwindow.h:62</a></div></div>
+<div class="ttc" id="aa01079_html_a985a1c5fe42b198c1411864a7524d1c3"><div class="ttname"><a href="../../d2/d4d/a01079.html#a985a1c5fe42b198c1411864a7524d1c3">&#x202A;RunPara::StUI::SrcImgLabel</a></div><div class="ttdeci">&#x202A;struct RunPara::StUI::StLabel SrcImgLabel</div></div>
+<div class="ttc" id="aa01195_html_a01083e6fa8585bbe6302affa302bd4d7"><div class="ttname"><a href="../../d8/df3/a01195.html#a01083e6fa8585bbe6302affa302bd4d7">&#x202A;WorkWindow::slot_render_location</a></div><div class="ttdeci">&#x202A;void slot_render_location(int dPluse)</div><div class="ttdoc">&#x202A;更新 编码器 位置信息</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00428">WorkWindow.cc:428</a></div></div>
+<div class="ttc" id="aa01303_html_aea4e9b523747eedfbe8010777ac3d611"><div class="ttname"><a href="../../d6/d07/a01303.html#aea4e9b523747eedfbe8010777ac3d611">&#x202A;Ui_WorkWindow::lb_head</a></div><div class="ttdeci">&#x202A;QLabel * lb_head</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00083">ui_workwindow.h:83</a></div></div>
+<div class="ttc" id="aa01079_html_a71601028f8b9c2775eda7c2d916a8b63"><div class="ttname"><a href="../../d2/d4d/a01079.html#a71601028f8b9c2775eda7c2d916a8b63">&#x202A;RunPara::StDevice::StExtra::nBattaryV</a></div><div class="ttdeci">&#x202A;int nBattaryV</div><div class="ttdoc">&#x202A;电池电压 // 0.01V 单位</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00238">runpara.h:238</a></div></div>
+<div class="ttc" id="aa01303_html_a810faf7477fbe729411612748531a2e5"><div class="ttname"><a href="../../d6/d07/a01303.html#a810faf7477fbe729411612748531a2e5">&#x202A;Ui_WorkWindow::lb_roll</a></div><div class="ttdeci">&#x202A;QLabel * lb_roll</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00080">ui_workwindow.h:80</a></div></div>
+<div class="ttc" id="aa01079_html_ac03a8d44b70c096024ea909ec73d56c4"><div class="ttname"><a href="../../d2/d4d/a01079.html#ac03a8d44b70c096024ea909ec73d56c4">&#x202A;RunPara::UI</a></div><div class="ttdeci">&#x202A;struct RunPara::StUI UI</div></div>
+<div class="ttc" id="aa01079_html_a9f8d3285763ce4ba3ba8d469fa0b5a41"><div class="ttname"><a href="../../d2/d4d/a01079.html#a9f8d3285763ce4ba3ba8d469fa0b5a41">&#x202A;RunPara::StUI::PolarImgLabel</a></div><div class="ttdeci">&#x202A;struct RunPara::StUI::StLabel PolarImgLabel</div></div>
+<div class="ttc" id="aa01079_html_a1ca5d1037652d0b772952ae0716d7a63"><div class="ttname"><a href="../../d2/d4d/a01079.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG CFG</div></div>
+<div class="ttc" id="aa00161_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d6/d7d/a00161.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00014">main.cpp:14</a></div></div>
+<div class="ttc" id="aa01199_html"><div class="ttname"><a href="../../d0/d5a/a01199.html">&#x202A;WriteVideo</a></div><div class="ttdoc">&#x202A;A write video. 使用传统线程方式 处理, 程序循环执行 写入动作</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00026">WriteVideo.h:26</a></div></div>
+<div class="ttc" id="aa01195_html_a14c3f45662e1af9a6dd2071418d6a484"><div class="ttname"><a href="../../d8/df3/a01195.html#a14c3f45662e1af9a6dd2071418d6a484">&#x202A;WorkWindow::ListAllCameraDevice</a></div><div class="ttdeci">&#x202A;bool ListAllCameraDevice()</div><div class="ttdoc">&#x202A;列出所有可以使用 的相机 使用 QDebug 输出</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00127">WorkWindow.cc:127</a></div></div>
+<div class="ttc" id="aa01195_html_a41a95073fcd146be53bf16c5649b00b0"><div class="ttname"><a href="../../d8/df3/a01195.html#a41a95073fcd146be53bf16c5649b00b0">&#x202A;WorkWindow::slot_ShowMatOnLabelByFlg</a></div><div class="ttdeci">&#x202A;void slot_ShowMatOnLabelByFlg(cv::Mat *img, int flg=0)</div><div class="ttdoc">&#x202A;跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00210">WorkWindow.cc:210</a></div></div>
+<div class="ttc" id="aa01039_html_acea51160009fb429624f023f15345747"><div class="ttname"><a href="../../df/d21/a01039.html#acea51160009fb429624f023f15345747">&#x202A;CamProc::m_SerialProc_</a></div><div class="ttdeci">&#x202A;SerialProc * m_SerialProc_</div><div class="ttdoc">&#x202A;串口数据处理程序</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00051">CamProc.h:51</a></div></div>
+<div class="ttc" id="aa01079_html_a9c1829f455bfd94bb6d53fea0e54a5ef"><div class="ttname"><a href="../../d2/d4d/a01079.html#a9c1829f455bfd94bb6d53fea0e54a5ef">&#x202A;RunPara::StDevice::StPulse::nPulseUm</a></div><div class="ttdeci">&#x202A;int nPulseUm</div><div class="ttdoc">&#x202A;脉冲距离 光电编码器 每个脉冲走过的距离 单位 1um 最大 65536</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00162">runpara.h:162</a></div></div>
+<div class="ttc" id="aa01303_html_ad448afd5f048d92b0be437ef0784c4be"><div class="ttname"><a href="../../d6/d07/a01303.html#ad448afd5f048d92b0be437ef0784c4be">&#x202A;Ui_WorkWindow::lb_battary</a></div><div class="ttdeci">&#x202A;QLabel * lb_battary</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00070">ui_workwindow.h:70</a></div></div>
+<div class="ttc" id="aa01303_html_ae9058a19fdf251d4f9347d9bc1d13c4a"><div class="ttname"><a href="../../d6/d07/a01303.html#ae9058a19fdf251d4f9347d9bc1d13c4a">&#x202A;Ui_WorkWindow::img_dst</a></div><div class="ttdeci">&#x202A;CQtOpenCVViewerGl * img_dst</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00092">ui_workwindow.h:92</a></div></div>
+<div class="ttc" id="aa01079_html_a5c8a75db5d0f3051dcf25a034370c9ce"><div class="ttname"><a href="../../d2/d4d/a01079.html#a5c8a75db5d0f3051dcf25a034370c9ce">&#x202A;RunPara::StUI::StLabel::nHeight</a></div><div class="ttdeci">&#x202A;int nHeight</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00250">runpara.h:250</a></div></div>
+<div class="ttc" id="aa01035_html_a37280d2e0cfb79c0efc4cb2a26c54f86"><div class="ttname"><a href="../../de/d26/a01035.html#a37280d2e0cfb79c0efc4cb2a26c54f86">&#x202A;CamCapture::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdoc">&#x202A;初始化相机参数, 并打开相机对象</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00099">CamCapture.cc:99</a></div></div>
+<div class="ttc" id="aa00263_html_a59e56af19e754a6aa26a612ebf91d05fa42cfa7783896b2c31ef38744358e4d9f"><div class="ttname"><a href="../../df/da9/a00263.html#a59e56af19e754a6aa26a612ebf91d05fa42cfa7783896b2c31ef38744358e4d9f">&#x202A;Error_Image_Resize_Crash_On_Reszie_To_Show</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00042">Utils_Exception.h:42</a></div></div>
+<div class="ttc" id="aa01035_html_a8520541f0914714fe138b2bbe986c32d"><div class="ttname"><a href="../../de/d26/a01035.html#a8520541f0914714fe138b2bbe986c32d">&#x202A;CamCapture::mb_capture_enable_</a></div><div class="ttdeci">&#x202A;bool mb_capture_enable_</div><div class="ttdoc">&#x202A;使能 抓取,</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00040">CamCapture.h:40</a></div></div>
+<div class="ttc" id="aa01303_html_a23fc25c32e1122f228abb5af184fba94"><div class="ttname"><a href="../../d6/d07/a01303.html#a23fc25c32e1122f228abb5af184fba94">&#x202A;Ui_WorkWindow::btn_startWork</a></div><div class="ttdeci">&#x202A;QPushButton * btn_startWork</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00046">ui_workwindow.h:46</a></div></div>
+<div class="ttc" id="aa01035_html_a2fe8acbc4a8218e9fe7666cc90160dcd"><div class="ttname"><a href="../../de/d26/a01035.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;CamCapture::mqa_capture_buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * mqa_capture_buffer_</div><div class="ttdoc">&#x202A;采集到的图像数据</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00042">CamCapture.h:42</a></div></div>
+<div class="ttc" id="aa01163_html_a4a6ae431c635f68eebf693e27b84dbba"><div class="ttname"><a href="../../d6/d27/a01163.html#a4a6ae431c635f68eebf693e27b84dbba">&#x202A;Serial::m_Timer_</a></div><div class="ttdeci">&#x202A;QTimer * m_Timer_</div><div class="ttdoc">&#x202A;串口定时器</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00043">Serial.h:43</a></div></div>
+<div class="ttc" id="aa01171_html_a0ae3cb002dd0724847626a7ba19b4e0b"><div class="ttname"><a href="../../d2/d22/a01171.html#a0ae3cb002dd0724847626a7ba19b4e0b">&#x202A;FrameData::StCompass::Heading</a></div><div class="ttdeci">&#x202A;float Heading</div><div class="ttdoc">&#x202A;朝向角</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d89/a00071_source.html#l00186">serialdata.h:186</a></div></div>
+<div class="ttc" id="aa01079_html_aff08b751819830cd437a5a0f3d5dc2a4"><div class="ttname"><a href="../../d2/d4d/a01079.html#aff08b751819830cd437a5a0f3d5dc2a4">&#x202A;RunPara::StDevice::Pulse</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice::StPulse Pulse</div></div>
+<div class="ttc" id="aa00038_html_acbe03cac2d706c0f6d5a11f8c0e26946"><div class="ttname"><a href="../../d8/d41/a00038.html#acbe03cac2d706c0f6d5a11f8c0e26946">&#x202A;ReleaseThread</a></div><div class="ttdeci">&#x202A;bool ReleaseThread(QThread *qthread)</div><div class="ttdoc">&#x202A;停止进程并同时 删除对象</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00224">common.cc:224</a></div></div>
+<div class="ttc" id="aa01195_html_ab7c42f345db9d961069023109afd18b2"><div class="ttname"><a href="../../d8/df3/a01195.html#ab7c42f345db9d961069023109afd18b2">&#x202A;WorkWindow::mt_serial_thread_</a></div><div class="ttdeci">&#x202A;QThread * mt_serial_thread_</div><div class="ttdoc">&#x202A;串口线程 建立一个线程管理线程执行</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/a00080_source.html#l00068">WorkWindow.h:68</a></div></div>
+<div class="ttc" id="aa01079_html_af17ea17a7ba6b27eaee99e5b1e4c91f1"><div class="ttname"><a href="../../d2/d4d/a01079.html#af17ea17a7ba6b27eaee99e5b1e4c91f1">&#x202A;RunPara::StUI::StLabel::nWidth</a></div><div class="ttdeci">&#x202A;int nWidth</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00249">runpara.h:249</a></div></div>
+<div class="ttc" id="aa01079_html_a6bc72d9e3a8fa235623c693cc83a02fd"><div class="ttname"><a href="../../d2/d4d/a01079.html#a6bc72d9e3a8fa235623c693cc83a02fd">&#x202A;RunPara::StDevice::Extra</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice::StExtra Extra</div></div>
+<div class="ttc" id="aa01195_html_a0875afe0e956a7c16209a742b564309d"><div class="ttname"><a href="../../d8/df3/a01195.html#a0875afe0e956a7c16209a742b564309d">&#x202A;WorkWindow::ui</a></div><div class="ttdeci">&#x202A;Ui::WorkWindow * ui</div><div class="ttdoc">&#x202A;缓冲队列, 给采集和显示用的队列</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/a00080_source.html#l00062">WorkWindow.h:62</a></div></div>
+<div class="ttc" id="aa01039_html_a6bcbec6e91c3f3574b6e6e6a0e23f865"><div class="ttname"><a href="../../df/d21/a01039.html#a6bcbec6e91c3f3574b6e6e6a0e23f865">&#x202A;CamProc::signal_render_location</a></div><div class="ttdeci">&#x202A;void signal_render_location(int d_pluse)</div><div class="ttdoc">&#x202A;发射位置信息</div></div>
+<div class="ttc" id="aa00038_html_a51b816b14fb11dbdb1d0e7986cb0aca9"><div class="ttname"><a href="../../d8/d41/a00038.html#a51b816b14fb11dbdb1d0e7986cb0aca9">&#x202A;CvMat2QImage</a></div><div class="ttdeci">&#x202A;QImage CvMat2QImage(const cv::Mat &amp;mat)</div><div class="ttdoc">&#x202A;opencv Mat格式转换为 QT 的 QImage</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00092">common.cc:92</a></div></div>
+<div class="ttc" id="aa01195_html_af811eab27901f7a9dac0a8700f13be49"><div class="ttname"><a href="../../d8/df3/a01195.html#af811eab27901f7a9dac0a8700f13be49">&#x202A;WorkWindow::signal_render_extra_info</a></div><div class="ttdeci">&#x202A;void signal_render_extra_info()</div><div class="ttdoc">&#x202A;更新其他信息 —亮度,存储,电压等信息</div></div>
+<div class="ttc" id="aa01303_html_ac4dac337a2b736603833e2c882fbc28a"><div class="ttname"><a href="../../d6/d07/a01303.html#ac4dac337a2b736603833e2c882fbc28a">&#x202A;Ui_WorkWindow::lb_src</a></div><div class="ttdeci">&#x202A;QLabel * lb_src</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00039">ui_workwindow.h:39</a></div></div>
+<div class="ttc" id="aa01039_html_a59f8eddb9aaffcc5e39d6cadbe1aa913"><div class="ttname"><a href="../../df/d21/a01039.html#a59f8eddb9aaffcc5e39d6cadbe1aa913">&#x202A;CamProc::signal_show_frame</a></div><div class="ttdeci">&#x202A;void signal_show_frame(cv::Mat *img, int flg=0)</div><div class="ttdoc">&#x202A;发射显示frame 信号</div></div>
+<div class="ttc" id="aa01303_html_ad836600ebcd400d33f48003b979e489f"><div class="ttname"><a href="../../d6/d07/a01303.html#ad836600ebcd400d33f48003b979e489f">&#x202A;Ui_WorkWindow::le_hole_num</a></div><div class="ttdeci">&#x202A;QLineEdit * le_hole_num</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00059">ui_workwindow.h:59</a></div></div>
+<div class="ttc" id="aa01039_html_a4fd7a30375554ef9df2ef322db87c32d"><div class="ttname"><a href="../../df/d21/a01039.html#a4fd7a30375554ef9df2ef322db87c32d">&#x202A;CamProc::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdoc">&#x202A;初始化线程 初始化完成后 开始运行</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00069">camProc.cc:69</a></div></div>
+<div class="ttc" id="aa01195_html_a8b24028f5fda51b3994e0ce589db5825"><div class="ttname"><a href="../../d8/df3/a01195.html#a8b24028f5fda51b3994e0ce589db5825">&#x202A;WorkWindow::m_WriteVideo__</a></div><div class="ttdeci">&#x202A;WriteVideo * m_WriteVideo__</div><div class="ttdoc">&#x202A;数据写入流</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/a00080_source.html#l00066">WorkWindow.h:66</a></div></div>
+<div class="ttc" id="aa01079_html_ae45d52024dc8fefee05c2f41d92ed380"><div class="ttname"><a href="../../d2/d4d/a01079.html#ae45d52024dc8fefee05c2f41d92ed380">&#x202A;RunPara::StHole::strNum</a></div><div class="ttdeci">&#x202A;std::string strNum</div><div class="ttdoc">&#x202A;测孔编号</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00096">runpara.h:96</a></div></div>
+<div class="ttc" id="aa01035_html_af7fe40eb92e15b37ede3690ccddb523a"><div class="ttname"><a href="../../de/d26/a01035.html#af7fe40eb92e15b37ede3690ccddb523a">&#x202A;CamCapture::mqa_writevideo_buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * mqa_writevideo_buffer_</div><div class="ttdoc">&#x202A;设置存储队列, 用于存储 原始视频流</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00041">CamCapture.h:41</a></div></div>
+<div class="ttc" id="aa01219_html_a2a5d6a071ffbe6f0f5727afc211b5fb9"><div class="ttname"><a href="../../d5/d39/a01219.html#a2a5d6a071ffbe6f0f5727afc211b5fb9">&#x202A;CSlider::Associate</a></div><div class="ttdeci">&#x202A;bool Associate(QLabel *label, int *data, bool over=true)</div><div class="ttdoc">&#x202A;Associates</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d81/a00110_source.html#l00046">cslider.cpp:46</a></div></div>
+<div class="ttc" id="aa01195_html_a1ac8d28317aadd53446419ac8b353a82"><div class="ttname"><a href="../../d8/df3/a01195.html#a1ac8d28317aadd53446419ac8b353a82">&#x202A;WorkWindow::renderLocation</a></div><div class="ttdeci">&#x202A;bool renderLocation(int d_pluse)</div><div class="ttdoc">&#x202A;将位置信息实时更新到界面的label 上</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00512">WorkWindow.cc:512</a></div></div>
+<div class="ttc" id="aa01079_html_a36f7f1a7d60a5ce9517dee33477c0e75"><div class="ttname"><a href="../../d2/d4d/a01079.html#a36f7f1a7d60a5ce9517dee33477c0e75">&#x202A;RunPara::StDevice::StExtra::nLighterLight</a></div><div class="ttdeci">&#x202A;int nLighterLight</div><div class="ttdoc">&#x202A;探灯亮度</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00237">runpara.h:237</a></div></div>
+<div class="ttc" id="aa01195_html_aca648f5b3e1bd12006f0d2fd3fc5c8e9"><div class="ttname"><a href="../../d8/df3/a01195.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9">&#x202A;WorkWindow::SetRelateConnection</a></div><div class="ttdeci">&#x202A;bool SetRelateConnection()</div><div class="ttdoc">&#x202A;设定相关槽和信号的连接</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00175">WorkWindow.cc:175</a></div></div>
+<div class="ttc" id="aa01079_html_a1b1f21581cf398c15060fe53199662d9"><div class="ttname"><a href="../../d2/d4d/a01079.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;RunPara::Device</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice Device</div></div>
+<div class="ttc" id="aa01171_html_a1de25929cf75e9dde5b0e137f9e87ed7"><div class="ttname"><a href="../../d2/d22/a01171.html#a1de25929cf75e9dde5b0e137f9e87ed7">&#x202A;FrameData::StCompass::Roll</a></div><div class="ttdeci">&#x202A;float Roll</div><div class="ttdoc">&#x202A;翻滚角</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d89/a00071_source.html#l00185">serialdata.h:185</a></div></div>
+<div class="ttc" id="aa01195_html_a079ea93a8e35136b245a4f19b9f380f5"><div class="ttname"><a href="../../d8/df3/a01195.html#a079ea93a8e35136b245a4f19b9f380f5">&#x202A;WorkWindow::signal_close_windows</a></div><div class="ttdeci">&#x202A;void signal_close_windows()</div><div class="ttdoc">&#x202A;发送当前窗口关闭信号</div></div>
+<div class="ttc" id="aa01199_html_a21abae28e88c5d6090d4377913ef61ea"><div class="ttname"><a href="../../d0/d5a/a01199.html#a21abae28e88c5d6090d4377913ef61ea">&#x202A;WriteVideo::CloseWriter</a></div><div class="ttdeci">&#x202A;bool CloseWriter()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df3/a00185_source.html#l00074">WriteVideo.cc:74</a></div></div>
+<div class="ttc" id="aa01039_html"><div class="ttname"><a href="../../df/d21/a01039.html">&#x202A;CamProc</a></div><div class="ttdoc">&#x202A;处理线程 单独执行过程</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00035">CamProc.h:35</a></div></div>
+<div class="ttc" id="aa01199_html_a6160a17554039c6133fd5cb7b418954f"><div class="ttname"><a href="../../d0/d5a/a01199.html#a6160a17554039c6133fd5cb7b418954f">&#x202A;WriteVideo::m_write_buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * m_write_buffer_</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00029">WriteVideo.h:29</a></div></div>
+<div class="ttc" id="aa01195_html_ae0cd97fd58fbed431d25dd3055f084bd"><div class="ttname"><a href="../../d8/df3/a01195.html#ae0cd97fd58fbed431d25dd3055f084bd">&#x202A;WorkWindow::Slot_UpdateUIByRunPara</a></div><div class="ttdeci">&#x202A;void Slot_UpdateUIByRunPara()</div><div class="ttdoc">&#x202A;根据运行参数 更改目前程序界面上的参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00150">WorkWindow.cc:150</a></div></div>
+<div class="ttc" id="aa00182_html_a4a982268c951571967b94025cbd6e37e"><div class="ttname"><a href="../../d7/d25/a00182.html#a4a982268c951571967b94025cbd6e37e">&#x202A;tmp_resize_img</a></div><div class="ttdeci">&#x202A;cv::Mat tmp_resize_img</div><div class="ttdoc">&#x202A;临时缩放图像, 避免频繁申请空间</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00246">WorkWindow.cc:246</a></div></div>
+<div class="ttc" id="aa01303_html_a37224fb98994e9bc1986de19ebdd9210"><div class="ttname"><a href="../../d6/d07/a01303.html#a37224fb98994e9bc1986de19ebdd9210">&#x202A;Ui_WorkWindow::lb_loc</a></div><div class="ttdeci">&#x202A;QLabel * lb_loc</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00102">ui_workwindow.h:102</a></div></div>
+<div class="ttc" id="aa01303_html_ae99e1d373bc2aca03cb84d59af908645"><div class="ttname"><a href="../../d6/d07/a01303.html#ae99e1d373bc2aca03cb84d59af908645">&#x202A;Ui_WorkWindow::setupUi</a></div><div class="ttdeci">&#x202A;void setupUi(QMainWindow *WorkWindow)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00105">ui_workwindow.h:105</a></div></div>
+<div class="ttc" id="aa01047_html"><div class="ttname"><a href="../../db/dbb/a01047.html">&#x202A;CQueue&lt; cv::Mat &gt;</a></div></div>
+<div class="ttc" id="aa01195_html_a4ec884594b80adcfb3a7fa7181e216d4"><div class="ttname"><a href="../../d8/df3/a01195.html#a4ec884594b80adcfb3a7fa7181e216d4">&#x202A;WorkWindow::ShowMatOnQtLabel</a></div><div class="ttdeci">&#x202A;bool ShowMatOnQtLabel(const cv::Mat &amp;srcImg, QLabel *lb_label, int width, int height)</div><div class="ttdoc">&#x202A;将一副图像显示在 设定的 Label 上</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00248">WorkWindow.cc:248</a></div></div>
+<div class="ttc" id="aa01079_html_a55676b481748b3169abcad0b15dab03f"><div class="ttname"><a href="../../d2/d4d/a01079.html#a55676b481748b3169abcad0b15dab03f">&#x202A;RunPara::StCFG::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG::StDebug Debug</div></div>
+<div class="ttc" id="aa01303_html_a6e48d2e4567470e2a9148af7db4db017"><div class="ttname"><a href="../../d6/d07/a01303.html#a6e48d2e4567470e2a9148af7db4db017">&#x202A;Ui_WorkWindow::lb_dst_p</a></div><div class="ttdeci">&#x202A;QLabel * lb_dst_p</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00090">ui_workwindow.h:90</a></div></div>
+<div class="ttc" id="aa01035_html"><div class="ttname"><a href="../../de/d26/a01035.html">&#x202A;CamCapture</a></div><div class="ttdoc">&#x202A;摄像头 抓取对象, 循环抓取对象数据到缓冲队列中</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00030">CamCapture.h:30</a></div></div>
+<div class="ttc" id="aa00080_html_a8109678940135e75e59bb64819c1004d"><div class="ttname"><a href="../../da/dec/a00080.html#a8109678940135e75e59bb64819c1004d">&#x202A;K_BUFFER_MAX_SIZE</a></div><div class="ttdeci">&#x202A;const int K_BUFFER_MAX_SIZE</div><div class="ttdoc">&#x202A;缓冲队列的最大长度</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/a00080_source.html#l00041">WorkWindow.h:41</a></div></div>
+<div class="ttc" id="aa01043_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d8/d27/a01043.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01079_html_a8db2980fe61924859ca70adfefda20fc"><div class="ttname"><a href="../../d2/d4d/a01079.html#a8db2980fe61924859ca70adfefda20fc">&#x202A;RunPara::StCFG::StDebug::nShowWork</a></div><div class="ttdeci">&#x202A;int nShowWork</div><div class="ttdoc">&#x202A;直接进入工作不进入设置</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00273">runpara.h:273</a></div></div>
+<div class="ttc" id="aa01195_html_a798f4301174eaffad296ad212a61b33d"><div class="ttname"><a href="../../d8/df3/a01195.html#a798f4301174eaffad296ad212a61b33d">&#x202A;WorkWindow::mq_CaptureImageBuffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * mq_CaptureImageBuffer_</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/a00080_source.html#l00059">WorkWindow.h:59</a></div></div>
+<div class="ttc" id="aa01163_html_a9eb4a207b07b90e03d1e556a131ae174"><div class="ttname"><a href="../../d6/d27/a01163.html#a9eb4a207b07b90e03d1e556a131ae174">&#x202A;Serial::m_QtSerial_</a></div><div class="ttdeci">&#x202A;QSerialPort * m_QtSerial_</div><div class="ttdoc">&#x202A;Qt 串口对象</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00041">Serial.h:41</a></div></div>
+<div class="ttc" id="aa01187_html_a8d2fa673b460b127ef35bb49b51e8456"><div class="ttname"><a href="../../dc/d70/a01187.html#a8d2fa673b460b127ef35bb49b51e8456">&#x202A;SerialProc::m_Serial_</a></div><div class="ttdeci">&#x202A;Serial * m_Serial_</div><div class="ttdoc">&#x202A;The serial</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00045">SerialProc.h:45</a></div></div>
+<div class="ttc" id="aa01171_html_ad919552e6e35f65a398abc2b82910e95"><div class="ttname"><a href="../../d2/d22/a01171.html#ad919552e6e35f65a398abc2b82910e95">&#x202A;FrameData::StCompass::Pitch</a></div><div class="ttdeci">&#x202A;float Pitch</div><div class="ttdoc">&#x202A;俯仰角</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d89/a00071_source.html#l00184">serialdata.h:184</a></div></div>
+<div class="ttc" id="aa00038_html_ac4398c20ecda27598d99d9a661a2ea9c"><div class="ttname"><a href="../../d8/d41/a00038.html#ac4398c20ecda27598d99d9a661a2ea9c">&#x202A;RenderNumberOnLabel</a></div><div class="ttdeci">&#x202A;void RenderNumberOnLabel(QLabel *label, float num)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/a00143_source.html#l00575">common.cc:575</a></div></div>
+<div class="ttc" id="aa01039_html_a1a3adf905013f71c98b5969a05821cd4"><div class="ttname"><a href="../../df/d21/a01039.html#a1a3adf905013f71c98b5969a05821cd4">&#x202A;CamProc::signal_render_HCM</a></div><div class="ttdeci">&#x202A;void signal_render_HCM(FrameData::StCompass &amp;compass)</div><div class="ttdoc">&#x202A;发射 串口数据信号</div></div>
+<div class="ttc" id="aa01195_html_a043fda4cae901d1aa3566022c4b66b90"><div class="ttname"><a href="../../d8/df3/a01195.html#a043fda4cae901d1aa3566022c4b66b90">&#x202A;WorkWindow::signal_updateUI</a></div><div class="ttdeci">&#x202A;void signal_updateUI()</div><div class="ttdoc">&#x202A;Raises an Update user interface signal 提醒刷新界面 ui 参数</div></div>
+<div class="ttc" id="aa01303_html_aa2d57e080444e7d4201af2863033d288"><div class="ttname"><a href="../../d6/d07/a01303.html#aa2d57e080444e7d4201af2863033d288">&#x202A;Ui_WorkWindow::lb_dst</a></div><div class="ttdeci">&#x202A;QLabel * lb_dst</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00093">ui_workwindow.h:93</a></div></div>
+<div class="ttc" id="aa01039_html_a0be89fd6aa425220576ce2d9ad14c94a"><div class="ttname"><a href="../../df/d21/a01039.html#a0be89fd6aa425220576ce2d9ad14c94a">&#x202A;CamProc::mb_CamProc_WorkFlag_</a></div><div class="ttdeci">&#x202A;bool mb_CamProc_WorkFlag_</div><div class="ttdoc">&#x202A;标志 图像处理循环 标志位</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00053">CamProc.h:53</a></div></div>
+<div class="ttc" id="aa01039_html_aa7371a962cfcec0e0aeb9cf2150d0608"><div class="ttname"><a href="../../df/d21/a01039.html#aa7371a962cfcec0e0aeb9cf2150d0608">&#x202A;CamProc::mqa_CaptureBuffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * mqa_CaptureBuffer_</div><div class="ttdoc">&#x202A;摄像头抓取的图像队列</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00054">CamProc.h:54</a></div></div>
+<div class="ttc" id="aa01079_html_afd733ae61a9e00508ef1c95697ab1e52"><div class="ttname"><a href="../../d2/d4d/a01079.html#afd733ae61a9e00508ef1c95697ab1e52">&#x202A;RunPara::Hole</a></div><div class="ttdeci">&#x202A;struct RunPara::StHole Hole</div></div>
+<div class="ttc" id="aa01303_html_aca67e3f25aab47d7458c904ab8ca8cf6"><div class="ttname"><a href="../../d6/d07/a01303.html#aca67e3f25aab47d7458c904ab8ca8cf6">&#x202A;Ui_WorkWindow::lb_pitch</a></div><div class="ttdeci">&#x202A;QLabel * lb_pitch</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00077">ui_workwindow.h:77</a></div></div>
+<div class="ttc" id="aa01195_html_ae9dcd6afdb5b4cd7811eda08b9223de1"><div class="ttname"><a href="../../d8/df3/a01195.html#ae9dcd6afdb5b4cd7811eda08b9223de1">&#x202A;WorkWindow::slot_render_HCM</a></div><div class="ttdeci">&#x202A;void slot_render_HCM(FrameData::StCompass &amp;compass)</div><div class="ttdoc">&#x202A;更新电子罗盘数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d25/a00182_source.html#l00443">WorkWindow.cc:443</a></div></div>
+<div class="ttc" id="aa01195_html_a5db89bd52183aedfb5723bf4f41af7c6"><div class="ttname"><a href="../../d8/df3/a01195.html#a5db89bd52183aedfb5723bf4f41af7c6">&#x202A;WorkWindow::m_CamCapture_</a></div><div class="ttdeci">&#x202A;CamCapture * m_CamCapture_</div><div class="ttdoc">&#x202A;相机采集 对象</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/a00080_source.html#l00065">WorkWindow.h:65</a></div></div>
+<div class="ttc" id="aa01303_html_a05e1f9e90abe088589aae53326747fba"><div class="ttname"><a href="../../d6/d07/a01303.html#a05e1f9e90abe088589aae53326747fba">&#x202A;Ui_WorkWindow::btn_Record</a></div><div class="ttdeci">&#x202A;QPushButton * btn_Record</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddf/a00224_source.html#l00050">ui_workwindow.h:50</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/df3/a01195.html">&#x202A;WorkWindow</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

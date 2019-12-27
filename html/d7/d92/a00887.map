@@ -1,0 +1,20 @@
+<map id="StorePara" name="StorePara">
+<area shape="rect" id="node1" title="需要存储的系统 para" alt="" coords="611,548,691,575"/>
+<area shape="rect" id="node2" href="$de/dc8/a00889.html#d5/da3/a00953" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="351,108,479,135"/>
+<area shape="rect" id="node3" href="$de/dc8/a00889.html#d1/df7/a00957" title="可以存储的文件参数" alt="" coords="5,5,217,32"/>
+<area shape="rect" id="node4" href="$de/dc8/a00889.html#dd/d7a/a00921" title="设置硬件的参数信息" alt="" coords="345,293,484,320"/>
+<area shape="rect" id="node5" href="$de/dc8/a00889.html#d6/dad/a00941" title="窗口状态信息" alt="" coords="42,57,181,98"/>
+<area shape="rect" id="node6" href="$de/dc8/a00889.html#d0/d5b/a00933" title="电子罗盘参数 调整罗盘数据" alt="" coords="42,122,181,163"/>
+<area shape="rect" id="node7" href="$de/dc8/a00889.html#dc/d36/a00925" title="脉冲参数" alt="" coords="42,187,181,229"/>
+<area shape="rect" id="node8" href="$de/dc8/a00889.html#d1/db0/a00945" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="42,253,181,294"/>
+<area shape="rect" id="node9" href="$de/dc8/a00889.html#df/dc6/a00949" title="额外信息" alt="" coords="42,318,181,359"/>
+<area shape="rect" id="node10" href="$de/dc8/a00889.html#dc/d92/a00929" title="探头参数" alt="" coords="42,383,181,425"/>
+<area shape="rect" id="node11" href="$de/dc8/a00889.html#de/db9/a00937" title="相机参数结构体" alt="" coords="42,449,181,490"/>
+<area shape="rect" id="node12" href="$de/dc8/a00889.html#da/d5b/a00905" title="运行过程中的 图像参数" alt="" coords="347,521,483,548"/>
+<area shape="rect" id="node13" href="$de/dc8/a00889.html#d4/ddc/a00917" title=" " alt="" coords="43,514,179,555"/>
+<area shape="rect" id="node14" href="$de/dc8/a00889.html#de/dc3/a00909" title="Image 处理参数, 作为图像展开参数" alt="" coords="43,579,179,621"/>
+<area shape="rect" id="node15" href="$de/dc8/a00889.html#d9/dfb/a00913" title="Image Para 参数" alt="" coords="43,645,179,686"/>
+<area shape="rect" id="node16" href="$de/dc8/a00889.html#dc/d2c/a00893" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="333,572,496,599"/>
+<area shape="rect" id="node17" href="$de/dc8/a00889.html#de/d01/a00897" title="记录 路径以及其他路径信息" alt="" coords="343,623,486,649"/>
+<area shape="rect" id="node18" href="$de/dc8/a00889.html#d0/dac/a00901" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="351,673,478,700"/>
+</map>

@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;CBoreHole 软件工程说明</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.6.3</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d3/d79/a01611.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc PageDocLTR-title"><div class="header">
+  <div class="headertitle">
+<div class="title">&#x202A;CBoreHole 软件工程说明 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p class="DocNodeLTR">此文件为 程序工程说明, 主要介绍如何使用此工程的说明文档; 具体功能设计以及使用软硬件结构可以参考<a class="el" href="../../da/d9c/a00413.html">系统架构文档</a></p>
+<p class="DocNodeLTR">程序最终发布到 Github的私有仓库中 <a href="&#x202A;https://github.com/SChen1024/Camera">Github链接</a></p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md2"></a>
+系统结构说明</h1>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md3"></a>
+开发环境说明</h2>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md4"></a>
+开发工具</h3>
+<blockquote class="doxtable DocNodeLTR">
+<ul class="DocNodeLTR">
+<li>&#x202A;Windows 10</li>
+<li>&#x202A;Intel Core i7 7700K</li>
+<li>&#x202A;32G RAM</li>
+<li>&#x202A;GTX 1080ti</li>
+<li>&#x202A;VS2015 + VS Code</li>
+<li>&#x202A;QT 5.11.1</li>
+<li>&#x202A;OpenCV 3.4.1</li>
+<li>&#x202A;CUDA 9.1 </li>
+</ul>
+</blockquote>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md5"></a>
+工程文件结构</h2>
+<p class="DocNodeLTR">首先介绍一下本系统的系统目录树结构, 分别介绍各部分文件的内容</p>
+<h3 class="DocNodeLTR"><a class="anchor" id="autotoc_md6"></a>
+目录树生成方法</h3>
+<p class="DocNodeLTR">在本工程路径下命令行执行 下列命令可以将项目文件结构存储 <em>windows</em></p>
+<blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">tree /f /a &gt; ./Doc/FileTree.txt <br  />
+ </p>
+</blockquote>
+<p class="DocNodeLTR">可以将目录下树状结构列出来 <br  />
+ /f 列出文件夹下文件 <br  />
+ /a 以ASCII列出 避免字符编码问题 使用 &gt; 或者 &gt;&gt; 符号可以 将文件输入到一个文件中 如不存在则创建 前者 覆盖式写入, 后者添加式写入,</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md7"></a>
+工程目录树介绍</h2>
+<p class="DocNodeLTR">通过 生成目录树最终得到了详细的 文件结构, 详细的内容可以自行打开文件查看 <a href="&#x202A;../.././Doc/FileTree.txt">目录树结构</a>,关于程序实现的详细内容可以查看系统架构文档文档的详细说明</p>
+<div class="fragment"><div class="line">CBoreHole</div>
+<div class="line">|   .qmake.stash</div>
+<div class="line">|   CBoreHole.pro       <span class="comment">// QT 工程文件</span></div>
+<div class="line">|   CBoreHole.pro.user  <span class="comment">// QT 配置文件</span></div>
+<div class="line">|   CBoreHole.vcxproj   </div>
+<div class="line">|   CBoreHole.vcxproj.filters</div>
+<div class="line">|   CBoreHole.vcxproj.user</div>
+<div class="line">|   ReadMe.md           <span class="comment">// 说明文档 // 本文件</span></div>
+<div class="line">|   </div>
+<div class="line">+---build-Debug         <span class="comment">// QT 输出目录</span></div>
+<div class="line">+---build-VS            <span class="comment">// VS工程文件和 生成文件目录</span></div>
+<div class="line">+---Code                <span class="comment">// 程序所在文件夹</span></div>
+<div class="line">|   |   stdafx.h            <span class="comment">// 标准头文件 引入相应的需要的头文件   // </span></div>
+<div class="line">|   |   stdafx.h.cpp        <span class="comment">// 引入标准头文件 用于生成 ipch 文件</span></div>
+<div class="line">|   +---abandon             <span class="comment">// 以及能够被废弃的 部分程序实现</span></div>
+<div class="line">|   +---inc                 <span class="comment">// 头文件 存放文件夹</span></div>
+<div class="line">|   |       <a class="code" href="../../da/d73/a01090.html">&#x202A;CamCapture</a>.h        <span class="comment">// 相机捕捉类</span></div>
+<div class="line">|   |       <a class="code" href="../../d6/dea/a01094.html">&#x202A;CamProc</a>.h           <span class="comment">// 相机处理类</span></div>
+<div class="line">|   |       common.h            <span class="comment">// 公共实现函数</span></div>
+<div class="line">|   |       Commu.h             <span class="comment">// 串口通信实现 // 基础函数的实现</span></div>
+<div class="line">|   |       <a class="code" href="../../dd/d09/a01118.html">&#x202A;Config</a>.h            <span class="comment">// 配置文件类 //  程序执行中的参数</span></div>
+<div class="line">|   |       <a class="code" href="../../d0/d39/a01138.html">&#x202A;IDOIFile</a>.h          <span class="comment">// 生成文件类 // 用于生成自定义文件格式声明</span></div>
+<div class="line">|   |       ImageShow.h         <span class="comment">// 内容文件存储 操作</span></div>
+<div class="line">|   |       readwindow.h        <span class="comment">// 浏览窗口 基础内容    // 窗口</span></div>
+<div class="line">|   |       SerialPort.h        <span class="comment">// 串口类</span></div>
+<div class="line">|   |       <a class="code" href="../../d7/d73/a01266.html">&#x202A;SerialProc</a>.h        <span class="comment">// 串口数据处理</span></div>
+<div class="line">|   |       setwindow.h         <span class="comment">// 设置窗口             // 窗口</span></div>
+<div class="line">|   |       <a class="code" href="../../d2/d04/a00281.html#a6363fe481724674897134ef2f0451cc9">&#x202A;SpdLogger</a>.h         <span class="comment">// SpdLog 实现,能够实现多种输出效果</span></div>
+<div class="line">|   |       <a class="code" href="../../da/d17/a01046.html">&#x202A;SystemPara</a>.h        <span class="comment">// 系统参数 // 对应配置文件</span></div>
+<div class="line">|   |       <a class="code" href="../../db/dba/a01078.html">&#x202A;ThreadQueue</a>.h       <span class="comment">// 多线程队列实现 </span></div>
+<div class="line">|   |       <a class="code" href="../../dd/df1/a01082.html">&#x202A;UnitTest</a>.h          <span class="comment">// 单元测试类实现</span></div>
+<div class="line">|   |       <a class="code" href="../../de/d33/a01274.html">&#x202A;WorkWindow</a>.h        <span class="comment">// 工作窗口             // 窗口</span></div>
+<div class="line">|   |       writerthread.h      <span class="comment">// 写入线程, 存储视频</span></div>
+<div class="line">|   |       <a class="code" href="../../d4/d10/a01278.html">&#x202A;WriteVideo</a>.h        <span class="comment">// 写入视频</span></div>
+<div class="line">|   |       </div>
+<div class="line">|   +---src                 <span class="comment">// 对应 inc 目录下的程序实现</span></div>
+<div class="line">|   \---ui</div>
+<div class="line">|           readwindow.ui       <span class="comment">// 浏览窗口 UI QT</span></div>
+<div class="line">|           setwindow.ui        <span class="comment">// 设置窗口 UI</span></div>
+<div class="line">|           ui_readwindow.h </div>
+<div class="line">|           ui_setwindow.h</div>
+<div class="line">|           ui_workwindow.h</div>
+<div class="line">|           workwindow.ui       <span class="comment">// 工作窗口 UI</span></div>
+<div class="line">|           </div>
+<div class="line">+---<a class="code" href="../../dd/d09/a01118.html">&#x202A;Config</a>              <span class="comment">// 程序配置文件目录, 目前主要是 yml 配置文件</span></div>
+<div class="line">|   |   mainConfig.xml</div>
+<div class="line">|   |   mainConfig.yml</div>
+<div class="line">|   |   </div>
+<div class="line">|   \---ts</div>
+<div class="line">|           BHole_zh_CN.ts  <span class="comment">// QT 翻译功能 词典// 不可删除</span></div>
+<div class="line">|</div>
+<div class="line">+---Depend              <span class="comment">// 静态依赖库文件以及头文件</span></div>
+<div class="line">|   +---AtomDocSet      <span class="comment">// 注释生成工具 配置</span></div>
+<div class="line">|   +---catch2          <span class="comment">// 测试框架 Catch2 // 未使用</span></div>
+<div class="line">|   +---gtest           <span class="comment">// GoogleTest 框架 //未使用</span></div>
+<div class="line">|   +---opencv          <span class="comment">// Opencv 3.4.1 图像处理库   //在使用 不可删除</span></div>
+<div class="line">|   +---spdlog          <span class="comment">// Spdlog 高效Log 实现      //在使用,不可删除</span></div>
+<div class="line">|   \---tinyxml2        <span class="comment">// XML 解析库 推荐使用 但是目前使用的是Opencv 里面的FileStorage // 未使用</span></div>
+<div class="line">+---Doc             <span class="comment">// 存储工程说明文档或者计数说明</span></div>
+<div class="line">|   |   FileTree.txt    <span class="comment">// 生成的工程文件树</span></div>
+<div class="line">|   |   SystemStructure.md  <span class="comment">// 工程技术说明</span></div>
+<div class="line">|   |   </div>
+<div class="line">|   +---doc </div>
+<div class="line">|   |       XMLchoose.jpg</div>
+<div class="line">|   \---model</div>
+<div class="line">+---Logs    <span class="comment">// 运行过程中 log 生成路径</span></div>
+<div class="line">+---Media   <span class="comment">// 测试文件以及视频路径</span></div>
+<div class="line">\---VSOutfile   <span class="comment">// VS编译输出文件</span></div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa01078_html"><div class="ttname"><a href="../../db/dba/a01078.html">&#x202A;ThreadQueue</a></div><div class="ttdoc">&#x202A;Queue of threads. 自定义模板多线程队列</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00043">ThreadQueue.h:43</a></div></div>
+<div class="ttc" id="aa01278_html"><div class="ttname"><a href="../../d4/d10/a01278.html">&#x202A;WriteVideo</a></div><div class="ttdoc">&#x202A;A write video. 使用传统线程方式 处理, 程序循环执行 写入动作</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00032">WriteVideo.h:32</a></div></div>
+<div class="ttc" id="aa01094_html"><div class="ttname"><a href="../../d6/dea/a01094.html">&#x202A;CamProc</a></div><div class="ttdoc">&#x202A;处理线程 单独执行过程</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00042">CamProc.h:42</a></div></div>
+<div class="ttc" id="aa01274_html"><div class="ttname"><a href="../../de/d33/a01274.html">&#x202A;WorkWindow</a></div><div class="ttdoc">&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/a00083_source.html#l00054">WorkWindow.h:54</a></div></div>
+<div class="ttc" id="aa01266_html"><div class="ttname"><a href="../../d7/d73/a01266.html">&#x202A;SerialProc</a></div><div class="ttdoc">&#x202A;设定串口 处理 函数 解析串口的数据 到系统运行参数中</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d09/a00077_source.html#l00035">SerialProc.h:35</a></div></div>
+<div class="ttc" id="aa01138_html"><div class="ttname"><a href="../../d0/d39/a01138.html">&#x202A;IDOIFile</a></div><div class="ttdoc">&#x202A;An idoi file.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00193">IDOIFile.h:193</a></div></div>
+<div class="ttc" id="aa01118_html"><div class="ttname"><a href="../../dd/d09/a01118.html">&#x202A;Config</a></div><div class="ttdoc">&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00029">Config.h:29</a></div></div>
+<div class="ttc" id="aa01046_html"><div class="ttname"><a href="../../da/d17/a01046.html">&#x202A;SystemPara</a></div><div class="ttdoc">&#x202A;参数 需要存储下来, 记录到文件中</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d45/a00011_source.html#l00025">SystemPara.h:25</a></div></div>
+<div class="ttc" id="aa00281_html_a6363fe481724674897134ef2f0451cc9"><div class="ttname"><a href="../../d2/d04/a00281.html#a6363fe481724674897134ef2f0451cc9">&#x202A;SpdLogger</a></div><div class="ttdeci">&#x202A;SpdLogger()</div><div class="ttdoc">&#x202A;Initializes a new instance of the SpdLogger class</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00213">utils_logger.h:213</a></div></div>
+<div class="ttc" id="aa01090_html"><div class="ttname"><a href="../../da/d73/a01090.html">&#x202A;CamCapture</a></div><div class="ttdoc">&#x202A;摄像头 抓取对象, 循环抓取对象数据到缓冲队列中</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00030">CamCapture.h:30</a></div></div>
+<div class="ttc" id="aa01082_html"><div class="ttname"><a href="../../dd/df1/a01082.html">&#x202A;UnitTest</a></div><div class="ttdoc">&#x202A;A unit test.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00023">UnitTest.h:23</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/test_utils_files.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/test_utils_cv.cc 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.0</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,50 +89,75 @@ $(document).ready(function(){initNavTree('d7/d40/a00236_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">test_utils_files.cc</div>  </div>
+<div class="title">test_utils_cv.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d7/d40/a00236.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d42/a00269.html">&#x202A;utils_files.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/dc3/a00284.html">&#x202A;utils_string.h</a>&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="../../d7/d40/a00236.html#ab8568050dee3faebd53f545392ea4961">    4</a></span>&#160;<a class="code" href="../../d7/d40/a00236.html#ab8568050dee3faebd53f545392ea4961">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;ListAllFiles&quot;</span>)</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    std::vector&lt;std::string&gt; res;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">const</span> std::string file_path = <span class="stringliteral">&quot;D:\\Code\\Vision\\Camera\\Project\\CBoreHole\\Code\\utils&quot;</span>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    res = <a class="code" href="../../d4/d2c/a01327.html#a11881e55397848dbc6e9e7e79677bcbc">&#x202A;Utils_Files::ListAllFiles</a>(file_path);</div>
+<a href="../../d7/d40/a00236.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/da9/a00263.html">&#x202A;./utils_cv.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="../../d7/d40/a00236.html#ac7a15afde54d4f70b589a14228a4ecb1">    3</a></span>&#160;<a class="code" href="../../d7/d40/a00236.html#ac7a15afde54d4f70b589a14228a4ecb1">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Test Image Split And Merge&quot;</span>)</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="comment">// 创建 空白图像</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    cv::Mat src_img = cv::Mat::zeros(1000, 1000, CV_8UC3);</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    CHECK(res.size() &gt; 10);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">// Utils_String::CoutVector(res);</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<a class="code" href="../../d7/d40/a00236.html#ab8568050dee3faebd53f545392ea4961">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;ListAllFiles&quot;</span>)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::vector&lt;std::string&gt; src;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    src.emplace_back(<span class="stringliteral">&quot;D:\\Code\\Vision\\Camera\\Project\\CBoreHole\\Code\\utils\\test_utils_files.cc&quot;</span>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    src.emplace_back(<span class="stringliteral">&quot;D:\\Code\\Vision\\Camera\\Project\\CBoreHole\\Code\\utils\\test_utils_files&quot;</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    src.emplace_back(<span class="stringliteral">&quot;test_utils_files&quot;</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::vector&lt;std::string&gt; res;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; s : src)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        res.emplace_back(<a class="code" href="../../d4/d2c/a01327.html#a8d4d936818e714d9328a7223c67f830a">&#x202A;Utils_Files::GetFileName</a>(s));</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    CHECK(res[0] == <span class="stringliteral">&quot;test_utils_files&quot;</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    CHECK(res[1] == <span class="stringliteral">&quot;test_utils_files&quot;</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    CHECK(res[2] == <span class="stringliteral">&quot;test_utils_files&quot;</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// 绘制 相应的线 便于查看 是否正确拼接</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    cv::putText(src_img,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                <span class="stringliteral">&quot;1234567890&quot;</span>,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                cv::Point(0, 800),</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                cv::FONT_HERSHEY_COMPLEX,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                5,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                cv::Scalar(0, 255, 0),</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                3);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    cv::line(src_img,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;             cv::Point(0, 0),</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;             cv::Point(1000, 1000),</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;             cv::Scalar(255, 0, 0),</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;             3);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    cv::circle(src_img,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;               cv::Point(500, 500),</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;               480,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;               cv::Scalar(0, 0, 255),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;               3);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::vector&lt;int&gt; line_ = { 100, 300, 500, 800, 900 };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::vector&lt;cv::Mat&gt; splitVector;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> wealth = 5;     <span class="comment">// 裕量</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="../../d6/d2f/a01394.html#a55b4da9c06b152eaee65da5a38ff6252">&#x202A;Utils_CV::ImageSplit</a>(src_img, line_, splitVector, <span class="keyword">true</span>, wealth);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    CHECK(splitVector.size() == (line_.size() + 1));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    CHECK(splitVector[0].cols == (line_[0] + wealth));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// CHECK(splitVector[1].cols == (line_[1] + 2*wealth));</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    cv::Mat dst_img;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../d6/d2f/a01394.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">&#x202A;Utils_CV::ImageMerge</a>(dst_img, splitVector, <span class="keyword">true</span>, wealth);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    CHECK(dst_img.cols == src_img.cols);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="../../d6/d2f/a01394.html#a55b4da9c06b152eaee65da5a38ff6252">&#x202A;Utils_CV::ImageSplit</a>(src_img, line_, splitVector, <span class="keyword">false</span>, wealth);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    cv::Mat dst_img_v;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d6/d2f/a01394.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">&#x202A;Utils_CV::ImageMerge</a>(dst_img_v, splitVector, <span class="keyword">true</span>, wealth);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    CHECK(dst_img_v.rows == src_img.rows);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01327_html_a11881e55397848dbc6e9e7e79677bcbc"><div class="ttname"><a href="../../d4/d2c/a01327.html#a11881e55397848dbc6e9e7e79677bcbc">&#x202A;Utils_Files::ListAllFiles</a></div><div class="ttdeci">&#x202A;static std::vector&lt; std::string &gt; ListAllFiles(const std::string &amp;file_path)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/a00266_source.html#l00022">utils_files.cc:22</a></div></div>
-<div class="ttc" id="aa01327_html_a8d4d936818e714d9328a7223c67f830a"><div class="ttname"><a href="../../d4/d2c/a01327.html#a8d4d936818e714d9328a7223c67f830a">&#x202A;Utils_Files::GetFileName</a></div><div class="ttdeci">&#x202A;static std::string GetFileName(const std::string &amp;file)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/a00266_source.html#l00066">utils_files.cc:66</a></div></div>
-<div class="ttc" id="aa00236_html_ab8568050dee3faebd53f545392ea4961"><div class="ttname"><a href="../../d7/d40/a00236.html#ab8568050dee3faebd53f545392ea4961">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;ListAllFiles&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d40/a00236_source.html#l00004">test_utils_files.cc:4</a></div></div>
-<div class="ttc" id="aa00284_html"><div class="ttname"><a href="../../db/dc3/a00284.html">&#x202A;utils_string.h</a></div><div class="ttdoc">&#x202A;通用字符串操作类 继承使用, 方便使用 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa00269_html"><div class="ttname"><a href="../../d5/d42/a00269.html">&#x202A;utils_files.h</a></div><div class="ttdoc">&#x202A;Declares the utilities files class</div></div>
+<div class="ttc" id="aa01394_html_a80d57d4eeb1fc9965c1e0fa5f63b7fa0"><div class="ttname"><a href="../../d6/d2f/a01394.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">&#x202A;Utils_CV::ImageMerge</a></div><div class="ttdeci">&#x202A;static bool ImageMerge(cv::Mat &amp;dst_img, const std::vector&lt; cv::Mat &gt; &amp;splitImgVec, const std::vector&lt; int &gt; &amp;lines, bool horizon=true, const int wealth=5)</div><div class="ttdoc">&#x202A;将给出的图片数组 根据给出的分割线 和 裕量 合并成一副 图像</div></div>
+<div class="ttc" id="aa01394_html_a55b4da9c06b152eaee65da5a38ff6252"><div class="ttname"><a href="../../d6/d2f/a01394.html#a55b4da9c06b152eaee65da5a38ff6252">&#x202A;Utils_CV::ImageSplit</a></div><div class="ttdeci">&#x202A;static bool ImageSplit(const cv::Mat &amp;src_img, const std::vector&lt; int &gt; &amp;lines, std::vector&lt; cv::Mat &gt; &amp;splitImgVec, bool horizon=true, const int wealth=5)</div><div class="ttdoc">&#x202A;将一副图片按照给出的线划分 成为 几列图像   给出一定的裕量 相应的图片会比较大 // 默认横向分割</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00260_source.html#l00071">utils_cv.cc:71</a></div></div>
+<div class="ttc" id="aa00263_html"><div class="ttname"><a href="../../df/da9/a00263.html">&#x202A;utils_cv.h</a></div><div class="ttdoc">&#x202A;有关opencv 的相关函数组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa00236_html_ac7a15afde54d4f70b589a14228a4ecb1"><div class="ttname"><a href="../../d7/d40/a00236.html#ac7a15afde54d4f70b589a14228a4ecb1">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;Test Image Split And Merge&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d40/a00236_source.html#l00003">test_utils_cv.cc:3</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d7/d40/a00236.html">&#x202A;test_utils_files.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d7/d40/a00236.html">&#x202A;test_utils_cv.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

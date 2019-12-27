@@ -1,0 +1,32 @@
+<map id="WorkWindow::SetRelateConnection" name="WorkWindow::SetRelateConnection">
+<area shape="rect" id="node1" title="设定相关槽和信号的连接" alt="" coords="5,388,235,415"/>
+<area shape="rect" id="node2" href="$d8/ddf/a01238.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="329,221,443,248"/>
+<area shape="rect" id="node19" href="$de/d33/a01274.html#af92af3ed8f61e4fd9eaf4d1b14446683" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="301,293,471,334"/>
+<area shape="rect" id="node20" href="$de/d33/a01274.html#ae9dcd6afdb5b4cd7811eda08b9223de1" title="更新电子罗盘数据" alt="" coords="283,359,489,385"/>
+<area shape="rect" id="node21" href="$de/d33/a01274.html#a01083e6fa8585bbe6302affa302bd4d7" title="更新 编码器 位置信息" alt="" coords="301,410,471,451"/>
+<area shape="rect" id="node23" href="$de/d33/a01274.html#a41a95073fcd146be53bf16c5649b00b0" title="跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示" alt="" coords="291,475,481,517"/>
+<area shape="rect" id="node29" href="$de/d33/a01274.html#ae0cd97fd58fbed431d25dd3055f084bd" title="根据运行参数 更改目前程序界面上的参数" alt="" coords="283,559,489,601"/>
+<area shape="rect" id="node3" href="$d8/ddf/a01238.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="1027,5,1197,32"/>
+<area shape="rect" id="node5" href="$d8/ddf/a01238.html#a97f68664ea64cf379c2e35390a0b8ab3" title="Handles the open serial" alt="" coords="565,107,732,133"/>
+<area shape="rect" id="node8" href="$d8/ddf/a01238.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="1030,157,1194,184"/>
+<area shape="rect" id="node9" href="$d8/ddf/a01238.html#ad4bdb6d6267f052b1768659da61d58c0" title="Handles the read data" alt="" coords="563,208,734,235"/>
+<area shape="rect" id="node10" href="$d8/ddf/a01238.html#aa7833e90f2e6f7f6fb3a1b4e6ae908a1" title="Handles the timer described by t // 初始化时间" alt="" coords="591,259,706,285"/>
+<area shape="rect" id="node11" href="$d8/ddf/a01238.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="575,309,723,336"/>
+<area shape="rect" id="node16" href="$d8/ddf/a01238.html#abdab3f6eff663933b5b0a293035418fd" title="Slot write data // 将字符串写入到串口中去" alt="" coords="573,360,724,387"/>
+<area shape="rect" id="node4" href="$d8/ddf/a01238.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="1251,56,1404,83"/>
+<area shape="rect" id="node6" href="$d8/ddf/a01238.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="817,107,968,133"/>
+<area shape="rect" id="node7" href="$d8/ddf/a01238.html#a1b596e9793b3e992968d7b50392b43c0" title="Gets serial by port no" alt="" coords="1025,107,1199,133"/>
+<area shape="rect" id="node12" href="$d8/ddf/a01238.html#a7620016be54cb445876b796aad0e062f" title="Reads the data" alt="" coords="815,307,971,333"/>
+<area shape="rect" id="node13" href="$d8/d01/a01410.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="2 q byte array" alt="" coords="1026,303,1198,329"/>
+<area shape="rect" id="node14" href="$d8/df1/a01414.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="1247,303,1408,329"/>
+<area shape="rect" id="node15" href="$d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="1456,303,1611,329"/>
+<area shape="rect" id="node17" href="$d8/ddf/a01238.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data" alt="" coords="814,360,971,387"/>
+<area shape="rect" id="node18" href="$d8/df1/a01414.html#a93b60f1fbf52d3b43700bfab7e4eb2bb" title="char 类型与 string的相互转换" alt="" coords="1029,354,1195,395"/>
+<area shape="rect" id="node22" href="$de/d33/a01274.html#a1ac8d28317aadd53446419ac8b353a82" title="将位置信息实时更新到界面的label 上" alt="" coords="553,417,745,444"/>
+<area shape="rect" id="node24" href="$d7/d88/a01294.html#a054256077ab572adcbad2c9c7e8db3e2" title="Shows the image" alt="" coords="571,471,726,513"/>
+<area shape="rect" id="node27" href="$de/d33/a01274.html#a5a14b694108bcb3279ef7d7560c51414" title="将一副图像显示在 设定的 Label 上" alt="" coords="537,537,760,564"/>
+<area shape="rect" id="node25" href="$d7/d88/a01294.html#a68cd096eb4b3acfc5a6a0bee0ba447d4" title="Calculates the position" alt="" coords="815,411,970,453"/>
+<area shape="rect" id="node26" href="$d7/d88/a01294.html#ac937ca5ac6f721398fab75e26f227532" title="Updates the scene" alt="" coords="815,477,970,518"/>
+<area shape="rect" id="node28" href="$d6/d2f/a01394.html#a988f9de91b15040f5376a6d3b33d108b" title="将opencv mat 转换成 QT image" alt="" coords="808,543,977,569"/>
+<area shape="rect" id="node30" href="$d4/d34/a01298.html#a2a5d6a071ffbe6f0f5727afc211b5fb9" title="Associates" alt="" coords="583,588,714,615"/>
+</map>

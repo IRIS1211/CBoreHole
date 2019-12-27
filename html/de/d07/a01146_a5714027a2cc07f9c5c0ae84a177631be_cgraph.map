@@ -1,0 +1,8 @@
+<map id="Init::GlobalVarUpdate" name="Init::GlobalVarUpdate">
+<area shape="rect" id="node1" title="根据运行参数 更新参数" alt="" coords="5,56,151,83"/>
+<area shape="rect" id="node2" href="$d8/d01/a01410.html#acb425a725353c07d525139ce1119ede2" title="Gets disk all" alt="" coords="206,5,349,32"/>
+<area shape="rect" id="node3" href="$d8/d01/a01410.html#aca84499be1f513127b12f9d5b7ca11ef" title="Gets disk used" alt="" coords="199,56,356,83"/>
+<area shape="rect" id="node4" href="$d4/d3c/a01418.html#a8fc80e6d8ee244ed6a5a49d7527de6d5" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="207,107,347,133"/>
+<area shape="rect" id="node5" href="$d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3" title="Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \" alt="" coords="404,107,576,133"/>
+<area shape="rect" id="node6" href="$d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="624,107,779,133"/>
+</map>

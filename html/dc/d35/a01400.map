@@ -1,0 +1,6 @@
+<map id="Utils_Exception" name="Utils_Exception">
+<area shape="rect" id="node1" title="直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类" alt="" coords="41,185,154,212"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="5,96,109,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="133,96,213,123"/>
+<area shape="rect" id="node4" title="STL class" alt="" coords="110,5,237,47"/>
+</map>

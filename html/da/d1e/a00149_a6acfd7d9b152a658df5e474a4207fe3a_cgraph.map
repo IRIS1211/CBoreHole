@@ -1,0 +1,6 @@
+<map id="CRCString" name="CRCString">
+<area shape="rect" id="node1" title="CRC string" alt="" coords="5,56,88,83"/>
+<area shape="rect" id="node2" href="$da/d1e/a00149.html#a613e8b32a990ed429b65898a708ceae0" title="CRC 16 rtu" alt="" coords="147,5,235,32"/>
+<area shape="rect" id="node3" href="$da/d1e/a00149.html#aa79716676bda4eccaf08240b6b85597a" title="String 2uchar array" alt="" coords="136,56,247,83"/>
+<area shape="rect" id="node4" href="$da/d1e/a00149.html#a7fc01b81d889244cd3b4139105c167f9" title="16 2 4hex 16位数据转换成四个hex 值" alt="" coords="138,107,245,133"/>
+</map>

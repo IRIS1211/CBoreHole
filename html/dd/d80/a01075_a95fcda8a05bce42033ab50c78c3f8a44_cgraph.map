@@ -1,0 +1,14 @@
+<map id="ReadWindow::on_btn_openFile_clicked" name="ReadWindow::on_btn_openFile_clicked">
+<area shape="rect" id="node1" title="Handles button open file clicked signals" alt="" coords="5,62,151,103"/>
+<area shape="rect" id="node2" href="$d8/d41/a00038.html#a51b816b14fb11dbdb1d0e7986cb0aca9" title="opencv Mat格式转换为 QT 的 QImage" alt="" coords="210,19,321,45"/>
+<area shape="rect" id="node3" href="$de/de6/a01063.html#a866e2bf6ee5717435128e3a07500a957" title="bool ReadMat(cv::Mat &amp;img,int ) ; // 考虑循环读取文件操作 , 可能存在问题" alt="" coords="201,69,329,96"/>
+<area shape="rect" id="node7" href="$de/de6/a01063.html#aca27d2fd88c3c80c26dd57f4d8404a1e" title="读文件 参数" alt="" coords="199,145,332,172"/>
+<area shape="rect" id="node4" href="$de/de6/a01063.html#a44bebcfa4609689ed618201d45a0f027" title="Reads one row extent" alt="" coords="380,5,555,32"/>
+<area shape="rect" id="node5" href="$de/de6/a01063.html#a2fe58433b8df4ab155d7e0c325021cdf" title="Reads one row matrix" alt="" coords="381,56,553,83"/>
+<area shape="rect" id="node6" href="$de/de6/a01063.html#a5fec0ab1ea64f58af14e26f7e4ad0aac" title="Resets the p file described by s" alt="" coords="397,107,537,133"/>
+<area shape="rect" id="node8" href="$de/de6/a01063.html#ac02eafbaf77c5675103d3bcebf6baa9a" title=" " alt="" coords="389,157,545,184"/>
+<area shape="rect" id="node9" href="$d2/d4d/a01079.html#ab50487cc4124576dfbb2af0445a595c0" title="从二进制流文件中读取文件" alt="" coords="603,157,813,184"/>
+<area shape="rect" id="node10" href="$d3/da4/a01343.html#a5ed8c8e05cada7d7334a213dd8ff1050" title="Character 2 string" alt="" coords="1101,157,1267,184"/>
+<area shape="rect" id="node11" href="$d4/d2c/a01327.html#af4c9bf35a4632862f1c57ccac2560c0c" title="读取基本数据类型" alt="" coords="883,157,1031,184"/>
+<area shape="rect" id="node12" href="$d4/d2c/a01327.html#a866a76a1d5720a62a03dc7ef7502cd25" title="从文件流中读取一个 字符串" alt="" coords="861,208,1053,235"/>
+</map>

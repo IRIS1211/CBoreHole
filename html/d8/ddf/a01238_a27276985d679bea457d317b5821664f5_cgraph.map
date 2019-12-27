@@ -1,0 +1,7 @@
+<map id="Serial::HandleTimerTimeout" name="Serial::HandleTimerTimeout">
+<area shape="rect" id="node1" title="Handles the timeout" alt="" coords="5,5,187,32"/>
+<area shape="rect" id="node2" href="$d8/ddf/a01238.html#a7620016be54cb445876b796aad0e062f" title="Reads the data" alt="" coords="235,5,391,32"/>
+<area shape="rect" id="node3" href="$d8/d01/a01410.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="2 q byte array" alt="" coords="439,5,611,32"/>
+<area shape="rect" id="node4" href="$d8/df1/a01414.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="659,5,820,32"/>
+<area shape="rect" id="node5" href="$d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="868,5,1023,32"/>
+</map>

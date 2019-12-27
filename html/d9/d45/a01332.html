@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>&#x202A;CBoreHole: &#x202A;图像展开算法描述</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">&#x202A;CBoreHole
+   &#160;<span id="projectnumber">1.5.1</span>
+   </div>
+   <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d9/d45/a01332.html','../../');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc PageDocLTR-title"><div class="header">
+  <div class="headertitle">
+<div class="title">&#x202A;图像展开算法描述 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">图像展开算法文档 Version: 1.0 </p>
+</blockquote>
+<p class="DocNodeLTR">进行图像展开 可以参考 可以参考<a href="&#x202A;../.././assets/图像展开V1.0.pdf">图像展开算法描述</a> 或者查询 <b><a href="&#x202A;https://www.cl.cam.ac.uk/~jgd1000/">Daugman</a></b> 博士的**橡胶弹性模型** 参考链接<a href="&#x202A;https://github.com/Qingbao/iris">iris matlab 程序</a></p>
+<p class="DocNodeLTR">图像变换过程可以参考</p><ol type="1" class="DocNodeLTR">
+<li>&#x202A;<a href="&#x202A;https://blog.csdn.net/songzitea/article/details/16369165">图像的极坐标变换</a></li>
+<li>&#x202A;<a href="&#x202A;https://blog.csdn.net/guduruyu/article/details/65436931">图像极坐标变换**</a></li>
+<li>&#x202A;<a href="&#x202A;https://github.com/Qingbao/iris">虹膜图像处理程序</a></li>
+</ol>
+<p class="DocNodeLTR">不过我们需要将极坐标的图 反向计算得到笛卡尔座标的图, 程序主要参考第二个链接里面的程序实现, 具体公式推导见附件pdf 的内容</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md50"></a>
+使用说明</h1>
+<p class="DocNodeLTR">使用 remap 展开图像 参考链接 <a href="&#x202A;https://docs.opencv.org/3.4.6/da/d54/group__imgproc__transform.html#gab75ef31ce5cdfb5c44b6da5f3b908ea4">Opencv&ndash;remap 函数</a></p>
+<p class="DocNodeLTR">程序所有 <b>gConfig</b> 的变量均是读取的自定义参数,根据参数判断即可</p>
+<div class="fragment"><div class="line"><span class="comment">// 创建 remap 的map 图 便于后续展开图像</span></div>
+<div class="line">creatMapMat(polar_map_xx_, polar_map_yy_, <a class="code" href="../../d7/d9a/a00152.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;sysPara.Image.nImgCenterX, <a class="code" href="../../d7/d9a/a00152.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;sysPara.Image.nImgCenterY, <a class="code" href="../../d7/d9a/a00152.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;sysPara.Image.nImgMinR, <a class="code" href="../../d7/d9a/a00152.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;sysPara.Image.nImgMaxR, <a class="code" href="../../d7/d9a/a00152.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;runPara.Image.nGImageWidth);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 此图像的展开</span></div>
+<div class="line">cv::remap(g_img_src_, g_img_polar_, polar_map_xx_, polar_map_yy_,CV_INTER_LINEAR, cv::BORDER_CONSTANT, cv::Scalar(255, 0, 0));</div>
+</div><!-- fragment --><h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md51"></a>
+辅助计算函数</h1>
+<div class="fragment"><div class="line"><span class="comment">// 快速 sin cos 变换</span></div>
+<div class="line"><span class="preprocessor">#define EXTRA_PRECISION  1</span></div>
+<div class="line"><span class="comment">// 定义计算需要的 PI的值 FLOAT 精度足够</span></div>
+<div class="line"><span class="preprocessor">#define FLOAT_PI        3.141592f</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">float</span> fastSin(<span class="keywordtype">float</span> x)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// 限定 x 在 -Pi  到 pi</span></div>
+<div class="line">    <span class="keywordflow">while</span> (x &lt; - <a class="code" href="../../d5/d16/a00029.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a>)</div>
+<div class="line">    {</div>
+<div class="line">        x += static_cast&lt;float&gt;(2 * <a class="code" href="../../d5/d16/a00029.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a>);</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">while</span> (x &gt; <a class="code" href="../../d5/d16/a00029.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a>)</div>
+<div class="line">    {</div>
+<div class="line">        x -= static_cast&lt;float&gt;(2 * <a class="code" href="../../d5/d16/a00029.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a>);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> B = 1.2732f; <span class="comment">// 4 / CV_PI;</span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> C = -0.4053f; <span class="comment">// -4 / (CV_PI*CV_PI);</span></div>
+<div class="line">    <span class="keywordtype">float</span> y = B * x + C * x * abs(x);</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#ifdef EXTRA_PRECISION </span></div>
+<div class="line">    <span class="comment">// const float Q = 0.775; </span></div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">float</span> P = 0.225f;</div>
+<div class="line">    y = P * (y * abs(y) - y) + y;</div>
+<div class="line"><span class="preprocessor">#endif </span></div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> y;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">float</span> fastCos(<span class="keywordtype">float</span> x)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">return</span> fastSin(x + 1.570796f);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p class="DocNodeLTR">计算 展开 remap 图像</p>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> creatMapMat(cv::Mat &amp; map_x, </div>
+<div class="line">                 cv::Mat &amp; map_y, </div>
+<div class="line">                 <span class="keywordtype">int</span> cen_x, </div>
+<div class="line">                 <span class="keywordtype">int</span> cen_y, </div>
+<div class="line">                 <span class="keywordtype">int</span> min_r, </div>
+<div class="line">                 <span class="keywordtype">int</span> max_r, </div>
+<div class="line">                 <span class="keywordtype">int</span> Width <span class="comment">/*= -1 */</span>, </div>
+<div class="line">                 <span class="keywordtype">int</span> Height <span class="comment">/*= -1 */</span>)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">//  避免赋值出错 进行数值交换</span></div>
+<div class="line">    <span class="keywordflow">if</span> (min_r &gt; max_r)</div>
+<div class="line">    {</div>
+<div class="line">        std::swap(min_r, max_r);  <span class="comment">//交换一下</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 需要判断是否 超过范围 避免 溢出值</span></div>
+<div class="line">    <span class="comment">// 求算出来 中心点到四个边缘 的最小值, </span></div>
+<div class="line">    <span class="keywordtype">int</span> maxR_h = std::min(std::min(cen_x, cen_y), </div>
+<div class="line">                          std::min(<a class="code" href="../../d7/d9a/a00152.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;runPara.Image.nGImageWidth - cen_x,</div>
+<div class="line">                                   <a class="code" href="../../d7/d9a/a00152.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;runPara.Image.nGImageWidth - cen_y));</div>
+<div class="line">    <span class="comment">// 计算出来 设定值与给出值的最小值</span></div>
+<div class="line">    max_r = std::min(max_r, maxR_h);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//  避免赋值出错 进行数值交换</span></div>
+<div class="line">    <span class="keywordflow">if</span> (min_r &gt; max_r)</div>
+<div class="line">    {</div>
+<div class="line">        LDebug(<span class="stringliteral">&quot;MinR:{0} is larger than MaxR:{1}&quot;</span>, min_r, max_r);</div>
+<div class="line">        std::swap(min_r, max_r);  <span class="comment">//交换一下</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 对于 圆形的图像 按照给出的直径范围  生成对应的值的映射, 相应位置的值 为对应的座标 值</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 按照给出的 展开圆的区域 生成空的数组</span></div>
+<div class="line">    <span class="comment">// 如果给出的尺寸是默认尺寸  -1  则使用 中间圆周长和 内外圆差值做宽高</span></div>
+<div class="line">    <span class="keywordtype">int</span> map_width = 0, map_height=0;</div>
+<div class="line">    <span class="comment">// 如果 参数未赋值 使用默认方法 赋值</span></div>
+<div class="line">    map_width = ((-1 == Width)?((<span class="keywordtype">int</span>)(max_r + min_r)*CV_PI):Width);</div>
+<div class="line">    map_height = ((-1 == Height) ? (max_r - min_r) : Height);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 创建空的尺寸图 用于存放变换座标序列 默认使用 32F值</span></div>
+<div class="line">    map_x = cv::Mat::zeros(map_height, map_width, CV_32FC1);</div>
+<div class="line">    map_y = cv::Mat::zeros(map_height, map_width, CV_32FC1);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 计算两个尺寸的缩放因子</span></div>
+<div class="line">    <span class="keywordtype">float</span> delta_r = 1.0;  <span class="comment">// (float)(map_height)/(max_r - min_r); // 此值 需要进行计算 单纵向没有拉伸, 可以不进行处理</span></div>
+<div class="line">    <span class="keywordtype">float</span> delta_theta = - 2.0f * static_cast&lt;float&gt;(CV_PI / map_width);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 填充两个 图的座标值</span></div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; map_height; y++)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; map_width; x++)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// 计算出来 对应的C 图上的座标值</span></div>
+<div class="line">            <span class="keywordtype">float</span> xc = cen_x + delta_r*(min_r + map_height - y)*fastSin(delta_theta*x);</div>
+<div class="line">            <span class="keywordtype">float</span> yc = cen_y + delta_r*(min_r + map_height - y)*fastCos(delta_theta*x);</div>
+<div class="line">            map_x.at&lt;<span class="keywordtype">float</span>&gt;(y, x) = xc;</div>
+<div class="line">            map_y.at&lt;<span class="keywordtype">float</span>&gt;(y, x) = yc;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa00029_html_af9ba998534fe82018ab3f06b05fa1bcb"><div class="ttname"><a href="../../d5/d16/a00029.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a></div><div class="ttdeci">&#x202A;const float FLOAT_PI</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00190">common.h:190</a></div></div>
+<div class="ttc" id="aa00152_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d7/d9a/a00152.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9a/a00152_source.html#l00016">main.cpp:16</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

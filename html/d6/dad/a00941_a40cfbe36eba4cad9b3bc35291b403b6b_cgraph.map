@@ -1,0 +1,7 @@
+<map id="IDOIFile::ReadSpecifyRowData" name="IDOIFile::ReadSpecifyRowData">
+<area shape="rect" id="node1" title="Reads specify row data" alt="" coords="5,56,207,83"/>
+<area shape="rect" id="node2" href="$d6/dad/a00941.html#a0502c78cb50fbdb8d9f6b29161f178d3" title="读取一行数据 按照指针位置读取" alt="" coords="255,31,437,57"/>
+<area shape="rect" id="node5" href="$d6/dad/a00941.html#aea9243f7e92b88af5103c805cd4ad384" title="将当前指针进行一定的移动" alt="" coords="274,81,418,108"/>
+<area shape="rect" id="node3" href="$d6/dad/a00941.html#a44bebcfa4609689ed618201d45a0f027" title="Reads one row extent" alt="" coords="485,5,660,32"/>
+<area shape="rect" id="node4" href="$d6/dad/a00941.html#a2fe58433b8df4ab155d7e0c325021cdf" title="Reads one row matrix" alt="" coords="487,56,659,83"/>
+</map>

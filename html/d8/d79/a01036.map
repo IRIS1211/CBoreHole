@@ -1,4 +1,4 @@
-<map id="GaugeCompass" name="GaugeCompass">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,120,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="26,5,99,32"/>
+<map id="StorePara::StCFG" name="StorePara::StCFG">
+<area shape="rect" id="node1" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="47,95,175,121"/>
+<area shape="rect" id="node2" href="$df/dce/a00974.html#d4/d56/a01042" title="可以存储的文件参数" alt="" coords="5,5,217,32"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="RunPara::StDevice::StCompass" name="RunPara::StDevice::StCompass">
+<area shape="rect" id="node1" title="电子罗盘参数 调整罗盘数据" alt="" coords="5,200,144,241"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="35,96,115,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="11,5,138,47"/>
+</map>

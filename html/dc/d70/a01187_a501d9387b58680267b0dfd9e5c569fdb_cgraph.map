@@ -1,0 +1,8 @@
+<map id="SerialProc::ProcData" name="SerialProc::ProcData">
+<area shape="rect" id="node1" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="5,81,149,108"/>
+<area shape="rect" id="node2" href="$d8/d41/a00038.html#aef339f85a20df81dbcd0c9b54fc2f9a5" title="Calculates the sum check 计算开始的len 数据的sum 和," alt="" coords="227,5,339,32"/>
+<area shape="rect" id="node3" href="$dd/d32/a00041.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="239,56,326,83"/>
+<area shape="rect" id="node4" href="$d3/da4/a01343.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="197,107,368,133"/>
+<area shape="rect" id="node6" href="$db/dbb/a01047.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="229,157,336,184"/>
+<area shape="rect" id="node5" href="$d3/da4/a01343.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="416,107,571,133"/>
+</map>

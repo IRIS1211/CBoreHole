@@ -1,0 +1,5 @@
+<map id="CalcPeriodTimeFps" name="CalcPeriodTimeFps">
+<area shape="rect" id="node1" title="Gets time FPS // 计算出来 以当前时间计算出来的 每秒可以执行的次数" alt="" coords="173,31,308,57"/>
+<area shape="rect" id="node2" href="$d6/d27/a01163.html#ac229d1f2d96620e9ac4afc79e3cb8248" title="Reads the data" alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node3" href="$df/d21/a01039.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="14,56,117,83"/>
+</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/Config.h 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/CompassProtocol.h 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.0</span>
+   &#160;<span id="projectnumber">1.6.3</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -91,32 +91,303 @@ $(document).ready(function(){initNavTree('d5/df9/a00044.html','../../');});
   <div class="summary">
 <a href="#nested-classes">结构体</a>  </div>
   <div class="headertitle">
-<div class="title">Config.h 文件参考</div>  </div>
+<div class="title">CompassProtocol.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>&#x202A;声明全局的配置,同时实现两者之间的存储过程 @changelog 2019/11/7 IRIS_Chen Created.  
+<p>&#x202A;定义串口通信 协议通用定义 @changelog 2019/12/24 IRIS_Chen Created.  
 <a href="#details">更多...</a></p>
 
 <p><a href="../../d5/df9/a00044_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 结构体</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d27/a01043.html">Config</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,  <a href="../../d8/d27/a01043.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d5/d17/a01098"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df9/a00044.html#d5/d17/a01098">StProtocol</a></td></tr>
+<tr class="separator:d5/d17/a01098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d4/da7/a01102"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df9/a00044.html#d4/da7/a01102">StProtocol::StMountMode</a></td></tr>
+<tr class="memdesc:d4/da7/a01102"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设置 安装模式的方式  <a href="../../d5/df9/a00044.html#d4/da7/a01102">更多...</a><br /></td></tr>
+<tr class="separator:d4/da7/a01102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:da/d4e/a01106"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df9/a00044.html#da/d4e/a01106">StProtocol::StBaudRate</a></td></tr>
+<tr class="memdesc:da/d4e/a01106"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;设置 波特率的指令  <a href="../../d5/df9/a00044.html#da/d4e/a01106">更多...</a><br /></td></tr>
+<tr class="separator:da/d4e/a01106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d1/d3d/a01110"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df9/a00044.html#d1/d3d/a01110">StProtocol::StFunction</a></td></tr>
+<tr class="memdesc:d1/d3d/a01110"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;执行特殊功能的指令  <a href="../../d5/df9/a00044.html#d1/d3d/a01110">更多...</a><br /></td></tr>
+<tr class="separator:d1/d3d/a01110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d6/d40/a01114"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df9/a00044.html#d6/d40/a01114">StProtocol::StOutputMode</a></td></tr>
+<tr class="separator:d6/d40/a01114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">声明全局的配置,同时实现两者之间的存储过程 @changelog 2019/11/7 IRIS_Chen Created. </p>
+<div class="textblock"><p class="DocNodeLTR">定义串口通信 协议通用定义 @changelog 2019/12/24 IRIS_Chen Created. </p>
 <dl class="section copyright DocNodeLTR"><dt>版权所有</dt><dd>&#x202A;Copyright (c) 2019 IRIS_Chen IRIS Lab </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d5/df9/a00044_source.html">Config.h</a> 中定义.</p>
-</div></div><!-- contents -->
+<p class="definition">在文件 <a class="el" href="../../d5/df9/a00044_source.html">CompassProtocol.h</a> 中定义.</p>
+</div><hr/><h2 class="groupheader">结构体说明</h2>
+<a name="d5/d17/a01098" id="d5/d17/a01098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d5/d17/a01098">&#9670;&nbsp;</a></span>StProtocol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct StProtocol</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="../../d5/df9/a00044_source.html">CompassProtocol.h</a> 第 <a class="el" href="../../d5/df9/a00044_source.html#l00015">15</a> 行定义.</p>
+</div><div class="dynheader">
+StProtocol 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d20/a01096.png" border="0" usemap="#_st_protocol_coll__map" alt="Collaboration graph"/></div>
+<map name="_st_protocol_coll__map" id="_st_protocol_coll__map">
+<area shape="rect" title=" " alt="" coords="687,141,769,168"/>
+<area shape="rect" href="../../d5/df9/a00044.html#d1/d3d/a01110" title="执行特殊功能的指令" alt="" coords="401,19,555,45"/>
+<area shape="rect" title="STL class" alt="" coords="181,139,261,165"/>
+<area shape="rect" href="../../d5/df9/a00044.html#d6/d40/a01114" title=" " alt="" coords="391,99,565,125"/>
+<area shape="rect" href="../../d5/df9/a00044.html#da/d4e/a01106" title="设置 波特率的指令" alt="" coords="397,183,559,209"/>
+<area shape="rect" href="../../d5/df9/a00044.html#d4/da7/a01102" title="设置 安装模式的方式" alt="" coords="392,245,564,272"/>
+<area shape="rect" title="STL class" alt="" coords="5,131,132,173"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a45acc5bd37d66432f9d5857aac65ebf3"></a>struct <a class="el" href="../../d5/df9/a00044.html#da/d4e/a01106">StBaudRate</a></td>
+<td class="fieldname">
+BaudRate</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8e6a4915a576ca5fc0293b7d3d3c4b7f"></a>struct <a class="el" href="../../d5/df9/a00044.html#d1/d3d/a01110">StFunction</a></td>
+<td class="fieldname">
+Function</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a78be04904bc7f8239cf5e5c6d06132e9"></a>struct <a class="el" href="../../d5/df9/a00044.html#d4/da7/a01102">StMountMode</a></td>
+<td class="fieldname">
+MountMode</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a7cf7e495573f39bf58ee81bbe6b06af9"></a>struct <a class="el" href="../../d5/df9/a00044.html#d6/d40/a01114">StOutputMode</a></td>
+<td class="fieldname">
+Output</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="d4/da7/a01102" id="d4/da7/a01102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d4/da7/a01102">&#9670;&nbsp;</a></span>StProtocol::StMountMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct StProtocol::StMountMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">设置 安装模式的方式 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d5/df9/a00044_source.html">CompassProtocol.h</a> 第 <a class="el" href="../../d5/df9/a00044_source.html#l00020">20</a> 行定义.</p>
+</div><div class="dynheader">
+StProtocol::StMountMode 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/dbd/a01100.png" border="0" usemap="#_st_protocol_1_1_st_mount_mode_coll__map" alt="Collaboration graph"/></div>
+<map name="_st_protocol_1_1_st_mount_mode_coll__map" id="_st_protocol_1_1_st_mount_mode_coll__map">
+<area shape="rect" title="设置 安装模式的方式" alt="" coords="5,215,177,241"/>
+<area shape="rect" title="STL class" alt="" coords="51,96,131,123"/>
+<area shape="rect" title="STL class" alt="" coords="28,5,155,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a4a72206b0a680abda2f02d9dbbe28f79"></a>string</td>
+<td class="fieldname">
+Hor</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1d4ca61e908c86aeac35e3212bc42450"></a>string</td>
+<td class="fieldname">
+Query</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a337d3db895c555124c519e2641055ae8"></a>string</td>
+<td class="fieldname">
+Ver</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="da/d4e/a01106" id="da/d4e/a01106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#da/d4e/a01106">&#9670;&nbsp;</a></span>StProtocol::StBaudRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct StProtocol::StBaudRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">设置 波特率的指令 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d5/df9/a00044_source.html">CompassProtocol.h</a> 第 <a class="el" href="../../d5/df9/a00044_source.html#l00030">30</a> 行定义.</p>
+</div><div class="dynheader">
+StProtocol::StBaudRate 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dcb/a01104.png" border="0" usemap="#_st_protocol_1_1_st_baud_rate_coll__map" alt="Collaboration graph"/></div>
+<map name="_st_protocol_1_1_st_baud_rate_coll__map" id="_st_protocol_1_1_st_baud_rate_coll__map">
+<area shape="rect" title="设置 波特率的指令" alt="" coords="5,259,167,285"/>
+<area shape="rect" title="STL class" alt="" coords="46,96,126,123"/>
+<area shape="rect" title="STL class" alt="" coords="23,5,149,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a3091e642bd7750b72b833e6a56451035"></a>string</td>
+<td class="fieldname">
+B19200</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aefb8ceefd4f1f3ddb954db4cc486b976"></a>string</td>
+<td class="fieldname">
+B2400</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a42075004c22215138c51b85c9258b13f"></a>string</td>
+<td class="fieldname">
+B38400</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a07da362fb3ed73f1df82fd52ea551075"></a>string</td>
+<td class="fieldname">
+B4800</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a68ccb8ae4bb7623b16e55a0972a031e1"></a>string</td>
+<td class="fieldname">
+B9600</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a66f27e5c1b89c31261169a902f0f7a1d"></a>string</td>
+<td class="fieldname">
+Query</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="d1/d3d/a01110" id="d1/d3d/a01110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d1/d3d/a01110">&#9670;&nbsp;</a></span>StProtocol::StFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct StProtocol::StFunction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">执行特殊功能的指令 </p>
+
+<p class="definition">在文件 <a class="el" href="../../d5/df9/a00044_source.html">CompassProtocol.h</a> 第 <a class="el" href="../../d5/df9/a00044_source.html#l00043">43</a> 行定义.</p>
+</div><div class="dynheader">
+StProtocol::StFunction 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dd7/a01108.png" border="0" usemap="#_st_protocol_1_1_st_function_coll__map" alt="Collaboration graph"/></div>
+<map name="_st_protocol_1_1_st_function_coll__map" id="_st_protocol_1_1_st_function_coll__map">
+<area shape="rect" title="执行特殊功能的指令" alt="" coords="5,200,160,227"/>
+<area shape="rect" title="STL class" alt="" coords="43,96,123,123"/>
+<area shape="rect" title="STL class" alt="" coords="19,5,146,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a1ca47d340e7201b6c0bf5cfff3c6009e"></a>string</td>
+<td class="fieldname">
+RestartMCU</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae9422ac274be2a982abcc548ded9aa11"></a>string</td>
+<td class="fieldname">
+WriteFlash</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="d6/d40/a01114" id="d6/d40/a01114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d6/d40/a01114">&#9670;&nbsp;</a></span>StProtocol::StOutputMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct StProtocol::StOutputMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="../../d5/df9/a00044_source.html">CompassProtocol.h</a> 第 <a class="el" href="../../d5/df9/a00044_source.html#l00049">49</a> 行定义.</p>
+</div><div class="dynheader">
+StProtocol::StOutputMode 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d39/a01112.png" border="0" usemap="#_st_protocol_1_1_st_output_mode_coll__map" alt="Collaboration graph"/></div>
+<map name="_st_protocol_1_1_st_output_mode_coll__map" id="_st_protocol_1_1_st_output_mode_coll__map">
+<area shape="rect" title=" " alt="" coords="5,215,180,241"/>
+<area shape="rect" title="STL class" alt="" coords="53,96,133,123"/>
+<area shape="rect" title="STL class" alt="" coords="29,5,156,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a2ae2f061cfa7b57c3f8579e0db1800cb"></a>string</td>
+<td class="fieldname">
+ContiousSend</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab03f1fa87afc7fc98b3b294ef02a1413"></a>string</td>
+<td class="fieldname">
+EdgeTrigger</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a179f4d70521127a7ba04d95640b01d02"></a>string</td>
+<td class="fieldname">
+StopSend</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d5/df9/a00044.html">&#x202A;Config.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d5/df9/a00044.html">&#x202A;CompassProtocol.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
