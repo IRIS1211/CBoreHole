@@ -1,4 +1,5 @@
-<map id="SerialProc" name="SerialProc">
-<area shape="rect" id="node1" title="设定串口 处理 函数 解析串口的数据 到系统运行参数中" alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="11,5,82,32"/>
+<map id="StProtocol::StMountMode::StAnswer" name="StProtocol::StMountMode::StAnswer">
+<area shape="rect" id="node1" title="An answer." alt="" coords="5,200,177,241"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="51,96,131,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="28,5,155,47"/>
 </map>

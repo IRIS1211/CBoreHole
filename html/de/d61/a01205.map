@@ -1,4 +1,10 @@
-<map id="CDialog" name="CDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="6,80,73,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,73,32"/>
+<map id="QcScaleItem" name="QcScaleItem">
+<area shape="rect" id="node1" title=" " alt="" coords="244,155,341,181"/>
+<area shape="rect" id="node4" href="$de/d7e/a01222.html" title=" " alt="" coords="5,229,89,256"/>
+<area shape="rect" id="node5" href="$dd/d9e/a01226.html" title=" " alt="" coords="114,229,213,256"/>
+<area shape="rect" id="node6" href="$d0/d58/a01230.html" title=" " alt="" coords="237,229,349,256"/>
+<area shape="rect" id="node7" href="$d6/d1e/a01234.html" title=" " alt="" coords="373,229,477,256"/>
+<area shape="rect" id="node8" href="$d8/ddf/a01238.html" title=" " alt="" coords="501,229,605,256"/>
+<area shape="rect" id="node2" href="$d4/d5d/a01202.html" title=" " alt="" coords="261,80,325,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="257,5,328,32"/>
 </map>

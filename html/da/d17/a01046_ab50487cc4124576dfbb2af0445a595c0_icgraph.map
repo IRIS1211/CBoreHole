@@ -1,0 +1,9 @@
+<map id="RunPara::ReadRunParaFromFile" name="RunPara::ReadRunParaFromFile">
+<area shape="rect" id="node1" title="从二进制流文件中读取文件" alt="" coords="600,81,811,108"/>
+<area shape="rect" id="node2" href="$de/d41/a01030.html#a1aefbaaf6c9dcf56ce59e62c8d65e86a" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据 对于写入数据, 使用 gConfig.sysPara 内容存储 到文件头信息中 对于读取数据,..." alt="" coords="405,5,527,32"/>
+<area shape="rect" id="node3" href="$d0/d2b/a01010.html#abff2e60527d854a7f1d4b4f112881dcb" title="从 自定义文件中读取参数" alt="" coords="380,56,552,83"/>
+<area shape="rect" id="node4" href="$de/d41/a01030.html#a4ba4a9e516d1015d96767e94e16fd91f" title=" " alt="" coords="388,107,544,133"/>
+<area shape="rect" id="node7" href="$da/d15/a00188.html#a44733fb236621e4eaa4a2e26d628659f" title=" " alt="" coords="417,157,515,184"/>
+<area shape="rect" id="node5" href="$de/d41/a01030.html#aca27d2fd88c3c80c26dd57f4d8404a1e" title="读文件 参数" alt="" coords="199,107,332,133"/>
+<area shape="rect" id="node6" href="$d4/d56/a01042.html#a95fcda8a05bce42033ab50c78c3f8a44" title="Handles button open file clicked signals" alt="" coords="5,99,151,141"/>
+</map>

@@ -1,0 +1,25 @@
+<map id="SerialProc::RepeatProcSerialData" name="SerialProc::RepeatProcSerialData">
+<area shape="rect" id="node1" title="循环处理 串口 数据" alt="" coords="5,224,224,251"/>
+<area shape="rect" id="node2" href="$d0/d56/a01014.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="302,72,417,99"/>
+<area shape="rect" id="node3" href="$d0/d56/a01014.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="309,123,409,149"/>
+<area shape="rect" id="node4" href="$df/db5/a01158.html#a501d9387b58680267b0dfd9e5c569fdb" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="287,173,431,200"/>
+<area shape="rect" id="node10" href="$d0/d61/a01130.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="285,224,433,251"/>
+<area shape="rect" id="node15" href="$d0/d61/a01130.html#a96e9f96c16f56bcbb4ed0945b0c69782" title="Slot write data // 将字符串写入到串口中去 判断是否输出的 hex 字符串" alt="" coords="284,275,435,301"/>
+<area shape="rect" id="node19" href="$d0/d39/a01138.html#a071b93d33a06aea86d23514be375d4cd" title="根据串口数据 更新当前类的值" alt="" coords="292,376,427,403"/>
+<area shape="rect" id="node23" href="$d7/d8c/a01306.html#a0100eaf1e914cee3b70157898026a375" title="Writes a string text" alt="" coords="272,427,447,453"/>
+<area shape="rect" id="node5" href="$d9/de6/a01314.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="495,5,665,32"/>
+<area shape="rect" id="node7" href="$d9/de6/a01314.html#ac3b5b7bb59df157b42934895a67738e8" title="计算 校验和" alt="" coords="509,57,651,98"/>
+<area shape="rect" id="node8" href="$d0/d56/a01014.html#a282e80149935f212e9c6c6e8ef9d7374" title="队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待" alt="" coords="527,123,633,149"/>
+<area shape="rect" id="node9" href="$d9/de6/a01314.html#a3d87ca32cf1959251d87988a5b7f1b45" title="Uchar 2 char 的相互转换" alt="" coords="497,173,663,200"/>
+<area shape="rect" id="node6" href="$d9/de6/a01314.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="722,5,877,32"/>
+<area shape="rect" id="node11" href="$d0/d61/a01130.html#a7620016be54cb445876b796aad0e062f" title="Reads the data" alt="" coords="502,224,658,251"/>
+<area shape="rect" id="node12" href="$da/d79/a01310.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="2 q byte array" alt="" coords="713,224,885,251"/>
+<area shape="rect" id="node13" href="$d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="933,249,1095,276"/>
+<area shape="rect" id="node14" href="$d9/de6/a01314.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="1143,249,1297,276"/>
+<area shape="rect" id="node16" href="$d9/de6/a01314.html#a16270cb7857217ad3fb4ca45b263379b" title="将 hex 字符串转换成 string 字符串" alt="" coords="719,275,880,301"/>
+<area shape="rect" id="node17" href="$d0/d61/a01130.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data 写入QByteArrar 类型的数据" alt="" coords="501,325,659,352"/>
+<area shape="rect" id="node18" href="$d9/de6/a01314.html#a93b60f1fbf52d3b43700bfab7e4eb2bb" title="char 类型与 string的相互转换" alt="" coords="717,326,882,367"/>
+<area shape="rect" id="node20" href="$d0/d39/a01138.html#a493001549dcfab8bf1a682b1d3e5763b" title="更新两字节值 // 第四位表示符号 0x10" alt="" coords="503,376,657,403"/>
+<area shape="rect" id="node21" href="$d0/d39/a01138.html#a53026c1637704e9053f734b36e5810bc" title="计算磁力数据 磁力值 &#45; 8,388,608～+ 8,388,607 （单位nT，" alt="" coords="499,427,661,453"/>
+<area shape="rect" id="node22" href="$d0/d39/a01138.html#a48e314ad1c6067b2cdf67a86bda5e1e6" title="计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据" alt="" coords="507,477,653,504"/>
+</map>

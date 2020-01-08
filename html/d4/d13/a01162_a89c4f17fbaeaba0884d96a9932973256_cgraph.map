@@ -1,0 +1,12 @@
+<map id="SetWindow::slot_PreviewCamera" name="SetWindow::slot_PreviewCamera">
+<area shape="rect" id="node1" title="Slot show camera" alt="" coords="5,132,219,159"/>
+<area shape="rect" id="node2" href="$db/db2/a00020.html#a0dd08ab91977a2738f33adbd7e8306b2" title="Adds an image information // 在原始图像上添加相应 图形 来标识 图像" alt="" coords="301,5,401,32"/>
+<area shape="rect" id="node3" href="$d0/d56/a01014.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="293,56,408,83"/>
+<area shape="rect" id="node4" href="$d0/d56/a01014.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="301,107,401,133"/>
+<area shape="rect" id="node5" href="$d7/d04/a01246.html#a3f1a23663337082bc684229123014abb" title=" " alt="" coords="271,157,430,184"/>
+<area shape="rect" id="node7" href="$d0/d56/a01014.html#a979820688e76c1997aa0d36d120df98f" title="Gets the Size 返回当前队列长度" alt="" coords="299,208,402,235"/>
+<area shape="rect" id="node8" href="$d4/d13/a01162.html#a42f3ec35c315231b8af2beb1c6423e47" title="Stores a picture" alt="" coords="267,259,435,285"/>
+<area shape="rect" id="node6" href="$d7/d88/a01294.html#a988f9de91b15040f5376a6d3b33d108b" title="将opencv mat 转换成 QT image" alt="" coords="483,157,652,184"/>
+<area shape="rect" id="node9" href="$da/d79/a01310.html#af9b1fae65fc91319a7f2ee2fefb86799" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="501,233,634,260"/>
+<area shape="rect" id="node10" href="$d6/dfa/a01318.html#a8fc80e6d8ee244ed6a5a49d7527de6d5" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="497,284,637,311"/>
+</map>

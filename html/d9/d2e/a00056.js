@@ -1,22 +1,75 @@
 var a00056 =
 [
-    [ "\u202AFileHead", "d9/d2e/a00056.html#db/d1e/a01126", [
-      [ "\u202AStFileHeader", "d9/d2e/a00056.html#d0/d61/a01130", [
-        [ "\u202Afile_NO", "d9/d2e/a00056.html#a317986245b1ec99f7b52cb20bf619f0e", null ],
-        [ "\u202AVerify", "d9/d2e/a00056.html#a293e298cf9b7e76a1cab6110e9be7635", null ]
-      ] ],
-      [ "\u202AHeader", "d9/d2e/a00056.html#a238b8c0ae85e59737b1927cc9d6b4e5c", null ]
+    [ "\u202ASerialData", "dd/de2/a01134.html", "dd/de2/a01134" ],
+    [ "\u202AFrameData", "d0/d39/a01138.html", "d0/d39/a01138" ],
+    [ "\u202AStPCA", "d0/d39/a01138.html#d3/ddc/a01142", [
+      [ "\u202Acur", "d0/d39/a01138.html#a79fe5c5bed43df4312e8cd9b77ad100c", null ],
+      [ "\u202Alast", "d0/d39/a01138.html#ace858e65de8fad1d8d74f1d7ce0655ed", null ]
     ] ],
-    [ "\u202AStFileHeader", "d9/d2e/a00056.html#d0/d61/a01130", [
-      [ "\u202Afile_NO", "d9/d2e/a00056.html#a317986245b1ec99f7b52cb20bf619f0e", null ],
-      [ "\u202AVerify", "d9/d2e/a00056.html#a293e298cf9b7e76a1cab6110e9be7635", null ]
+    [ "\u202AStADC", "d0/d39/a01138.html#de/d07/a01146", [
+      [ "\u202Acur", "d0/d39/a01138.html#a53fd7c351b726136b757dd2ac2b3ed78", null ]
     ] ],
-    [ "\u202AExtraInfo", "dd/de2/a01134.html", "dd/de2/a01134" ],
-    [ "\u202AIDOIFile", "d0/d39/a01138.html", "d0/d39/a01138" ],
-    [ "\u202APara", "d9/d2e/a00056.html#ab5e9483c3c7b45b15ceccbc663a8c49a", null ],
-    [ "\u202AFileOperateType", "d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473", [
-      [ "\u202AOWRITE", "d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afef364d1f6a87dd77999ec49e3317fe9", null ],
-      [ "\u202AOREAD", "d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb", null ],
-      [ "\u202AOAPPEND", "d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473a66f02adf4b22d698de8dc0f90bf22701", null ]
+    [ "\u202AStCompass", "d0/d39/a01138.html#d2/d7b/a01150", [
+      [ "\u202AHeading", "d0/d39/a01138.html#a0ae3cb002dd0724847626a7ba19b4e0b", null ],
+      [ "\u202AMagX", "d0/d39/a01138.html#aeace093df76a3b5519079da5dd93dc54", null ],
+      [ "\u202AMagY", "d0/d39/a01138.html#a4ced10e8322f051db8da943424cc2525", null ],
+      [ "\u202AMagZ", "d0/d39/a01138.html#aaff7e7386a090377abf2096b8606dab3", null ],
+      [ "\u202APitch", "d0/d39/a01138.html#ad919552e6e35f65a398abc2b82910e95", null ],
+      [ "\u202ARoll", "d0/d39/a01138.html#a1de25929cf75e9dde5b0e137f9e87ed7", null ]
+    ] ],
+    [ "\u202AStCompassPara", "d5/d16/a01154.html", "d5/d16/a01154" ],
+    [ "\u202AFrameBit", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69", [
+      [ "\u202AFHeader", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1", null ],
+      [ "\u202AFLength", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010", null ],
+      [ "\u202AFPitch", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c", null ],
+      [ "\u202AFRoll", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c", null ],
+      [ "\u202AFHeading", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459", null ],
+      [ "\u202AFCRC", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd", null ],
+      [ "\u202AFDHeader", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33", null ],
+      [ "\u202AFDPCAS", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6", null ],
+      [ "\u202AFDPCA", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900", null ],
+      [ "\u202AFDAD", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e", null ],
+      [ "\u202AFDCRC", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f", null ],
+      [ "\u202AFHeader", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1", null ],
+      [ "\u202AFLength", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010", null ],
+      [ "\u202AFPitch", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c", null ],
+      [ "\u202AFRoll", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c", null ],
+      [ "\u202AFHeading", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459", null ],
+      [ "\u202AFMagnetX", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff", null ],
+      [ "\u202AFMagnetY", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f5d2fce897e6c00658e0e841a7f60d2", null ],
+      [ "\u202AFMagnetZ", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69aa4388aeb51d9f5e7291dfdeb776bb883", null ],
+      [ "\u202AFSumCheck", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a83e8f8db18f7341eb2af494f29a60984", null ],
+      [ "\u202AFDHeader", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33", null ],
+      [ "\u202AFDPCAS", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6", null ],
+      [ "\u202AFDPCA", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900", null ],
+      [ "\u202AFDAD", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e", null ],
+      [ "\u202AFDCRC", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f", null ]
+    ] ],
+    [ "\u202AFrameBit", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69", [
+      [ "\u202AFHeader", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1", null ],
+      [ "\u202AFLength", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010", null ],
+      [ "\u202AFPitch", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c", null ],
+      [ "\u202AFRoll", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c", null ],
+      [ "\u202AFHeading", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459", null ],
+      [ "\u202AFCRC", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd", null ],
+      [ "\u202AFDHeader", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33", null ],
+      [ "\u202AFDPCAS", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6", null ],
+      [ "\u202AFDPCA", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900", null ],
+      [ "\u202AFDAD", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e", null ],
+      [ "\u202AFDCRC", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f", null ],
+      [ "\u202AFHeader", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1", null ],
+      [ "\u202AFLength", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010", null ],
+      [ "\u202AFPitch", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c", null ],
+      [ "\u202AFRoll", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c", null ],
+      [ "\u202AFHeading", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459", null ],
+      [ "\u202AFMagnetX", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff", null ],
+      [ "\u202AFMagnetY", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f5d2fce897e6c00658e0e841a7f60d2", null ],
+      [ "\u202AFMagnetZ", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69aa4388aeb51d9f5e7291dfdeb776bb883", null ],
+      [ "\u202AFSumCheck", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a83e8f8db18f7341eb2af494f29a60984", null ],
+      [ "\u202AFDHeader", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33", null ],
+      [ "\u202AFDPCAS", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6", null ],
+      [ "\u202AFDPCA", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900", null ],
+      [ "\u202AFDAD", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e", null ],
+      [ "\u202AFDCRC", "d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f", null ]
     ] ]
 ];

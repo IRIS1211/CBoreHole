@@ -1,16 +1,15 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghiklmnopqrstuvwy~åæçèé个串图多引程自运通配",
-  1: "acefgiqrstuw",
+  0: "_abcdefghiklmnopqrstuvwy~äåæçèé个串图多引程罗自运通配",
+  1: "cdefgiqrstuw",
   2: "u",
-  3: "abcdgilmqrstuw个串图多引程自运通配",
+  3: "abcdgilmqrstuw个串图多引程罗自运通配",
   4: "abcdefghilmnopqrstuvwy~",
   5: "_abcdefghiklmnopqrstuvw",
   6: "ipu",
-  7: "cefn",
-  8: "acdefhilmot",
-  9: "ep",
-  10: "cqåæçèé"
+  7: "cefin",
+  8: "acdefhilmnorstw",
+  9: "cqäåæçèé"
 };
 
 var indexSectionNames =
@@ -24,8 +23,7 @@ var indexSectionNames =
   6: "typedefs",
   7: "enums",
   8: "enumvalues",
-  9: "properties",
-  10: "pages"
+  9: "pages"
 };
 
 var indexSectionLabels =
@@ -39,7 +37,6 @@ var indexSectionLabels =
   6: "类型定义",
   7: "枚举",
   8: "枚举值",
-  9: "属性",
-  10: "页"
+  9: "页"
 };
 

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/readwindow.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/stdafx.h.cpp 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,134 +89,32 @@ $(document).ready(function(){initNavTree('d5/dcb/a00170_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">readwindow.cc</div>  </div>
+<div class="title">stdafx.h.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d5/dcb/a00170.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../inc/readwindow.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../ui/ui_readwindow.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QFileDialog&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QDir&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d2/d7b/a01150.html#aa399218166bcdcd386abbbcbfaa6e9db">   26</a></span>&#160;<a class="code" href="../../d2/d7b/a01150.html#aa399218166bcdcd386abbbcbfaa6e9db">&#x202A;ReadWindow::ReadWindow</a>(QWidget *parent) :</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QMainWindow(parent),</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ui(new <a class="code" href="../../de/df7/a00418.html">&#x202A;Ui</a>::<a class="code" href="../../d2/d7b/a01150.html">&#x202A;ReadWindow</a>)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/dfe/a01366.html#a45d7b0a78d984b9adb25941f04a12721">&#x202A;setupUi</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 显示当前路径</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/dfe/a01366.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;lb_work_dir</a>-&gt;setText(QDir::currentPath());</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d2/d7b/a01150.html#abbeaee958736886d2b19bb97c8491c43">   44</a></span>&#160;<a class="code" href="../../d2/d7b/a01150.html#abbeaee958736886d2b19bb97c8491c43">&#x202A;ReadWindow::~ReadWindow</a>()</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d2/d7b/a01150.html#a95fcda8a05bce42033ab50c78c3f8a44">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d7b/a01150.html#a95fcda8a05bce42033ab50c78c3f8a44">&#x202A;ReadWindow::on_btn_openFile_clicked</a>()</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// 获取要打开的文件名</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::string file_name = </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        QFileDialog::getOpenFileName(<span class="keyword">this</span>, </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                     tr(<span class="stringliteral">&quot;OpenFile&quot;</span>),</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                     tr(<span class="stringliteral">&quot;.&quot;</span>),</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                     tr(<span class="stringliteral">&quot;IDOI File(*.idoi);All Files(*.*)&quot;</span>)).toStdString();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    LDebug(<span class="stringliteral">&quot;select file:{}&quot;</span>, file_name);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (file_name.empty())</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        return ;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">// 显示文件名</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/dfe/a01366.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;lb_work_dir</a>-&gt;setText(QString::fromStdString(file_name));</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// 以只读的方式打开文件</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a> = <span class="keyword">new</span> <a class="code" href="../../d0/d39/a01138.html">&#x202A;IDOIFile</a>(file_name, 1, <a class="code" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb">&#x202A;OREAD</a>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#aca27d2fd88c3c80c26dd57f4d8404a1e">&#x202A;ReadPara</a>();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a> = *(<a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#a44750044d708954b8393a6e15355a58a">&#x202A;m_para_</a>);  <span class="comment">// 直接将值取出</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// 清楚之前的数据</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a> = cv::Mat::zeros(0, <a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#a44750044d708954b8393a6e15355a58a">&#x202A;m_para_</a>-&gt;<a class="code" href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../d5/d16/a01154.html#a20bacc2aeb213d0bbdc756dcac1f91dd">&#x202A;nImgWidth</a>, CV_8UC3);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#a866e2bf6ee5717435128e3a07500a957">&#x202A;ReadMat</a>(<a class="code" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a>, 0, -1);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// #TODO(SChen): 优化 读取内容, 实现读取跳跃, </span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//  丰富文件 API</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::string tmp_png = file_name.substr(0, file_name.size() - 4) + <span class="stringliteral">&quot;.png&quot;</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// imwrite(tmp_png, ma_ReadImage_);</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// imshow(&quot;gImage&quot;, ma_ReadImage_);</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// ShowImageOnLable(ma_ReadImage_, ui-&gt;lb_show, 540, 1400);</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    cv::Mat <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    cv::resize(<a class="code" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a>, <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>, cv::Size(540, 1400));</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    QPixmap img2 = QPixmap::fromImage(<a class="code" href="../../d6/d2f/a01394.html#a988f9de91b15040f5376a6d3b33d108b">&#x202A;Utils_CV::CvMat2QImage</a>(&amp;<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>));</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ui</a>-&gt;<a class="code" href="../../d6/dfe/a01366.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;lb_show</a>-&gt;setPixmap(img2);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif </span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    LDebug(<span class="stringliteral">&quot;show GImage:{}&quot;</span>, <a class="code" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a>.rows);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="../../d2/d7b/a01150.html#ad03aefcbea38fe4b8bef79cbea4a28c3">  122</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d7b/a01150.html#ad03aefcbea38fe4b8bef79cbea4a28c3">&#x202A;ReadWindow::on_btn_closeFile_clicked</a>()</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ma_ReadImage_</a>.release();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;m_IdoiFile_</a>-&gt;<a class="code" href="../../d0/d39/a01138.html#a70c5db6374434b417972bb28a1144029">&#x202A;release</a>();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="../../d2/d7b/a01150.html#a60ba7c9f45797caf826c4c9fb2145d59">  138</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d7b/a01150.html#a60ba7c9f45797caf826c4c9fb2145d59">&#x202A;ReadWindow::on_btn_read_exit_clicked</a>()</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    emit <a class="code" href="../../d2/d7b/a01150.html#a19ddfc33b6e10f52fe08e2ed2bb72a64">&#x202A;signal_CloseWindow</a>();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+<a href="../../d5/dcb/a00170.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*-------------------------------------------------------------------- </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">* Precompiled header source file used by Visual Studio.NET to generate</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">* the .pch file.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* Due to issues with the dependencies checker within the IDE, it</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">* sometimes fails to recompile the PCH file, if we force the IDE to</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">* create the PCH file directly from the header file.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">* This file is auto-generated by qmake since no PRECOMPILED_SOURCE was</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">* specified, and is used as the common stdafx.cpp. The file is only</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">* generated when creating .vcxproj project files, and is not used for</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">* command line compilations by nmake.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">* WARNING: All changes made in this file will be lost.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">--------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/de6/a00167.html">&#x202A;stdafx.h</a>&quot;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01150_html_abbeaee958736886d2b19bb97c8491c43"><div class="ttname"><a href="../../d2/d7b/a01150.html#abbeaee958736886d2b19bb97c8491c43">&#x202A;ReadWindow::~ReadWindow</a></div><div class="ttdeci">&#x202A;~ReadWindow()</div><div class="ttdoc">&#x202A;Finalizes an instance of the ReadWindow class</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00044">readwindow.cc:44</a></div></div>
-<div class="ttc" id="aa01150_html_aa399218166bcdcd386abbbcbfaa6e9db"><div class="ttname"><a href="../../d2/d7b/a01150.html#aa399218166bcdcd386abbbcbfaa6e9db">&#x202A;ReadWindow::ReadWindow</a></div><div class="ttdeci">&#x202A;ReadWindow(QWidget *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the ReadWindow class</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00026">readwindow.cc:26</a></div></div>
-<div class="ttc" id="aa01366_html_ad5693c3692cac43d7b71142c3262ec6c"><div class="ttname"><a href="../../d6/dfe/a01366.html#ad5693c3692cac43d7b71142c3262ec6c">&#x202A;Ui_ReadWindow::lb_show</a></div><div class="ttdeci">&#x202A;QLabel * lb_show</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d01/a00227_source.html#l00052">ui_readwindow.h:52</a></div></div>
-<div class="ttc" id="aa01138_html_a44750044d708954b8393a6e15355a58a"><div class="ttname"><a href="../../d0/d39/a01138.html#a44750044d708954b8393a6e15355a58a">&#x202A;IDOIFile::m_para_</a></div><div class="ttdeci">&#x202A;Para * m_para_</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00196">IDOIFile.h:196</a></div></div>
-<div class="ttc" id="aa01154_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
-<div class="ttc" id="aa01138_html_a70c5db6374434b417972bb28a1144029"><div class="ttname"><a href="../../d0/d39/a01138.html#a70c5db6374434b417972bb28a1144029">&#x202A;IDOIFile::release</a></div><div class="ttdeci">&#x202A;bool release()</div><div class="ttdoc">&#x202A;文件操作</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df8/a00155_source.html#l00657">IDOIFile.cc:657</a></div></div>
-<div class="ttc" id="aa00131_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d06/a00131_source.html#l00037">QImgLabel.cc:37</a></div></div>
-<div class="ttc" id="aa01150_html_a60ba7c9f45797caf826c4c9fb2145d59"><div class="ttname"><a href="../../d2/d7b/a01150.html#a60ba7c9f45797caf826c4c9fb2145d59">&#x202A;ReadWindow::on_btn_read_exit_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_read_exit_clicked()</div><div class="ttdoc">&#x202A;Handles button read exit clicked signals</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00138">readwindow.cc:138</a></div></div>
-<div class="ttc" id="aa01154_html_a76b56f70107ff342985f6d8bef2fa3ba"><div class="ttname"><a href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;RunPara::StImage::Polar</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage::StImagePolar Polar</div></div>
-<div class="ttc" id="aa01394_html_a988f9de91b15040f5376a6d3b33d108b"><div class="ttname"><a href="../../d6/d2f/a01394.html#a988f9de91b15040f5376a6d3b33d108b">&#x202A;Utils_CV::CvMat2QImage</a></div><div class="ttdeci">&#x202A;static QImage CvMat2QImage(const cv::Mat *mat)</div><div class="ttdoc">&#x202A;将opencv mat 转换成 QT image</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00260_source.html#l00487">utils_cv.cc:487</a></div></div>
-<div class="ttc" id="aa01150_html_ad03aefcbea38fe4b8bef79cbea4a28c3"><div class="ttname"><a href="../../d2/d7b/a01150.html#ad03aefcbea38fe4b8bef79cbea4a28c3">&#x202A;ReadWindow::on_btn_closeFile_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_closeFile_clicked()</div><div class="ttdoc">&#x202A;Handles button close file clicked signals</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00122">readwindow.cc:122</a></div></div>
-<div class="ttc" id="aa00418_html"><div class="ttname"><a href="../../de/df7/a00418.html">&#x202A;Ui</a></div><div class="ttdoc">&#x202A;QT UI 用于生成 ui组件</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00020">readwindow.h:20</a></div></div>
-<div class="ttc" id="aa00062_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00020">main.cpp:20</a></div></div>
-<div class="ttc" id="aa01138_html_a866e2bf6ee5717435128e3a07500a957"><div class="ttname"><a href="../../d0/d39/a01138.html#a866e2bf6ee5717435128e3a07500a957">&#x202A;IDOIFile::ReadMat</a></div><div class="ttdeci">&#x202A;cv::Mat ReadMat(int row, int hight=100)</div><div class="ttdoc">&#x202A;bool ReadMat(cv::Mat &amp;img,int ) ; // 考虑循环读取文件操作 , 可能存在问题</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df8/a00155_source.html#l00478">IDOIFile.cc:478</a></div></div>
-<div class="ttc" id="aa01138_html"><div class="ttname"><a href="../../d0/d39/a01138.html">&#x202A;IDOIFile</a></div><div class="ttdoc">&#x202A;An idoi file.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00193">IDOIFile.h:193</a></div></div>
-<div class="ttc" id="aa01138_html_aca27d2fd88c3c80c26dd57f4d8404a1e"><div class="ttname"><a href="../../d0/d39/a01138.html#aca27d2fd88c3c80c26dd57f4d8404a1e">&#x202A;IDOIFile::ReadPara</a></div><div class="ttdeci">&#x202A;bool ReadPara(void)</div><div class="ttdoc">&#x202A;读文件 参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df8/a00155_source.html#l00150">IDOIFile.cc:150</a></div></div>
-<div class="ttc" id="aa01150_html_ab03fe548569bca2b66da6be93755bf3b"><div class="ttname"><a href="../../d2/d7b/a01150.html#ab03fe548569bca2b66da6be93755bf3b">&#x202A;ReadWindow::ma_ReadImage_</a></div><div class="ttdeci">&#x202A;cv::Mat ma_ReadImage_</div><div class="ttdoc">&#x202A;读取到的图像 可能只是一部分数据</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00037">readwindow.h:37</a></div></div>
-<div class="ttc" id="aa01150_html_a01056a0dc4d03ab9d9a7fbd502237e1c"><div class="ttname"><a href="../../d2/d7b/a01150.html#a01056a0dc4d03ab9d9a7fbd502237e1c">&#x202A;ReadWindow::m_IdoiFile_</a></div><div class="ttdeci">&#x202A;IDOIFile * m_IdoiFile_</div><div class="ttdoc">&#x202A;文件类指针</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00036">readwindow.h:36</a></div></div>
-<div class="ttc" id="aa01154_html_a20bacc2aeb213d0bbdc756dcac1f91dd"><div class="ttname"><a href="../../d5/d16/a01154.html#a20bacc2aeb213d0bbdc756dcac1f91dd">&#x202A;RunPara::StImage::StImagePolar::nImgWidth</a></div><div class="ttdeci">&#x202A;int nImgWidth</div><div class="ttdoc">&#x202A;图像宽度</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00116">runpara.h:116</a></div></div>
-<div class="ttc" id="aa01366_html_acfa4ef50e36a18148403cd60fdba0028"><div class="ttname"><a href="../../d6/dfe/a01366.html#acfa4ef50e36a18148403cd60fdba0028">&#x202A;Ui_ReadWindow::lb_work_dir</a></div><div class="ttdeci">&#x202A;QLineEdit * lb_work_dir</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d01/a00227_source.html#l00041">ui_readwindow.h:41</a></div></div>
-<div class="ttc" id="aa00056_html_af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb"><div class="ttname"><a href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb">&#x202A;OREAD</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00175">IDOIFile.h:175</a></div></div>
-<div class="ttc" id="aa01366_html_a45d7b0a78d984b9adb25941f04a12721"><div class="ttname"><a href="../../d6/dfe/a01366.html#a45d7b0a78d984b9adb25941f04a12721">&#x202A;Ui_ReadWindow::setupUi</a></div><div class="ttdeci">&#x202A;void setupUi(QMainWindow *ReadWindow)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d01/a00227_source.html#l00057">ui_readwindow.h:57</a></div></div>
-<div class="ttc" id="aa01118_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">Config.h:34</a></div></div>
-<div class="ttc" id="aa01150_html_a19ddfc33b6e10f52fe08e2ed2bb72a64"><div class="ttname"><a href="../../d2/d7b/a01150.html#a19ddfc33b6e10f52fe08e2ed2bb72a64">&#x202A;ReadWindow::signal_CloseWindow</a></div><div class="ttdeci">&#x202A;void signal_CloseWindow()</div><div class="ttdoc">&#x202A;Sends the signal // 发射 关闭 窗口信号</div></div>
-<div class="ttc" id="aa01150_html"><div class="ttname"><a href="../../d2/d7b/a01150.html">&#x202A;ReadWindow</a></div><div class="ttdoc">&#x202A;读取文件的界面类实现 能够读取自定义文件并进行浏览显示</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00032">readwindow.h:32</a></div></div>
-<div class="ttc" id="aa01150_html_a8a81e2d13d0192e610471c49bd35da76"><div class="ttname"><a href="../../d2/d7b/a01150.html#a8a81e2d13d0192e610471c49bd35da76">&#x202A;ReadWindow::ui</a></div><div class="ttdeci">&#x202A;Ui::ReadWindow * ui</div><div class="ttdoc">&#x202A;读取界面 窗口 ui</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00039">readwindow.h:39</a></div></div>
-<div class="ttc" id="aa01150_html_a95fcda8a05bce42033ab50c78c3f8a44"><div class="ttname"><a href="../../d2/d7b/a01150.html#a95fcda8a05bce42033ab50c78c3f8a44">&#x202A;ReadWindow::on_btn_openFile_clicked</a></div><div class="ttdeci">&#x202A;void on_btn_openFile_clicked()</div><div class="ttdoc">&#x202A;Handles button open file clicked signals</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcb/a00170_source.html#l00057">readwindow.cc:57</a></div></div>
+<div class="ttc" id="aa00167_html"><div class="ttname"><a href="../../dc/de6/a00167.html">&#x202A;stdafx.h</a></div><div class="ttdoc">&#x202A;需要将stdafx.h 放到src 文件夹下面, 应为cpp文件引用必须使用同目录下面的stdafx 文件,</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d5/dcb/a00170.html">&#x202A;readwindow.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../d5/dcb/a00170.html">&#x202A;stdafx.h.cpp</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

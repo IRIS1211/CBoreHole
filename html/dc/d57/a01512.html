@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;README.md 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;CPP utils</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.5.2</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -87,17 +87,41 @@ $(document).ready(function(){initNavTree('dc/d57/a01512.html','../../');});
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">README.md 文件参考</div>  </div>
+<div class="title">&#x202A;CPP utils </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p class="DocNodeLTR">包含自己常用的 CPP 处理函数 以及部分 opencv 和 QT 的处理部分, 尽量做到通用</p>
+<p class="DocNodeLTR">其中 test_* 开头的文件 是 doctest 的测试样例, 写的不是很好, 仅供参考</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md9"></a>
+库 基本结构</h1>
+<p class="DocNodeLTR">使用类似 QT 库的方式, 全部使用 静态函数, 使用的时候 使用 <code>Utils::TestFunc()</code> 这样来调用函数</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span><a class="code" href="../../dc/ded/a01290.html">&#x202A;Utils</a></div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="keyword">static</span> <span class="keywordtype">int</span> TestFunc(<span class="keywordtype">void</span>);</div>
+<div class="line">};</div>
+</div><!-- fragment --><h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md10"></a>
+细分内容</h1>
+<p class="DocNodeLTR">git不同的模块放在不同的文件内, 作为基本的处理模块</p>
+<ul class="DocNodeLTR">
+<li>&#x202A;<a class="el" href="../../d9/de6/a01314.html" title="&#x202A;The utilities string.">Utils_String</a> 字符串处理相关函数</li>
+<li>&#x202A;<a class="el" href="../../d7/d8c/a01306.html" title="&#x202A;The utilities files.">Utils_Files</a> 处理文件操作以及文件系统的库</li>
+<li>&#x202A;<a class="el" href="../../d6/dfa/a01318.html">Utils_Time</a> CPP 的计时函数以及日期函数相关</li>
+<li>&#x202A;<a class="el" href="../../d7/d88/a01294.html">Utils_CV</a> 通用的 opencv 相关的函数</li>
+<li>&#x202A;<a class="el" href="../../da/d79/a01310.html" title="&#x202A;The utilities qt.">Utils_QT</a> 通用的 QT 相关的函数</li>
+<li>&#x202A;<a class="el" href="../../d4/d34/a01298.html">Utils_Data</a> 数据处理的相关内容</li>
+<li>&#x202A;Utils_Logger 封装的 spdlog的相关函数, 方便使用</li>
+<li>&#x202A;<a class="el" href="../../dc/de0/a01302.html" title="&#x202A;直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类">Utils_Exception</a> 自定义异常信息, 继承自标准异常, 用于细分不同种类的异常, // 不算通用 </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa01290_html"><div class="ttname"><a href="../../dc/ded/a01290.html">&#x202A;Utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc8/a00242_source.html#l00025">utils.h:25</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dc/d57/a01512.html">&#x202A;README.md</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

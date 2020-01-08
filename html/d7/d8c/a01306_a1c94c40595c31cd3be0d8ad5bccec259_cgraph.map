@@ -1,0 +1,5 @@
+<map id="Utils_Files::IsFileExist" name="Utils_Files::IsFileExist">
+<area shape="rect" id="node1" title="判断指定的文件是否存在 // 给定flg 如果不存在则建立文件 当path为文件时，_access函数判断文件是否存在，并判断文件是否可以用mode值指定的模式进行访问。" alt="" coords="5,31,157,57"/>
+<area shape="rect" id="node2" href="$d7/d8c/a01306.html#ad809f617bf2f7e0850b105b5b5413108" title="判断文件夹是否存在, 如果不存在 则新建 文件夹 // 不能否递归建立" alt="" coords="218,5,365,32"/>
+<area shape="rect" id="node3" href="$d7/d8c/a01306.html#abc35c60bccab87740d6f315be7641bcb" title="将文件路径拆分为 文件路径和文件名称 删除拓展名" alt="" coords="205,56,377,83"/>
+</map>

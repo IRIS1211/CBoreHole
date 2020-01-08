@@ -1,4 +1,6 @@
-<map id="SetWindow" name="SetWindow">
-<area shape="rect" id="node1" title="Window for setting the . 设置窗口" alt="" coords="15,80,103,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,112,32"/>
+<map id="StProtocol::StBaudRate" name="StProtocol::StBaudRate">
+<area shape="rect" id="node1" title="设置 波特率的指令" alt="" coords="15,395,176,421"/>
+<area shape="rect" id="node2" href="$d6/d5b/a00026.html#dd/d7a/a00990" title="An answer." alt="" coords="117,267,279,309"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="29,96,109,123"/>
+<area shape="rect" id="node4" title="STL class" alt="" coords="5,5,132,47"/>
 </map>

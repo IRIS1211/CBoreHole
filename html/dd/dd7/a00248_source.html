@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/test_utils_qt.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_cv.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,17 +89,89 @@ $(document).ready(function(){initNavTree('dd/dd7/a00248_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">test_utils_qt.cc</div>  </div>
+<div class="title">utils_cv.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../dd/dd7/a00248.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d7f/a00287.html">&#x202A;utils_qt.h</a>&quot;</span></div>
+<a href="../../dd/dd7/a00248.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// #include &quot;utils.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef UTILS_CV_H__</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define UTILS_CV_H__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;opencv2/core.hpp&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/d88/a01294.html">&#x202A;Utils_CV</a> </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d7/d88/a01294.html#a8387a1da4bd9a03f42b6037f5370a28e">&#x202A;Str2Rect</a>(<span class="keyword">const</span> std::string &amp;str, <span class="keyword">const</span> std::string delim = <span class="stringliteral">&quot;,| &quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d88/a01294.html#a55b4da9c06b152eaee65da5a38ff6252">&#x202A;ImageSplit</a>(<span class="keyword">const</span> cv::Mat &amp;src_img,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                           <span class="keyword">const</span> std::vector&lt;int&gt; &amp;lines,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                           std::vector&lt;cv::Mat&gt; &amp;splitImgVec,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                           <span class="keywordtype">bool</span> horizon = <span class="keyword">true</span>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">int</span> wealth = 5);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d88/a01294.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">&#x202A;ImageMerge</a>(cv::Mat &amp;dst_img,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                           <span class="keyword">const</span> std::vector&lt;cv::Mat&gt; &amp;splitImgVec,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                           <span class="keyword">const</span> std::vector&lt;int&gt; &amp;lines,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                           <span class="keywordtype">bool</span> horizon = <span class="keyword">true</span>,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">int</span> wealth = 5);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d88/a01294.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">&#x202A;ImageMerge</a>(cv::Mat &amp;dst_img,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                           <span class="keyword">const</span> std::vector&lt;cv::Mat&gt; &amp;splitImgVec,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                           <span class="keywordtype">bool</span> horizon = <span class="keyword">true</span>,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">int</span> wealth = 5);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d7/d88/a01294.html#a9ba8a738f801f6b8c82345c444a4e71c">&#x202A;GetSquareRect</a>(<span class="keyword">const</span> cv::Mat &amp;img);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d7/d88/a01294.html#a3104bb7c29b83b4dfb4a38bd9e899ce5">&#x202A;GetRect</a>(<span class="keyword">const</span> cv::Mat &amp;img);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d7/d88/a01294.html#a29dc0b093427ee4ca1a9e195d4c78433">&#x202A;GetCenterRect</a>(<span class="keyword">const</span> cv::Rect img_r, <span class="keywordtype">int</span> width = -1, <span class="keywordtype">int</span> height = -1);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d7/d88/a01294.html#ac488a0830a690dbdbb48f0b999b771d3">&#x202A;MarginRect</a>(<span class="keyword">const</span> cv::Rect &amp;cur_r, <span class="keywordtype">int</span> t = 5, <span class="keywordtype">int</span> l = -1, <span class="keywordtype">int</span> b = -1, <span class="keywordtype">int</span> r = -1);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">static</span> cv::Rect <a class="code" href="../../d7/d88/a01294.html#abd858a9d1a7a0b329bc960a3fe0019b1">&#x202A;GetOffsetRect</a>(<span class="keyword">const</span> cv::Rect &amp;cur_r, <span class="keyword">const</span> cv::Point &amp;offset);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d7/d88/a01294.html#a5ed9b9316107e1ede0fefb0d53610e40">&#x202A;CreatMapMat</a>(cv::Mat &amp; map_x, \</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                            cv::Mat &amp; map_y, \</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                            <span class="keywordtype">int</span> cen_x, \</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                            <span class="keywordtype">int</span> cen_y, \</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                            <span class="keywordtype">int</span> min_r, \</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                            <span class="keywordtype">int</span> max_r, \</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                            <span class="keywordtype">int</span> Width = -1, \</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                            <span class="keywordtype">int</span> Height = -1);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="comment">// #TEST(SChen) 完成图像 格式相互转换 test </span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keyword">static</span> QImage <a class="code" href="../../d7/d88/a01294.html#a988f9de91b15040f5376a6d3b33d108b">&#x202A;CvMat2QImage</a>(<span class="keyword">const</span> cv::Mat * mat);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">static</span> cv::Mat <a class="code" href="../../d7/d88/a01294.html#a8092c11efe82425e7d4a5a10b366f791">&#x202A;QImage2CvMat</a>(<span class="keyword">const</span> QImage *image);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;};</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#endif  //UTILS_CV_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00287_html"><div class="ttname"><a href="../../d6/d7f/a00287.html">&#x202A;utils_qt.h</a></div><div class="ttdoc">&#x202A;有关Qt的 通用组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa01294_html_a29dc0b093427ee4ca1a9e195d4c78433"><div class="ttname"><a href="../../d7/d88/a01294.html#a29dc0b093427ee4ca1a9e195d4c78433">&#x202A;Utils_CV::GetCenterRect</a></div><div class="ttdeci">&#x202A;static cv::Rect GetCenterRect(const cv::Rect img_r, int width=-1, int height=-1)</div><div class="ttdoc">&#x202A;获取图像中心区域 的值</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00307">utils_cv.cc:307</a></div></div>
+<div class="ttc" id="aa01294_html_a9ba8a738f801f6b8c82345c444a4e71c"><div class="ttname"><a href="../../d7/d88/a01294.html#a9ba8a738f801f6b8c82345c444a4e71c">&#x202A;Utils_CV::GetSquareRect</a></div><div class="ttdeci">&#x202A;static cv::Rect GetSquareRect(const cv::Mat &amp;img)</div><div class="ttdoc">&#x202A;根据 图像尺寸 生成 一个包含中间区域的 矩形框</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00261">utils_cv.cc:261</a></div></div>
+<div class="ttc" id="aa01294_html"><div class="ttname"><a href="../../d7/d88/a01294.html">&#x202A;Utils_CV</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00248_source.html#l00017">utils_cv.h:17</a></div></div>
+<div class="ttc" id="aa01294_html_a988f9de91b15040f5376a6d3b33d108b"><div class="ttname"><a href="../../d7/d88/a01294.html#a988f9de91b15040f5376a6d3b33d108b">&#x202A;Utils_CV::CvMat2QImage</a></div><div class="ttdeci">&#x202A;static QImage CvMat2QImage(const cv::Mat *mat)</div><div class="ttdoc">&#x202A;将opencv mat 转换成 QT image</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00487">utils_cv.cc:487</a></div></div>
+<div class="ttc" id="aa01294_html_a80d57d4eeb1fc9965c1e0fa5f63b7fa0"><div class="ttname"><a href="../../d7/d88/a01294.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">&#x202A;Utils_CV::ImageMerge</a></div><div class="ttdeci">&#x202A;static bool ImageMerge(cv::Mat &amp;dst_img, const std::vector&lt; cv::Mat &gt; &amp;splitImgVec, const std::vector&lt; int &gt; &amp;lines, bool horizon=true, const int wealth=5)</div><div class="ttdoc">&#x202A;将给出的图片数组 根据给出的分割线 和 裕量 合并成一副 图像</div></div>
+<div class="ttc" id="aa01294_html_a3104bb7c29b83b4dfb4a38bd9e899ce5"><div class="ttname"><a href="../../d7/d88/a01294.html#a3104bb7c29b83b4dfb4a38bd9e899ce5">&#x202A;Utils_CV::GetRect</a></div><div class="ttdeci">&#x202A;static cv::Rect GetRect(const cv::Mat &amp;img)</div><div class="ttdoc">&#x202A;返回图像的矩形区域</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00285">utils_cv.cc:285</a></div></div>
+<div class="ttc" id="aa01294_html_a8387a1da4bd9a03f42b6037f5370a28e"><div class="ttname"><a href="../../d7/d88/a01294.html#a8387a1da4bd9a03f42b6037f5370a28e">&#x202A;Utils_CV::Str2Rect</a></div><div class="ttdeci">&#x202A;static cv::Rect Str2Rect(const std::string &amp;str, const std::string delim=&quot;,| &quot;)</div><div class="ttdoc">&#x202A;将字符串按照分割字符分割之后 生成矩形</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00031">utils_cv.cc:31</a></div></div>
+<div class="ttc" id="aa01294_html_a5ed9b9316107e1ede0fefb0d53610e40"><div class="ttname"><a href="../../d7/d88/a01294.html#a5ed9b9316107e1ede0fefb0d53610e40">&#x202A;Utils_CV::CreatMapMat</a></div><div class="ttdeci">&#x202A;static void CreatMapMat(cv::Mat &amp;map_x, \ cv::Mat &amp;map_y, \ int cen_x, \ int cen_y, \ int min_r, \ int max_r, \ int Width=-1, \ int Height=-1)</div><div class="ttdoc">&#x202A;为 展开图像创建 map 后续执行起来很快 展开思路 参考 https://blog.csdn.net/guduruyu/article/details/65436931 见附件 pdf 公式推导 展开...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00411">utils_cv.cc:411</a></div></div>
+<div class="ttc" id="aa01294_html_a8092c11efe82425e7d4a5a10b366f791"><div class="ttname"><a href="../../d7/d88/a01294.html#a8092c11efe82425e7d4a5a10b366f791">&#x202A;Utils_CV::QImage2CvMat</a></div><div class="ttdeci">&#x202A;static cv::Mat QImage2CvMat(const QImage *image)</div><div class="ttdoc">&#x202A;QT Image 转换成 cv Mat 结构</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00526">utils_cv.cc:526</a></div></div>
+<div class="ttc" id="aa01294_html_abd858a9d1a7a0b329bc960a3fe0019b1"><div class="ttname"><a href="../../d7/d88/a01294.html#abd858a9d1a7a0b329bc960a3fe0019b1">&#x202A;Utils_CV::GetOffsetRect</a></div><div class="ttdeci">&#x202A;static cv::Rect GetOffsetRect(const cv::Rect &amp;cur_r, const cv::Point &amp;offset)</div><div class="ttdoc">&#x202A;根据当前区域相对于上次区域的偏移值定位出来 上次矩形框的外扩范围</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00386">utils_cv.cc:386</a></div></div>
+<div class="ttc" id="aa01294_html_a55b4da9c06b152eaee65da5a38ff6252"><div class="ttname"><a href="../../d7/d88/a01294.html#a55b4da9c06b152eaee65da5a38ff6252">&#x202A;Utils_CV::ImageSplit</a></div><div class="ttdeci">&#x202A;static bool ImageSplit(const cv::Mat &amp;src_img, const std::vector&lt; int &gt; &amp;lines, std::vector&lt; cv::Mat &gt; &amp;splitImgVec, bool horizon=true, const int wealth=5)</div><div class="ttdoc">&#x202A;将一副图片按照给出的线划分 成为 几列图像   给出一定的裕量 相应的图片会比较大 // 默认横向分割</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00071">utils_cv.cc:71</a></div></div>
+<div class="ttc" id="aa01294_html_ac488a0830a690dbdbb48f0b999b771d3"><div class="ttname"><a href="../../d7/d88/a01294.html#ac488a0830a690dbdbb48f0b999b771d3">&#x202A;Utils_CV::MarginRect</a></div><div class="ttdeci">&#x202A;static cv::Rect MarginRect(const cv::Rect &amp;cur_r, int t=5, int l=-1, int b=-1, int r=-1)</div><div class="ttdoc">&#x202A;矩形外扩一定范围</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00342">utils_cv.cc:342</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../dd/dd7/a00248.html">&#x202A;test_utils_qt.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../dd/dd7/a00248.html">&#x202A;utils_cv.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

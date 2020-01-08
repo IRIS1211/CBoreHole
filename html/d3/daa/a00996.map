@@ -1,4 +1,5 @@
-<map id="WriterThread" name="WriterThread">
-<area shape="rect" id="node1" title="A writer thread." alt="" coords="5,80,101,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="18,5,89,32"/>
+<map id="StProtocol::StOutputMode" name="StProtocol::StOutputMode">
+<area shape="rect" id="node1" title="输出模式" alt="" coords="5,215,180,241"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="53,96,133,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="29,5,156,47"/>
 </map>

@@ -1,0 +1,8 @@
+<map id="Serial::slot_write_data" name="Serial::slot_write_data">
+<area shape="rect" id="node1" title="Slot write data // 将字符串写入到串口中去 判断是否输出的 hex 字符串" alt="" coords="5,35,156,61"/>
+<area shape="rect" id="node2" href="$d9/de6/a01314.html#a16270cb7857217ad3fb4ca45b263379b" title="将 hex 字符串转换成 string 字符串" alt="" coords="204,8,365,35"/>
+<area shape="rect" id="node5" href="$d0/d61/a01130.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data 写入QByteArrar 类型的数据" alt="" coords="206,60,363,87"/>
+<area shape="rect" id="node3" href="$d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="415,5,577,32"/>
+<area shape="rect" id="node4" href="$d9/de6/a01314.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="627,5,781,32"/>
+<area shape="rect" id="node6" href="$d9/de6/a01314.html#a93b60f1fbf52d3b43700bfab7e4eb2bb" title="char 类型与 string的相互转换" alt="" coords="413,57,579,98"/>
+</map>

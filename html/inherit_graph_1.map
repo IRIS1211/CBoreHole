@@ -1,6 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,76,83"/>
-<area shape="rect" id="node2" href="$da/d73/a01090.html" title="摄像头 抓取对象, 循环抓取对象数据到缓冲队列中" alt="" coords="124,5,219,32"/>
-<area shape="rect" id="node3" href="$d6/dea/a01094.html" title="处理线程 单独执行过程" alt="" coords="133,56,209,83"/>
-<area shape="rect" id="node4" href="$d4/d10/a01278.html" title="A write video. 使用传统线程方式 处理, 程序循环执行 写入动作" alt="" coords="128,107,215,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,73,32"/>
+<area shape="rect" id="node2" href="$d8/d11/a01178.html" title=" " alt="" coords="121,5,188,32"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;串口通信模块实现说明</title>
+<title>&#x202A;CBoreHole: &#x202A;罗盘校准</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,13 +89,43 @@ $(document).ready(function(){initNavTree('da/da6/a01522.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;串口通信模块实现说明 </div>  </div>
+<div class="title">&#x202A;罗盘校准 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md64"></a>
-串口配置信息</h2>
-<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md65"></a>
-串口读写操作</h2>
+<div class="textblock"><p class="DocNodeLTR">此处是在串口通信协议的子章节</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md159"></a>
+罗盘校准界面设置</h1>
+<p><img src="&#x202A;../../../assets/pic/calibration.png" alt="罗盘校准" class="inline"/></p>
+<p class="DocNodeLTR">其中左侧设置 stack_Image 设置 显示 1 右侧 stackedWidget 设置显示 2</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md160"></a>
+罗盘校准过程</h1>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;打开串口</li>
+<li>&#x202A;发送定时校准命令 <br  />
+ <blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">设定校准时间1分钟 回复 68 05 00 08 00 0D </p>
+</blockquote>
+</li>
+<li>&#x202A;接收校准进度</li>
+<li>&#x202A;输出残差</li>
+</ol>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md161"></a>
+罗盘校准状态表示</h1>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;串口未打开 --&gt; 打开串口 --&gt; flg -1</li>
+<li>&#x202A;未开始校准 -&gt; 发送定时校准命令 0</li>
+<li>&#x202A;校准中 -&gt; 校准进度中 <br  />
+</li>
+<li>&#x202A;校准完成 或者 定时时间到 --&gt; 校准结束 -&gt; 校准残差-&gt; 校准结果</li>
+<li></li>
+</ol>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md162"></a>
+校准设计</h1>
+<p class="DocNodeLTR">0. 点击校准进入校准界面, 初始化按钮显示,状态显示, 串口数据框内容,</p><ol type="1" class="DocNodeLTR">
+<li>&#x202A;选择串口参数, 点击打开串口 串口打开, 数据显示在接收区域内</li>
+<li>&#x202A;点击 定时校准, 发送定时校准指令, 进入校准模式, 不断接收数据, 更新界面</li>
+<li>&#x202A;接收到完成指令校准结束 在时间结束未完成校准的程序会直接结束 </li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -1,0 +1,4 @@
+<map id="Utils_QT::ReleaseThread" name="Utils_QT::ReleaseThread">
+<area shape="rect" id="node1" title="停止进程并同时 删除对象 // 循环进程 使用 isInterruptionRequested 做while 循环条件 避免 无法退出 https://blog.csdn...." alt="" coords="245,5,412,32"/>
+<area shape="rect" id="node2" href="$d3/dc7/a01170.html#a0e99dde5e6e49f134243fbad6ded3a04" title="Finalizes an instance of the WorkWindow class" alt="" coords="5,5,197,32"/>
+</map>

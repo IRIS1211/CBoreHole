@@ -1,0 +1,4 @@
+<map id="CQueue::Quit" name="CQueue::Quit">
+<area shape="rect" id="node1" title="Quits this CQueue 退出队列, 无法再加入压入或者弹出数据" alt="" coords="196,13,297,39"/>
+<area shape="rect" id="node2" href="$d0/d56/a01014.html#af85abc481df6d6325bde80e6019805b1" title="Finalizes an instance of the CQueue class 销毁队列, 退出线程 清除数据 // 存在问题" alt="" coords="5,5,148,47"/>
+</map>

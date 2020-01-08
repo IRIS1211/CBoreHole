@@ -1,0 +1,8 @@
+<map id="IDOIFile::ReadPara" name="IDOIFile::ReadPara">
+<area shape="rect" id="node1" title="读文件 参数" alt="" coords="5,23,139,50"/>
+<area shape="rect" id="node2" href="$de/d41/a01030.html#a4ba4a9e516d1015d96767e94e16fd91f" title=" " alt="" coords="187,23,343,50"/>
+<area shape="rect" id="node3" href="$da/d17/a01046.html#ab50487cc4124576dfbb2af0445a595c0" title="从二进制流文件中读取文件" alt="" coords="391,23,601,50"/>
+<area shape="rect" id="node4" href="$d9/de6/a01314.html#a33967652245ef20659d0bedb6c69d47c" title="Character 2 string" alt="" coords="889,23,1055,50"/>
+<area shape="rect" id="node5" href="$d7/d8c/a01306.html#a5523926cd82a36f59589a82da8adf31b" title="读取基本数据类型" alt="" coords="671,23,819,50"/>
+<area shape="rect" id="node6" href="$d7/d8c/a01306.html#a866a76a1d5720a62a03dc7ef7502cd25" title="从文件流中读取一个 字符串" alt="" coords="649,74,841,101"/>
+</map>

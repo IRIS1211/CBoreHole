@@ -1,0 +1,52 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Main entry&#45;point for this application" alt="" coords="5,368,56,395"/>
+<area shape="rect" id="node2" href="$d4/dbc/a01038.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="127,263,205,289"/>
+<area shape="rect" id="node21" href="$d3/dc7/a01170.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="104,499,228,525"/>
+<area shape="rect" id="node3" href="$d4/dbc/a01038.html#a3dd823273154e1bb5cd2e85efd872662" title="初始化运行目录, 在工程目录下面, 避免程序出现找不到配置文件" alt="" coords="329,136,452,163"/>
+<area shape="rect" id="node4" href="$d4/dbc/a01038.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="初始化 全局参数" alt="" coords="330,187,451,213"/>
+<area shape="rect" id="node16" href="$d4/dbc/a01038.html#a5714027a2cc07f9c5c0ae84a177631be" title="根据运行参数 更新参数" alt="" coords="318,263,463,289"/>
+<area shape="rect" id="node20" href="$d4/dbc/a01038.html#af348596369f10008277e9321bd9e6901" title="根据 yml 配置文件初始化文件参数 //默认是读的方式打开配置文件" alt="" coords="327,313,454,340"/>
+<area shape="rect" id="node5" href="$d0/d2b/a01010.html#aaa28b92aaa35102c72b3196a7a2295ef" title="从yml 中 读取参数" alt="" coords="567,72,746,99"/>
+<area shape="rect" id="node11" href="$d4/dbc/a01038.html#af90a5705e283acc4150060ea12833ab8" title="初始化运行目录以及未来存储的工程文件目录" alt="" coords="596,173,717,200"/>
+<area shape="rect" id="node6" href="$da/d17/a01046.html#aad8567884f1564ee1657671892c7ad06" title="从 yml 文件 读取参数, 使用" alt="" coords="812,21,1027,48"/>
+<area shape="rect" id="node10" href="$d9/de6/a01314.html#a82ed3e2282101b5d3326df68e6098898" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="1102,107,1277,149"/>
+<area shape="rect" id="node7" href="$da/d17/a01046.html#ade25200381502a1035b48ff694f4e7c9" title="Reads com para form yml 解析 罗盘参数" alt="" coords="1079,5,1300,32"/>
+<area shape="rect" id="node8" href="$d7/d88/a01294.html#a8387a1da4bd9a03f42b6037f5370a28e" title="将字符串按照分割字符分割之后 生成矩形" alt="" coords="1123,56,1255,83"/>
+<area shape="rect" id="node9" href="$d9/de6/a01314.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="1359,85,1503,112"/>
+<area shape="rect" id="node12" href="$da/d79/a01310.html#af9b1fae65fc91319a7f2ee2fefb86799" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="853,123,986,149"/>
+<area shape="rect" id="node13" href="$d6/dfa/a01318.html#aacca407ae262280a9ade27ac4d16a98c" title=" " alt="" coords="850,173,989,200"/>
+<area shape="rect" id="node14" href="$d9/de6/a01314.html#ab0bd05f35427650f2e295c18ba6938b3" title="Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \" alt="" coords="833,224,1005,251"/>
+<area shape="rect" id="node15" href="$d9/de6/a01314.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="1112,191,1267,217"/>
+<area shape="rect" id="node17" href="$da/d79/a01310.html#acb425a725353c07d525139ce1119ede2" title="Gets disk all" alt="" coords="585,224,728,251"/>
+<area shape="rect" id="node18" href="$da/d79/a01310.html#aca84499be1f513127b12f9d5b7ca11ef" title="Gets disk used" alt="" coords="578,275,735,301"/>
+<area shape="rect" id="node19" href="$d6/dfa/a01318.html#a8fc80e6d8ee244ed6a5a49d7527de6d5" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="587,325,727,352"/>
+<area shape="rect" id="node22" href="$d2/d6e/a00966.html#a37280d2e0cfb79c0efc4cb2a26c54f86" title="初始化相机参数, 并打开相机对象" alt="" coords="331,389,450,416"/>
+<area shape="rect" id="node23" href="$d0/daf/a00970.html#a4fd7a30375554ef9df2ef322db87c32d" title="初始化线程 初始化完成后 开始运行" alt="" coords="340,440,441,467"/>
+<area shape="rect" id="node30" href="$d3/dc7/a01170.html#a14c3f45662e1af9a6dd2071418d6a484" title="列出所有可以使用 的相机 使用 QDebug 输出" alt="" coords="297,491,485,533"/>
+<area shape="rect" id="node31" href="$d3/dc7/a01170.html#a054b4913c0b0f87c7c285e122eaed7fe" title="根据运行状态 以及系统时间 更新运行 参数" alt="" coords="291,557,490,584"/>
+<area shape="rect" id="node32" href="$d3/dc7/a01170.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="276,723,505,749"/>
+<area shape="rect" id="node49" href="$d3/dc7/a01170.html#ae0cd97fd58fbed431d25dd3055f084bd" title="根据运行参数 更改目前程序界面上的参数" alt="" coords="553,905,760,946"/>
+<area shape="rect" id="node24" href="$df/db5/a01158.html#a2eb103016c9d0b4a4e13368ff3e9236c" title="Initializes a new instance of the SerialProc class" alt="" coords="581,389,732,416"/>
+<area shape="rect" id="node25" href="$de/d41/a01030.html#a82958295317ee47afc54276cb3520f14" title="将参数写入进去 二进制文件中" alt="" coords="578,440,735,467"/>
+<area shape="rect" id="node26" href="$da/d17/a01046.html#aa2e8fbcdd233ecc35b7798932be4bc46" title="通过文件指针 将数据写入到二进制数据流中" alt="" coords="821,275,1017,301"/>
+<area shape="rect" id="node27" href="$d9/de6/a01314.html#ad98ced7a9727883c0f305e144db03024" title="String 2 character" alt="" coords="1348,296,1513,323"/>
+<area shape="rect" id="node28" href="$d7/d8c/a01306.html#a7fbb7bbb704161e7512dd9edc091bb23" title="Writes a data 写入基本数据类型" alt="" coords="1115,292,1264,319"/>
+<area shape="rect" id="node29" href="$d7/d8c/a01306.html#ae9335a7520c43095ac8312c0901e9bd4" title="将一个字符串写入到二进制文件流中" alt="" coords="1111,343,1267,385"/>
+<area shape="rect" id="node33" href="$d0/d61/a01130.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="600,516,713,543"/>
+<area shape="rect" id="node41" href="$d3/dc7/a01170.html#af92af3ed8f61e4fd9eaf4d1b14446683" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="571,657,742,698"/>
+<area shape="rect" id="node43" href="$d3/dc7/a01170.html#ae9dcd6afdb5b4cd7811eda08b9223de1" title="更新电子罗盘数据" alt="" coords="553,723,760,749"/>
+<area shape="rect" id="node44" href="$d3/dc7/a01170.html#a01083e6fa8585bbe6302affa302bd4d7" title="更新 编码器 位置信息" alt="" coords="571,774,742,815"/>
+<area shape="rect" id="node46" href="$d3/dc7/a01170.html#a41a95073fcd146be53bf16c5649b00b0" title="跨线程显示一帧图像 根据flg 参数不同选择不同的label 显示" alt="" coords="562,839,751,881"/>
+<area shape="rect" id="node34" href="$d0/d61/a01130.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="835,325,1004,352"/>
+<area shape="rect" id="node35" href="$d0/d61/a01130.html#a97f68664ea64cf379c2e35390a0b8ab3" title="Handles the open serial" alt="" coords="836,376,1003,403"/>
+<area shape="rect" id="node36" href="$d0/d61/a01130.html#ad4bdb6d6267f052b1768659da61d58c0" title="Handles the read data" alt="" coords="834,427,1005,453"/>
+<area shape="rect" id="node37" href="$d0/d61/a01130.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="837,477,1001,504"/>
+<area shape="rect" id="node38" href="$d0/d61/a01130.html#aa7833e90f2e6f7f6fb3a1b4e6ae908a1" title="Handles the timer described by t // 初始化时间" alt="" coords="862,528,977,555"/>
+<area shape="rect" id="node39" href="$d0/d61/a01130.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="845,579,993,605"/>
+<area shape="rect" id="node40" href="$d0/d61/a01130.html#a96e9f96c16f56bcbb4ed0945b0c69782" title="Slot write data // 将字符串写入到串口中去 判断是否输出的 hex 字符串" alt="" coords="844,629,995,656"/>
+<area shape="rect" id="node42" href="$da/d79/a01310.html#a5c14d3864b00d246bdff2b4b70a7c48c" title="默认 float 显示一位数据" alt="" coords="1098,723,1281,765"/>
+<area shape="rect" id="node45" href="$d3/dc7/a01170.html#a1ac8d28317aadd53446419ac8b353a82" title="将位置信息实时更新到界面的label 上" alt="" coords="823,781,1015,808"/>
+<area shape="rect" id="node47" href="$d9/dbb/a01186.html#a054256077ab572adcbad2c9c7e8db3e2" title="Shows the image" alt="" coords="842,833,997,874"/>
+<area shape="rect" id="node48" href="$d3/dc7/a01170.html#a5a14b694108bcb3279ef7d7560c51414" title="将一副图像显示在 设定的 Label 上" alt="" coords="808,899,1031,925"/>
+<area shape="rect" id="node50" href="$dc/d19/a01190.html#a2a5d6a071ffbe6f0f5727afc211b5fb9" title="Associates" alt="" coords="854,949,985,976"/>
+</map>

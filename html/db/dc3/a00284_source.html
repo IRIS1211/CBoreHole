@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_qt.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_time.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,357 +89,44 @@ $(document).ready(function(){initNavTree('db/dc3/a00284_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">utils_qt.cc</div>  </div>
+<div class="title">utils_time.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../db/dc3/a00284.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d7f/a00287.html">&#x202A;utils_qt.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QDir&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QDateTime&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QStorageInfo&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef UTILS_TIME_H_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define UTILS_TIME_H_</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#a5e322fd011b3f370c7cc4acfc2164d6b">   28</a></span>&#160;std::string <a class="code" href="../../d8/d01/a01410.html#a5e322fd011b3f370c7cc4acfc2164d6b">&#x202A;Utils_QT::DirBack</a>(<span class="keyword">const</span> std::string &amp; str)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 获取从后往前的 第一个/ 位置</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">size_t</span> index = str.find_last_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::string res;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// 如果最后一个字符 / 则删除之后重新计算/ 位置</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (index == str.size() - 1)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        res = str.substr(0, index + 1);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        index = res.find_last_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    res = res.substr(0, index + 1);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#af9b1fae65fc91319a7f2ee2fefb86799">   57</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d8/d01/a01410.html#af9b1fae65fc91319a7f2ee2fefb86799">&#x202A;Utils_QT::CheckDir</a>(<span class="keyword">const</span> std::string &amp;path, <span class="keywordtype">bool</span> create_ <span class="comment">/*= true*/</span>)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QString fullPath = QString::fromStdString(path);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QDir dir(fullPath);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (dir.exists())</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (create_)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> dir.mkpath(fullPath);    <span class="comment">//创建多级目录</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#a94fba8cb28c22aabd4ab602e200da40e">   86</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d8/d01/a01410.html#a94fba8cb28c22aabd4ab602e200da40e">&#x202A;Utils_QT::CheckFile</a>(<span class="keyword">const</span> std::string &amp;path, <span class="keywordtype">bool</span> create_ <span class="comment">/*= true*/</span>)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QString fileFullName = QString::fromStdString(path);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    QFileInfo fileInfo(fileFullName);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (fileInfo.isFile())</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span> (create_)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            ;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#a115723aab7f427158c71249f5c9de377">  113</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d01/a01410.html#a115723aab7f427158c71249f5c9de377">&#x202A;Utils_QT::ListAllDisk</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#a2d00b920acc10d1e96fd29853ebfe792">  130</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d8/d01/a01410.html#a2d00b920acc10d1e96fd29853ebfe792">&#x202A;Utils_QT::GetDiskOccupy</a>(<span class="keyword">const</span> std::string disk <span class="comment">/*= &quot;D&quot;*/</span>)</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">double</span> all = <a class="code" href="../../d8/d01/a01410.html#acb425a725353c07d525139ce1119ede2">&#x202A;GetDiskAll</a>(disk);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">double</span> used = all - <a class="code" href="../../d8/d01/a01410.html#aadd38da34770d4655265e234b0ed59cb">&#x202A;GetDiskFree</a>(disk);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> (1000 * used / all);   <span class="comment">// 计算占用的1000 值 </span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#acb425a725353c07d525139ce1119ede2">  150</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="../../d8/d01/a01410.html#acb425a725353c07d525139ce1119ede2">&#x202A;Utils_QT::GetDiskAll</a>(<span class="keyword">const</span> std::string disk <span class="comment">/*= &quot;D&quot;*/</span>)</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">//获取所有分区信息</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    QList&lt;QStorageInfo&gt; listDisks = QStorageInfo::mountedVolumes();</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">//枚举各个分区信息</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">int</span> nCount = listDisks.count();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nCount; i++)</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        QString <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = listDisks[i].rootPath();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>[0] == disk[0])</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">//分区的空间信息</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordtype">double</span> dblAllGB = 1.0 * listDisks[i].bytesTotal() / (1024 * 1024 * 1024);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keywordtype">double</span> dblFreeGB = 1.0 * listDisks[i].bytesFree() / (1024 * 1024 * 1024);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            UNREFERENCED_PARAMETER(dblFreeGB);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">return</span> dblAllGB;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> 0;   <span class="comment">// 如果没有找到一致的</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#aadd38da34770d4655265e234b0ed59cb">  183</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="../../d8/d01/a01410.html#aadd38da34770d4655265e234b0ed59cb">&#x202A;Utils_QT::GetDiskFree</a>(<span class="keyword">const</span> std::string disk <span class="comment">/*= &quot;D&quot;*/</span>)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">//获取所有分区信息</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    QList&lt;QStorageInfo&gt; listDisks = QStorageInfo::mountedVolumes();</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="comment">//枚举各个分区信息</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">int</span> nCount = listDisks.count();</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nCount; i++)</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        QString <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = listDisks[i].rootPath();</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>[0] == disk[0])</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="comment">//分区的空间信息</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordtype">double</span> dblAllGB = 1.0 * listDisks[i].bytesTotal() / (1024 * 1024 * 1024);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordtype">double</span> dblFreeGB = 1.0 * listDisks[i].bytesFree() / (1024 * 1024 * 1024);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            UNREFERENCED_PARAMETER(dblAllGB);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">return</span> dblFreeGB;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> 0;   <span class="comment">// 如果没有找到一致的</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#aca84499be1f513127b12f9d5b7ca11ef">  216</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="../../d8/d01/a01410.html#aca84499be1f513127b12f9d5b7ca11ef">&#x202A;Utils_QT::GetDiskUsed</a>(<span class="keyword">const</span> std::string disk <span class="comment">/*= &quot;D&quot;*/</span>)</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;{</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="comment">//获取所有分区信息</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    QList&lt;QStorageInfo&gt; listDisks = QStorageInfo::mountedVolumes();</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">//枚举各个分区信息</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">int</span> nCount = listDisks.count();</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nCount; i++)</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    {</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        QString <a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = listDisks[i].rootPath();</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>[0] == disk[0])</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="comment">//分区的空间信息</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordtype">double</span> dblAllGB = 1.0 * listDisks[i].bytesTotal() / (1024 * 1024 * 1024);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordtype">double</span> dblFreeGB = 1.0 * listDisks[i].bytesFree() / (1024 * 1024 * 1024);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordflow">return</span> dblAllGB - dblFreeGB;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">return</span> 0;   <span class="comment">// 如果没有找到一致的</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a">  250</a></span>&#160;QByteArray <a class="code" href="../../d8/d01/a01410.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a">&#x202A;Utils_QT::Str2QByteArray</a>(<span class="keyword">const</span> std::string &amp;str, <span class="keywordtype">int</span> flg_space)</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;{</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">size_t</span> n = str.size();</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">if</span> (n &lt; 2) <span class="keywordflow">return</span> QByteArray();</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    QByteArray res;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">if</span> (flg_space)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        res.resize(static_cast&lt;int&gt;((n + 1) / 3));</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ((n + 1) / 3); i++)</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            res[i] = <a class="code" href="../../d8/df1/a01414.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f">&#x202A;Utils_String::Hex2Uchar</a>(str.substr(static_cast&lt;size_t&gt;(i * 3), 2));</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        res = QByteArray::fromHex(QByteArray::fromStdString(str));</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#a7520153e28f1b4b72929dfd6b576ba35">  284</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d8/d01/a01410.html#a7520153e28f1b4b72929dfd6b576ba35">&#x202A;Utils_QT::ReleaseThread</a>(QThread *qthread)</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;{</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">if</span> (qthread == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        qthread-&gt;requestInterruption();</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        qthread-&gt;quit();</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        qthread-&gt;wait();</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keyword">delete</span> qthread;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e)</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Thread Quit Error!&quot;</span> &lt;&lt; e.what();</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#a4d10805fc4c80c6466c36d4d4e4b5c1a">  325</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d8/d01/a01410.html#a4d10805fc4c80c6466c36d4d4e4b5c1a">&#x202A;Utils_QT::ShowImageOnLable</a>(<span class="keyword">const</span> cv::Mat &amp;srcImg, QLabel *lb_label, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height)</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">// tCamProc-&gt;procMutex.lock(); // 处理线程  锁定</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// #TODO(SChen): 寻找减少转换的方案</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">// 首先根据label 大小 缩放对应的图像</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    Q_ASSERT(srcImg.rows != 0);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    cv::Mat tmp_img;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="comment">// 进行 图像缩放 进行进一步尺寸限制</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="comment">// LDebug(&quot;start resize Image {}!&quot;,img_cnt);</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="comment">// #FIXME 解决图像缩放问题</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="comment">// float src_ratio = (float)srcImg.rows / srcImg.cols;</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        LDebug(<span class="stringliteral">&quot;Show Image On Lable Resize Start!&quot;</span>);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        cv::resize(srcImg, tmp_img, cv::Size(width, height));</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="comment">// tmp_show_img = srcImg(cv::Rect(0, 0, width, height));</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="comment">// LDebug(&quot;end Image{}&quot;, img_cnt);</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="comment">// tmp_show_img = srcImg;</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        LError(<span class="stringliteral">&quot;resize Error!&quot;</span>);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">// 将原始图像转换成 QImage</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    QImage img = <a class="code" href="../../d6/d2f/a01394.html#a988f9de91b15040f5376a6d3b33d108b">&#x202A;Utils_CV::CvMat2QImage</a>(&amp;tmp_img);</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="comment">// 将QImage 转换成 QPixmap</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    QPixmap pixmap = QPixmap::fromImage(img);</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="comment">// 在相应的lable 上 显示图片</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="comment">// pixmap.scaled(QSize(lb_label-&gt;width(),lb_label-&gt;height ()));</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="comment">// lb_label-&gt;setScaledContents(true);</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    lb_label-&gt;setPixmap(pixmap);</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#a5c14d3864b00d246bdff2b4b70a7c48c">  377</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d01/a01410.html#a5c14d3864b00d246bdff2b4b70a7c48c">&#x202A;Utils_QT::RenderNumberOnLabel</a>(QLabel *label, <span class="keywordtype">float</span> num)</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;{</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    label-&gt;setText(QString::number(num, <span class="charliteral">&#39;f&#39;</span>, 1));</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;}</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
-<div class="line"><a name="l00393"></a><span class="lineno"><a class="line" href="../../d8/d01/a01410.html#a8665c6075ec683d61ee20f1fbb348c14">  393</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d8/d01/a01410.html#a5c14d3864b00d246bdff2b4b70a7c48c">&#x202A;Utils_QT::RenderNumberOnLabel</a>(QLabel * label, <span class="keywordtype">int</span> num)</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;{</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    label-&gt;setText(QString::number(num));</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;}</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#define GB (1024*1024*1024)</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
-<div class="line"><a name="l00428"></a><span class="lineno"><a class="line" href="../../db/dc3/a00284.html#a2fa06e07e6a6dd1740cbc879aced80d1">  428</a></span>&#160;quint64 <a class="code" href="../../db/dc3/a00284.html#a2fa06e07e6a6dd1740cbc879aced80d1">&#x202A;getDiskSpace</a>(QString iDriver, <span class="keywordtype">bool</span> flag)</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;{</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="comment">//iDriver为盘符(例如&quot;C\&quot;),flag为true则求磁盘总容量，为false则求磁盘剩余容量</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    LPCWSTR strDriver = reinterpret_cast&lt;LPCWSTR&gt;(iDriver.utf16());</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    ULARGE_INTEGER freeDiskSpaceAvailable, totalDiskSpace, totalFreeDiskSpace;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="comment">//调用函数获取磁盘参数(单位为字节Byte),转化为GB，需要除以(1024*1024*1024)</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    GetDiskFreeSpaceEx(strDriver, &amp;freeDiskSpaceAvailable, &amp;totalDiskSpace, &amp;totalFreeDiskSpace);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">if</span> (flag)</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    {</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;quint64&gt;(totalDiskSpace.QuadPart / GB);</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    }</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    {</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;quint64&gt;(totalFreeDiskSpace.QuadPart / GB);</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    }</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;}</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
-<div class="line"><a name="l00457"></a><span class="lineno"><a class="line" href="../../db/dc3/a00284.html#a3c32b3164adb610ebd071218bb4c388a">  457</a></span>&#160;QStringList <a class="code" href="../../db/dc3/a00284.html#a3c32b3164adb610ebd071218bb4c388a">&#x202A;getDiskName</a>()</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;{</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    QFileInfoList list = QDir::drives();</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    QStringList diskNameList(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; list.count(); i++)</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    {</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160; </div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        QString str = list.at(i).absoluteDir().absolutePath();</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        diskNameList.append(str);</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    }</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="keywordflow">return</span> diskNameList;</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;}</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
-<div class="line"><a name="l00482"></a><span class="lineno"><a class="line" href="../../db/dc3/a00284.html#a09f96a1e0ee1aead4df603983e3176b2">  482</a></span>&#160;std::string <a class="code" href="../../db/dc3/a00284.html#a09f96a1e0ee1aead4df603983e3176b2">&#x202A;getDiskOccupy</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;{</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    QStringList diskList = <a class="code" href="../../db/dc3/a00284.html#a3c32b3164adb610ebd071218bb4c388a">&#x202A;getDiskName</a>();</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    QString diskCur = QDir::currentPath().left(1);  <span class="comment">// 获取最左侧的字符 一般是 盘符</span></div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    quint64 totalSpace = <a class="code" href="../../db/dc3/a00284.html#a2fa06e07e6a6dd1740cbc879aced80d1">&#x202A;getDiskSpace</a>(diskCur, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    quint64 freeSpace = <a class="code" href="../../db/dc3/a00284.html#a2fa06e07e6a6dd1740cbc879aced80d1">&#x202A;getDiskSpace</a>(diskCur, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160; </div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keywordtype">char</span> res[20];</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    sprintf(res, <span class="stringliteral">&quot;%d / %d&quot;</span>, static_cast&lt;int&gt;(freeSpace / 0.1f), static_cast&lt;int&gt;(totalSpace / 0.1f));</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keywordflow">return</span> std::string(res);</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160; </div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;}</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
-<div class="line"><a name="l00511"></a><span class="lineno"><a class="line" href="../../db/dc3/a00284.html#a5045aaf43064e14071d15a206ea85fb3">  511</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../db/dc3/a00284.html#a5045aaf43064e14071d15a206ea85fb3">&#x202A;GetSysDisk</a>(<span class="keywordtype">int</span>&amp; nDiskTotal, <span class="keywordtype">int</span>&amp; nDiskUsed)</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;{</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> path[_MAX_PATH];<span class="comment">//存储当前系统存在的盘符</span></div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                                <span class="comment">// int curdrive = _getdrive();</span></div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lFreeAll = 0UL;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> lTotalAll = 0UL;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> drive = 1; drive &lt;= 26; drive++)<span class="comment">//遍历所有盘符</span></div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    {</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="keywordflow">if</span> (!_chdrive(drive))</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        {</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            sprintf(path, <span class="stringliteral">&quot;%c:\\&quot;</span>, drive + <span class="charliteral">&#39;A&#39;</span> - 1);</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            ULARGE_INTEGER caller, total, free;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            WCHAR wszClassName[_MAX_PATH];</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;            memset(wszClassName, 0, <span class="keyword">sizeof</span>(wszClassName));</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;            MultiByteToWideChar(CP_ACP, 0, path, static_cast&lt;int&gt;(strlen(path) + 1), wszClassName,</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;                                <span class="keyword">sizeof</span>(wszClassName) / <span class="keyword">sizeof</span>(wszClassName[0]));</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;            <span class="keywordflow">if</span> (GetDiskFreeSpaceEx(wszClassName, &amp;caller, &amp;total, &amp;free) == 0)</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;            {</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                qDebug() &lt;&lt; <span class="stringliteral">&quot;GetDiskFreeSpaceEx Filed!&quot;</span>;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;            }</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160; </div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;            <span class="keywordtype">double</span> dTepFree = free.QuadPart / (1024.0*1024.0);</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;            <span class="keywordtype">double</span> dTepTotal = total.QuadPart / (1024.0*1024.0);</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;            <span class="comment">//qDebug()&lt;&lt;&quot;Get Windows Disk Information:&quot;&lt;&lt;path&lt;&lt;&quot;--free:&quot;&lt;&lt;dTepFree&lt;&lt;&quot;--total:&quot;&lt;&lt;dTepTotal;</span></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;            lFreeAll += static_cast&lt;unsigned long&gt;(ceil(dTepFree));</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;            lTotalAll += static_cast&lt;unsigned long&gt;(ceil(dTepTotal));</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        }</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    }</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    nDiskUsed = static_cast&lt;int&gt;(lFreeAll);</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    nDiskTotal = static_cast&lt;int&gt;(lTotalAll);</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;}</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160; </div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d6/dfa/a01318.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/dfa/a01318.html">&#x202A;Utils_Time</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="../../d6/dfa/a01318.html#aa78dd00ccf89801b7fde76113bb5281e">&#x202A;CalcPeriodMs</a>(<span class="keywordtype">int</span> flg = 0, std::string str = <span class="stringliteral">&quot;funcPeroidMS&quot;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="../../d6/dfa/a01318.html#ac5d31743c8d57b5a70caa94b55356477">&#x202A;CalcPeriodFps</a>(<span class="keywordtype">int</span> flg = 0, std::string str = <span class="stringliteral">&quot;funcPeroidFPS&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d6/dfa/a01318.html#a8fc80e6d8ee244ed6a5a49d7527de6d5">&#x202A;GetTime</a>(<span class="keywordtype">char</span> c = <span class="charliteral">&#39;_&#39;</span>, <span class="keywordtype">bool</span> rand_flg = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="../../d6/dfa/a01318.html#aacca407ae262280a9ade27ac4d16a98c">&#x202A;GetDate</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif  //UTILS_TIME_H_</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00284_html_a09f96a1e0ee1aead4df603983e3176b2"><div class="ttname"><a href="../../db/dc3/a00284.html#a09f96a1e0ee1aead4df603983e3176b2">&#x202A;getDiskOccupy</a></div><div class="ttdeci">&#x202A;std::string getDiskOccupy(void)</div><div class="ttdoc">&#x202A;获取本磁盘的占用</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00482">utils_qt.cc:482</a></div></div>
-<div class="ttc" id="aa00131_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../d7/d06/a00131.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d06/a00131_source.html#l00037">QImgLabel.cc:37</a></div></div>
-<div class="ttc" id="aa01410_html_a2d00b920acc10d1e96fd29853ebfe792"><div class="ttname"><a href="../../d8/d01/a01410.html#a2d00b920acc10d1e96fd29853ebfe792">&#x202A;Utils_QT::GetDiskOccupy</a></div><div class="ttdeci">&#x202A;static int GetDiskOccupy(const std::string disk=DEFAULT_DISK)</div><div class="ttdoc">&#x202A;Gets disk occupy</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00130">utils_qt.cc:130</a></div></div>
-<div class="ttc" id="aa00287_html"><div class="ttname"><a href="../../d6/d7f/a00287.html">&#x202A;utils_qt.h</a></div><div class="ttdoc">&#x202A;有关Qt的 通用组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01410_html_af9b1fae65fc91319a7f2ee2fefb86799"><div class="ttname"><a href="../../d8/d01/a01410.html#af9b1fae65fc91319a7f2ee2fefb86799">&#x202A;Utils_QT::CheckDir</a></div><div class="ttdeci">&#x202A;static bool CheckDir(const std::string &amp;path, bool create_=true)</div><div class="ttdoc">&#x202A;判断文件夹是否存在如果存在 根据情况判断是否创建</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00057">utils_qt.cc:57</a></div></div>
-<div class="ttc" id="aa01394_html_a988f9de91b15040f5376a6d3b33d108b"><div class="ttname"><a href="../../d6/d2f/a01394.html#a988f9de91b15040f5376a6d3b33d108b">&#x202A;Utils_CV::CvMat2QImage</a></div><div class="ttdeci">&#x202A;static QImage CvMat2QImage(const cv::Mat *mat)</div><div class="ttdoc">&#x202A;将opencv mat 转换成 QT image</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00260_source.html#l00487">utils_cv.cc:487</a></div></div>
-<div class="ttc" id="aa01410_html_a4d10805fc4c80c6466c36d4d4e4b5c1a"><div class="ttname"><a href="../../d8/d01/a01410.html#a4d10805fc4c80c6466c36d4d4e4b5c1a">&#x202A;Utils_QT::ShowImageOnLable</a></div><div class="ttdeci">&#x202A;static bool ShowImageOnLable(const cv::Mat &amp;srcImg, QLabel *lb_label, int width, int height)</div><div class="ttdoc">&#x202A;Shows the image on lable</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00325">utils_qt.cc:325</a></div></div>
-<div class="ttc" id="aa01410_html_a115723aab7f427158c71249f5c9de377"><div class="ttname"><a href="../../d8/d01/a01410.html#a115723aab7f427158c71249f5c9de377">&#x202A;Utils_QT::ListAllDisk</a></div><div class="ttdeci">&#x202A;static void ListAllDisk(void)</div><div class="ttdoc">&#x202A;List all disk 列出所有磁盘的信息</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00113">utils_qt.cc:113</a></div></div>
-<div class="ttc" id="aa01410_html_a5e322fd011b3f370c7cc4acfc2164d6b"><div class="ttname"><a href="../../d8/d01/a01410.html#a5e322fd011b3f370c7cc4acfc2164d6b">&#x202A;Utils_QT::DirBack</a></div><div class="ttdeci">&#x202A;static std::string DirBack(const std::string &amp;str)</div><div class="ttdoc">&#x202A;文件夹后退一层</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00028">utils_qt.cc:28</a></div></div>
-<div class="ttc" id="aa01410_html_a5c14d3864b00d246bdff2b4b70a7c48c"><div class="ttname"><a href="../../d8/d01/a01410.html#a5c14d3864b00d246bdff2b4b70a7c48c">&#x202A;Utils_QT::RenderNumberOnLabel</a></div><div class="ttdeci">&#x202A;static void RenderNumberOnLabel(QLabel *label, float num)</div><div class="ttdoc">&#x202A;默认 float 显示一位数据</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00377">utils_qt.cc:377</a></div></div>
-<div class="ttc" id="aa01410_html_a7520153e28f1b4b72929dfd6b576ba35"><div class="ttname"><a href="../../d8/d01/a01410.html#a7520153e28f1b4b72929dfd6b576ba35">&#x202A;Utils_QT::ReleaseThread</a></div><div class="ttdeci">&#x202A;static bool ReleaseThread(QThread *qthread)</div><div class="ttdoc">&#x202A;停止进程并同时 删除对象 // 循环进程 使用 isInterruptionRequested 做while 循环条件 避免 无法退出 https://blog.csdn....</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00284">utils_qt.cc:284</a></div></div>
-<div class="ttc" id="aa01410_html_a2d2476fd8c1a5ab09328ccb1d7e13b2a"><div class="ttname"><a href="../../d8/d01/a01410.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a">&#x202A;Utils_QT::Str2QByteArray</a></div><div class="ttdeci">&#x202A;static QByteArray Str2QByteArray(const std::string &amp;str, int flg_space=1)</div><div class="ttdoc">&#x202A;2 q byte array</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00250">utils_qt.cc:250</a></div></div>
-<div class="ttc" id="aa00284_html_a5045aaf43064e14071d15a206ea85fb3"><div class="ttname"><a href="../../db/dc3/a00284.html#a5045aaf43064e14071d15a206ea85fb3">&#x202A;GetSysDisk</a></div><div class="ttdeci">&#x202A;bool GetSysDisk(int &amp;nDiskTotal, int &amp;nDiskUsed)</div><div class="ttdoc">&#x202A;Gets system disk</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00511">utils_qt.cc:511</a></div></div>
-<div class="ttc" id="aa01410_html_aadd38da34770d4655265e234b0ed59cb"><div class="ttname"><a href="../../d8/d01/a01410.html#aadd38da34770d4655265e234b0ed59cb">&#x202A;Utils_QT::GetDiskFree</a></div><div class="ttdeci">&#x202A;static double GetDiskFree(const std::string disk=DEFAULT_DISK)</div><div class="ttdoc">&#x202A;Gets disk free</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00183">utils_qt.cc:183</a></div></div>
-<div class="ttc" id="aa01410_html_a94fba8cb28c22aabd4ab602e200da40e"><div class="ttname"><a href="../../d8/d01/a01410.html#a94fba8cb28c22aabd4ab602e200da40e">&#x202A;Utils_QT::CheckFile</a></div><div class="ttdeci">&#x202A;static bool CheckFile(const std::string &amp;path, bool create_=true)</div><div class="ttdoc">&#x202A;Query if 'file' is file exist 判断文件是否存在后 根据 flg 新建</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00086">utils_qt.cc:86</a></div></div>
-<div class="ttc" id="aa00284_html_a3c32b3164adb610ebd071218bb4c388a"><div class="ttname"><a href="../../db/dc3/a00284.html#a3c32b3164adb610ebd071218bb4c388a">&#x202A;getDiskName</a></div><div class="ttdeci">&#x202A;QStringList getDiskName()</div><div class="ttdoc">&#x202A;获取电脑所有盘符名</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00457">utils_qt.cc:457</a></div></div>
-<div class="ttc" id="aa01410_html_aca84499be1f513127b12f9d5b7ca11ef"><div class="ttname"><a href="../../d8/d01/a01410.html#aca84499be1f513127b12f9d5b7ca11ef">&#x202A;Utils_QT::GetDiskUsed</a></div><div class="ttdeci">&#x202A;static double GetDiskUsed(const std::string disk=DEFAULT_DISK)</div><div class="ttdoc">&#x202A;Gets disk used</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00216">utils_qt.cc:216</a></div></div>
-<div class="ttc" id="aa00284_html_a2fa06e07e6a6dd1740cbc879aced80d1"><div class="ttname"><a href="../../db/dc3/a00284.html#a2fa06e07e6a6dd1740cbc879aced80d1">&#x202A;getDiskSpace</a></div><div class="ttdeci">&#x202A;quint64 getDiskSpace(QString iDriver, bool flag)</div><div class="ttdoc">&#x202A;获取磁盘容量</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00428">utils_qt.cc:428</a></div></div>
-<div class="ttc" id="aa01414_html_a9c65f3ca9342a3ef5b8d91a5e9e0353f"><div class="ttname"><a href="../../d8/df1/a01414.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f">&#x202A;Utils_String::Hex2Uchar</a></div><div class="ttdeci">&#x202A;static uchar Hex2Uchar(const std::string &amp;str)</div><div class="ttdoc">&#x202A;Hexadecimal 2 uchar 将两个 hex 字符 转换成 0-256</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00466">utils_string.cc:466</a></div></div>
-<div class="ttc" id="aa01410_html_acb425a725353c07d525139ce1119ede2"><div class="ttname"><a href="../../d8/d01/a01410.html#acb425a725353c07d525139ce1119ede2">&#x202A;Utils_QT::GetDiskAll</a></div><div class="ttdeci">&#x202A;static double GetDiskAll(const std::string disk=DEFAULT_DISK)</div><div class="ttdoc">&#x202A;Gets disk all</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00150">utils_qt.cc:150</a></div></div>
+<div class="ttc" id="aa01318_html_aacca407ae262280a9ade27ac4d16a98c"><div class="ttname"><a href="../../d6/dfa/a01318.html#aacca407ae262280a9ade27ac4d16a98c">&#x202A;Utils_Time::GetDate</a></div><div class="ttdeci">&#x202A;static std::string GetDate(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00135">utils_time.cc:135</a></div></div>
+<div class="ttc" id="aa01318_html_ac5d31743c8d57b5a70caa94b55356477"><div class="ttname"><a href="../../d6/dfa/a01318.html#ac5d31743c8d57b5a70caa94b55356477">&#x202A;Utils_Time::CalcPeriodFps</a></div><div class="ttdeci">&#x202A;static float CalcPeriodFps(int flg=0, std::string str=&quot;funcPeroidFPS&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00062">utils_time.cc:62</a></div></div>
+<div class="ttc" id="aa01318_html"><div class="ttname"><a href="../../d6/dfa/a01318.html">&#x202A;Utils_Time</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc3/a00284_source.html#l00020">utils_time.h:20</a></div></div>
+<div class="ttc" id="aa01318_html_a8fc80e6d8ee244ed6a5a49d7527de6d5"><div class="ttname"><a href="../../d6/dfa/a01318.html#a8fc80e6d8ee244ed6a5a49d7527de6d5">&#x202A;Utils_Time::GetTime</a></div><div class="ttdeci">&#x202A;static std::string GetTime(char c='_', bool rand_flg=false)</div><div class="ttdoc">&#x202A;Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00098">utils_time.cc:98</a></div></div>
+<div class="ttc" id="aa01318_html_aa78dd00ccf89801b7fde76113bb5281e"><div class="ttname"><a href="../../d6/dfa/a01318.html#aa78dd00ccf89801b7fde76113bb5281e">&#x202A;Utils_Time::CalcPeriodMs</a></div><div class="ttdeci">&#x202A;static float CalcPeriodMs(int flg=0, std::string str=&quot;funcPeroidMS&quot;)</div><div class="ttdoc">&#x202A;计算经过的 时间 ms 单位</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00029">utils_time.cc:29</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../db/dc3/a00284.html">&#x202A;utils_qt.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../db/dc3/a00284.html">&#x202A;utils_time.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

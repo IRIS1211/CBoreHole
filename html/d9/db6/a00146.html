@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/common.cc 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/readwindow.cc 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -88,258 +88,26 @@ $(document).ready(function(){initNavTree('d9/db6/a00146.html','../../');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">函数</a>  </div>
   <div class="headertitle">
-<div class="title">common.cc 文件参考</div>  </div>
+<div class="title">readwindow.cc 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>&#x202A;Readwindow class @changelog 2019/11/5 IRIS_Chen Created.  
+<a href="#details">更多...</a></p>
+
 <p><a href="../../d9/db6/a00146_source.html">浏览源代码.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-函数</h2></td></tr>
-<tr class="memitem:a0dd08ab91977a2738f33adbd7e8306b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db6/a00146.html#a0dd08ab91977a2738f33adbd7e8306b2">AddImageInfo</a> (cv::Mat &amp;img)</td></tr>
-<tr class="memdesc:a0dd08ab91977a2738f33adbd7e8306b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Adds an image information // 在原始图像上添加相应 图形 来标识 图像  <a href="../../d9/db6/a00146.html#a0dd08ab91977a2738f33adbd7e8306b2">更多...</a><br /></td></tr>
-<tr class="separator:a0dd08ab91977a2738f33adbd7e8306b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7df8e9072eb05862471c2fc24f4f5ce"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db6/a00146.html#ad7df8e9072eb05862471c2fc24f4f5ce">ComProtEncode</a> (const std::string &amp;str)</td></tr>
-<tr class="memdesc:ad7df8e9072eb05862471c2fc24f4f5ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 '#' 后缀 '*'  <a href="../../d9/db6/a00146.html#ad7df8e9072eb05862471c2fc24f4f5ce">更多...</a><br /></td></tr>
-<tr class="separator:ad7df8e9072eb05862471c2fc24f4f5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af384f4673c5a034cd96544569651638e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db6/a00146.html#af384f4673c5a034cd96544569651638e">ComProtDecode</a> (const std::string &amp;str)</td></tr>
-<tr class="memdesc:af384f4673c5a034cd96544569651638e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;直接 取 1- (size-4)的长度的值 计算结果看看是否匹配 然后返回  <a href="../../d9/db6/a00146.html#af384f4673c5a034cd96544569651638e">更多...</a><br /></td></tr>
-<tr class="separator:af384f4673c5a034cd96544569651638e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">函数说明</h2>
-<a id="a0dd08ab91977a2738f33adbd7e8306b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dd08ab91977a2738f33adbd7e8306b2">&#9670;&nbsp;</a></span>AddImageInfo()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p class="DocNodeLTR">Readwindow class @changelog 2019/11/5 IRIS_Chen Created. </p>
+<dl class="section copyright DocNodeLTR"><dt>版权所有</dt><dd>&#x202A;Copyright (c) 2019 IRIS_Chen IRIS Lab </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AddImageInfo </td>
-          <td>(</td>
-          <td class="paramtype">cv::Mat &amp;&#160;</td>
-          <td class="paramname"><em>img</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;Adds an image information // 在原始图像上添加相应 图形 来标识 图像 </p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;bool </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d9/db6/a00146_source.html">common.cc</a> 第 <a class="el" href="../../d9/db6/a00146_source.html#l00013">13</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d5/d16/a01154.html#da/dfb/a01174">&#x202A;RunPara::StImage::StImagePolar</a> *polar_para = &amp;(<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="comment">// 画出来 内外圆</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        cv::circle(img, </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                             polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>),</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                   polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#aaa0951944900aab9f998b309431fcd90">&#x202A;nImgMinR</a>, </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                   cv::Scalar(0, 255, 0), </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                   4);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        cv::circle(img, </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                             polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                   polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;nImgMaxR</a>, </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                   cv::Scalar(0, 255, 0), </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                   4);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// 划出来 圆心</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        cv::circle(img, </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                   cv::Point(polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                             polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                   8, </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                   cv::Scalar(255, 0, 0), </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                   -1);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// 画出 分割线 标识 展开的起点</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        cv::arrowedLine(img,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                 cv::Point(polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                           polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a>), </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                 cv::Point(polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;nImgCenterX</a>, </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                           polar_para-&gt;<a class="code" href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;nImgCenterY</a> + 540), </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                 cv::Scalar(255, 0, 0), </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                 2);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span>  <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d9/db6/a00146_a0dd08ab91977a2738f33adbd7e8306b2_icgraph.png" border="0" usemap="#d9/db6/a00146_a0dd08ab91977a2738f33adbd7e8306b2_icgraph" alt=""/></div>
-<map name="d9/db6/a00146_a0dd08ab91977a2738f33adbd7e8306b2_icgraph" id="d9/db6/a00146_a0dd08ab91977a2738f33adbd7e8306b2_icgraph">
-<area shape="rect" title="Adds an image information // 在原始图像上添加相应 图形 来标识 图像" alt="" coords="736,42,836,69"/>
-<area shape="rect" href="../../da/d00/a01270.html#a14c17111de0cbe2903eee9ab0f388e53" title="单次预览和连续预览" alt="" coords="489,5,674,47"/>
-<area shape="rect" href="../../da/d00/a01270.html#a89c4f17fbaeaba0884d96a9932973256" title="Slot show camera" alt="" coords="475,71,688,98"/>
-<area shape="rect" href="../../da/d00/a01270.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,42,427,69"/>
-<area shape="rect" href="../../da/d00/a01270.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,42,168,69"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="af384f4673c5a034cd96544569651638e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af384f4673c5a034cd96544569651638e">&#9670;&nbsp;</a></span>ComProtDecode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string ComProtDecode </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;直接 取 1- (size-4)的长度的值 计算结果看看是否匹配 然后返回 </p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/12/24</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d9/db6/a00146_source.html">common.cc</a> 第 <a class="el" href="../../d9/db6/a00146_source.html#l00087">87</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (str.size() &lt; 4)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::string res = str.substr(1, str.size() - 4);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// 加密结果应该一致</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d9/db6/a00146.html#ad7df8e9072eb05862471c2fc24f4f5ce">&#x202A;ComProtEncode</a>(res) != str)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d9/db6/a00146_af384f4673c5a034cd96544569651638e_cgraph.png" border="0" usemap="#d9/db6/a00146_af384f4673c5a034cd96544569651638e_cgraph" alt=""/></div>
-<map name="d9/db6/a00146_af384f4673c5a034cd96544569651638e_cgraph" id="d9/db6/a00146_af384f4673c5a034cd96544569651638e_cgraph">
-<area shape="rect" title="直接 取 1&#45; (size&#45;4)的长度的值 计算结果看看是否匹配 然后返回" alt="" coords="5,13,123,39"/>
-<area shape="rect" href="../../d9/db6/a00146.html#ad7df8e9072eb05862471c2fc24f4f5ce" title="参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 &#39;#&#39; 后缀 &#39;*&#39;" alt="" coords="171,13,288,39"/>
-<area shape="rect" href="../../d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08" title="异或校验 8位 避免出现 0 数据造成的 截至" alt="" coords="336,5,479,47"/>
-</map>
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d9/db6/a00146_af384f4673c5a034cd96544569651638e_icgraph.png" border="0" usemap="#d9/db6/a00146_af384f4673c5a034cd96544569651638e_icgraph" alt=""/></div>
-<map name="d9/db6/a00146_af384f4673c5a034cd96544569651638e_icgraph" id="d9/db6/a00146_af384f4673c5a034cd96544569651638e_icgraph">
-<area shape="rect" title="直接 取 1&#45; (size&#45;4)的长度的值 计算结果看看是否匹配 然后返回" alt="" coords="151,5,268,32"/>
-<area shape="rect" href="../../d5/df1/a00206.html#a8e3ffd931526850976fd8de6062acaad" title=" " alt="" coords="5,5,103,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad7df8e9072eb05862471c2fc24f4f5ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7df8e9072eb05862471c2fc24f4f5ce">&#9670;&nbsp;</a></span>ComProtEncode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string ComProtEncode </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 '#' 后缀 '*' </p>
-<ul class="DocNodeLTR">
-<li>&#x202A;然后加入 8位异或校验 最后加上 /n/r</li>
-</ul>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/12/24</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string</dd></dl>
-<ul class="DocNodeLTR">
-<li>&#x202A;然后加入 8位异或校验 最后加上 /n/r <br  />
- </li>
-</ul>
-<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md0"></a>
-* 只做分割, 不参与运算</h1>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/12/24</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d9/db6/a00146_source.html">common.cc</a> 第 <a class="el" href="../../d9/db6/a00146_source.html#l00065">65</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// buffer =(uchar*) Utils_String::String2CharArr(res);</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> xor = <a class="code" href="../../d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08">&#x202A;Utils_String::Commu_CheckXOR</a>(str);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 生成两位小写 字符放在末尾, 用于 校验字符</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::string res = <span class="charliteral">&#39;#&#39;</span> + str + <span class="charliteral">&#39;*&#39;</span> + Utils_String::Uchar2Hex(xor, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d9/db6/a00146_ad7df8e9072eb05862471c2fc24f4f5ce_cgraph.png" border="0" usemap="#d9/db6/a00146_ad7df8e9072eb05862471c2fc24f4f5ce_cgraph" alt=""/></div>
-<map name="d9/db6/a00146_ad7df8e9072eb05862471c2fc24f4f5ce_cgraph" id="d9/db6/a00146_ad7df8e9072eb05862471c2fc24f4f5ce_cgraph">
-<area shape="rect" title="参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 &#39;#&#39; 后缀 &#39;*&#39;" alt="" coords="5,13,123,39"/>
-<area shape="rect" href="../../d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08" title="异或校验 8位 避免出现 0 数据造成的 截至" alt="" coords="171,5,313,47"/>
-</map>
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d9/db6/a00146_ad7df8e9072eb05862471c2fc24f4f5ce_icgraph.png" border="0" usemap="#d9/db6/a00146_ad7df8e9072eb05862471c2fc24f4f5ce_icgraph" alt=""/></div>
-<map name="d9/db6/a00146_ad7df8e9072eb05862471c2fc24f4f5ce_icgraph" id="d9/db6/a00146_ad7df8e9072eb05862471c2fc24f4f5ce_icgraph">
-<area shape="rect" title="参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 &#39;#&#39; 后缀 &#39;*&#39;" alt="" coords="316,31,433,57"/>
-<area shape="rect" href="../../d9/db6/a00146.html#af384f4673c5a034cd96544569651638e" title="直接 取 1&#45; (size&#45;4)的长度的值 计算结果看看是否匹配 然后返回" alt="" coords="151,5,268,32"/>
-<area shape="rect" href="../../d5/df1/a00206.html#a8e3ffd931526850976fd8de6062acaad" title=" " alt="" coords="5,31,103,57"/>
-</map>
-</div>
-
-</div>
-</div>
-</div><!-- contents -->
+<p class="definition">在文件 <a class="el" href="../../d9/db6/a00146_source.html">readwindow.cc</a> 中定义.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01154_html_da/dfb/a01174"><div class="ttname"><a href="../../d5/d16/a01154.html#da/dfb/a01174">&#x202A;RunPara::StImage::StImagePolar</a></div><div class="ttdoc">&#x202A;Image 处理参数, 作为图像展开参数</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00110">runpara.h:110</a></div></div>
-<div class="ttc" id="aa01154_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../d5/d16/a01154.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
-<div class="ttc" id="aa01154_html_a7e46989d0421ca554f06927f2c28b99a"><div class="ttname"><a href="../../d5/d16/a01154.html#a7e46989d0421ca554f06927f2c28b99a">&#x202A;RunPara::StImage::StImagePolar::nImgMaxR</a></div><div class="ttdeci">&#x202A;int nImgMaxR</div><div class="ttdoc">&#x202A;外径 最大范围</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00114">runpara.h:114</a></div></div>
-<div class="ttc" id="aa01154_html_aaa0951944900aab9f998b309431fcd90"><div class="ttname"><a href="../../d5/d16/a01154.html#aaa0951944900aab9f998b309431fcd90">&#x202A;RunPara::StImage::StImagePolar::nImgMinR</a></div><div class="ttdeci">&#x202A;int nImgMinR</div><div class="ttdoc">&#x202A;内径</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00115">runpara.h:115</a></div></div>
-<div class="ttc" id="aa01154_html_a76b56f70107ff342985f6d8bef2fa3ba"><div class="ttname"><a href="../../d5/d16/a01154.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;RunPara::StImage::Polar</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage::StImagePolar Polar</div></div>
-<div class="ttc" id="aa00146_html_ad7df8e9072eb05862471c2fc24f4f5ce"><div class="ttname"><a href="../../d9/db6/a00146.html#ad7df8e9072eb05862471c2fc24f4f5ce">&#x202A;ComProtEncode</a></div><div class="ttdeci">&#x202A;std::string ComProtEncode(const std::string &amp;str)</div><div class="ttdoc">&#x202A;参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 '#' 后缀 '*'</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db6/a00146_source.html#l00065">common.cc:65</a></div></div>
-<div class="ttc" id="aa00062_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00020">main.cpp:20</a></div></div>
-<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00026">Commu.h:26</a></div></div>
-<div class="ttc" id="aa01154_html_a1f8c6937a5479cf7be87ec579c92ae0b"><div class="ttname"><a href="../../d5/d16/a01154.html#a1f8c6937a5479cf7be87ec579c92ae0b">&#x202A;RunPara::StImage::StImagePolar::nImgCenterX</a></div><div class="ttdeci">&#x202A;int nImgCenterX</div><div class="ttdoc">&#x202A;中心 X 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00112">runpara.h:112</a></div></div>
-<div class="ttc" id="aa01118_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">Config.h:34</a></div></div>
-<div class="ttc" id="aa01154_html_a32a897b4e7267880e0487ccfa093f0b1"><div class="ttname"><a href="../../d5/d16/a01154.html#a32a897b4e7267880e0487ccfa093f0b1">&#x202A;RunPara::StImage::StImagePolar::nImgCenterY</a></div><div class="ttdeci">&#x202A;int nImgCenterY</div><div class="ttdoc">&#x202A;中心 Y 座标</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00113">runpara.h:113</a></div></div>
-<div class="ttc" id="aa01414_html_a37ab93c514c781bbb21d4360f8be5b08"><div class="ttname"><a href="../../d8/df1/a01414.html#a37ab93c514c781bbb21d4360f8be5b08">&#x202A;Utils_String::Commu_CheckXOR</a></div><div class="ttdeci">&#x202A;static uchar Commu_CheckXOR(const uchar *buffer, int len)</div><div class="ttdoc">&#x202A;异或校验 8位 避免出现 0 数据造成的 截至</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00731">utils_string.cc:731</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d9/db6/a00146.html">&#x202A;common.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d9/db6/a00146.html">&#x202A;readwindow.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

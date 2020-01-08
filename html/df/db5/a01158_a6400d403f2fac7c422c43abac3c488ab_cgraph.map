@@ -1,0 +1,10 @@
+<map id="SerialProc::CompassCalibration" name="SerialProc::CompassCalibration">
+<area shape="rect" id="node1" title="Determines if we can compass calibration" alt="" coords="5,107,212,133"/>
+<area shape="rect" id="node2" href="$d4/d34/a01298.html#a3608435d58a43711699c72db402154fb" title="通用计算函数 计算从 指针开始的指定位数的 计算结果" alt="" coords="287,5,403,32"/>
+<area shape="rect" id="node3" href="$d9/de6/a01314.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="260,56,431,83"/>
+<area shape="rect" id="node5" href="$db/db2/a00020.html#ad7df8e9072eb05862471c2fc24f4f5ce" title="参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 &#39;#&#39; 后缀 &#39;*&#39;" alt="" coords="287,107,404,133"/>
+<area shape="rect" id="node7" href="$df/db5/a01158.html#adea2b8f89ed936b9ab23ea75b2e42b7a" title="get set 字符串 并设置相应 标志位 获取交互字符串" alt="" coords="260,157,431,184"/>
+<area shape="rect" id="node8" href="$df/db5/a01158.html#ae48816976f90aeb559fe3207b92c5ab6" title="设置交互字符串 1. 表示状态 从其他地方设置 等待写入 2. 表示读取上来之后, 等待读取" alt="" coords="261,208,430,235"/>
+<area shape="rect" id="node4" href="$d9/de6/a01314.html#aab400bb2ce4a6affa55b4afa5f4ae21b" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="479,52,633,79"/>
+<area shape="rect" id="node6" href="$d9/de6/a01314.html#a37ab93c514c781bbb21d4360f8be5b08" title="异或校验 8位 避免出现 0 数据造成的 截至" alt="" coords="485,103,627,145"/>
+</map>

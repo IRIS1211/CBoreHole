@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/test_utils_exception.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,26 +89,75 @@ $(document).ready(function(){initNavTree('d2/dc8/a00242_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">test_utils_exception.cc</div>  </div>
+<div class="title">utils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d2/dc8/a00242.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd6/a00272.html">&#x202A;Utils_Exception.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="../../d2/dc8/a00242.html#a124ec870ebf4ba003942e71ae2912800">    3</a></span>&#160;<a class="code" href="../../d2/dc8/a00242.html#a124ec870ebf4ba003942e71ae2912800">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Test Exception&quot;</span>)</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="../../d0/dc7/a01402.html">&#x202A;Utils_Exception</a>(101, <span class="stringliteral">&quot;test&quot;</span>);</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">}</span></div>
+<a href="../../d2/dc8/a00242.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef UTILS_H__</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define UTILS_H__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d35/a00266.html">&#x202A;./utils_logger.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d39/a00257.html">&#x202A;./Utils_Exception.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d5d/a00278.html">&#x202A;./utils_string.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/da9/a00263.html">&#x202A;./utils_files.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/dd7/a00248.html">&#x202A;./utils_cv.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d03/a00254.html">&#x202A;./utils_data.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd6/a00272.html">&#x202A;./utils_qt.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/dc3/a00284.html">&#x202A;./utils_time.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// 直接继承 可以使用 同一的类名 访问</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../dc/ded/a01290.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/ded/a01290.html">&#x202A;Utils</a> :</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d9/de6/a01314.html">&#x202A;Utils_String</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d7/d8c/a01306.html">&#x202A;Utils_Files</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d4/d34/a01298.html">&#x202A;Utils_Data</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d7/d88/a01294.html">&#x202A;Utils_CV</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../dc/ded/a01290.html#a8caf43f80697158f648269f7964fffdd">   47</a></span>&#160;    <span class="keyword">static</span> T <a class="code" href="../../dc/ded/a01290.html#a8caf43f80697158f648269f7964fffdd">&#x202A;Limit</a>(T &amp;q, <span class="keyword">const</span> T minV, <span class="keyword">const</span> T maxV)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">// 将值限定在 设定区域内; 超过的值 都限定在 min max 中</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        q = std::max(minV, std::min(maxV, q));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> q;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../dc/ded/a01290.html#aa3b0433eafd84e9c9f6386a863f45267">   65</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../dc/ded/a01290.html#aa3b0433eafd84e9c9f6386a863f45267">&#x202A;ClearQueue</a>(T &amp;q)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        T empty;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        swap(empty, q);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif  //UTILS_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00272_html"><div class="ttname"><a href="../../d9/dd6/a00272.html">&#x202A;Utils_Exception.h</a></div></div>
-<div class="ttc" id="aa00242_html_a124ec870ebf4ba003942e71ae2912800"><div class="ttname"><a href="../../d2/dc8/a00242.html#a124ec870ebf4ba003942e71ae2912800">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;Test Exception&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc8/a00242_source.html#l00003">test_utils_exception.cc:3</a></div></div>
-<div class="ttc" id="aa01402_html"><div class="ttname"><a href="../../d0/dc7/a01402.html">&#x202A;Utils_Exception</a></div><div class="ttdoc">&#x202A;直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd6/a00272_source.html#l00073">Utils_Exception.h:73</a></div></div>
+<div class="ttc" id="aa00272_html"><div class="ttname"><a href="../../d9/dd6/a00272.html">&#x202A;utils_qt.h</a></div><div class="ttdoc">&#x202A;有关Qt的 通用组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa01294_html"><div class="ttname"><a href="../../d7/d88/a01294.html">&#x202A;Utils_CV</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd7/a00248_source.html#l00017">utils_cv.h:17</a></div></div>
+<div class="ttc" id="aa00266_html"><div class="ttname"><a href="../../d5/d35/a00266.html">&#x202A;utils_logger.h</a></div></div>
+<div class="ttc" id="aa00254_html"><div class="ttname"><a href="../../d7/d03/a00254.html">&#x202A;utils_data.h</a></div><div class="ttdoc">&#x202A;定义常用的数据处理 组件 @changelog 2019/12/3 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa00284_html"><div class="ttname"><a href="../../db/dc3/a00284.html">&#x202A;utils_time.h</a></div></div>
+<div class="ttc" id="aa01290_html"><div class="ttname"><a href="../../dc/ded/a01290.html">&#x202A;Utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc8/a00242_source.html#l00025">utils.h:25</a></div></div>
+<div class="ttc" id="aa01314_html"><div class="ttname"><a href="../../d9/de6/a01314.html">&#x202A;Utils_String</a></div><div class="ttdoc">&#x202A;The utilities string.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d5d/a00278_source.html#l00024">utils_string.h:24</a></div></div>
+<div class="ttc" id="aa00263_html"><div class="ttname"><a href="../../df/da9/a00263.html">&#x202A;utils_files.h</a></div><div class="ttdoc">&#x202A;Declares the utilities files class</div></div>
+<div class="ttc" id="aa01306_html"><div class="ttname"><a href="../../d7/d8c/a01306.html">&#x202A;Utils_Files</a></div><div class="ttdoc">&#x202A;The utilities files.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00028">utils_files.h:28</a></div></div>
+<div class="ttc" id="aa01290_html_a8caf43f80697158f648269f7964fffdd"><div class="ttname"><a href="../../dc/ded/a01290.html#a8caf43f80697158f648269f7964fffdd">&#x202A;Utils::Limit</a></div><div class="ttdeci">&#x202A;static T Limit(T &amp;q, const T minV, const T maxV)</div><div class="ttdoc">&#x202A;定义 函数限定函数， 根据 输入的值现象参数的范围</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc8/a00242_source.html#l00047">utils.h:47</a></div></div>
+<div class="ttc" id="aa01290_html_aa3b0433eafd84e9c9f6386a863f45267"><div class="ttname"><a href="../../dc/ded/a01290.html#aa3b0433eafd84e9c9f6386a863f45267">&#x202A;Utils::ClearQueue</a></div><div class="ttdeci">&#x202A;static void ClearQueue(T &amp;q)</div><div class="ttdoc">&#x202A;将队列清空 // 定义 清空队列函数 快速 清空队列</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc8/a00242_source.html#l00065">utils.h:65</a></div></div>
+<div class="ttc" id="aa00257_html"><div class="ttname"><a href="../../d9/d39/a00257.html">&#x202A;Utils_Exception.h</a></div></div>
+<div class="ttc" id="aa00248_html"><div class="ttname"><a href="../../dd/dd7/a00248.html">&#x202A;utils_cv.h</a></div><div class="ttdoc">&#x202A;有关opencv 的相关函数组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa00278_html"><div class="ttname"><a href="../../dc/d5d/a00278.html">&#x202A;utils_string.h</a></div><div class="ttdoc">&#x202A;通用字符串操作类 继承使用, 方便使用 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa01298_html"><div class="ttname"><a href="../../d4/d34/a01298.html">&#x202A;Utils_Data</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00016">utils_data.h:16</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d2/dc8/a00242.html">&#x202A;test_utils_exception.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d2/dc8/a00242.html">&#x202A;utils.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

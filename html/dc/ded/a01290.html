@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;CLineEdit类 参考</title>
+<title>&#x202A;CBoreHole: &#x202A;Utils类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,141 +89,354 @@ $(document).ready(function(){initNavTree('dc/ded/a01290.html','../../');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pri-slots">Private 槽</a> &#124;
-<a href="#pri-methods">Private 成员函数</a> &#124;
-<a href="#pri-attribs">Private 属性</a>  </div>
+<a href="#pub-static-methods">静态 Public 成员函数</a>  </div>
   <div class="headertitle">
-<div class="title">CLineEdit类 参考</div>  </div>
+<div class="title">Utils类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>&#x202A;继承Qt 自定义文件 提升成为自己的组件, 修改窗口的值之后 保证相应的值 直接赋值到相应的内存中 如果关联了相应的 点击按钮, 按钮点击之后可以触发 数据更改  
- <a href="../../dc/ded/a01290.html#details">更多...</a></p>
-
-<p><code>#include &lt;<a class="el" href="../../d0/dc2/a00104_source.html">Code\model\clineedit.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d2/dc8/a00242_source.html">utils.h</a>&gt;</code></p>
 <div class="dynheader">
-类 CLineEdit 继承关系图:</div>
+类 Utils 继承关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/dda/a01289.png" border="0" usemap="#_c_line_edit_inherit__map" alt="Inheritance graph"/></div>
-<map name="_c_line_edit_inherit__map" id="_c_line_edit_inherit__map">
-<area shape="rect" title="继承Qt 自定义文件 提升成为自己的组件, 修改窗口的值之后 保证相应的值 直接赋值到相应的内存中 如果关联了相应的 点击按钮, 按钮点击之后可以触发 数据更改" alt="" coords="5,80,84,107"/>
-<area shape="rect" title=" " alt="" coords="5,5,84,32"/>
+<div class="center"><img src="../../d9/dda/a01289.png" border="0" usemap="#_utils_inherit__map" alt="Inheritance graph"/></div>
+<map name="_utils_inherit__map" id="_utils_inherit__map">
+<area shape="rect" title=" " alt="" coords="190,80,238,107"/>
+<area shape="rect" href="../../d9/de6/a01314.html" title="The utilities string." alt="" coords="5,5,95,32"/>
+<area shape="rect" href="../../d7/d8c/a01306.html" title="The utilities files." alt="" coords="119,5,202,32"/>
+<area shape="rect" href="../../d4/d34/a01298.html" title=" " alt="" coords="226,5,309,32"/>
+<area shape="rect" href="../../d7/d88/a01294.html" title=" " alt="" coords="333,5,407,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
 <div class="dynheader">
-CLineEdit 的协作图:</div>
+Utils 的协作图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d7/d8d/a01288.png" border="0" usemap="#_c_line_edit_coll__map" alt="Collaboration graph"/></div>
-<map name="_c_line_edit_coll__map" id="_c_line_edit_coll__map">
-<area shape="rect" title="继承Qt 自定义文件 提升成为自己的组件, 修改窗口的值之后 保证相应的值 直接赋值到相应的内存中 如果关联了相应的 点击按钮, 按钮点击之后可以触发 数据更改" alt="" coords="5,80,84,107"/>
-<area shape="rect" title=" " alt="" coords="5,5,84,32"/>
+<div class="center"><img src="../../d7/d8d/a01288.png" border="0" usemap="#_utils_coll__map" alt="Collaboration graph"/></div>
+<map name="_utils_coll__map" id="_utils_coll__map">
+<area shape="rect" title=" " alt="" coords="190,80,238,107"/>
+<area shape="rect" href="../../d9/de6/a01314.html" title="The utilities string." alt="" coords="5,5,95,32"/>
+<area shape="rect" href="../../d7/d8c/a01306.html" title="The utilities files." alt="" coords="119,5,202,32"/>
+<area shape="rect" href="../../d4/d34/a01298.html" title=" " alt="" coords="226,5,309,32"/>
+<area shape="rect" href="../../d7/d88/a01294.html" title=" " alt="" coords="333,5,407,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public 成员函数</h2></td></tr>
-<tr class="memitem:abfa572ab00a0d4bb15679c5445214e7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#abfa572ab00a0d4bb15679c5445214e7d">CLineEdit</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="separator:abfa572ab00a0d4bb15679c5445214e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a360026a5aa3f54d505b0a6deba81201e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#a360026a5aa3f54d505b0a6deba81201e">Associate</a> (int *data, bool over=true)</td></tr>
-<tr class="memdesc:a360026a5aa3f54d505b0a6deba81201e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将内存与组件关联  <a href="../../dc/ded/a01290.html#a360026a5aa3f54d505b0a6deba81201e">更多...</a><br /></td></tr>
-<tr class="separator:a360026a5aa3f54d505b0a6deba81201e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac27c5c5ee26ef35ffbfe59f34629c650"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#ac27c5c5ee26ef35ffbfe59f34629c650">Associate</a> (int *data, QPushButton *plus, QPushButton *minus, bool over=true)</td></tr>
-<tr class="memdesc:ac27c5c5ee26ef35ffbfe59f34629c650"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;关联数据 和两个按钮  <a href="../../dc/ded/a01290.html#ac27c5c5ee26ef35ffbfe59f34629c650">更多...</a><br /></td></tr>
-<tr class="separator:ac27c5c5ee26ef35ffbfe59f34629c650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a8caf43f80697158f648269f7964fffdd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8caf43f80697158f648269f7964fffdd"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#a8caf43f80697158f648269f7964fffdd">Limit</a> (T &amp;q, const T minV, const T maxV)</td></tr>
+<tr class="memdesc:a8caf43f80697158f648269f7964fffdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;定义 函数限定函数， 根据 输入的值现象参数的范围  <a href="../../dc/ded/a01290.html#a8caf43f80697158f648269f7964fffdd">更多...</a><br /></td></tr>
+<tr class="separator:a8caf43f80697158f648269f7964fffdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b0433eafd84e9c9f6386a863f45267"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa3b0433eafd84e9c9f6386a863f45267"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#aa3b0433eafd84e9c9f6386a863f45267">ClearQueue</a> (T &amp;q)</td></tr>
+<tr class="memdesc:aa3b0433eafd84e9c9f6386a863f45267"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将队列清空 // 定义 清空队列函数 快速 清空队列  <a href="../../dc/ded/a01290.html#aa3b0433eafd84e9c9f6386a863f45267">更多...</a><br /></td></tr>
+<tr class="separator:aa3b0433eafd84e9c9f6386a863f45267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_a01314"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a01314')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;静态 Public 成员函数 继承自 <a class="el" href="../../d9/de6/a01314.html">&#x202A;Utils_String</a></td></tr>
+<tr class="memitem:a12d2d6e93f7a162ad4c595064b143537 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a12d2d6e93f7a162ad4c595064b143537">CoutVectorIdx</a> (T &amp;vec, bool new_line=true)</td></tr>
+<tr class="memdesc:a12d2d6e93f7a162ad4c595064b143537 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Cout vector index  <a href="../../d9/de6/a01314.html#a12d2d6e93f7a162ad4c595064b143537">更多...</a><br /></td></tr>
+<tr class="separator:a12d2d6e93f7a162ad4c595064b143537 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5be31c342aaf61f8a9355b6edc044a2 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#aa5be31c342aaf61f8a9355b6edc044a2">CoutVector</a> (T &amp;vec, bool new_line=true)</td></tr>
+<tr class="memdesc:aa5be31c342aaf61f8a9355b6edc044a2 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Cout vector  <a href="../../d9/de6/a01314.html#aa5be31c342aaf61f8a9355b6edc044a2">更多...</a><br /></td></tr>
+<tr class="separator:aa5be31c342aaf61f8a9355b6edc044a2 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707dfc08a28c18474486ca8ca43d6b39 inherit pub_static_methods_a01314"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a707dfc08a28c18474486ca8ca43d6b39 inherit pub_static_methods_a01314"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a707dfc08a28c18474486ca8ca43d6b39">Str2Vec</a> (const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const char separator, bool skip_empty=true)</td></tr>
+<tr class="memdesc:a707dfc08a28c18474486ca8ca43d6b39 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 <a href="https://segmentfault.com/a/1190000002483483">https://segmentfault.com/a/1190000002483483</a>  <a href="../../d9/de6/a01314.html#a707dfc08a28c18474486ca8ca43d6b39">更多...</a><br /></td></tr>
+<tr class="separator:a707dfc08a28c18474486ca8ca43d6b39 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5025732d71af0eadceb79910351d42 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a9a5025732d71af0eadceb79910351d42">Str2Vec</a> (const std::string &amp;str, const char separator, bool skip_empty=true)</td></tr>
+<tr class="memdesc:a9a5025732d71af0eadceb79910351d42 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;字符串 分割成数组  <a href="../../d9/de6/a01314.html#a9a5025732d71af0eadceb79910351d42">更多...</a><br /></td></tr>
+<tr class="separator:a9a5025732d71af0eadceb79910351d42 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdfef32c38843d2b73a3428fcd9937c inherit pub_static_methods_a01314"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afcdfef32c38843d2b73a3428fcd9937c inherit pub_static_methods_a01314"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#afcdfef32c38843d2b73a3428fcd9937c">Str2Vector</a> (const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const std::string &amp;delimiters, bool skip_empty=true)</td></tr>
+<tr class="memdesc:afcdfef32c38843d2b73a3428fcd9937c inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 <a href="https://segmentfault.com/a/1190000002483483">https://segmentfault.com/a/1190000002483483</a>  <a href="../../d9/de6/a01314.html#afcdfef32c38843d2b73a3428fcd9937c">更多...</a><br /></td></tr>
+<tr class="separator:afcdfef32c38843d2b73a3428fcd9937c inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac88fe85d669658ed8af096c47635b8dd inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#ac88fe85d669658ed8af096c47635b8dd">Str2Vector</a> (const std::string &amp;str, const std::string &amp;delimiters, bool skip_empty=true)</td></tr>
+<tr class="memdesc:ac88fe85d669658ed8af096c47635b8dd inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;完成字符串分割  <a href="../../d9/de6/a01314.html#ac88fe85d669658ed8af096c47635b8dd">更多...</a><br /></td></tr>
+<tr class="separator:ac88fe85d669658ed8af096c47635b8dd inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad909ef9336a54ef015ec4e1ee0ea01fd inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#ad909ef9336a54ef015ec4e1ee0ea01fd">String2ConstChar</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:ad909ef9336a54ef015ec4e1ee0ea01fd inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;String 2 character 直接返回数据字符串  <a href="../../d9/de6/a01314.html#ad909ef9336a54ef015ec4e1ee0ea01fd">更多...</a><br /></td></tr>
+<tr class="separator:ad909ef9336a54ef015ec4e1ee0ea01fd inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98ced7a9727883c0f305e144db03024 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#ad98ced7a9727883c0f305e144db03024">String2Char</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:ad98ced7a9727883c0f305e144db03024 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;String 2 character  <a href="../../d9/de6/a01314.html#ad98ced7a9727883c0f305e144db03024">更多...</a><br /></td></tr>
+<tr class="separator:ad98ced7a9727883c0f305e144db03024 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268d0df6cdc9c605bd20605d9fd0019a inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a268d0df6cdc9c605bd20605d9fd0019a">String2Uchar</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a268d0df6cdc9c605bd20605d9fd0019a inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;String 2 uchar  <a href="../../d9/de6/a01314.html#a268d0df6cdc9c605bd20605d9fd0019a">更多...</a><br /></td></tr>
+<tr class="separator:a268d0df6cdc9c605bd20605d9fd0019a inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b60f1fbf52d3b43700bfab7e4eb2bb inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a93b60f1fbf52d3b43700bfab7e4eb2bb">ConstChar2String</a> (const char *buffer)</td></tr>
+<tr class="memdesc:a93b60f1fbf52d3b43700bfab7e4eb2bb inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;char 类型与 string的相互转换  <a href="../../d9/de6/a01314.html#a93b60f1fbf52d3b43700bfab7e4eb2bb">更多...</a><br /></td></tr>
+<tr class="separator:a93b60f1fbf52d3b43700bfab7e4eb2bb inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33967652245ef20659d0bedb6c69d47c inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a33967652245ef20659d0bedb6c69d47c">Char2String</a> (char *buffer)</td></tr>
+<tr class="memdesc:a33967652245ef20659d0bedb6c69d47c inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Character 2 string  <a href="../../d9/de6/a01314.html#a33967652245ef20659d0bedb6c69d47c">更多...</a><br /></td></tr>
+<tr class="separator:a33967652245ef20659d0bedb6c69d47c inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5220010b7b1eb541bc0d84ca88676283 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a5220010b7b1eb541bc0d84ca88676283">CharArr2String</a> (char *buffer, int len=-1)</td></tr>
+<tr class="memdesc:a5220010b7b1eb541bc0d84ca88676283 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;如果不给定长度, 一直向后直到得到 \0 可能中途截断  <a href="../../d9/de6/a01314.html#a5220010b7b1eb541bc0d84ca88676283">更多...</a><br /></td></tr>
+<tr class="separator:a5220010b7b1eb541bc0d84ca88676283 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63cab16fa35f670c9ceeec53dbd88702 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a63cab16fa35f670c9ceeec53dbd88702">CharArr2String</a> (std::string *str, char *buffer, int len=-1)</td></tr>
+<tr class="memdesc:a63cab16fa35f670c9ceeec53dbd88702 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Character array 2 string  <a href="../../d9/de6/a01314.html#a63cab16fa35f670c9ceeec53dbd88702">更多...</a><br /></td></tr>
+<tr class="separator:a63cab16fa35f670c9ceeec53dbd88702 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ac9213afd977a57399aacc5b4a8c9a inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a31ac9213afd977a57399aacc5b4a8c9a">ShowCharArr</a> (<a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buffer, int len=-1)</td></tr>
+<tr class="separator:a31ac9213afd977a57399aacc5b4a8c9a inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043bbe3a085a6a933f8038e47bf252aa inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a043bbe3a085a6a933f8038e47bf252aa">ShowCharArr</a> (const std::string *str)</td></tr>
+<tr class="separator:a043bbe3a085a6a933f8038e47bf252aa inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16270cb7857217ad3fb4ca45b263379b inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a16270cb7857217ad3fb4ca45b263379b">Hex2String</a> (const std::string &amp;str, bool flg_space=true)</td></tr>
+<tr class="memdesc:a16270cb7857217ad3fb4ca45b263379b inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将 hex 字符串转换成 string 字符串 <br  />
+  <a href="../../d9/de6/a01314.html#a16270cb7857217ad3fb4ca45b263379b">更多...</a><br /></td></tr>
+<tr class="separator:a16270cb7857217ad3fb4ca45b263379b inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86044182870dcd2940ca23d226c4996 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#ab86044182870dcd2940ca23d226c4996">UChar2String</a> (const <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buffer)</td></tr>
+<tr class="memdesc:ab86044182870dcd2940ca23d226c4996 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Uchar 2 string  <a href="../../d9/de6/a01314.html#ab86044182870dcd2940ca23d226c4996">更多...</a><br /></td></tr>
+<tr class="separator:ab86044182870dcd2940ca23d226c4996 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72847b56d10e26be9f2e0cb05d80723 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#ab72847b56d10e26be9f2e0cb05d80723">UChar2String</a> (<a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buffer)</td></tr>
+<tr class="memdesc:ab72847b56d10e26be9f2e0cb05d80723 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Uchar 2 string  <a href="../../d9/de6/a01314.html#ab72847b56d10e26be9f2e0cb05d80723">更多...</a><br /></td></tr>
+<tr class="separator:ab72847b56d10e26be9f2e0cb05d80723 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5b0f70bd68698285592dca2ebe9485 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a6d5b0f70bd68698285592dca2ebe9485">ConstChar2Char</a> (const char *buffer)</td></tr>
+<tr class="memdesc:a6d5b0f70bd68698285592dca2ebe9485 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Constant character 2 character  <a href="../../d9/de6/a01314.html#a6d5b0f70bd68698285592dca2ebe9485">更多...</a><br /></td></tr>
+<tr class="separator:a6d5b0f70bd68698285592dca2ebe9485 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d176a1dad0177d59cf7d53a4ab8057e inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a2d176a1dad0177d59cf7d53a4ab8057e">Char2ConstChar</a> (char *buffer)</td></tr>
+<tr class="memdesc:a2d176a1dad0177d59cf7d53a4ab8057e inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Character 2 constant character  <a href="../../d9/de6/a01314.html#a2d176a1dad0177d59cf7d53a4ab8057e">更多...</a><br /></td></tr>
+<tr class="separator:a2d176a1dad0177d59cf7d53a4ab8057e inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d87ca32cf1959251d87988a5b7f1b45 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a3d87ca32cf1959251d87988a5b7f1b45">UChar2Char</a> (<a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> c1)</td></tr>
+<tr class="memdesc:a3d87ca32cf1959251d87988a5b7f1b45 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Uchar 2 char 的相互转换  <a href="../../d9/de6/a01314.html#a3d87ca32cf1959251d87988a5b7f1b45">更多...</a><br /></td></tr>
+<tr class="separator:a3d87ca32cf1959251d87988a5b7f1b45 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a1209c857981563358bcb266f20c0d inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a04a1209c857981563358bcb266f20c0d">Char2UChar</a> (char c1)</td></tr>
+<tr class="memdesc:a04a1209c857981563358bcb266f20c0d inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Character 2 u character  <a href="../../d9/de6/a01314.html#a04a1209c857981563358bcb266f20c0d">更多...</a><br /></td></tr>
+<tr class="separator:a04a1209c857981563358bcb266f20c0d inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe216aed245f8f433cfc9b5e8c611754 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#afe216aed245f8f433cfc9b5e8c611754">AddQuoteString</a> (std::string str, const std::string q=&quot;\&quot;&quot;)</td></tr>
+<tr class="memdesc:afe216aed245f8f433cfc9b5e8c611754 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;在字符串前后 添加 引号 双引号 用于YML 写入  <a href="../../d9/de6/a01314.html#afe216aed245f8f433cfc9b5e8c611754">更多...</a><br /></td></tr>
+<tr class="separator:afe216aed245f8f433cfc9b5e8c611754 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ed3e2282101b5d3326df68e6098898 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a82ed3e2282101b5d3326df68e6098898">StringVersionToInt</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a82ed3e2282101b5d3326df68e6098898 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011  <a href="../../d9/de6/a01314.html#a82ed3e2282101b5d3326df68e6098898">更多...</a><br /></td></tr>
+<tr class="separator:a82ed3e2282101b5d3326df68e6098898 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0bd05f35427650f2e295c18ba6938b3 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#ab0bd05f35427650f2e295c18ba6938b3">NumToString</a> (int num, int width=3, int base=10)</td></tr>
+<tr class="memdesc:ab0bd05f35427650f2e295c18ba6938b3 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \  <a href="../../d9/de6/a01314.html#ab0bd05f35427650f2e295c18ba6938b3">更多...</a><br /></td></tr>
+<tr class="separator:ab0bd05f35427650f2e295c18ba6938b3 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635eba60768a1ed79e04e228e38e897c inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a635eba60768a1ed79e04e228e38e897c">NumToString</a> (const float &amp;num, int precision)</td></tr>
+<tr class="memdesc:a635eba60768a1ed79e04e228e38e897c inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;float 控制精度显示  <a href="../../d9/de6/a01314.html#a635eba60768a1ed79e04e228e38e897c">更多...</a><br /></td></tr>
+<tr class="separator:a635eba60768a1ed79e04e228e38e897c inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e121bd2ba2c0cff0c6194591e548525 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a7e121bd2ba2c0cff0c6194591e548525">String2Num</a> (const std::string &amp;str, int base=10)</td></tr>
+<tr class="separator:a7e121bd2ba2c0cff0c6194591e548525 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c65f3ca9342a3ef5b8d91a5e9e0353f inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f">Hex2Uchar</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a9c65f3ca9342a3ef5b8d91a5e9e0353f inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Hexadecimal 2 uchar 将两个 hex 字符 转换成 0-256  <a href="../../d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f">更多...</a><br /></td></tr>
+<tr class="separator:a9c65f3ca9342a3ef5b8d91a5e9e0353f inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f04ee936ee3b6fdf6384b0450506c21 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a9f04ee936ee3b6fdf6384b0450506c21">Hex2Num</a> (const char ch)</td></tr>
+<tr class="memdesc:a9f04ee936ee3b6fdf6384b0450506c21 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值  <a href="../../d9/de6/a01314.html#a9f04ee936ee3b6fdf6384b0450506c21">更多...</a><br /></td></tr>
+<tr class="separator:a9f04ee936ee3b6fdf6384b0450506c21 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab400bb2ce4a6affa55b4afa5f4ae21b inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#aab400bb2ce4a6affa55b4afa5f4ae21b">Num2Hex</a> (int num, bool Up=true)</td></tr>
+<tr class="memdesc:aab400bb2ce4a6affa55b4afa5f4ae21b inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将 0-15 转换成 0-F  <a href="../../d9/de6/a01314.html#aab400bb2ce4a6affa55b4afa5f4ae21b">更多...</a><br /></td></tr>
+<tr class="separator:aab400bb2ce4a6affa55b4afa5f4ae21b inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b034fed4a8ae00b56ee4eeb2062341 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a31b034fed4a8ae00b56ee4eeb2062341">Num2Hex</a> (<a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> num, bool Up=true)</td></tr>
+<tr class="memdesc:a31b034fed4a8ae00b56ee4eeb2062341 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Number 2 hexadecimal 得到的结果只有 小写  <a href="../../d9/de6/a01314.html#a31b034fed4a8ae00b56ee4eeb2062341">更多...</a><br /></td></tr>
+<tr class="separator:a31b034fed4a8ae00b56ee4eeb2062341 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8785525062a6e2cd05554bebfe83b62c inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a8785525062a6e2cd05554bebfe83b62c">Hex2Num</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a8785525062a6e2cd05554bebfe83b62c inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;连续的 16 进制字符 转换成数字 // 空格滤除  <a href="../../d9/de6/a01314.html#a8785525062a6e2cd05554bebfe83b62c">更多...</a><br /></td></tr>
+<tr class="separator:a8785525062a6e2cd05554bebfe83b62c inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c76ec9d896d7eaa7193444f3277c59 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a14c76ec9d896d7eaa7193444f3277c59">Hex2CharArr</a> (<a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *&amp;buffer, const std::string &amp;str, bool flg_space=true)</td></tr>
+<tr class="memdesc:a14c76ec9d896d7eaa7193444f3277c59 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Hexadecimal 2 character array hex 字符串 转换成 数组  <a href="../../d9/de6/a01314.html#a14c76ec9d896d7eaa7193444f3277c59">更多...</a><br /></td></tr>
+<tr class="separator:a14c76ec9d896d7eaa7193444f3277c59 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a343a35752b0575e884df5b0758cadfda inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a343a35752b0575e884df5b0758cadfda">CharArr2Hex</a> (<a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buffer, int length=16, int flg_space=1)</td></tr>
+<tr class="memdesc:a343a35752b0575e884df5b0758cadfda inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Character array 2 hexadecimal 数组 转换成 hex 字符  <a href="../../d9/de6/a01314.html#a343a35752b0575e884df5b0758cadfda">更多...</a><br /></td></tr>
+<tr class="separator:a343a35752b0575e884df5b0758cadfda inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8962fc85144f4bd9db3428db6b916a inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#acd8962fc85144f4bd9db3428db6b916a">StringUpper</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:acd8962fc85144f4bd9db3428db6b916a inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将字符串全部转换成大写  <a href="../../d9/de6/a01314.html#acd8962fc85144f4bd9db3428db6b916a">更多...</a><br /></td></tr>
+<tr class="separator:acd8962fc85144f4bd9db3428db6b916a inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded99d2cfe5f85e9301820b25da5790e inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#aded99d2cfe5f85e9301820b25da5790e">StringLowwer</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:aded99d2cfe5f85e9301820b25da5790e inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将字符串全部转换成小写  <a href="../../d9/de6/a01314.html#aded99d2cfe5f85e9301820b25da5790e">更多...</a><br /></td></tr>
+<tr class="separator:aded99d2cfe5f85e9301820b25da5790e inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ab93c514c781bbb21d4360f8be5b08 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a37ab93c514c781bbb21d4360f8be5b08">Commu_CheckXOR</a> (const <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *buffer, int len)</td></tr>
+<tr class="memdesc:a37ab93c514c781bbb21d4360f8be5b08 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;异或校验 8位 避免出现 0 数据造成的 截至  <a href="../../d9/de6/a01314.html#a37ab93c514c781bbb21d4360f8be5b08">更多...</a><br /></td></tr>
+<tr class="separator:a37ab93c514c781bbb21d4360f8be5b08 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a753d6dcb23a58fdc89a49387789445dd inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#a753d6dcb23a58fdc89a49387789445dd">Commu_CheckXOR</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a753d6dcb23a58fdc89a49387789445dd inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;异或校验 8位  <a href="../../d9/de6/a01314.html#a753d6dcb23a58fdc89a49387789445dd">更多...</a><br /></td></tr>
+<tr class="separator:a753d6dcb23a58fdc89a49387789445dd inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd6aceefcb49704b4c660772d2d073f inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#abfd6aceefcb49704b4c660772d2d073f">Commu_CheckXOR</a> (<a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *dat, int len=-1)</td></tr>
+<tr class="memdesc:abfd6aceefcb49704b4c660772d2d073f inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;计算从指针开始的len 字符  <a href="../../d9/de6/a01314.html#abfd6aceefcb49704b4c660772d2d073f">更多...</a><br /></td></tr>
+<tr class="separator:abfd6aceefcb49704b4c660772d2d073f inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b5b7bb59df157b42934895a67738e8 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#ac3b5b7bb59df157b42934895a67738e8">Commu_CheckSum</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:ac3b5b7bb59df157b42934895a67738e8 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;计算 校验和  <a href="../../d9/de6/a01314.html#ac3b5b7bb59df157b42934895a67738e8">更多...</a><br /></td></tr>
+<tr class="separator:ac3b5b7bb59df157b42934895a67738e8 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5dae2a0537c1cc6989d243a09eaa75 inherit pub_static_methods_a01314"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de6/a01314.html#acb5dae2a0537c1cc6989d243a09eaa75">Commu_CheckSum</a> (<a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *dat, int len=-1)</td></tr>
+<tr class="memdesc:acb5dae2a0537c1cc6989d243a09eaa75 inherit pub_static_methods_a01314"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;计算len 长度的校验和  <a href="../../d9/de6/a01314.html#acb5dae2a0537c1cc6989d243a09eaa75">更多...</a><br /></td></tr>
+<tr class="separator:acb5dae2a0537c1cc6989d243a09eaa75 inherit pub_static_methods_a01314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_a01306"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a01306')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;静态 Public 成员函数 继承自 <a class="el" href="../../d7/d8c/a01306.html">&#x202A;Utils_Files</a></td></tr>
+<tr class="memitem:a683e1e22cba7849ea561abb84aab0ce2 inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#a683e1e22cba7849ea561abb84aab0ce2">ListAllFiles</a> (const std::string &amp;file_path)</td></tr>
+<tr class="memdesc:a683e1e22cba7849ea561abb84aab0ce2 inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;给出路径 , 列出路径下面的所有文件, 如果路径为空,或者无内容 则返回 空  <a href="../../d7/d8c/a01306.html#a683e1e22cba7849ea561abb84aab0ce2">更多...</a><br /></td></tr>
+<tr class="separator:a683e1e22cba7849ea561abb84aab0ce2 inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877c971612ce4585687f9dd89c3573e9 inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#a877c971612ce4585687f9dd89c3573e9">ListAllFiles</a> (const std::string &amp;file_path, std::vector&lt; std::string &gt; &amp;filelist)</td></tr>
+<tr class="memdesc:a877c971612ce4585687f9dd89c3573e9 inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;List all files  <a href="../../d7/d8c/a01306.html#a877c971612ce4585687f9dd89c3573e9">更多...</a><br /></td></tr>
+<tr class="separator:a877c971612ce4585687f9dd89c3573e9 inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf62efcec3d612bee798260f99fceb2b inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#acf62efcec3d612bee798260f99fceb2b">GetFileName</a> (const std::string &amp;file)</td></tr>
+<tr class="memdesc:acf62efcec3d612bee798260f99fceb2b inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;从路径中 剥离出来文件名  <a href="../../d7/d8c/a01306.html#acf62efcec3d612bee798260f99fceb2b">更多...</a><br /></td></tr>
+<tr class="separator:acf62efcec3d612bee798260f99fceb2b inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc35c60bccab87740d6f315be7641bcb inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#abc35c60bccab87740d6f315be7641bcb">SplitFileName</a> (std::string &amp;file_name, std::string &amp;file_path, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:abc35c60bccab87740d6f315be7641bcb inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将文件路径拆分为 文件路径和文件名称 删除拓展名  <a href="../../d7/d8c/a01306.html#abc35c60bccab87740d6f315be7641bcb">更多...</a><br /></td></tr>
+<tr class="separator:abc35c60bccab87740d6f315be7641bcb inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad809f617bf2f7e0850b105b5b5413108 inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#ad809f617bf2f7e0850b105b5b5413108">IsDirExist</a> (const std::string &amp;path, bool create_=true)</td></tr>
+<tr class="memdesc:ad809f617bf2f7e0850b105b5b5413108 inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;判断文件夹是否存在, 如果不存在 则新建 文件夹 // 不能否递归建立  <a href="../../d7/d8c/a01306.html#ad809f617bf2f7e0850b105b5b5413108">更多...</a><br /></td></tr>
+<tr class="separator:ad809f617bf2f7e0850b105b5b5413108 inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c94c40595c31cd3be0d8ad5bccec259 inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#a1c94c40595c31cd3be0d8ad5bccec259">IsFileExist</a> (const std::string &amp;file, bool create_=false)</td></tr>
+<tr class="memdesc:a1c94c40595c31cd3be0d8ad5bccec259 inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;判断指定的文件是否存在 // 给定flg 如果不存在则建立文件 当path为文件时，_access函数判断文件是否存在，并判断文件是否可以用mode值指定的模式进行访问。  <a href="../../d7/d8c/a01306.html#a1c94c40595c31cd3be0d8ad5bccec259">更多...</a><br /></td></tr>
+<tr class="separator:a1c94c40595c31cd3be0d8ad5bccec259 inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbb7bbb704161e7512dd9edc091bb23 inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#a7fbb7bbb704161e7512dd9edc091bb23">WriteData</a> (std::fstream *pfile, T &amp;num)</td></tr>
+<tr class="memdesc:a7fbb7bbb704161e7512dd9edc091bb23 inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Writes a data 写入基本数据类型  <a href="../../d7/d8c/a01306.html#a7fbb7bbb704161e7512dd9edc091bb23">更多...</a><br /></td></tr>
+<tr class="separator:a7fbb7bbb704161e7512dd9edc091bb23 inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5523926cd82a36f59589a82da8adf31b inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#a5523926cd82a36f59589a82da8adf31b">ReadData</a> (std::fstream *pfile, T &amp;num)</td></tr>
+<tr class="memdesc:a5523926cd82a36f59589a82da8adf31b inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;读取基本数据类型  <a href="../../d7/d8c/a01306.html#a5523926cd82a36f59589a82da8adf31b">更多...</a><br /></td></tr>
+<tr class="separator:a5523926cd82a36f59589a82da8adf31b inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9335a7520c43095ac8312c0901e9bd4 inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#ae9335a7520c43095ac8312c0901e9bd4">WriteStringBinary</a> (std::fstream *pfile, const std::string &amp;str, int len)</td></tr>
+<tr class="memdesc:ae9335a7520c43095ac8312c0901e9bd4 inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将一个字符串写入到二进制文件流中  <a href="../../d7/d8c/a01306.html#ae9335a7520c43095ac8312c0901e9bd4">更多...</a><br /></td></tr>
+<tr class="separator:ae9335a7520c43095ac8312c0901e9bd4 inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866a76a1d5720a62a03dc7ef7502cd25 inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#a866a76a1d5720a62a03dc7ef7502cd25">ReadStringBinary</a> (std::fstream *pfile, std::string &amp;str, int len)</td></tr>
+<tr class="memdesc:a866a76a1d5720a62a03dc7ef7502cd25 inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;从文件流中读取一个 字符串  <a href="../../d7/d8c/a01306.html#a866a76a1d5720a62a03dc7ef7502cd25">更多...</a><br /></td></tr>
+<tr class="separator:a866a76a1d5720a62a03dc7ef7502cd25 inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0100eaf1e914cee3b70157898026a375 inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#a0100eaf1e914cee3b70157898026a375">WriteStringTxt</a> (std::fstream *pfile, const std::string &amp;str)</td></tr>
+<tr class="memdesc:a0100eaf1e914cee3b70157898026a375 inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Writes a string text  <a href="../../d7/d8c/a01306.html#a0100eaf1e914cee3b70157898026a375">更多...</a><br /></td></tr>
+<tr class="separator:a0100eaf1e914cee3b70157898026a375 inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39316541feb5efd10b4e1b370a92a18 inherit pub_static_methods_a01306"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#aa39316541feb5efd10b4e1b370a92a18">ReadStringTxt</a> (std::fstream *pfile, std::string &amp;str)</td></tr>
+<tr class="memdesc:aa39316541feb5efd10b4e1b370a92a18 inherit pub_static_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;每次读取一行 放入字符串中  <a href="../../d7/d8c/a01306.html#aa39316541feb5efd10b4e1b370a92a18">更多...</a><br /></td></tr>
+<tr class="separator:aa39316541feb5efd10b4e1b370a92a18 inherit pub_static_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_a01298"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a01298')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;静态 Public 成员函数 继承自 <a class="el" href="../../d4/d34/a01298.html">&#x202A;Utils_Data</a></td></tr>
+<tr class="memitem:a8f7b3582112c35f160f4f8a433bc6427 inherit pub_static_methods_a01298"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:a8f7b3582112c35f160f4f8a433bc6427 inherit pub_static_methods_a01298"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d34/a01298.html#a8f7b3582112c35f160f4f8a433bc6427">LeastSquare</a> (const std::vector&lt; T1 &gt; &amp;data_x, const std::vector&lt; T2 &gt; &amp;data_y, float &amp;var_a, float &amp;var_b)</td></tr>
+<tr class="memdesc:a8f7b3582112c35f160f4f8a433bc6427 inherit pub_static_methods_a01298"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;閫氳繃xy 寰楀埌 鏁版嵁鐨?鏈€灏忎簩涔樺弬鏁?  <a href="../../d4/d34/a01298.html#a8f7b3582112c35f160f4f8a433bc6427">更多...</a><br /></td></tr>
+<tr class="separator:a8f7b3582112c35f160f4f8a433bc6427 inherit pub_static_methods_a01298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f31a9b6dfaf1b83d2c35b85746c464 inherit pub_static_methods_a01298"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a79f31a9b6dfaf1b83d2c35b85746c464 inherit pub_static_methods_a01298"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d34/a01298.html#a79f31a9b6dfaf1b83d2c35b85746c464">MediaBlur</a> (const std::vector&lt; T &gt; &amp;src, int ksize)</td></tr>
+<tr class="separator:a79f31a9b6dfaf1b83d2c35b85746c464 inherit pub_static_methods_a01298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687394b49f27b840644efcd9fd4939d7 inherit pub_static_methods_a01298"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a687394b49f27b840644efcd9fd4939d7 inherit pub_static_methods_a01298"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d34/a01298.html#a687394b49f27b840644efcd9fd4939d7">MeanBlur</a> (const std::vector&lt; T &gt; &amp;src, int ksize)</td></tr>
+<tr class="separator:a687394b49f27b840644efcd9fd4939d7 inherit pub_static_methods_a01298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aeccc7a52077e9fa2494a2033879391 inherit pub_static_methods_a01298"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d34/a01298.html#a9aeccc7a52077e9fa2494a2033879391">FastSin</a> (float x)</td></tr>
+<tr class="memdesc:a9aeccc7a52077e9fa2494a2033879391 inherit pub_static_methods_a01298"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Utilities data class  <a href="../../d4/d34/a01298.html#a9aeccc7a52077e9fa2494a2033879391">更多...</a><br /></td></tr>
+<tr class="separator:a9aeccc7a52077e9fa2494a2033879391 inherit pub_static_methods_a01298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa86beee7623347a625d209cb2d4e9d6d inherit pub_static_methods_a01298"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d34/a01298.html#aa86beee7623347a625d209cb2d4e9d6d">FastCos</a> (float x)</td></tr>
+<tr class="memdesc:aa86beee7623347a625d209cb2d4e9d6d inherit pub_static_methods_a01298"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Fast cosine  <a href="../../d4/d34/a01298.html#aa86beee7623347a625d209cb2d4e9d6d">更多...</a><br /></td></tr>
+<tr class="separator:aa86beee7623347a625d209cb2d4e9d6d inherit pub_static_methods_a01298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3608435d58a43711699c72db402154fb inherit pub_static_methods_a01298"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d34/a01298.html#a3608435d58a43711699c72db402154fb">Calc</a> (<a class="el" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">uchar</a> *dat, int len)</td></tr>
+<tr class="memdesc:a3608435d58a43711699c72db402154fb inherit pub_static_methods_a01298"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;通用计算函数 计算从 指针开始的指定位数的 计算结果  <a href="../../d4/d34/a01298.html#a3608435d58a43711699c72db402154fb">更多...</a><br /></td></tr>
+<tr class="separator:a3608435d58a43711699c72db402154fb inherit pub_static_methods_a01298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_a01294"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a01294')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;静态 Public 成员函数 继承自 <a class="el" href="../../d7/d88/a01294.html">&#x202A;Utils_CV</a></td></tr>
+<tr class="memitem:a8387a1da4bd9a03f42b6037f5370a28e inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static cv::Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#a8387a1da4bd9a03f42b6037f5370a28e">Str2Rect</a> (const std::string &amp;str, const std::string delim=&quot;,| &quot;)</td></tr>
+<tr class="memdesc:a8387a1da4bd9a03f42b6037f5370a28e inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将字符串按照分割字符分割之后 生成矩形  <a href="../../d7/d88/a01294.html#a8387a1da4bd9a03f42b6037f5370a28e">更多...</a><br /></td></tr>
+<tr class="separator:a8387a1da4bd9a03f42b6037f5370a28e inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b4da9c06b152eaee65da5a38ff6252 inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#a55b4da9c06b152eaee65da5a38ff6252">ImageSplit</a> (const cv::Mat &amp;src_img, const std::vector&lt; int &gt; &amp;lines, std::vector&lt; cv::Mat &gt; &amp;splitImgVec, bool horizon=true, const int wealth=5)</td></tr>
+<tr class="memdesc:a55b4da9c06b152eaee65da5a38ff6252 inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将一副图片按照给出的线划分 成为 几列图像 <br  />
+ 给出一定的裕量 相应的图片会比较大 // 默认横向分割  <a href="../../d7/d88/a01294.html#a55b4da9c06b152eaee65da5a38ff6252">更多...</a><br /></td></tr>
+<tr class="separator:a55b4da9c06b152eaee65da5a38ff6252 inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d57d4eeb1fc9965c1e0fa5f63b7fa0 inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">ImageMerge</a> (cv::Mat &amp;dst_img, const std::vector&lt; cv::Mat &gt; &amp;splitImgVec, const std::vector&lt; int &gt; &amp;lines, bool horizon=true, const int wealth=5)</td></tr>
+<tr class="memdesc:a80d57d4eeb1fc9965c1e0fa5f63b7fa0 inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将给出的图片数组 根据给出的分割线 和 裕量 合并成一副 图像  <a href="../../d7/d88/a01294.html#a80d57d4eeb1fc9965c1e0fa5f63b7fa0">更多...</a><br /></td></tr>
+<tr class="separator:a80d57d4eeb1fc9965c1e0fa5f63b7fa0 inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b840773d1fe5d42d90bf2fd75f26aa9 inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#a7b840773d1fe5d42d90bf2fd75f26aa9">ImageMerge</a> (cv::Mat &amp;dst_img, const std::vector&lt; cv::Mat &gt; &amp;splitImgVec, bool horizon=true, const int wealth=5)</td></tr>
+<tr class="memdesc:a7b840773d1fe5d42d90bf2fd75f26aa9 inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将给出的图片数组 根裕量 合并成一副 图像  <a href="../../d7/d88/a01294.html#a7b840773d1fe5d42d90bf2fd75f26aa9">更多...</a><br /></td></tr>
+<tr class="separator:a7b840773d1fe5d42d90bf2fd75f26aa9 inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba8a738f801f6b8c82345c444a4e71c inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static cv::Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#a9ba8a738f801f6b8c82345c444a4e71c">GetSquareRect</a> (const cv::Mat &amp;img)</td></tr>
+<tr class="memdesc:a9ba8a738f801f6b8c82345c444a4e71c inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;根据 图像尺寸 生成 一个包含中间区域的 矩形框  <a href="../../d7/d88/a01294.html#a9ba8a738f801f6b8c82345c444a4e71c">更多...</a><br /></td></tr>
+<tr class="separator:a9ba8a738f801f6b8c82345c444a4e71c inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3104bb7c29b83b4dfb4a38bd9e899ce5 inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static cv::Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#a3104bb7c29b83b4dfb4a38bd9e899ce5">GetRect</a> (const cv::Mat &amp;img)</td></tr>
+<tr class="memdesc:a3104bb7c29b83b4dfb4a38bd9e899ce5 inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;返回图像的矩形区域  <a href="../../d7/d88/a01294.html#a3104bb7c29b83b4dfb4a38bd9e899ce5">更多...</a><br /></td></tr>
+<tr class="separator:a3104bb7c29b83b4dfb4a38bd9e899ce5 inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29dc0b093427ee4ca1a9e195d4c78433 inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static cv::Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#a29dc0b093427ee4ca1a9e195d4c78433">GetCenterRect</a> (const cv::Rect img_r, int width=-1, int height=-1)</td></tr>
+<tr class="memdesc:a29dc0b093427ee4ca1a9e195d4c78433 inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;获取图像中心区域 的值  <a href="../../d7/d88/a01294.html#a29dc0b093427ee4ca1a9e195d4c78433">更多...</a><br /></td></tr>
+<tr class="separator:a29dc0b093427ee4ca1a9e195d4c78433 inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac488a0830a690dbdbb48f0b999b771d3 inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static cv::Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#ac488a0830a690dbdbb48f0b999b771d3">MarginRect</a> (const cv::Rect &amp;cur_r, int t=5, int l=-1, int b=-1, int r=-1)</td></tr>
+<tr class="memdesc:ac488a0830a690dbdbb48f0b999b771d3 inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;矩形外扩一定范围  <a href="../../d7/d88/a01294.html#ac488a0830a690dbdbb48f0b999b771d3">更多...</a><br /></td></tr>
+<tr class="separator:ac488a0830a690dbdbb48f0b999b771d3 inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd858a9d1a7a0b329bc960a3fe0019b1 inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static cv::Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#abd858a9d1a7a0b329bc960a3fe0019b1">GetOffsetRect</a> (const cv::Rect &amp;cur_r, const cv::Point &amp;offset)</td></tr>
+<tr class="memdesc:abd858a9d1a7a0b329bc960a3fe0019b1 inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;根据当前区域相对于上次区域的偏移值定位出来 上次矩形框的外扩范围  <a href="../../d7/d88/a01294.html#abd858a9d1a7a0b329bc960a3fe0019b1">更多...</a><br /></td></tr>
+<tr class="separator:abd858a9d1a7a0b329bc960a3fe0019b1 inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed9b9316107e1ede0fefb0d53610e40 inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#a5ed9b9316107e1ede0fefb0d53610e40">CreatMapMat</a> (cv::Mat &amp;map_x, \ cv::Mat &amp;map_y, \ int cen_x, \ int cen_y, \ int min_r, \ int max_r, \ int Width=-1, \ int Height=-1)</td></tr>
+<tr class="memdesc:a5ed9b9316107e1ede0fefb0d53610e40 inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;为 展开图像创建 map 后续执行起来很快 展开思路 参考 <a href="https://blog.csdn.net/guduruyu/article/details/65436931">https://blog.csdn.net/guduruyu/article/details/65436931</a> 见附件 pdf 公式推导 展开图像角度 从标准座标系 270开始的 顺时针展开 #TODO(SChen): 解决缩放 插值的问题  <a href="../../d7/d88/a01294.html#a5ed9b9316107e1ede0fefb0d53610e40">更多...</a><br /></td></tr>
+<tr class="separator:a5ed9b9316107e1ede0fefb0d53610e40 inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988f9de91b15040f5376a6d3b33d108b inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#a988f9de91b15040f5376a6d3b33d108b">CvMat2QImage</a> (const cv::Mat *mat)</td></tr>
+<tr class="memdesc:a988f9de91b15040f5376a6d3b33d108b inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将opencv mat 转换成 QT image  <a href="../../d7/d88/a01294.html#a988f9de91b15040f5376a6d3b33d108b">更多...</a><br /></td></tr>
+<tr class="separator:a988f9de91b15040f5376a6d3b33d108b inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8092c11efe82425e7d4a5a10b366f791 inherit pub_static_methods_a01294"><td class="memItemLeft" align="right" valign="top">static cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/a01294.html#a8092c11efe82425e7d4a5a10b366f791">QImage2CvMat</a> (const QImage *image)</td></tr>
+<tr class="memdesc:a8092c11efe82425e7d4a5a10b366f791 inherit pub_static_methods_a01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;QT Image 转换成 cv Mat 结构  <a href="../../d7/d88/a01294.html#a8092c11efe82425e7d4a5a10b366f791">更多...</a><br /></td></tr>
+<tr class="separator:a8092c11efe82425e7d4a5a10b366f791 inherit pub_static_methods_a01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
-Private 槽</h2></td></tr>
-<tr class="memitem:a8bebc9d382cfe7dac27fcfbd17d1193d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#a8bebc9d382cfe7dac27fcfbd17d1193d">LineEditDataProc</a> (void)</td></tr>
-<tr class="memdesc:a8bebc9d382cfe7dac27fcfbd17d1193d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;数据输入完成 将数据存储相应内存中 暂时只考虑 数据部分, 将填入的数据内容给 获取出来  <a href="../../dc/ded/a01290.html#a8bebc9d382cfe7dac27fcfbd17d1193d">更多...</a><br /></td></tr>
-<tr class="separator:a8bebc9d382cfe7dac27fcfbd17d1193d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a685094af988ce740bbaa784826aac987"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#a685094af988ce740bbaa784826aac987">LineEditDataPlus</a> (void)</td></tr>
-<tr class="memdesc:a685094af988ce740bbaa784826aac987"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;数据 增加 并做显示  <a href="../../dc/ded/a01290.html#a685094af988ce740bbaa784826aac987">更多...</a><br /></td></tr>
-<tr class="separator:a685094af988ce740bbaa784826aac987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad242d10fd9eee09920cfd1add936efe1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#ad242d10fd9eee09920cfd1add936efe1">LineEditDataMinus</a> (void)</td></tr>
-<tr class="memdesc:ad242d10fd9eee09920cfd1add936efe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;数据减少 信号  <a href="../../dc/ded/a01290.html#ad242d10fd9eee09920cfd1add936efe1">更多...</a><br /></td></tr>
-<tr class="separator:ad242d10fd9eee09920cfd1add936efe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private 成员函数</h2></td></tr>
-<tr class="memitem:ac9586e57923f41790ae07939ec14ccd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1">ShowData</a> (void)</td></tr>
-<tr class="memdesc:ac9586e57923f41790ae07939ec14ccd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将数据同一显示  <a href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1">更多...</a><br /></td></tr>
-<tr class="separator:ac9586e57923f41790ae07939ec14ccd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private 属性</h2></td></tr>
-<tr class="memitem:ad2a5cff322988f0382df41ef2f1bf2ed"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">m_data_</a></td></tr>
-<tr class="memdesc:ad2a5cff322988f0382df41ef2f1bf2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;指定数据关联的指针  <a href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">更多...</a><br /></td></tr>
-<tr class="separator:ad2a5cff322988f0382df41ef2f1bf2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5780336454ae6d06a1f426271492b302"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#a5780336454ae6d06a1f426271492b302">btn_plus_</a></td></tr>
-<tr class="memdesc:a5780336454ae6d06a1f426271492b302"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;定义增加按钮  <a href="../../dc/ded/a01290.html#a5780336454ae6d06a1f426271492b302">更多...</a><br /></td></tr>
-<tr class="separator:a5780336454ae6d06a1f426271492b302"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e61f1b2f24a1e517e771a0b27f7e763"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a01290.html#a2e61f1b2f24a1e517e771a0b27f7e763">btn_minus_</a></td></tr>
-<tr class="memdesc:a2e61f1b2f24a1e517e771a0b27f7e763"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;定义减少按钮  <a href="../../dc/ded/a01290.html#a2e61f1b2f24a1e517e771a0b27f7e763">更多...</a><br /></td></tr>
-<tr class="separator:a2e61f1b2f24a1e517e771a0b27f7e763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_methods_a01306"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a01306')"><img src="../../closed.png" alt="-"/>&#160;&#x202A;Public 成员函数 继承自 <a class="el" href="../../d7/d8c/a01306.html">&#x202A;Utils_Files</a></td></tr>
+<tr class="memitem:ab9e6bb3cc4940d80e158b0685c777e01 inherit pub_methods_a01306"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#ab9e6bb3cc4940d80e158b0685c777e01">LowwerString</a> (const std::string &amp;src_filelist)</td></tr>
+<tr class="memdesc:ab9e6bb3cc4940d80e158b0685c777e01 inherit pub_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将输入的字符串全部变成小写  <a href="../../d7/d8c/a01306.html#ab9e6bb3cc4940d80e158b0685c777e01">更多...</a><br /></td></tr>
+<tr class="separator:ab9e6bb3cc4940d80e158b0685c777e01 inherit pub_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab31982d89a0107b98c197244001ecc9f inherit pub_methods_a01306"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/a01306.html#ab31982d89a0107b98c197244001ecc9f">RenameFileList</a> (const std::string &amp;src_filelist, const std::string &amp;dst_filelist)</td></tr>
+<tr class="memdesc:ab31982d89a0107b98c197244001ecc9f inherit pub_methods_a01306"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将文件列表的所有文件名对应重命名  <a href="../../d7/d8c/a01306.html#ab31982d89a0107b98c197244001ecc9f">更多...</a><br /></td></tr>
+<tr class="separator:ab31982d89a0107b98c197244001ecc9f inherit pub_methods_a01306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">继承Qt 自定义文件 提升成为自己的组件, 修改窗口的值之后 保证相应的值 直接赋值到相应的内存中 如果关联了相应的 点击按钮, 按钮点击之后可以触发 数据更改 </p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/13 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d0/dc2/a00104_source.html">clineedit.h</a> 第 <a class="el" href="../../d0/dc2/a00104_source.html#l00031">31</a> 行定义.</p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="abfa572ab00a0d4bb15679c5445214e7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfa572ab00a0d4bb15679c5445214e7d">&#9670;&nbsp;</a></span>CLineEdit()</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="../../d2/dc8/a00242_source.html">utils.h</a> 第 <a class="el" href="../../d2/dc8/a00242_source.html#l00025">25</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="aa3b0433eafd84e9c9f6386a863f45267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b0433eafd84e9c9f6386a863f45267">&#9670;&nbsp;</a></span>ClearQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CLineEdit::CLineEdit </td>
+          <td class="memname">void Utils::ClearQueue </td>
           <td>(</td>
-          <td class="paramtype">QWidget *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d4/d3a/a00101_source.html">clineedit.cpp</a> 第 <a class="el" href="../../d4/d3a/a00101_source.html#l00003">3</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;                                     :</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    QLineEdit(parent),</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a>(<span class="keyword">nullptr</span>),</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#a5780336454ae6d06a1f426271492b302">&#x202A;btn_plus_</a>(<span class="keyword">nullptr</span>),</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#a2e61f1b2f24a1e517e771a0b27f7e763">&#x202A;btn_minus_</a>(<span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">// 输入完成进入自定义处理函数</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<p>&#x202A;将队列清空 // 定义 清空队列函数 快速 清空队列 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/15</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">q</td><td>&#x202A;A T to process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d2/dc8/a00242_source.html">utils.h</a> 第 <a class="el" href="../../d2/dc8/a00242_source.html#l00065">65</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        T empty;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        swap(empty, q);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">成员函数说明</h2>
-<a id="a360026a5aa3f54d505b0a6deba81201e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a360026a5aa3f54d505b0a6deba81201e">&#9670;&nbsp;</a></span>Associate() <span class="overload">[1/2]</span></h2>
+<a id="a8caf43f80697158f648269f7964fffdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8caf43f80697158f648269f7964fffdd">&#9670;&nbsp;</a></span>Limit()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool CLineEdit::Associate </td>
+          <td class="memname">template&lt; typename T &gt; void Utils::Limit </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>over</em> = <code>true</code>&#160;</td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>minV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>maxV</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -231,505 +444,58 @@ Private 属性</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>&#x202A;将内存与组件关联 </p>
+<p>&#x202A;定义 函数限定函数， 根据 输入的值现象参数的范围 </p>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/18</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>&#x202A;If non-null, the data </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">over</td><td>&#x202A;True to over</td></tr>
+<dl class="section date"><dt>日期</dt><dd>2019/6/15</dd></dl>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>&#x202A;Generic type parameter. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/13</dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>&#x202A;If non-null, the data </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">over</td><td>&#x202A;(Optional) True to over</td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">q</td><td>&#x202A;A T to process </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">minV</td><td>&#x202A;The minimum v </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">maxV</td><td>&#x202A;The maximum v </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d4/d3a/a00101_source.html">clineedit.cpp</a> 第 <a class="el" href="../../d4/d3a/a00101_source.html#l00095">95</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// 有值且不让覆盖 返回出错</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span> (!over &amp;&amp; <a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a> = data;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// 将更改和 处理函数slot 关联起来</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    QObject::connect(<span class="keyword">this</span>, &amp;QLineEdit::editingFinished, <span class="keyword">this</span>, &amp;<a class="code" href="../../dc/ded/a01290.html#a8bebc9d382cfe7dac27fcfbd17d1193d">&#x202A;CLineEdit::LineEditDataProc</a>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1">&#x202A;ShowData</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dc/ded/a01290_a360026a5aa3f54d505b0a6deba81201e_cgraph.png" border="0" usemap="#dc/ded/a01290_a360026a5aa3f54d505b0a6deba81201e_cgraph" alt=""/></div>
-<map name="dc/ded/a01290_a360026a5aa3f54d505b0a6deba81201e_cgraph" id="dc/ded/a01290_a360026a5aa3f54d505b0a6deba81201e_cgraph">
-<area shape="rect" title="将内存与组件关联" alt="" coords="5,31,149,57"/>
-<area shape="rect" href="../../dc/ded/a01290.html#a8bebc9d382cfe7dac27fcfbd17d1193d" title="数据输入完成 将数据存储相应内存中 暂时只考虑 数据部分, 将填入的数据内容给 获取出来" alt="" coords="197,5,384,32"/>
-<area shape="rect" href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1" title="将数据同一显示" alt="" coords="218,56,363,83"/>
-</map>
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dc/ded/a01290_a360026a5aa3f54d505b0a6deba81201e_icgraph.png" border="0" usemap="#dc/ded/a01290_a360026a5aa3f54d505b0a6deba81201e_icgraph" alt=""/></div>
-<map name="dc/ded/a01290_a360026a5aa3f54d505b0a6deba81201e_icgraph" id="dc/ded/a01290_a360026a5aa3f54d505b0a6deba81201e_icgraph">
-<area shape="rect" title="将内存与组件关联" alt="" coords="407,42,551,69"/>
-<area shape="rect" href="../../da/d00/a01270.html#a0393c0a0d64fafce49cfb6b3eccafcd1" title="Initializes the user interface" alt="" coords="233,42,359,69"/>
-<area shape="rect" href="../../da/d00/a01270.html#ae102c72b4049bec2a4c5c41fd8185a28" title="Handles button cancel clicked signals" alt="" coords="5,5,185,47"/>
-<area shape="rect" href="../../da/d00/a01270.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="14,71,177,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ac27c5c5ee26ef35ffbfe59f34629c650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac27c5c5ee26ef35ffbfe59f34629c650">&#9670;&nbsp;</a></span>Associate() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CLineEdit::Associate </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">QPushButton *&#160;</td>
-          <td class="paramname"><em>plus</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">QPushButton *&#160;</td>
-          <td class="paramname"><em>minus</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>over</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;关联数据 和两个按钮 </p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/18</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>&#x202A;If non-null, the data </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">plus</td><td>&#x202A;If non-null, the plus </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">minus</td><td>&#x202A;If non-null, the minus </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">over</td><td>&#x202A;True to over</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/13</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>&#x202A;If non-null, the data </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">plus</td><td>&#x202A;If non-null, the plus </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">minus</td><td>&#x202A;If non-null, the minus </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">over</td><td>&#x202A;(Optional) True to over</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d4/d3a/a00101_source.html">clineedit.cpp</a> 第 <a class="el" href="../../d4/d3a/a00101_source.html#l00124">124</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// 有值且不让覆盖 返回出错</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> (!over &amp;&amp; (<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a> || <a class="code" href="../../dc/ded/a01290.html#a2e61f1b2f24a1e517e771a0b27f7e763">&#x202A;btn_minus_</a> || <a class="code" href="../../dc/ded/a01290.html#a5780336454ae6d06a1f426271492b302">&#x202A;btn_plus_</a>))</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a> = data;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#a2e61f1b2f24a1e517e771a0b27f7e763">&#x202A;btn_minus_</a> = minus;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#a5780336454ae6d06a1f426271492b302">&#x202A;btn_plus_</a> = plus;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// 关联 按钮点击信号</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    QObject::connect(<span class="keyword">this</span>, &amp;QLineEdit::editingFinished, <span class="keyword">this</span>, &amp;<a class="code" href="../../dc/ded/a01290.html#a8bebc9d382cfe7dac27fcfbd17d1193d">&#x202A;CLineEdit::LineEditDataProc</a>);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    QObject::connect(<a class="code" href="../../dc/ded/a01290.html#a5780336454ae6d06a1f426271492b302">&#x202A;btn_plus_</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="../../dc/ded/a01290.html#a685094af988ce740bbaa784826aac987">&#x202A;CLineEdit::LineEditDataPlus</a>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    QObject::connect(<a class="code" href="../../dc/ded/a01290.html#a2e61f1b2f24a1e517e771a0b27f7e763">&#x202A;btn_minus_</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code" href="../../dc/ded/a01290.html#ad242d10fd9eee09920cfd1add936efe1">&#x202A;CLineEdit::LineEditDataMinus</a>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// LDebug(&quot;Pointer data:{}--{}&quot;, (int)m_data_, *m_data_);</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1">&#x202A;ShowData</a>();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dc/ded/a01290_ac27c5c5ee26ef35ffbfe59f34629c650_cgraph.png" border="0" usemap="#dc/ded/a01290_ac27c5c5ee26ef35ffbfe59f34629c650_cgraph" alt=""/></div>
-<map name="dc/ded/a01290_ac27c5c5ee26ef35ffbfe59f34629c650_cgraph" id="dc/ded/a01290_ac27c5c5ee26ef35ffbfe59f34629c650_cgraph">
-<area shape="rect" title="关联数据 和两个按钮" alt="" coords="5,81,149,108"/>
-<area shape="rect" href="../../dc/ded/a01290.html#ad242d10fd9eee09920cfd1add936efe1" title="数据减少 信号" alt="" coords="197,5,392,32"/>
-<area shape="rect" href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1" title="将数据同一显示" alt="" coords="440,56,585,83"/>
-<area shape="rect" href="../../dc/ded/a01290.html#a685094af988ce740bbaa784826aac987" title="数据 增加 并做显示" alt="" coords="201,107,388,133"/>
-<area shape="rect" href="../../dc/ded/a01290.html#a8bebc9d382cfe7dac27fcfbd17d1193d" title="数据输入完成 将数据存储相应内存中 暂时只考虑 数据部分, 将填入的数据内容给 获取出来" alt="" coords="201,157,388,184"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad242d10fd9eee09920cfd1add936efe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad242d10fd9eee09920cfd1add936efe1">&#9670;&nbsp;</a></span>LineEditDataMinus</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CLineEdit::LineEditDataMinus </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;数据减少 信号 </p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/18</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/13</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d4/d3a/a00101_source.html">clineedit.cpp</a> 第 <a class="el" href="../../d4/d3a/a00101_source.html#l00070">70</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a>)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    *<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a> = *<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a> - 1;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1">&#x202A;ShowData</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    LDebug(<span class="stringliteral">&quot;line data Minus:{}--{}&quot;</span>, this-&gt;objectName().toStdString(), *<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dc/ded/a01290_ad242d10fd9eee09920cfd1add936efe1_cgraph.png" border="0" usemap="#dc/ded/a01290_ad242d10fd9eee09920cfd1add936efe1_cgraph" alt=""/></div>
-<map name="dc/ded/a01290_ad242d10fd9eee09920cfd1add936efe1_cgraph" id="dc/ded/a01290_ad242d10fd9eee09920cfd1add936efe1_cgraph">
-<area shape="rect" title="数据减少 信号" alt="" coords="5,5,200,32"/>
-<area shape="rect" href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1" title="将数据同一显示" alt="" coords="248,5,393,32"/>
-</map>
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dc/ded/a01290_ad242d10fd9eee09920cfd1add936efe1_icgraph.png" border="0" usemap="#dc/ded/a01290_ad242d10fd9eee09920cfd1add936efe1_icgraph" alt=""/></div>
-<map name="dc/ded/a01290_ad242d10fd9eee09920cfd1add936efe1_icgraph" id="dc/ded/a01290_ad242d10fd9eee09920cfd1add936efe1_icgraph">
-<area shape="rect" title="数据减少 信号" alt="" coords="197,5,392,32"/>
-<area shape="rect" href="../../dc/ded/a01290.html#ac27c5c5ee26ef35ffbfe59f34629c650" title="关联数据 和两个按钮" alt="" coords="5,5,149,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a685094af988ce740bbaa784826aac987"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a685094af988ce740bbaa784826aac987">&#9670;&nbsp;</a></span>LineEditDataPlus</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CLineEdit::LineEditDataPlus </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;数据 增加 并做显示 </p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/18</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/13</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d4/d3a/a00101_source.html">clineedit.cpp</a> 第 <a class="el" href="../../d4/d3a/a00101_source.html#l00049">49</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a>)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    *<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a> = *<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a> + 1;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1">&#x202A;ShowData</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    LDebug(<span class="stringliteral">&quot; data++++ Plus:{}--{}&quot;</span>, this-&gt;objectName().toStdString(),  *<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dc/ded/a01290_a685094af988ce740bbaa784826aac987_cgraph.png" border="0" usemap="#dc/ded/a01290_a685094af988ce740bbaa784826aac987_cgraph" alt=""/></div>
-<map name="dc/ded/a01290_a685094af988ce740bbaa784826aac987_cgraph" id="dc/ded/a01290_a685094af988ce740bbaa784826aac987_cgraph">
-<area shape="rect" title="数据 增加 并做显示" alt="" coords="5,5,192,32"/>
-<area shape="rect" href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1" title="将数据同一显示" alt="" coords="240,5,385,32"/>
-</map>
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dc/ded/a01290_a685094af988ce740bbaa784826aac987_icgraph.png" border="0" usemap="#dc/ded/a01290_a685094af988ce740bbaa784826aac987_icgraph" alt=""/></div>
-<map name="dc/ded/a01290_a685094af988ce740bbaa784826aac987_icgraph" id="dc/ded/a01290_a685094af988ce740bbaa784826aac987_icgraph">
-<area shape="rect" title="数据 增加 并做显示" alt="" coords="197,5,384,32"/>
-<area shape="rect" href="../../dc/ded/a01290.html#ac27c5c5ee26ef35ffbfe59f34629c650" title="关联数据 和两个按钮" alt="" coords="5,5,149,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a8bebc9d382cfe7dac27fcfbd17d1193d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bebc9d382cfe7dac27fcfbd17d1193d">&#9670;&nbsp;</a></span>LineEditDataProc</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CLineEdit::LineEditDataProc </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;数据输入完成 将数据存储相应内存中 暂时只考虑 数据部分, 将填入的数据内容给 获取出来 </p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/18</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/13</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d4/d3a/a00101_source.html">clineedit.cpp</a> 第 <a class="el" href="../../d4/d3a/a00101_source.html#l00024">24</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a>)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// 数据有效性验证, 避免出现 错误</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::string str = this-&gt;text().toStdString ();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> num = stoi(str);    <span class="comment">// 使用 stoi 转换 转换成字符位置, 转换出错不继续转换</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 转换相应的值存储</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    *(this-&gt;<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a>) = static_cast&lt;int&gt;(num);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    LDebug(<span class="stringliteral">&quot;LineEdit Data Editfinished in label:{}--Value:{}&quot;</span>, this-&gt;objectName().toStdString (), *<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<p class="definition">在文件 <a class="el" href="../../d2/dc8/a00242_source.html">utils.h</a> 第 <a class="el" href="../../d2/dc8/a00242_source.html#l00047">47</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">// 将值限定在 设定区域内; 超过的值 都限定在 min max 中</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        q = std::max(minV, std::min(maxV, q));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> q;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dc/ded/a01290_a8bebc9d382cfe7dac27fcfbd17d1193d_icgraph.png" border="0" usemap="#dc/ded/a01290_a8bebc9d382cfe7dac27fcfbd17d1193d_icgraph" alt=""/></div>
-<map name="dc/ded/a01290_a8bebc9d382cfe7dac27fcfbd17d1193d_icgraph" id="dc/ded/a01290_a8bebc9d382cfe7dac27fcfbd17d1193d_icgraph">
-<area shape="rect" title="数据输入完成 将数据存储相应内存中 暂时只考虑 数据部分, 将填入的数据内容给 获取出来" alt="" coords="599,42,785,69"/>
-<area shape="rect" href="../../dc/ded/a01290.html#a360026a5aa3f54d505b0a6deba81201e" title="将内存与组件关联" alt="" coords="407,42,551,69"/>
-<area shape="rect" href="../../da/d00/a01270.html#a0393c0a0d64fafce49cfb6b3eccafcd1" title="Initializes the user interface" alt="" coords="233,42,359,69"/>
-<area shape="rect" href="../../da/d00/a01270.html#ae102c72b4049bec2a4c5c41fd8185a28" title="Handles button cancel clicked signals" alt="" coords="5,5,185,47"/>
-<area shape="rect" href="../../da/d00/a01270.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="14,71,177,98"/>
+<div class="center"><img src="../../dc/ded/a01290_a8caf43f80697158f648269f7964fffdd_icgraph.png" border="0" usemap="#dc/ded/a01290_a8caf43f80697158f648269f7964fffdd_icgraph" alt=""/></div>
+<map name="dc/ded/a01290_a8caf43f80697158f648269f7964fffdd_icgraph" id="dc/ded/a01290_a8caf43f80697158f648269f7964fffdd_icgraph">
+<area shape="rect" title="定义 函数限定函数， 根据 输入的值现象参数的范围" alt="" coords="156,5,240,32"/>
+<area shape="rect" href="../../d0/daf/a00970.html#a13541699698270bd507e5d5ed69d2e9a" title="Runs this object" alt="" coords="5,5,108,32"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="ac9586e57923f41790ae07939ec14ccd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9586e57923f41790ae07939ec14ccd1">&#9670;&nbsp;</a></span>ShowData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CLineEdit::ShowData </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;将数据同一显示 </p>
-<p class="DocNodeLTR">Shows the data</p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/18</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/13 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d4/d3a/a00101_source.html">clineedit.cpp</a> 第 <a class="el" href="../../d4/d3a/a00101_source.html#l00153">153</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a>)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        QString str = QString::number(*<a class="code" href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;m_data_</a>);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        this-&gt;setText(str);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="comment">// std::string tmp = str.toStdString();</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../dc/ded/a01290_ac9586e57923f41790ae07939ec14ccd1_icgraph.png" border="0" usemap="#dc/ded/a01290_ac9586e57923f41790ae07939ec14ccd1_icgraph" alt=""/></div>
-<map name="dc/ded/a01290_ac9586e57923f41790ae07939ec14ccd1_icgraph" id="dc/ded/a01290_ac9586e57923f41790ae07939ec14ccd1_icgraph">
-<area shape="rect" title="将数据同一显示" alt="" coords="668,93,813,119"/>
-<area shape="rect" href="../../dc/ded/a01290.html#a360026a5aa3f54d505b0a6deba81201e" title="将内存与组件关联" alt="" coords="451,42,595,69"/>
-<area shape="rect" href="../../dc/ded/a01290.html#ad242d10fd9eee09920cfd1add936efe1" title="数据减少 信号" alt="" coords="425,93,620,119"/>
-<area shape="rect" href="../../dc/ded/a01290.html#a685094af988ce740bbaa784826aac987" title="数据 增加 并做显示" alt="" coords="429,143,616,170"/>
-<area shape="rect" href="../../da/d00/a01270.html#a0393c0a0d64fafce49cfb6b3eccafcd1" title="Initializes the user interface" alt="" coords="243,42,368,69"/>
-<area shape="rect" href="../../da/d00/a01270.html#ae102c72b4049bec2a4c5c41fd8185a28" title="Handles button cancel clicked signals" alt="" coords="5,5,185,47"/>
-<area shape="rect" href="../../da/d00/a01270.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="14,71,177,98"/>
-<area shape="rect" href="../../dc/ded/a01290.html#ac27c5c5ee26ef35ffbfe59f34629c650" title="关联数据 和两个按钮" alt="" coords="233,118,377,145"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">结构体成员变量说明</h2>
-<a id="a2e61f1b2f24a1e517e771a0b27f7e763"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e61f1b2f24a1e517e771a0b27f7e763">&#9670;&nbsp;</a></span>btn_minus_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QPushButton* CLineEdit::btn_minus_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;定义减少按钮 </p>
-
-<p class="definition">在文件 <a class="el" href="../../d0/dc2/a00104_source.html">clineedit.h</a> 第 <a class="el" href="../../d0/dc2/a00104_source.html#l00128">128</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a5780336454ae6d06a1f426271492b302"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5780336454ae6d06a1f426271492b302">&#9670;&nbsp;</a></span>btn_plus_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QPushButton* CLineEdit::btn_plus_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;定义增加按钮 </p>
-
-<p class="definition">在文件 <a class="el" href="../../d0/dc2/a00104_source.html">clineedit.h</a> 第 <a class="el" href="../../d0/dc2/a00104_source.html#l00127">127</a> 行定义.</p>
-
-</div>
-</div>
-<a id="ad2a5cff322988f0382df41ef2f1bf2ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2a5cff322988f0382df41ef2f1bf2ed">&#9670;&nbsp;</a></span>m_data_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int* CLineEdit::m_data_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;指定数据关联的指针 </p>
-
-<p class="definition">在文件 <a class="el" href="../../d0/dc2/a00104_source.html">clineedit.h</a> 第 <a class="el" href="../../d0/dc2/a00104_source.html#l00126">126</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/model/<a class="el" href="../../d0/dc2/a00104_source.html">clineedit.h</a></li>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/model/<a class="el" href="../../d4/d3a/a00101_source.html">clineedit.cpp</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/<a class="el" href="../../d2/dc8/a00242_source.html">utils.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01290_html_a5780336454ae6d06a1f426271492b302"><div class="ttname"><a href="../../dc/ded/a01290.html#a5780336454ae6d06a1f426271492b302">&#x202A;CLineEdit::btn_plus_</a></div><div class="ttdeci">&#x202A;QPushButton * btn_plus_</div><div class="ttdoc">&#x202A;定义增加按钮</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc2/a00104_source.html#l00127">clineedit.h:127</a></div></div>
-<div class="ttc" id="aa01290_html_ac9586e57923f41790ae07939ec14ccd1"><div class="ttname"><a href="../../dc/ded/a01290.html#ac9586e57923f41790ae07939ec14ccd1">&#x202A;CLineEdit::ShowData</a></div><div class="ttdeci">&#x202A;void ShowData(void)</div><div class="ttdoc">&#x202A;将数据同一显示</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3a/a00101_source.html#l00153">clineedit.cpp:153</a></div></div>
-<div class="ttc" id="aa01290_html_a685094af988ce740bbaa784826aac987"><div class="ttname"><a href="../../dc/ded/a01290.html#a685094af988ce740bbaa784826aac987">&#x202A;CLineEdit::LineEditDataPlus</a></div><div class="ttdeci">&#x202A;bool LineEditDataPlus(void)</div><div class="ttdoc">&#x202A;数据 增加 并做显示</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3a/a00101_source.html#l00049">clineedit.cpp:49</a></div></div>
-<div class="ttc" id="aa01290_html_a8bebc9d382cfe7dac27fcfbd17d1193d"><div class="ttname"><a href="../../dc/ded/a01290.html#a8bebc9d382cfe7dac27fcfbd17d1193d">&#x202A;CLineEdit::LineEditDataProc</a></div><div class="ttdeci">&#x202A;bool LineEditDataProc(void)</div><div class="ttdoc">&#x202A;数据输入完成 将数据存储相应内存中 暂时只考虑 数据部分, 将填入的数据内容给 获取出来</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3a/a00101_source.html#l00024">clineedit.cpp:24</a></div></div>
-<div class="ttc" id="aa01290_html_ad242d10fd9eee09920cfd1add936efe1"><div class="ttname"><a href="../../dc/ded/a01290.html#ad242d10fd9eee09920cfd1add936efe1">&#x202A;CLineEdit::LineEditDataMinus</a></div><div class="ttdeci">&#x202A;bool LineEditDataMinus(void)</div><div class="ttdoc">&#x202A;数据减少 信号</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3a/a00101_source.html#l00070">clineedit.cpp:70</a></div></div>
-<div class="ttc" id="aa01290_html_ad2a5cff322988f0382df41ef2f1bf2ed"><div class="ttname"><a href="../../dc/ded/a01290.html#ad2a5cff322988f0382df41ef2f1bf2ed">&#x202A;CLineEdit::m_data_</a></div><div class="ttdeci">&#x202A;int * m_data_</div><div class="ttdoc">&#x202A;指定数据关联的指针</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc2/a00104_source.html#l00126">clineedit.h:126</a></div></div>
-<div class="ttc" id="aa01290_html_a2e61f1b2f24a1e517e771a0b27f7e763"><div class="ttname"><a href="../../dc/ded/a01290.html#a2e61f1b2f24a1e517e771a0b27f7e763">&#x202A;CLineEdit::btn_minus_</a></div><div class="ttdeci">&#x202A;QPushButton * btn_minus_</div><div class="ttdoc">&#x202A;定义减少按钮</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc2/a00104_source.html#l00128">clineedit.h:128</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dc/ded/a01290.html">&#x202A;CLineEdit</a></li>
+    <li class="navelem"><a class="el" href="../../dc/ded/a01290.html">&#x202A;Utils</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

@@ -1,4 +1,6 @@
-<map id="QcGaugeWidget" name="QcGaugeWidget">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,124,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="28,5,101,32"/>
+<map id="QcColorBand" name="QcColorBand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,104,256"/>
+<area shape="rect" id="node2" href="$dc/d9e/a01206.html" title=" " alt="" coords="6,155,103,181"/>
+<area shape="rect" id="node3" href="$d4/d5d/a01202.html" title=" " alt="" coords="23,80,87,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="19,5,90,32"/>
 </map>

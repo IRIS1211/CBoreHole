@@ -1,5 +1,5 @@
 <map id="TEST_CASE" name="TEST_CASE">
 <area shape="rect" id="node1" title=" " alt="" coords="5,13,103,39"/>
-<area shape="rect" id="node2" href="$de/da0/a01341.html#a82ed3e2282101b5d3326df68e6098898" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="151,5,325,47"/>
-<area shape="rect" id="node3" href="$de/da0/a01341.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="373,13,517,39"/>
+<area shape="rect" id="node2" href="$d9/de6/a01314.html#a82ed3e2282101b5d3326df68e6098898" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="151,5,325,47"/>
+<area shape="rect" id="node3" href="$d9/de6/a01314.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="373,13,517,39"/>
 </map>

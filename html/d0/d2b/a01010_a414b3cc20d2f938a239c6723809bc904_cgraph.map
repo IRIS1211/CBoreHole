@@ -1,0 +1,9 @@
+<map id="Config::WriteParaToFile" name="Config::WriteParaToFile">
+<area shape="rect" id="node1" title="将参数写入到文件中" alt="" coords="5,97,164,123"/>
+<area shape="rect" id="node2" href="$da/d17/a01046.html#aa2e8fbcdd233ecc35b7798932be4bc46" title="通过文件指针 将数据写入到二进制数据流中" alt="" coords="212,97,408,123"/>
+<area shape="rect" id="node3" href="$d9/de6/a01314.html#ad98ced7a9727883c0f305e144db03024" title="String 2 character" alt="" coords="679,126,844,153"/>
+<area shape="rect" id="node4" href="$d9/de6/a01314.html#a82ed3e2282101b5d3326df68e6098898" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="456,5,631,47"/>
+<area shape="rect" id="node6" href="$d7/d8c/a01306.html#a7fbb7bbb704161e7512dd9edc091bb23" title="Writes a data 写入基本数据类型" alt="" coords="469,122,618,149"/>
+<area shape="rect" id="node7" href="$d7/d8c/a01306.html#ae9335a7520c43095ac8312c0901e9bd4" title="将一个字符串写入到二进制文件流中" alt="" coords="465,173,621,215"/>
+<area shape="rect" id="node5" href="$d9/de6/a01314.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="689,13,833,39"/>
+</map>

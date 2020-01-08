@@ -1,6 +1,5 @@
-<map id="QcDegreesItem" name="QcDegreesItem">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,117,256"/>
-<area shape="rect" id="node2" href="$d0/d22/a01049.html" title=" " alt="" coords="13,155,110,181"/>
-<area shape="rect" id="node3" href="$d7/d46/a01045.html" title=" " alt="" coords="29,80,93,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="26,5,97,32"/>
+<map id="RunPara::StImage::StImageProc" name="RunPara::StImage::StImageProc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,200,216,227"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="71,96,151,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="47,5,174,47"/>
 </map>

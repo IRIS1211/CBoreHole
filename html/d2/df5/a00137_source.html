@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/model/ui_gaugecompass.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/init.cc 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,81 +89,217 @@ $(document).ready(function(){initNavTree('d2/df5/a00137_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">ui_gaugecompass.h</div>  </div>
+<div class="title">init.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d2/df5/a00137.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/********************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">** Form generated from reading UI file &#39;gaugecompass.ui&#39;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">**</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">** Created by: Qt User Interface Compiler version 5.11.1</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">**</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">** WARNING! All changes made in this file will be lost when recompiling UI file!</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">********************************************************************************/</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef UI_GAUGECOMPASS_H</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define UI_GAUGECOMPASS_H</span></div>
+<a href="../../d2/df5/a00137.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../stdafx.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QtCore/QVariant&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QApplication&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QHBoxLayout&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QVBoxLayout&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QtWidgets/QWidget&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;QT_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../de/d5c/a01358.html">   19</a></span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="../../de/d5c/a01358.html">&#x202A;Ui_GaugeCompass</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../de/d5c/a01358.html#acca7f77a4c9541202f660a5f20ee156b">   22</a></span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../de/d5c/a01358.html#abaec47100c7aa386b26a31ae41d04083">   23</a></span>&#160;    QHBoxLayout *<a class="code" href="../../de/d5c/a01358.html#acca7f77a4c9541202f660a5f20ee156b">&#x202A;horizontalLayout</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QVBoxLayout *<a class="code" href="../../de/d5c/a01358.html#abaec47100c7aa386b26a31ae41d04083">&#x202A;layout</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../de/d5c/a01358.html#af3c6c91d81a4fdcfba762d1b11c48067">   25</a></span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../de/d5c/a01358.html#af3c6c91d81a4fdcfba762d1b11c48067">&#x202A;setupUi</a>(QWidget *<a class="code" href="../../dc/de0/a01302.html">&#x202A;GaugeCompass</a>)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../dc/de0/a01302.html">&#x202A;GaugeCompass</a>-&gt;objectName().isEmpty())</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="../../dc/de0/a01302.html">&#x202A;GaugeCompass</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;GaugeCompass&quot;</span>));</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="../../dc/de0/a01302.html">&#x202A;GaugeCompass</a>-&gt;resize(200, 200);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="../../de/d5c/a01358.html#acca7f77a4c9541202f660a5f20ee156b">&#x202A;horizontalLayout</a> = <span class="keyword">new</span> QHBoxLayout(<a class="code" href="../../dc/de0/a01302.html">&#x202A;GaugeCompass</a>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="../../de/d5c/a01358.html#acca7f77a4c9541202f660a5f20ee156b">&#x202A;horizontalLayout</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;horizontalLayout&quot;</span>));</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="../../de/d5c/a01358.html#abaec47100c7aa386b26a31ae41d04083">&#x202A;layout</a> = <span class="keyword">new</span> QVBoxLayout();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="../../de/d5c/a01358.html#abaec47100c7aa386b26a31ae41d04083">&#x202A;layout</a>-&gt;setSpacing(2);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="../../de/d5c/a01358.html#abaec47100c7aa386b26a31ae41d04083">&#x202A;layout</a>-&gt;setObjectName(QStringLiteral(<span class="stringliteral">&quot;layout&quot;</span>));</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="../../de/d5c/a01358.html#acca7f77a4c9541202f660a5f20ee156b">&#x202A;horizontalLayout</a>-&gt;addLayout(<a class="code" href="../../de/d5c/a01358.html#abaec47100c7aa386b26a31ae41d04083">&#x202A;layout</a>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#afb07b00f2611777025031d20adb34ce5">   12</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d4/dbc/a01038.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a>()</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> res = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    res = <a class="code" href="../../d4/dbc/a01038.html#a3dd823273154e1bb5cd2e85efd872662">&#x202A;CurrentDirInit</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// 创建临时 读写文件对象, 用于读写 yml 文件</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    cv::FileStorage *fs = <span class="keyword">new</span> cv::FileStorage();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    res = <a class="code" href="../../d4/dbc/a01038.html#af348596369f10008277e9321bd9e6901">&#x202A;YMLConfigInit</a>(fs, <a class="code" href="../../dc/d87/a00032.html#a433302ffff0649fa165e352add69b39a">&#x202A;K_MAIN_CONFIG_FILE</a>,cv::FileStorage::READ);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    res = <a class="code" href="../../d4/dbc/a01038.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;GlobalVarInit</a>(<a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>,*fs);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// 进行变量值更新并创建相应文件夹</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    res = <a class="code" href="../../d4/dbc/a01038.html#a5714027a2cc07f9c5c0ae84a177631be">&#x202A;GlobalVarUpdate</a>(<a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#a3dd823273154e1bb5cd2e85efd872662">   25</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d4/dbc/a01038.html#a3dd823273154e1bb5cd2e85efd872662">&#x202A;Init::CurrentDirInit</a>()</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// 设置工作路径</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QString cur_path = QDir::currentPath();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// 如果是在 VS2015 环境下 直接使用 工作目录</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 获取从后往前的 第一个/ 位置</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> index = cur_path.lastIndexOf(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 如果最后一个字符 / 则删除之后重新计算/ 位置</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (index == cur_path.size() - 1)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        cur_path = cur_path.left(index);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        index = cur_path.lastIndexOf(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="../../de/d5c/a01358.html#a5aff69aa40e88dcb0ab5de525bab96b5">&#x202A;retranslateUi</a>(<a class="code" href="../../dc/de0/a01302.html">&#x202A;GaugeCompass</a>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        QMetaObject::connectSlotsByName(<a class="code" href="../../dc/de0/a01302.html">&#x202A;GaugeCompass</a>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    } <span class="comment">// setupUi</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../de/d5c/a01358.html#a5aff69aa40e88dcb0ab5de525bab96b5">   44</a></span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../de/d5c/a01358.html#a5aff69aa40e88dcb0ab5de525bab96b5">&#x202A;retranslateUi</a>(QWidget *<a class="code" href="../../dc/de0/a01302.html">&#x202A;GaugeCompass</a>)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="../../dc/de0/a01302.html">&#x202A;GaugeCompass</a>-&gt;setWindowTitle(QApplication::translate(<span class="stringliteral">&quot;GaugeCompass&quot;</span>, <span class="stringliteral">&quot;Form&quot;</span>, <span class="keyword">nullptr</span>));</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    } <span class="comment">// retranslateUi</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../da/dab/a01362.html">   52</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../de/df7/a00418.html">&#x202A;Ui</a> {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">class </span><a class="code" href="../../da/dab/a01362.html">&#x202A;GaugeCompass</a>: <span class="keyword">public</span> <a class="code" href="../../de/d5c/a01358.html">&#x202A;Ui_GaugeCompass</a> {};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;} <span class="comment">// namespace Ui</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;QT_END_NAMESPACE</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // UI_GAUGECOMPASS_H</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QString my_dir = cur_path.right(cur_path.size() - index);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// TODO(SChen)(IRIS_Chen): 此处判定如果更改目录可能不通过</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 如果等于当前目录名, 不用处理, 否则 后退一层</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (my_dir == <span class="stringliteral">&quot;CBoreHole&quot;</span>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    cur_path = cur_path.left(index);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// 将目录设置为 工作目录, 保持QT 和VS 工作路径一致</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QDir::setCurrent(cur_path);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    LDebug(<span class="stringliteral">&quot;Current Dir:{}&quot;</span>, QDir::currentPath().toStdString());</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#af348596369f10008277e9321bd9e6901">   70</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d4/dbc/a01038.html#af348596369f10008277e9321bd9e6901">&#x202A;Init::YMLConfigInit</a>(cv::FileStorage * fs, </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                         <span class="keyword">const</span> std::string &amp; filename, </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">int</span> flg)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::string file;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (filename.empty())</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        file = <span class="stringliteral">&quot;./Config/Config.yml&quot;</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        file = filename;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// 尝试打开文件, 并检测是够打开成功</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        fs-&gt;open(filename, flg);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        LError(<span class="stringliteral">&quot;YML File Error:{}&quot;</span>, filename);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// 测试读取判断 是否 正确配置文件</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::string s_cfg_ver = (*fs)[<span class="stringliteral">&quot;config_version&quot;</span>];</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (!s_cfg_ver.empty())</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        LInfo(<span class="stringliteral">&quot;YML Config Read OK! Config Version:{}&quot;</span>, s_cfg_ver);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> fs-&gt;isOpened();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#ac6c5c0e3086cf28a96387e32ffc5bebf">  113</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d4/dbc/a01038.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a>(<a class="code" href="../../d0/d2b/a01010.html">&#x202A;Config</a> *&amp; config, </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                         <span class="keyword">const</span> cv::FileStorage &amp; fs)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span> (!fs.isOpened())</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// 初始化 Config 参数</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    config = <span class="keyword">new</span> <a class="code" href="../../d0/d2b/a01010.html">&#x202A;Config</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">//  读取设定 好格式的 配置文件</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// config-&gt;mRunPara.LoadRunParaFromYML(fs);</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    config-&gt;<a class="code" href="../../d0/d2b/a01010.html#aaa28b92aaa35102c72b3196a7a2295ef">&#x202A;LoadParaFromYML</a>(fs);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="../../d4/dbc/a01038.html#af90a5705e283acc4150060ea12833ab8">&#x202A;ProjectDirInit</a>(&amp;config-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;Project</a>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span>  <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#a5714027a2cc07f9c5c0ae84a177631be">  143</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d4/dbc/a01038.html#a5714027a2cc07f9c5c0ae84a177631be">&#x202A;Init::GlobalVarUpdate</a>(<a class="code" href="../../d0/d2b/a01010.html">&#x202A;Config</a> *&amp;config)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> si_HoleNum_Cnt = 0;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="../../da/d17/a01046.html#d5/d4c/a01058">&#x202A;RunPara::StHole</a> *hole = &amp;(config-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#afd733ae61a9e00508ef1c95697ab1e52">&#x202A;Hole</a>);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// 获取测孔编号和测孔数据</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    std::string time_str = <a class="code" href="../../d6/dfa/a01318.html#a8fc80e6d8ee244ed6a5a49d7527de6d5">&#x202A;Utils_Time::GetTime</a>(<span class="charliteral">&#39;_&#39;</span>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    std::string hole_num_str = time_str + <span class="stringliteral">&quot;_&quot;</span> + Utils_String::Num2Str(++si_HoleNum_Cnt);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    hole-&gt;<a class="code" href="../../da/d17/a01046.html#a733a40ab4e0dc170b6ac9e25e7a70797">&#x202A;strTime</a> = time_str;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    hole-&gt;<a class="code" href="../../da/d17/a01046.html#ae45d52024dc8fefee05c2f41d92ed380">&#x202A;strNum</a> = hole_num_str;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    std::string cur_path = QDir::currentPath().toStdString();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">//  获取第一个字符盘符// #LINUX  存在问题</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">const</span> std::string disk_name = cur_path.substr(0, 1);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="../../da/d17/a01046.html#d4/da7/a01102">&#x202A;RunPara::StDevice::StDisk</a> *disk = &amp;(config-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../da/d17/a01046.html#aebb207ab03b76e5453e28c7bc4606afa">&#x202A;Disk</a>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    disk-&gt;<a class="code" href="../../da/d17/a01046.html#aef119328e7820c1c02157b9e92f3ac1d">&#x202A;nDiskGBAll</a> = static_cast&lt;int&gt;(<a class="code" href="../../da/d79/a01310.html#acb425a725353c07d525139ce1119ede2">&#x202A;Utils_QT::GetDiskAll</a>(disk_name));</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    disk-&gt;<a class="code" href="../../da/d17/a01046.html#a23ea7efdb75cf2e99d81b3682d7080fb">&#x202A;nDiskGBUsed</a> = static_cast&lt;int&gt;(<a class="code" href="../../da/d79/a01310.html#aca84499be1f513127b12f9d5b7ca11ef">&#x202A;Utils_QT::GetDiskUsed</a>(disk_name));</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="../../d4/dbc/a01038.html#af90a5705e283acc4150060ea12833ab8">  182</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d4/dbc/a01038.html#af90a5705e283acc4150060ea12833ab8">&#x202A;Init::ProjectDirInit</a>(<a class="code" href="../../da/d17/a01046.html#dd/d57/a01054">&#x202A;RunPara::StProject</a> * project)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span> (!project)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="comment">// 计数每次配置参数的累加值 </span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> si_ConfigPara_Cnt = 0;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">// 更新工作文件夹和 工作路径</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    project-&gt;<a class="code" href="../../da/d17/a01046.html#a0f3e36b4eb0bbf041ae4298a1a7ecca5">&#x202A;strCurrentPath</a> = QDir::currentPath().toStdString();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// TODO(SChen)(Chen): 工程名可能考虑 自定义输入的问题</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">// Project_XXXX_001 的形式</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    project-&gt;<a class="code" href="../../da/d17/a01046.html#ab75b4a0e3dc051ecba64676e81c66c10">&#x202A;strProjectName</a> = project-&gt;<a class="code" href="../../da/d17/a01046.html#a2e37be011ca35dcb5648661c659e0f51">&#x202A;strProjectDirPrefix</a></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        + <a class="code" href="../../d6/dfa/a01318.html#aacca407ae262280a9ade27ac4d16a98c">&#x202A;Utils_Time::GetDate</a>()</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        + <span class="charliteral">&#39;_&#39;</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        + <a class="code" href="../../d9/de6/a01314.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(si_ConfigPara_Cnt++, 3);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    project-&gt;<a class="code" href="../../da/d17/a01046.html#ade4767762e0d68450f48bc770a22832d">&#x202A;strProjectPath</a> = project-&gt;<a class="code" href="../../da/d17/a01046.html#a124285f898af8492034ac471c39c8757">&#x202A;strProjectDir</a> + project-&gt;<a class="code" href="../../da/d17/a01046.html#ab75b4a0e3dc051ecba64676e81c66c10">&#x202A;strProjectName</a>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">// 判断工程文件夹是否存在, 不存在则新建</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    std::string project_abs_path = project-&gt;<a class="code" href="../../da/d17/a01046.html#a0f3e36b4eb0bbf041ae4298a1a7ecca5">&#x202A;strCurrentPath</a> + project-&gt;<a class="code" href="../../da/d17/a01046.html#ade4767762e0d68450f48bc770a22832d">&#x202A;strProjectPath</a>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="comment">// 工程文件夹 不存在就 建立一个</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../da/d79/a01310.html#af9b1fae65fc91319a7f2ee2fefb86799">&#x202A;Utils_QT::CheckDir</a>(project_abs_path,<span class="keyword">true</span>))</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        LError(<span class="stringliteral">&quot;Project Dir Create Error:{}&quot;</span>,project_abs_path);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="../../dc/de0/a01302.html">&#x202A;Utils_Exception</a>(<a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d">&#x202A;Error_Project_Dir_Create_Error</a>, <span class="stringliteral">&quot;Error_Project_Dir_Create_Error&quot;</span>);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    LInfo(<span class="stringliteral">&quot;\n\tProject \n\t ProjectName:\t\t{} \n\t CurrentDir:\t\t{} \n\t ProjectPath:\t\t{}&quot;</span>, </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;          project-&gt;<a class="code" href="../../da/d17/a01046.html#ab75b4a0e3dc051ecba64676e81c66c10">&#x202A;strProjectName</a>,</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;          project-&gt;<a class="code" href="../../da/d17/a01046.html#a0f3e36b4eb0bbf041ae4298a1a7ecca5">&#x202A;strCurrentPath</a>, </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;          project-&gt;<a class="code" href="../../da/d17/a01046.html#ade4767762e0d68450f48bc770a22832d">&#x202A;strProjectPath</a>);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="comment">// 测试模式下 设置 debug 路径  然后设置输出路径也是 测试文件夹</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../da/d17/a01046.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>.<a class="code" href="../../da/d17/a01046.html#a17d047ca991630963bb004404e25cbda">&#x202A;nDebugEnable</a>)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="comment">// project-&gt;strDebugPath = gConfig-&gt;mRunPara.CFG.Debug.strDebugFilePath;</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        project-&gt;<a class="code" href="../../da/d17/a01046.html#ade4767762e0d68450f48bc770a22832d">&#x202A;strProjectPath</a> = <a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../da/d17/a01046.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>.<a class="code" href="../../da/d17/a01046.html#a456e606693e3ff12de516092cd24a607">&#x202A;strDebugFilePath</a>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01358_html_af3c6c91d81a4fdcfba762d1b11c48067"><div class="ttname"><a href="../../de/d5c/a01358.html#af3c6c91d81a4fdcfba762d1b11c48067">&#x202A;Ui_GaugeCompass::setupUi</a></div><div class="ttdeci">&#x202A;void setupUi(QWidget *GaugeCompass)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00025">ui_gaugecompass.h:25</a></div></div>
-<div class="ttc" id="aa01358_html"><div class="ttname"><a href="../../de/d5c/a01358.html">&#x202A;Ui_GaugeCompass</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00019">ui_gaugecompass.h:19</a></div></div>
-<div class="ttc" id="aa01358_html_acca7f77a4c9541202f660a5f20ee156b"><div class="ttname"><a href="../../de/d5c/a01358.html#acca7f77a4c9541202f660a5f20ee156b">&#x202A;Ui_GaugeCompass::horizontalLayout</a></div><div class="ttdeci">&#x202A;QHBoxLayout * horizontalLayout</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00022">ui_gaugecompass.h:22</a></div></div>
-<div class="ttc" id="aa01302_html"><div class="ttname"><a href="../../dc/de0/a01302.html">&#x202A;GaugeCompass</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc8/a00122_source.html#l00013">GaugeCompass.h:13</a></div></div>
-<div class="ttc" id="aa00418_html"><div class="ttname"><a href="../../de/df7/a00418.html">&#x202A;Ui</a></div><div class="ttdoc">&#x202A;QT UI 用于生成 ui组件</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00020">readwindow.h:20</a></div></div>
-<div class="ttc" id="aa01358_html_a5aff69aa40e88dcb0ab5de525bab96b5"><div class="ttname"><a href="../../de/d5c/a01358.html#a5aff69aa40e88dcb0ab5de525bab96b5">&#x202A;Ui_GaugeCompass::retranslateUi</a></div><div class="ttdeci">&#x202A;void retranslateUi(QWidget *GaugeCompass)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00044">ui_gaugecompass.h:44</a></div></div>
-<div class="ttc" id="aa01358_html_abaec47100c7aa386b26a31ae41d04083"><div class="ttname"><a href="../../de/d5c/a01358.html#abaec47100c7aa386b26a31ae41d04083">&#x202A;Ui_GaugeCompass::layout</a></div><div class="ttdeci">&#x202A;QVBoxLayout * layout</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00023">ui_gaugecompass.h:23</a></div></div>
-<div class="ttc" id="aa01362_html"><div class="ttname"><a href="../../da/dab/a01362.html">&#x202A;Ui::GaugeCompass</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00052">ui_gaugecompass.h:52</a></div></div>
+<div class="ttc" id="aa01318_html_aacca407ae262280a9ade27ac4d16a98c"><div class="ttname"><a href="../../d6/dfa/a01318.html#aacca407ae262280a9ade27ac4d16a98c">&#x202A;Utils_Time::GetDate</a></div><div class="ttdeci">&#x202A;static std::string GetDate(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00135">utils_time.cc:135</a></div></div>
+<div class="ttc" id="aa01046_html_a1b1f21581cf398c15060fe53199662d9"><div class="ttname"><a href="../../da/d17/a01046.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;RunPara::Device</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice Device</div></div>
+<div class="ttc" id="aa01310_html_aca84499be1f513127b12f9d5b7ca11ef"><div class="ttname"><a href="../../da/d79/a01310.html#aca84499be1f513127b12f9d5b7ca11ef">&#x202A;Utils_QT::GetDiskUsed</a></div><div class="ttdeci">&#x202A;static double GetDiskUsed(const std::string disk=DEFAULT_DISK)</div><div class="ttdoc">&#x202A;Gets disk used</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00216">utils_qt.cc:216</a></div></div>
+<div class="ttc" id="aa01046_html_a124285f898af8492034ac471c39c8757"><div class="ttname"><a href="../../da/d17/a01046.html#a124285f898af8492034ac471c39c8757">&#x202A;RunPara::StProject::strProjectDir</a></div><div class="ttdeci">&#x202A;std::string strProjectDir</div><div class="ttdoc">&#x202A;工程文件夹路径父路径 工程新建在此目录下 &quot;/media/testpro/&quot;</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00061">runpara.h:61</a></div></div>
+<div class="ttc" id="aa01310_html_af9b1fae65fc91319a7f2ee2fefb86799"><div class="ttname"><a href="../../da/d79/a01310.html#af9b1fae65fc91319a7f2ee2fefb86799">&#x202A;Utils_QT::CheckDir</a></div><div class="ttdeci">&#x202A;static bool CheckDir(const std::string &amp;path, bool create_=true)</div><div class="ttdoc">&#x202A;判断文件夹是否存在如果存在 根据情况判断是否创建</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00057">utils_qt.cc:57</a></div></div>
+<div class="ttc" id="aa01046_html_a4e6644435b7546b92c9d1f74b9d828da"><div class="ttname"><a href="../../da/d17/a01046.html#a4e6644435b7546b92c9d1f74b9d828da">&#x202A;RunPara::Project</a></div><div class="ttdeci">&#x202A;struct RunPara::StProject Project</div></div>
+<div class="ttc" id="aa01046_html_ade4767762e0d68450f48bc770a22832d"><div class="ttname"><a href="../../da/d17/a01046.html#ade4767762e0d68450f48bc770a22832d">&#x202A;RunPara::StProject::strProjectPath</a></div><div class="ttdeci">&#x202A;std::string strProjectPath</div><div class="ttdoc">&#x202A;存储工程目录 // 从 运行路径 到 功能文件所在目录</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00073">runpara.h:73</a></div></div>
+<div class="ttc" id="aa01046_html_a733a40ab4e0dc170b6ac9e25e7a70797"><div class="ttname"><a href="../../da/d17/a01046.html#a733a40ab4e0dc170b6ac9e25e7a70797">&#x202A;RunPara::StHole::strTime</a></div><div class="ttdeci">&#x202A;std::string strTime</div><div class="ttdoc">&#x202A;测孔时间</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00096">runpara.h:96</a></div></div>
+<div class="ttc" id="aa01038_html_a5714027a2cc07f9c5c0ae84a177631be"><div class="ttname"><a href="../../d4/dbc/a01038.html#a5714027a2cc07f9c5c0ae84a177631be">&#x202A;Init::GlobalVarUpdate</a></div><div class="ttdeci">&#x202A;static bool GlobalVarUpdate(Config *&amp;config)</div><div class="ttdoc">&#x202A;根据运行参数 更新参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00143">init.cc:143</a></div></div>
+<div class="ttc" id="aa01046_html_a55676b481748b3169abcad0b15dab03f"><div class="ttname"><a href="../../da/d17/a01046.html#a55676b481748b3169abcad0b15dab03f">&#x202A;RunPara::StCFG::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG::StDebug Debug</div></div>
+<div class="ttc" id="aa01010_html"><div class="ttname"><a href="../../d0/d2b/a01010.html">&#x202A;Config</a></div><div class="ttdoc">&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00029">Config.h:29</a></div></div>
+<div class="ttc" id="aa01046_html_a23ea7efdb75cf2e99d81b3682d7080fb"><div class="ttname"><a href="../../da/d17/a01046.html#a23ea7efdb75cf2e99d81b3682d7080fb">&#x202A;RunPara::StDevice::StDisk::nDiskGBUsed</a></div><div class="ttdeci">&#x202A;int nDiskGBUsed</div><div class="ttdoc">&#x202A;磁盘占用 GB</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00229">runpara.h:229</a></div></div>
+<div class="ttc" id="aa01046_html_ab75b4a0e3dc051ecba64676e81c66c10"><div class="ttname"><a href="../../da/d17/a01046.html#ab75b4a0e3dc051ecba64676e81c66c10">&#x202A;RunPara::StProject::strProjectName</a></div><div class="ttdeci">&#x202A;std::string strProjectName</div><div class="ttdoc">&#x202A;工程文件名 前缀加时间生成</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00071">runpara.h:71</a></div></div>
+<div class="ttc" id="aa01302_html"><div class="ttname"><a href="../../dc/de0/a01302.html">&#x202A;Utils_Exception</a></div><div class="ttdoc">&#x202A;直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00074">Utils_Exception.h:74</a></div></div>
+<div class="ttc" id="aa01046_html_aef119328e7820c1c02157b9e92f3ac1d"><div class="ttname"><a href="../../da/d17/a01046.html#aef119328e7820c1c02157b9e92f3ac1d">&#x202A;RunPara::StDevice::StDisk::nDiskGBAll</a></div><div class="ttdeci">&#x202A;int nDiskGBAll</div><div class="ttdoc">&#x202A;磁盘总空间 GB</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00228">runpara.h:228</a></div></div>
+<div class="ttc" id="aa01046_html_a2e37be011ca35dcb5648661c659e0f51"><div class="ttname"><a href="../../da/d17/a01046.html#a2e37be011ca35dcb5648661c659e0f51">&#x202A;RunPara::StProject::strProjectDirPrefix</a></div><div class="ttdeci">&#x202A;std::string strProjectDirPrefix</div><div class="ttdoc">&#x202A;工程文件夹前缀 &quot;Project&quot;</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00065">runpara.h:65</a></div></div>
+<div class="ttc" id="aa01046_html_dd/d57/a01054"><div class="ttname"><a href="../../da/d17/a01046.html#dd/d57/a01054">&#x202A;RunPara::StProject</a></div><div class="ttdoc">&#x202A;记录 路径以及其他路径信息</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00059">runpara.h:59</a></div></div>
+<div class="ttc" id="aa01046_html_afd733ae61a9e00508ef1c95697ab1e52"><div class="ttname"><a href="../../da/d17/a01046.html#afd733ae61a9e00508ef1c95697ab1e52">&#x202A;RunPara::Hole</a></div><div class="ttdeci">&#x202A;struct RunPara::StHole Hole</div></div>
+<div class="ttc" id="aa01314_html_ab0bd05f35427650f2e295c18ba6938b3"><div class="ttname"><a href="../../d9/de6/a01314.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a></div><div class="ttdeci">&#x202A;static std::string NumToString(int num, int width=3, int base=10)</div><div class="ttdoc">&#x202A;Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00404">utils_string.cc:404</a></div></div>
+<div class="ttc" id="aa01046_html_a456e606693e3ff12de516092cd24a607"><div class="ttname"><a href="../../da/d17/a01046.html#a456e606693e3ff12de516092cd24a607">&#x202A;RunPara::StCFG::StDebug::strDebugFilePath</a></div><div class="ttdeci">&#x202A;std::string strDebugFilePath</div><div class="ttdoc">&#x202A;测试模式下 输入 输出路径</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00274">runpara.h:274</a></div></div>
+<div class="ttc" id="aa01046_html_d4/da7/a01102"><div class="ttname"><a href="../../da/d17/a01046.html#d4/da7/a01102">&#x202A;RunPara::StDevice::StDisk</a></div><div class="ttdoc">&#x202A;硬盘对象 存储 硬盘使用量和总量 其他硬盘参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00226">runpara.h:226</a></div></div>
+<div class="ttc" id="aa01038_html_af90a5705e283acc4150060ea12833ab8"><div class="ttname"><a href="../../d4/dbc/a01038.html#af90a5705e283acc4150060ea12833ab8">&#x202A;Init::ProjectDirInit</a></div><div class="ttdeci">&#x202A;static bool ProjectDirInit(RunPara::StProject *project)</div><div class="ttdoc">&#x202A;初始化运行目录以及未来存储的工程文件目录</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00182">init.cc:182</a></div></div>
+<div class="ttc" id="aa00032_html_a433302ffff0649fa165e352add69b39a"><div class="ttname"><a href="../../dc/d87/a00032.html#a433302ffff0649fa165e352add69b39a">&#x202A;K_MAIN_CONFIG_FILE</a></div><div class="ttdeci">&#x202A;const char K_MAIN_CONFIG_FILE[]</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00015">constdefine.h:15</a></div></div>
+<div class="ttc" id="aa01010_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa00044_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00014">main.cpp:14</a></div></div>
+<div class="ttc" id="aa01046_html_a17d047ca991630963bb004404e25cbda"><div class="ttname"><a href="../../da/d17/a01046.html#a17d047ca991630963bb004404e25cbda">&#x202A;RunPara::StCFG::StDebug::nDebugEnable</a></div><div class="ttdeci">&#x202A;int nDebugEnable</div><div class="ttdoc">&#x202A;是否使能 测试</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00273">runpara.h:273</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d">&#x202A;Error_Project_Dir_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00048">Utils_Exception.h:48</a></div></div>
+<div class="ttc" id="aa01046_html_a0f3e36b4eb0bbf041ae4298a1a7ecca5"><div class="ttname"><a href="../../da/d17/a01046.html#a0f3e36b4eb0bbf041ae4298a1a7ecca5">&#x202A;RunPara::StProject::strCurrentPath</a></div><div class="ttdeci">&#x202A;std::string strCurrentPath</div><div class="ttdoc">&#x202A;项目当前运行目录 // 从盘符 到 运行文件夹</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00072">runpara.h:72</a></div></div>
+<div class="ttc" id="aa01310_html_acb425a725353c07d525139ce1119ede2"><div class="ttname"><a href="../../da/d79/a01310.html#acb425a725353c07d525139ce1119ede2">&#x202A;Utils_QT::GetDiskAll</a></div><div class="ttdeci">&#x202A;static double GetDiskAll(const std::string disk=DEFAULT_DISK)</div><div class="ttdoc">&#x202A;Gets disk all</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00150">utils_qt.cc:150</a></div></div>
+<div class="ttc" id="aa01318_html_a8fc80e6d8ee244ed6a5a49d7527de6d5"><div class="ttname"><a href="../../d6/dfa/a01318.html#a8fc80e6d8ee244ed6a5a49d7527de6d5">&#x202A;Utils_Time::GetTime</a></div><div class="ttdeci">&#x202A;static std::string GetTime(char c='_', bool rand_flg=false)</div><div class="ttdoc">&#x202A;Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d04/a00281_source.html#l00098">utils_time.cc:98</a></div></div>
+<div class="ttc" id="aa01010_html_aaa28b92aaa35102c72b3196a7a2295ef"><div class="ttname"><a href="../../d0/d2b/a01010.html#aaa28b92aaa35102c72b3196a7a2295ef">&#x202A;Config::LoadParaFromYML</a></div><div class="ttdeci">&#x202A;bool LoadParaFromYML(const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;从yml 中 读取参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00729">Config.cc:729</a></div></div>
+<div class="ttc" id="aa01046_html_ae45d52024dc8fefee05c2f41d92ed380"><div class="ttname"><a href="../../da/d17/a01046.html#ae45d52024dc8fefee05c2f41d92ed380">&#x202A;RunPara::StHole::strNum</a></div><div class="ttdeci">&#x202A;std::string strNum</div><div class="ttdoc">&#x202A;测孔编号</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00095">runpara.h:95</a></div></div>
+<div class="ttc" id="aa01046_html_d5/d4c/a01058"><div class="ttname"><a href="../../da/d17/a01046.html#d5/d4c/a01058">&#x202A;RunPara::StHole</a></div><div class="ttdoc">&#x202A;测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00089">runpara.h:89</a></div></div>
+<div class="ttc" id="aa01038_html_afb07b00f2611777025031d20adb34ce5"><div class="ttname"><a href="../../d4/dbc/a01038.html#afb07b00f2611777025031d20adb34ce5">&#x202A;Init::AllInit</a></div><div class="ttdeci">&#x202A;static bool AllInit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00012">init.cc:12</a></div></div>
+<div class="ttc" id="aa01038_html_af348596369f10008277e9321bd9e6901"><div class="ttname"><a href="../../d4/dbc/a01038.html#af348596369f10008277e9321bd9e6901">&#x202A;Init::YMLConfigInit</a></div><div class="ttdeci">&#x202A;static bool YMLConfigInit(cv::FileStorage *fs, const std::string &amp;filename, const int flg=cv::FileStorage::READ)</div><div class="ttdoc">&#x202A;根据 yml 配置文件初始化文件参数 //默认是读的方式打开配置文件</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00070">init.cc:70</a></div></div>
+<div class="ttc" id="aa01038_html_ac6c5c0e3086cf28a96387e32ffc5bebf"><div class="ttname"><a href="../../d4/dbc/a01038.html#ac6c5c0e3086cf28a96387e32ffc5bebf">&#x202A;Init::GlobalVarInit</a></div><div class="ttdeci">&#x202A;static bool GlobalVarInit(Config *&amp;config, const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;初始化 全局参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00113">init.cc:113</a></div></div>
+<div class="ttc" id="aa01038_html_a3dd823273154e1bb5cd2e85efd872662"><div class="ttname"><a href="../../d4/dbc/a01038.html#a3dd823273154e1bb5cd2e85efd872662">&#x202A;Init::CurrentDirInit</a></div><div class="ttdeci">&#x202A;static bool CurrentDirInit()</div><div class="ttdoc">&#x202A;初始化运行目录, 在工程目录下面, 避免程序出现找不到配置文件</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/a00137_source.html#l00025">init.cc:25</a></div></div>
+<div class="ttc" id="aa01046_html_a1ca5d1037652d0b772952ae0716d7a63"><div class="ttname"><a href="../../da/d17/a01046.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG CFG</div></div>
+<div class="ttc" id="aa01046_html_aebb207ab03b76e5453e28c7bc4606afa"><div class="ttname"><a href="../../da/d17/a01046.html#aebb207ab03b76e5453e28c7bc4606afa">&#x202A;RunPara::StDevice::Disk</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice::StDisk Disk</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_a97d35b535b8178474d1d1f002503b39.html">&#x202A;model</a></li><li class="navelem"><a class="el" href="../../d2/df5/a00137.html">&#x202A;ui_gaugecompass.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d2/df5/a00137.html">&#x202A;init.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

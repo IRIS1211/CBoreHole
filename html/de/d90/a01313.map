@@ -1,10 +1,4 @@
-<map id="QcScaleItem" name="QcScaleItem">
-<area shape="rect" id="node1" title=" " alt="" coords="244,155,341,181"/>
-<area shape="rect" id="node4" href="$d5/d78/a01330.html" title=" " alt="" coords="5,229,89,256"/>
-<area shape="rect" id="node5" href="$d4/dd1/a01334.html" title=" " alt="" coords="114,229,213,256"/>
-<area shape="rect" id="node6" href="$d2/d4d/a01338.html" title=" " alt="" coords="237,229,349,256"/>
-<area shape="rect" id="node7" href="$d5/da0/a01342.html" title=" " alt="" coords="373,229,477,256"/>
-<area shape="rect" id="node8" href="$d9/de4/a01346.html" title=" " alt="" coords="501,229,605,256"/>
-<area shape="rect" id="node2" href="$da/d79/a01310.html" title=" " alt="" coords="261,80,325,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="257,5,328,32"/>
+<map id="Utils_String" name="Utils_String">
+<area shape="rect" id="node1" title="The utilities string." alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node2" href="$dc/ded/a01290.html" title=" " alt="" coords="26,80,74,107"/>
 </map>

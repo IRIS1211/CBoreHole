@@ -1,0 +1,5 @@
+<map id="Utils_Files::SplitFileName" name="Utils_Files::SplitFileName">
+<area shape="rect" id="node1" title="将文件路径拆分为 文件路径和文件名称 删除拓展名" alt="" coords="205,31,377,57"/>
+<area shape="rect" id="node2" href="$de/d41/a01030.html#a1aefbaaf6c9dcf56ce59e62c8d65e86a" title="初始化对象 默认写入 // data0– 新建, data1 gConfig 数据 对于写入数据, 使用 gConfig.sysPara 内容存储 到文件头信息中 对于读取数据,..." alt="" coords="20,5,143,32"/>
+<area shape="rect" id="node3" href="$d7/d8c/a01306.html#a1c94c40595c31cd3be0d8ad5bccec259" title="判断指定的文件是否存在 // 给定flg 如果不存在则建立文件 当path为文件时，_access函数判断文件是否存在，并判断文件是否可以用mode值指定的模式进行访问。" alt="" coords="5,56,157,83"/>
+</map>

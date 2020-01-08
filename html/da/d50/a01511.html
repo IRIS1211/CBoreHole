@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('da/d50/a01511.html','../../');});
 <div class="title">&#x202A;CBoreHole 软件工程说明 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p class="DocNodeLTR">此文件为 程序工程说明, 主要介绍如何使用此工程的说明文档; 具体功能设计以及使用软硬件结构可以参考<a class="el" href="../../db/d10/a00350.html">系统架构文档</a></p>
+<div class="textblock"><p class="DocNodeLTR">此文件为 程序工程说明, 主要介绍如何使用此工程的说明文档; 具体功能设计以及使用软硬件结构可以参考<a class="el" href="../../d7/d00/a00401.html">系统架构文档</a></p>
 <p class="DocNodeLTR">程序最终发布到 Github的私有仓库中 <a href="&#x202A;https://github.com/SChen1024/Camera">Github链接</a></p>
 <h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md2"></a>
 系统结构说明</h1>
@@ -144,24 +144,24 @@ $(document).ready(function(){initNavTree('da/d50/a01511.html','../../');});
 <div class="line">|   |   stdafx.h.cpp        <span class="comment">// 引入标准头文件 用于生成 ipch 文件</span></div>
 <div class="line">|   +---abandon             <span class="comment">// 以及能够被废弃的 部分程序实现</span></div>
 <div class="line">|   +---inc                 <span class="comment">// 头文件 存放文件夹</span></div>
-<div class="line">|   |       <a class="code" href="../../da/dd8/a00906.html">&#x202A;CamCapture</a>.h        <span class="comment">// 相机捕捉类</span></div>
-<div class="line">|   |       <a class="code" href="../../d4/d12/a00910.html">&#x202A;CamProc</a>.h           <span class="comment">// 相机处理类</span></div>
+<div class="line">|   |       <a class="code" href="../../d2/d6e/a00966.html">&#x202A;CamCapture</a>.h        <span class="comment">// 相机捕捉类</span></div>
+<div class="line">|   |       <a class="code" href="../../d0/daf/a00970.html">&#x202A;CamProc</a>.h           <span class="comment">// 相机处理类</span></div>
 <div class="line">|   |       common.h            <span class="comment">// 公共实现函数</span></div>
 <div class="line">|   |       Commu.h             <span class="comment">// 串口通信实现 // 基础函数的实现</span></div>
-<div class="line">|   |       <a class="code" href="../../d4/d51/a00017.html#da/d40/a00946">&#x202A;Config</a>.h            <span class="comment">// 配置文件类 //  程序执行中的参数</span></div>
-<div class="line">|   |       <a class="code" href="../../d2/ddd/a00978.html">&#x202A;IDOIFile</a>.h          <span class="comment">// 生成文件类 // 用于生成自定义文件格式声明</span></div>
+<div class="line">|   |       <a class="code" href="../../d0/d2b/a01010.html">&#x202A;Config</a>.h            <span class="comment">// 配置文件类 //  程序执行中的参数</span></div>
+<div class="line">|   |       <a class="code" href="../../de/d41/a01030.html">&#x202A;IDOIFile</a>.h          <span class="comment">// 生成文件类 // 用于生成自定义文件格式声明</span></div>
 <div class="line">|   |       ImageShow.h         <span class="comment">// 内容文件存储 操作</span></div>
 <div class="line">|   |       readwindow.h        <span class="comment">// 浏览窗口 基础内容    // 窗口</span></div>
 <div class="line">|   |       SerialPort.h        <span class="comment">// 串口类</span></div>
-<div class="line">|   |       <a class="code" href="../../de/d41/a01030.html">&#x202A;SerialProc</a>.h        <span class="comment">// 串口数据处理</span></div>
+<div class="line">|   |       <a class="code" href="../../df/db5/a01158.html">&#x202A;SerialProc</a>.h        <span class="comment">// 串口数据处理</span></div>
 <div class="line">|   |       setwindow.h         <span class="comment">// 设置窗口             // 窗口</span></div>
-<div class="line">|   |       <a class="code" href="../../d4/dbc/a01038.html">&#x202A;SpdLogger</a>.h         <span class="comment">// SpdLog 实现,能够实现多种输出效果</span></div>
-<div class="line">|   |       <a class="code" href="../../da/d17/a01046.html">&#x202A;SystemPara</a>.h        <span class="comment">// 系统参数 // 对应配置文件</span></div>
-<div class="line">|   |       <a class="code" href="../../db/dba/a01078.html">&#x202A;ThreadQueue</a>.h       <span class="comment">// 多线程队列实现 </span></div>
-<div class="line">|   |       <a class="code" href="../../d9/df5/a01086.html">&#x202A;UnitTest</a>.h          <span class="comment">// 单元测试类实现</span></div>
-<div class="line">|   |       <a class="code" href="../../da/d73/a01090.html">&#x202A;WorkWindow</a>.h        <span class="comment">// 工作窗口             // 窗口</span></div>
+<div class="line">|   |       <a class="code" href="../../d5/d35/a00266.html#a6363fe481724674897134ef2f0451cc9">&#x202A;SpdLogger</a>.h         <span class="comment">// SpdLog 实现,能够实现多种输出效果</span></div>
+<div class="line">|   |       SystemPara.h        <span class="comment">// 系统参数 // 对应配置文件</span></div>
+<div class="line">|   |       <a class="code" href="../../df/d88/a00962.html">&#x202A;ThreadQueue</a>.h       <span class="comment">// 多线程队列实现 </span></div>
+<div class="line">|   |       UnitTest.h          <span class="comment">// 单元测试类实现</span></div>
+<div class="line">|   |       <a class="code" href="../../d3/dc7/a01170.html">&#x202A;WorkWindow</a>.h        <span class="comment">// 工作窗口             // 窗口</span></div>
 <div class="line">|   |       writerthread.h      <span class="comment">// 写入线程, 存储视频</span></div>
-<div class="line">|   |       <a class="code" href="../../dd/df1/a01082.html">&#x202A;WriteVideo</a>.h        <span class="comment">// 写入视频</span></div>
+<div class="line">|   |       <a class="code" href="../../da/dfb/a01174.html">&#x202A;WriteVideo</a>.h        <span class="comment">// 写入视频</span></div>
 <div class="line">|   |       </div>
 <div class="line">|   +---src                 <span class="comment">// 对应 inc 目录下的程序实现</span></div>
 <div class="line">|   \---ui</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('da/d50/a01511.html','../../');});
 <div class="line">|           ui_workwindow.h</div>
 <div class="line">|           workwindow.ui       <span class="comment">// 工作窗口 UI</span></div>
 <div class="line">|           </div>
-<div class="line">+---<a class="code" href="../../d4/d51/a00017.html#da/d40/a00946">&#x202A;Config</a>              <span class="comment">// 程序配置文件目录, 目前主要是 yml 配置文件</span></div>
+<div class="line">+---<a class="code" href="../../d0/d2b/a01010.html">&#x202A;Config</a>              <span class="comment">// 程序配置文件目录, 目前主要是 yml 配置文件</span></div>
 <div class="line">|   |   mainConfig.xml</div>
 <div class="line">|   |   mainConfig.yml</div>
 <div class="line">|   |   </div>
@@ -199,17 +199,15 @@ $(document).ready(function(){initNavTree('da/d50/a01511.html','../../');});
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01078_html"><div class="ttname"><a href="../../db/dba/a01078.html">&#x202A;ThreadQueue</a></div><div class="ttdoc">&#x202A;Queue of threads.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00049">ThreadQueue.h:49</a></div></div>
-<div class="ttc" id="aa00017_html_da/d40/a00946"><div class="ttname"><a href="../../d4/d51/a00017.html#da/d40/a00946">&#x202A;Config</a></div><div class="ttdoc">&#x202A;全部参数信息</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00240">Config.h:240</a></div></div>
-<div class="ttc" id="aa01086_html"><div class="ttname"><a href="../../d9/df5/a01086.html">&#x202A;UnitTest</a></div><div class="ttdoc">&#x202A;A unit test.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00042">UnitTest.h:42</a></div></div>
-<div class="ttc" id="aa00910_html"><div class="ttname"><a href="../../d4/d12/a00910.html">&#x202A;CamProc</a></div><div class="ttdoc">&#x202A;处理线程 单独执行过程</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dee/a00008_source.html#l00034">CamProc.h:34</a></div></div>
-<div class="ttc" id="aa01030_html"><div class="ttname"><a href="../../de/d41/a01030.html">&#x202A;SerialProc</a></div><div class="ttdoc">&#x202A;设定串口 处理 函数 解析串口的数据 到系统运行参数中</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/a00044_source.html#l00047">SerialProc.h:47</a></div></div>
-<div class="ttc" id="aa01038_html"><div class="ttname"><a href="../../d4/dbc/a01038.html">&#x202A;SpdLogger</a></div><div class="ttdoc">&#x202A;A speed logger.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00174">SpdLogger.h:174</a></div></div>
-<div class="ttc" id="aa01046_html"><div class="ttname"><a href="../../da/d17/a01046.html">&#x202A;SystemPara</a></div><div class="ttdoc">&#x202A;存储 系统运行参数 按照参数具体类型进行细分</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dee/a00053_source.html#l00026">SystemPara.h:26</a></div></div>
-<div class="ttc" id="aa00906_html"><div class="ttname"><a href="../../da/dd8/a00906.html">&#x202A;CamCapture</a></div><div class="ttdoc">&#x202A;A camera capture.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dad/a00005_source.html#l00031">CamCapture.h:31</a></div></div>
-<div class="ttc" id="aa01090_html"><div class="ttname"><a href="../../da/d73/a01090.html">&#x202A;WorkWindow</a></div><div class="ttdoc">&#x202A;Form for viewing the work.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d03/a00062_source.html#l00064">WorkWindow.h:64</a></div></div>
-<div class="ttc" id="aa01082_html"><div class="ttname"><a href="../../dd/df1/a01082.html">&#x202A;WriteVideo</a></div><div class="ttdoc">&#x202A;读写视频类实现</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00022">UnitTest.h:22</a></div></div>
-<div class="ttc" id="aa00978_html"><div class="ttname"><a href="../../d2/ddd/a00978.html">&#x202A;IDOIFile</a></div><div class="ttdoc">&#x202A;An idoi file.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d52/a00023_source.html#l00218">IDOIFile.h:218</a></div></div>
+<div class="ttc" id="aa01158_html"><div class="ttname"><a href="../../df/db5/a01158.html">&#x202A;SerialProc</a></div><div class="ttdoc">&#x202A;设定串口 处理 函数 解析串口的数据 到系统运行参数中</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d8b/a00059_source.html#l00059">SerialProc.h:59</a></div></div>
+<div class="ttc" id="aa00966_html"><div class="ttname"><a href="../../d2/d6e/a00966.html">&#x202A;CamCapture</a></div><div class="ttdoc">&#x202A;摄像头 抓取对象, 循环抓取对象数据到缓冲队列中</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00030">CamCapture.h:30</a></div></div>
+<div class="ttc" id="aa01174_html"><div class="ttname"><a href="../../da/dfb/a01174.html">&#x202A;WriteVideo</a></div><div class="ttdoc">&#x202A;A write video. 使用传统线程方式 处理, 程序循环执行 写入动作</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00032">WriteVideo.h:32</a></div></div>
+<div class="ttc" id="aa01030_html"><div class="ttname"><a href="../../de/d41/a01030.html">&#x202A;IDOIFile</a></div><div class="ttdoc">&#x202A;An idoi file.</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00194">IDOIFile.h:194</a></div></div>
+<div class="ttc" id="aa01010_html"><div class="ttname"><a href="../../d0/d2b/a01010.html">&#x202A;Config</a></div><div class="ttdoc">&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00029">Config.h:29</a></div></div>
+<div class="ttc" id="aa00970_html"><div class="ttname"><a href="../../d0/daf/a00970.html">&#x202A;CamProc</a></div><div class="ttdoc">&#x202A;处理线程 单独执行过程</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00042">CamProc.h:42</a></div></div>
+<div class="ttc" id="aa00962_html"><div class="ttname"><a href="../../df/d88/a00962.html">&#x202A;ThreadQueue</a></div><div class="ttdoc">&#x202A;Queue of threads. 自定义模板多线程队列</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dee/a00008_source.html#l00043">ThreadQueue.h:43</a></div></div>
+<div class="ttc" id="aa01170_html"><div class="ttname"><a href="../../d3/dc7/a01170.html">&#x202A;WorkWindow</a></div><div class="ttdoc">&#x202A;声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00054">WorkWindow.h:54</a></div></div>
+<div class="ttc" id="aa00266_html_a6363fe481724674897134ef2f0451cc9"><div class="ttname"><a href="../../d5/d35/a00266.html#a6363fe481724674897134ef2f0451cc9">&#x202A;SpdLogger</a></div><div class="ttdeci">&#x202A;SpdLogger()</div><div class="ttdoc">&#x202A;Initializes a new instance of the SpdLogger class</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/a00266_source.html#l00213">utils_logger.h:213</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

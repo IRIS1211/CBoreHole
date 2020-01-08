@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/abandon/UnitTest.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/common.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,85 +89,38 @@ $(document).ready(function(){initNavTree('db/db2/a00020_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">UnitTest.h</div>  </div>
+<div class="title">common.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../db/db2/a00020.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CODE_INC__COMMON_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CODE_INC__COMMON_H_</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_UNITTEST_H_</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define CBOREHOLE_UNITTEST_H_</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../dd/df1/a01082.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/df1/a01082.html">&#x202A;UnitTest</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/df1/a01082.html#a299cc92121333e2fdd7ac823a84b1292">&#x202A;isQtTestWork</a>(<span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/df1/a01082.html#a7973b3cadd9967707c26afe4bee9f3f3">&#x202A;toUpper</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/df1/a01082.html#ac43fc49189df29ccdf5e0724d29eb5e1">&#x202A;InitEnv</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define TEST_IDOIFILE   1</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define TEST_IMGPROC    0</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define TEST_SERIAL     0</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define TEST_GrabData   0</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define TEST_Remap      0</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#if TEST_IDOIFILE</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/df1/a01082.html#aec5351041b2e2d4f99899f17f8fa7f68">&#x202A;testIDOIFile</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/df1/a01082.html#ad43d9c26d7651f17f60396a8a52fe217">&#x202A;testIDOIFileAppend</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#if TEST_IMGPROC</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/df1/a01082.html#a7267f43f7cbc41c0bbdd6fe73367f199">&#x202A;testImgProc</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#if TEST_SERIAL</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/df1/a01082.html#aca271d6667cb0934345bf0cc8b1124f7">&#x202A;testSerial</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/df1/a01082.html#a8c9cfbdd12fb45435643a31d809d9f3c">&#x202A;test_MySerial</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#if TEST_GrabData</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/df1/a01082.html#ad767a193d579f47ec9b66e1df49a102f">&#x202A;grabData</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#if TEST_Remap</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/df1/a01082.html#afa6a114bae6facfa6c786b703fa137fc">&#x202A;test_remap</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif  //CBOREHOLE_UNITTEST_H_</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// 部分声明的头文件</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;opencv2/core.hpp&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../db/db2/a00020.html#a0dd08ab91977a2738f33adbd7e8306b2">&#x202A;AddImageInfo</a>(cv::Mat &amp;img);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;std::string <a class="code" href="../../db/db2/a00020.html#ad7df8e9072eb05862471c2fc24f4f5ce">&#x202A;ComProtEncode</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;std::string <a class="code" href="../../db/db2/a00020.html#af384f4673c5a034cd96544569651638e">&#x202A;ComProtDecode</a>(<span class="keyword">const</span> std::string &amp;str);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  // CODE_INC__COMMON_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01082_html_a7267f43f7cbc41c0bbdd6fe73367f199"><div class="ttname"><a href="../../dd/df1/a01082.html#a7267f43f7cbc41c0bbdd6fe73367f199">&#x202A;UnitTest::testImgProc</a></div><div class="ttdeci">&#x202A;void testImgProc(void)</div><div class="ttdoc">&#x202A;Tests image proc</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00161">UnitTest.cc:161</a></div></div>
-<div class="ttc" id="aa01082_html_ad767a193d579f47ec9b66e1df49a102f"><div class="ttname"><a href="../../dd/df1/a01082.html#ad767a193d579f47ec9b66e1df49a102f">&#x202A;UnitTest::grabData</a></div><div class="ttdeci">&#x202A;void grabData(void)</div><div class="ttdoc">&#x202A;抓取数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00247">UnitTest.cc:247</a></div></div>
-<div class="ttc" id="aa01082_html_a7973b3cadd9967707c26afe4bee9f3f3"><div class="ttname"><a href="../../dd/df1/a01082.html#a7973b3cadd9967707c26afe4bee9f3f3">&#x202A;UnitTest::toUpper</a></div><div class="ttdeci">&#x202A;void toUpper()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00029">UnitTest.cc:29</a></div></div>
-<div class="ttc" id="aa01082_html_a8c9cfbdd12fb45435643a31d809d9f3c"><div class="ttname"><a href="../../dd/df1/a01082.html#a8c9cfbdd12fb45435643a31d809d9f3c">&#x202A;UnitTest::test_MySerial</a></div><div class="ttdeci">&#x202A;void test_MySerial(void)</div></div>
-<div class="ttc" id="aa01082_html_afa6a114bae6facfa6c786b703fa137fc"><div class="ttname"><a href="../../dd/df1/a01082.html#afa6a114bae6facfa6c786b703fa137fc">&#x202A;UnitTest::test_remap</a></div><div class="ttdeci">&#x202A;void test_remap(void)</div><div class="ttdoc">&#x202A;Tests remap</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00381">UnitTest.cc:381</a></div></div>
-<div class="ttc" id="aa01082_html_aec5351041b2e2d4f99899f17f8fa7f68"><div class="ttname"><a href="../../dd/df1/a01082.html#aec5351041b2e2d4f99899f17f8fa7f68">&#x202A;UnitTest::testIDOIFile</a></div><div class="ttdeci">&#x202A;void testIDOIFile()</div><div class="ttdoc">&#x202A;验证文件操作 读写</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00064">UnitTest.cc:64</a></div></div>
-<div class="ttc" id="aa01082_html_ac43fc49189df29ccdf5e0724d29eb5e1"><div class="ttname"><a href="../../dd/df1/a01082.html#ac43fc49189df29ccdf5e0724d29eb5e1">&#x202A;UnitTest::InitEnv</a></div><div class="ttdeci">&#x202A;void InitEnv(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00040">UnitTest.cc:40</a></div></div>
-<div class="ttc" id="aa01082_html_ad43d9c26d7651f17f60396a8a52fe217"><div class="ttname"><a href="../../dd/df1/a01082.html#ad43d9c26d7651f17f60396a8a52fe217">&#x202A;UnitTest::testIDOIFileAppend</a></div><div class="ttdeci">&#x202A;void testIDOIFileAppend()</div><div class="ttdoc">&#x202A;验证文件 附加操作</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00093">UnitTest.cc:93</a></div></div>
-<div class="ttc" id="aa01082_html_a299cc92121333e2fdd7ac823a84b1292"><div class="ttname"><a href="../../dd/df1/a01082.html#a299cc92121333e2fdd7ac823a84b1292">&#x202A;UnitTest::isQtTestWork</a></div><div class="ttdeci">&#x202A;void isQtTestWork(void)</div><div class="ttdoc">&#x202A;保证 QT test 工作</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00020">UnitTest.cc:20</a></div></div>
-<div class="ttc" id="aa01082_html"><div class="ttname"><a href="../../dd/df1/a01082.html">&#x202A;UnitTest</a></div><div class="ttdoc">&#x202A;A unit test.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db2/a00020_source.html#l00023">UnitTest.h:23</a></div></div>
-<div class="ttc" id="aa01082_html_aca271d6667cb0934345bf0cc8b1124f7"><div class="ttname"><a href="../../dd/df1/a01082.html#aca271d6667cb0934345bf0cc8b1124f7">&#x202A;UnitTest::testSerial</a></div><div class="ttdeci">&#x202A;void testSerial(void)</div><div class="ttdoc">&#x202A;// 测试串口</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d51/a00017_source.html#l00204">UnitTest.cc:204</a></div></div>
+<div class="ttc" id="aa00020_html_a0dd08ab91977a2738f33adbd7e8306b2"><div class="ttname"><a href="../../db/db2/a00020.html#a0dd08ab91977a2738f33adbd7e8306b2">&#x202A;AddImageInfo</a></div><div class="ttdeci">&#x202A;bool AddImageInfo(cv::Mat &amp;img)</div><div class="ttdoc">&#x202A;Adds an image information // 在原始图像上添加相应 图形 来标识 图像</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc8/a00122_source.html#l00011">common.cc:11</a></div></div>
+<div class="ttc" id="aa00020_html_ad7df8e9072eb05862471c2fc24f4f5ce"><div class="ttname"><a href="../../db/db2/a00020.html#ad7df8e9072eb05862471c2fc24f4f5ce">&#x202A;ComProtEncode</a></div><div class="ttdeci">&#x202A;std::string ComProtEncode(const std::string &amp;str)</div><div class="ttdoc">&#x202A;参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 '#' 后缀 '*'</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc8/a00122_source.html#l00063">common.cc:63</a></div></div>
+<div class="ttc" id="aa00020_html_af384f4673c5a034cd96544569651638e"><div class="ttname"><a href="../../db/db2/a00020.html#af384f4673c5a034cd96544569651638e">&#x202A;ComProtDecode</a></div><div class="ttdeci">&#x202A;std::string ComProtDecode(const std::string &amp;str)</div><div class="ttdoc">&#x202A;直接 取 1- (size-4)的长度的值 计算结果看看是否匹配 然后返回</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc8/a00122_source.html#l00085">common.cc:85</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_18f15a7a138b349aed9dc4e7b3696a50.html">&#x202A;abandon</a></li><li class="navelem"><a class="el" href="../../db/db2/a00020.html">&#x202A;UnitTest.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../db/db2/a00020.html">&#x202A;common.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

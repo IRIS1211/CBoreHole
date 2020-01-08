@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/Utils_Exception.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,75 +89,84 @@ $(document).ready(function(){initNavTree('d9/d39/a00257_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">utils.h</div>  </div>
+<div class="title">Utils_Exception.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d9/d39/a00257.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef UTILS_H__</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define UTILS_H__</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d04/a00281.html">&#x202A;./utils_logger.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd6/a00272.html">&#x202A;./Utils_Exception.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d82/a00293.html">&#x202A;./utils_string.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d5d/a00278.html">&#x202A;./utils_files.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/da9/a00263.html">&#x202A;./utils_cv.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d42/a00269.html">&#x202A;./utils_data.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d7f/a00287.html">&#x202A;./utils_qt.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d95/a00299.html">&#x202A;./utils_time.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// 直接继承 可以使用 同一的类名 访问</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d5/d8e/a01390.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d5/d8e/a01390.html">&#x202A;Utils</a> :</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d8/df1/a01414.html">&#x202A;Utils_String</a>,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../dc/d25/a01406.html">&#x202A;Utils_Files</a>,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../da/de3/a01398.html">&#x202A;Utils_Data</a>,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d6/d2f/a01394.html">&#x202A;Utils_CV</a></div>
+<a href="../../d9/d39/a00257.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**********************************************************************************************/</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// #include &quot;utils_logger.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05f">   29</a></span>&#160;<span class="comment"></span><span class="keyword">enum</span> <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05f">&#x202A;ErrorCode</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// ConfigError = 101,</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d5/d8e/a01390.html#a8caf43f80697158f648269f7964fffdd">   47</a></span>&#160;    <span class="keyword">static</span> T <a class="code" href="../../d5/d8e/a01390.html#a8caf43f80697158f648269f7964fffdd">&#x202A;Limit</a>(T &amp;q, <span class="keyword">const</span> T minV, <span class="keyword">const</span> T maxV)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">// 将值限定在 设定区域内; 超过的值 都限定在 min max 中</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        q = std::max(minV, std::min(maxV, q));</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> q;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa744a961ecf866862fe54a04994222bb5">   33</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa744a961ecf866862fe54a04994222bb5">&#x202A;Error_YML_FileNotExist</a> = 1000,     <span class="comment">// yml 文件不存在</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa617c02a2de66b8c41e6a68232690fbb2">   34</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa617c02a2de66b8c41e6a68232690fbb2">&#x202A;Error_YML_FileNode_NoExist</a>      = 1001,     <span class="comment">// 文件节点不存在 runpara</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9">   36</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9">&#x202A;Error_IDOI_FileNotExist</a>         =   5000,   <span class="comment">//  自定义文件不存在</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe">   37</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe">&#x202A;Error_IDOI_FileWritePointerNull</a> =   5001,   <span class="comment">//    写入文件指针为空</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44">   38</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44">&#x202A;Error_IDOI_FileVerifyError</a>      =   5002,   <span class="comment">// 读取文件头校验失败</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51">   39</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51">&#x202A;Error_IDOI_File_Write</a> = 5003,    <span class="comment">// IDOI 写文件指针错误</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66">   41</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66">&#x202A;Error_Image_Resize_Crash</a> =  3001,   <span class="comment">// 图片缩放错误</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa5fab5992212a3d15f7963f131c40176e">   42</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa5fab5992212a3d15f7963f131c40176e">&#x202A;Error_Image_Resize_Crash_OnLabel</a> = 3002,  <span class="comment">// 在显示过程中的缩放出错</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86">   44</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86">&#x202A;Error_Serial_Timeout_Over_Set_Time</a> = 4002,  <span class="comment">// 串口超时无数据</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa9e41f22d9ad51a48957eeba9c8893a6b">   45</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa9e41f22d9ad51a48957eeba9c8893a6b">&#x202A;Error_Serial_Compass_TypeError</a> = 4003,      <span class="comment">// 串口处理 罗盘类型错误 未记录</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa431dd5abfc1bfc0dbda643f6f682bfca">   46</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa431dd5abfc1bfc0dbda643f6f682bfca">&#x202A;Error_Serial_PortName_Invalid</a> = 4004,       <span class="comment">// 串口端口 无效</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d">   48</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d">&#x202A;Error_Project_Dir_Create_Error</a> = 5000,     <span class="comment">// 工作路径文件夹创建错误</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f">   49</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f">&#x202A;Error_Work_Dir_Pic_Create_Error</a> = 5001,     <span class="comment">// 工作路径下图片文件夹创建错误</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">   50</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">&#x202A;Error_Work_Dir_Video_Create_Error</a> = 5002,     <span class="comment">// 工作路径下视频文件夹创建错误</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">   52</a></span>&#160;    <a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">&#x202A;Error_Video_Writer_Null</a> = 6001,     <span class="comment">// 视频流指针为空</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d5/d8e/a01390.html#aa3b0433eafd84e9c9f6386a863f45267">   65</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d5/d8e/a01390.html#aa3b0433eafd84e9c9f6386a863f45267">&#x202A;ClearQueue</a>(T &amp;q)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        T empty;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        swap(empty, q);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif  //UTILS_H__</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/**********************************************************************************************/</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../dc/de0/a01302.html">   74</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dc/de0/a01302.html">&#x202A;Utils_Exception</a> : <span class="keyword">public</span> std::exception</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// 错误信息返回</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../dc/de0/a01302.html#ae7c94ef7b383d83ec61a60aabf2e4cfd">   79</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../dc/de0/a01302.html#ae7c94ef7b383d83ec61a60aabf2e4cfd">&#x202A;mi_ErrorCode_</a>; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../dc/de0/a01302.html#a2c647961f189dbb5bf06e151e1b6d4b3">   80</a></span>&#160;    std::string <a class="code" href="../../dc/de0/a01302.html#a2c647961f189dbb5bf06e151e1b6d4b3">&#x202A;ms_ErrorMsg_</a>;  </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="../../dc/de0/a01302.html#a35003f74297fb9d247a5d3acc6f9c376">   93</a></span>&#160;    <a class="code" href="../../dc/de0/a01302.html#a35003f74297fb9d247a5d3acc6f9c376">&#x202A;Utils_Exception</a>(<span class="keywordtype">int</span> num = 100, std::string str = <span class="stringliteral">&quot;Unknown exception&quot;</span>)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// LOG(INFO) &lt;&lt; &quot;错误代码:&quot; &lt;&lt; err_num &lt;&lt; &quot;:&quot; &lt;&lt; err_str;</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="../../dc/de0/a01302.html#ae7c94ef7b383d83ec61a60aabf2e4cfd">&#x202A;mi_ErrorCode_</a> = num;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="../../dc/de0/a01302.html#a2c647961f189dbb5bf06e151e1b6d4b3">&#x202A;ms_ErrorMsg_</a> = str;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">// log出异常</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        LError(<span class="stringliteral">&quot;Exception occur:\t Code:{}\tMess:{}&quot;</span>, <a class="code" href="../../dc/de0/a01302.html#ae7c94ef7b383d83ec61a60aabf2e4cfd">&#x202A;mi_ErrorCode_</a>, <a class="code" href="../../dc/de0/a01302.html#a2c647961f189dbb5bf06e151e1b6d4b3">&#x202A;ms_ErrorMsg_</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00299_html"><div class="ttname"><a href="../../df/d95/a00299.html">&#x202A;utils_time.h</a></div></div>
-<div class="ttc" id="aa00272_html"><div class="ttname"><a href="../../d9/dd6/a00272.html">&#x202A;Utils_Exception.h</a></div></div>
-<div class="ttc" id="aa01394_html"><div class="ttname"><a href="../../d6/d2f/a01394.html">&#x202A;Utils_CV</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/da9/a00263_source.html#l00017">utils_cv.h:17</a></div></div>
-<div class="ttc" id="aa00287_html"><div class="ttname"><a href="../../d6/d7f/a00287.html">&#x202A;utils_qt.h</a></div><div class="ttdoc">&#x202A;有关Qt的 通用组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa00281_html"><div class="ttname"><a href="../../d2/d04/a00281.html">&#x202A;utils_logger.h</a></div></div>
-<div class="ttc" id="aa01390_html_a8caf43f80697158f648269f7964fffdd"><div class="ttname"><a href="../../d5/d8e/a01390.html#a8caf43f80697158f648269f7964fffdd">&#x202A;Utils::Limit</a></div><div class="ttdeci">&#x202A;static T Limit(T &amp;q, const T minV, const T maxV)</div><div class="ttdoc">&#x202A;定义 函数限定函数， 根据 输入的值现象参数的范围</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00047">utils.h:47</a></div></div>
-<div class="ttc" id="aa01390_html_aa3b0433eafd84e9c9f6386a863f45267"><div class="ttname"><a href="../../d5/d8e/a01390.html#aa3b0433eafd84e9c9f6386a863f45267">&#x202A;Utils::ClearQueue</a></div><div class="ttdeci">&#x202A;static void ClearQueue(T &amp;q)</div><div class="ttdoc">&#x202A;将队列清空 // 定义 清空队列函数 快速 清空队列</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00065">utils.h:65</a></div></div>
-<div class="ttc" id="aa01390_html"><div class="ttname"><a href="../../d5/d8e/a01390.html">&#x202A;Utils</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00025">utils.h:25</a></div></div>
-<div class="ttc" id="aa01414_html"><div class="ttname"><a href="../../d8/df1/a01414.html">&#x202A;Utils_String</a></div><div class="ttdoc">&#x202A;The utilities string.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d82/a00293_source.html#l00024">utils_string.h:24</a></div></div>
-<div class="ttc" id="aa00263_html"><div class="ttname"><a href="../../df/da9/a00263.html">&#x202A;utils_cv.h</a></div><div class="ttdoc">&#x202A;有关opencv 的相关函数组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa00293_html"><div class="ttname"><a href="../../d6/d82/a00293.html">&#x202A;utils_string.h</a></div><div class="ttdoc">&#x202A;通用字符串操作类 继承使用, 方便使用 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01406_html"><div class="ttname"><a href="../../dc/d25/a01406.html">&#x202A;Utils_Files</a></div><div class="ttdoc">&#x202A;The utilities files.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d5d/a00278_source.html#l00028">utils_files.h:28</a></div></div>
-<div class="ttc" id="aa00269_html"><div class="ttname"><a href="../../d5/d42/a00269.html">&#x202A;utils_data.h</a></div><div class="ttdoc">&#x202A;定义常用的数据处理 组件 @changelog 2019/12/3 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa00278_html"><div class="ttname"><a href="../../dc/d5d/a00278.html">&#x202A;utils_files.h</a></div><div class="ttdoc">&#x202A;Declares the utilities files class</div></div>
-<div class="ttc" id="aa01398_html"><div class="ttname"><a href="../../da/de3/a01398.html">&#x202A;Utils_Data</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00016">utils_data.h:16</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05f"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05f">&#x202A;ErrorCode</a></div><div class="ttdeci">&#x202A;ErrorCode</div><div class="ttdoc">&#x202A;定义错误代码 表示不同功能, 从小到达依次定义 可以参考错误代码表</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00029">Utils_Exception.h:29</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fa431dd5abfc1bfc0dbda643f6f682bfca"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa431dd5abfc1bfc0dbda643f6f682bfca">&#x202A;Error_Serial_PortName_Invalid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00046">Utils_Exception.h:46</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fa9e41f22d9ad51a48957eeba9c8893a6b"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa9e41f22d9ad51a48957eeba9c8893a6b">&#x202A;Error_Serial_Compass_TypeError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00045">Utils_Exception.h:45</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fabbdf6d04d997e632d5f6b32bcb0f0d86">&#x202A;Error_Work_Dir_Video_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00050">Utils_Exception.h:50</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fac55f44d8d0c0852ae5e76402a94e55fe">&#x202A;Error_IDOI_FileWritePointerNull</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00037">Utils_Exception.h:37</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05facdbd06f286aec8071613dab6c7ea9a86">&#x202A;Error_Serial_Timeout_Over_Set_Time</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00044">Utils_Exception.h:44</a></div></div>
+<div class="ttc" id="aa01302_html"><div class="ttname"><a href="../../dc/de0/a01302.html">&#x202A;Utils_Exception</a></div><div class="ttdoc">&#x202A;直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00074">Utils_Exception.h:74</a></div></div>
+<div class="ttc" id="aa01302_html_ae7c94ef7b383d83ec61a60aabf2e4cfd"><div class="ttname"><a href="../../dc/de0/a01302.html#ae7c94ef7b383d83ec61a60aabf2e4cfd">&#x202A;Utils_Exception::mi_ErrorCode_</a></div><div class="ttdeci">&#x202A;int mi_ErrorCode_</div><div class="ttdoc">&#x202A;错误代码</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00079">Utils_Exception.h:79</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fa744a961ecf866862fe54a04994222bb5"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa744a961ecf866862fe54a04994222bb5">&#x202A;Error_YML_FileNotExist</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00033">Utils_Exception.h:33</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fad8b42fc93e26ed53a2ffbd731c13fe66">&#x202A;Error_Image_Resize_Crash</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00041">Utils_Exception.h:41</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fa5fab5992212a3d15f7963f131c40176e"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa5fab5992212a3d15f7963f131c40176e">&#x202A;Error_Image_Resize_Crash_OnLabel</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00042">Utils_Exception.h:42</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa9c88936a429108397bb1a3eec1d108f9">&#x202A;Error_IDOI_FileNotExist</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00036">Utils_Exception.h:36</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05faf06e454bb152b59d47071c9ca7f2aa51">&#x202A;Error_IDOI_File_Write</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00039">Utils_Exception.h:39</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa4aaa596be688ace81226d22c5d1b1a2d">&#x202A;Error_Project_Dir_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00048">Utils_Exception.h:48</a></div></div>
+<div class="ttc" id="aa01302_html_a2c647961f189dbb5bf06e151e1b6d4b3"><div class="ttname"><a href="../../dc/de0/a01302.html#a2c647961f189dbb5bf06e151e1b6d4b3">&#x202A;Utils_Exception::ms_ErrorMsg_</a></div><div class="ttdeci">&#x202A;std::string ms_ErrorMsg_</div><div class="ttdoc">&#x202A;错误消息</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00080">Utils_Exception.h:80</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fae428c75d87d1412d071ec25dfa717d1f">&#x202A;Error_Work_Dir_Pic_Create_Error</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00049">Utils_Exception.h:49</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa3ff49a2c4ec3396233ddd9d89bf763e7">&#x202A;Error_Video_Writer_Null</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00052">Utils_Exception.h:52</a></div></div>
+<div class="ttc" id="aa01302_html_a35003f74297fb9d247a5d3acc6f9c376"><div class="ttname"><a href="../../dc/de0/a01302.html#a35003f74297fb9d247a5d3acc6f9c376">&#x202A;Utils_Exception::Utils_Exception</a></div><div class="ttdeci">&#x202A;Utils_Exception(int num=100, std::string str=&quot;Unknown exception&quot;)</div><div class="ttdoc">&#x202A;初始对象生成 默认会出现 位置错误 对于错误异常 直接处理结果</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00093">Utils_Exception.h:93</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fa617c02a2de66b8c41e6a68232690fbb2"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa617c02a2de66b8c41e6a68232690fbb2">&#x202A;Error_YML_FileNode_NoExist</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00034">Utils_Exception.h:34</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fad6cb908579e697f9d087cb1b47763d44">&#x202A;Error_IDOI_FileVerifyError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00038">Utils_Exception.h:38</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d9/d39/a00257.html">&#x202A;utils.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d9/d39/a00257.html">&#x202A;Utils_Exception.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

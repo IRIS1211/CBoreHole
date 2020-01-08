@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gaugecompass_1296',['GaugeCompass',['../dc/de0/a01302.html',1,'GaugeCompass'],['../da/dab/a01362.html',1,'Ui::GaugeCompass']]]
+  ['gaugecompass_1314',['GaugeCompass',['../d9/d2e/a01194.html',1,'GaugeCompass'],['../dc/d83/a01254.html',1,'Ui::GaugeCompass']]]
 ];

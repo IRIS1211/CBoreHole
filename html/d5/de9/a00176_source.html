@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/serialdata.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/test/test_common.cc 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,95 +89,17 @@ $(document).ready(function(){initNavTree('d5/de9/a00176_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">serialdata.cc</div>  </div>
+<div class="title">test_common.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d5/de9/a00176.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../inc/serialdata.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d7/dc5/a01242.html#ae35193380915a1a21e06d53d45e71e2b">   23</a></span>&#160;<a class="code" href="../../d7/dc5/a01242.html#ae35193380915a1a21e06d53d45e71e2b">&#x202A;SerialData::SerialData</a>(<span class="keywordtype">int</span> len)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    :mi_DataLen_(len),</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    mc_Data_(new <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>[len])</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    this-&gt;<a class="code" href="../../d7/dc5/a01242.html#a2e29d7356cb17ae57bf407bae34226d6">&#x202A;mi_DataLen_</a> = len;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="../../d7/dc5/a01242.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;mc_Data_</a> = <span class="keyword">new</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>[len];</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 根据罗盘类型, 设置数据通信头</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// SetFrameByConfig(gConfig-&gt;mRunPara.Compass.nComType);</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../d7/dc5/a01242.html#a24f89c030f45de5793c74b58e1a7e7b2">&#x202A;SetFrameByConfig</a>(<a class="code" href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../d5/d16/a01154.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../d5/d16/a01154.html#a19d6531d32671e61021a6185e30eba7a">&#x202A;Compass</a>.<a class="code" href="../../d5/d16/a01154.html#a15fe499e4b2050a53880aa99049ac839">&#x202A;nComType</a>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// SetFrameByConfig(gConfig-&gt;mRunPara.Device.Compass);</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d7/dc5/a01242.html#ade93d67c2ca12594170e9223af9c21b7">   49</a></span>&#160;std::string <a class="code" href="../../d7/dc5/a01242.html#ade93d67c2ca12594170e9223af9c21b7">&#x202A;SerialData::CharArr2Str</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *buffer)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d8/df1/a01414.html#a343a35752b0575e884df5b0758cadfda">&#x202A;Utils_String::CharArr2Hex</a>(buffer, <a class="code" href="../../d7/dc5/a01242.html#a2e29d7356cb17ae57bf407bae34226d6">&#x202A;mi_DataLen_</a>, 1);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d7/dc5/a01242.html#a73c1b6474d82fb88844ea63d54a19b1d">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/dc5/a01242.html#a73c1b6474d82fb88844ea63d54a19b1d">&#x202A;SerialData::Str2CharArr</a>(<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>* buffer, <span class="keyword">const</span> std::string &amp;str, <span class="keywordtype">int</span> flg_space)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="../../d8/df1/a01414.html#a14c76ec9d896d7eaa7193444f3277c59">&#x202A;Utils_String::Hex2CharArr</a>(buffer, str, flg_space);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../d7/dc5/a01242.html#a24f89c030f45de5793c74b58e1a7e7b2">   86</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/dc5/a01242.html#a24f89c030f45de5793c74b58e1a7e7b2">&#x202A;SerialData::SetFrameByConfig</a>(<span class="keywordtype">int</span> compass_type)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// 根据罗盘类型, 设置数据通信头</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// 可以考虑在 使用配置文件读取函数头内容 </span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (compass_type == 2)  </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="../../d7/dc5/a01242.html#a381a10030c4ed28b8cb7fc1b01de3ff6">&#x202A;mc_Head_</a> = <span class="keyword">new</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>[4]{ 0x68,0x13,0x00,0x85 };    <span class="comment">// 新版协议头</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(compass_type == 1)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="../../d7/dc5/a01242.html#a381a10030c4ed28b8cb7fc1b01de3ff6">&#x202A;mc_Head_</a> = <span class="keyword">new</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>[4]{ 0x68,0x0D,0x00,0x84 }; <span class="comment">// 旧版协议头</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">// 如果都没出现 则设置相应的错误</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="../../d7/dc5/a01242.html#a381a10030c4ed28b8cb7fc1b01de3ff6">&#x202A;mc_Head_</a> = <span class="keyword">new</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>[4]{ 0x68,0x0D,0x00,0x84 };        </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="../../d0/dc7/a01402.html">&#x202A;Utils_Exception</a>(<a class="code" href="../../d9/dd6/a00272.html#a59e56af19e754a6aa26a612ebf91d05fa9e41f22d9ad51a48957eeba9c8893a6b">&#x202A;Error_Serial_Compass_TypeError</a>, \</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                              <span class="stringliteral">&quot;Error_Serial_Compass_TypeError&quot;</span>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// 声明长度</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="../../d7/dc5/a01242.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;mc_Data_</a> = <span class="keyword">new</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>[<a class="code" href="../../d7/dc5/a01242.html#a381a10030c4ed28b8cb7fc1b01de3ff6">&#x202A;mc_Head_</a>[1] + 7];</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// 根据 罗盘参数初始化参数</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">// TODO(SChen): 从数据中读取 帧头数据 </span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../d7/dc5/a01242.html#a29097e77cedd2793da6fd426e46fe823">  113</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d7/dc5/a01242.html#a24f89c030f45de5793c74b58e1a7e7b2">&#x202A;SerialData::SetFrameByConfig</a>(<span class="keyword">const</span> <a class="code" href="../../d5/d16/a01154.html#d0/d32/a01198">&#x202A;RunPara::StDevice::StCompass</a> &amp;com)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    this-&gt;<a class="code" href="../../d7/dc5/a01242.html#a2e29d7356cb17ae57bf407bae34226d6">&#x202A;mi_DataLen_</a> = com.<a class="code" href="../../d5/d16/a01154.html#a8c1cbd58f723cebf6b5e2823f888d8af">&#x202A;nComDataLen</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    this-&gt;<a class="code" href="../../d7/dc5/a01242.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;mc_Data_</a> = <span class="keyword">new</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>[<a class="code" href="../../d7/dc5/a01242.html#a2e29d7356cb17ae57bf407bae34226d6">&#x202A;mi_DataLen_</a>];</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    this-&gt;<a class="code" href="../../d7/dc5/a01242.html#a381a10030c4ed28b8cb7fc1b01de3ff6">&#x202A;mc_Head_</a> = <span class="keyword">new</span> <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>[4];      <span class="comment">// 此处默认 罗盘数据四个帧头数据</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<a href="../../d5/de9/a00176.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../inc/common.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01242_html_a2e29d7356cb17ae57bf407bae34226d6"><div class="ttname"><a href="../../d7/dc5/a01242.html#a2e29d7356cb17ae57bf407bae34226d6">&#x202A;SerialData::mi_DataLen_</a></div><div class="ttdeci">&#x202A;int mi_DataLen_</div><div class="ttdoc">&#x202A;数据帧长度</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00035">serialdata.h:35</a></div></div>
-<div class="ttc" id="aa01242_html_a73c1b6474d82fb88844ea63d54a19b1d"><div class="ttname"><a href="../../d7/dc5/a01242.html#a73c1b6474d82fb88844ea63d54a19b1d">&#x202A;SerialData::Str2CharArr</a></div><div class="ttdeci">&#x202A;void Str2CharArr(uchar *buffer, const std::string &amp;str, int flg_space=1)</div><div class="ttdoc">&#x202A;字符串 转 数组 // 将string 字符串转换成 数组数据 将人工输入的字符串转换成用于处理的数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de9/a00176_source.html#l00068">serialdata.cc:68</a></div></div>
-<div class="ttc" id="aa01154_html_a8c1cbd58f723cebf6b5e2823f888d8af"><div class="ttname"><a href="../../d5/d16/a01154.html#a8c1cbd58f723cebf6b5e2823f888d8af">&#x202A;RunPara::StDevice::StCompass::nComDataLen</a></div><div class="ttdeci">&#x202A;int nComDataLen</div><div class="ttdoc">&#x202A;罗盘一帧数据的长度 // 串口数据长度 计算 见 串口数据文档</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00187">runpara.h:187</a></div></div>
-<div class="ttc" id="aa01242_html_ade93d67c2ca12594170e9223af9c21b7"><div class="ttname"><a href="../../d7/dc5/a01242.html#ade93d67c2ca12594170e9223af9c21b7">&#x202A;SerialData::CharArr2Str</a></div><div class="ttdeci">&#x202A;std::string CharArr2Str(uchar *buffer)</div><div class="ttdoc">&#x202A;将串口数据 转换成字符串 // 数组 char 转换成字符串 用于查看</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de9/a00176_source.html#l00049">serialdata.cc:49</a></div></div>
-<div class="ttc" id="aa01154_html_d0/d32/a01198"><div class="ttname"><a href="../../d5/d16/a01154.html#d0/d32/a01198">&#x202A;RunPara::StDevice::StCompass</a></div><div class="ttdoc">&#x202A;电子罗盘参数 调整罗盘数据</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00180">runpara.h:180</a></div></div>
-<div class="ttc" id="aa01402_html"><div class="ttname"><a href="../../d0/dc7/a01402.html">&#x202A;Utils_Exception</a></div><div class="ttdoc">&#x202A;直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd6/a00272_source.html#l00073">Utils_Exception.h:73</a></div></div>
-<div class="ttc" id="aa01242_html_a3790e9109615a7c93f395e45d0d6166c"><div class="ttname"><a href="../../d7/dc5/a01242.html#a3790e9109615a7c93f395e45d0d6166c">&#x202A;SerialData::mc_Data_</a></div><div class="ttdeci">&#x202A;uchar * mc_Data_</div><div class="ttdoc">&#x202A;帧数据</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00033">serialdata.h:33</a></div></div>
-<div class="ttc" id="aa00062_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../df/d03/a00062.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/a00164_source.html#l00020">main.cpp:20</a></div></div>
-<div class="ttc" id="aa01154_html_a15fe499e4b2050a53880aa99049ac839"><div class="ttname"><a href="../../d5/d16/a01154.html#a15fe499e4b2050a53880aa99049ac839">&#x202A;RunPara::StDevice::StCompass::nComType</a></div><div class="ttdeci">&#x202A;int nComType</div><div class="ttdoc">&#x202A;当前使用的罗盘类</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d24/a00068_source.html#l00186">runpara.h:186</a></div></div>
-<div class="ttc" id="aa01414_html_a14c76ec9d896d7eaa7193444f3277c59"><div class="ttname"><a href="../../d8/df1/a01414.html#a14c76ec9d896d7eaa7193444f3277c59">&#x202A;Utils_String::Hex2CharArr</a></div><div class="ttdeci">&#x202A;static uchar * Hex2CharArr(uchar *&amp;buffer, const std::string &amp;str, bool flg_space=true)</div><div class="ttdoc">&#x202A;Hexadecimal 2 character array hex 字符串 转换成 数组</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00578">utils_string.cc:578</a></div></div>
-<div class="ttc" id="aa01154_html_a19d6531d32671e61021a6185e30eba7a"><div class="ttname"><a href="../../d5/d16/a01154.html#a19d6531d32671e61021a6185e30eba7a">&#x202A;RunPara::StDevice::Compass</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice::StCompass Compass</div></div>
-<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00026">Commu.h:26</a></div></div>
-<div class="ttc" id="aa01242_html_ae35193380915a1a21e06d53d45e71e2b"><div class="ttname"><a href="../../d7/dc5/a01242.html#ae35193380915a1a21e06d53d45e71e2b">&#x202A;SerialData::SerialData</a></div><div class="ttdeci">&#x202A;SerialData(int len=21)</div><div class="ttdoc">&#x202A;默认构造长度</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de9/a00176_source.html#l00023">serialdata.cc:23</a></div></div>
-<div class="ttc" id="aa01154_html_a1b1f21581cf398c15060fe53199662d9"><div class="ttname"><a href="../../d5/d16/a01154.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;RunPara::Device</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice Device</div></div>
-<div class="ttc" id="aa01414_html_a343a35752b0575e884df5b0758cadfda"><div class="ttname"><a href="../../d8/df1/a01414.html#a343a35752b0575e884df5b0758cadfda">&#x202A;Utils_String::CharArr2Hex</a></div><div class="ttdeci">&#x202A;static std::string CharArr2Hex(uchar *buffer, int length=16, int flg_space=1)</div><div class="ttdoc">&#x202A;Character array 2 hexadecimal 数组 转换成 hex 字符</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00652">utils_string.cc:652</a></div></div>
-<div class="ttc" id="aa00272_html_a59e56af19e754a6aa26a612ebf91d05fa9e41f22d9ad51a48957eeba9c8893a6b"><div class="ttname"><a href="../../d9/dd6/a00272.html#a59e56af19e754a6aa26a612ebf91d05fa9e41f22d9ad51a48957eeba9c8893a6b">&#x202A;Error_Serial_Compass_TypeError</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd6/a00272_source.html#l00045">Utils_Exception.h:45</a></div></div>
-<div class="ttc" id="aa01118_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../dd/d09/a01118.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00034">Config.h:34</a></div></div>
-<div class="ttc" id="aa01242_html_a24f89c030f45de5793c74b58e1a7e7b2"><div class="ttname"><a href="../../d7/dc5/a01242.html#a24f89c030f45de5793c74b58e1a7e7b2">&#x202A;SerialData::SetFrameByConfig</a></div><div class="ttdeci">&#x202A;bool SetFrameByConfig(int compass_type=2)</div><div class="ttdoc">&#x202A;Sets frame header 根据罗盘类型设置通信协议</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de9/a00176_source.html#l00086">serialdata.cc:86</a></div></div>
-<div class="ttc" id="aa01242_html_a381a10030c4ed28b8cb7fc1b01de3ff6"><div class="ttname"><a href="../../d7/dc5/a01242.html#a381a10030c4ed28b8cb7fc1b01de3ff6">&#x202A;SerialData::mc_Head_</a></div><div class="ttdeci">&#x202A;uchar * mc_Head_</div><div class="ttdoc">&#x202A;帧头数据</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00034">serialdata.h:34</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d5/de9/a00176.html">&#x202A;serialdata.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_e4242af473e2aee12aed92be20342e47.html">&#x202A;test</a></li><li class="navelem"><a class="el" href="../../d5/de9/a00176.html">&#x202A;test_common.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

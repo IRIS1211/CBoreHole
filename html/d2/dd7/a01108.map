@@ -1,5 +1,4 @@
-<map id="StProtocol::StFunction" name="StProtocol::StFunction">
-<area shape="rect" id="node1" title="执行特殊功能的指令" alt="" coords="5,200,160,227"/>
-<area shape="rect" id="node2" title="STL class" alt="" coords="43,96,123,123"/>
-<area shape="rect" id="node3" title="STL class" alt="" coords="19,5,146,47"/>
+<map id="RunPara::StUI" name="RunPara::StUI">
+<area shape="rect" id="node1" title="设置用户UI 参数" alt="" coords="31,124,137,151"/>
+<area shape="rect" id="node2" href="$da/d17/a01046.html#d6/d40/a01114" title=" " alt="" coords="5,5,163,32"/>
 </map>

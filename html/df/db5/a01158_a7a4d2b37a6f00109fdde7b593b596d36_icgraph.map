@@ -1,0 +1,8 @@
+<map id="SerialProc::slot_timer_peroid_run" name="SerialProc::slot_timer_peroid_run">
+<area shape="rect" id="node1" title="设置周期 定时器 执行的内容" alt="" coords="713,71,860,112"/>
+<area shape="rect" id="node2" href="$df/db5/a01158.html#a4d356bce746d2a91ab02ec10914a34b2" title="设置初始化" alt="" coords="499,78,665,105"/>
+<area shape="rect" id="node3" href="$df/db5/a01158.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="260,78,451,105"/>
+<area shape="rect" id="node4" href="$d4/d13/a01162.html#aea9a3a7c37640f3efc87ee36e9e8f573" title=" " alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node5" href="$d3/dc7/a01170.html#a7597205c96689c706eea3c64d87ba180" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="35,71,182,112"/>
+<area shape="rect" id="node6" href="$de/d79/a00203.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="60,137,157,163"/>
+</map>

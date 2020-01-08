@@ -1,18 +1,17 @@
 var a01306 =
 [
-    [ "\u202AQcGaugeWidget", "d7/d8c/a01306.html#a685c866d38e19f842d5e0adf71be8526", null ],
-    [ "\u202AaddArc", "d7/d8c/a01306.html#a65306a2298b2267bac0278d223975fde", null ],
-    [ "\u202AaddAttitudeMeter", "d7/d8c/a01306.html#ace5904dd2b44f40f3aed0b4fa3b407e2", null ],
-    [ "\u202AaddBackground", "d7/d8c/a01306.html#ab18b61014548fa8033b9febf4edea05e", null ],
-    [ "\u202AaddColorBand", "d7/d8c/a01306.html#a14855c8d81ab2821a9beefbf6cad4c94", null ],
-    [ "\u202AaddDegrees", "d7/d8c/a01306.html#a359820489a9614a9772758271f0880e5", null ],
-    [ "\u202AaddGlass", "d7/d8c/a01306.html#a9f138244953a686251a69fced16b282c", null ],
-    [ "\u202AaddItem", "d7/d8c/a01306.html#a35991f4b95f99a78a8147e96f66a7d96", null ],
-    [ "\u202AaddLabel", "d7/d8c/a01306.html#a263cb196d11770e5091bca4cfc135c52", null ],
-    [ "\u202AaddNeedle", "d7/d8c/a01306.html#a7514e7c34e840d61ce61222ca1dfbde4", null ],
-    [ "\u202AaddValues", "d7/d8c/a01306.html#a57a60287b93ab093c171cfeec0c9691a", null ],
-    [ "\u202Aitems", "d7/d8c/a01306.html#a26186b38ff70c8a790a7226b40bd8d90", null ],
-    [ "\u202ApaintEvent", "d7/d8c/a01306.html#ad7850cc539f1254dae2a439843133533", null ],
-    [ "\u202AremoveItem", "d7/d8c/a01306.html#a5a642168be805675efca8728d022994b", null ],
-    [ "\u202AmItems", "d7/d8c/a01306.html#a0c4b3c20b237a5565891421494d7ebca", null ]
+    [ "\u202AGetFileName", "d7/d8c/a01306.html#acf62efcec3d612bee798260f99fceb2b", null ],
+    [ "\u202AIsDirExist", "d7/d8c/a01306.html#ad809f617bf2f7e0850b105b5b5413108", null ],
+    [ "\u202AIsFileExist", "d7/d8c/a01306.html#a1c94c40595c31cd3be0d8ad5bccec259", null ],
+    [ "\u202AListAllFiles", "d7/d8c/a01306.html#a683e1e22cba7849ea561abb84aab0ce2", null ],
+    [ "\u202AListAllFiles", "d7/d8c/a01306.html#a877c971612ce4585687f9dd89c3573e9", null ],
+    [ "\u202ALowwerString", "d7/d8c/a01306.html#ab9e6bb3cc4940d80e158b0685c777e01", null ],
+    [ "\u202AReadData", "d7/d8c/a01306.html#a5523926cd82a36f59589a82da8adf31b", null ],
+    [ "\u202AReadStringBinary", "d7/d8c/a01306.html#a866a76a1d5720a62a03dc7ef7502cd25", null ],
+    [ "\u202AReadStringTxt", "d7/d8c/a01306.html#aa39316541feb5efd10b4e1b370a92a18", null ],
+    [ "\u202ARenameFileList", "d7/d8c/a01306.html#ab31982d89a0107b98c197244001ecc9f", null ],
+    [ "\u202ASplitFileName", "d7/d8c/a01306.html#abc35c60bccab87740d6f315be7641bcb", null ],
+    [ "\u202AWriteData", "d7/d8c/a01306.html#a7fbb7bbb704161e7512dd9edc091bb23", null ],
+    [ "\u202AWriteStringBinary", "d7/d8c/a01306.html#ae9335a7520c43095ac8312c0901e9bd4", null ],
+    [ "\u202AWriteStringTxt", "d7/d8c/a01306.html#a0100eaf1e914cee3b70157898026a375", null ]
 ];

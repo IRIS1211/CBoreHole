@@ -1,4 +1,5 @@
-<map id="FileHead" name="FileHead">
-<area shape="rect" id="node1" title="定义文件头, 包含系统参数和文件工程参数" alt="" coords="47,95,120,121"/>
-<area shape="rect" id="node2" href="$d9/d2e/a00056.html#d0/d61/a01130" title="定义 文件头信息" alt="" coords="5,5,161,32"/>
+<map id="RunPara::StCFG::StDebug" name="RunPara::StCFG::StDebug">
+<area shape="rect" id="node1" title="配置 debug 参数" alt="" coords="5,229,184,256"/>
+<area shape="rect" id="node2" title="STL class" alt="" coords="55,96,135,123"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="31,5,158,47"/>
 </map>

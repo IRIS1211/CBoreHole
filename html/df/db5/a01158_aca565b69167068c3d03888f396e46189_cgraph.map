@@ -1,0 +1,14 @@
+<map id="SerialProc::InteractiveProcSerial" name="SerialProc::InteractiveProcSerial">
+<area shape="rect" id="node1" title="交互式处理数据 // 写入一句 读取一句" alt="" coords="5,74,180,115"/>
+<area shape="rect" id="node2" href="$df/db5/a01158.html#adea2b8f89ed936b9ab23ea75b2e42b7a" title="get set 字符串 并设置相应 标志位 获取交互字符串" alt="" coords="228,5,399,32"/>
+<area shape="rect" id="node3" href="$df/db5/a01158.html#ae48816976f90aeb559fe3207b92c5ab6" title="设置交互字符串 1. 表示状态 从其他地方设置 等待写入 2. 表示读取上来之后, 等待读取" alt="" coords="229,56,398,83"/>
+<area shape="rect" id="node4" href="$d0/d61/a01130.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="239,107,387,133"/>
+<area shape="rect" id="node9" href="$d0/d61/a01130.html#a96e9f96c16f56bcbb4ed0945b0c69782" title="Slot write data // 将字符串写入到串口中去 判断是否输出的 hex 字符串" alt="" coords="238,157,389,184"/>
+<area shape="rect" id="node5" href="$d0/d61/a01130.html#a7620016be54cb445876b796aad0e062f" title="Reads the data" alt="" coords="447,107,603,133"/>
+<area shape="rect" id="node6" href="$da/d79/a01310.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="2 q byte array" alt="" coords="652,107,824,133"/>
+<area shape="rect" id="node7" href="$d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="872,132,1033,159"/>
+<area shape="rect" id="node8" href="$d9/de6/a01314.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="1081,132,1236,159"/>
+<area shape="rect" id="node10" href="$d9/de6/a01314.html#a16270cb7857217ad3fb4ca45b263379b" title="将 hex 字符串转换成 string 字符串" alt="" coords="657,157,819,184"/>
+<area shape="rect" id="node11" href="$d0/d61/a01130.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data 写入QByteArrar 类型的数据" alt="" coords="447,212,604,239"/>
+<area shape="rect" id="node12" href="$d9/de6/a01314.html#a93b60f1fbf52d3b43700bfab7e4eb2bb" title="char 类型与 string的相互转换" alt="" coords="655,209,821,250"/>
+</map>

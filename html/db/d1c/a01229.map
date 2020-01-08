@@ -1,4 +1,6 @@
-<map id="QcItem" name="QcItem">
-<area shape="rect" id="node1" title=" " alt="" coords="9,80,73,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,76,32"/>
+<map id="QcDegreesItem" name="QcDegreesItem">
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,117,256"/>
+<area shape="rect" id="node2" href="$dc/d9e/a01206.html" title=" " alt="" coords="13,155,110,181"/>
+<area shape="rect" id="node3" href="$d4/d5d/a01202.html" title=" " alt="" coords="29,80,93,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="26,5,97,32"/>
 </map>

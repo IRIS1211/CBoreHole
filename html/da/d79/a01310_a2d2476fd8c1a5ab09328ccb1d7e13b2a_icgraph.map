@@ -1,0 +1,20 @@
+<map id="Utils_QT::Str2QByteArray" name="Utils_QT::Str2QByteArray">
+<area shape="rect" id="node1" title="2 q byte array" alt="" coords="1699,137,1871,163"/>
+<area shape="rect" id="node2" href="$d0/d61/a01130.html#a7620016be54cb445876b796aad0e062f" title="Reads the data" alt="" coords="1495,137,1651,163"/>
+<area shape="rect" id="node3" href="$d0/d61/a01130.html#a27276985d679bea457d317b5821664f5" title="Handles the timeout" alt="" coords="1265,86,1447,113"/>
+<area shape="rect" id="node4" href="$d0/d61/a01130.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="1282,137,1430,163"/>
+<area shape="rect" id="node18" href="$de/db1/a00197.html#a3bcd6efee1d07328d9c4022ac4061bf4" title=" " alt="" coords="787,213,885,239"/>
+<area shape="rect" id="node5" href="$df/db5/a01158.html#aca565b69167068c3d03888f396e46189" title="交互式处理数据 // 写入一句 读取一句" alt="" coords="1021,45,1195,87"/>
+<area shape="rect" id="node12" href="$df/db5/a01158.html#a30681f14980014f263933507dea5f077" title="循环处理 串口 数据" alt="" coords="999,111,1217,138"/>
+<area shape="rect" id="node13" href="$d0/d61/a01130.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="1051,162,1165,189"/>
+<area shape="rect" id="node6" href="$df/db5/a01158.html#a7a4d2b37a6f00109fdde7b593b596d36" title="设置周期 定时器 执行的内容" alt="" coords="763,71,909,112"/>
+<area shape="rect" id="node7" href="$df/db5/a01158.html#a4d356bce746d2a91ab02ec10914a34b2" title="设置初始化" alt="" coords="507,78,673,105"/>
+<area shape="rect" id="node8" href="$df/db5/a01158.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="264,78,455,105"/>
+<area shape="rect" id="node9" href="$d4/d13/a01162.html#aea9a3a7c37640f3efc87ee36e9e8f573" title=" " alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node10" href="$d3/dc7/a01170.html#a7597205c96689c706eea3c64d87ba180" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="35,71,182,112"/>
+<area shape="rect" id="node11" href="$de/d79/a00203.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="60,137,157,163"/>
+<area shape="rect" id="node14" href="$d3/dc7/a01170.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="721,162,951,189"/>
+<area shape="rect" id="node15" href="$d3/dc7/a01170.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="528,162,652,189"/>
+<area shape="rect" id="node16" href="$d5/db1/a00140.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="334,145,385,171"/>
+<area shape="rect" id="node17" href="$d4/d13/a01162.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="260,196,459,237"/>
+</map>

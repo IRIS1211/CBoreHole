@@ -1,0 +1,14 @@
+<map id="Serial::HandleCloseSerial" name="Serial::HandleCloseSerial">
+<area shape="rect" id="node1" title="Handles the close serial" alt="" coords="1009,99,1179,125"/>
+<area shape="rect" id="node2" href="$d0/d61/a01130.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="816,48,929,75"/>
+<area shape="rect" id="node7" href="$de/db1/a00197.html#a3bcd6efee1d07328d9c4022ac4061bf4" title=" " alt="" coords="573,88,670,115"/>
+<area shape="rect" id="node8" href="$df/db5/a01158.html#a3be336ed4e3805324cc4b7a5f3589b36" title="Serial proc stop" alt="" coords="784,155,961,181"/>
+<area shape="rect" id="node3" href="$d3/dc7/a01170.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="507,37,736,64"/>
+<area shape="rect" id="node4" href="$d3/dc7/a01170.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="293,35,417,61"/>
+<area shape="rect" id="node5" href="$d5/db1/a00140.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" id="node6" href="$d4/d13/a01162.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+<area shape="rect" id="node9" href="$df/db5/a01158.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="526,157,717,184"/>
+<area shape="rect" id="node10" href="$d4/d13/a01162.html#aea9a3a7c37640f3efc87ee36e9e8f573" title=" " alt="" coords="252,86,459,127"/>
+<area shape="rect" id="node11" href="$d3/dc7/a01170.html#a7597205c96689c706eea3c64d87ba180" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="282,151,429,193"/>
+<area shape="rect" id="node12" href="$de/d79/a00203.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="307,217,404,244"/>
+</map>

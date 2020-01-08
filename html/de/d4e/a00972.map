@@ -1,20 +1,16 @@
-<map id="StorePara" name="StorePara">
-<area shape="rect" id="node1" title="需要存储的系统 para" alt="" coords="611,548,691,575"/>
-<area shape="rect" id="node2" href="$df/dce/a00974.html#d4/dbc/a01038" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="351,108,479,135"/>
-<area shape="rect" id="node3" href="$df/dce/a00974.html#d4/d56/a01042" title="可以存储的文件参数" alt="" coords="5,5,217,32"/>
-<area shape="rect" id="node4" href="$df/dce/a00974.html#dc/d81/a01006" title="设置硬件的参数信息" alt="" coords="345,293,484,320"/>
-<area shape="rect" id="node5" href="$df/dce/a00974.html#de/d02/a01026" title="窗口状态信息" alt="" coords="42,57,181,98"/>
-<area shape="rect" id="node6" href="$df/dce/a00974.html#d3/d08/a01018" title="电子罗盘参数 调整罗盘数据" alt="" coords="42,122,181,163"/>
-<area shape="rect" id="node7" href="$df/dce/a00974.html#d0/d2b/a01010" title="脉冲参数" alt="" coords="42,187,181,229"/>
-<area shape="rect" id="node8" href="$df/dce/a00974.html#de/d41/a01030" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="42,253,181,294"/>
-<area shape="rect" id="node9" href="$df/dce/a00974.html#de/d91/a01034" title="额外信息" alt="" coords="42,318,181,359"/>
-<area shape="rect" id="node10" href="$df/dce/a00974.html#d0/d56/a01014" title="探头参数" alt="" coords="42,383,181,425"/>
-<area shape="rect" id="node11" href="$df/dce/a00974.html#d1/dd8/a01022" title="相机参数结构体" alt="" coords="42,449,181,490"/>
-<area shape="rect" id="node12" href="$df/dce/a00974.html#dd/d7a/a00990" title="运行过程中的 图像参数" alt="" coords="347,521,483,548"/>
-<area shape="rect" id="node13" href="$df/dce/a00974.html#d2/dd5/a01002" title=" " alt="" coords="43,514,179,555"/>
-<area shape="rect" id="node14" href="$df/dce/a00974.html#d4/dd0/a00994" title="Image 处理参数, 作为图像展开参数" alt="" coords="43,579,179,621"/>
-<area shape="rect" id="node15" href="$df/dce/a00974.html#d9/d9a/a00998" title="Image Para 参数" alt="" coords="43,645,179,686"/>
-<area shape="rect" id="node16" href="$df/dce/a00974.html#d2/ddd/a00978" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="333,572,496,599"/>
-<area shape="rect" id="node17" href="$df/dce/a00974.html#d1/d7a/a00982" title="记录 路径以及其他路径信息" alt="" coords="343,623,486,649"/>
-<area shape="rect" id="node18" href="$df/dce/a00974.html#d3/d7b/a00986" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="351,673,478,700"/>
+<map id="StProtocol" name="StProtocol">
+<area shape="rect" id="node1" title="定义串通讯协议对应指令 详细介绍信息 参考 电子罗盘协议3.1版本pdf 定义相应的字符串, 在发送的时候 前缀 &#39;#&#39; 后缀 &#39;*&#39; 然后加入 8位异或校验 最后加上 /n/r" alt="" coords="1173,157,1256,184"/>
+<area shape="rect" id="node2" href="$d6/d5b/a00026.html#d4/dd0/a00994" title="执行特殊功能的指令" alt="" coords="691,23,846,49"/>
+<area shape="rect" id="node3" title="STL class" alt="" coords="254,280,334,307"/>
+<area shape="rect" id="node5" href="$d6/d5b/a00026.html#d9/d9a/a00998" title="输出模式" alt="" coords="681,132,856,159"/>
+<area shape="rect" id="node7" href="$d2/dd5/a01002.html#dc/d81/a01006" title="An answer." alt="" coords="499,555,643,597"/>
+<area shape="rect" id="node8" title=" " alt="" coords="489,621,653,648"/>
+<area shape="rect" id="node11" href="$d6/d5b/a00026.html#d3/d7b/a00986" title="设置 波特率的指令" alt="" coords="885,416,1047,443"/>
+<area shape="rect" id="node12" href="$d6/d5b/a00026.html#dd/d7a/a00990" title="An answer." alt="" coords="491,478,652,519"/>
+<area shape="rect" id="node13" href="$d6/d5b/a00026.html#d2/ddd/a00978" title="设置 安装模式的方式" alt="" coords="880,195,1052,221"/>
+<area shape="rect" id="node14" href="$d6/d5b/a00026.html#d1/d7a/a00982" title="An answer." alt="" coords="485,183,657,225"/>
+<area shape="rect" id="node4" title="STL class" alt="" coords="5,273,132,314"/>
+<area shape="rect" id="node6" href="$d2/dd5/a01002.html" title="A calibra." alt="" coords="894,561,1038,588"/>
+<area shape="rect" id="node9" title="STL class" alt="" coords="237,659,351,685"/>
+<area shape="rect" id="node10" title=" " alt="" coords="49,659,88,685"/>
 </map>

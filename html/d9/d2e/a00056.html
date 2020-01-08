@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/IDOIFile.h 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/serialdata.h 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -90,177 +90,389 @@ $(document).ready(function(){initNavTree('d9/d2e/a00056.html','../../');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">结构体</a> &#124;
-<a href="#typedef-members">类型定义</a> &#124;
 <a href="#enum-members">枚举</a>  </div>
   <div class="headertitle">
-<div class="title">IDOIFile.h 文件参考</div>  </div>
+<div class="title">serialdata.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>&#x202A;Declares the idoi file class @changelog 2019/6/26 IRIS_Chen Created.  
+<p>&#x202A;Declares the serialdata class @changelog 2019/11/7 IRIS_Chen Created.  
 <a href="#details">更多...</a></p>
 
 <p><a href="../../d9/d2e/a00056_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 结构体</h2></td></tr>
-<tr class="memitem:db/d1e/a01126"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a00056.html#db/d1e/a01126">FileHead</a></td></tr>
-<tr class="memdesc:db/d1e/a01126"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;定义文件头, 包含系统参数和文件工程参数  <a href="../../d9/d2e/a00056.html#db/d1e/a01126">更多...</a><br /></td></tr>
-<tr class="separator:db/d1e/a01126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d0/d61/a01130"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a00056.html#d0/d61/a01130">FileHead::StFileHeader</a></td></tr>
-<tr class="memdesc:d0/d61/a01130"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;定义 文件头信息  <a href="../../d9/d2e/a00056.html#d0/d61/a01130">更多...</a><br /></td></tr>
-<tr class="separator:d0/d61/a01130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html">ExtraInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;#TODO(SChen): 完善拓展信息内容 定义拓展信息内容  <a href="../../dd/de2/a01134.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html">SerialData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;暂存 串口发送回来的 分组数据 保存串口发送的原始数据  <a href="../../dd/de2/a01134.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/a01138.html">IDOIFile</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;An idoi file.  <a href="../../d0/d39/a01138.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/a01138.html">FrameData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;定义数据帧头像  <a href="../../d0/d39/a01138.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-类型定义</h2></td></tr>
-<tr class="memitem:ab5e9483c3c7b45b15ceccbc663a8c49a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a00056.html#ab5e9483c3c7b45b15ceccbc663a8c49a">Para</a> = <a class="el" href="../../d5/d16/a01154.html">RunPara</a></td></tr>
-<tr class="separator:ab5e9483c3c7b45b15ceccbc663a8c49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d3/ddc/a01142"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/a01138.html#d3/ddc/a01142">FrameData::StPCA</a></td></tr>
+<tr class="memdesc:d3/ddc/a01142"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;编码器 的值 保留当前值 上次值 以及运算的中值  <a href="../../d0/d39/a01138.html#d3/ddc/a01142">更多...</a><br /></td></tr>
+<tr class="separator:d3/ddc/a01142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/d07/a01146"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/a01138.html#de/d07/a01146">FrameData::StADC</a></td></tr>
+<tr class="memdesc:de/d07/a01146"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;记录电压当前值  <a href="../../d0/d39/a01138.html#de/d07/a01146">更多...</a><br /></td></tr>
+<tr class="separator:de/d07/a01146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d2/d7b/a01150"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/a01138.html#d2/d7b/a01150">FrameData::StCompass</a></td></tr>
+<tr class="memdesc:d2/d7b/a01150"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;电子罗盘  <a href="../../d0/d39/a01138.html#d2/d7b/a01150">更多...</a><br /></td></tr>
+<tr class="separator:d2/d7b/a01150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01154.html">StCompassPara</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;罗盘类型 结构体 用于列出不同种类的 罗盘  <a href="../../d5/d16/a01154.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 枚举</h2></td></tr>
-<tr class="memitem:af8e4def8f3de31b2d7ea0d2077ca3473"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473">FileOperateType</a> { <a class="el" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afef364d1f6a87dd77999ec49e3317fe9">OWRITE</a> = 0, 
-<a class="el" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb">OREAD</a> = 1, 
-<a class="el" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473a66f02adf4b22d698de8dc0f90bf22701">OAPPEND</a> = 2
+<tr class="memitem:a6de22e58cff280e195408775bbf9fb69"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69">FrameBit</a> { <br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1">FHeader</a> = 0, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010">FLength</a> = 1, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">FPitch</a> = 4, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c">FRoll</a> = FPitch + 3, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459">FHeading</a> = FPitch + 6, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd">FCRC</a> = FHeading + 9, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33">FDHeader</a> = 14, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">FDPCAS</a> = 15, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900">FDPCA</a> = FDPCAS + 1, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e">FDAD</a> = 19, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f">FDCRC</a> = 20, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1">FHeader</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010">FLength</a> = 1, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">FPitch</a> = 4, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c">FRoll</a> = FPitch + 3, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459">FHeading</a> = FPitch + 6, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff">FMagnetX</a> = 10, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f5d2fce897e6c00658e0e841a7f60d2">FMagnetY</a> = FMagnetX+3, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69aa4388aeb51d9f5e7291dfdeb776bb883">FMagnetZ</a> = FMagnetX+6, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a83e8f8db18f7341eb2af494f29a60984">FSumCheck</a> = 19, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33">FDHeader</a> = 14, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">FDPCAS</a> = 15, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900">FDPCA</a> = FDPCAS + 1, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e">FDAD</a> = 19, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f">FDCRC</a> = 20
+<br />
  }</td></tr>
-<tr class="memdesc:af8e4def8f3de31b2d7ea0d2077ca3473"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;定义操作类型  <a href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473">更多...</a><br /></td></tr>
-<tr class="separator:af8e4def8f3de31b2d7ea0d2077ca3473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a6de22e58cff280e195408775bbf9fb69"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;定义 每一位数据的开始位置 index 按照下表所示,及时更新表 按照51 发上来的数据 进行每帧的处理 定义数据格式 校验值使用的是和校验的结果  <a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69">更多...</a><br /></td></tr>
+<tr class="separator:a6de22e58cff280e195408775bbf9fb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de22e58cff280e195408775bbf9fb69"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69">FrameBit</a> { <br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1">FHeader</a> = 0, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010">FLength</a> = 1, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">FPitch</a> = 4, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c">FRoll</a> = FPitch + 3, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459">FHeading</a> = FPitch + 6, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd">FCRC</a> = FHeading + 9, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33">FDHeader</a> = 14, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">FDPCAS</a> = 15, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900">FDPCA</a> = FDPCAS + 1, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e">FDAD</a> = 19, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f">FDCRC</a> = 20, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1">FHeader</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010">FLength</a> = 1, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">FPitch</a> = 4, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c">FRoll</a> = FPitch + 3, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459">FHeading</a> = FPitch + 6, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff">FMagnetX</a> = 10, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f5d2fce897e6c00658e0e841a7f60d2">FMagnetY</a> = FMagnetX+3, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69aa4388aeb51d9f5e7291dfdeb776bb883">FMagnetZ</a> = FMagnetX+6, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a83e8f8db18f7341eb2af494f29a60984">FSumCheck</a> = 19, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33">FDHeader</a> = 14, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">FDPCAS</a> = 15, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900">FDPCA</a> = FDPCAS + 1, 
+<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e">FDAD</a> = 19, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f">FDCRC</a> = 20
+<br />
+ }</td></tr>
+<tr class="separator:a6de22e58cff280e195408775bbf9fb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">Declares the idoi file class @changelog 2019/6/26 IRIS_Chen Created. </p>
+<div class="textblock"><p class="DocNodeLTR">Declares the serialdata class @changelog 2019/11/7 IRIS_Chen Created. </p>
+<p class="DocNodeLTR">Declares the setwindow class 设置窗口类声明和实现过程 @changelog 2019/6/23 IRIS_Chen Created.</p>
 <dl class="section copyright DocNodeLTR"><dt>版权所有</dt><dd>&#x202A;Copyright (c) 2019 IRIS_Chen IRIS Lab </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 中定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">serialdata.h</a> 中定义.</p>
 </div><hr/><h2 class="groupheader">结构体说明</h2>
-<a name="db/d1e/a01126" id="db/d1e/a01126"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#db/d1e/a01126">&#9670;&nbsp;</a></span>FileHead</h2>
+<a name="d3/ddc/a01142" id="d3/ddc/a01142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d3/ddc/a01142">&#9670;&nbsp;</a></span>FrameData::StPCA</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">class FileHead</td>
+          <td class="memname">struct FrameData::StPCA</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p class="DocNodeLTR">定义文件头, 包含系统参数和文件工程参数 </p>
+<div class="textblock"><p class="DocNodeLTR">编码器 的值 保留当前值 上次值 以及运算的中值 </p>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00028">28</a> 行定义.</p>
-</div><div class="dynheader">
-FileHead 的协作图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/dc8/a01124.png" border="0" usemap="#_file_head_coll__map" alt="Collaboration graph"/></div>
-<map name="_file_head_coll__map" id="_file_head_coll__map">
-<area shape="rect" title="定义文件头, 包含系统参数和文件工程参数" alt="" coords="47,95,120,121"/>
-<area shape="rect" href="../../d9/d2e/a00056.html#d0/d61/a01130" title="定义 文件头信息" alt="" coords="5,5,161,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
-<table class="fieldtable">
-<tr><th colspan="3">成员变量</th></tr>
-<tr><td class="fieldtype">
-<a id="a238b8c0ae85e59737b1927cc9d6b4e5c"></a>struct <a class="el" href="../../d9/d2e/a00056.html#d0/d61/a01130">StFileHeader</a></td>
-<td class="fieldname">
-Header</td>
-<td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<a name="d0/d61/a01130" id="d0/d61/a01130"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#d0/d61/a01130">&#9670;&nbsp;</a></span>FileHead::StFileHeader</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct FileHead::StFileHeader</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock"><p class="DocNodeLTR">定义 文件头信息 </p>
-
-<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00034">34</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">serialdata.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00187">187</a> 行定义.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">成员变量</th></tr>
 <tr><td class="fieldtype">
-<a id="a317986245b1ec99f7b52cb20bf619f0e"></a>int</td>
+<a id="a79fe5c5bed43df4312e8cd9b77ad100c"></a>int</td>
 <td class="fieldname">
-file_NO</td>
+cur</td>
 <td class="fielddoc">
-&#x202A;标识当前文档的序号 按照顺序 填入当前块的值 </td></tr>
+&#x202A;The current </td></tr>
 <tr><td class="fieldtype">
-<a id="a293e298cf9b7e76a1cab6110e9be7635"></a>char</td>
+<a id="ace858e65de8fad1d8d74f1d7ce0655ed"></a>int</td>
 <td class="fieldname">
-Verify[4]</td>
+last</td>
 <td class="fielddoc">
-&#x202A;The verify[ 4] </td></tr>
+&#x202A;记录上一次的值 </td></tr>
 </table>
 
 </div>
 </div>
-<h2 class="groupheader">类型定义说明</h2>
-<a id="ab5e9483c3c7b45b15ceccbc663a8c49a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5e9483c3c7b45b15ceccbc663a8c49a">&#9670;&nbsp;</a></span>Para</h2>
+<a name="de/d07/a01146" id="de/d07/a01146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#de/d07/a01146">&#9670;&nbsp;</a></span>FrameData::StADC</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d9/d2e/a00056.html#ab5e9483c3c7b45b15ceccbc663a8c49a">Para</a> =  <a class="el" href="../../d5/d16/a01154.html">RunPara</a></td>
+          <td class="memname">struct FrameData::StADC</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">记录电压当前值 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00182">182</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">serialdata.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00201">201</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a53fd7c351b726136b757dd2ac2b3ed78"></a>int</td>
+<td class="fieldname">
+cur</td>
+<td class="fielddoc">
+&#x202A;The current </td></tr>
+</table>
+
+</div>
+</div>
+<a name="d2/d7b/a01150" id="d2/d7b/a01150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d2/d7b/a01150">&#9670;&nbsp;</a></span>FrameData::StCompass</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct FrameData::StCompass</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p class="DocNodeLTR">电子罗盘 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">serialdata.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00214">214</a> 行定义.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">成员变量</th></tr>
+<tr><td class="fieldtype">
+<a id="a0ae3cb002dd0724847626a7ba19b4e0b"></a>float</td>
+<td class="fieldname">
+Heading</td>
+<td class="fielddoc">
+&#x202A;朝向角 </td></tr>
+<tr><td class="fieldtype">
+<a id="aeace093df76a3b5519079da5dd93dc54"></a>int</td>
+<td class="fieldname">
+MagX</td>
+<td class="fielddoc">
+&#x202A;The magnitude x coordinate </td></tr>
+<tr><td class="fieldtype">
+<a id="a4ced10e8322f051db8da943424cc2525"></a>int</td>
+<td class="fieldname">
+MagY</td>
+<td class="fielddoc">
+&#x202A;The magnitude y coordinate </td></tr>
+<tr><td class="fieldtype">
+<a id="aaff7e7386a090377abf2096b8606dab3"></a>int</td>
+<td class="fieldname">
+MagZ</td>
+<td class="fielddoc">
+&#x202A;The magnitude z coordinate </td></tr>
+<tr><td class="fieldtype">
+<a id="ad919552e6e35f65a398abc2b82910e95"></a>float</td>
+<td class="fieldname">
+Pitch</td>
+<td class="fielddoc">
+&#x202A;俯仰角 </td></tr>
+<tr><td class="fieldtype">
+<a id="a1de25929cf75e9dde5b0e137f9e87ed7"></a>float</td>
+<td class="fieldname">
+Roll</td>
+<td class="fielddoc">
+&#x202A;翻滚角 </td></tr>
+</table>
 
 </div>
 </div>
 <h2 class="groupheader">枚举类型说明</h2>
-<a id="af8e4def8f3de31b2d7ea0d2077ca3473"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8e4def8f3de31b2d7ea0d2077ca3473">&#9670;&nbsp;</a></span>FileOperateType</h2>
+<a id="a6de22e58cff280e195408775bbf9fb69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de22e58cff280e195408775bbf9fb69">&#9670;&nbsp;</a></span>FrameBit <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473">FileOperateType</a></td>
+          <td class="memname">enum <a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69">FrameBit</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>&#x202A;定义操作类型 </p>
-<table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="af8e4def8f3de31b2d7ea0d2077ca3473afef364d1f6a87dd77999ec49e3317fe9"></a>OWRITE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb"></a>OREAD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af8e4def8f3de31b2d7ea0d2077ca3473a66f02adf4b22d698de8dc0f90bf22701"></a>OAPPEND&#160;</td><td class="fielddoc"></td></tr>
+<p>&#x202A;定义 每一位数据的开始位置 index 按照下表所示,及时更新表 按照51 发上来的数据 进行每帧的处理 定义数据格式 校验值使用的是和校验的结果 </p>
+<pre class="fragment">     00 01 02 03  04 05 06 07 08 09 10 11 12  13 14  15 16 17 18 19  20 = 21 个数据
+
+     68 0D 00 84 [00 04 09 11 79 45 00 81 13] 01 FF [80 00 00 00 00] 80
+
+     帧头 长度命令 Pitch    Roll    Heading  和 帧头 PCA+ADC        和校验
+</pre><pre class="fragment">     00 01 02 03  04 05   06 07   08 09   10 11 12   13 14 15   16 17 18  19 20 21 22 23
+     24 25 26 = 27 个数据
+
+     68 13 00 85 [11 12] [21 22] [31 32] [00 00 01] [00 00 02] [00 00 03] 88 FF 80L 02 03 04 05 0F
+
+     帧头 长度命令 Pitch  Roll    Heading 磁力X       磁力Y      磁力Z      和 帧头 PCA+ADC 和校验
+</pre> <table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1"></a>FHeader&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010"></a>FLength&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c"></a>FPitch&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c"></a>FRoll&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459"></a>FHeading&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd"></a>FCRC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33"></a>FDHeader&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6"></a>FDPCAS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900"></a>FDPCA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e"></a>FDAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f"></a>FDCRC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1"></a>FHeader&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010"></a>FLength&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c"></a>FPitch&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c"></a>FRoll&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459"></a>FHeading&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff"></a>FMagnetX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a2f5d2fce897e6c00658e0e841a7f60d2"></a>FMagnetY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69aa4388aeb51d9f5e7291dfdeb776bb883"></a>FMagnetZ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a83e8f8db18f7341eb2af494f29a60984"></a>FSumCheck&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33"></a>FDHeader&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6"></a>FDPCAS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900"></a>FDPCA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e"></a>FDAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f"></a>FDCRC&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">IDOIFile.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00172">172</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afef364d1f6a87dd77999ec49e3317fe9">&#x202A;OWRITE</a> = 0,</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb">&#x202A;OREAD</a> = 1,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473a66f02adf4b22d698de8dc0f90bf22701">&#x202A;OAPPEND</a> = 2</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;};</div>
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">serialdata.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00120">120</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1">&#x202A;FHeader</a> = 0,    <span class="comment">// 帧头</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010">&#x202A;FLength</a> = 1,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">&#x202A;FPitch</a> = 4,    <span class="comment">// Pitch 角</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c">&#x202A;FRoll</a> = <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">&#x202A;FPitch</a> + 3,    <span class="comment">// 翻滚角 Rolll</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459">&#x202A;FHeading</a> = <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">&#x202A;FPitch</a> + 6,   <span class="comment">// 朝向</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd">&#x202A;FCRC</a> = <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459">&#x202A;FHeading</a> + 9,    <span class="comment">// 和校验值  8位 uchar 值</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33">&#x202A;FDHeader</a> = 14,      <span class="comment">// AD采集值帧头 </span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">&#x202A;FDPCAS</a> = 15,      <span class="comment">// 符号位置</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900">&#x202A;FDPCA</a> = <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">&#x202A;FDPCAS</a> + 1,     <span class="comment">// 从符号位后一位 三个字节表示 PCA 值</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e">&#x202A;FDAD</a> = 19,      <span class="comment">// 1位AD值 除以10 得到电压值</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f">&#x202A;FDCRC</a> = 20       <span class="comment">// 后五位数据 和校验</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6de22e58cff280e195408775bbf9fb69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de22e58cff280e195408775bbf9fb69">&#9670;&nbsp;</a></span>FrameBit <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69">FrameBit</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1"></a>FHeader&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010"></a>FLength&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c"></a>FPitch&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c"></a>FRoll&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459"></a>FHeading&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd"></a>FCRC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33"></a>FDHeader&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6"></a>FDPCAS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900"></a>FDPCA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e"></a>FDAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f"></a>FDCRC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1"></a>FHeader&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010"></a>FLength&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c"></a>FPitch&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c"></a>FRoll&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459"></a>FHeading&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff"></a>FMagnetX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a2f5d2fce897e6c00658e0e841a7f60d2"></a>FMagnetY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69aa4388aeb51d9f5e7291dfdeb776bb883"></a>FMagnetZ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a83e8f8db18f7341eb2af494f29a60984"></a>FSumCheck&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33"></a>FDHeader&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6"></a>FDPCAS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900"></a>FDPCA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e"></a>FDAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f"></a>FDCRC&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="../../d9/d2e/a00056_source.html">serialdata.h</a> 第 <a class="el" href="../../d9/d2e/a00056_source.html#l00148">148</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1">&#x202A;FHeader</a> = 0,    <span class="comment">// 帧头</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010">&#x202A;FLength</a> = 1,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">&#x202A;FPitch</a> = 4,    <span class="comment">// Pitch 角</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c">&#x202A;FRoll</a> = <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">&#x202A;FPitch</a> + 2,    <span class="comment">// 翻滚角 Rolll</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459">&#x202A;FHeading</a> = <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">&#x202A;FPitch</a> + 4,   <span class="comment">// 朝向</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff">&#x202A;FMagnetX</a> = 10,      <span class="comment">// 磁力 X</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f5d2fce897e6c00658e0e841a7f60d2">&#x202A;FMagnetY</a> = <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff">&#x202A;FMagnetX</a>+3,      <span class="comment">// 磁力 Y</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69aa4388aeb51d9f5e7291dfdeb776bb883">&#x202A;FMagnetZ</a> = <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff">&#x202A;FMagnetX</a>+6,      <span class="comment">// 磁力 Z</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a83e8f8db18f7341eb2af494f29a60984">&#x202A;FSumCheck</a> = 19,     <span class="comment">// 和校验值  8位 uchar 值</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33">&#x202A;FDHeader</a> = 20,      <span class="comment">// AD采集值帧头 </span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">&#x202A;FDPCAS</a> = 21,      <span class="comment">// 符号位置</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900">&#x202A;FDPCA</a> = <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">&#x202A;FDPCAS</a> + 1,     <span class="comment">// 从符号位后一位 三个字节表示 PCA 值</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e">&#x202A;FDAD</a> = 25,      <span class="comment">// 1位AD值 除以10 得到电压值</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f">&#x202A;FDCRC</a> = 26       <span class="comment">// 后五位数据 和校验</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00056_html_af8e4def8f3de31b2d7ea0d2077ca3473afef364d1f6a87dd77999ec49e3317fe9"><div class="ttname"><a href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afef364d1f6a87dd77999ec49e3317fe9">&#x202A;OWRITE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00174">IDOIFile.h:174</a></div></div>
-<div class="ttc" id="aa00056_html_af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb"><div class="ttname"><a href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473afdc7be3700ddf21232e7994e11847ceb">&#x202A;OREAD</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00175">IDOIFile.h:175</a></div></div>
-<div class="ttc" id="aa00056_html_af8e4def8f3de31b2d7ea0d2077ca3473a66f02adf4b22d698de8dc0f90bf22701"><div class="ttname"><a href="../../d9/d2e/a00056.html#af8e4def8f3de31b2d7ea0d2077ca3473a66f02adf4b22d698de8dc0f90bf22701">&#x202A;OAPPEND</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00176">IDOIFile.h:176</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7c7ba0edcb96977dde2bff2db90b84ff">&#x202A;FMagnetX</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00155">serialdata.h:155</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a9ba002501c20cb1f503766fccf90aba6">&#x202A;FDPCAS</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00129">serialdata.h:129</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69aa4388aeb51d9f5e7291dfdeb776bb883"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69aa4388aeb51d9f5e7291dfdeb776bb883">&#x202A;FMagnetZ</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00157">serialdata.h:157</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2063d42f74a9ad518649eeb3aea26b33">&#x202A;FDHeader</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00128">serialdata.h:128</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f1c10fe3630af2f67e457ee8746b2cd">&#x202A;FCRC</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00127">serialdata.h:127</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a71325cd570b5c4b14f6aa76224f6c459">&#x202A;FHeading</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00126">serialdata.h:126</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a35fbb41d0d7f874167c4a9eb0b6ce05e">&#x202A;FDAD</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00131">serialdata.h:131</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a2f5d2fce897e6c00658e0e841a7f60d2"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a2f5d2fce897e6c00658e0e841a7f60d2">&#x202A;FMagnetY</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00156">serialdata.h:156</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a83e8f8db18f7341eb2af494f29a60984"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a83e8f8db18f7341eb2af494f29a60984">&#x202A;FSumCheck</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00158">serialdata.h:158</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69ad73ebf7328454ae1f4ef3dbe3cddfc4f">&#x202A;FDCRC</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00132">serialdata.h:132</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a8cd86e86890025f99eedf6f4057a9fa1">&#x202A;FHeader</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00122">serialdata.h:122</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a4ea3cbad0792604b918a2630057fe54c">&#x202A;FRoll</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00125">serialdata.h:125</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a7e64408ddbc79eb45949bf1abb7c1900">&#x202A;FDPCA</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00130">serialdata.h:130</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69af450b81b798f08f4be1fc0c23e039010">&#x202A;FLength</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00123">serialdata.h:123</a></div></div>
+<div class="ttc" id="aa00056_html_a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c"><div class="ttname"><a href="../../d9/d2e/a00056.html#a6de22e58cff280e195408775bbf9fb69a815321b165e6918d0d81b3eec188541c">&#x202A;FPitch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2e/a00056_source.html#l00124">serialdata.h:124</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d9/d2e/a00056.html">&#x202A;IDOIFile.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../d9/d2e/a00056.html">&#x202A;serialdata.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

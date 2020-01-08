@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/test_utils_string.cc 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/utils_data.cc 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,178 +89,64 @@ $(document).ready(function(){initNavTree('d3/d1a/a00251_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">test_utils_string.cc</div>  </div>
+<div class="title">utils_data.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d3/d1a/a00251.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// 单元测试</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d39/a00257.html">&#x202A;utils.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d82/a00293.html">&#x202A;utils_string.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">    7</a></span>&#160;<a class="code" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Test utils_string Func Str2Vec&quot;</span>)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    std::string str(<span class="stringliteral">&quot;Windows,Linux,,MacOS,&quot;</span>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    std::vector&lt;std::string&gt; res;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    res = <a class="code" href="../../d8/df1/a01414.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a>(str, res,<span class="charliteral">&#39;,&#39;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    CHECK(res.size() == 3);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    res.clear();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    res = <a class="code" href="../../d8/df1/a01414.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a>(str, res, <span class="charliteral">&#39;,&#39;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    CHECK(res.size() == 4);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// Utils_String::CoutVector(res);</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d3/d1a/a00251.html#ab66fafdc4d4d512ca22125664739eb6a">   23</a></span>&#160;<a class="code" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Test utils_string Func Str2Vector&quot;</span>)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d03/a00254.html">&#x202A;./utils_data.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d4/d34/a01298.html#a9aeccc7a52077e9fa2494a2033879391">   23</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="../../d4/d34/a01298.html#a9aeccc7a52077e9fa2494a2033879391">&#x202A;Utils_Data::FastSin</a>(<span class="keywordtype">float</span> x)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    std::string str(<span class="stringliteral">&quot;Windows,Linux||,&#39;&#39;,MacOS All&quot;</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::vector&lt;std::string&gt; res;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    res = <a class="code" href="../../d8/df1/a01414.html#afcdfef32c38843d2b73a3428fcd9937c">&#x202A;Utils_String::Str2Vector</a>(str,res, <span class="stringliteral">&quot;,| &quot;</span>,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Utils_String::CoutVector(res);</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d3/d1a/a00251.html#ace9271be2aa3d5065cc51196d96d8a5c">   33</a></span>&#160;<a class="code" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Test utils_string Func StrVersionToInt&quot;</span>)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a>(<span class="stringliteral">&quot;1.1&quot;</span>) == 101);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a>(<span class="stringliteral">&quot;10.0&quot;</span>) == 1000);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a>(<span class="stringliteral">&quot;10.0&quot;</span>) == 1000);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d3/d1a/a00251.html#a3b1cf67c220186e82aaa58be8180a910">   42</a></span>&#160;<a class="code" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Test Num 2 String&quot;</span>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(3.1415926f, 2) == <span class="stringliteral">&quot;3.14&quot;</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(3, 3) == <span class="stringliteral">&quot;003&quot;</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(314, 3) == <span class="stringliteral">&quot;314&quot;</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(314, 2) == <span class="stringliteral">&quot;314&quot;</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d3/d1a/a00251.html#abc2805de689eead9491715b6354dfc00">   50</a></span>&#160;<a class="code" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Test Num 2 String base&quot;</span>)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(314, 3) == <span class="stringliteral">&quot;314&quot;</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(314, 4,8) == <span class="stringliteral">&quot;0472&quot;</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(314, 6,16) == <span class="stringliteral">&quot;00013A&quot;</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(314, 4, 2) == <span class="stringliteral">&quot;100111010&quot;</span>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a>(15, 4, 2) == <span class="stringliteral">&quot;1111&quot;</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d3/d1a/a00251.html#afdeddb2b747ef8488e8796ba7a6a8205">   62</a></span>&#160;<a class="code" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Hex 2 Num&quot;</span>)  </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="charliteral">&#39;F&#39;</span>) == 15);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="charliteral">&#39;A&#39;</span>) == 10);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="charliteral">&#39;0&#39;</span>) == 0);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="charliteral">&#39;f&#39;</span>) == 15);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="charliteral">&#39;a&#39;</span>) == 10);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="stringliteral">&quot;FF&quot;</span>) == 255);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="stringliteral">&quot;Ff&quot;</span>) == 255);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="stringliteral">&quot;aA&quot;</span>) == 170);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="stringliteral">&quot;00&quot;</span>) == 0);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../d3/d1a/a00251.html#a5bd4efd18a2c09142b8e4ee3a622db6b">   79</a></span>&#160;<a class="code" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Hex 2 uchar&quot;</span>)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="stringliteral">&quot;00&quot;</span>) == 0);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="stringliteral">&quot;0D&quot;</span>) == 13);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="stringliteral">&quot;FF&quot;</span>) == 255);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a>(<span class="stringliteral">&quot;D0&quot;</span>) == 208);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<a class="code" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;Hex 2 uchar&quot;</span>)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Utils_String::Num2Hex</a>(15) == <span class="charliteral">&#39;F&#39;</span>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Utils_String::Num2Hex</a>(15, <span class="keyword">false</span>) == <span class="charliteral">&#39;f&#39;</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Utils_String::Num2Hex</a>(0, <span class="keyword">false</span>) == <span class="charliteral">&#39;0&#39;</span>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Utils_String::Num2Hex</a>(0) == <span class="charliteral">&#39;0&#39;</span>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Utils_String::Num2Hex</a>((<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>)255) == <span class="stringliteral">&quot;FF&quot;</span>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Utils_String::Num2Hex</a>((<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>)0) == <span class="stringliteral">&quot;00&quot;</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    CHECK(<a class="code" href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Utils_String::Num2Hex</a>((<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>)15) == <span class="stringliteral">&quot;0F&quot;</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// 测试 函数别名定义</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    CHECK(Utils_String::Uchar2Hex((<a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a>)15) == <span class="stringliteral">&quot;0F&quot;</span>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    CHECK(Utils_String::Uchar2Hex(15, <span class="keyword">false</span>) == <span class="charliteral">&#39;f&#39;</span>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../d3/d1a/a00251.html#a1c42e624e6a48ba0f3619b12d110aafc">  108</a></span>&#160;<a class="code" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;char arr to String&quot;</span>)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    std::string hex_str = <span class="stringliteral">&quot;68 13 00 85 11 12 21 22 31 32 00 00 01 00 00 02 00 00 03 88 FF 01 02 03 04 05 0F&quot;</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// 字符串 处理  \0 存在问题</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> * buffer; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="../../d8/df1/a01414.html#a14c76ec9d896d7eaa7193444f3277c59">&#x202A;Utils_String::Hex2CharArr</a>(buffer, hex_str,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::string char_str = <a class="code" href="../../d8/df1/a01414.html#a5220010b7b1eb541bc0d84ca88676283">&#x202A;Utils_String::CharArr2String</a>((<span class="keywordtype">char</span>*)buffer,27);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::string str = <a class="code" href="../../d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c">&#x202A;Utils_String::Char2String</a>((<span class="keywordtype">char</span>*)buffer);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::string test_str = <span class="stringliteral">&quot;12345678&quot;</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// LDebug(&quot;test_str:{}&quot;, test_str);</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    test_str[1] = 0;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// LDebug(&quot;test_str:{}&quot;, test_str);</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">char</span> *buf = <a class="code" href="../../d8/df1/a01414.html#ad98ced7a9727883c0f305e144db03024">&#x202A;Utils_String::String2Char</a>(test_str);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    test_str = <a class="code" href="../../d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c">&#x202A;Utils_String::Char2String</a>(buf);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">// LInfo(&quot;str:{}&quot;, str);</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="../../d3/d1a/a00251.html#a3e32bb2c8e321f2c8118750e763a78c9">  133</a></span>&#160;<a class="code" href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a>(<span class="stringliteral">&quot;CharArr2String&quot;</span>)</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">char</span> buffer[] = { 5,4,3,2,1,0,2,4,6,0,8 };</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    std::string test_str1 = <span class="stringliteral">&quot;&quot;</span>, test_str2 = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    test_str1 = <a class="code" href="../../d8/df1/a01414.html#a5220010b7b1eb541bc0d84ca88676283">&#x202A;Utils_String::CharArr2String</a>(buffer, -1);   <span class="comment">// 不给参数</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    test_str2 = <a class="code" href="../../d8/df1/a01414.html#a5220010b7b1eb541bc0d84ca88676283">&#x202A;Utils_String::CharArr2String</a>(buffer, 11);   <span class="comment">// 真实长度</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// test_str2 = Utils_String::CharArr2String(buffer, 15);   // 越界   </span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">// LDebug(&quot;test_str1:{} \t test_str2:{}&quot;, test_str1,test_str2);</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    std::string str2;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="../../d8/df1/a01414.html#a5220010b7b1eb541bc0d84ca88676283">&#x202A;Utils_String::CharArr2String</a>(&amp;str2,buffer, 11);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">// LDebug(&quot;str2:{}&quot;, str2);</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// 判断范围  - PI 到 PI</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">while</span> (x &lt; -<a class="code" href="../../d7/d03/a00254.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        x += static_cast&lt;float&gt;(2 * <a class="code" href="../../d7/d03/a00254.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">while</span> (x &gt; <a class="code" href="../../d7/d03/a00254.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        x -= static_cast&lt;float&gt;(2 * <a class="code" href="../../d7/d03/a00254.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> B = 1.2732f; <span class="comment">// 4 / CV_PI;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> C = -0.4053f; <span class="comment">// -4 / (CV_PI*CV_PI);</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">float</span> y = B * x + C * x * abs(x);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 是否开启更高精度的拟合</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if 0 </span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// const float Q = 0.775; </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> P = 0.225f;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    y = P * (y * abs(y) - y) + y;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> y;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d4/d34/a01298.html#aa86beee7623347a625d209cb2d4e9d6d">   60</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="../../d4/d34/a01298.html#aa86beee7623347a625d209cb2d4e9d6d">&#x202A;Utils_Data::FastCos</a>(<span class="keywordtype">float</span> x)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d4/d34/a01298.html#a9aeccc7a52077e9fa2494a2033879391">&#x202A;FastSin</a>(x + <a class="code" href="../../d7/d03/a00254.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a>/2.0f);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../d4/d34/a01298.html#a3608435d58a43711699c72db402154fb">   78</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d4/d34/a01298.html#a3608435d58a43711699c72db402154fb">&#x202A;Utils_Data::Calc</a>(<a class="code" href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *dat, <span class="keywordtype">int</span> len)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// int res = (*dat) &amp; 0x7F;  // 获取第一个字节后 7 位的数据</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> res = (*dat);  <span class="comment">// 获取第一个字节后 7 位的数据</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; len; i++)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        res = (res &lt;&lt; 8) + *(dat + i);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01414_html_afcdfef32c38843d2b73a3428fcd9937c"><div class="ttname"><a href="../../d8/df1/a01414.html#afcdfef32c38843d2b73a3428fcd9937c">&#x202A;Utils_String::Str2Vector</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vector(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const std::string &amp;delimiters, bool skip_empty=true)</div><div class="ttdoc">&#x202A;返回字符串分割符号分割的数字数组 允许使用不同的字符来区分字符 https://segmentfault.com/a/1190000002483483</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d82/a00293_source.html#l00159">utils_string.h:159</a></div></div>
-<div class="ttc" id="aa01414_html_a82ed3e2282101b5d3326df68e6098898"><div class="ttname"><a href="../../d8/df1/a01414.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a></div><div class="ttdeci">&#x202A;static int StringVersionToInt(const std::string &amp;str)</div><div class="ttdoc">&#x202A;将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00341">utils_string.cc:341</a></div></div>
-<div class="ttc" id="aa01414_html_ad98ced7a9727883c0f305e144db03024"><div class="ttname"><a href="../../d8/df1/a01414.html#ad98ced7a9727883c0f305e144db03024">&#x202A;Utils_String::String2Char</a></div><div class="ttdeci">&#x202A;static char * String2Char(const std::string &amp;str)</div><div class="ttdoc">&#x202A;String 2 character</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00113">utils_string.cc:113</a></div></div>
-<div class="ttc" id="aa01414_html_a707dfc08a28c18474486ca8ca43d6b39"><div class="ttname"><a href="../../d8/df1/a01414.html#a707dfc08a28c18474486ca8ca43d6b39">&#x202A;Utils_String::Str2Vec</a></div><div class="ttdeci">&#x202A;static std::vector&lt; T &gt; Str2Vec(const std::string &amp;str, std::vector&lt; T &gt; &amp;elem, const char separator, bool skip_empty=true)</div><div class="ttdoc">&#x202A;将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d82/a00293_source.html#l00107">utils_string.h:107</a></div></div>
-<div class="ttc" id="aa01414_html_a14c76ec9d896d7eaa7193444f3277c59"><div class="ttname"><a href="../../d8/df1/a01414.html#a14c76ec9d896d7eaa7193444f3277c59">&#x202A;Utils_String::Hex2CharArr</a></div><div class="ttdeci">&#x202A;static uchar * Hex2CharArr(uchar *&amp;buffer, const std::string &amp;str, bool flg_space=true)</div><div class="ttdoc">&#x202A;Hexadecimal 2 character array hex 字符串 转换成 数组</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00578">utils_string.cc:578</a></div></div>
-<div class="ttc" id="aa01414_html_aab400bb2ce4a6affa55b4afa5f4ae21b"><div class="ttname"><a href="../../d8/df1/a01414.html#aab400bb2ce4a6affa55b4afa5f4ae21b">&#x202A;Utils_String::Num2Hex</a></div><div class="ttdeci">&#x202A;static char Num2Hex(int num, bool Up=true)</div><div class="ttdoc">&#x202A;将 0-15 转换成 0-F</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00510">utils_string.cc:510</a></div></div>
-<div class="ttc" id="aa00041_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../dd/d32/a00041.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00026">Commu.h:26</a></div></div>
-<div class="ttc" id="aa01414_html_ab0bd05f35427650f2e295c18ba6938b3"><div class="ttname"><a href="../../d8/df1/a01414.html#ab0bd05f35427650f2e295c18ba6938b3">&#x202A;Utils_String::NumToString</a></div><div class="ttdeci">&#x202A;static std::string NumToString(int num, int width=3, int base=10)</div><div class="ttdoc">&#x202A;Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00373">utils_string.cc:373</a></div></div>
-<div class="ttc" id="aa01414_html_a9f04ee936ee3b6fdf6384b0450506c21"><div class="ttname"><a href="../../d8/df1/a01414.html#a9f04ee936ee3b6fdf6384b0450506c21">&#x202A;Utils_String::Hex2Num</a></div><div class="ttdeci">&#x202A;static int Hex2Num(const char ch)</div><div class="ttdoc">&#x202A;根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00489">utils_string.cc:489</a></div></div>
-<div class="ttc" id="aa00293_html"><div class="ttname"><a href="../../d6/d82/a00293.html">&#x202A;utils_string.h</a></div><div class="ttdoc">&#x202A;通用字符串操作类 继承使用, 方便使用 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01414_html_a33967652245ef20659d0bedb6c69d47c"><div class="ttname"><a href="../../d8/df1/a01414.html#a33967652245ef20659d0bedb6c69d47c">&#x202A;Utils_String::Char2String</a></div><div class="ttdeci">&#x202A;static std::string Char2String(char *buffer)</div><div class="ttdoc">&#x202A;Character 2 string</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00169">utils_string.cc:169</a></div></div>
-<div class="ttc" id="aa00257_html"><div class="ttname"><a href="../../d9/d39/a00257.html">&#x202A;utils.h</a></div><div class="ttdoc">&#x202A;通用 utils 组件 @changelog 2019/11/25 IRIS_Chen Created.</div></div>
-<div class="ttc" id="aa01414_html_a5220010b7b1eb541bc0d84ca88676283"><div class="ttname"><a href="../../d8/df1/a01414.html#a5220010b7b1eb541bc0d84ca88676283">&#x202A;Utils_String::CharArr2String</a></div><div class="ttdeci">&#x202A;static std::string CharArr2String(char *buffer, int len=-1)</div><div class="ttdoc">&#x202A;如果不给定长度, 一直向后直到得到 \0 可能中途截断</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d25/a00290_source.html#l00174">utils_string.cc:174</a></div></div>
-<div class="ttc" id="aa00251_html_a0c8356354e7084226f483b3c82f7c8e8"><div class="ttname"><a href="../../d3/d1a/a00251.html#a0c8356354e7084226f483b3c82f7c8e8">&#x202A;TEST_CASE</a></div><div class="ttdeci">&#x202A;TEST_CASE(&quot;Test utils_string Func Str2Vec&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00007">test_utils_string.cc:7</a></div></div>
+<div class="ttc" id="aa00023_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d52/a00023_source.html#l00026">Commu.h:26</a></div></div>
+<div class="ttc" id="aa00254_html"><div class="ttname"><a href="../../d7/d03/a00254.html">&#x202A;utils_data.h</a></div><div class="ttdoc">&#x202A;定义常用的数据处理 组件 @changelog 2019/12/3 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa01298_html_a3608435d58a43711699c72db402154fb"><div class="ttname"><a href="../../d4/d34/a01298.html#a3608435d58a43711699c72db402154fb">&#x202A;Utils_Data::Calc</a></div><div class="ttdeci">&#x202A;static int Calc(uchar *dat, int len)</div><div class="ttdoc">&#x202A;通用计算函数 计算从 指针开始的指定位数的 计算结果</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00078">utils_data.cc:78</a></div></div>
+<div class="ttc" id="aa01298_html_a9aeccc7a52077e9fa2494a2033879391"><div class="ttname"><a href="../../d4/d34/a01298.html#a9aeccc7a52077e9fa2494a2033879391">&#x202A;Utils_Data::FastSin</a></div><div class="ttdeci">&#x202A;static float FastSin(float x)</div><div class="ttdoc">&#x202A;Utilities data class</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00023">utils_data.cc:23</a></div></div>
+<div class="ttc" id="aa01298_html_aa86beee7623347a625d209cb2d4e9d6d"><div class="ttname"><a href="../../d4/d34/a01298.html#aa86beee7623347a625d209cb2d4e9d6d">&#x202A;Utils_Data::FastCos</a></div><div class="ttdeci">&#x202A;static float FastCos(float x)</div><div class="ttdoc">&#x202A;Fast cosine</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1a/a00251_source.html#l00060">utils_data.cc:60</a></div></div>
+<div class="ttc" id="aa00254_html_af9ba998534fe82018ab3f06b05fa1bcb"><div class="ttname"><a href="../../d7/d03/a00254.html#af9ba998534fe82018ab3f06b05fa1bcb">&#x202A;FLOAT_PI</a></div><div class="ttdeci">&#x202A;const float FLOAT_PI</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/a00254_source.html#l00013">utils_data.h:13</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d3/d1a/a00251.html">&#x202A;test_utils_string.cc</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_8683a2b8367c6e2dded66ac8f42da292.html">&#x202A;utils</a></li><li class="navelem"><a class="el" href="../../d3/d1a/a00251.html">&#x202A;utils_data.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

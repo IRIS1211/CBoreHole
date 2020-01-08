@@ -1,0 +1,7 @@
+<map id="Utils_String::Commu_CheckXOR" name="Utils_String::Commu_CheckXOR">
+<area shape="rect" id="node1" title="异或校验 8位 避免出现 0 数据造成的 截至" alt="" coords="571,113,713,154"/>
+<area shape="rect" id="node2" href="$df/dc8/a00122.html#ad7df8e9072eb05862471c2fc24f4f5ce" title="参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 &#39;#&#39; 后缀 &#39;*&#39;" alt="" coords="405,81,523,108"/>
+<area shape="rect" id="node5" href="$de/df3/a00185.html#a8e3ffd931526850976fd8de6062acaad" title=" " alt="" coords="5,107,103,133"/>
+<area shape="rect" id="node3" href="$df/db5/a01158.html#a6400d403f2fac7c422c43abac3c488ab" title="Determines if we can compass calibration" alt="" coords="151,5,357,32"/>
+<area shape="rect" id="node4" href="$df/dc8/a00122.html#af384f4673c5a034cd96544569651638e" title="直接 取 1&#45; (size&#45;4)的长度的值 计算结果看看是否匹配 然后返回" alt="" coords="195,56,313,83"/>
+</map>

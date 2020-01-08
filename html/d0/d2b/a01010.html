@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;CSerialPort类 参考</title>
+<title>&#x202A;CBoreHole: &#x202A;Config类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -90,1452 +90,448 @@ $(document).ready(function(){initNavTree('d0/d2b/a01010.html','../../');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pri-methods">Private 成员函数</a> &#124;
-<a href="#pri-static-methods">静态 Private 成员函数</a> &#124;
-<a href="#pri-attribs">Private 属性</a> &#124;
-<a href="#pri-static-attribs">静态 Private 属性</a>  </div>
+<a href="#pub-attribs">成员变量</a>  </div>
   <div class="headertitle">
-<div class="title">CSerialPort类 参考</div>  </div>
+<div class="title">Config类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>&#x202A;串口通信类  
+<p>&#x202A;全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中,  
  <a href="../../d0/d2b/a01010.html#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../dd/d32/a00041_source.html">Code\inc\SerialPort.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d5/d16/a00029_source.html">Code\inc\Config.h</a>&gt;</code></p>
+<div class="dynheader">
+Config 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dac/a01008.png" border="0" usemap="#_config_coll__map" alt="Collaboration graph"/></div>
+<map name="_config_coll__map" id="_config_coll__map">
+<area shape="rect" title="全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中," alt="" coords="2095,776,2153,803"/>
+<area shape="rect" href="../../da/d17/a01046.html" title="系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换" alt="" coords="1909,659,1981,685"/>
+<area shape="rect" href="../../da/d17/a01046.html#d1/d3d/a01110" title="设置用户UI 参数" alt="" coords="1690,241,1795,268"/>
+<area shape="rect" href="../../da/d17/a01046.html#d6/d40/a01114" title=" " alt="" coords="1330,132,1487,159"/>
+<area shape="rect" href="../../da/d17/a01046.html#db/dba/a01078" title="设置硬件的参数信息" alt="" coords="1677,420,1808,447"/>
+<area shape="rect" href="../../da/d17/a01046.html#d4/da7/a01102" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="1339,183,1478,225"/>
+<area shape="rect" href="../../da/d17/a01046.html#dd/df1/a01082" title="脉冲参数" alt="" coords="1339,249,1478,290"/>
+<area shape="rect" href="../../da/d17/a01046.html#da/d73/a01090" title="电子罗盘参数 调整罗盘数据" alt="" coords="1339,314,1478,355"/>
+<area shape="rect" title=" " alt="" coords="926,143,1081,185"/>
+<area shape="rect" title=" " alt="" coords="551,176,671,203"/>
+<area shape="rect" title="STL class" alt="" coords="237,176,351,203"/>
+<area shape="rect" title=" " alt="" coords="903,296,1104,323"/>
+<area shape="rect" title=" " alt="" coords="49,176,88,203"/>
+<area shape="rect" href="../../d5/d16/a01154.html" title="罗盘类型 结构体 用于列出不同种类的 罗盘" alt="" coords="552,305,669,332"/>
+<area shape="rect" title="STL class" alt="" coords="254,503,334,529"/>
+<area shape="rect" href="../../da/d17/a01046.html#d5/d17/a01098" title="窗口状态信息" alt="" coords="740,490,879,531"/>
+<area shape="rect" href="../../da/d17/a01046.html#d9/d8e/a01050" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="1128,697,1283,724"/>
+<area shape="rect" href="../../da/d17/a01046.html#d5/d4c/a01058" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="1535,81,1653,108"/>
+<area shape="rect" href="../../da/d17/a01046.html#db/d1e/a01126" title="配置 debug 参数" alt="" coords="1319,791,1498,817"/>
+<area shape="rect" href="../../da/d17/a01046.html#d7/df7/a01074" title=" " alt="" coords="505,839,716,865"/>
+<area shape="rect" href="../../da/d17/a01046.html#dd/d57/a01054" title="记录 路径以及其他路径信息" alt="" coords="742,613,877,640"/>
+<area shape="rect" title="STL class" alt="" coords="5,495,132,537"/>
+<area shape="rect" href="../../da/d17/a01046.html#da/d4e/a01106" title="额外信息" alt="" coords="1339,379,1478,421"/>
+<area shape="rect" href="../../da/d17/a01046.html#d6/dea/a01094" title="相机参数结构体" alt="" coords="1339,445,1478,486"/>
+<area shape="rect" href="../../da/d17/a01046.html#d9/df5/a01086" title="探头参数" alt="" coords="1339,510,1478,551"/>
+<area shape="rect" href="../../da/d17/a01046.html#dd/d09/a01118" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="1683,740,1803,767"/>
+<area shape="rect" href="../../da/d17/a01046.html#db/d32/a01122" title="可以存储的文件参数" alt="" coords="1307,740,1511,767"/>
+<area shape="rect" href="../../da/d17/a01046.html#d4/d8a/a01062" title="运行过程中的 图像参数" alt="" coords="939,887,1067,913"/>
+<area shape="rect" href="../../da/d17/a01046.html#d0/dfb/a01066" title="Image 处理参数, 作为图像展开参数" alt="" coords="519,941,703,982"/>
+<area shape="rect" href="../../da/d17/a01046.html#d5/d67/a01070" title="Image Para 参数" alt="" coords="505,889,716,916"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a4ad4d4158efef6b9053566f2a6fb2954"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a4ad4d4158efef6b9053566f2a6fb2954">CSerialPort</a> (void)</td></tr>
-<tr class="memdesc:a4ad4d4158efef6b9053566f2a6fb2954"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Initializes a new instance of the <a class="el" href="../../d0/d2b/a01010.html" title="&#x202A;串口通信类">CSerialPort</a> class  <a href="../../d0/d2b/a01010.html#a4ad4d4158efef6b9053566f2a6fb2954">更多...</a><br /></td></tr>
-<tr class="separator:a4ad4d4158efef6b9053566f2a6fb2954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90b8442658ca415eae7add1d6eebe7e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a90b8442658ca415eae7add1d6eebe7e2">~CSerialPort</a> (void)</td></tr>
-<tr class="memdesc:a90b8442658ca415eae7add1d6eebe7e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Finalizes an instance of the <a class="el" href="../../d0/d2b/a01010.html" title="&#x202A;串口通信类">CSerialPort</a> class  <a href="../../d0/d2b/a01010.html#a90b8442658ca415eae7add1d6eebe7e2">更多...</a><br /></td></tr>
-<tr class="separator:a90b8442658ca415eae7add1d6eebe7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96ead81aea8f5c577586c595cb67bc26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a96ead81aea8f5c577586c595cb67bc26">StartPort</a> (int port=5, int baud=CBR_19200)</td></tr>
-<tr class="memdesc:a96ead81aea8f5c577586c595cb67bc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;初始化串口 并开启处理线程  <a href="../../d0/d2b/a01010.html#a96ead81aea8f5c577586c595cb67bc26">更多...</a><br /></td></tr>
-<tr class="separator:a96ead81aea8f5c577586c595cb67bc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86910d240b82b2a53d53e511186f5855"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a86910d240b82b2a53d53e511186f5855">InitPort</a> (<a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> portNo=1, <a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> baud=CBR_9600, char parity='N', <a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> databits=8, <a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> stopsbits=1, DWORD dwCommEvents=EV_RXCHAR)</td></tr>
-<tr class="memdesc:a86910d240b82b2a53d53e511186f5855"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;初始化串口函数  <a href="../../d0/d2b/a01010.html#a86910d240b82b2a53d53e511186f5855">更多...</a><br /></td></tr>
-<tr class="separator:a86910d240b82b2a53d53e511186f5855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ac6d378efb79f1740d9513ea32f9fe8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a5ac6d378efb79f1740d9513ea32f9fe8">InitPort</a> (<a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> portNo, const LPDCB &amp;plDCB)</td></tr>
-<tr class="memdesc:a5ac6d378efb79f1740d9513ea32f9fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;串口初始化函数  <a href="../../d0/d2b/a01010.html#a5ac6d378efb79f1740d9513ea32f9fe8">更多...</a><br /></td></tr>
-<tr class="separator:a5ac6d378efb79f1740d9513ea32f9fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5166808d3063ff309f36f029768a1103"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a5166808d3063ff309f36f029768a1103">OpenListenThread</a> ()</td></tr>
-<tr class="memdesc:a5166808d3063ff309f36f029768a1103"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;开启监听线程  <a href="../../d0/d2b/a01010.html#a5166808d3063ff309f36f029768a1103">更多...</a><br /></td></tr>
-<tr class="separator:a5166808d3063ff309f36f029768a1103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ffffefd2d6bfa763cfb8e993b79612d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a4ffffefd2d6bfa763cfb8e993b79612d">CloseListenTread</a> ()</td></tr>
-<tr class="memdesc:a4ffffefd2d6bfa763cfb8e993b79612d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;关闭监听线程  <a href="../../d0/d2b/a01010.html#a4ffffefd2d6bfa763cfb8e993b79612d">更多...</a><br /></td></tr>
-<tr class="separator:a4ffffefd2d6bfa763cfb8e993b79612d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ccbd6e8a12799fe60851e37bbbeb2eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a5ccbd6e8a12799fe60851e37bbbeb2eb">WriteData</a> (unsigned char *pData, unsigned int length)</td></tr>
-<tr class="memdesc:a5ccbd6e8a12799fe60851e37bbbeb2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;向串口写数据  <a href="../../d0/d2b/a01010.html#a5ccbd6e8a12799fe60851e37bbbeb2eb">更多...</a><br /></td></tr>
-<tr class="separator:a5ccbd6e8a12799fe60851e37bbbeb2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18d506bb87c384082dddfd5d6e9bf87a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a18d506bb87c384082dddfd5d6e9bf87a">WriteDataS</a> (std::string &amp;pData)</td></tr>
-<tr class="memdesc:a18d506bb87c384082dddfd5d6e9bf87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Writes a data s  <a href="../../d0/d2b/a01010.html#a18d506bb87c384082dddfd5d6e9bf87a">更多...</a><br /></td></tr>
-<tr class="separator:a18d506bb87c384082dddfd5d6e9bf87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb85234d6f6d3774c8010fae51f7722f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#abb85234d6f6d3774c8010fae51f7722f">GetBytesInCOM</a> ()</td></tr>
-<tr class="memdesc:abb85234d6f6d3774c8010fae51f7722f"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;获取串口缓冲区中的字节数  <a href="../../d0/d2b/a01010.html#abb85234d6f6d3774c8010fae51f7722f">更多...</a><br /></td></tr>
-<tr class="separator:abb85234d6f6d3774c8010fae51f7722f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c37ce285506e5b69b6c900c406f37b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a5c37ce285506e5b69b6c900c406f37b7">ReadChar</a> (char &amp;cRecved)</td></tr>
-<tr class="memdesc:a5c37ce285506e5b69b6c900c406f37b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;读取串口接收缓冲区中一个字节的数据  <a href="../../d0/d2b/a01010.html#a5c37ce285506e5b69b6c900c406f37b7">更多...</a><br /></td></tr>
-<tr class="separator:a5c37ce285506e5b69b6c900c406f37b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0c571c116924871e30444b192b792a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#abd0c571c116924871e30444b192b792a">Config</a> ()</td></tr>
+<tr class="memdesc:abd0c571c116924871e30444b192b792a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;构造函数, 可以初始化 或者 其他  <a href="../../d0/d2b/a01010.html#abd0c571c116924871e30444b192b792a">更多...</a><br /></td></tr>
+<tr class="separator:abd0c571c116924871e30444b192b792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa28b92aaa35102c72b3196a7a2295ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#aaa28b92aaa35102c72b3196a7a2295ef">LoadParaFromYML</a> (const cv::FileStorage &amp;fs)</td></tr>
+<tr class="memdesc:aaa28b92aaa35102c72b3196a7a2295ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;从yml 中 读取参数  <a href="../../d0/d2b/a01010.html#aaa28b92aaa35102c72b3196a7a2295ef">更多...</a><br /></td></tr>
+<tr class="separator:aaa28b92aaa35102c72b3196a7a2295ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb6ccd1f7a72de24216484582071010"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#adbb6ccd1f7a72de24216484582071010">WriteParaToYML</a> (cv::FileStorage &amp;fs)</td></tr>
+<tr class="memdesc:adbb6ccd1f7a72de24216484582071010"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将参数 写入到 yml 文件中  <a href="../../d0/d2b/a01010.html#adbb6ccd1f7a72de24216484582071010">更多...</a><br /></td></tr>
+<tr class="separator:adbb6ccd1f7a72de24216484582071010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff2e60527d854a7f1d4b4f112881dcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#abff2e60527d854a7f1d4b4f112881dcb">LoadParaFromFile</a> (const <a class="el" href="../../de/d41/a01030.html">IDOIFile</a> *file)</td></tr>
+<tr class="memdesc:abff2e60527d854a7f1d4b4f112881dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;从 自定义文件中读取参数  <a href="../../d0/d2b/a01010.html#abff2e60527d854a7f1d4b4f112881dcb">更多...</a><br /></td></tr>
+<tr class="separator:abff2e60527d854a7f1d4b4f112881dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414b3cc20d2f938a239c6723809bc904"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a414b3cc20d2f938a239c6723809bc904">WriteParaToFile</a> (const <a class="el" href="../../de/d41/a01030.html">IDOIFile</a> *file)</td></tr>
+<tr class="memdesc:a414b3cc20d2f938a239c6723809bc904"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;将参数写入到文件中  <a href="../../d0/d2b/a01010.html#a414b3cc20d2f938a239c6723809bc904">更多...</a><br /></td></tr>
+<tr class="separator:a414b3cc20d2f938a239c6723809bc904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private 成员函数</h2></td></tr>
-<tr class="memitem:a5ae9d9156ce2871b518e0882c32b627a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a5ae9d9156ce2871b518e0882c32b627a">OpenPort</a> (<a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> portNo)</td></tr>
-<tr class="memdesc:a5ae9d9156ce2871b518e0882c32b627a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;打开串口  <a href="../../d0/d2b/a01010.html#a5ae9d9156ce2871b518e0882c32b627a">更多...</a><br /></td></tr>
-<tr class="separator:a5ae9d9156ce2871b518e0882c32b627a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0d2dd450a48c47a2039e9458290f04f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#ae0d2dd450a48c47a2039e9458290f04f">ClosePort</a> ()</td></tr>
-<tr class="memdesc:ae0d2dd450a48c47a2039e9458290f04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;关闭串口  <a href="../../d0/d2b/a01010.html#ae0d2dd450a48c47a2039e9458290f04f">更多...</a><br /></td></tr>
-<tr class="separator:ae0d2dd450a48c47a2039e9458290f04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa450f0191fb1cc847e8c3f804f5d166e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#aa450f0191fb1cc847e8c3f804f5d166e">ListenThread2</a> (void *pParam)</td></tr>
-<tr class="memdesc:aa450f0191fb1cc847e8c3f804f5d166e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Listen thread 2  <a href="../../d0/d2b/a01010.html#aa450f0191fb1cc847e8c3f804f5d166e">更多...</a><br /></td></tr>
-<tr class="separator:aa450f0191fb1cc847e8c3f804f5d166e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-静态 Private 成员函数</h2></td></tr>
-<tr class="memitem:a53335a4795e04563f5293fc92621024a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a53335a4795e04563f5293fc92621024a">ListenThread</a> (void *pParam)</td></tr>
-<tr class="memdesc:a53335a4795e04563f5293fc92621024a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;串口监听线程  <a href="../../d0/d2b/a01010.html#a53335a4795e04563f5293fc92621024a">更多...</a><br /></td></tr>
-<tr class="separator:a53335a4795e04563f5293fc92621024a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private 属性</h2></td></tr>
-<tr class="memitem:a234faffa92379fada3f91ce21a8cac35"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">m_hComm</a></td></tr>
-<tr class="memdesc:a234faffa92379fada3f91ce21a8cac35"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;串口句柄  <a href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">更多...</a><br /></td></tr>
-<tr class="separator:a234faffa92379fada3f91ce21a8cac35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e72fe88fb5ff17de114acacf0e607fc"><td class="memItemLeft" align="right" valign="top">volatile HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">m_hListenThread</a></td></tr>
-<tr class="memdesc:a9e72fe88fb5ff17de114acacf0e607fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;线程句柄  <a href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">更多...</a><br /></td></tr>
-<tr class="separator:a9e72fe88fb5ff17de114acacf0e607fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3df14df19d8f6f09d803bee2ec0ab25e"><td class="memItemLeft" align="right" valign="top">CRITICAL_SECTION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">m_csCommunicationSync</a></td></tr>
-<tr class="memdesc:a3df14df19d8f6f09d803bee2ec0ab25e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;同步互斥,临界区保护  <a href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">更多...</a><br /></td></tr>
-<tr class="separator:a3df14df19d8f6f09d803bee2ec0ab25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-静态 Private 属性</h2></td></tr>
-<tr class="memitem:aa20d47c4692a151ab9983900a751050c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#aa20d47c4692a151ab9983900a751050c">s_bExit</a> = false</td></tr>
-<tr class="memdesc:aa20d47c4692a151ab9983900a751050c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;线程退出标志变量  <a href="../../d0/d2b/a01010.html#aa20d47c4692a151ab9983900a751050c">更多...</a><br /></td></tr>
-<tr class="separator:aa20d47c4692a151ab9983900a751050c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a45ca77cfacd4d77e062e2c8b10d4cd78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a45ca77cfacd4d77e062e2c8b10d4cd78">VERSION_</a> = 100</td></tr>
+<tr class="memdesc:a45ca77cfacd4d77e062e2c8b10d4cd78"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;记录当前的版本 1.0  <a href="../../d0/d2b/a01010.html#a45ca77cfacd4d77e062e2c8b10d4cd78">更多...</a><br /></td></tr>
+<tr class="separator:a45ca77cfacd4d77e062e2c8b10d4cd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1c590ef3c4492e16830021d2867c45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d17/a01046.html">RunPara</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">mRunPara</a></td></tr>
+<tr class="memdesc:a3f1c590ef3c4492e16830021d2867c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;系统运行参数  <a href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">更多...</a><br /></td></tr>
+<tr class="separator:a3f1c590ef3c4492e16830021d2867c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d3a8bcb64807efd5755b4028a0ebf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d17/a01046.html#db/d1e/a01126">RunPara::StCFG::StDebug</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2b/a01010.html#a80d3a8bcb64807efd5755b4028a0ebf9">mDebug</a></td></tr>
+<tr class="separator:a80d3a8bcb64807efd5755b4028a0ebf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">串口通信类 </p>
-<pre class="fragment">     本类实现了对串口的基本操作 例如监听发到指定串口的数据、发送指定数据到串口
-</pre><dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/18 </dd></dl>
+<div class="textblock"><p class="DocNodeLTR">全部参数信息 包括运行参数和系统配置参数 有运行参数是系统的全部参数, 如果需要存储, 将内容复制到存储参数中, </p>
+<ul class="DocNodeLTR">
+<li>&#x202A;提供二者的相互转换, 便于后期分离参数</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../dd/d32/a00041_source.html">SerialPort.h</a> 第 <a class="el" href="../../dd/d32/a00041_source.html#l00060">60</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d5/d16/a00029_source.html">Config.h</a> 第 <a class="el" href="../../d5/d16/a00029_source.html#l00029">29</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="a4ad4d4158efef6b9053566f2a6fb2954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ad4d4158efef6b9053566f2a6fb2954">&#9670;&nbsp;</a></span>CSerialPort()</h2>
+<a id="abd0c571c116924871e30444b192b792a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0c571c116924871e30444b192b792a">&#9670;&nbsp;</a></span>Config()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CSerialPort::CSerialPort </td>
+          <td class="memname">Config::Config </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>&#x202A;Initializes a new instance of the <a class="el" href="../../d0/d2b/a01010.html" title="&#x202A;串口通信类">CSerialPort</a> class </p>
+<p>&#x202A;构造函数, 可以初始化 或者 其他 </p>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/25 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00040">40</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : <a class="code" href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">&#x202A;m_hListenThread</a>( INVALID_HANDLE_VALUE ), <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>(INVALID_HANDLE_VALUE)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    InitializeCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<p class="definition">在文件 <a class="el" href="../../d1/d88/a00128_source.html">Config.cc</a> 第 <a class="el" href="../../d1/d88/a00128_source.html#l00712">712</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;{</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a90b8442658ca415eae7add1d6eebe7e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90b8442658ca415eae7add1d6eebe7e2">&#9670;&nbsp;</a></span>~CSerialPort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CSerialPort::~CSerialPort </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;Finalizes an instance of the <a class="el" href="../../d0/d2b/a01010.html" title="&#x202A;串口通信类">CSerialPort</a> class </p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00055">55</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d0/d2b/a01010.html#a4ffffefd2d6bfa763cfb8e993b79612d">&#x202A;CloseListenTread</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="../../d0/d2b/a01010.html#ae0d2dd450a48c47a2039e9458290f04f">&#x202A;ClosePort</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    DeleteCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a90b8442658ca415eae7add1d6eebe7e2_cgraph.png" border="0" usemap="#d0/d2b/a01010_a90b8442658ca415eae7add1d6eebe7e2_cgraph" alt=""/></div>
-<!-- MAP 0 -->
-</div>
-
-</div>
-</div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="a4ffffefd2d6bfa763cfb8e993b79612d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ffffefd2d6bfa763cfb8e993b79612d">&#9670;&nbsp;</a></span>CloseListenTread()</h2>
+<a id="abff2e60527d854a7f1d4b4f112881dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff2e60527d854a7f1d4b4f112881dcb">&#9670;&nbsp;</a></span>LoadParaFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool CSerialPort::CloseListenTread </td>
+          <td class="memname">bool Config::LoadParaFromFile </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../de/d41/a01030.html">IDOIFile</a> *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>&#x202A;关闭监听线程 </p>
-<p class="DocNodeLTR">Closes listen tread</p>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;: bool 操作是否成功 </dd></dl>
-<dl class="section note DocNodeLTR"><dt>注解</dt><dd>&#x202A;: 调用本函数后,监听串口的线程将会被关闭 </dd></dl>
-<dl class="section see"><dt>参见</dt><dd>:</dd></dl>
+<p>&#x202A;从 自定义文件中读取参数 </p>
+<p class="DocNodeLTR">Loads para from file</p>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/28</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&#x202A;The file</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
-<p class="DocNodeLTR">通知线程退出</p>
-<p class="DocNodeLTR">等待线程退出</p>
-<p class="DocNodeLTR">置线程句柄无效</p>
+<dl class="section date"><dt>日期</dt><dd>2019/12/25</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&#x202A;The file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00374">374</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;{</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">&#x202A;m_hListenThread</a> != INVALID_HANDLE_VALUE)</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    {</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <a class="code" href="../../d0/d2b/a01010.html#aa20d47c4692a151ab9983900a751050c">&#x202A;s_bExit</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        Sleep( 10 );</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        CloseHandle( <a class="code" href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">&#x202A;m_hListenThread</a> );</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <a class="code" href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">&#x202A;m_hListenThread</a> = INVALID_HANDLE_VALUE;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}</div>
+<p class="definition">在文件 <a class="el" href="../../d1/d88/a00128_source.html">Config.cc</a> 第 <a class="el" href="../../d1/d88/a00128_source.html#l00766">766</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;{</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#ab50487cc4124576dfbb2af0445a595c0">&#x202A;ReadRunParaFromFile</a>(file-&gt;<a class="code" href="../../de/d41/a01030.html#a1bf6bd70fa3480907b4390f92c7a125a">&#x202A;m_FStream_</a>);</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
+函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a4ffffefd2d6bfa763cfb8e993b79612d_icgraph.png" border="0" usemap="#d0/d2b/a01010_a4ffffefd2d6bfa763cfb8e993b79612d_icgraph" alt=""/></div>
-<!-- MAP 1 -->
-</div>
-
-</div>
-</div>
-<a id="ae0d2dd450a48c47a2039e9458290f04f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0d2dd450a48c47a2039e9458290f04f">&#9670;&nbsp;</a></span>ClosePort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CSerialPort::ClosePort </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;关闭串口 </p>
-<p class="DocNodeLTR">Closes the port</p>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;: void 操作是否成功 </dd></dl>
-<dl class="section note"><dt>注解</dt><dd>: </dd></dl>
-<dl class="section see"><dt>参见</dt><dd>:</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11 </dd></dl>
-<p class="DocNodeLTR">如果有串口被打开，关闭它</p>
-
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00271">271</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;{</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a> != INVALID_HANDLE_VALUE)</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        CloseHandle( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a> );</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a> = INVALID_HANDLE_VALUE;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_ae0d2dd450a48c47a2039e9458290f04f_icgraph.png" border="0" usemap="#d0/d2b/a01010_ae0d2dd450a48c47a2039e9458290f04f_icgraph" alt=""/></div>
-<!-- MAP 2 -->
-</div>
-
-</div>
-</div>
-<a id="abb85234d6f6d3774c8010fae51f7722f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb85234d6f6d3774c8010fae51f7722f">&#9670;&nbsp;</a></span>GetBytesInCOM()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> CSerialPort::GetBytesInCOM </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;获取串口缓冲区中的字节数 </p>
-<p class="DocNodeLTR">Gets bytes in com</p>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;: UINT 操作是否成功 </dd></dl>
-<dl class="section note DocNodeLTR"><dt>注解</dt><dd>&#x202A;: 当串口缓冲区中无数据时,返回0 </dd></dl>
-<dl class="section see"><dt>参见</dt><dd>:</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;The bytes in com</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;The bytes in com. </dd></dl>
-<p class="DocNodeLTR">错误码</p>
-<p class="DocNodeLTR">COMSTAT结构体,记录通信设备的状态信息</p>
-<p class="DocNodeLTR">在调用ReadFile和WriteFile之前,通过本函数清除以前遗留的错误标志</p>
-<p class="DocNodeLTR">获取在输入缓冲区中的字节数</p>
-
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00402">402</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;{</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    DWORD dwError = 0;  </div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    COMSTAT  comstat;   </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    memset( &amp;comstat, 0, <span class="keyword">sizeof</span>( COMSTAT ) );</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <a class="code" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a> BytesInQue = 0;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">if</span> (ClearCommError( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, &amp;dwError, &amp;comstat ))</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    {</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        BytesInQue = comstat.cbInQue; </div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    }</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordflow">return</span> BytesInQue;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_abb85234d6f6d3774c8010fae51f7722f_icgraph.png" border="0" usemap="#d0/d2b/a01010_abb85234d6f6d3774c8010fae51f7722f_icgraph" alt=""/></div>
-<map name="d0/d2b/a01010_abb85234d6f6d3774c8010fae51f7722f_icgraph" id="d0/d2b/a01010_abb85234d6f6d3774c8010fae51f7722f_icgraph">
-<area shape="rect" title="获取串口缓冲区中的字节数" alt="" coords="669,31,860,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a53335a4795e04563f5293fc92621024a" title="串口监听线程" alt="" coords="451,31,621,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a5166808d3063ff309f36f029768a1103" title="开启监听线程" alt="" coords="201,31,403,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a96ead81aea8f5c577586c595cb67bc26" title="初始化串口 并开启处理线程" alt="" coords="5,5,153,32"/>
-<area shape="rect" href="../../de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f" title=" " alt="" coords="31,56,128,83"/>
+<div class="center"><img src="../../d0/d2b/a01010_abff2e60527d854a7f1d4b4f112881dcb_cgraph.png" border="0" usemap="#d0/d2b/a01010_abff2e60527d854a7f1d4b4f112881dcb_cgraph" alt=""/></div>
+<map name="d0/d2b/a01010_abff2e60527d854a7f1d4b4f112881dcb_cgraph" id="d0/d2b/a01010_abff2e60527d854a7f1d4b4f112881dcb_cgraph">
+<area shape="rect" title="从 自定义文件中读取参数" alt="" coords="5,23,177,50"/>
+<area shape="rect" href="../../da/d17/a01046.html#ab50487cc4124576dfbb2af0445a595c0" title="从二进制流文件中读取文件" alt="" coords="225,23,436,50"/>
+<area shape="rect" href="../../d9/de6/a01314.html#a33967652245ef20659d0bedb6c69d47c" title="Character 2 string" alt="" coords="724,23,889,50"/>
+<area shape="rect" href="../../d7/d8c/a01306.html#a5523926cd82a36f59589a82da8adf31b" title="读取基本数据类型" alt="" coords="506,23,654,50"/>
+<area shape="rect" href="../../d7/d8c/a01306.html#a866a76a1d5720a62a03dc7ef7502cd25" title="从文件流中读取一个 字符串" alt="" coords="484,74,676,101"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a5ac6d378efb79f1740d9513ea32f9fe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ac6d378efb79f1740d9513ea32f9fe8">&#9670;&nbsp;</a></span>InitPort() <span class="overload">[1/2]</span></h2>
+<a id="aaa28b92aaa35102c72b3196a7a2295ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa28b92aaa35102c72b3196a7a2295ef">&#9670;&nbsp;</a></span>LoadParaFromYML()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool CSerialPort::InitPort </td>
+          <td class="memname">bool Config::LoadParaFromYML </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
-          <td class="paramname"><em>portNo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const cv::FileStorage &amp;&#160;</td>
+          <td class="paramname"><em>fs</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const LPDCB &amp;&#160;</td>
-          <td class="paramname"><em>plDCB</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>&#x202A;串口初始化函数 </p>
-<p class="DocNodeLTR">Initializes the port</p>
-<pre class="fragment">      本函数提供直接根据DCB参数设置串口参数
-      @param:  UINT portNo
-      @param:  const LPDCB &amp;amp; plDCB
-      @return: bool  初始化是否成功
-      @note:   本函数提供用户自定义地串口初始化参数
-      @see:
-</pre><dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<p>&#x202A;从yml 中 读取参数 </p>
+<p class="DocNodeLTR">Loads para from yml</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/28</dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">portNo</td><td>&#x202A;The port no </td></tr>
-    <tr><td class="paramname">plDCB</td><td>&#x202A;The pl dcb</td></tr>
+    <tr><td class="paramname">fs</td><td>&#x202A;The file system</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/25</dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">portNo</td><td>&#x202A;The port no. </td></tr>
-    <tr><td class="paramname">plDCB</td><td>&#x202A;The pl dcb.</td></tr>
+    <tr><td class="paramname">fs</td><td>&#x202A;The file system</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
-<p class="DocNodeLTR">打开指定串口,该函数内部已经有临界区保护,上面请不要加保护</p>
-<p class="DocNodeLTR">进入临界段</p>
-<p class="DocNodeLTR">配置串口参数</p>
-<p class="DocNodeLTR">清空串口缓冲区</p>
-<p class="DocNodeLTR">离开临界段</p>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00236">236</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;{</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d0/d2b/a01010.html#a5ae9d9156ce2871b518e0882c32b627a">&#x202A;OpenPort</a>( portNo ))</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    EnterCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">if</span> (!SetCommState( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, plDCB ))</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    PurgeComm( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, PURGE_RXCLEAR | PURGE_TXCLEAR | PURGE_RXABORT | PURGE_TXABORT );</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    LeaveCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
+<p class="definition">在文件 <a class="el" href="../../d1/d88/a00128_source.html">Config.cc</a> 第 <a class="el" href="../../d1/d88/a00128_source.html#l00729">729</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;{</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    <a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#aad8567884f1564ee1657671892c7ad06">&#x202A;LoadRunParaFromYML</a>(fs);</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    this-&gt;<a class="code" href="../../d0/d2b/a01010.html#a45ca77cfacd4d77e062e2c8b10d4cd78">&#x202A;VERSION_</a> = <a class="code" href="../../d9/de6/a01314.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a>(<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#abdb922f4f6c3aae4f0815fec2c5b5a28">&#x202A;FileHeader</a>.<a class="code" href="../../da/d17/a01046.html#a9ea4283c57c2fc38193e128c85cbb5d7">&#x202A;strIDOIFileVersion</a>);</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    this-&gt;<a class="code" href="../../d0/d2b/a01010.html#a80d3a8bcb64807efd5755b4028a0ebf9">&#x202A;mDebug</a> = &amp;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;CFG</a>.<a class="code" href="../../da/d17/a01046.html#a55676b481748b3169abcad0b15dab03f">&#x202A;Debug</a>;     <span class="comment">// 设置快捷访问</span></div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a5ac6d378efb79f1740d9513ea32f9fe8_cgraph.png" border="0" usemap="#d0/d2b/a01010_a5ac6d378efb79f1740d9513ea32f9fe8_cgraph" alt=""/></div>
-<!-- MAP 3 -->
-</div>
-
-</div>
-</div>
-<a id="a86910d240b82b2a53d53e511186f5855"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86910d240b82b2a53d53e511186f5855">&#9670;&nbsp;</a></span>InitPort() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CSerialPort::InitPort </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
-          <td class="paramname"><em>portNo</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
-          <td class="paramname"><em>baud</em> = <code>CBR_9600</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>parity</em> = <code>'N'</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
-          <td class="paramname"><em>databits</em> = <code>8</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
-          <td class="paramname"><em>stopsbits</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DWORD&#160;</td>
-          <td class="paramname"><em>dwCommEvents</em> = <code>EV_RXCHAR</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;初始化串口函数 </p>
-<p class="DocNodeLTR">Initializes the port</p>
-<pre class="fragment">      @param:  UINT portNo 串口编号,默认值为1,即COM1,注意,尽量不要大于9
-      @param:  UINT baud   波特率,默认为9600
-      @param:  char parity 是否进行奇偶校验,'Y'表示需要奇偶校验,'N'表示不需要奇偶校验
-      @param:  UINT databits 数据位的个数,默认值为8个数据位
-      @param:  UINT stopsbits 停止位使用格式,默认值为1
-      @param:  DWORD dwCommEvents 默认为EV_RXCHAR,即只要收发任意一个字符,则产生一个事件
-      @return: bool  初始化是否成功
-      @note:   在使用其他本类提供的函数前,请先调用本函数进行串口的初始化
-     　　　　　   /n本函数提供了一些常用的串口参数设置,若需要自行设置详细的DCB参数,可使用重载函数
-               /n本串口类析构时会自动关闭串口,无需额外执行关闭串口
-      @see:
-</pre><dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">portNo</td><td>&#x202A;(Optional) The port no </td></tr>
-    <tr><td class="paramname">baud</td><td>&#x202A;(Optional) The baud </td></tr>
-    <tr><td class="paramname">parity</td><td>&#x202A;(Optional) The parity </td></tr>
-    <tr><td class="paramname">databits</td><td>&#x202A;(Optional) The databits </td></tr>
-    <tr><td class="paramname">stopsbits</td><td>&#x202A;(Optional) The stopsbits </td></tr>
-    <tr><td class="paramname">dwCommEvents</td><td>&#x202A;(Optional) The communications events</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">portNo</td><td>&#x202A;The port no. </td></tr>
-    <tr><td class="paramname">baud</td><td>&#x202A;The baud. </td></tr>
-    <tr><td class="paramname">parity</td><td>&#x202A;The parity. </td></tr>
-    <tr><td class="paramname">databits</td><td>&#x202A;The databits. </td></tr>
-    <tr><td class="paramname">stopsbits</td><td>&#x202A;The stopsbits. </td></tr>
-    <tr><td class="paramname">dwCommEvents</td><td>&#x202A;The communications events.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
-<p class="DocNodeLTR">临时变量,将制定参数转化为字符串形式,以构造DCB结构</p>
-<p class="DocNodeLTR">打开指定串口,该函数内部已经有临界区保护,上面请不要加保护</p>
-<p class="DocNodeLTR">进入临界段</p>
-<p class="DocNodeLTR">是否有错误发生</p>
-<p class="DocNodeLTR">在此可以设置输入输出的缓冲区大小,如果不设置,则系统会设置默认值. 自己设置缓冲区大小时,要注意设置稍大一些,避免缓冲区溢出</p>
-<p class="DocNodeLTR">设置串口的超时时间,均设为0,表示不使用超时限制</p>
-<p class="DocNodeLTR">获取当前串口配置参数,并且构造串口DCB参数</p>
-<p class="DocNodeLTR">开启RTS flow控制</p>
-<p class="DocNodeLTR">释放内存空间</p>
-<p class="DocNodeLTR">使用DCB参数配置串口状态</p>
-<p class="DocNodeLTR">清空串口缓冲区</p>
-<p class="DocNodeLTR">离开临界段</p>
-
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00144">144</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">char</span> szDCBparam[50];</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    sprintf_s( szDCBparam, <span class="stringliteral">&quot;baud=%d parity=%c data=%d stop=%d&quot;</span>, baud, parity, databits, stopsbits );</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d0/d2b/a01010.html#a5ae9d9156ce2871b518e0882c32b627a">&#x202A;OpenPort</a>( portNo ))</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// 配置为每次收到数据 触发</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    dwCommEvents = EV_RXCHAR;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    EnterCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    BOOL bIsSuccess = TRUE;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="comment">/*if (bIsSuccess )</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">    {</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">    bIsSuccess = SetupComm(m_hComm,10,10);</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">    }*/</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    COMMTIMEOUTS  CommTimeouts;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    CommTimeouts.ReadIntervalTimeout = 0;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    CommTimeouts.ReadTotalTimeoutMultiplier = 0;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    CommTimeouts.ReadTotalTimeoutConstant = 0;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    CommTimeouts.WriteTotalTimeoutMultiplier = 0;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    CommTimeouts.WriteTotalTimeoutConstant = 0;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">if</span> (bIsSuccess)</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        bIsSuccess = SetCommTimeouts( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, &amp;CommTimeouts );</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    DCB  dcb;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">if</span> (bIsSuccess)</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="comment">// 将ANSI字符串转换为UNICODE字符串  </span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        DWORD dwNum = static_cast&lt;DWORD&gt;(MultiByteToWideChar( CP_ACP, 0, szDCBparam, -1, <span class="keyword">nullptr</span>, 0 ));</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordtype">wchar_t</span> *pwText = <span class="keyword">new</span> <span class="keywordtype">wchar_t</span>[dwNum];</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">if</span> (!MultiByteToWideChar( CP_ACP, 0, szDCBparam, -1, pwText, static_cast&lt;int&gt;(dwNum) ))</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        {</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            bIsSuccess = TRUE;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        }</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        bIsSuccess = GetCommState( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, &amp;dcb ) &amp;&amp; BuildCommDCB( pwText, &amp;dcb );</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        dcb.fRtsControl = RTS_CONTROL_ENABLE;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keyword">delete</span>[] pwText;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">if</span> (bIsSuccess)</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        bIsSuccess = SetCommState( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, &amp;dcb );</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    PurgeComm( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, PURGE_RXCLEAR | PURGE_TXCLEAR | PURGE_RXABORT | PURGE_TXABORT );</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    LeaveCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">return</span> bIsSuccess == TRUE;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a86910d240b82b2a53d53e511186f5855_cgraph.png" border="0" usemap="#d0/d2b/a01010_a86910d240b82b2a53d53e511186f5855_cgraph" alt=""/></div>
-<!-- MAP 4 -->
+<div class="center"><img src="../../d0/d2b/a01010_aaa28b92aaa35102c72b3196a7a2295ef_cgraph.png" border="0" usemap="#d0/d2b/a01010_aaa28b92aaa35102c72b3196a7a2295ef_cgraph" alt=""/></div>
+<map name="d0/d2b/a01010_aaa28b92aaa35102c72b3196a7a2295ef_cgraph" id="d0/d2b/a01010_aaa28b92aaa35102c72b3196a7a2295ef_cgraph">
+<area shape="rect" title="从yml 中 读取参数" alt="" coords="5,77,184,104"/>
+<area shape="rect" href="../../da/d17/a01046.html#aad8567884f1564ee1657671892c7ad06" title="从 yml 文件 读取参数, 使用" alt="" coords="232,48,447,75"/>
+<area shape="rect" href="../../d9/de6/a01314.html#a82ed3e2282101b5d3326df68e6098898" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="252,99,427,141"/>
+<area shape="rect" href="../../da/d17/a01046.html#ade25200381502a1035b48ff694f4e7c9" title="Reads com para form yml 解析 罗盘参数" alt="" coords="495,5,716,32"/>
+<area shape="rect" href="../../d7/d88/a01294.html#a8387a1da4bd9a03f42b6037f5370a28e" title="将字符串按照分割字符分割之后 生成矩形" alt="" coords="539,56,671,83"/>
+<area shape="rect" href="../../d9/de6/a01314.html#a14c76ec9d896d7eaa7193444f3277c59" title="Hexadecimal 2 character array hex 字符串 转换成 数组" alt="" coords="764,5,935,32"/>
+<area shape="rect" href="../../d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="983,5,1144,32"/>
+<area shape="rect" href="../../d9/de6/a01314.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="1192,5,1347,32"/>
+<area shape="rect" href="../../d9/de6/a01314.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="777,81,921,108"/>
+</map>
 </div>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a86910d240b82b2a53d53e511186f5855_icgraph.png" border="0" usemap="#d0/d2b/a01010_a86910d240b82b2a53d53e511186f5855_icgraph" alt=""/></div>
-<!-- MAP 5 -->
+<div class="center"><img src="../../d0/d2b/a01010_aaa28b92aaa35102c72b3196a7a2295ef_icgraph.png" border="0" usemap="#d0/d2b/a01010_aaa28b92aaa35102c72b3196a7a2295ef_icgraph" alt=""/></div>
+<map name="d0/d2b/a01010_aaa28b92aaa35102c72b3196a7a2295ef_icgraph" id="d0/d2b/a01010_aaa28b92aaa35102c72b3196a7a2295ef_icgraph">
+<area shape="rect" title="从yml 中 读取参数" alt="" coords="419,31,597,57"/>
+<area shape="rect" href="../../d4/dbc/a01038.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="初始化 全局参数" alt="" coords="249,5,371,32"/>
+<area shape="rect" href="../../da/d15/a00188.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="104,56,201,83"/>
+<area shape="rect" href="../../d4/dbc/a01038.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="113,5,192,32"/>
+<area shape="rect" href="../../d5/db1/a00140.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="5,5,56,32"/>
+</map>
 </div>
 
 </div>
 </div>
-<a id="a53335a4795e04563f5293fc92621024a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53335a4795e04563f5293fc92621024a">&#9670;&nbsp;</a></span>ListenThread()</h2>
+<a id="a414b3cc20d2f938a239c6723809bc904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414b3cc20d2f938a239c6723809bc904">&#9670;&nbsp;</a></span>WriteParaToFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> WINAPI CSerialPort::ListenThread </td>
+          <td class="memname">bool Config::WriteParaToFile </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>pParam</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../de/d41/a01030.html">IDOIFile</a> *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>&#x202A;串口监听线程 </p>
-<p class="DocNodeLTR">Listen thread</p>
-<pre class="fragment">      监听来自串口的数据和信息
-      @param:  void * pParam 线程参数
-      @return: UINT WINAPI 线程返回值
-      @note:
-      @see:
-</pre><dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pParam</td><td>&#x202A;If non-null, the parameter</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;A WINAPI</dd></dl>
+<p>&#x202A;将参数写入到文件中 </p>
+<p class="DocNodeLTR">Writes a para to file</p>
 <dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/28</dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pParam</td><td>&#x202A;If non-null, the parameter.</td></tr>
+    <tr><td class="paramname">file</td><td>&#x202A;The file</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;A WINAPI. </dd></dl>
-<p class="DocNodeLTR">得到本类的指针</p>
-<p class="DocNodeLTR">如果串口输入缓冲区中无数据,则休息一会再查询</p>
-<p class="DocNodeLTR">读取输入缓冲区中的数据并输出显示</p>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/25</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>&#x202A;The file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00431">431</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;{</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <a class="code" href="../../d0/d2b/a01010.html">&#x202A;CSerialPort</a> *pSerialPort = reinterpret_cast&lt;CSerialPort*&gt;( pParam );</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="comment">// 线程循环,轮询方式读取串口数据  </span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordflow">while</span> (!pSerialPort-&gt;<a class="code" href="../../d0/d2b/a01010.html#aa20d47c4692a151ab9983900a751050c">&#x202A;s_bExit</a>)</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    {</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <a class="code" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a> BytesInQue = pSerialPort-&gt;<a class="code" href="../../d0/d2b/a01010.html#abb85234d6f6d3774c8010fae51f7722f">&#x202A;GetBytesInCOM</a>();</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keywordflow">if</span> (BytesInQue == 0)</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        {</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            Sleep( <a class="code" href="../../d6/db8/a00158.html#ae650d1c7ef96b427613f7e32bb40d977">&#x202A;SLEEP_TIME_INTERVAL</a> );</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        }</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="comment">//如果串口读到的缓冲区字符数量大于设定的最大值时， log 串口缓冲区等待</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="comment">//if (BytesInQue &gt; static_cast&lt;uint&gt;(MAX_BUFFER_ERROR))</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="comment">//{</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="comment">//    // LOG(WARNING)&lt;&lt;&quot;串口缓冲区数据过多！&quot;;</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="comment">//}</span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        </div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordtype">char</span> cRecved = 0x00;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="comment">// UCHAR cFrame[FrameLength]; // 设置一帧数据的长度</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160; </div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="comment">// 定义串口数据格式</span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <a class="code" href="../../dd/d7a/a00990.html">&#x202A;SerialData</a> cFrame(27);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        </div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;         <span class="comment">// 必须填满一帧或者缓冲区 清空才结束 否则计算所有的值</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> data_cnt = 0;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <span class="keywordflow">while</span> (BytesInQue--)</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        {</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            cRecved = 0x00;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            <span class="keywordflow">if</span> (pSerialPort-&gt;<a class="code" href="../../d0/d2b/a01010.html#a5c37ce285506e5b69b6c900c406f37b7">&#x202A;ReadChar</a>( cRecved ) == <span class="keyword">true</span>)</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            {</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                <a class="code" href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> tmp_recv = <a class="code" href="../../d2/de7/a00014.html#aafd0fa284e789b2457c507239b376d82">&#x202A;char2uchar</a>(cRecved);</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                <span class="comment">// LDebug(&quot;data:{},UCHAR:{}&quot;,char2str(cRecved), uchar2str(tmp_recv));</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                <span class="comment">// 判断是否为帧头数据</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                <span class="comment">//if (tmp_recv == VHeader)</span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                <span class="comment">//{</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                <span class="comment">//    data_cnt = 0;</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                <span class="comment">//}</span></div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                <span class="comment">// cFrame[data_cnt] = char2uchar(cRecved);</span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                cFrame.data_[data_cnt] = tmp_recv;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                data_cnt++;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160; </div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                <span class="comment">// 判断是否完成一帧数据 完成之后 结束新的值</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                <span class="keywordflow">if</span> (tmp_recv == <a class="code" href="../../d8/d41/a00038.html#af029f43dfa3e14b6c8988a307d32fa02a9e9b1a88711ec694685d6eac1671a0df">&#x202A;VHeader</a> || data_cnt == <a class="code" href="../../d8/d41/a00038.html#aa4414f9f8f6da905bd119a9f6aba54aa">&#x202A;FrameLength</a>)</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                {</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                    data_cnt = 0;</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                }</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160; </div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                <span class="comment">// LDebug(&quot;data_cnt:{0},Recved: {1}&quot;, data_cnt,(int)cRecved);</span></div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;            }</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        } </div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="comment">// 测试计算 编码器计数值</span></div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <span class="comment">// int nCounter = (cFrame.data_[FEncoder] &lt;&lt; 8) + (cFrame.data_[FEncoder]);</span></div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <span class="comment">// 输出 字符串数组的内容</span></div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        <a class="code" href="../../d5/de0/a00050.html#a8f15acfec2db055b15d9dab7b6975210">&#x202A;LDebug</a>(<span class="stringliteral">&quot;Recv: {}&quot;</span>, <a class="code" href="../../d2/de7/a00014.html#a2bccd732252a844a62b3e0bdc7de82d8">&#x202A;charArr2String</a>(cFrame.buffer));</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        <a class="code" href="../../d5/de0/a00050.html#a8f15acfec2db055b15d9dab7b6975210">&#x202A;LDebug</a>(<span class="stringliteral">&quot;Calc: Encoder:{} Heading:{} Pitch:{} Rolll:{}&quot;</span>,</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;               calcEncoder (&amp;cFrame.buffer[FEncoder]),</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160; </div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;               <span class="comment">// 输出 HCM 数据</span></div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;               calcHCMData(&amp;cFrame.buffer[<a class="code" href="../../d8/d41/a00038.html#a6de22e58cff280e195408775bbf9fb69acf0e468fbfa609a39473ec70afe86d90">&#x202A;FHeading</a>]),</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;               calcHCMData(&amp;cFrame.buffer[<a class="code" href="../../d8/d41/a00038.html#a6de22e58cff280e195408775bbf9fb69a61bc27c007c019aea91ae29e6fa9e5cd">&#x202A;FPitch</a>]),</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;               calcHCMData(&amp;cFrame.buffer[<a class="code" href="../../d8/d41/a00038.html#a6de22e58cff280e195408775bbf9fb69a08fac792809abb7efbf40a4ba528fff7">&#x202A;FRoll</a>])</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;               );</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <span class="comment">// 将当前数值加入到队列中</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <span class="comment">// lqFrame.EnQueue(nCounter);</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        <span class="comment">// 每次触发中断 执行数据输出</span></div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        <span class="comment">// LDebug(&quot;Str:\t {0},\tCounter:\t {1}&quot;, str.substr(1, str.size() - 1), nCounter);</span></div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        <span class="comment">// LDebug(&quot;Counter:\t {0}&quot;, nCounter);</span></div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="comment">// 测试情况下 数据获取 从文件读取想对应的数据</span></div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <span class="comment">// 将数据 加入到循环队列中</span></div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <a class="code" href="../../d5/df9/a00044.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a>-&gt;Enter(&amp;cFrame);</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="comment">// buffer_-&gt;Push(cFrame);</span></div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    }</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;}</div>
+<p class="definition">在文件 <a class="el" href="../../d1/d88/a00128_source.html">Config.cc</a> 第 <a class="el" href="../../d1/d88/a00128_source.html#l00783">783</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;{</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#aa2e8fbcdd233ecc35b7798932be4bc46">&#x202A;WriteRunParaToFile</a> (file-&gt;<a class="code" href="../../de/d41/a01030.html#a1bf6bd70fa3480907b4390f92c7a125a">&#x202A;m_FStream_</a>);</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a53335a4795e04563f5293fc92621024a_cgraph.png" border="0" usemap="#d0/d2b/a01010_a53335a4795e04563f5293fc92621024a_cgraph" alt=""/></div>
-<!-- MAP 6 -->
+<div class="center"><img src="../../d0/d2b/a01010_a414b3cc20d2f938a239c6723809bc904_cgraph.png" border="0" usemap="#d0/d2b/a01010_a414b3cc20d2f938a239c6723809bc904_cgraph" alt=""/></div>
+<map name="d0/d2b/a01010_a414b3cc20d2f938a239c6723809bc904_cgraph" id="d0/d2b/a01010_a414b3cc20d2f938a239c6723809bc904_cgraph">
+<area shape="rect" title="将参数写入到文件中" alt="" coords="5,97,164,123"/>
+<area shape="rect" href="../../da/d17/a01046.html#aa2e8fbcdd233ecc35b7798932be4bc46" title="通过文件指针 将数据写入到二进制数据流中" alt="" coords="212,97,408,123"/>
+<area shape="rect" href="../../d9/de6/a01314.html#ad98ced7a9727883c0f305e144db03024" title="String 2 character" alt="" coords="679,126,844,153"/>
+<area shape="rect" href="../../d9/de6/a01314.html#a82ed3e2282101b5d3326df68e6098898" title="将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011" alt="" coords="456,5,631,47"/>
+<area shape="rect" href="../../d7/d8c/a01306.html#a7fbb7bbb704161e7512dd9edc091bb23" title="Writes a data 写入基本数据类型" alt="" coords="469,122,618,149"/>
+<area shape="rect" href="../../d7/d8c/a01306.html#ae9335a7520c43095ac8312c0901e9bd4" title="将一个字符串写入到二进制文件流中" alt="" coords="465,173,621,215"/>
+<area shape="rect" href="../../d9/de6/a01314.html#a707dfc08a28c18474486ca8ca43d6b39" title="将字符串根据分割符号分割的数字 数组 转换成 int输出 这样我们不仅可以用别的字符来做分隔，还可以选择跳过空白字符串 https://segmentfault.com/a/11900000024834..." alt="" coords="689,13,833,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adbb6ccd1f7a72de24216484582071010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb6ccd1f7a72de24216484582071010">&#9670;&nbsp;</a></span>WriteParaToYML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Config::WriteParaToYML </td>
+          <td>(</td>
+          <td class="paramtype">cv::FileStorage &amp;&#160;</td>
+          <td class="paramname"><em>fs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;将参数 写入到 yml 文件中 </p>
+<p class="DocNodeLTR">Writes a para to yml</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/28</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">fs</td><td>&#x202A;The file system</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/25</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">fs</td><td>&#x202A;The file system</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d1/d88/a00128_source.html">Config.cc</a> 第 <a class="el" href="../../d1/d88/a00128_source.html#l00749">749</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;{</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a4745d779fa1d892d5cb7bbb8fe499f55">&#x202A;WriteRunParaToYML</a>(fs);</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d2b/a01010_adbb6ccd1f7a72de24216484582071010_cgraph.png" border="0" usemap="#d0/d2b/a01010_adbb6ccd1f7a72de24216484582071010_cgraph" alt=""/></div>
+<map name="d0/d2b/a01010_adbb6ccd1f7a72de24216484582071010_cgraph" id="d0/d2b/a01010_adbb6ccd1f7a72de24216484582071010_cgraph">
+<area shape="rect" title="将参数 写入到 yml 文件中" alt="" coords="5,5,171,32"/>
+<area shape="rect" href="../../da/d17/a01046.html#a4745d779fa1d892d5cb7bbb8fe499f55" title="将参数 写入到 YML 文件中" alt="" coords="219,5,421,32"/>
+<area shape="rect" href="../../d9/de6/a01314.html#afe216aed245f8f433cfc9b5e8c611754" title="在字符串前后 添加 引号 双引号 用于YML 写入" alt="" coords="469,5,659,32"/>
+</map>
 </div>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a53335a4795e04563f5293fc92621024a_icgraph.png" border="0" usemap="#d0/d2b/a01010_a53335a4795e04563f5293fc92621024a_icgraph" alt=""/></div>
-<map name="d0/d2b/a01010_a53335a4795e04563f5293fc92621024a_icgraph" id="d0/d2b/a01010_a53335a4795e04563f5293fc92621024a_icgraph">
-<area shape="rect" title="串口监听线程" alt="" coords="451,31,621,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a5166808d3063ff309f36f029768a1103" title="开启监听线程" alt="" coords="201,31,403,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a96ead81aea8f5c577586c595cb67bc26" title="初始化串口 并开启处理线程" alt="" coords="5,5,153,32"/>
-<area shape="rect" href="../../de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f" title=" " alt="" coords="31,56,128,83"/>
+<div class="center"><img src="../../d0/d2b/a01010_adbb6ccd1f7a72de24216484582071010_icgraph.png" border="0" usemap="#d0/d2b/a01010_adbb6ccd1f7a72de24216484582071010_icgraph" alt=""/></div>
+<map name="d0/d2b/a01010_adbb6ccd1f7a72de24216484582071010_icgraph" id="d0/d2b/a01010_adbb6ccd1f7a72de24216484582071010_icgraph">
+<area shape="rect" title="将参数 写入到 yml 文件中" alt="" coords="151,5,316,32"/>
+<area shape="rect" href="../../da/d15/a00188.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="5,5,103,32"/>
 </map>
-</div>
-
-</div>
-</div>
-<a id="aa450f0191fb1cc847e8c3f804f5d166e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa450f0191fb1cc847e8c3f804f5d166e">&#9670;&nbsp;</a></span>ListenThread2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a> WINAPI CSerialPort::ListenThread2 </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>pParam</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;Listen thread 2 </p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pParam</td><td>&#x202A;If non-null, the parameter</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;A WINAPI </dd></dl>
-
-</div>
-</div>
-<a id="a5166808d3063ff309f36f029768a1103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5166808d3063ff309f36f029768a1103">&#9670;&nbsp;</a></span>OpenListenThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CSerialPort::OpenListenThread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;开启监听线程 </p>
-<p class="DocNodeLTR">开启 监听线程</p>
-<pre class="fragment">      本监听线程完成对串口数据的监听,并将接收到的数据打印到屏幕输出
-      @return: bool  操作是否成功
-      @note:   当线程已经处于开启状态时,返回flase
-      @see:
-</pre><dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
-<p class="DocNodeLTR">检测线程是否已经开启了</p>
-<p class="DocNodeLTR">线程已经开启</p>
-<p class="DocNodeLTR">线程ID</p>
-<p class="DocNodeLTR">开启串口数据监听线程</p>
-<p class="DocNodeLTR">设置线程的优先级,高于普通线程</p>
-
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00336">336</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;{</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">&#x202A;m_hListenThread</a> != INVALID_HANDLE_VALUE)</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <a class="code" href="../../d0/d2b/a01010.html#aa20d47c4692a151ab9983900a751050c">&#x202A;s_bExit</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a> threadId;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <a class="code" href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">&#x202A;m_hListenThread</a> = reinterpret_cast&lt;HANDLE&gt;(_beginthreadex( <span class="keyword">nullptr</span>, 0, <a class="code" href="../../d0/d2b/a01010.html#a53335a4795e04563f5293fc92621024a">&#x202A;ListenThread</a>, <span class="keyword">this</span>, 0, &amp;threadId ));</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">&#x202A;m_hListenThread</a>)</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    }</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">if</span> (!SetThreadPriority( <a class="code" href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">&#x202A;m_hListenThread</a>, THREAD_PRIORITY_ABOVE_NORMAL ))</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    {</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a5166808d3063ff309f36f029768a1103_cgraph.png" border="0" usemap="#d0/d2b/a01010_a5166808d3063ff309f36f029768a1103_cgraph" alt=""/></div>
-<!-- MAP 7 -->
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a5166808d3063ff309f36f029768a1103_icgraph.png" border="0" usemap="#d0/d2b/a01010_a5166808d3063ff309f36f029768a1103_icgraph" alt=""/></div>
-<map name="d0/d2b/a01010_a5166808d3063ff309f36f029768a1103_icgraph" id="d0/d2b/a01010_a5166808d3063ff309f36f029768a1103_icgraph">
-<area shape="rect" title="开启监听线程" alt="" coords="201,31,403,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a96ead81aea8f5c577586c595cb67bc26" title="初始化串口 并开启处理线程" alt="" coords="5,5,153,32"/>
-<area shape="rect" href="../../de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f" title=" " alt="" coords="31,56,128,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a5ae9d9156ce2871b518e0882c32b627a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae9d9156ce2871b518e0882c32b627a">&#9670;&nbsp;</a></span>OpenPort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CSerialPort::OpenPort </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">UINT</a>&#160;</td>
-          <td class="paramname"><em>portNo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;打开串口 </p>
-<p class="DocNodeLTR">Opens a port</p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"></td><td>&#x202A;UINT portNo 串口设备号 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;: bool 打开是否成功 </dd></dl>
-<dl class="section note"><dt>注解</dt><dd>: </dd></dl>
-<dl class="section see"><dt>参见</dt><dd>:</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">portNo</td><td>&#x202A;The port no</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">portNo</td><td>&#x202A;The port no.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
-<p class="DocNodeLTR">进入临界段</p>
-<p class="DocNodeLTR">把串口的编号转换为设备名</p>
-<p class="DocNodeLTR">打开指定的串口</p>
-<p class="DocNodeLTR">设备名,COM1,COM2等</p>
-<p class="DocNodeLTR">访问模式,可同时读写</p>
-<p class="DocNodeLTR">共享模式,0表示不共享</p>
-<p class="DocNodeLTR">安全性设置,一般使用NULL</p>
-<p class="DocNodeLTR">该参数表示设备必须存在,否则创建失败</p>
-<p class="DocNodeLTR">如果打开失败，释放资源并返回</p>
-<p class="DocNodeLTR">退出临界区</p>
-
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00294">294</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    EnterCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">char</span> szPort[50];</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    sprintf_s( szPort, <span class="stringliteral">&quot;COM%d&quot;</span>, portNo );</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a> = CreateFileA( szPort,  </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        GENERIC_READ | GENERIC_WRITE, </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        0,                            </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keyword">nullptr</span>,                         </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        OPEN_EXISTING,                </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        0,</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keyword">nullptr</span> );</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a> == INVALID_HANDLE_VALUE)</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        LeaveCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    }</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    LeaveCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a5ae9d9156ce2871b518e0882c32b627a_icgraph.png" border="0" usemap="#d0/d2b/a01010_a5ae9d9156ce2871b518e0882c32b627a_icgraph" alt=""/></div>
-<!-- MAP 8 -->
-</div>
-
-</div>
-</div>
-<a id="a5c37ce285506e5b69b6c900c406f37b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c37ce285506e5b69b6c900c406f37b7">&#9670;&nbsp;</a></span>ReadChar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CSerialPort::ReadChar </td>
-          <td>(</td>
-          <td class="paramtype">char &amp;&#160;</td>
-          <td class="paramname"><em>cRecved</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;读取串口接收缓冲区中一个字节的数据 </p>
-<p class="DocNodeLTR">Reads a character</p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"></td><td>&#x202A;char &amp; cRecved 存放读取数据的字符变量 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;: bool 读取是否成功 </dd></dl>
-<dl class="section note"><dt>注解</dt><dd>: </dd></dl>
-<dl class="section see"><dt>参见</dt><dd>:</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">cRecved</td><td>&#x202A;The recved</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">cRecved</td><td>&#x202A;The recved.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
-<p class="DocNodeLTR">临界区保护</p>
-<p class="DocNodeLTR">从缓冲区读取一个字节的数据</p>
-<p class="DocNodeLTR">获取错误码,可以根据该错误码查出错误原因</p>
-<p class="DocNodeLTR">清空串口缓冲区</p>
-<p class="DocNodeLTR">离开临界区</p>
-
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00528">528</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;{</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    BOOL  bResult = TRUE;</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    DWORD BytesRead = 0;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a> == INVALID_HANDLE_VALUE)</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    {</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    }</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160; </div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    EnterCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    bResult = ReadFile( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, &amp;cRecved, 1, &amp;BytesRead, <span class="keyword">nullptr</span> );</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordflow">if</span> (( !bResult ))</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    {</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <span class="comment">// DWORD dwError = GetLastError();</span></div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        PurgeComm( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, PURGE_RXCLEAR | PURGE_RXABORT );</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        LeaveCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160; </div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    }</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160; </div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    LeaveCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160; </div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordflow">return</span> ( BytesRead == 1 );</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a5c37ce285506e5b69b6c900c406f37b7_icgraph.png" border="0" usemap="#d0/d2b/a01010_a5c37ce285506e5b69b6c900c406f37b7_icgraph" alt=""/></div>
-<map name="d0/d2b/a01010_a5c37ce285506e5b69b6c900c406f37b7_icgraph" id="d0/d2b/a01010_a5c37ce285506e5b69b6c900c406f37b7_icgraph">
-<area shape="rect" title="读取串口接收缓冲区中一个字节的数据" alt="" coords="669,31,823,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a53335a4795e04563f5293fc92621024a" title="串口监听线程" alt="" coords="451,31,621,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a5166808d3063ff309f36f029768a1103" title="开启监听线程" alt="" coords="201,31,403,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a96ead81aea8f5c577586c595cb67bc26" title="初始化串口 并开启处理线程" alt="" coords="5,5,153,32"/>
-<area shape="rect" href="../../de/db1/a00197.html#afb6ab9fe19efa5b425254c76eb078d4f" title=" " alt="" coords="31,56,128,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a96ead81aea8f5c577586c595cb67bc26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96ead81aea8f5c577586c595cb67bc26">&#9670;&nbsp;</a></span>StartPort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CSerialPort::StartPort </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>port</em> = <code>5</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>baud</em> = <code>CBR_19200</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;初始化串口 并开启处理线程 </p>
-<p class="DocNodeLTR">打开串口 并开启监听进程</p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">port</td><td>&#x202A;(Optional) The port </td></tr>
-    <tr><td class="paramname">baud</td><td>&#x202A;(Optional) The baud</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">port</td><td>&#x202A;The port. </td></tr>
-    <tr><td class="paramname">baud</td><td>&#x202A;The baud.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00076">76</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//打开串口</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d0/d2b/a01010.html#a86910d240b82b2a53d53e511186f5855">&#x202A;InitPort</a>(static_cast&lt;uint&gt;(port),static_cast&lt;uint&gt;(baud)))</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="../../d5/de0/a00050.html#a204d6f164f5621269aa9b5d024c258d6">&#x202A;LError</a>(<span class="stringliteral">&quot;Serial Port:{0} Baud:{1} init Error !&quot;</span>, port, baud);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="../../d5/de0/a00050.html#aaec3c38855627fda219c81a8cd509a68">&#x202A;LInfo</a>(<span class="stringliteral">&quot;Serial Port:{0} Baud:{1} init Success!&quot;</span>, port,baud);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// return true;</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// 默认不打开线程</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// 开启串口监听线程 独立运行 </span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d0/d2b/a01010.html#a5166808d3063ff309f36f029768a1103">&#x202A;OpenListenThread</a>())</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="../../d5/de0/a00050.html#a204d6f164f5621269aa9b5d024c258d6">&#x202A;LError</a>(<span class="stringliteral">&quot;Serial ListenThread Open Error!&quot;</span>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="../../d5/de0/a00050.html#aaec3c38855627fda219c81a8cd509a68">&#x202A;LInfo</a>(<span class="stringliteral">&quot;Serial ListenThread init Success!&quot;</span>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// return true;</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a96ead81aea8f5c577586c595cb67bc26_cgraph.png" border="0" usemap="#d0/d2b/a01010_a96ead81aea8f5c577586c595cb67bc26_cgraph" alt=""/></div>
-<map name="d0/d2b/a01010_a96ead81aea8f5c577586c595cb67bc26_cgraph" id="d0/d2b/a01010_a96ead81aea8f5c577586c595cb67bc26_cgraph">
-<area shape="rect" title="初始化串口 并开启处理线程" alt="" coords="5,56,153,83"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a86910d240b82b2a53d53e511186f5855" title="初始化串口函数" alt="" coords="233,31,371,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a5166808d3063ff309f36f029768a1103" title="开启监听线程" alt="" coords="201,81,403,108"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a5ae9d9156ce2871b518e0882c32b627a" title="打开串口" alt="" coords="461,31,611,57"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a53335a4795e04563f5293fc92621024a" title="串口监听线程" alt="" coords="451,81,621,108"/>
-<area shape="rect" href="../../d2/de7/a00014.html#aafd0fa284e789b2457c507239b376d82" title="Character 2uchar" alt="" coords="721,5,808,32"/>
-<area shape="rect" href="../../d2/de7/a00014.html#a2bccd732252a844a62b3e0bdc7de82d8" title="将UCHAR 字符串依次转换成 string 字符串" alt="" coords="712,56,817,83"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#abb85234d6f6d3774c8010fae51f7722f" title="获取串口缓冲区中的字节数" alt="" coords="669,107,860,133"/>
-<area shape="rect" href="../../d0/d2b/a01010.html#a5c37ce285506e5b69b6c900c406f37b7" title="读取串口接收缓冲区中一个字节的数据" alt="" coords="688,157,841,184"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a5ccbd6e8a12799fe60851e37bbbeb2eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ccbd6e8a12799fe60851e37bbbeb2eb">&#9670;&nbsp;</a></span>WriteData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CSerialPort::WriteData </td>
-          <td>(</td>
-          <td class="paramtype">unsigned char *&#160;</td>
-          <td class="paramname"><em>pData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;向串口写数据 </p>
-<p class="DocNodeLTR">Writes a data</p>
-<pre class="fragment">      将缓冲区中的数据写入到串口
-      @param:  unsigned char * pData 指向需要写入串口的数据缓冲区
-      @param:  unsigned int length 需要写入的数据长度
-      @return: bool  操作是否成功
-      @note:   length不要大于pData所指向缓冲区的大小
-      @see:
-</pre><dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pData</td><td>&#x202A;If non-null, the data </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">length</td><td>&#x202A;The length</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pData</td><td>&#x202A;If non-null, the data. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">length</td><td>&#x202A;The length.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
-<p class="DocNodeLTR">临界区保护</p>
-<p class="DocNodeLTR">向缓冲区写入指定量的数据</p>
-<p class="DocNodeLTR">清空串口缓冲区</p>
-<p class="DocNodeLTR">离开临界区</p>
-
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00575">575</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;{</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    BOOL   bResult = TRUE;</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    DWORD  BytesToSend = 0;</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a> == INVALID_HANDLE_VALUE)</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    {</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    }</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160; </div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    EnterCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160; </div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    bResult = WriteFile( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, pData, length, &amp;BytesToSend, <span class="keyword">nullptr</span> );</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="keywordflow">if</span> (!bResult)</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    {</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <span class="comment">// DWORD dwError = GetLastError();</span></div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="comment"></span>        PurgeComm( <a class="code" href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;m_hComm</a>, PURGE_RXCLEAR | PURGE_RXABORT );</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        LeaveCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    }</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160; </div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    LeaveCriticalSection( &amp;<a class="code" href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;m_csCommunicationSync</a> );</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160; </div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a5ccbd6e8a12799fe60851e37bbbeb2eb_icgraph.png" border="0" usemap="#d0/d2b/a01010_a5ccbd6e8a12799fe60851e37bbbeb2eb_icgraph" alt=""/></div>
-<!-- MAP 9 -->
-</div>
-
-</div>
-</div>
-<a id="a18d506bb87c384082dddfd5d6e9bf87a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d506bb87c384082dddfd5d6e9bf87a">&#9670;&nbsp;</a></span>WriteDataS()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CSerialPort::WriteDataS </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>pStr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&#x202A;Writes a data s </p>
-<p class="DocNodeLTR">发送一个字符串</p>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pData</td><td>&#x202A;The data</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
-<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
-<dl class="section date"><dt>日期</dt><dd>2019/10/11</dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pStr</td><td>&#x202A;The string.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a> 第 <a class="el" href="../../d6/db8/a00158_source.html#l00618">618</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;{</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="comment">// uchar *p = new uchar[pStr.size()];</span></div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160; </div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <a class="code" href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a> *p = reinterpret_cast&lt;uchar*&gt;(const_cast&lt;char*&gt;((pStr.data())));</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160; </div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <a class="code" href="../../d0/d2b/a01010.html#a5ccbd6e8a12799fe60851e37bbbeb2eb">&#x202A;WriteData</a>(p,static_cast&lt;uint&gt;(pStr.size()));</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160; </div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;}</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d2b/a01010_a18d506bb87c384082dddfd5d6e9bf87a_cgraph.png" border="0" usemap="#d0/d2b/a01010_a18d506bb87c384082dddfd5d6e9bf87a_cgraph" alt=""/></div>
-<!-- MAP 10 -->
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">结构体成员变量说明</h2>
-<a id="a3df14df19d8f6f09d803bee2ec0ab25e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3df14df19d8f6f09d803bee2ec0ab25e">&#9670;&nbsp;</a></span>m_csCommunicationSync</h2>
+<a id="a80d3a8bcb64807efd5755b4028a0ebf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d3a8bcb64807efd5755b4028a0ebf9">&#9670;&nbsp;</a></span>mDebug</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CRITICAL_SECTION CSerialPort::m_csCommunicationSync</td>
+          <td class="memname"><a class="el" href="../../da/d17/a01046.html#db/d1e/a01126">RunPara::StCFG::StDebug</a>* Config::mDebug</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>&#x202A;同步互斥,临界区保护 </p>
-<p class="DocNodeLTR">互斥操作串口 </p>
-
-<p class="definition">在文件 <a class="el" href="../../dd/d32/a00041_source.html">SerialPort.h</a> 第 <a class="el" href="../../dd/d32/a00041_source.html#l00365">365</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d5/d16/a00029_source.html">Config.h</a> 第 <a class="el" href="../../d5/d16/a00029_source.html#l00035">35</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a234faffa92379fada3f91ce21a8cac35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a234faffa92379fada3f91ce21a8cac35">&#9670;&nbsp;</a></span>m_hComm</h2>
+<a id="a3f1c590ef3c4492e16830021d2867c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1c590ef3c4492e16830021d2867c45">&#9670;&nbsp;</a></span>mRunPara</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HANDLE CSerialPort::m_hComm</td>
+          <td class="memname"><a class="el" href="../../da/d17/a01046.html">RunPara</a> Config::mRunPara</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>&#x202A;串口句柄 </p>
-<p class="DocNodeLTR">Handle of the communications </p>
+<p>&#x202A;系统运行参数 </p>
 
-<p class="definition">在文件 <a class="el" href="../../dd/d32/a00041_source.html">SerialPort.h</a> 第 <a class="el" href="../../dd/d32/a00041_source.html#l00356">356</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d5/d16/a00029_source.html">Config.h</a> 第 <a class="el" href="../../d5/d16/a00029_source.html#l00034">34</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a9e72fe88fb5ff17de114acacf0e607fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e72fe88fb5ff17de114acacf0e607fc">&#9670;&nbsp;</a></span>m_hListenThread</h2>
+<a id="a45ca77cfacd4d77e062e2c8b10d4cd78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ca77cfacd4d77e062e2c8b10d4cd78">&#9670;&nbsp;</a></span>VERSION_</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volatile HANDLE CSerialPort::m_hListenThread</td>
+          <td class="memname">int Config::VERSION_ = 100</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>&#x202A;线程句柄 </p>
-<p class="DocNodeLTR">Handle of the listen thread </p>
+<p>&#x202A;记录当前的版本 1.0 </p>
 
-<p class="definition">在文件 <a class="el" href="../../dd/d32/a00041_source.html">SerialPort.h</a> 第 <a class="el" href="../../dd/d32/a00041_source.html#l00362">362</a> 行定义.</p>
-
-</div>
-</div>
-<a id="aa20d47c4692a151ab9983900a751050c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa20d47c4692a151ab9983900a751050c">&#9670;&nbsp;</a></span>s_bExit</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CSerialPort::s_bExit = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>&#x202A;线程退出标志变量 </p>
-<p class="DocNodeLTR">线程退出标志</p>
-<p class="DocNodeLTR">True to exit </p>
-
-<p class="definition">在文件 <a class="el" href="../../dd/d32/a00041_source.html">SerialPort.h</a> 第 <a class="el" href="../../dd/d32/a00041_source.html#l00359">359</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="../../d5/d16/a00029_source.html">Config.h</a> 第 <a class="el" href="../../d5/d16/a00029_source.html#l00032">32</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../dd/d32/a00041_source.html">SerialPort.h</a></li>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/src/<a class="el" href="../../d6/db8/a00158_source.html">SerialPort.cc</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/<a class="el" href="../../d5/d16/a00029_source.html">Config.h</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/src/<a class="el" href="../../d1/d88/a00128_source.html">Config.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01010_html_a4ffffefd2d6bfa763cfb8e993b79612d"><div class="ttname"><a href="../../d0/d2b/a01010.html#a4ffffefd2d6bfa763cfb8e993b79612d">&#x202A;CSerialPort::CloseListenTread</a></div><div class="ttdeci">&#x202A;bool CloseListenTread()</div><div class="ttdoc">&#x202A;关闭监听线程</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00374">SerialPort.cc:374</a></div></div>
-<div class="ttc" id="aa01010_html_a86910d240b82b2a53d53e511186f5855"><div class="ttname"><a href="../../d0/d2b/a01010.html#a86910d240b82b2a53d53e511186f5855">&#x202A;CSerialPort::InitPort</a></div><div class="ttdeci">&#x202A;bool InitPort(UINT portNo=1, UINT baud=CBR_9600, char parity='N', UINT databits=8, UINT stopsbits=1, DWORD dwCommEvents=EV_RXCHAR)</div><div class="ttdoc">&#x202A;初始化串口函数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00144">SerialPort.cc:144</a></div></div>
-<div class="ttc" id="aa01010_html_ae0d2dd450a48c47a2039e9458290f04f"><div class="ttname"><a href="../../d0/d2b/a01010.html#ae0d2dd450a48c47a2039e9458290f04f">&#x202A;CSerialPort::ClosePort</a></div><div class="ttdeci">&#x202A;void ClosePort()</div><div class="ttdoc">&#x202A;关闭串口</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00271">SerialPort.cc:271</a></div></div>
-<div class="ttc" id="aa01010_html_a5ccbd6e8a12799fe60851e37bbbeb2eb"><div class="ttname"><a href="../../d0/d2b/a01010.html#a5ccbd6e8a12799fe60851e37bbbeb2eb">&#x202A;CSerialPort::WriteData</a></div><div class="ttdeci">&#x202A;bool WriteData(unsigned char *pData, unsigned int length)</div><div class="ttdoc">&#x202A;向串口写数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00575">SerialPort.cc:575</a></div></div>
-<div class="ttc" id="aa01010_html_a5c37ce285506e5b69b6c900c406f37b7"><div class="ttname"><a href="../../d0/d2b/a01010.html#a5c37ce285506e5b69b6c900c406f37b7">&#x202A;CSerialPort::ReadChar</a></div><div class="ttdeci">&#x202A;bool ReadChar(char &amp;cRecved)</div><div class="ttdoc">&#x202A;读取串口接收缓冲区中一个字节的数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00528">SerialPort.cc:528</a></div></div>
-<div class="ttc" id="aa00038_html_af029f43dfa3e14b6c8988a307d32fa02a9e9b1a88711ec694685d6eac1671a0df"><div class="ttname"><a href="../../d8/d41/a00038.html#af029f43dfa3e14b6c8988a307d32fa02a9e9b1a88711ec694685d6eac1671a0df">&#x202A;VHeader</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00139">serialdata.h:139</a></div></div>
-<div class="ttc" id="aa01010_html_a3df14df19d8f6f09d803bee2ec0ab25e"><div class="ttname"><a href="../../d0/d2b/a01010.html#a3df14df19d8f6f09d803bee2ec0ab25e">&#x202A;CSerialPort::m_csCommunicationSync</a></div><div class="ttdeci">&#x202A;CRITICAL_SECTION m_csCommunicationSync</div><div class="ttdoc">&#x202A;同步互斥,临界区保护</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00365">SerialPort.h:365</a></div></div>
-<div class="ttc" id="aa01010_html_abb85234d6f6d3774c8010fae51f7722f"><div class="ttname"><a href="../../d0/d2b/a01010.html#abb85234d6f6d3774c8010fae51f7722f">&#x202A;CSerialPort::GetBytesInCOM</a></div><div class="ttdeci">&#x202A;UINT GetBytesInCOM()</div><div class="ttdoc">&#x202A;获取串口缓冲区中的字节数</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00402">SerialPort.cc:402</a></div></div>
-<div class="ttc" id="aa00044_html_a490ece921a21c9c1f092304537c8924c"><div class="ttname"><a href="../../d5/df9/a00044.html#a490ece921a21c9c1f092304537c8924c">&#x202A;lqFrame</a></div><div class="ttdeci">&#x202A;ThreadQueue&lt; SerialData &gt; * lqFrame</div><div class="ttdoc">&#x202A;The lq frame</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/a00161_source.html#l00011">SerialProc.cc:11</a></div></div>
-<div class="ttc" id="aa00014_html_ae48ac2456c5ad6c956fef86e7bef3a21"><div class="ttname"><a href="../../d2/de7/a00014.html#ae48ac2456c5ad6c956fef86e7bef3a21">&#x202A;uchar</a></div><div class="ttdeci">&#x202A;unsigned char uchar</div><div class="ttdoc">&#x202A;The uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00036">Commu.h:36</a></div></div>
-<div class="ttc" id="aa00038_html_a6de22e58cff280e195408775bbf9fb69a08fac792809abb7efbf40a4ba528fff7"><div class="ttname"><a href="../../d8/d41/a00038.html#a6de22e58cff280e195408775bbf9fb69a08fac792809abb7efbf40a4ba528fff7">&#x202A;FRoll</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00121">serialdata.h:121</a></div></div>
-<div class="ttc" id="aa00038_html_a6de22e58cff280e195408775bbf9fb69a61bc27c007c019aea91ae29e6fa9e5cd"><div class="ttname"><a href="../../d8/d41/a00038.html#a6de22e58cff280e195408775bbf9fb69a61bc27c007c019aea91ae29e6fa9e5cd">&#x202A;FPitch</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00120">serialdata.h:120</a></div></div>
-<div class="ttc" id="aa01010_html"><div class="ttname"><a href="../../d0/d2b/a01010.html">&#x202A;CSerialPort</a></div><div class="ttdoc">&#x202A;串口通信类</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00060">SerialPort.h:60</a></div></div>
-<div class="ttc" id="aa00158_html_ae650d1c7ef96b427613f7e32bb40d977"><div class="ttname"><a href="../../d6/db8/a00158.html#ae650d1c7ef96b427613f7e32bb40d977">&#x202A;SLEEP_TIME_INTERVAL</a></div><div class="ttdeci">&#x202A;const UINT SLEEP_TIME_INTERVAL</div><div class="ttdoc">&#x202A;当串口无数据时,sleep至下次查询间隔的时间,单位:毫秒</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00029">SerialPort.cc:29</a></div></div>
-<div class="ttc" id="aa00050_html_aaec3c38855627fda219c81a8cd509a68"><div class="ttname"><a href="../../d5/de0/a00050.html#aaec3c38855627fda219c81a8cd509a68">&#x202A;LInfo</a></div><div class="ttdeci">&#x202A;#define LInfo(...)</div><div class="ttdoc">&#x202A;A macro that defines Information</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00394">SpdLogger.h:394</a></div></div>
-<div class="ttc" id="aa01010_html_a9e72fe88fb5ff17de114acacf0e607fc"><div class="ttname"><a href="../../d0/d2b/a01010.html#a9e72fe88fb5ff17de114acacf0e607fc">&#x202A;CSerialPort::m_hListenThread</a></div><div class="ttdeci">&#x202A;volatile HANDLE m_hListenThread</div><div class="ttdoc">&#x202A;线程句柄</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00362">SerialPort.h:362</a></div></div>
-<div class="ttc" id="aa00014_html_a2bccd732252a844a62b3e0bdc7de82d8"><div class="ttname"><a href="../../d2/de7/a00014.html#a2bccd732252a844a62b3e0bdc7de82d8">&#x202A;charArr2String</a></div><div class="ttdeci">&#x202A;std::string charArr2String(uchar *buffer, int length=16, int flg_space=1)</div><div class="ttdoc">&#x202A;将UCHAR 字符串依次转换成 string 字符串</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d06/a00131_source.html#l01087">Commu.cc:1087</a></div></div>
-<div class="ttc" id="aa00038_html_aa4414f9f8f6da905bd119a9f6aba54aa"><div class="ttname"><a href="../../d8/d41/a00038.html#aa4414f9f8f6da905bd119a9f6aba54aa">&#x202A;FrameLength</a></div><div class="ttdeci">&#x202A;const int FrameLength</div><div class="ttdoc">&#x202A;每帧数据的长度</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00018">serialdata.h:18</a></div></div>
-<div class="ttc" id="aa01010_html_a5ae9d9156ce2871b518e0882c32b627a"><div class="ttname"><a href="../../d0/d2b/a01010.html#a5ae9d9156ce2871b518e0882c32b627a">&#x202A;CSerialPort::OpenPort</a></div><div class="ttdeci">&#x202A;bool OpenPort(UINT portNo)</div><div class="ttdoc">&#x202A;打开串口</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00294">SerialPort.cc:294</a></div></div>
-<div class="ttc" id="aa00990_html"><div class="ttname"><a href="../../dd/d7a/a00990.html">&#x202A;SerialData</a></div><div class="ttdoc">&#x202A;暂存 串口发送回来的 分组数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00030">serialdata.h:30</a></div></div>
-<div class="ttc" id="aa00050_html_a8f15acfec2db055b15d9dab7b6975210"><div class="ttname"><a href="../../d5/de0/a00050.html#a8f15acfec2db055b15d9dab7b6975210">&#x202A;LDebug</a></div><div class="ttdeci">&#x202A;#define LDebug(...)</div><div class="ttdoc">&#x202A;A macro that defines debug</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00381">SpdLogger.h:381</a></div></div>
-<div class="ttc" id="aa01010_html_a5166808d3063ff309f36f029768a1103"><div class="ttname"><a href="../../d0/d2b/a01010.html#a5166808d3063ff309f36f029768a1103">&#x202A;CSerialPort::OpenListenThread</a></div><div class="ttdeci">&#x202A;bool OpenListenThread()</div><div class="ttdoc">&#x202A;开启监听线程</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00336">SerialPort.cc:336</a></div></div>
-<div class="ttc" id="aa00014_html_aafd0fa284e789b2457c507239b376d82"><div class="ttname"><a href="../../d2/de7/a00014.html#aafd0fa284e789b2457c507239b376d82">&#x202A;char2uchar</a></div><div class="ttdeci">&#x202A;uchar char2uchar(char c1)</div><div class="ttdoc">&#x202A;Character 2uchar</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d06/a00131_source.html#l00809">Commu.cc:809</a></div></div>
-<div class="ttc" id="aa00038_html_a6de22e58cff280e195408775bbf9fb69acf0e468fbfa609a39473ec70afe86d90"><div class="ttname"><a href="../../d8/d41/a00038.html#a6de22e58cff280e195408775bbf9fb69acf0e468fbfa609a39473ec70afe86d90">&#x202A;FHeading</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00122">serialdata.h:122</a></div></div>
-<div class="ttc" id="aa01010_html_a53335a4795e04563f5293fc92621024a"><div class="ttname"><a href="../../d0/d2b/a01010.html#a53335a4795e04563f5293fc92621024a">&#x202A;CSerialPort::ListenThread</a></div><div class="ttdeci">&#x202A;static UINT WINAPI ListenThread(void *pParam)</div><div class="ttdoc">&#x202A;串口监听线程</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db8/a00158_source.html#l00431">SerialPort.cc:431</a></div></div>
-<div class="ttc" id="aa00050_html_a204d6f164f5621269aa9b5d024c258d6"><div class="ttname"><a href="../../d5/de0/a00050.html#a204d6f164f5621269aa9b5d024c258d6">&#x202A;LError</a></div><div class="ttdeci">&#x202A;#define LError(msg,...)</div><div class="ttdoc">&#x202A;A macro that defines error</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00421">SpdLogger.h:421</a></div></div>
-<div class="ttc" id="aa00014_html_a2b6a99e22a48562ebfb764265a529937"><div class="ttname"><a href="../../d2/de7/a00014.html#a2b6a99e22a48562ebfb764265a529937">&#x202A;UINT</a></div><div class="ttdeci">&#x202A;unsigned int UINT</div><div class="ttdoc">&#x202A;The uint</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00038">Commu.h:38</a></div></div>
-<div class="ttc" id="aa01010_html_aa20d47c4692a151ab9983900a751050c"><div class="ttname"><a href="../../d0/d2b/a01010.html#aa20d47c4692a151ab9983900a751050c">&#x202A;CSerialPort::s_bExit</a></div><div class="ttdeci">&#x202A;static bool s_bExit</div><div class="ttdoc">&#x202A;线程退出标志变量</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00359">SerialPort.h:359</a></div></div>
-<div class="ttc" id="aa01010_html_a234faffa92379fada3f91ce21a8cac35"><div class="ttname"><a href="../../d0/d2b/a01010.html#a234faffa92379fada3f91ce21a8cac35">&#x202A;CSerialPort::m_hComm</a></div><div class="ttdeci">&#x202A;HANDLE m_hComm</div><div class="ttdoc">&#x202A;串口句柄</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d32/a00041_source.html#l00356">SerialPort.h:356</a></div></div>
+<div class="ttc" id="aa01046_html_a55676b481748b3169abcad0b15dab03f"><div class="ttname"><a href="../../da/d17/a01046.html#a55676b481748b3169abcad0b15dab03f">&#x202A;RunPara::StCFG::Debug</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG::StDebug Debug</div></div>
+<div class="ttc" id="aa01046_html_aa2e8fbcdd233ecc35b7798932be4bc46"><div class="ttname"><a href="../../da/d17/a01046.html#aa2e8fbcdd233ecc35b7798932be4bc46">&#x202A;RunPara::WriteRunParaToFile</a></div><div class="ttdeci">&#x202A;bool WriteRunParaToFile(std::fstream *pfile)</div><div class="ttdoc">&#x202A;通过文件指针 将数据写入到二进制数据流中</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00380">Config.cc:380</a></div></div>
+<div class="ttc" id="aa01046_html_aad8567884f1564ee1657671892c7ad06"><div class="ttname"><a href="../../da/d17/a01046.html#aad8567884f1564ee1657671892c7ad06">&#x202A;RunPara::LoadRunParaFromYML</a></div><div class="ttdeci">&#x202A;bool LoadRunParaFromYML(const cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;从 yml 文件 读取参数, 使用</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00032">Config.cc:32</a></div></div>
+<div class="ttc" id="aa01010_html_a45ca77cfacd4d77e062e2c8b10d4cd78"><div class="ttname"><a href="../../d0/d2b/a01010.html#a45ca77cfacd4d77e062e2c8b10d4cd78">&#x202A;Config::VERSION_</a></div><div class="ttdeci">&#x202A;int VERSION_</div><div class="ttdoc">&#x202A;记录当前的版本 1.0</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00032">Config.h:32</a></div></div>
+<div class="ttc" id="aa01010_html_a80d3a8bcb64807efd5755b4028a0ebf9"><div class="ttname"><a href="../../d0/d2b/a01010.html#a80d3a8bcb64807efd5755b4028a0ebf9">&#x202A;Config::mDebug</a></div><div class="ttdeci">&#x202A;RunPara::StCFG::StDebug * mDebug</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00035">Config.h:35</a></div></div>
+<div class="ttc" id="aa01046_html_ab50487cc4124576dfbb2af0445a595c0"><div class="ttname"><a href="../../da/d17/a01046.html#ab50487cc4124576dfbb2af0445a595c0">&#x202A;RunPara::ReadRunParaFromFile</a></div><div class="ttdeci">&#x202A;bool ReadRunParaFromFile(std::fstream *pfile)</div><div class="ttdoc">&#x202A;从二进制流文件中读取文件</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00526">Config.cc:526</a></div></div>
+<div class="ttc" id="aa01046_html_abdb922f4f6c3aae4f0815fec2c5b5a28"><div class="ttname"><a href="../../da/d17/a01046.html#abdb922f4f6c3aae4f0815fec2c5b5a28">&#x202A;RunPara::FileHeader</a></div><div class="ttdeci">&#x202A;struct RunPara::StFileHeader FileHeader</div></div>
+<div class="ttc" id="aa01046_html_a9ea4283c57c2fc38193e128c85cbb5d7"><div class="ttname"><a href="../../da/d17/a01046.html#a9ea4283c57c2fc38193e128c85cbb5d7">&#x202A;RunPara::StFileHeader::strIDOIFileVersion</a></div><div class="ttdeci">&#x202A;std::string strIDOIFileVersion</div><div class="ttdoc">&#x202A;自定义文件格式版本</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00044">runpara.h:44</a></div></div>
+<div class="ttc" id="aa01010_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa01030_html_a1bf6bd70fa3480907b4390f92c7a125a"><div class="ttname"><a href="../../de/d41/a01030.html#a1bf6bd70fa3480907b4390f92c7a125a">&#x202A;IDOIFile::m_FStream_</a></div><div class="ttdeci">&#x202A;std::fstream * m_FStream_</div><div class="ttdoc">&#x202A;文件指针, 用于操作文件</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00198">IDOIFile.h:198</a></div></div>
+<div class="ttc" id="aa01046_html_a4745d779fa1d892d5cb7bbb8fe499f55"><div class="ttname"><a href="../../da/d17/a01046.html#a4745d779fa1d892d5cb7bbb8fe499f55">&#x202A;RunPara::WriteRunParaToYML</a></div><div class="ttdeci">&#x202A;bool WriteRunParaToYML(cv::FileStorage &amp;fs)</div><div class="ttdoc">&#x202A;将参数 写入到 YML 文件中</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00185">Config.cc:185</a></div></div>
+<div class="ttc" id="aa01046_html_a1ca5d1037652d0b772952ae0716d7a63"><div class="ttname"><a href="../../da/d17/a01046.html#a1ca5d1037652d0b772952ae0716d7a63">&#x202A;RunPara::CFG</a></div><div class="ttdeci">&#x202A;struct RunPara::StCFG CFG</div></div>
+<div class="ttc" id="aa01314_html_a82ed3e2282101b5d3326df68e6098898"><div class="ttname"><a href="../../d9/de6/a01314.html#a82ed3e2282101b5d3326df68e6098898">&#x202A;Utils_String::StringVersionToInt</a></div><div class="ttdeci">&#x202A;static int StringVersionToInt(const std::string &amp;str)</div><div class="ttdoc">&#x202A;将 1.1 这种转换成 int 版本号 1.1 == 101 10.11 == 1011</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00372">utils_string.cc:372</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d0/d2b/a01010.html">&#x202A;CSerialPort</a></li>
+    <li class="navelem"><a class="el" href="../../d0/d2b/a01010.html">&#x202A;Config</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

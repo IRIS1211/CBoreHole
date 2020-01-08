@@ -1,0 +1,6 @@
+<map id="Init::GlobalVarUpdate" name="Init::GlobalVarUpdate">
+<area shape="rect" id="node1" title="根据运行参数 更新参数" alt="" coords="5,56,151,83"/>
+<area shape="rect" id="node2" href="$da/d79/a01310.html#acb425a725353c07d525139ce1119ede2" title="Gets disk all" alt="" coords="206,5,349,32"/>
+<area shape="rect" id="node3" href="$da/d79/a01310.html#aca84499be1f513127b12f9d5b7ca11ef" title="Gets disk used" alt="" coords="199,56,356,83"/>
+<area shape="rect" id="node4" href="$d6/dfa/a01318.html#a8fc80e6d8ee244ed6a5a49d7527de6d5" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="207,107,347,133"/>
+</map>

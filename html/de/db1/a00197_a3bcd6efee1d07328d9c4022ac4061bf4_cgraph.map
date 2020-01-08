@@ -1,0 +1,21 @@
+<map id="TEST_CASE" name="TEST_CASE">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,103,184"/>
+<area shape="rect" id="node2" href="$d0/d61/a01130.html#ab7106342a338373afe7f670fa1dae510" title="Handles the close serial" alt="" coords="313,5,482,32"/>
+<area shape="rect" id="node4" href="$d0/d61/a01130.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="151,157,264,184"/>
+<area shape="rect" id="node12" href="$d0/d61/a01130.html#a7620016be54cb445876b796aad0e062f" title="Reads the data" alt="" coords="533,325,689,352"/>
+<area shape="rect" id="node3" href="$d0/d61/a01130.html#a17bb88159a12333d6c0ff9ae6b2aeae2" title="Closes serial port" alt="" coords="983,56,1136,83"/>
+<area shape="rect" id="node5" href="$d0/d61/a01130.html#a97f68664ea64cf379c2e35390a0b8ab3" title="Handles the open serial" alt="" coords="314,107,481,133"/>
+<area shape="rect" id="node8" href="$d0/d61/a01130.html#a3c2a5cfe7771d00a669a13fc14c17ace" title="Handles the serial error described by error" alt="" coords="753,56,917,83"/>
+<area shape="rect" id="node9" href="$d0/d61/a01130.html#ad4bdb6d6267f052b1768659da61d58c0" title="Handles the read data" alt="" coords="312,259,483,285"/>
+<area shape="rect" id="node10" href="$d0/d61/a01130.html#aa7833e90f2e6f7f6fb3a1b4e6ae908a1" title="Handles the timer described by t // 初始化时间" alt="" coords="340,309,455,336"/>
+<area shape="rect" id="node11" href="$d0/d61/a01130.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="323,208,471,235"/>
+<area shape="rect" id="node16" href="$d0/d61/a01130.html#a96e9f96c16f56bcbb4ed0945b0c69782" title="Slot write data // 将字符串写入到串口中去 判断是否输出的 hex 字符串" alt="" coords="322,157,473,184"/>
+<area shape="rect" id="node6" href="$d0/d61/a01130.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="536,107,687,133"/>
+<area shape="rect" id="node7" href="$da/d79/a01310.html#a2532e87f4c488fe497996c210b40458b" title="Gets serial by port no" alt="" coords="740,107,931,133"/>
+<area shape="rect" id="node13" href="$da/d79/a01310.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a" title="2 q byte array" alt="" coords="749,325,921,352"/>
+<area shape="rect" id="node14" href="$d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="979,300,1140,327"/>
+<area shape="rect" id="node15" href="$d9/de6/a01314.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="1188,300,1343,327"/>
+<area shape="rect" id="node17" href="$d9/de6/a01314.html#a16270cb7857217ad3fb4ca45b263379b" title="将 hex 字符串转换成 string 字符串" alt="" coords="531,256,692,283"/>
+<area shape="rect" id="node18" href="$d0/d61/a01130.html#af8becf41dcc37eeb6a79f8ff66d008a4" title="Single write data 写入QByteArrar 类型的数据" alt="" coords="533,187,690,213"/>
+<area shape="rect" id="node19" href="$d9/de6/a01314.html#a93b60f1fbf52d3b43700bfab7e4eb2bb" title="char 类型与 string的相互转换" alt="" coords="753,209,918,250"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="TEST_CASE" name="TEST_CASE">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,103,108"/>
+<area shape="rect" id="node2" href="$d9/de6/a01314.html#a33967652245ef20659d0bedb6c69d47c" title="Character 2 string" alt="" coords="159,5,325,32"/>
+<area shape="rect" id="node3" href="$d9/de6/a01314.html#a5220010b7b1eb541bc0d84ca88676283" title="如果不给定长度, 一直向后直到得到 \0 可能中途截断" alt="" coords="151,56,333,83"/>
+<area shape="rect" id="node4" href="$d9/de6/a01314.html#a14c76ec9d896d7eaa7193444f3277c59" title="Hexadecimal 2 character array hex 字符串 转换成 数组" alt="" coords="157,107,327,133"/>
+<area shape="rect" id="node7" href="$d9/de6/a01314.html#ad98ced7a9727883c0f305e144db03024" title="String 2 character" alt="" coords="159,157,325,184"/>
+<area shape="rect" id="node5" href="$d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="381,107,543,133"/>
+<area shape="rect" id="node6" href="$d9/de6/a01314.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="591,107,745,133"/>
+</map>

@@ -1,10 +1,9 @@
 var a01038 =
 [
-    [ "\u202ASpdLogger", "d4/dbc/a01038.html#a6363fe481724674897134ef2f0451cc9", null ],
-    [ "\u202A~SpdLogger", "d4/dbc/a01038.html#ad9cfd8db33f52bb28ff2c05df68ce404", null ],
-    [ "\u202ASpdLogger", "d4/dbc/a01038.html#abac163f51a0c2b8fed094eea16157dcd", null ],
-    [ "\u202AGetInstance", "d4/dbc/a01038.html#adadbdb99284ebda48dea5aee348c8477", null ],
-    [ "\u202AGetLogger", "d4/dbc/a01038.html#a3aaea6bb2af04fa4fef95a1eda1a7ee5", null ],
-    [ "\u202Aoperator=", "d4/dbc/a01038.html#ac38d0b230123b6cdc9ec5add41ad2de6", null ],
-    [ "\u202Anml_logger", "d4/dbc/a01038.html#a2e2b8c9b365ab5f084a2690b23acb958", null ]
+    [ "\u202AAllInit", "d4/dbc/a01038.html#afb07b00f2611777025031d20adb34ce5", null ],
+    [ "\u202ACurrentDirInit", "d4/dbc/a01038.html#a3dd823273154e1bb5cd2e85efd872662", null ],
+    [ "\u202AGlobalVarInit", "d4/dbc/a01038.html#ac6c5c0e3086cf28a96387e32ffc5bebf", null ],
+    [ "\u202AGlobalVarUpdate", "d4/dbc/a01038.html#a5714027a2cc07f9c5c0ae84a177631be", null ],
+    [ "\u202AProjectDirInit", "d4/dbc/a01038.html#af90a5705e283acc4150060ea12833ab8", null ],
+    [ "\u202AYMLConfigInit", "d4/dbc/a01038.html#af348596369f10008277e9321bd9e6901", null ]
 ];

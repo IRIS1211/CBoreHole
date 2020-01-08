@@ -1,0 +1,16 @@
+<map id="CamProc::run" name="CamProc::run">
+<area shape="rect" id="node1" title="Runs this object" alt="" coords="5,132,108,159"/>
+<area shape="rect" id="node2" href="$d6/dfa/a01318.html#ac5d31743c8d57b5a70caa94b55356477" title=" " alt="" coords="156,5,332,32"/>
+<area shape="rect" id="node3" href="$d0/d56/a01014.html#a4d55a1a82ab1aa26325a0c93e2603c3f" title=" " alt="" coords="187,56,301,83"/>
+<area shape="rect" id="node4" href="$de/d91/a01034.html#a901c1bc39c2a6983a1cb487656c2361d" title="// 默认 根据 要显示的开始Y座标和高度值显示 可以自定义显示区域 相应区域的图像 // 越界处理 下越界无法处理,只能等待更新数据 // 上越界会 读取之前的文件进行处理 // 默认获取整幅图像 然..." alt="" coords="167,107,321,133"/>
+<area shape="rect" id="node6" href="$dc/ded/a01290.html#a8caf43f80697158f648269f7964fffdd" title="定义 函数限定函数， 根据 输入的值现象参数的范围" alt="" coords="202,157,286,184"/>
+<area shape="rect" id="node7" href="$d0/d56/a01014.html#aabb5d6f90ce5562f4d30867de96bc983" title="返回队列最前面的元素 并且弹出 // 如果空 如果finish 则直接返回fasle 否则 等待队列加入元素" alt="" coords="194,208,294,235"/>
+<area shape="rect" id="node8" href="$de/d91/a01034.html#acd18773a822c007ea0d9242b24f86e4d" title="提供接口 默认无 偏移输入新的图片 同时 如果有偏移将右侧多出的部分补充到图像左侧,保证图像总体宽度不变 根据上次开始的座标依次拼接图像, 如果下边界超出图片最大行,..." alt="" coords="183,259,305,285"/>
+<area shape="rect" id="node5" href="$de/d91/a01034.html#a28a1ccb502c28b76d80ff4c258e8d9fd" title="右侧偏移图像修正 bool fixUpImage(cv::Mat &amp;subImg, cv::Mat &amp;fixImage, int offset_x = 0, int offset_y = 0); 通过 ..." alt="" coords="395,107,548,133"/>
+<area shape="rect" id="node9" href="$de/d91/a01034.html#af2ca50ca3b3581daf43be92f210660f1" title="加上新的图像 如果溢出 从上面开始重复" alt="" coords="384,183,559,209"/>
+<area shape="rect" id="node10" href="$de/d41/a01030.html#a02ab234b0e32ac5f2fd240ee4cf6cfd2" title="写入新一批的图像 TODO(SChen00) 改种指针处理原始数据" alt="" coords="398,233,545,260"/>
+<area shape="rect" id="node11" href="$de/d91/a01034.html#a983af4929a27ea39bf3ac487e221d0c2" title="自定义匹配两个图像 用来获取当前图像对于上一帧图像的偏移值" alt="" coords="380,284,563,311"/>
+<area shape="rect" id="node13" href="$de/d91/a01034.html#a761ee051ae7ddcdf6fe2fd5c0a91bf60" title="将数据存储下来" alt="" coords="392,335,551,361"/>
+<area shape="rect" id="node12" href="$de/d91/a01034.html#ac0da2340c4281d03a051b8bab1eddabe" title="计算两个 小区块 图像的偏移值" alt="" coords="611,284,797,311"/>
+<area shape="rect" id="node14" href="$d6/dfa/a01318.html#a8fc80e6d8ee244ed6a5a49d7527de6d5" title="Gets a time 获取时间字符串 YYYYMMDD_HHMM 默认字符为连符号" alt="" coords="634,335,774,361"/>
+</map>

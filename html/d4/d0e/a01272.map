@@ -1,52 +1,17 @@
-<map id="WorkWindow" name="WorkWindow">
-<area shape="rect" id="node1" title="声明本类,用于自身UI 实现 @seealso QT ui 实现和 pImpl 原则 https://blog.csdn.net/hebbely/article/details/79267348" alt="" coords="2056,501,2155,528"/>
-<area shape="rect" id="node2" title=" " alt="" coords="1779,373,1885,400"/>
-<area shape="rect" id="node3" href="$db/d32/a01122.html" title=" " alt="" coords="1453,660,1588,687"/>
-<area shape="rect" id="node21" href="$da/d73/a01090.html" title="摄像头 抓取对象, 循环抓取对象数据到缓冲队列中" alt="" coords="1785,525,1879,552"/>
-<area shape="rect" id="node23" href="$d6/dea/a01094.html" title="处理线程 单独执行过程" alt="" coords="1794,593,1870,620"/>
-<area shape="rect" id="node50" href="$d4/d10/a01278.html" title="A write video. 使用传统线程方式 处理, 程序循环执行 写入动作" alt="" coords="1789,475,1875,501"/>
-<area shape="rect" id="node4" title=" " alt="" coords="625,697,775,724"/>
-<area shape="rect" id="node5" title="STL class" alt="" coords="149,757,264,784"/>
-<area shape="rect" id="node39" title=" " alt="" coords="435,969,601,996"/>
-<area shape="rect" id="node47" title=" " alt="" coords="435,821,601,848"/>
-<area shape="rect" id="node6" title=" " alt="" coords="5,553,44,580"/>
-<area shape="rect" id="node49" title="STL class" alt="" coords="150,421,263,448"/>
-<area shape="rect" id="node7" href="$db/d32/a01122.html" title=" " alt="" coords="468,771,568,797"/>
-<area shape="rect" id="node38" href="$db/d32/a01122.html" title=" " alt="" coords="805,969,958,996"/>
-<area shape="rect" id="node46" href="$db/d32/a01122.html" title=" " alt="" coords="806,828,957,855"/>
-<area shape="rect" id="node8" href="$d3/deb/a01386.html" title=" " alt="" coords="1773,424,1891,451"/>
-<area shape="rect" id="node9" href="$de/d9d/a01382.html" title=" " alt="" coords="1461,241,1580,268"/>
-<area shape="rect" id="node10" href="$d7/d88/a01294.html" title="A qt open cv viewer gl." alt="" coords="1160,216,1307,243"/>
-<area shape="rect" id="node11" title=" " alt="" coords="821,216,942,243"/>
-<area shape="rect" id="node12" title=" " alt="" coords="799,165,964,192"/>
-<area shape="rect" id="node13" href="$d4/d34/a01298.html" title="自定义滑动条实现, 滑动之后更改相应的值和相应的关系" alt="" coords="1201,267,1265,293"/>
-<area shape="rect" id="node14" title=" " alt="" coords="849,267,914,293"/>
-<area shape="rect" id="node15" href="$dc/de0/a01302.html" title=" " alt="" coords="1176,91,1291,117"/>
-<area shape="rect" id="node16" title=" " alt="" coords="481,5,555,32"/>
-<area shape="rect" id="node20" href="$d7/d8c/a01306.html" title=" " alt="" coords="822,115,941,141"/>
-<area shape="rect" id="node17" href="$d5/da0/a01342.html" title=" " alt="" coords="829,64,933,91"/>
-<area shape="rect" id="node18" href="$d9/de6/a01314.html" title=" " alt="" coords="469,56,567,83"/>
-<area shape="rect" id="node19" href="$d1/d54/a01326.html" title=" " alt="" coords="471,107,565,133"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1485,373,1556,400"/>
-<area shape="rect" id="node24" href="$d3/ddc/a01142.html" title="图片处理类实现" alt="" coords="1479,604,1563,631"/>
-<area shape="rect" id="node25" href="$d0/d39/a01138.html" title="An idoi file." alt="" coords="1199,584,1267,611"/>
-<area shape="rect" id="node26" title="STL class" alt="" coords="836,904,927,931"/>
-<area shape="rect" id="node36" href="$d7/d73/a01266.html" title="设定串口 处理 函数 解析串口的数据 到系统运行参数中" alt="" coords="1479,1024,1562,1051"/>
-<area shape="rect" id="node41" href="$d8/ddf/a01238.html" title="A serial." alt="" coords="1206,996,1261,1023"/>
-<area shape="rect" id="node27" title="STL class" alt="" coords="453,903,583,945"/>
-<area shape="rect" id="node28" href="$d5/d16/a01154.html" title="系统运行参数 系统运行参数 是system的 拓展, 两者可以相互转换" alt="" coords="845,483,917,509"/>
-<area shape="rect" id="node29" href="$d5/d16/a01154.html#d8/d15/a01218" title="设置用户UI 参数" alt="" coords="465,480,571,507"/>
-<area shape="rect" id="node30" href="$d5/d16/a01154.html#d9/dbb/a01186" title="设置硬件的参数信息" alt="" coords="453,581,583,608"/>
-<area shape="rect" id="node31" href="$d5/d16/a01154.html#df/db5/a01158" title="文件头参数 文件验证信息 文件块值 每行数据长度 数据计数" alt="" coords="441,429,595,456"/>
-<area shape="rect" id="node32" title="STL class" alt="" coords="167,608,247,635"/>
-<area shape="rect" id="node33" href="$d5/d16/a01154.html#dc/dee/a01166" title="测孔参数信息 测孔直径 mm 开始深度 mm 测孔类型 水平 0 数值 1 工作方式 前进 0 后退 1 测孔编号 测孔时间 测孔地点 测孔人员 测孔单位" alt="" coords="459,379,577,405"/>
-<area shape="rect" id="node34" href="$d5/d16/a01154.html#dd/d9e/a01226" title="主要 如果能见执行的配置参数 包括软件执行以及" alt="" coords="458,531,578,557"/>
-<area shape="rect" id="node35" href="$dd/de2/a01134.html" title="#TODO(SChen): 完善拓展信息内容 定义拓展信息内容" alt="" coords="845,600,918,627"/>
-<area shape="rect" id="node37" title=" " alt="" coords="846,1087,917,1113"/>
-<area shape="rect" id="node40" href="$d7/dc5/a01242.html" title="暂存 串口发送回来的 分组数据 保存串口发送的原始数据" alt="" coords="165,1020,248,1047"/>
-<area shape="rect" id="node42" href="$d7/d04/a01246.html" title="定义数据帧头像" alt="" coords="1190,1249,1277,1276"/>
-<area shape="rect" id="node43" href="$d7/d04/a01246.html#da/da1/a01258" title="电子罗盘" alt="" coords="800,1325,963,1352"/>
-<area shape="rect" id="node44" href="$d7/d04/a01246.html#dc/d83/a01254" title="记录电压当前值" alt="" coords="814,1224,949,1251"/>
-<area shape="rect" id="node45" href="$d7/d04/a01246.html#d4/d22/a01250" title="编码器 的值 保留当前值 上次值 以及运算的中值" alt="" coords="814,1275,949,1301"/>
-<area shape="rect" id="node48" title=" " alt="" coords="988,439,1136,465"/>
+<map id="Ui_SetWindow" name="Ui_SetWindow">
+<area shape="rect" id="node1" title=" " alt="" coords="171,572,278,599"/>
+<area shape="rect" id="node2" href="$dc/d19/a01190.html" title="自定义滑动条实现, 滑动之后更改相应的值和相应的关系" alt="" coords="9,336,73,363"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,247,71,273"/>
+<area shape="rect" id="node4" href="$d7/d04/a01246.html" title="自定义 label 能够完成图像显示, 继承事件," alt="" coords="99,336,183,363"/>
+<area shape="rect" id="node5" title=" " alt="" coords="95,247,157,273"/>
+<area shape="rect" id="node6" href="$d9/d2e/a01194.html" title=" " alt="" coords="209,336,323,363"/>
+<area shape="rect" id="node7" title=" " alt="" coords="176,157,249,184"/>
+<area shape="rect" id="node13" href="$d0/d32/a01198.html" title=" " alt="" coords="233,247,352,273"/>
+<area shape="rect" id="node8" href="$d6/d1e/a01234.html" title=" " alt="" coords="377,247,481,273"/>
+<area shape="rect" id="node9" href="$dc/d9e/a01206.html" title=" " alt="" coords="289,157,387,184"/>
+<area shape="rect" id="node10" href="$d4/d5d/a01202.html" title=" " alt="" coords="375,81,439,108"/>
+<area shape="rect" id="node12" href="$d8/d15/a01218.html" title=" " alt="" coords="411,157,505,184"/>
+<area shape="rect" id="node11" title=" " alt="" coords="372,5,443,32"/>
+<area shape="rect" id="node14" href="$dd/de9/a01182.html" title="继承Qt 自定义文件 提升成为自己的组件, 修改窗口的值之后 保证相应的值 直接赋值到相应的内存中 如果关联了相应的 点击按钮, 按钮点击之后可以触发 数据更改" alt="" coords="427,336,505,363"/>
+<area shape="rect" id="node15" title=" " alt="" coords="505,247,584,273"/>
 </map>

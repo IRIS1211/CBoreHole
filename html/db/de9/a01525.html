@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;工作窗口 具体设置</title>
+<title>&#x202A;CBoreHole: &#x202A;格式化注释工具</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,18 +89,64 @@ $(document).ready(function(){initNavTree('db/de9/a01525.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;工作窗口 具体设置 </div>  </div>
+<div class="title">&#x202A;格式化注释工具 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><img src="&#x202A;../../../assets/pic/workWindows.png" alt="工作窗口预览界面" class="inline"/></p>
-<p class="DocNodeLTR">2.2.1 系统开启 摄像头,进入预览模式, 显示 <b>原始图像</b> 和 <b>展开图像</b> 2.2.1.1 可以根据原始图像或者展开图像 调整显示参数以及运行参数 2.2.2 点击 <b>开始拼接</b> 进入工作状态, 开始持续拼接 2.2.2.1 创建自定义文件 二进制 写入文件头内容, 2.2.2.2 抓取图像, 展开图像, 根据串口获取的数据 找到拼接图像的区域, 进行图像匹配获取图像的偏移值 2.2.2.3 将图像拼接之后, 显示出来 拼接图像. 2.2.2.4 将每次图像覆盖掉的区域 并列串口数据 写入串口文件中(每行图像外扩几个像素存储图像信息) 2.2.2.5 循环 写入图像 一定时间内 强制刷入图像避免图像过大造成内存崩溃</p>
-<p class="DocNodeLTR">2.2.3 点击 <b>完成拼接</b> 系统完成工作 2.2.3.1 释放文件, 刷入文件 刷入硬盘 2.2.3.2 关闭串口数据 关闭不必要线程, 程序进入基础状态</p>
-<p class="DocNodeLTR">2.2.4 其他部分</p><ol type="1" class="DocNodeLTR">
-<li>&#x202A;罗盘实时刷新电子罗盘角度,来自 串口数据实时接收, 1.1 罗盘样式为 提升的Wiget 组件, 需要考虑组件目录路径, 避免出现错误 1.2 罗盘使用 <a class="el" href="../../db/d32/a01122.html">GaugeCompass</a> 样式 组件</li>
+<div class="textblock"><h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md177"></a>
+介绍</h1>
+<p class="DocNodeLTR"><a href="&#x202A;https://www.atomineerutils.com/products.php">AtomineerUtils</a> 是国外的一款用于生成源代码注释的一款 VS 插件工具. 这款插件，支持 C、C++、C++/CLI、Java 语言等，由此可以看出其强大，注释的风格可以灵活配置。</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md178"></a>
+安装方法</h1>
+<p class="DocNodeLTR">软件是付费软件, 具体使用版本见附件 <a href="&#x202A;../../AtomineerUtils使用说明/AtomineerUtils936.zip">AtomineerUtils936</a> 也可以在参考链接给出的网页内找到 使用方法.</p>
+<p class="DocNodeLTR">具体安装方法可以看压缩包内附件文档,</p>
+<hr  />
+<p class="DocNodeLTR"> 0. 正常安装相应文件夹内的VS插件,本人使用的是 VS2015 插件</p><ol type="1" class="DocNodeLTR">
+<li>&#x202A;第一次请务必断网进入VS，在插件里面把本工具的自动更新关闭掉，更新到最新版本将直接无法使用破解版本(如果刚好试用到期也不就不能用了)。</li>
 </ol>
-<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md72"></a>
-界面 UI 对应 name 标识</h2>
-<p class="DocNodeLTR">| <b>序号</b> | <b>界面标识(text)</b> | <b>对象类型</b> | <b>程序操作标识(objectName)</b> | <b>功能描述</b> | <b>备注</b> | |:---&mdash;:|:-----------&mdash;:|:--------------&mdash;:|:-------------------&mdash;:|:-----&mdash;:|:---&mdash;:| | 1 | 探灯亮度 | Qslider | hs_Light_light | 探灯亮度滑动调 | | 2 | 开始拼接 | QPushButton | btn_startWork | 开始工作点击按钮 | | 3 | 抓取图像 | QPushButton | btn_capture | 抓取一副图像 | | 4 | 开始录像 | QPushButton | btn_Record | 开始录像 | | 5 | 退出 | QPushButton | btn_work_exit | 退出窗口 | | 6 | 参数设置 | QPushButton | btn_vision_para | 设置显示参数 | | 7 | 硬件参数 | QPushButton | btn_syspara | 硬件参数设置 | | 8 | 缩小 | QPushButton | btn_zoomin | 缩放 缩小 | | 9 | 放大 | QPushButton | btn_zoomout | 缩放 放大 | | 10 | 上升 | QPushButton | btn_up | 上升移动 | | 11 | 下降 | QPushButton | btn_down | 下降移动 | | 12 | 左移 | QPushButton | btn_left | 左右移动 | | 13 | 右移 | QPushButton | btn_right | 左右移动 | | 14 | 重置 | QPushButton | btn_reset | 重置视图 | | 15 | 存储空间 | QProgressBar | pb_storage | 存储控件容量 | | 16 | 测孔编号 | QLineEdit | le_hole_num | 测孔编号 | | 17 | 原图像 | QLabel | lb_src | 原始图像 | | 18 | 探灯亮度 | QLabel | lb_Light_light | 探灯亮度 | | 19 | 电压 | QLabel | lb_battary | 电压值 | | 20 | Pitch角度 | QLabel | lb_pitch | | 21 | Roll 角度 | QLabel | lb_roll | | 22 | Head角度 | QLabel | lb_head | | 23 | 展开图像显示 | QLabel | lb_dst_p | 展开图像显示 | | 24 | 拼接大图显示 | QLabel | lb_dst | 大图显示 | | 25 | 深度位置 | QLabel | lb_loc | 深度值 | | 26 | 缩放比例 | QLabel | lb_ratio | 缩放深度 | | 27 | 罗盘控件 | <a class="el" href="../../db/d32/a01122.html">GaugeCompass</a> | wg_compass | 罗盘显示 | | 28 | 图像显示控件 | <a class="el" href="../../d6/d40/a01114.html" title="&#x202A;A qt open cv viewer gl.">CQtOpenCVViewerGl</a> | img_dst | 图像显示 GL | </p>
+<p class="DocNodeLTR">VS 2015之下的版本(未测试是否可用): 安装路径自己选的，然后找到：你的安装路径/visual studio 20**/Addins/AtomineerUtils/ 替换掉里面的Atomineer.Utils.dll就好了</p>
+<p class="DocNodeLTR">VS 2015版本: 替换位置: LocalAppData%/Microsoft/VisualStudio/14.0/Extensions/******(随机的名称)/ VS 2017版本: 替换位置: LocalAppData%/Microsoft/VisualStudio/15.0_******** (随机的名称) /Extensions/******(随机的名称)/</p>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;在相应文件夹内找到文件, 使用附件文件夹内的 同名文件替换掉里面的AtomineerProDocumentation.dll就好了</li>
+</ol>
+<p class="DocNodeLTR">可以在VS 的拓展目录<code>C:\Users\Chen\AppData\Local\Microsoft\VisualStudio\14.0\Extensions</code> 下搜索文件名可以快速找到</p>
+<p class="DocNodeLTR">例如个人最终的路径为</p>
+<blockquote class="doxtable DocNodeLTR">
+<p class="DocNodeLTR">C:/Users/Chen/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/g2iuajz1.bzo/AtomineerProDocumentation.dll </p>
+</blockquote>
+<p class="DocNodeLTR">PS:如果使用过程中出现路径错误的情况，菜单栏-&gt;工具-&gt;Atomineer...Trial-&gt;...options 进去点下确定出来就好了。</p>
+<p class="DocNodeLTR">或者进入安装路径找到AtomineerUtilsWizard.exe，通过一下配置向导</p>
+<hr  />
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md181"></a>
+使用方法说明</h1>
+<p class="DocNodeLTR">由于插件没有中文, 但是并不难理解, <br  />
+ 使用的详细方法可以分为以下几步</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md182"></a>
+1. VS 进入设置方法</h2>
+<p class="DocNodeLTR">工具-&gt;AtomineerProDocumentation Trail -&gt; Atominee Option</p>
+<p><img src="&#x202A;../../AtomineerUtils使用说明/atomineer_2.png" alt="进入方法" class="inline"/></p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md183"></a>
+2. 初始设定</h2>
+<p class="DocNodeLTR">建议点击 quick 选择设置方案,根据自己感觉比较好看的方式设定即可, 因为后续需求, 这里选择的方案是 doxygen 的方式, 后续可以根据注释生成项目文档 仅供参考</p>
+<p><img src="&#x202A;../../AtomineerUtils使用说明/atomineer_3.png" alt="初始设定" class="inline"/></p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md184"></a>
+3. 注释模板路径</h2>
+<p class="DocNodeLTR">在通用设置界面, 选择注释模板文件的搜索路径, 会先从给出的路径进行搜索,如果存在会优先使用,如果找不到就会使用程序默认的方式生成注释, 附件<a href="&#x202A;../../AtomineerUtils使用说明/DoxygenTemplates.xml">详细配置文档</a> 给出了自己的一份配置文件, 比较满意 如果自己感觉不舒服可以自己调整</p>
+<p><img src="&#x202A;../../AtomineerUtils使用说明/atomineer_4.png" alt="注释模板" class="inline"/></p>
+<p class="DocNodeLTR">在通用设置的上半部分还可以设置右键显示的快捷菜单和菜单栏二级菜单显示的内容</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md185"></a>
+4. 注释规则</h2>
+<p class="DocNodeLTR">可以根据不同的规则生成不同的注释, 这里使用较少, 暂时不了解怎么使用的,</p>
+<p><img src="&#x202A;../../AtomineerUtils使用说明/atomineer_5.png" alt="不同规则" class="inline"/></p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md186"></a>
+详细配置文档</h1>
+<p class="DocNodeLTR">详细配置文档定义了相应的行 执行相应的内容 在执行生成注释的时候会根据xml 配置文件以及在软件中的设置自动生成相关内容 <a href="&#x202A;../../AtomineerUtils使用说明/DoxygenTemplates.xml">详细配置文档</a></p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md187"></a>
+参考链接</h1>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;<a href="&#x202A;https://blog.windawings.com/reverse/atomineer-crack.html">Atomineer Pro Documentation Trial 9.36 Crack</a></li>
+<li>&#x202A;<a href="&#x202A;https://www.jb51.net/softs/577153.html">atomineer pro documentation utils(visual studio常用插件) V9.45 官方版</a></li>
+<li>&#x202A;<a href="&#x202A;https://blog.csdn.net/windawings/article/details/50607159">Atomineer Pro Documentation Trial 9.36 Cracked</a> </li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

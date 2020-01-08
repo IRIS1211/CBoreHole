@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/model/cslider.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/src/CamCapture.cc 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,56 +89,198 @@ $(document).ready(function(){initNavTree('d4/d3e/a00116_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">cslider.h</div>  </div>
+<div class="title">CamCapture.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d4/d3e/a00116.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CSLIDER_H</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CSLIDER_H</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QSlider&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QMouseEvent&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;QLabel&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d4/d34/a01298.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/d34/a01298.html">&#x202A;CSlider</a> : <span class="keyword">public</span> QSlider</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../stdafx.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define MAX_CAPTURE 4</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d2/d6e/a00966.html#a4bd2d5e4ee609ad2ceec43e97fe50660">   31</a></span>&#160;<a class="code" href="../../d2/d6e/a00966.html#a4bd2d5e4ee609ad2ceec43e97fe50660">&#x202A;CamCapture::CamCapture</a>(QObject *parent) : </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QThread(parent),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    mqa_writevideo_buffer_(new <a class="code" href="../../d0/d56/a01014.html">&#x202A;CQueue</a>&lt;cv::Mat&gt;(10))</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Q_OBJECT</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d4/d34/a01298.html#ab966c6a53f642a1ead50b2dbee480adf">&#x202A;CSlider</a>(QWidget  *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d4/d34/a01298.html#a2a5d6a071ffbe6f0f5727afc211b5fb9">&#x202A;Associate</a>(QLabel *label, <span class="keywordtype">int</span> *data, <span class="keywordtype">bool</span> over = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 通过 配置文件配置  </span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../da/d17/a01046.html#af6d9fdf36076101d9677d1cdc2f8302b">&#x202A;Camera</a>.<a class="code" href="../../da/d17/a01046.html#ae260c7f68f927a03887d6634f6f623ca">&#x202A;bEnable</a>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        LDebug(<span class="stringliteral">&quot;Use Cam:{}&quot;</span>, <a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../da/d17/a01046.html#af6d9fdf36076101d9677d1cdc2f8302b">&#x202A;Camera</a>.<a class="code" href="../../da/d17/a01046.html#acaa30247055f1edde2658734280e1b9f">&#x202A;nIndex</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a> = <span class="keyword">new</span> cv::VideoCapture(<a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../da/d17/a01046.html#af6d9fdf36076101d9677d1cdc2f8302b">&#x202A;Camera</a>.<a class="code" href="../../da/d17/a01046.html#acaa30247055f1edde2658734280e1b9f">&#x202A;nIndex</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::string file_path = <a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d0/d2b/a01010.html#a80d3a8bcb64807efd5755b4028a0ebf9">&#x202A;mDebug</a>-&gt;<a class="code" href="../../da/d17/a01046.html#a456e606693e3ff12de516092cd24a607">&#x202A;strDebugFilePath</a> \</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                + <span class="stringliteral">&quot;./test_camcapture.avi&quot;</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// 测试情况 打开文件替代 </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a> = <span class="keyword">new</span> cv::VideoCapture(file_path);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        LDebug(<span class="stringliteral">&quot;Use test file:{}&quot;</span>, file_path);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d2/d6e/a00966.html#a8520541f0914714fe138b2bbe986c32d">&#x202A;mb_capture_enable_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../d2/d6e/a00966.html#a3c3ceca5c417e904aba8e2ec25265a61">   63</a></span>&#160;<a class="code" href="../../d2/d6e/a00966.html#a3c3ceca5c417e904aba8e2ec25265a61">&#x202A;CamCapture::~CamCapture</a>()</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d2/d6e/a00966.html#a8520541f0914714fe138b2bbe986c32d">&#x202A;mb_capture_enable_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    requestInterruption();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d4/d34/a01298.html#a5c72f14d929ce90921f0d99491f2b33c">&#x202A;SetData</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../d4/d34/a01298.html#a9d13acd7b5c46c5bd77118a58ab1e393">   81</a></span>&#160;    QLabel *<a class="code" href="../../d4/d34/a01298.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;m_label_</a>;   </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../d4/d34/a01298.html#aad318afb125d485c019f9d54b3e92fd5">   82</a></span>&#160;    <span class="keywordtype">int</span> *<a class="code" href="../../d4/d34/a01298.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;m_data_</a>;   </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a>-&gt;isOpened())</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a>-&gt;release();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    quit();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// 清空数据并删除</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d2/d6e/a00966.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;mqa_capture_buffer_</a>-&gt;<a class="code" href="../../d0/d56/a01014.html#aecb92693aa7f2b4eb791930203cc39ea">&#x202A;Clear</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../d2/d6e/a00966.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;mqa_capture_buffer_</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../d2/d6e/a00966.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;mqa_capture_buffer_</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    wait();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif // CSLIDER_H</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// delete m_cap_buffer_;</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../d2/d6e/a00966.html#a37280d2e0cfb79c0efc4cb2a26c54f86">   97</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d2/d6e/a00966.html#a37280d2e0cfb79c0efc4cb2a26c54f86">&#x202A;CamCapture::Init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// 设定相应的 相机参数</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a>-&gt;isOpened())</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">// 设置 获取相机的参数 </span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a>-&gt;set(CV_CAP_PROP_FRAME_WIDTH, \</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                            <a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../da/d17/a01046.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../da/d17/a01046.html#a20bacc2aeb213d0bbdc756dcac1f91dd">&#x202A;nImgWidth</a>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a>-&gt;set(CV_CAP_PROP_FRAME_HEIGHT, \</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                            <a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;Image</a>.<a class="code" href="../../da/d17/a01046.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;Polar</a>.<a class="code" href="../../da/d17/a01046.html#aa721cf6d68764a514708e2407c4ff6bf">&#x202A;nImgHeight</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a>-&gt;set(CV_CAP_PROP_FPS, \</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                            <a class="code" href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a>-&gt;<a class="code" href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;mRunPara</a>.<a class="code" href="../../da/d17/a01046.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;Device</a>.<a class="code" href="../../da/d17/a01046.html#af6d9fdf36076101d9677d1cdc2f8302b">&#x202A;Camera</a>.<a class="code" href="../../da/d17/a01046.html#a42cf59cfae146a36d92a7df8edb79703">&#x202A;nFPS</a>);  <span class="comment">// 帧率 帧/秒</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        *<a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a> &gt;&gt; <a class="code" href="../../d2/d6e/a00966.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;ma_Frame_</a>;  <span class="comment">// 读取一帧 占用图像 // 判断相机是否打开成功</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        LInfo(<span class="stringliteral">&quot;Cam Open Success, FrameSize: ({},{})&quot;</span>, <a class="code" href="../../d2/d6e/a00966.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;ma_Frame_</a>.rows, <a class="code" href="../../d2/d6e/a00966.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;ma_Frame_</a>.cols);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="comment">// 摄像机打开失败 </span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        LError(<span class="stringliteral">&quot;CamCapture Error, Please Check Cam!&quot;</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// LDebug(&quot;Test Trace Log File line!&quot;);</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="../../d2/d6e/a00966.html#ab04aeb116e1fa0b05b79428db55f209e">  135</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d6e/a00966.html#ab04aeb116e1fa0b05b79428db55f209e">&#x202A;CamCapture::run</a>()</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="../../d2/d6e/a00966.html#afc5a803f219b312cd6f2bc0cf604651d">&#x202A;mi_img_index_</a> = 0;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// 对于 得到的原始图像 截取出来图像中心部分的 方形区域</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    cv::Rect frameRect = <a class="code" href="../../d7/d88/a01294.html#a29dc0b093427ee4ca1a9e195d4c78433">&#x202A;Utils_CV::GetCenterRect</a>(<a class="code" href="../../d7/d88/a01294.html#a3104bb7c29b83b4dfb4a38bd9e899ce5">&#x202A;Utils_CV::GetRect</a>(<a class="code" href="../../d2/d6e/a00966.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;ma_Frame_</a>));  <span class="comment">// 保证不会 溢出</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    cv::Mat tmp_mat;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">// 进入 相机 采集线程 </span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">while</span> (!isInterruptionRequested())</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="comment">// 如果点击程序执行之后 会停止在此处 可以换成新的 lock</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d2/d6e/a00966.html#a8520541f0914714fe138b2bbe986c32d">&#x202A;mb_capture_enable_</a>)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="../../d2/d6e/a00966.html#afea77c5388119e83970fd423b9ec5db3">&#x202A;mx_CameraCapture_</a>.lock();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a>-&gt;isOpened())</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            *<a class="code" href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a> &gt;&gt; <a class="code" href="../../d2/d6e/a00966.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;ma_Frame_</a>;   <span class="comment">// 读取一帧图像</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="../../d2/d6e/a00966.html#afc5a803f219b312cd6f2bc0cf604651d">&#x202A;mi_img_index_</a>++;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d2/d6e/a00966.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;ma_Frame_</a>.empty())</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                LError(<span class="stringliteral">&quot;Frame has no Data, Breakdown&quot;</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <a class="code" href="../../d2/d6e/a00966.html#a8520541f0914714fe138b2bbe986c32d">&#x202A;mb_capture_enable_</a> = <span class="keyword">false</span>;     <span class="comment">// 关闭采集功能</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <a class="code" href="../../d2/d6e/a00966.html#afea77c5388119e83970fd423b9ec5db3">&#x202A;mx_CameraCapture_</a>.unlock();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="comment">// 判断 获取到的图像尺寸 如果不满足设定值 则进行 一定的裁剪 避免出现问题</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="comment">// #TODO(SChen) 数据处理逻辑</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="comment">// 如果此处图像一直是满的 则这里一直循环等待处理 避免采取过快处理开不过来 多线程阻塞</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="comment">// while (gQ_capture.size() == MAX_CAPTURE);</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            tmp_mat = <a class="code" href="../../d2/d6e/a00966.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;ma_Frame_</a>(frameRect);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">if</span> (tmp_mat.empty())</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                LError(<span class="stringliteral">&quot;rect Image is Empty&quot;</span>);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="comment">// gQ_capture.push(tmp_mat);</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#if 1</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="comment">// 此处可以设计为 多线程队列, 不消耗掉 就不执行的操作</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="comment">// 目前使用的是 满队列 返回false 但是数据没有进入队列</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="../../d2/d6e/a00966.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;mqa_capture_buffer_</a>-&gt;<a class="code" href="../../d0/d56/a01014.html#aef66b544a9f5bbf861f21767a75227ea">&#x202A;Full</a>())</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <a class="code" href="../../d2/d6e/a00966.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;mqa_capture_buffer_</a>-&gt;<a class="code" href="../../d0/d56/a01014.html#a282e80149935f212e9c6c6e8ef9d7374">&#x202A;Push</a>(<a class="code" href="../../d2/d6e/a00966.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;ma_Frame_</a>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            LDebug(<span class="stringliteral">&quot;imgcnt:{}, buffer:{}&quot;</span>, <a class="code" href="../../d2/d6e/a00966.html#afc5a803f219b312cd6f2bc0cf604651d">&#x202A;mi_img_index_</a>, <a class="code" href="../../d2/d6e/a00966.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;mqa_capture_buffer_</a>-&gt;<a class="code" href="../../d0/d56/a01014.html#a979820688e76c1997aa0d36d120df98f">&#x202A;Size</a>());</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="comment">// 同时将数据压入写入数据流</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d2/d6e/a00966.html#af7fe40eb92e15b37ede3690ccddb523a">&#x202A;mqa_writevideo_buffer_</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                <a class="code" href="../../d2/d6e/a00966.html#af7fe40eb92e15b37ede3690ccddb523a">&#x202A;mqa_writevideo_buffer_</a>-&gt;<a class="code" href="../../d0/d56/a01014.html#a282e80149935f212e9c6c6e8ef9d7374">&#x202A;Push</a>(<a class="code" href="../../d2/d6e/a00966.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;ma_Frame_</a>);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                LError(<span class="stringliteral">&quot;Please Init Write Thread&quot;</span>);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <a class="code" href="../../d2/d6e/a00966.html#afea77c5388119e83970fd423b9ec5db3">&#x202A;mx_CameraCapture_</a>.unlock();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01298_html_a5c72f14d929ce90921f0d99491f2b33c"><div class="ttname"><a href="../../d4/d34/a01298.html#a5c72f14d929ce90921f0d99491f2b33c">&#x202A;CSlider::SetData</a></div><div class="ttdeci">&#x202A;void SetData(void)</div><div class="ttdoc">&#x202A;Sets the data 根据滑动条的值 实时更新 label 的值</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00066">cslider.cpp:66</a></div></div>
-<div class="ttc" id="aa01298_html_a9d13acd7b5c46c5bd77118a58ab1e393"><div class="ttname"><a href="../../d4/d34/a01298.html#a9d13acd7b5c46c5bd77118a58ab1e393">&#x202A;CSlider::m_label_</a></div><div class="ttdeci">&#x202A;QLabel * m_label_</div><div class="ttdoc">&#x202A;记录显示数据的label 指针</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3e/a00116_source.html#l00081">cslider.h:81</a></div></div>
-<div class="ttc" id="aa01298_html_aad318afb125d485c019f9d54b3e92fd5"><div class="ttname"><a href="../../d4/d34/a01298.html#aad318afb125d485c019f9d54b3e92fd5">&#x202A;CSlider::m_data_</a></div><div class="ttdeci">&#x202A;int * m_data_</div><div class="ttdoc">&#x202A;相关连的值, 更改之后相应的值 会改变</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3e/a00116_source.html#l00082">cslider.h:82</a></div></div>
-<div class="ttc" id="aa01298_html_a2a5d6a071ffbe6f0f5727afc211b5fb9"><div class="ttname"><a href="../../d4/d34/a01298.html#a2a5d6a071ffbe6f0f5727afc211b5fb9">&#x202A;CSlider::Associate</a></div><div class="ttdeci">&#x202A;bool Associate(QLabel *label, int *data, bool over=true)</div><div class="ttdoc">&#x202A;Associates</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00046">cslider.cpp:46</a></div></div>
-<div class="ttc" id="aa01298_html_ab966c6a53f642a1ead50b2dbee480adf"><div class="ttname"><a href="../../d4/d34/a01298.html#ab966c6a53f642a1ead50b2dbee480adf">&#x202A;CSlider::CSlider</a></div><div class="ttdeci">&#x202A;CSlider(QWidget *parent=nullptr)</div><div class="ttdoc">&#x202A;Initializes a new instance of the CSlider class</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/a00113_source.html#l00022">cslider.cpp:22</a></div></div>
-<div class="ttc" id="aa01298_html"><div class="ttname"><a href="../../d4/d34/a01298.html">&#x202A;CSlider</a></div><div class="ttdoc">&#x202A;自定义滑动条实现, 滑动之后更改相应的值和相应的关系</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3e/a00116_source.html#l00033">cslider.h:33</a></div></div>
+<div class="ttc" id="aa00966_html_a7b9f74c08dcc9ec30b259abd621ae185"><div class="ttname"><a href="../../d2/d6e/a00966.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;CamCapture::m_VideoCapture_</a></div><div class="ttdeci">&#x202A;cv::VideoCapture * m_VideoCapture_</div><div class="ttdoc">&#x202A;视频抓取对象</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00037">CamCapture.h:37</a></div></div>
+<div class="ttc" id="aa01046_html_a1b1f21581cf398c15060fe53199662d9"><div class="ttname"><a href="../../da/d17/a01046.html#a1b1f21581cf398c15060fe53199662d9">&#x202A;RunPara::Device</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice Device</div></div>
+<div class="ttc" id="aa01046_html_a60da1f28ccd55c2da9b464212ccea72a"><div class="ttname"><a href="../../da/d17/a01046.html#a60da1f28ccd55c2da9b464212ccea72a">&#x202A;RunPara::Image</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage Image</div></div>
+<div class="ttc" id="aa01014_html_aef66b544a9f5bbf861f21767a75227ea"><div class="ttname"><a href="../../d0/d56/a01014.html#aef66b544a9f5bbf861f21767a75227ea">&#x202A;CQueue::Full</a></div><div class="ttdeci">&#x202A;bool Full(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00328">CQueue.h:328</a></div></div>
+<div class="ttc" id="aa01294_html_a29dc0b093427ee4ca1a9e195d4c78433"><div class="ttname"><a href="../../d7/d88/a01294.html#a29dc0b093427ee4ca1a9e195d4c78433">&#x202A;Utils_CV::GetCenterRect</a></div><div class="ttdeci">&#x202A;static cv::Rect GetCenterRect(const cv::Rect img_r, int width=-1, int height=-1)</div><div class="ttdoc">&#x202A;获取图像中心区域 的值</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00307">utils_cv.cc:307</a></div></div>
+<div class="ttc" id="aa01046_html_aa721cf6d68764a514708e2407c4ff6bf"><div class="ttname"><a href="../../da/d17/a01046.html#aa721cf6d68764a514708e2407c4ff6bf">&#x202A;RunPara::StImage::StImagePolar::nImgHeight</a></div><div class="ttdeci">&#x202A;int nImgHeight</div><div class="ttdoc">&#x202A;图像高度</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00117">runpara.h:117</a></div></div>
+<div class="ttc" id="aa01014_html_aecb92693aa7f2b4eb791930203cc39ea"><div class="ttname"><a href="../../d0/d56/a01014.html#aecb92693aa7f2b4eb791930203cc39ea">&#x202A;CQueue::Clear</a></div><div class="ttdeci">&#x202A;bool Clear(void)</div><div class="ttdoc">&#x202A;清空队列</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00345">CQueue.h:345</a></div></div>
+<div class="ttc" id="aa01046_html_af6d9fdf36076101d9677d1cdc2f8302b"><div class="ttname"><a href="../../da/d17/a01046.html#af6d9fdf36076101d9677d1cdc2f8302b">&#x202A;RunPara::StDevice::Camera</a></div><div class="ttdeci">&#x202A;struct RunPara::StDevice::StCamera Camera</div><div class="ttdoc">&#x202A;初始化参数构造</div></div>
+<div class="ttc" id="aa00966_html_a3c3ceca5c417e904aba8e2ec25265a61"><div class="ttname"><a href="../../d2/d6e/a00966.html#a3c3ceca5c417e904aba8e2ec25265a61">&#x202A;CamCapture::~CamCapture</a></div><div class="ttdeci">&#x202A;~CamCapture(void) override</div><div class="ttdoc">&#x202A;Finalizes an instance of the CamCapture class</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3e/a00116_source.html#l00063">CamCapture.cc:63</a></div></div>
+<div class="ttc" id="aa01046_html_acaa30247055f1edde2658734280e1b9f"><div class="ttname"><a href="../../da/d17/a01046.html#acaa30247055f1edde2658734280e1b9f">&#x202A;RunPara::StDevice::StCamera::nIndex</a></div><div class="ttdeci">&#x202A;int nIndex</div><div class="ttdoc">&#x202A;定义摄像头索引值</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00203">runpara.h:203</a></div></div>
+<div class="ttc" id="aa01014_html_a282e80149935f212e9c6c6e8ef9d7374"><div class="ttname"><a href="../../d0/d56/a01014.html#a282e80149935f212e9c6c6e8ef9d7374">&#x202A;CQueue::Push</a></div><div class="ttdeci">&#x202A;bool Push(T &amp;data)</div><div class="ttdoc">&#x202A;队列中加入新的 对象 根据情况决定 满信号之后 新数据丢弃或者等待</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00114">CQueue.h:114</a></div></div>
+<div class="ttc" id="aa01046_html_ae260c7f68f927a03887d6634f6f623ca"><div class="ttname"><a href="../../da/d17/a01046.html#ae260c7f68f927a03887d6634f6f623ca">&#x202A;RunPara::StDevice::StCamera::bEnable</a></div><div class="ttdeci">&#x202A;int bEnable</div><div class="ttdoc">&#x202A;使用相机标志位 1 使用相机 0 不使用</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00202">runpara.h:202</a></div></div>
+<div class="ttc" id="aa01046_html_a20bacc2aeb213d0bbdc756dcac1f91dd"><div class="ttname"><a href="../../da/d17/a01046.html#a20bacc2aeb213d0bbdc756dcac1f91dd">&#x202A;RunPara::StImage::StImagePolar::nImgWidth</a></div><div class="ttdeci">&#x202A;int nImgWidth</div><div class="ttdoc">&#x202A;图像宽度</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00116">runpara.h:116</a></div></div>
+<div class="ttc" id="aa01014_html_a979820688e76c1997aa0d36d120df98f"><div class="ttname"><a href="../../d0/d56/a01014.html#a979820688e76c1997aa0d36d120df98f">&#x202A;CQueue::Size</a></div><div class="ttdeci">&#x202A;int Size()</div><div class="ttdoc">&#x202A;Gets the Size 返回当前队列长度</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00304">CQueue.h:304</a></div></div>
+<div class="ttc" id="aa01046_html_a76b56f70107ff342985f6d8bef2fa3ba"><div class="ttname"><a href="../../da/d17/a01046.html#a76b56f70107ff342985f6d8bef2fa3ba">&#x202A;RunPara::StImage::Polar</a></div><div class="ttdeci">&#x202A;struct RunPara::StImage::StImagePolar Polar</div></div>
+<div class="ttc" id="aa00966_html_af7fe40eb92e15b37ede3690ccddb523a"><div class="ttname"><a href="../../d2/d6e/a00966.html#af7fe40eb92e15b37ede3690ccddb523a">&#x202A;CamCapture::mqa_writevideo_buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * mqa_writevideo_buffer_</div><div class="ttdoc">&#x202A;设置存储队列, 用于存储 原始视频流</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00041">CamCapture.h:41</a></div></div>
+<div class="ttc" id="aa00966_html_a4bd2d5e4ee609ad2ceec43e97fe50660"><div class="ttname"><a href="../../d2/d6e/a00966.html#a4bd2d5e4ee609ad2ceec43e97fe50660">&#x202A;CamCapture::CamCapture</a></div><div class="ttdeci">&#x202A;CamCapture(QObject *parent=nullptr)</div><div class="ttdoc">&#x202A;Camera 抓取线程初始化</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3e/a00116_source.html#l00031">CamCapture.cc:31</a></div></div>
+<div class="ttc" id="aa01294_html_a3104bb7c29b83b4dfb4a38bd9e899ce5"><div class="ttname"><a href="../../d7/d88/a01294.html#a3104bb7c29b83b4dfb4a38bd9e899ce5">&#x202A;Utils_CV::GetRect</a></div><div class="ttdeci">&#x202A;static cv::Rect GetRect(const cv::Mat &amp;img)</div><div class="ttdoc">&#x202A;返回图像的矩形区域</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00285">utils_cv.cc:285</a></div></div>
+<div class="ttc" id="aa01010_html_a80d3a8bcb64807efd5755b4028a0ebf9"><div class="ttname"><a href="../../d0/d2b/a01010.html#a80d3a8bcb64807efd5755b4028a0ebf9">&#x202A;Config::mDebug</a></div><div class="ttdeci">&#x202A;RunPara::StCFG::StDebug * mDebug</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00035">Config.h:35</a></div></div>
+<div class="ttc" id="aa00966_html_ab04aeb116e1fa0b05b79428db55f209e"><div class="ttname"><a href="../../d2/d6e/a00966.html#ab04aeb116e1fa0b05b79428db55f209e">&#x202A;CamCapture::run</a></div><div class="ttdeci">&#x202A;void run() override</div><div class="ttdoc">&#x202A;线程循环进程, 重写 run 函数</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3e/a00116_source.html#l00135">CamCapture.cc:135</a></div></div>
+<div class="ttc" id="aa01046_html_a456e606693e3ff12de516092cd24a607"><div class="ttname"><a href="../../da/d17/a01046.html#a456e606693e3ff12de516092cd24a607">&#x202A;RunPara::StCFG::StDebug::strDebugFilePath</a></div><div class="ttdeci">&#x202A;std::string strDebugFilePath</div><div class="ttdoc">&#x202A;测试模式下 输入 输出路径</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00274">runpara.h:274</a></div></div>
+<div class="ttc" id="aa01046_html_a42cf59cfae146a36d92a7df8edb79703"><div class="ttname"><a href="../../da/d17/a01046.html#a42cf59cfae146a36d92a7df8edb79703">&#x202A;RunPara::StDevice::StCamera::nFPS</a></div><div class="ttdeci">&#x202A;int nFPS</div><div class="ttdoc">&#x202A;相机抓取 FPS</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00206">runpara.h:206</a></div></div>
+<div class="ttc" id="aa00966_html_afc5a803f219b312cd6f2bc0cf604651d"><div class="ttname"><a href="../../d2/d6e/a00966.html#afc5a803f219b312cd6f2bc0cf604651d">&#x202A;CamCapture::mi_img_index_</a></div><div class="ttdeci">&#x202A;int mi_img_index_</div><div class="ttdoc">&#x202A;设置 图像索引值</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00035">CamCapture.h:35</a></div></div>
+<div class="ttc" id="aa01010_html_a3f1c590ef3c4492e16830021d2867c45"><div class="ttname"><a href="../../d0/d2b/a01010.html#a3f1c590ef3c4492e16830021d2867c45">&#x202A;Config::mRunPara</a></div><div class="ttdeci">&#x202A;RunPara mRunPara</div><div class="ttdoc">&#x202A;系统运行参数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d16/a00029_source.html#l00034">Config.h:34</a></div></div>
+<div class="ttc" id="aa00044_html_a21a3f473a04332ba5d1dd033517f0570"><div class="ttname"><a href="../../d5/df9/a00044.html#a21a3f473a04332ba5d1dd033517f0570">&#x202A;gConfig</a></div><div class="ttdeci">&#x202A;Config * gConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00014">main.cpp:14</a></div></div>
+<div class="ttc" id="aa00966_html_a2fe8acbc4a8218e9fe7666cc90160dcd"><div class="ttname"><a href="../../d2/d6e/a00966.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;CamCapture::mqa_capture_buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * mqa_capture_buffer_</div><div class="ttdoc">&#x202A;采集到的图像数据</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00042">CamCapture.h:42</a></div></div>
+<div class="ttc" id="aa01014_html"><div class="ttname"><a href="../../d0/d56/a01014.html">&#x202A;CQueue</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00034">CQueue.h:34</a></div></div>
+<div class="ttc" id="aa00966_html_a8520541f0914714fe138b2bbe986c32d"><div class="ttname"><a href="../../d2/d6e/a00966.html#a8520541f0914714fe138b2bbe986c32d">&#x202A;CamCapture::mb_capture_enable_</a></div><div class="ttdeci">&#x202A;bool mb_capture_enable_</div><div class="ttdoc">&#x202A;使能 抓取,</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00040">CamCapture.h:40</a></div></div>
+<div class="ttc" id="aa00966_html_a37280d2e0cfb79c0efc4cb2a26c54f86"><div class="ttname"><a href="../../d2/d6e/a00966.html#a37280d2e0cfb79c0efc4cb2a26c54f86">&#x202A;CamCapture::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdoc">&#x202A;初始化相机参数, 并打开相机对象</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3e/a00116_source.html#l00097">CamCapture.cc:97</a></div></div>
+<div class="ttc" id="aa00966_html_a0e49ba7f08cb0fb60c6e8f51fd68bc1f"><div class="ttname"><a href="../../d2/d6e/a00966.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;CamCapture::ma_Frame_</a></div><div class="ttdeci">&#x202A;cv::Mat ma_Frame_</div><div class="ttdoc">&#x202A;数据写入的对象,避免重复 申请空间</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00036">CamCapture.h:36</a></div></div>
+<div class="ttc" id="aa00966_html_afea77c5388119e83970fd423b9ec5db3"><div class="ttname"><a href="../../d2/d6e/a00966.html#afea77c5388119e83970fd423b9ec5db3">&#x202A;CamCapture::mx_CameraCapture_</a></div><div class="ttdeci">&#x202A;std::mutex mx_CameraCapture_</div><div class="ttdoc">&#x202A;图像采集锁</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/a00014_source.html#l00043">CamCapture.h:43</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_a97d35b535b8178474d1d1f002503b39.html">&#x202A;model</a></li><li class="navelem"><a class="el" href="../../d4/d3e/a00116.html">&#x202A;cslider.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_562250f81d431c2e4bf06f5f84066d42.html">&#x202A;src</a></li><li class="navelem"><a class="el" href="../../d4/d3e/a00116.html">&#x202A;CamCapture.cc</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

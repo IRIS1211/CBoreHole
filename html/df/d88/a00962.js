@@ -1,16 +1,19 @@
 var a00962 =
 [
-    [ "\u202AHEADER", "df/d88/a00962.html#aa246b1032e35a11c55679f098021d415acbca0ed8a4c1ef1ad741297fbd1b8980", null ],
-    [ "\u202ALENGTH", "df/d88/a00962.html#aa246b1032e35a11c55679f098021d415a2964568a8d2b983979d0248229d9e881", null ],
-    [ "\u202AANGLE", "df/d88/a00962.html#aa246b1032e35a11c55679f098021d415af8593e8b314f8cbbd5a62736e0b74ce6", null ],
-    [ "\u202AMAGNET", "df/d88/a00962.html#aa246b1032e35a11c55679f098021d415a154a0dccdffbecd2b72eca8dae66df82", null ],
-    [ "\u202AENCODE", "df/d88/a00962.html#aa246b1032e35a11c55679f098021d415a5a27ad208978b5c0ec1c12db4a0fa316", null ],
-    [ "\u202AAD", "df/d88/a00962.html#aa246b1032e35a11c55679f098021d415ae75ae449c68228f3183257fb75b87c62", null ],
-    [ "\u202AEXTRA", "df/d88/a00962.html#aa246b1032e35a11c55679f098021d415a99d369306f0884716925e556d567c8f4", null ],
-    [ "\u202AEXT", "df/d88/a00962.html#a5ce5204fb652d57a39d8ba8e6696585e", null ],
-    [ "\u202ALoadDefault", "df/d88/a00962.html#aa24a0dcdf4d736ae56136bae3d1aeffc", null ],
-    [ "\u202ASetSerialData", "df/d88/a00962.html#a2c8c8e3a9cc1edfa209fd56097a48b39", null ],
-    [ "\u202AUpdate", "df/d88/a00962.html#a28ab3184cc187365448c67a900de47e7", null ],
-    [ "\u202Adata_", "df/d88/a00962.html#a35de7cc7e1428d323b3cad8c2c99c6e1", null ],
-    [ "\u202Alen_", "df/d88/a00962.html#a570c8bdf507530bcf8f76dae37de486d", null ]
+    [ "\u202AThreadQueue", "df/d88/a00962.html#aa6f873bd0fc85b14663580dc3c98d904", null ],
+    [ "\u202A~ThreadQueue", "df/d88/a00962.html#aa9bb6b36d96a240f6827551d6df413ec", null ],
+    [ "\u202Aclear", "df/d88/a00962.html#a512d2e2988c5a845fd38d13020e4d6e0", null ],
+    [ "\u202AEnter", "df/d88/a00962.html#a4519f732c9728eefb866274a30370c4e", null ],
+    [ "\u202AEnterObj", "df/d88/a00962.html#a601dea6d7a0ac7065e82c082d6925b9a", null ],
+    [ "\u202AIsEmpty", "df/d88/a00962.html#af40a436dfc3c2bedd4ceb2c465fe3b95", null ],
+    [ "\u202AIsFull", "df/d88/a00962.html#a84e69e4e3c3cfdffa01e9adbc6f3c328", null ],
+    [ "\u202AOut", "df/d88/a00962.html#a8986765a7b79b6054d351616c991f100", null ],
+    [ "\u202AOutObj", "df/d88/a00962.html#a37b5c146156a3c86bed71bd96580fa3e", null ],
+    [ "\u202Asize", "df/d88/a00962.html#a104678e1c6363e2719cca591e0ed6eab", null ],
+    [ "\u202Afront_", "df/d88/a00962.html#a9c38987c4f53079d224520c0368a4e48", null ],
+    [ "\u202Alist", "df/d88/a00962.html#a8d533f4c148eeb978d346613c76d8a1e", null ],
+    [ "\u202AmList", "df/d88/a00962.html#ac6834249c21a1441ee04040f1622d47d", null ],
+    [ "\u202AmSize_", "df/d88/a00962.html#aaeefb01f0b3dcaeaf23d3e7bf369e943", null ],
+    [ "\u202AqueueMutex", "df/d88/a00962.html#afa87b5c0134a800d932099268a77f88e", null ],
+    [ "\u202Arear_", "df/d88/a00962.html#acf62e0767f2242ce42c42baac39cb6a7", null ]
 ];

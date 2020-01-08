@@ -1,0 +1,12 @@
+<map id="TEST_CASE" name="TEST_CASE">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,103,123"/>
+<area shape="rect" id="node2" href="$d9/de6/a01314.html#ac3b5b7bb59df157b42934895a67738e8" title="计算 校验和" alt="" coords="179,5,321,47"/>
+<area shape="rect" id="node3" href="$d9/de6/a01314.html#a14c76ec9d896d7eaa7193444f3277c59" title="Hexadecimal 2 character array hex 字符串 转换成 数组" alt="" coords="165,71,335,98"/>
+<area shape="rect" id="node6" href="$dd/de2/a01134.html#a24f89c030f45de5793c74b58e1a7e7b2" title="Sets frame header 根据罗盘类型设置通信协议" alt="" coords="151,122,349,149"/>
+<area shape="rect" id="node7" href="$d0/d39/a01138.html#a071b93d33a06aea86d23514be375d4cd" title="根据串口数据 更新当前类的值" alt="" coords="183,173,317,199"/>
+<area shape="rect" id="node4" href="$d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="398,71,559,98"/>
+<area shape="rect" id="node5" href="$d9/de6/a01314.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="608,71,763,98"/>
+<area shape="rect" id="node8" href="$d0/d39/a01138.html#a493001549dcfab8bf1a682b1d3e5763b" title="更新两字节值 // 第四位表示符号 0x10" alt="" coords="402,122,555,149"/>
+<area shape="rect" id="node9" href="$d0/d39/a01138.html#a53026c1637704e9053f734b36e5810bc" title="计算磁力数据 磁力值 &#45; 8,388,608～+ 8,388,607 （单位nT，" alt="" coords="397,173,560,199"/>
+<area shape="rect" id="node10" href="$d0/d39/a01138.html#a48e314ad1c6067b2cdf67a86bda5e1e6" title="计算编码器的值 根据编码器的int值 返回int 数据 uint 16 数据" alt="" coords="405,223,552,250"/>
+</map>

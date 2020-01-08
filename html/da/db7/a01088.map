@@ -1,9 +1,11 @@
-<map id="CamCapture" name="CamCapture">
-<area shape="rect" id="node1" title="摄像头 抓取对象, 循环抓取对象数据到缓冲队列中" alt="" coords="37,421,131,448"/>
-<area shape="rect" id="node2" title=" " alt="" coords="6,288,77,315"/>
-<area shape="rect" id="node3" href="$db/d32/a01122.html" title=" " alt="" coords="101,288,235,315"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,184,155,211"/>
-<area shape="rect" id="node5" title="STL class" alt="" coords="23,95,137,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="61,5,99,32"/>
-<area shape="rect" id="node7" href="$db/d32/a01122.html" title=" " alt="" coords="179,184,279,211"/>
+<map id="RunPara::StDevice::StCompass" name="RunPara::StDevice::StCompass">
+<area shape="rect" id="node1" title="电子罗盘参数 调整罗盘数据" alt="" coords="1040,102,1179,143"/>
+<area shape="rect" id="node2" title=" " alt="" coords="737,195,891,237"/>
+<area shape="rect" id="node3" title=" " alt="" coords="445,161,565,188"/>
+<area shape="rect" id="node4" title="STL class" alt="" coords="237,161,351,188"/>
+<area shape="rect" id="node6" title=" " alt="" coords="713,81,915,108"/>
+<area shape="rect" id="node5" title=" " alt="" coords="49,161,88,188"/>
+<area shape="rect" id="node7" href="$d5/d16/a01154.html" title="罗盘类型 结构体 用于列出不同种类的 罗盘" alt="" coords="446,48,563,75"/>
+<area shape="rect" id="node8" title="STL class" alt="" coords="254,15,334,41"/>
+<area shape="rect" id="node9" title="STL class" alt="" coords="5,7,132,49"/>
 </map>

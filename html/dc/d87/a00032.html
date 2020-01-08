@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/CamCapture.h 文件参考</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/constdefine.h 文件参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,34 +89,251 @@ $(document).ready(function(){initNavTree('dc/d87/a00032.html','../../');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">结构体</a>  </div>
+<a href="#var-members">变量</a>  </div>
   <div class="headertitle">
-<div class="title">CamCapture.h 文件参考</div>  </div>
+<div class="title">constdefine.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>&#x202A;实现相机采集类, 能够在另一个线程完成图像采集任务, 将采集到的图像存入自己的采集队列中, @changelog 2019/11/7 IRIS_Chen Created. @TODO(SChen): 改用 QT5 的方式重写多进程程序  
+<p>&#x202A;定义 大部分的全局 常量, 包含 define 和 const 变量 @changelog 2019/11/28 IRIS_Chen Created.  
 <a href="#details">更多...</a></p>
 
 <p><a href="../../dc/d87/a00032_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-结构体</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d73/a01090.html">CamCapture</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;摄像头 抓取对象, 循环抓取对象数据到缓冲队列中  <a href="../../da/d73/a01090.html#details">更多...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a433302ffff0649fa165e352add69b39a"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#a433302ffff0649fa165e352add69b39a">K_MAIN_CONFIG_FILE</a> [] = &quot;./Config/Config.yml&quot;</td></tr>
+<tr class="separator:a433302ffff0649fa165e352add69b39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37cc69fef747f0500fbb7d30c3858cd"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#ad37cc69fef747f0500fbb7d30c3858cd">K_NODE_RUNPARA</a> [] = &quot;RunPara&quot;</td></tr>
+<tr class="separator:ad37cc69fef747f0500fbb7d30c3858cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0718a9e828e0075edac91e10a5d2f1aa"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#a0718a9e828e0075edac91e10a5d2f1aa">K_LONGLONG_ARRAY_SIZE</a> = 60</td></tr>
+<tr class="separator:a0718a9e828e0075edac91e10a5d2f1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df889932de4701a8db6223acb561c39"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#a3df889932de4701a8db6223acb561c39">K_LONG_ARRAY_SIZE</a> = 30</td></tr>
+<tr class="separator:a3df889932de4701a8db6223acb561c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f1be9bf57e85c02e510057cd96ef0c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#ad9f1be9bf57e85c02e510057cd96ef0c">K_MEDIUM_ARRAY_SIZE</a> = 20</td></tr>
+<tr class="separator:ad9f1be9bf57e85c02e510057cd96ef0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09f17a780ae536bca76620964e009c9"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#ae09f17a780ae536bca76620964e009c9">K_SHORT_ARRAY_SIZE</a> = 10</td></tr>
+<tr class="separator:ae09f17a780ae536bca76620964e009c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac675a28c6fa4d61129467a531f6df5a4"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#ac675a28c6fa4d61129467a531f6df5a4">K_MINI_ARRAY_SIZE</a> = 5</td></tr>
+<tr class="separator:ac675a28c6fa4d61129467a531f6df5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3967d6fc384c9f165b20f370b5b3f0"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#afa3967d6fc384c9f165b20f370b5b3f0">K_COMPASS_HEAD_LEN</a> = 4</td></tr>
+<tr class="separator:afa3967d6fc384c9f165b20f370b5b3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d733587756cc1c1263aa6f27a7f722b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#a0d733587756cc1c1263aa6f27a7f722b">K_COMPASS_TYPE</a> = 2</td></tr>
+<tr class="separator:a0d733587756cc1c1263aa6f27a7f722b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5331e763f1b8e64b460eed460ec6de60"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#a5331e763f1b8e64b460eed460ec6de60">K_Timer_Time_MS</a> = 33</td></tr>
+<tr class="separator:a5331e763f1b8e64b460eed460ec6de60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cef84e707656a33ac95925cbe84af50"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#a8cef84e707656a33ac95925cbe84af50">KD_Serial_Buffer_Size</a> = 10</td></tr>
+<tr class="separator:a8cef84e707656a33ac95925cbe84af50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1befdeb2254bebc2b90f845a52bb9f7d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d87/a00032.html#a1befdeb2254bebc2b90f845a52bb9f7d">K_Dst_Img_Max_Num</a> = 5</td></tr>
+<tr class="memdesc:a1befdeb2254bebc2b90f845a52bb9f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;目标大图的 最大数量, 做轮换 处理  <a href="../../dc/d87/a00032.html#a1befdeb2254bebc2b90f845a52bb9f7d">更多...</a><br /></td></tr>
+<tr class="separator:a1befdeb2254bebc2b90f845a52bb9f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p class="DocNodeLTR">实现相机采集类, 能够在另一个线程完成图像采集任务, 将采集到的图像存入自己的采集队列中, @changelog 2019/11/7 IRIS_Chen Created. @TODO(SChen): 改用 QT5 的方式重写多进程程序 </p>
-<dl class="section copyright DocNodeLTR"><dt>版权所有</dt><dd>&#x202A;Copyright (c) 2019 IRIS.Chen IRIS Lab </dd></dl>
+<div class="textblock"><p class="DocNodeLTR">定义 大部分的全局 常量, 包含 define 和 const 变量 @changelog 2019/11/28 IRIS_Chen Created. </p>
+<dl class="section copyright DocNodeLTR"><dt>版权所有</dt><dd>&#x202A;Copyright (c) 2019 IRIS_Chen IRIS Lab </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">CamCapture.h</a> 中定义.</p>
-</div></div><!-- contents -->
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 中定义.</p>
+</div><h2 class="groupheader">变量说明</h2>
+<a id="afa3967d6fc384c9f165b20f370b5b3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3967d6fc384c9f165b20f370b5b3f0">&#9670;&nbsp;</a></span>K_COMPASS_HEAD_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int K_COMPASS_HEAD_LEN = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0d733587756cc1c1263aa6f27a7f722b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d733587756cc1c1263aa6f27a7f722b">&#9670;&nbsp;</a></span>K_COMPASS_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int K_COMPASS_TYPE = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1befdeb2254bebc2b90f845a52bb9f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1befdeb2254bebc2b90f845a52bb9f7d">&#9670;&nbsp;</a></span>K_Dst_Img_Max_Num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int K_Dst_Img_Max_Num = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&#x202A;目标大图的 最大数量, 做轮换 处理 </p>
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3df889932de4701a8db6223acb561c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df889932de4701a8db6223acb561c39">&#9670;&nbsp;</a></span>K_LONG_ARRAY_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int K_LONG_ARRAY_SIZE = 30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0718a9e828e0075edac91e10a5d2f1aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0718a9e828e0075edac91e10a5d2f1aa">&#9670;&nbsp;</a></span>K_LONGLONG_ARRAY_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int K_LONGLONG_ARRAY_SIZE = 60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a433302ffff0649fa165e352add69b39a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a433302ffff0649fa165e352add69b39a">&#9670;&nbsp;</a></span>K_MAIN_CONFIG_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char K_MAIN_CONFIG_FILE[] = &quot;./Config/Config.yml&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad9f1be9bf57e85c02e510057cd96ef0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f1be9bf57e85c02e510057cd96ef0c">&#9670;&nbsp;</a></span>K_MEDIUM_ARRAY_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int K_MEDIUM_ARRAY_SIZE = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac675a28c6fa4d61129467a531f6df5a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac675a28c6fa4d61129467a531f6df5a4">&#9670;&nbsp;</a></span>K_MINI_ARRAY_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int K_MINI_ARRAY_SIZE = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00025">25</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad37cc69fef747f0500fbb7d30c3858cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad37cc69fef747f0500fbb7d30c3858cd">&#9670;&nbsp;</a></span>K_NODE_RUNPARA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char K_NODE_RUNPARA[] = &quot;RunPara&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae09f17a780ae536bca76620964e009c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09f17a780ae536bca76620964e009c9">&#9670;&nbsp;</a></span>K_SHORT_ARRAY_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int K_SHORT_ARRAY_SIZE = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00024">24</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5331e763f1b8e64b460eed460ec6de60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5331e763f1b8e64b460eed460ec6de60">&#9670;&nbsp;</a></span>K_Timer_Time_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int K_Timer_Time_MS = 33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8cef84e707656a33ac95925cbe84af50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cef84e707656a33ac95925cbe84af50">&#9670;&nbsp;</a></span>KD_Serial_Buffer_Size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int KD_Serial_Buffer_Size = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../dc/d87/a00032_source.html">constdefine.h</a> 第 <a class="el" href="../../dc/d87/a00032_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../dc/d87/a00032.html">&#x202A;CamCapture.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../dc/d87/a00032.html">&#x202A;constdefine.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

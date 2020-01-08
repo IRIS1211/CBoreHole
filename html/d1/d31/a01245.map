@@ -1,5 +1,4 @@
-<map id="QcLabelItem" name="QcLabelItem">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,100,181"/>
-<area shape="rect" id="node2" href="$d0/d88/a01231.html" title=" " alt="" coords="21,80,85,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="17,5,88,32"/>
+<map id="QImgLabel" name="QImgLabel">
+<area shape="rect" id="node1" title="自定义 label 能够完成图像显示, 继承事件," alt="" coords="5,80,89,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="16,5,79,32"/>
 </map>

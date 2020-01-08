@@ -1,10 +1,13 @@
 var a01002 =
 [
-    [ "\u202ASerialData", "d2/dd5/a01002.html#ae35193380915a1a21e06d53d45e71e2b", null ],
-    [ "\u202ACharArr2Str", "d2/dd5/a01002.html#ade93d67c2ca12594170e9223af9c21b7", null ],
-    [ "\u202ASetFrameHeader", "d2/dd5/a01002.html#abae643e4c6cef8e149d0be5910b8bbfc", null ],
-    [ "\u202AStr2CharArr", "d2/dd5/a01002.html#a73c1b6474d82fb88844ea63d54a19b1d", null ],
-    [ "\u202Adat_len_", "d2/dd5/a01002.html#a16ffc76f51bee6ac5a129ae6577aa5b5", null ],
-    [ "\u202Adata_", "d2/dd5/a01002.html#ad9ed7d32daec135c2637e7afa08b9c1b", null ],
-    [ "\u202Ahead_", "d2/dd5/a01002.html#ae632e372fdcfa58cb191a9c0a23d82e4", null ]
+    [ "\u202AStAnswer", "d2/dd5/a01002.html#dc/d81/a01006", [
+      [ "\u202AProgress", "d2/dd5/a01002.html#adb5c9a8de303b03a30bd1a2086762705", null ],
+      [ "\u202AResidual", "d2/dd5/a01002.html#adb8b1d5c7289b49421217dce140d4244", null ],
+      [ "\u202AResult", "d2/dd5/a01002.html#adea1f3c05c85a13bd9b4cea147f79f94", null ],
+      [ "\u202AStartOK", "d2/dd5/a01002.html#ac0a2b2821ee57954bb2812a8f7a60de5", null ]
+    ] ],
+    [ "\u202ACalibrate_Time", "d2/dd5/a01002.html#afb073012e9c46b3a56b643ab4a1fa245", null ],
+    [ "\u202ACommBits", "d2/dd5/a01002.html#a5e1f32fca6e13783bbaf82b80cb9a9e8", null ],
+    [ "\u202AHexAnswer", "d2/dd5/a01002.html#a76e000d4213c0cf8f953d8fc8b4187f7", null ],
+    [ "\u202AStatusString", "d2/dd5/a01002.html#a5d6a41e36c7ccb662c05f63b875f39f3", null ]
 ];

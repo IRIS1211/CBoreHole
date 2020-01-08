@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/model/cdialog.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/model/GaugeCompass.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,65 +89,87 @@ $(document).ready(function(){initNavTree('d1/d44/a00098_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">cdialog.h</div>  </div>
+<div class="title">GaugeCompass.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d1/d44/a00098.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CDIALOG_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CDIALOG_H</span></div>
+<a href="../../d1/d44/a00098.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAUGECOMPASS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAUGECOMPASS_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80">    8</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80">&#x202A;CDialogType</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80afb03bb0656c9ea9c4f8a1423eb035052">   10</a></span>&#160;    <a class="code" href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80afb03bb0656c9ea9c4f8a1423eb035052">&#x202A;CDialogType_Unknown</a> = 0,</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80a2b726f2ac9e59c42e58e740f86eba856">   11</a></span>&#160;    <a class="code" href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80a2b726f2ac9e59c42e58e740f86eba856">&#x202A;CDialogType_Warnning</a> = 1,   <span class="comment">//  警告</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80ae055aab954d8b4fa37a7e868fae96fcf">   12</a></span>&#160;    <a class="code" href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80ae055aab954d8b4fa37a7e868fae96fcf">&#x202A;CDialogType_Ok</a> = 2          <span class="comment">//  成功</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../de/df7/a00418.html">&#x202A;Ui</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">class </span><a class="code" href="../../d0/d00/a01286.html">&#x202A;CDialog</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d0/d00/a01286.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d0/d00/a01286.html">&#x202A;CDialog</a> : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d00/a01286.html#ae3a42465eaf25b7ac506e93339cf274f">&#x202A;CDialog</a>(<a class="code" href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80">&#x202A;CDialogType</a> type,<span class="keyword">const</span> QString &amp;msg,QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../d0/d00/a01286.html#a9ef071c98365a6387a533ee43f7bbdd0">&#x202A;~CDialog</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// 默认 定时3000ms</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d0/d00/a01286.html#a9af63c38c2387d35cc0a2d2d6bde70d4">&#x202A;StartTimer</a>(<span class="keywordtype">int</span> time_ms = 3000);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d0/d00/a01286.html#af65ed9aa2b487d85e3802751b963fed1">&#x202A;InitFrame</a>(<span class="keyword">const</span> QString &amp;msg);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Ui::CDialog *ui;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d0/d00/a01286.html#a43d216735d32a58348de43fdeba0f752">   34</a></span>&#160;    <a class="code" href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80">&#x202A;CDialogType</a> <a class="code" href="../../d0/d00/a01286.html#a43d216735d32a58348de43fdeba0f752">&#x202A;m_type</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d0/d00/a01286.html#a83610a56aa4faa34b36e129854886f27">   35</a></span>&#160;    QTimer *<a class="code" href="../../d0/d00/a01286.html#a83610a56aa4faa34b36e129854886f27">&#x202A;m_timer</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/dc2/a00104.html">&#x202A;./qcgaugewidget.h</a>&quot;</span>    <span class="comment">// 包含本文件夹内  仪表盘的实现</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/d8b/a00406.html">&#x202A;Ui</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d2e/a01194.html">&#x202A;GaugeCompass</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d9/d2e/a01194.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d2e/a01194.html">&#x202A;GaugeCompass</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/d2e/a01194.html#aa64a89868f350934162deec6001bbb8b">&#x202A;GaugeCompass</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../d9/d2e/a01194.html#a04306733615f5b03375507f626879f14">&#x202A;~GaugeCompass</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d9/d2e/a01194.html#ae2ae6e7104e6c5a7226dc6d77d0ad654">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d2e/a01194.html#ae2ae6e7104e6c5a7226dc6d77d0ad654">&#x202A;SetValue</a>(<span class="keywordtype">float</span> value)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="../../d9/d2e/a01194.html#a14ab8fb400b289864fc083355cd02969">&#x202A;m_value</a> = value;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif // CDIALOG_H</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d9/d2e/a01194.html#a4031103b42226689d53e2902dc639521">   49</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d9/d2e/a01194.html#a4031103b42226689d53e2902dc639521">&#x202A;GetValue</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> static_cast&lt;float&gt;(<a class="code" href="../../d9/d2e/a01194.html#a14ab8fb400b289864fc083355cd02969">&#x202A;m_value</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d9/d2e/a01194.html#a5addca6967d7af19cf06de959b400f88">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d2e/a01194.html#a5addca6967d7af19cf06de959b400f88">&#x202A;StartTimer</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        this-&gt;<a class="code" href="../../d9/d2e/a01194.html#afcf32e56cf7c8d59a57a3b08b11750c4">&#x202A;pTimer</a>-&gt;start(100);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d9/d2e/a01194.html#ab11f07718a8657f8cf29c81acc0efa74">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d2e/a01194.html#ab11f07718a8657f8cf29c81acc0efa74">&#x202A;StopTimer</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        this-&gt;<a class="code" href="../../d9/d2e/a01194.html#afcf32e56cf7c8d59a57a3b08b11750c4">&#x202A;pTimer</a>-&gt;stop();   <span class="comment">// 设定停止计时器 避免更新</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d2e/a01194.html#a103143429fbb76de11d5f397983657b4">&#x202A;slot_setValue</a>();  <span class="comment">// 更新界面的值</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Ui::GaugeCompass *ui;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d9/d2e/a01194.html#a854eb9317af084557e6b76e197b0e078">   68</a></span>&#160;    <a class="code" href="../../d0/d32/a01198.html">&#x202A;QcGaugeWidget</a> *<a class="code" href="../../d9/d2e/a01194.html#a854eb9317af084557e6b76e197b0e078">&#x202A;mCompassGauge</a>;   <span class="comment">// 罗盘仪表盘</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d9/d2e/a01194.html#af276ab6ea16a804f6ccf52df5892f876">   69</a></span>&#160;    <a class="code" href="../../d6/d1e/a01234.html">&#x202A;QcNeedleItem</a> *<a class="code" href="../../d9/d2e/a01194.html#af276ab6ea16a804f6ccf52df5892f876">&#x202A;mCompassPointer</a>;  <span class="comment">// 罗盘指针实现</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//  设置 定时刷新指南针</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d9/d2e/a01194.html#afcf32e56cf7c8d59a57a3b08b11750c4">   72</a></span>&#160;    QTimer *<a class="code" href="../../d9/d2e/a01194.html#afcf32e56cf7c8d59a57a3b08b11750c4">&#x202A;pTimer</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d9/d2e/a01194.html#a14ab8fb400b289864fc083355cd02969">   75</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d9/d2e/a01194.html#a14ab8fb400b289864fc083355cd02969">&#x202A;m_value</a>;    <span class="comment">// 保留指针 方向角度值</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // GAUGECOMPASS_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00098_html_a56d9b6683bc52015612a47f4625c2a80a2b726f2ac9e59c42e58e740f86eba856"><div class="ttname"><a href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80a2b726f2ac9e59c42e58e740f86eba856">&#x202A;CDialogType_Warnning</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00011">cdialog.h:11</a></div></div>
-<div class="ttc" id="aa01286_html"><div class="ttname"><a href="../../d0/d00/a01286.html">&#x202A;CDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00020">cdialog.h:20</a></div></div>
-<div class="ttc" id="aa00098_html_a56d9b6683bc52015612a47f4625c2a80"><div class="ttname"><a href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80">&#x202A;CDialogType</a></div><div class="ttdeci">&#x202A;CDialogType</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00008">cdialog.h:8</a></div></div>
-<div class="ttc" id="aa01286_html_a83610a56aa4faa34b36e129854886f27"><div class="ttname"><a href="../../d0/d00/a01286.html#a83610a56aa4faa34b36e129854886f27">&#x202A;CDialog::m_timer</a></div><div class="ttdeci">&#x202A;QTimer * m_timer</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00035">cdialog.h:35</a></div></div>
-<div class="ttc" id="aa00418_html"><div class="ttname"><a href="../../de/df7/a00418.html">&#x202A;Ui</a></div><div class="ttdoc">&#x202A;QT UI 用于生成 ui组件</div><div class="ttdef"><b>Definition:</b> <a href="../../de/de1/a00065_source.html#l00020">readwindow.h:20</a></div></div>
-<div class="ttc" id="aa00098_html_a56d9b6683bc52015612a47f4625c2a80ae055aab954d8b4fa37a7e868fae96fcf"><div class="ttname"><a href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80ae055aab954d8b4fa37a7e868fae96fcf">&#x202A;CDialogType_Ok</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00012">cdialog.h:12</a></div></div>
-<div class="ttc" id="aa01286_html_a43d216735d32a58348de43fdeba0f752"><div class="ttname"><a href="../../d0/d00/a01286.html#a43d216735d32a58348de43fdeba0f752">&#x202A;CDialog::m_type</a></div><div class="ttdeci">&#x202A;CDialogType m_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00034">cdialog.h:34</a></div></div>
-<div class="ttc" id="aa01286_html_a9af63c38c2387d35cc0a2d2d6bde70d4"><div class="ttname"><a href="../../d0/d00/a01286.html#a9af63c38c2387d35cc0a2d2d6bde70d4">&#x202A;CDialog::StartTimer</a></div><div class="ttdeci">&#x202A;void StartTimer(int time_ms=3000)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d77/a00095_source.html#l00025">cdialog.cpp:25</a></div></div>
-<div class="ttc" id="aa01286_html_a9ef071c98365a6387a533ee43f7bbdd0"><div class="ttname"><a href="../../d0/d00/a01286.html#a9ef071c98365a6387a533ee43f7bbdd0">&#x202A;CDialog::~CDialog</a></div><div class="ttdeci">&#x202A;~CDialog()</div><div class="ttdoc">&#x202A;CDialog::~CDialog</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d77/a00095_source.html#l00019">cdialog.cpp:19</a></div></div>
-<div class="ttc" id="aa01286_html_af65ed9aa2b487d85e3802751b963fed1"><div class="ttname"><a href="../../d0/d00/a01286.html#af65ed9aa2b487d85e3802751b963fed1">&#x202A;CDialog::InitFrame</a></div><div class="ttdeci">&#x202A;void InitFrame(const QString &amp;msg)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d77/a00095_source.html#l00030">cdialog.cpp:30</a></div></div>
-<div class="ttc" id="aa00098_html_a56d9b6683bc52015612a47f4625c2a80afb03bb0656c9ea9c4f8a1423eb035052"><div class="ttname"><a href="../../d1/d44/a00098.html#a56d9b6683bc52015612a47f4625c2a80afb03bb0656c9ea9c4f8a1423eb035052">&#x202A;CDialogType_Unknown</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00010">cdialog.h:10</a></div></div>
-<div class="ttc" id="aa01286_html_ae3a42465eaf25b7ac506e93339cf274f"><div class="ttname"><a href="../../d0/d00/a01286.html#ae3a42465eaf25b7ac506e93339cf274f">&#x202A;CDialog::CDialog</a></div><div class="ttdeci">&#x202A;CDialog(CDialogType type, const QString &amp;msg, QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d77/a00095_source.html#l00003">cdialog.cpp:3</a></div></div>
+<div class="ttc" id="aa01194_html"><div class="ttname"><a href="../../d9/d2e/a01194.html">&#x202A;GaugeCompass</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00013">GaugeCompass.h:13</a></div></div>
+<div class="ttc" id="aa01194_html_afcf32e56cf7c8d59a57a3b08b11750c4"><div class="ttname"><a href="../../d9/d2e/a01194.html#afcf32e56cf7c8d59a57a3b08b11750c4">&#x202A;GaugeCompass::pTimer</a></div><div class="ttdeci">&#x202A;QTimer * pTimer</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00072">GaugeCompass.h:72</a></div></div>
+<div class="ttc" id="aa00104_html"><div class="ttname"><a href="../../d0/dc2/a00104.html">&#x202A;qcgaugewidget.h</a></div></div>
+<div class="ttc" id="aa01194_html_aa64a89868f350934162deec6001bbb8b"><div class="ttname"><a href="../../d9/d2e/a01194.html#aa64a89868f350934162deec6001bbb8b">&#x202A;GaugeCompass::GaugeCompass</a></div><div class="ttdeci">&#x202A;GaugeCompass(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d77/a00095_source.html#l00005">GaugeCompass.cc:5</a></div></div>
+<div class="ttc" id="aa01194_html_af276ab6ea16a804f6ccf52df5892f876"><div class="ttname"><a href="../../d9/d2e/a01194.html#af276ab6ea16a804f6ccf52df5892f876">&#x202A;GaugeCompass::mCompassPointer</a></div><div class="ttdeci">&#x202A;QcNeedleItem * mCompassPointer</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00069">GaugeCompass.h:69</a></div></div>
+<div class="ttc" id="aa01194_html_a4031103b42226689d53e2902dc639521"><div class="ttname"><a href="../../d9/d2e/a01194.html#a4031103b42226689d53e2902dc639521">&#x202A;GaugeCompass::GetValue</a></div><div class="ttdeci">&#x202A;float GetValue(void)</div><div class="ttdoc">&#x202A;Gets the value</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00049">GaugeCompass.h:49</a></div></div>
+<div class="ttc" id="aa01194_html_a854eb9317af084557e6b76e197b0e078"><div class="ttname"><a href="../../d9/d2e/a01194.html#a854eb9317af084557e6b76e197b0e078">&#x202A;GaugeCompass::mCompassGauge</a></div><div class="ttdeci">&#x202A;QcGaugeWidget * mCompassGauge</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00068">GaugeCompass.h:68</a></div></div>
+<div class="ttc" id="aa01234_html"><div class="ttname"><a href="../../d6/d1e/a01234.html">&#x202A;QcNeedleItem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc2/a00104_source.html#l00269">qcgaugewidget.h:269</a></div></div>
+<div class="ttc" id="aa00406_html"><div class="ttname"><a href="../../d1/d8b/a00406.html">&#x202A;Ui</a></div><div class="ttdoc">&#x202A;QT UI 用于生成 ui组件</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/a00047_source.html#l00020">readwindow.h:20</a></div></div>
+<div class="ttc" id="aa01194_html_a103143429fbb76de11d5f397983657b4"><div class="ttname"><a href="../../d9/d2e/a01194.html#a103143429fbb76de11d5f397983657b4">&#x202A;GaugeCompass::slot_setValue</a></div><div class="ttdeci">&#x202A;void slot_setValue()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d77/a00095_source.html#l00092">GaugeCompass.cc:92</a></div></div>
+<div class="ttc" id="aa01194_html_a14ab8fb400b289864fc083355cd02969"><div class="ttname"><a href="../../d9/d2e/a01194.html#a14ab8fb400b289864fc083355cd02969">&#x202A;GaugeCompass::m_value</a></div><div class="ttdeci">&#x202A;float m_value</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00075">GaugeCompass.h:75</a></div></div>
+<div class="ttc" id="aa01194_html_ae2ae6e7104e6c5a7226dc6d77d0ad654"><div class="ttname"><a href="../../d9/d2e/a01194.html#ae2ae6e7104e6c5a7226dc6d77d0ad654">&#x202A;GaugeCompass::SetValue</a></div><div class="ttdeci">&#x202A;void SetValue(float value)</div><div class="ttdoc">&#x202A;设置 set 以及 get 类</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00033">GaugeCompass.h:33</a></div></div>
+<div class="ttc" id="aa01194_html_ab11f07718a8657f8cf29c81acc0efa74"><div class="ttname"><a href="../../d9/d2e/a01194.html#ab11f07718a8657f8cf29c81acc0efa74">&#x202A;GaugeCompass::StopTimer</a></div><div class="ttdeci">&#x202A;void StopTimer(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00058">GaugeCompass.h:58</a></div></div>
+<div class="ttc" id="aa01198_html"><div class="ttname"><a href="../../d0/d32/a01198.html">&#x202A;QcGaugeWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc2/a00104_source.html#l00061">qcgaugewidget.h:61</a></div></div>
+<div class="ttc" id="aa01194_html_a04306733615f5b03375507f626879f14"><div class="ttname"><a href="../../d9/d2e/a01194.html#a04306733615f5b03375507f626879f14">&#x202A;GaugeCompass::~GaugeCompass</a></div><div class="ttdeci">&#x202A;~GaugeCompass()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d77/a00095_source.html#l00082">GaugeCompass.cc:82</a></div></div>
+<div class="ttc" id="aa01194_html_a5addca6967d7af19cf06de959b400f88"><div class="ttname"><a href="../../d9/d2e/a01194.html#a5addca6967d7af19cf06de959b400f88">&#x202A;GaugeCompass::StartTimer</a></div><div class="ttdeci">&#x202A;void StartTimer(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d44/a00098_source.html#l00054">GaugeCompass.h:54</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_a97d35b535b8178474d1d1f002503b39.html">&#x202A;model</a></li><li class="navelem"><a class="el" href="../../d1/d44/a00098.html">&#x202A;cdialog.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_a97d35b535b8178474d1d1f002503b39.html">&#x202A;model</a></li><li class="navelem"><a class="el" href="../../d1/d44/a00098.html">&#x202A;GaugeCompass.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

@@ -1,0 +1,26 @@
+<map id="Utils_String::Num2Hex" name="Utils_String::Num2Hex">
+<area shape="rect" id="node1" title="将 0&#45;15 转换成 0&#45;F" alt="" coords="1653,225,1808,252"/>
+<area shape="rect" id="node2" href="$d9/de6/a01314.html#a343a35752b0575e884df5b0758cadfda" title="Character array 2 hexadecimal 数组 转换成 hex 字符" alt="" coords="1434,128,1605,155"/>
+<area shape="rect" id="node16" href="$d9/de6/a01314.html#ab0bd05f35427650f2e295c18ba6938b3" title="Number to string 整型数据 前补 0 占位符显示 进制 为 8 10 16 \" alt="" coords="1433,321,1605,348"/>
+<area shape="rect" id="node3" href="$dd/de2/a01134.html#ade93d67c2ca12594170e9223af9c21b7" title="将串口数据 转换成字符串 // 数组 char 转换成字符串 用于查看" alt="" coords="276,7,435,33"/>
+<area shape="rect" id="node5" href="$df/db5/a01158.html#a6400d403f2fac7c422c43abac3c488ab" title="Determines if we can compass calibration" alt="" coords="1177,52,1383,79"/>
+<area shape="rect" id="node6" href="$df/db5/a01158.html#a501d9387b58680267b0dfd9e5c569fdb" title="将数据处理 如果正确 加入到自己的队列中" alt="" coords="1208,103,1352,129"/>
+<area shape="rect" id="node13" href="$d4/d13/a01162.html#ad03a0740ed06adb2cfa0bdb615ead718" title=" " alt="" coords="1175,153,1385,180"/>
+<area shape="rect" id="node15" href="$d9/dd0/a00191.html#ab5e6df2da27e8aacc5489605e4abcc53" title=" " alt="" coords="1231,204,1329,231"/>
+<area shape="rect" id="node4" href="$de/d79/a00203.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="60,7,157,33"/>
+<area shape="rect" id="node7" href="$df/db5/a01158.html#a30681f14980014f263933507dea5f077" title="循环处理 串口 数据" alt="" coords="908,92,1127,119"/>
+<area shape="rect" id="node8" href="$df/db5/a01158.html#a7a4d2b37a6f00109fdde7b593b596d36" title="设置周期 定时器 执行的内容" alt="" coords="713,63,860,105"/>
+<area shape="rect" id="node9" href="$df/db5/a01158.html#a4d356bce746d2a91ab02ec10914a34b2" title="设置初始化" alt="" coords="499,71,665,97"/>
+<area shape="rect" id="node10" href="$df/db5/a01158.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="260,69,451,96"/>
+<area shape="rect" id="node11" href="$d4/d13/a01162.html#aea9a3a7c37640f3efc87ee36e9e8f573" title=" " alt="" coords="5,61,212,102"/>
+<area shape="rect" id="node12" href="$d3/dc7/a01170.html#a7597205c96689c706eea3c64d87ba180" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="35,126,182,167"/>
+<area shape="rect" id="node14" href="$d4/d13/a01162.html#aca357a3e2acc281a88d56fc32aa4460c" title=" " alt="" coords="929,153,1105,180"/>
+<area shape="rect" id="node17" href="$d9/de6/a01314.html#a753d6dcb23a58fdc89a49387789445dd" title="异或校验 8位" alt="" coords="1209,255,1351,297"/>
+<area shape="rect" id="node18" href="$d9/de6/a01314.html#a31b034fed4a8ae00b56ee4eeb2062341" title="Number 2 hexadecimal 得到的结果只有 小写" alt="" coords="1203,321,1357,348"/>
+<area shape="rect" id="node19" href="$d4/dbc/a01038.html#af90a5705e283acc4150060ea12833ab8" title="初始化运行目录以及未来存储的工程文件目录" alt="" coords="1219,372,1341,399"/>
+<area shape="rect" id="node24" href="$d7/d40/a00236.html#a3b1cf67c220186e82aaa58be8180a910" title=" " alt="" coords="1231,423,1329,449"/>
+<area shape="rect" id="node20" href="$d4/dbc/a01038.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="初始化 全局参数" alt="" coords="957,372,1078,399"/>
+<area shape="rect" id="node21" href="$d4/dbc/a01038.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="747,347,826,373"/>
+<area shape="rect" id="node23" href="$da/d15/a00188.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="738,397,835,424"/>
+<area shape="rect" id="node22" href="$d5/db1/a00140.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="557,347,607,373"/>
+</map>

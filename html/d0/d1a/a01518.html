@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;图像匹配</title>
+<title>&#x202A;CBoreHole: &#x202A;串口读写设计</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.4.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,10 +89,25 @@ $(document).ready(function(){initNavTree('d0/d1a/a01518.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;图像匹配 </div>  </div>
+<div class="title">&#x202A;串口读写设计 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p class="DocNodeLTR">参考链接 <a href="&#x202A;https://blog.csdn.net/keith_bb/article/details/70050080">图像匹配</a> </p>
+<div class="textblock"><p class="DocNodeLTR">串口设定一个公共字符串, 用于存储输入输出字符串 同时设定标志</p>
+<p class="DocNodeLTR">准备写入 设置 字符串 标志 writeable</p>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md116"></a>
+标志位处理</h1>
+<p class="DocNodeLTR">标志位为 0 1 2 三种状态, flg</p><ul class="DocNodeLTR">
+<li>&#x202A;0: None 字符串无状态, 等待数据被更新</li>
+<li>&#x202A;1: EnWrite 字符串的数据被更新, 可以将数据写入到串口中</li>
+<li>&#x202A;2: EnRead 字符串数据被更新, 必须将数据读取出来, 使用</li>
+</ul>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md117"></a>
+串口循环执行</h1>
+<p class="DocNodeLTR">串口定时判断标志位处理循环字段 flg</p><ul class="DocNodeLTR">
+<li>&#x202A;0: 串口读取数据, 将数据转换成字符串后 设置 flg = 1</li>
+<li>&#x202A;1: 将字符串数据写入到串口中, 设置标志位为 0</li>
+<li>&#x202A;2: 不处理 </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

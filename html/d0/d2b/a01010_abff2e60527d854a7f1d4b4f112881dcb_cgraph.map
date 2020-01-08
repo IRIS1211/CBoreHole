@@ -1,0 +1,7 @@
+<map id="Config::LoadParaFromFile" name="Config::LoadParaFromFile">
+<area shape="rect" id="node1" title="从 自定义文件中读取参数" alt="" coords="5,23,177,50"/>
+<area shape="rect" id="node2" href="$da/d17/a01046.html#ab50487cc4124576dfbb2af0445a595c0" title="从二进制流文件中读取文件" alt="" coords="225,23,436,50"/>
+<area shape="rect" id="node3" href="$d9/de6/a01314.html#a33967652245ef20659d0bedb6c69d47c" title="Character 2 string" alt="" coords="724,23,889,50"/>
+<area shape="rect" id="node4" href="$d7/d8c/a01306.html#a5523926cd82a36f59589a82da8adf31b" title="读取基本数据类型" alt="" coords="506,23,654,50"/>
+<area shape="rect" id="node5" href="$d7/d8c/a01306.html#a866a76a1d5720a62a03dc7ef7502cd25" title="从文件流中读取一个 字符串" alt="" coords="484,74,676,101"/>
+</map>

@@ -1,4 +1,10 @@
-<map id="WriteVideo" name="WriteVideo">
-<area shape="rect" id="node1" title="A write video. 使用传统线程方式 处理, 程序循环执行 写入动作" alt="" coords="5,80,92,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="13,5,84,32"/>
+<map id="GaugeCompass" name="GaugeCompass">
+<area shape="rect" id="node1" title=" " alt="" coords="47,336,162,363"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,157,79,184"/>
+<area shape="rect" id="node8" href="$d0/d32/a01198.html" title=" " alt="" coords="48,247,167,273"/>
+<area shape="rect" id="node3" href="$d6/d1e/a01234.html" title=" " alt="" coords="193,247,297,273"/>
+<area shape="rect" id="node4" href="$dc/d9e/a01206.html" title=" " alt="" coords="136,157,233,184"/>
+<area shape="rect" id="node5" href="$d4/d5d/a01202.html" title=" " alt="" coords="190,81,254,108"/>
+<area shape="rect" id="node7" href="$d8/d15/a01218.html" title=" " alt="" coords="257,157,352,184"/>
+<area shape="rect" id="node6" title=" " alt="" coords="187,5,257,32"/>
 </map>

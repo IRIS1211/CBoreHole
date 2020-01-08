@@ -1,0 +1,7 @@
+<map id="TEST_CASE" name="TEST_CASE">
+<area shape="rect" id="node1" title=" " alt="" coords="5,29,103,55"/>
+<area shape="rect" id="node2" href="$d9/de6/a01314.html#a37ab93c514c781bbb21d4360f8be5b08" title="异或校验 8位 避免出现 0 数据造成的 截至" alt="" coords="481,21,624,63"/>
+<area shape="rect" id="node3" href="$db/db2/a00020.html#af384f4673c5a034cd96544569651638e" title="直接 取 1&#45; (size&#45;4)的长度的值 计算结果看看是否匹配 然后返回" alt="" coords="151,29,268,55"/>
+<area shape="rect" id="node5" href="$db/db2/a00020.html#ad7df8e9072eb05862471c2fc24f4f5ce" title="参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 &#39;#&#39; 后缀 &#39;*&#39;" alt="" coords="316,79,433,106"/>
+<area shape="rect" id="node4" href="$df/dc8/a00122.html#ad7df8e9072eb05862471c2fc24f4f5ce" title="参考 [电子罗盘协议3.1版本pdf] 定义相应的字符串, 在发送的时候 前缀 &#39;#&#39; 后缀 &#39;*&#39;" alt="" coords="316,29,433,55"/>
+</map>

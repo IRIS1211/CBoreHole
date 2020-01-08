@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;浏览窗口</title>
+<title>&#x202A;CBoreHole: &#x202A;CBoreHole Project Documention Content</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.0</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,14 +89,27 @@ $(document).ready(function(){initNavTree('d4/d62/a01531.html','../../');});
 
 <div class="PageDoc PageDocLTR-title"><div class="header">
   <div class="headertitle">
-<div class="title">&#x202A;浏览窗口 </div>  </div>
+<div class="title">&#x202A;CBoreHole Project Documention Content </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><img src="&#x202A;../../../assets/pic/readWindows.png" alt="浏览窗口预览界面" class="inline"/></p>
-<p class="DocNodeLTR">2.3.1 打开文件 弹出窗口 选择文件 进行浏览显示</p>
-<h4 class="DocNodeLTR"><a class="anchor" id="autotoc_md18"></a>
-按键操作对应</h4>
-<p class="DocNodeLTR">| <b>序号</b> | <b>对象类型</b> | <b>界面标识(text)</b> | <b>程序操作标识(objectName)</b> | <b>功能描述</b> | <b>备注</b> | |:---&mdash;:|:--------&mdash;:|:-----------&mdash;:|:-------------------&mdash;:|:-------&mdash;:|:--------------&mdash;:| | 1 | QLabel | 预览窗口 | lb_show | label show | | 2 | QLineEdit | 工作路径 | lb_work_dir | 当前文件存储文件夹 | 可以通过配置得到 | | 3 | QPushButton | 浏览文件 | btn_openFile | 浏览文件 | 打开窗口, 选择自定义文件进行打开 | | 4 | QPushButton | 关闭文件 | btn_closeFile | 关闭文件 | 关闭当前文件 | | 5 | QPushButton | 关闭浏览 | btn_read_exit | 关闭浏览 | 关闭浏览串口,退出设置窗口 | </p>
+<div class="textblock"><h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md216"></a>
+软件主要功能</h1>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md217"></a>
+设备功能</h2>
+<p class="DocNodeLTR">钻孔内壁图像成像设备的下位机软件端, 主要使用方法是将探头下放入工程测孔内部,通过手持设备上的屏幕能够实时查看孔内部图像, 通过标记按钮可以标记异常点, 后续将采集到的工程文件在上位机端 进行展开和三维岩芯生成,最后进行纹理映射将拼接图像作为纹理映射到3D模型的外表面,便于后续分析与总结. 最终生成项目报告 完成项目检测</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md218"></a>
+设备组成</h2>
+<p class="DocNodeLTR">设备分为软件端和硬件端,其中主要介绍软件部分的内容,包括嵌入式传感器数据采集系统,下位机图像采集处理系统以及上位机图像编辑系统的组成, 此处的程序主要是下位机的图像采集,图像处理,图像编解码处理系统,自定义文件格式存储系统</p>
+<h2 class="DocNodeLTR"><a class="anchor" id="autotoc_md219"></a>
+软件主要功能</h2>
+<ol type="1" class="DocNodeLTR">
+<li>&#x202A;摄像头图像采集,多线程数据缓冲队列</li>
+<li>&#x202A;图像展开,图像匹配,图像拼接,图像融合</li>
+<li>&#x202A;自定义文件格式 存储,</li>
+</ol>
+<h1 class="DocNodeLTR"><a class="anchor" id="autotoc_md220"></a>
+软件设计文档说明</h1>
+<p class="DocNodeLTR">将软件分为 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

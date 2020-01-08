@@ -1,35 +1,31 @@
 var a00023 =
 [
-    [ "\u202AFileHead", "d3/d52/a00023.html#df/d88/a00962", [
-      [ "\u202AsFileHeader", "d3/d52/a00023.html#d2/d6e/a00966", [
-        [ "\u202Afile_NO", "d3/d52/a00023.html#a9f952a01695a99fb7c881f66f010339d", null ],
-        [ "\u202AVerify", "d3/d52/a00023.html#a6af0cc2d8e36ac1d3efb72fa48f85f40", null ]
-      ] ],
-      [ "\u202AuPara", "d3/d52/a00023.html#d0/daf/a00970", [
-        [ "\u202Adat", "d3/d52/a00023.html#a83d75d6e6c04fc69943949186a4a746d", null ],
-        [ "\u202AsysPara", "d3/d52/a00023.html#a1afe56e558058b2c5c82c7877fa3f47c", null ]
-      ] ],
-      [ "\u202AHeader", "d3/d52/a00023.html#af298c2a99d2bf9011df7ec05bd27d957", null ],
-      [ "\u202APara", "d3/d52/a00023.html#acfb052c84f0b6639186c0b0f798a2745", null ]
-    ] ],
-    [ "\u202AsFileHeader", "d3/d52/a00023.html#d2/d6e/a00966", [
-      [ "\u202Afile_NO", "d3/d52/a00023.html#a9f952a01695a99fb7c881f66f010339d", null ],
-      [ "\u202AVerify", "d3/d52/a00023.html#a6af0cc2d8e36ac1d3efb72fa48f85f40", null ]
-    ] ],
-    [ "\u202AuPara", "d3/d52/a00023.html#d0/daf/a00970", [
-      [ "\u202Adat", "d3/d52/a00023.html#a83d75d6e6c04fc69943949186a4a746d", null ],
-      [ "\u202AsysPara", "d3/d52/a00023.html#a1afe56e558058b2c5c82c7877fa3f47c", null ]
-    ] ],
-    [ "\u202AEXT", "df/dce/a00974.html", "df/dce/a00974" ],
-    [ "\u202AIDOIFile", "d2/ddd/a00978.html", "d2/ddd/a00978" ],
-    [ "\u202AsPointer", "d2/ddd/a00978.html#d1/d7a/a00982", [
-      [ "\u202Adata", "d2/ddd/a00978.html#af323a5c19069dbd7d526d85f6046b724", null ],
-      [ "\u202Afile", "d2/ddd/a00978.html#ab6715494d90df417aae4665350a5adee", null ],
-      [ "\u202Ap", "d2/ddd/a00978.html#a61d9e08ca19aa41dcaa13c21ef53a1bb", null ]
-    ] ],
-    [ "\u202AOTYPE", "d3/d52/a00023.html#a24c963e52692fcfc97cf55d4fc142c0f", [
-      [ "\u202AOWRITE", "d3/d52/a00023.html#a24c963e52692fcfc97cf55d4fc142c0fafef364d1f6a87dd77999ec49e3317fe9", null ],
-      [ "\u202AOREAD", "d3/d52/a00023.html#a24c963e52692fcfc97cf55d4fc142c0fafdc7be3700ddf21232e7994e11847ceb", null ],
-      [ "\u202AOAPPEND", "d3/d52/a00023.html#a24c963e52692fcfc97cf55d4fc142c0fa66f02adf4b22d698de8dc0f90bf22701", null ]
-    ] ]
+    [ "\u202AINT16", "d3/d52/a00023.html#aab0296690050a39f146ea60835bf5154", null ],
+    [ "\u202AINT32", "d3/d52/a00023.html#a6cd3486492b15fd3bb281e0fcbdacb33", null ],
+    [ "\u202AINT64", "d3/d52/a00023.html#a0161e5691f3cb4e5b3445b9bda30d6c7", null ],
+    [ "\u202AINT8", "d3/d52/a00023.html#aa7a9a0398d87cae243cc7560f516c844", null ],
+    [ "\u202Auchar", "d3/d52/a00023.html#ae48ac2456c5ad6c956fef86e7bef3a21", null ],
+    [ "\u202AUCHAR", "d3/d52/a00023.html#a212351a4a5cdda9c6f6e12a5232c59b0", null ],
+    [ "\u202AUINT", "d3/d52/a00023.html#a2b6a99e22a48562ebfb764265a529937", null ],
+    [ "\u202Auint", "d3/d52/a00023.html#a69aa29b598b851b0640aa225a9e5d61d", null ],
+    [ "\u202AUINT16", "d3/d52/a00023.html#a12959b963b682ac310aca54c9e954359", null ],
+    [ "\u202AUINT32", "d3/d52/a00023.html#ad218514b084e626393749ca0e0f5bccc", null ],
+    [ "\u202AUINT64", "d3/d52/a00023.html#a601a4012b2ef2f1fe14193c98446409b", null ],
+    [ "\u202AUINT8", "d3/d52/a00023.html#ae37e47d32ebe3ae0800269cd815f8436", null ],
+    [ "\u202AULONG", "d3/d52/a00023.html#aacc7c27bcc29ccef551e2d7bd95cb652", null ],
+    [ "\u202AUSHORT", "d3/d52/a00023.html#a5315435fe48e21e3a8a48dfb10cc9fde", null ],
+    [ "\u202ABCCVerify", "d3/d52/a00023.html#a1c323a745bddedac6a956be7cdddd4e0", null ],
+    [ "\u202ACheckSum16", "d3/d52/a00023.html#a60af4f28ef335e370f2c4fd3f0fe7b87", null ],
+    [ "\u202ACheckSum32", "d3/d52/a00023.html#a7bbd46b87cc79791f9be3720b402073c", null ],
+    [ "\u202ACheckSum8", "d3/d52/a00023.html#af4340455c535fe8797ff03fca67122e1", null ],
+    [ "\u202ACRC16CCITT", "d3/d52/a00023.html#ac3cebfaec5b6c12fa2bf6cdb937f0d58", null ],
+    [ "\u202ACRC16Default", "d3/d52/a00023.html#a3d9e2f78c4e81bde43d40b1af8e5dd34", null ],
+    [ "\u202ACRC16RTU", "d3/d52/a00023.html#a613e8b32a990ed429b65898a708ceae0", null ],
+    [ "\u202ACRC32Default", "d3/d52/a00023.html#a9e72e9a7192f02f6a631f01149975ba6", null ],
+    [ "\u202ACRC8", "d3/d52/a00023.html#a4cb29ce7aef3345f8216430b0b90e84c", null ],
+    [ "\u202AEvenParity", "d3/d52/a00023.html#aeb393d35b0c67a412d716cf3ad1a6fc4", null ],
+    [ "\u202AIntelHexCheckSum", "d3/d52/a00023.html#a05a4b02ca721750a553e2c2c1ef791b9", null ],
+    [ "\u202ANetCheckSum", "d3/d52/a00023.html#aa3738f7ae3c5e7a17a9bc873314c2378", null ],
+    [ "\u202AOddParity", "d3/d52/a00023.html#ab7480cd5401ca9b45a50068cdba11590", null ],
+    [ "\u202AReflect", "d3/d52/a00023.html#abf1d18b21ed8749ebaa92d91e458c1a9", null ]
 ];

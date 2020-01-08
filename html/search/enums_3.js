@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['needletype_2528',['NeedleType',['../d5/da0/a01342.html#a80aa5aff29babb027bc50f82d263627f',1,'QcNeedleItem']]]
+  ['intermode_2552',['InterMode',['../df/db5/a01158.html#aed6d50abf8465c07616ad1b2b10e4928',1,'SerialProc']]]
 ];

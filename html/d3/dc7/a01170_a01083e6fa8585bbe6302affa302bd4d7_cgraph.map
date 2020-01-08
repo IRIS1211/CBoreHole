@@ -1,0 +1,5 @@
+<map id="WorkWindow::slot_render_location" name="WorkWindow::slot_render_location">
+<area shape="rect" id="node1" title="更新 编码器 位置信息" alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node2" href="$d3/dc7/a01170.html#a1ac8d28317aadd53446419ac8b353a82" title="将位置信息实时更新到界面的label 上" alt="" coords="224,13,416,39"/>
+<area shape="rect" id="node3" href="$da/d79/a01310.html#a5c14d3864b00d246bdff2b4b70a7c48c" title="默认 float 显示一位数据" alt="" coords="464,5,647,47"/>
+</map>

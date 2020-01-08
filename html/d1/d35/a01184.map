@@ -1,18 +1,5 @@
-<map id="RunPara::StDevice" name="RunPara::StDevice">
-<area shape="rect" id="node1" title="设置硬件的参数信息" alt="" coords="1375,209,1505,235"/>
-<area shape="rect" id="node2" href="$d5/d16/a01154.html#d2/da6/a01210" title="硬盘对象 存储 硬盘使用量和总量 其他硬盘参数" alt="" coords="1128,5,1267,47"/>
-<area shape="rect" id="node3" href="$d5/d16/a01154.html#dc/d19/a01190" title="脉冲参数" alt="" coords="1128,71,1267,112"/>
-<area shape="rect" id="node4" href="$d5/d16/a01154.html#d0/d32/a01198" title="电子罗盘参数 调整罗盘数据" alt="" coords="1128,136,1267,177"/>
-<area shape="rect" id="node5" title=" " alt="" coords="825,136,979,177"/>
-<area shape="rect" id="node6" title=" " alt="" coords="491,97,611,123"/>
-<area shape="rect" id="node7" title="STL class" alt="" coords="237,149,351,175"/>
-<area shape="rect" id="node9" title=" " alt="" coords="801,211,1003,238"/>
-<area shape="rect" id="node8" title=" " alt="" coords="49,149,88,175"/>
-<area shape="rect" id="node10" href="$d3/d53/a01262.html" title="罗盘类型 结构体 用于列出不同种类的 罗盘" alt="" coords="493,273,610,299"/>
-<area shape="rect" id="node11" title="STL class" alt="" coords="254,323,334,350"/>
-<area shape="rect" id="node16" href="$d5/d16/a01154.html#dc/d9e/a01206" title="窗口状态信息" alt="" coords="639,379,777,420"/>
-<area shape="rect" id="node12" title="STL class" alt="" coords="5,316,132,357"/>
-<area shape="rect" id="node13" href="$d5/d16/a01154.html#d5/d32/a01214" title="额外信息" alt="" coords="1128,201,1267,243"/>
-<area shape="rect" id="node14" href="$d5/d16/a01154.html#d4/d5d/a01202" title="相机参数结构体" alt="" coords="1128,267,1267,308"/>
-<area shape="rect" id="node15" href="$d5/d16/a01154.html#d9/d2e/a01194" title="探头参数" alt="" coords="1128,332,1267,373"/>
+<map id="CQtOpenCVViewerGl" name="CQtOpenCVViewerGl">
+<area shape="rect" id="node1" title="A qt open cv viewer gl." alt="" coords="77,80,223,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,127,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="151,5,317,32"/>
 </map>

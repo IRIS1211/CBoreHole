@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;QcItem类 参考</title>
+<title>&#x202A;CBoreHole: &#x202A;Utils_QT类 参考</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,121 +89,80 @@ $(document).ready(function(){initNavTree('da/d79/a01310.html','../../');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public 类型</a> &#124;
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="#pro-methods">Protected 成员函数</a> &#124;
-<a href="#pri-attribs">Private 属性</a>  </div>
+<a href="#pub-static-methods">静态 Public 成员函数</a>  </div>
   <div class="headertitle">
-<div class="title">QcItem类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Utils_QT类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d1/d88/a00128_source.html">qcgaugewidget.h</a>&gt;</code></p>
-<div class="dynheader">
-类 QcItem 继承关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../db/d4b/a01309.png" border="0" usemap="#_qc_item_inherit__map" alt="Inheritance graph"/></div>
-<map name="_qc_item_inherit__map" id="_qc_item_inherit__map">
-<area shape="rect" title=" " alt="" coords="321,80,385,107"/>
-<area shape="rect" href="../../da/d61/a01350.html" title=" " alt="" coords="5,155,123,181"/>
-<area shape="rect" href="../../d6/dfa/a01318.html" title=" " alt="" coords="147,155,280,181"/>
-<area shape="rect" href="../../d5/df4/a01322.html" title=" " alt="" coords="304,155,403,181"/>
-<area shape="rect" href="../../d1/d54/a01326.html" title=" " alt="" coords="427,155,522,181"/>
-<area shape="rect" href="../../d9/de6/a01314.html" title=" " alt="" coords="546,155,643,181"/>
-<area shape="rect" title=" " alt="" coords="318,5,389,32"/>
-<area shape="rect" href="../../d5/d78/a01330.html" title=" " alt="" coords="307,229,391,256"/>
-<area shape="rect" href="../../d4/dd1/a01334.html" title=" " alt="" coords="416,229,515,256"/>
-<area shape="rect" href="../../d2/d4d/a01338.html" title=" " alt="" coords="539,229,651,256"/>
-<area shape="rect" href="../../d5/da0/a01342.html" title=" " alt="" coords="675,229,779,256"/>
-<area shape="rect" href="../../d9/de4/a01346.html" title=" " alt="" coords="803,229,907,256"/>
-</map>
-<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
-<div class="dynheader">
-QcItem 的协作图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d1/d56/a01308.png" border="0" usemap="#_qc_item_coll__map" alt="Collaboration graph"/></div>
-<map name="_qc_item_coll__map" id="_qc_item_coll__map">
-<area shape="rect" title=" " alt="" coords="9,80,73,107"/>
-<area shape="rect" title=" " alt="" coords="5,5,76,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<p>&#x202A;The utilities qt.  
+ <a href="../../da/d79/a01310.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d9/dd6/a00272_source.html">Code\utils\utils_qt.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public 类型</h2></td></tr>
-<tr class="memitem:a0ef5112d89cda1d9105683533079431a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431a">Error</a> { <a class="el" href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695">InvalidValueRange</a>, 
-<a class="el" href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06">InvalidDegreeRange</a>, 
-<a class="el" href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431aab597c8e8a25a168105e84edc20dda514">InvalidStep</a>
- }</td></tr>
-<tr class="separator:a0ef5112d89cda1d9105683533079431a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public 成员函数</h2></td></tr>
-<tr class="memitem:a22f153ab8a6e3b0f8f698b9ac97e3d79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a22f153ab8a6e3b0f8f698b9ac97e3d79">QcItem</a> (QObject *parent=nullptr)</td></tr>
-<tr class="separator:a22f153ab8a6e3b0f8f698b9ac97e3d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae40f3896384b75c63a8ed5dca76f884b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#ae40f3896384b75c63a8ed5dca76f884b">draw</a> (QPainter *)=0</td></tr>
-<tr class="separator:ae40f3896384b75c63a8ed5dca76f884b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51789b5e2b3a042fa5faa9e9e1d2d247"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a51789b5e2b3a042fa5faa9e9e1d2d247">type</a> ()</td></tr>
-<tr class="separator:a51789b5e2b3a042fa5faa9e9e1d2d247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a954ca7fd1b5c0f726a899ed53f584ac7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a954ca7fd1b5c0f726a899ed53f584ac7">setPosition</a> (float percentage)</td></tr>
-<tr class="separator:a954ca7fd1b5c0f726a899ed53f584ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a37ec6e418d1b40651f8d2eb0a15575"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a7a37ec6e418d1b40651f8d2eb0a15575">position</a> ()</td></tr>
-<tr class="separator:a7a37ec6e418d1b40651f8d2eb0a15575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa051f0fd3884f03ddb9c93e481ad59b7"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#aa051f0fd3884f03ddb9c93e481ad59b7">rect</a> ()</td></tr>
-<tr class="separator:aa051f0fd3884f03ddb9c93e481ad59b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected 成员函数</h2></td></tr>
-<tr class="memitem:a9872c616e918a7e823307cfa9dbcccb7"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a9872c616e918a7e823307cfa9dbcccb7">adjustRect</a> (float percentage)</td></tr>
-<tr class="separator:a9872c616e918a7e823307cfa9dbcccb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c9ba2372149a249b9cf658e8ab4249"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#af2c9ba2372149a249b9cf658e8ab4249">getRadius</a> (const QRectF &amp;)</td></tr>
-<tr class="separator:af2c9ba2372149a249b9cf658e8ab4249"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98810f4748e2fa4c78d4a21947b8076b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a98810f4748e2fa4c78d4a21947b8076b">getAngle</a> (const QPointF &amp;, const QRectF &amp;tmpRect)</td></tr>
-<tr class="separator:a98810f4748e2fa4c78d4a21947b8076b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5869fbd4b51c9f72f50b0b220b8ec72d"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a5869fbd4b51c9f72f50b0b220b8ec72d">getPoint</a> (float deg, const QRectF &amp;tmpRect)</td></tr>
-<tr class="separator:a5869fbd4b51c9f72f50b0b220b8ec72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a822b523a847064dc2f86dab13d0d25a3"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a822b523a847064dc2f86dab13d0d25a3">resetRect</a> ()</td></tr>
-<tr class="separator:a822b523a847064dc2f86dab13d0d25a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0a19af45e689ad291bf448a269aede"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a3a0a19af45e689ad291bf448a269aede">update</a> ()</td></tr>
-<tr class="separator:a3a0a19af45e689ad291bf448a269aede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private 属性</h2></td></tr>
-<tr class="memitem:acb027a120b6fec2d135a6227f56cba0e"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">mRect</a></td></tr>
-<tr class="separator:acb027a120b6fec2d135a6227f56cba0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a3d81ff9a15a4ccd084539fea6dbf9"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a25a3d81ff9a15a4ccd084539fea6dbf9">parentWidget</a></td></tr>
-<tr class="separator:a25a3d81ff9a15a4ccd084539fea6dbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9950a96eb440a38e541cb0498340c152"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a9950a96eb440a38e541cb0498340c152">mPosition</a></td></tr>
-<tr class="separator:a9950a96eb440a38e541cb0498340c152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a5e322fd011b3f370c7cc4acfc2164d6b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a5e322fd011b3f370c7cc4acfc2164d6b">DirBack</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a5e322fd011b3f370c7cc4acfc2164d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;文件夹后退一层  <a href="../../da/d79/a01310.html#a5e322fd011b3f370c7cc4acfc2164d6b">更多...</a><br /></td></tr>
+<tr class="separator:a5e322fd011b3f370c7cc4acfc2164d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b1fae65fc91319a7f2ee2fefb86799"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#af9b1fae65fc91319a7f2ee2fefb86799">CheckDir</a> (const std::string &amp;path, bool create_=true)</td></tr>
+<tr class="memdesc:af9b1fae65fc91319a7f2ee2fefb86799"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;判断文件夹是否存在如果存在 根据情况判断是否创建  <a href="../../da/d79/a01310.html#af9b1fae65fc91319a7f2ee2fefb86799">更多...</a><br /></td></tr>
+<tr class="separator:af9b1fae65fc91319a7f2ee2fefb86799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94fba8cb28c22aabd4ab602e200da40e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a94fba8cb28c22aabd4ab602e200da40e">CheckFile</a> (const std::string &amp;path, bool create_=true)</td></tr>
+<tr class="memdesc:a94fba8cb28c22aabd4ab602e200da40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Query if 'file' is file exist 判断文件是否存在后 根据 flg 新建  <a href="../../da/d79/a01310.html#a94fba8cb28c22aabd4ab602e200da40e">更多...</a><br /></td></tr>
+<tr class="separator:a94fba8cb28c22aabd4ab602e200da40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115723aab7f427158c71249f5c9de377"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a115723aab7f427158c71249f5c9de377">ListAllDisk</a> (void)</td></tr>
+<tr class="memdesc:a115723aab7f427158c71249f5c9de377"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;List all disk 列出所有磁盘的信息  <a href="../../da/d79/a01310.html#a115723aab7f427158c71249f5c9de377">更多...</a><br /></td></tr>
+<tr class="separator:a115723aab7f427158c71249f5c9de377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d00b920acc10d1e96fd29853ebfe792"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a2d00b920acc10d1e96fd29853ebfe792">GetDiskOccupy</a> (const std::string disk=DEFAULT_DISK)</td></tr>
+<tr class="memdesc:a2d00b920acc10d1e96fd29853ebfe792"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets disk occupy  <a href="../../da/d79/a01310.html#a2d00b920acc10d1e96fd29853ebfe792">更多...</a><br /></td></tr>
+<tr class="separator:a2d00b920acc10d1e96fd29853ebfe792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb425a725353c07d525139ce1119ede2"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#acb425a725353c07d525139ce1119ede2">GetDiskAll</a> (const std::string disk=DEFAULT_DISK)</td></tr>
+<tr class="memdesc:acb425a725353c07d525139ce1119ede2"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets disk all  <a href="../../da/d79/a01310.html#acb425a725353c07d525139ce1119ede2">更多...</a><br /></td></tr>
+<tr class="separator:acb425a725353c07d525139ce1119ede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd38da34770d4655265e234b0ed59cb"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#aadd38da34770d4655265e234b0ed59cb">GetDiskFree</a> (const std::string disk=DEFAULT_DISK)</td></tr>
+<tr class="memdesc:aadd38da34770d4655265e234b0ed59cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets disk free  <a href="../../da/d79/a01310.html#aadd38da34770d4655265e234b0ed59cb">更多...</a><br /></td></tr>
+<tr class="separator:aadd38da34770d4655265e234b0ed59cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca84499be1f513127b12f9d5b7ca11ef"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#aca84499be1f513127b12f9d5b7ca11ef">GetDiskUsed</a> (const std::string disk=DEFAULT_DISK)</td></tr>
+<tr class="memdesc:aca84499be1f513127b12f9d5b7ca11ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets disk used  <a href="../../da/d79/a01310.html#aca84499be1f513127b12f9d5b7ca11ef">更多...</a><br /></td></tr>
+<tr class="separator:aca84499be1f513127b12f9d5b7ca11ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2476fd8c1a5ab09328ccb1d7e13b2a"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a">Str2QByteArray</a> (const std::string &amp;str, int flg_space=1)</td></tr>
+<tr class="memdesc:a2d2476fd8c1a5ab09328ccb1d7e13b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;2 q byte array  <a href="../../da/d79/a01310.html#a2d2476fd8c1a5ab09328ccb1d7e13b2a">更多...</a><br /></td></tr>
+<tr class="separator:a2d2476fd8c1a5ab09328ccb1d7e13b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7520153e28f1b4b72929dfd6b576ba35"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a7520153e28f1b4b72929dfd6b576ba35">ReleaseThread</a> (QThread *qthread)</td></tr>
+<tr class="memdesc:a7520153e28f1b4b72929dfd6b576ba35"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;停止进程并同时 删除对象 // 循环进程 使用 isInterruptionRequested 做while 循环条件 避免 无法退出 <a href="https://blog.csdn.net/caoshangpa/article/details/62421334">https://blog.csdn.net/caoshangpa/article/details/62421334</a>  <a href="../../da/d79/a01310.html#a7520153e28f1b4b72929dfd6b576ba35">更多...</a><br /></td></tr>
+<tr class="separator:a7520153e28f1b4b72929dfd6b576ba35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d10805fc4c80c6466c36d4d4e4b5c1a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a4d10805fc4c80c6466c36d4d4e4b5c1a">ShowImageOnLable</a> (const cv::Mat &amp;srcImg, QLabel *lb_label, int width, int height)</td></tr>
+<tr class="memdesc:a4d10805fc4c80c6466c36d4d4e4b5c1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Shows the image on lable  <a href="../../da/d79/a01310.html#a4d10805fc4c80c6466c36d4d4e4b5c1a">更多...</a><br /></td></tr>
+<tr class="separator:a4d10805fc4c80c6466c36d4d4e4b5c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c14d3864b00d246bdff2b4b70a7c48c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a5c14d3864b00d246bdff2b4b70a7c48c">RenderNumberOnLabel</a> (QLabel *label, float num)</td></tr>
+<tr class="memdesc:a5c14d3864b00d246bdff2b4b70a7c48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;默认 float 显示一位数据  <a href="../../da/d79/a01310.html#a5c14d3864b00d246bdff2b4b70a7c48c">更多...</a><br /></td></tr>
+<tr class="separator:a5c14d3864b00d246bdff2b4b70a7c48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8665c6075ec683d61ee20f1fbb348c14"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a8665c6075ec683d61ee20f1fbb348c14">RenderNumberOnLabel</a> (QLabel *label, int num)</td></tr>
+<tr class="memdesc:a8665c6075ec683d61ee20f1fbb348c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;int 直接显示  <a href="../../da/d79/a01310.html#a8665c6075ec683d61ee20f1fbb348c14">更多...</a><br /></td></tr>
+<tr class="separator:a8665c6075ec683d61ee20f1fbb348c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2532e87f4c488fe497996c210b40458b"><td class="memItemLeft" align="right" valign="top">static QSerialPort *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a2532e87f4c488fe497996c210b40458b">GetSerialByPortNo</a> (int port_no=-1)</td></tr>
+<tr class="memdesc:a2532e87f4c488fe497996c210b40458b"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;Gets serial by port no  <a href="../../da/d79/a01310.html#a2532e87f4c488fe497996c210b40458b">更多...</a><br /></td></tr>
+<tr class="separator:a2532e87f4c488fe497996c210b40458b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29d5e125f8291249578a509c7b74838"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#ab29d5e125f8291249578a509c7b74838">GetAllSerialPort</a> ()</td></tr>
+<tr class="memdesc:ab29d5e125f8291249578a509c7b74838"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#x202A;获取所有 的可用串口 COM5 的形式  <a href="../../da/d79/a01310.html#ab29d5e125f8291249578a509c7b74838">更多...</a><br /></td></tr>
+<tr class="separator:ab29d5e125f8291249578a509c7b74838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3809720f8a9ad495dcf6b15acb7fc5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3f3809720f8a9ad495dcf6b15acb7fc5"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a3f3809720f8a9ad495dcf6b15acb7fc5">UI_ToggleEnable</a> (T *btn)</td></tr>
+<tr class="separator:a3f3809720f8a9ad495dcf6b15acb7fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b48140bd25eb6903d233b9c6f536e91"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5b48140bd25eb6903d233b9c6f536e91"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html#a5b48140bd25eb6903d233b9c6f536e91">UI_ToggleVisible</a> (T *btn)</td></tr>
+<tr class="separator:a5b48140bd25eb6903d233b9c6f536e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock">
-<p class="definition">在文件 <a class="el" href="../../d1/d88/a00128_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d1/d88/a00128_source.html#l00096">96</a> 行定义.</p>
-</div><h2 class="groupheader">成员枚举类型说明</h2>
-<a id="a0ef5112d89cda1d9105683533079431a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ef5112d89cda1d9105683533079431a">&#9670;&nbsp;</a></span>Error</h2>
+<div class="textblock"><p class="DocNodeLTR">The utilities qt. </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27 </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431a">QcItem::Error</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695"></a>InvalidValueRange&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06"></a>InvalidDegreeRange&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0ef5112d89cda1d9105683533079431aab597c8e8a25a168105e84edc20dda514"></a>InvalidStep&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">在文件 <a class="el" href="../../d1/d88/a00128_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d1/d88/a00128_source.html#l00107">107</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{<a class="code" href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695">&#x202A;InvalidValueRange</a>,<a class="code" href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06">&#x202A;InvalidDegreeRange</a>,<a class="code" href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431aab597c8e8a25a168105e84edc20dda514">&#x202A;InvalidStep</a>};</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">构造及析构函数说明</h2>
-<a id="a22f153ab8a6e3b0f8f698b9ac97e3d79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22f153ab8a6e3b0f8f698b9ac97e3d79">&#9670;&nbsp;</a></span>QcItem()</h2>
+<p class="definition">在文件 <a class="el" href="../../d9/dd6/a00272_source.html">utils_qt.h</a> 第 <a class="el" href="../../d9/dd6/a00272_source.html#l00027">27</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="af9b1fae65fc91319a7f2ee2fefb86799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b1fae65fc91319a7f2ee2fefb86799">&#9670;&nbsp;</a></span>CheckDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,150 +171,16 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QcItem::QcItem </td>
+          <td class="memname">static bool Utils_QT::CheckDir </td>
           <td>(</td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00149">149</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                              :</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    QObject(parent)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="../../da/d79/a01310.html#a25a3d81ff9a15a4ccd084539fea6dbf9">&#x202A;parentWidget</a> = qobject_cast&lt;QWidget*&gt;(parent);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="../../da/d79/a01310.html#a9950a96eb440a38e541cb0498340c152">&#x202A;mPosition</a> = 50;</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">成员函数说明</h2>
-<a id="a9872c616e918a7e823307cfa9dbcccb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9872c616e918a7e823307cfa9dbcccb7">&#9670;&nbsp;</a></span>adjustRect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QRectF QcItem::adjustRect </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>percentage</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00188">188</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">float</span> r = <a class="code" href="../../da/d79/a01310.html#af2c9ba2372149a249b9cf658e8ab4249">&#x202A;getRadius</a>(<a class="code" href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">&#x202A;mRect</a>);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">float</span> offset =   r-(percentage*r)/100.0;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    QRectF tmpRect = <a class="code" href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">&#x202A;mRect</a>.adjusted(offset,offset,-offset,-offset);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">return</span> tmpRect;</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a9872c616e918a7e823307cfa9dbcccb7_cgraph.png" border="0" usemap="#da/d79/a01310_a9872c616e918a7e823307cfa9dbcccb7_cgraph" alt=""/></div>
-<map name="da/d79/a01310_a9872c616e918a7e823307cfa9dbcccb7_cgraph" id="da/d79/a01310_a9872c616e918a7e823307cfa9dbcccb7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,140,32"/>
-<area shape="rect" href="../../da/d79/a01310.html#af2c9ba2372149a249b9cf658e8ab4249" title=" " alt="" coords="188,5,319,32"/>
-</map>
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a9872c616e918a7e823307cfa9dbcccb7_icgraph.png" border="0" usemap="#da/d79/a01310_a9872c616e918a7e823307cfa9dbcccb7_icgraph" alt=""/></div>
-<map name="da/d79/a01310_a9872c616e918a7e823307cfa9dbcccb7_icgraph" id="da/d79/a01310_a9872c616e918a7e823307cfa9dbcccb7_icgraph">
-<area shape="rect" title=" " alt="" coords="453,259,588,285"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a79ad24165b3507839a56ed2b8f535af6" title=" " alt="" coords="207,5,403,32"/>
-<area shape="rect" href="../../d6/dfa/a01318.html#a6889983a22379cab98acb6591158deca" title=" " alt="" coords="221,56,389,83"/>
-<area shape="rect" href="../../d5/df4/a01322.html#aac063de2d7e99ad1685c03e78a6642e0" title=" " alt="" coords="239,107,372,133"/>
-<area shape="rect" href="../../d1/d54/a01326.html#a77e9ac62ffee29b7ff40f4eed5a0b34e" title=" " alt="" coords="240,157,371,184"/>
-<area shape="rect" href="../../d5/d78/a01330.html#aef101056b0b6904ac2ef16ab423330fa" title=" " alt="" coords="246,208,365,235"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a4bdba32ed37b37a5b67cdcbb7431d32c" title=" " alt="" coords="232,259,379,285"/>
-<area shape="rect" href="../../d5/da0/a01342.html#aad774985d2725e44d2509e393213d1d5" title=" " alt="" coords="236,309,375,336"/>
-<area shape="rect" href="../../d9/de4/a01346.html#acac454cfd99f40089d88ae92be536449" title=" " alt="" coords="236,360,375,387"/>
-<area shape="rect" href="../../da/d61/a01350.html#a3aead0bf7420db58372857f080d4acff" title=" " alt="" coords="5,461,157,488"/>
-<area shape="rect" href="../../da/d61/a01350.html#a2581aee6a6f234df9c99ca3a7fa2bfe1" title=" " alt="" coords="205,461,405,488"/>
-<area shape="rect" href="../../da/d61/a01350.html#ab6dc81d51eeb1d029b8b3763c5fee34c" title=" " alt="" coords="209,512,401,539"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a3e797b84f087007636fc85fc8c1185b0" title=" " alt="" coords="14,5,149,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ae40f3896384b75c63a8ed5dca76f884b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae40f3896384b75c63a8ed5dca76f884b">&#9670;&nbsp;</a></span>draw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void QcItem::draw </td>
-          <td>(</td>
-          <td class="paramtype">QPainter *&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>在 <a class="el" href="../../d2/d4d/a01338.html#a4bdba32ed37b37a5b67cdcbb7431d32c">QcDegreesItem</a>, <a class="el" href="../../d9/de4/a01346.html#acac454cfd99f40089d88ae92be536449">QcValuesItem</a>, <a class="el" href="../../d5/da0/a01342.html#aad774985d2725e44d2509e393213d1d5">QcNeedleItem</a>, <a class="el" href="../../da/d61/a01350.html#a3aead0bf7420db58372857f080d4acff">QcAttitudeMeter</a>, <a class="el" href="../../d4/dd1/a01334.html#a3e797b84f087007636fc85fc8c1185b0">QcColorBand</a>, <a class="el" href="../../d5/d78/a01330.html#aef101056b0b6904ac2ef16ab423330fa">QcArcItem</a>, <a class="el" href="../../d1/d54/a01326.html#a77e9ac62ffee29b7ff40f4eed5a0b34e">QcLabelItem</a>, <a class="el" href="../../d5/df4/a01322.html#aac063de2d7e99ad1685c03e78a6642e0">QcGlassItem</a> , 以及 <a class="el" href="../../d6/dfa/a01318.html#a6889983a22379cab98acb6591158deca">QcBackgroundItem</a> 内被实现.</p>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_ae40f3896384b75c63a8ed5dca76f884b_icgraph.png" border="0" usemap="#da/d79/a01310_ae40f3896384b75c63a8ed5dca76f884b_icgraph" alt=""/></div>
-<map name="da/d79/a01310_ae40f3896384b75c63a8ed5dca76f884b_icgraph" id="da/d79/a01310_ae40f3896384b75c63a8ed5dca76f884b_icgraph">
-<area shape="rect" title=" " alt="" coords="240,5,339,32"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#ad7850cc539f1254dae2a439843133533" title=" " alt="" coords="5,5,192,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a98810f4748e2fa4c78d4a21947b8076b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98810f4748e2fa4c78d4a21947b8076b">&#9670;&nbsp;</a></span>getAngle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float QcItem::getAngle </td>
-          <td>(</td>
-          <td class="paramtype">const QPointF &amp;&#160;</td>
-          <td class="paramname"><em>pt</em>, </td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QRectF &amp;&#160;</td>
-          <td class="paramname"><em>tmpRect</em>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>create_</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -365,33 +190,72 @@ Private 属性</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00231">231</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;{</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordtype">float</span> xx=tmpRect.center().x()-pt.x();</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">float</span> yy=tmpRect.center().y()-pt.y();</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">return</span> qRadiansToDegrees( atan2(yy,xx));</div>
+<p>&#x202A;判断文件夹是否存在如果存在 根据情况判断是否创建 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>&#x202A;Full pathname of the file </td></tr>
+    <tr><td class="paramname">create_</td><td>&#x202A;True to flg</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>&#x202A;Full pathname of the file </td></tr>
+    <tr><td class="paramname">create_</td><td>&#x202A;(Optional) True to flg</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00057">57</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QString fullPath = QString::fromStdString(path);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QDir dir(fullPath);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (dir.exists())</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (create_)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> dir.mkpath(fullPath);    <span class="comment">//创建多级目录</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a98810f4748e2fa4c78d4a21947b8076b_icgraph.png" border="0" usemap="#da/d79/a01310_a98810f4748e2fa4c78d4a21947b8076b_icgraph" alt=""/></div>
-<map name="da/d79/a01310_a98810f4748e2fa4c78d4a21947b8076b_icgraph" id="da/d79/a01310_a98810f4748e2fa4c78d4a21947b8076b_icgraph">
-<area shape="rect" title=" " alt="" coords="659,46,781,73"/>
-<area shape="rect" href="../../da/d61/a01350.html#abd302c556de407950a5f746375d84dd8" title=" " alt="" coords="440,39,611,80"/>
-<area shape="rect" href="../../da/d61/a01350.html#a3e2f94068156d109877da292ff1abade" title=" " alt="" coords="205,5,392,47"/>
-<area shape="rect" href="../../da/d61/a01350.html#a980b5b0265b1d249a8cc07d4f2d00c3a" title=" " alt="" coords="205,71,392,112"/>
-<area shape="rect" href="../../da/d61/a01350.html#a3aead0bf7420db58372857f080d4acff" title=" " alt="" coords="5,46,157,73"/>
+<div class="center"><img src="../../da/d79/a01310_af9b1fae65fc91319a7f2ee2fefb86799_icgraph.png" border="0" usemap="#da/d79/a01310_af9b1fae65fc91319a7f2ee2fefb86799_icgraph" alt=""/></div>
+<map name="da/d79/a01310_af9b1fae65fc91319a7f2ee2fefb86799_icgraph" id="da/d79/a01310_af9b1fae65fc91319a7f2ee2fefb86799_icgraph">
+<area shape="rect" title="判断文件夹是否存在如果存在 根据情况判断是否创建" alt="" coords="952,81,1085,108"/>
+<area shape="rect" href="../../d4/dbc/a01038.html#af90a5705e283acc4150060ea12833ab8" title="初始化运行目录以及未来存储的工程文件目录" alt="" coords="759,31,881,57"/>
+<area shape="rect" href="../../da/dfb/a01174.html#ad53bb8340bb6b761bd6236688970c463" title=" " alt="" coords="741,81,899,108"/>
+<area shape="rect" href="../../d4/d13/a01162.html#a42f3ec35c315231b8af2beb1c6423e47" title="Stores a picture" alt="" coords="736,132,904,159"/>
+<area shape="rect" href="../../d4/dbc/a01038.html#ac6c5c0e3086cf28a96387e32ffc5bebf" title="初始化 全局参数" alt="" coords="521,31,642,57"/>
+<area shape="rect" href="../../d4/dbc/a01038.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="282,5,361,32"/>
+<area shape="rect" href="../../da/d15/a00188.html#a3b854a3e416cd8e379515c704f0fcbd6" title=" " alt="" coords="273,56,370,83"/>
+<area shape="rect" href="../../d5/db1/a00140.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="61,5,112,32"/>
+<area shape="rect" href="../../da/dfb/a01174.html#a8537b4c963467314c61eb26616087b1b" title="Initializes a new instance of the WriteVideo class 开始写入视频流" alt="" coords="502,81,661,108"/>
+<area shape="rect" href="../../d4/d13/a01162.html#a89c4f17fbaeaba0884d96a9932973256" title="Slot show camera" alt="" coords="475,132,688,159"/>
+<area shape="rect" href="../../d4/d13/a01162.html#a38132eed7f4aaed915400ffe1ceaf248" title="Slot preview camera" alt="" coords="216,132,427,159"/>
+<area shape="rect" href="../../d4/d13/a01162.html#a620de98b19380041820a1fd808e23d7e" title="Initializes a new instance of the SetWindow class" alt="" coords="5,132,168,159"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a5869fbd4b51c9f72f50b0b220b8ec72d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5869fbd4b51c9f72f50b0b220b8ec72d">&#9670;&nbsp;</a></span>getPoint()</h2>
+<a id="a94fba8cb28c22aabd4ab602e200da40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94fba8cb28c22aabd4ab602e200da40e">&#9670;&nbsp;</a></span>CheckFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,16 +264,16 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QPointF QcItem::getPoint </td>
+          <td class="memname">static bool Utils_QT::CheckFile </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>deg</em>, </td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QRectF &amp;&#160;</td>
-          <td class="paramname"><em>tmpRect</em>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>create_</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -419,364 +283,56 @@ Private 属性</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00216">216</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordtype">float</span> r = <a class="code" href="../../da/d79/a01310.html#af2c9ba2372149a249b9cf658e8ab4249">&#x202A;getRadius</a>(tmpRect);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">float</span> xx=cos(qDegreesToRadians(deg))*r;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">float</span> yy=sin(qDegreesToRadians(deg))*r;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    QPointF pt;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    xx=tmpRect.center().x()-xx;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    yy=tmpRect.center().y()-yy;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    pt.setX(xx);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    pt.setY(yy);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">return</span> pt;</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a5869fbd4b51c9f72f50b0b220b8ec72d_cgraph.png" border="0" usemap="#da/d79/a01310_a5869fbd4b51c9f72f50b0b220b8ec72d_cgraph" alt=""/></div>
-<map name="da/d79/a01310_a5869fbd4b51c9f72f50b0b220b8ec72d_cgraph" id="da/d79/a01310_a5869fbd4b51c9f72f50b0b220b8ec72d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,125,32"/>
-<area shape="rect" href="../../da/d79/a01310.html#af2c9ba2372149a249b9cf658e8ab4249" title=" " alt="" coords="173,5,304,32"/>
-</map>
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a5869fbd4b51c9f72f50b0b220b8ec72d_icgraph.png" border="0" usemap="#da/d79/a01310_a5869fbd4b51c9f72f50b0b220b8ec72d_icgraph" alt=""/></div>
-<map name="da/d79/a01310_a5869fbd4b51c9f72f50b0b220b8ec72d_icgraph" id="da/d79/a01310_a5869fbd4b51c9f72f50b0b220b8ec72d_icgraph">
-<area shape="rect" title=" " alt="" coords="695,132,815,159"/>
-<area shape="rect" href="../../d1/d54/a01326.html#a77e9ac62ffee29b7ff40f4eed5a0b34e" title=" " alt="" coords="485,5,615,32"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a4bdba32ed37b37a5b67cdcbb7431d32c" title=" " alt="" coords="477,56,623,83"/>
-<area shape="rect" href="../../d9/de4/a01346.html#acac454cfd99f40089d88ae92be536449" title=" " alt="" coords="481,107,619,133"/>
-<area shape="rect" href="../../da/d61/a01350.html#adfd8ede9f549c74432781dcc36c01e80" title=" " alt="" coords="453,157,647,184"/>
-<area shape="rect" href="../../da/d61/a01350.html#ab6dc81d51eeb1d029b8b3763c5fee34c" title=" " alt="" coords="209,208,401,235"/>
-<area shape="rect" href="../../da/d61/a01350.html#abd302c556de407950a5f746375d84dd8" title=" " alt="" coords="465,259,635,301"/>
-<area shape="rect" href="../../da/d61/a01350.html#a2581aee6a6f234df9c99ca3a7fa2bfe1" title=" " alt="" coords="205,157,405,184"/>
-<area shape="rect" href="../../da/d61/a01350.html#a3aead0bf7420db58372857f080d4acff" title=" " alt="" coords="5,237,157,264"/>
-<area shape="rect" href="../../da/d61/a01350.html#a3e2f94068156d109877da292ff1abade" title=" " alt="" coords="212,259,399,301"/>
-<area shape="rect" href="../../da/d61/a01350.html#a980b5b0265b1d249a8cc07d4f2d00c3a" title=" " alt="" coords="212,325,399,366"/>
-</map>
-</div>
+<p>&#x202A;Query if 'file' is file exist 判断文件是否存在后 根据 flg 新建 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>&#x202A;The file </td></tr>
+    <tr><td class="paramname">create_</td><td>&#x202A;True to flg</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>&#x202A;The file </td></tr>
+    <tr><td class="paramname">create_</td><td>&#x202A;(Optional) True to flg</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
 
-</div>
-</div>
-<a id="af2c9ba2372149a249b9cf658e8ab4249"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2c9ba2372149a249b9cf658e8ab4249">&#9670;&nbsp;</a></span>getRadius()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float QcItem::getRadius </td>
-          <td>(</td>
-          <td class="paramtype">const QRectF &amp;&#160;</td>
-          <td class="paramname"><em>tmpRect</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00196">196</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;{</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">float</span> r = 0;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">if</span>(tmpRect.width()&lt;tmpRect.height())</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        r = tmpRect.width()/2.0;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        r = tmpRect.height()/2.0;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">return</span> r;</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_af2c9ba2372149a249b9cf658e8ab4249_icgraph.png" border="0" usemap="#da/d79/a01310_af2c9ba2372149a249b9cf658e8ab4249_icgraph" alt=""/></div>
-<map name="da/d79/a01310_af2c9ba2372149a249b9cf658e8ab4249_icgraph" id="da/d79/a01310_af2c9ba2372149a249b9cf658e8ab4249_icgraph">
-<area shape="rect" title=" " alt="" coords="928,636,1059,662"/>
-<area shape="rect" href="../../da/d79/a01310.html#a9872c616e918a7e823307cfa9dbcccb7" title=" " alt="" coords="721,636,856,662"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a3e797b84f087007636fc85fc8c1185b0" title=" " alt="" coords="238,332,373,358"/>
-<area shape="rect" href="../../d5/df4/a01322.html#aac063de2d7e99ad1685c03e78a6642e0" title=" " alt="" coords="485,230,618,257"/>
-<area shape="rect" href="../../d1/d54/a01326.html#a77e9ac62ffee29b7ff40f4eed5a0b34e" title=" " alt="" coords="486,737,617,764"/>
-<area shape="rect" href="../../d5/d78/a01330.html#aef101056b0b6904ac2ef16ab423330fa" title=" " alt="" coords="492,484,611,510"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a4bdba32ed37b37a5b67cdcbb7431d32c" title=" " alt="" coords="478,788,625,814"/>
-<area shape="rect" href="../../d5/da0/a01342.html#aad774985d2725e44d2509e393213d1d5" title=" " alt="" coords="482,281,621,308"/>
-<area shape="rect" href="../../d9/de4/a01346.html#acac454cfd99f40089d88ae92be536449" title=" " alt="" coords="482,838,621,865"/>
-<area shape="rect" href="../../da/d61/a01350.html#a3aead0bf7420db58372857f080d4acff" title=" " alt="" coords="5,661,157,688"/>
-<area shape="rect" href="../../da/d61/a01350.html#a2581aee6a6f234df9c99ca3a7fa2bfe1" title=" " alt="" coords="205,686,405,713"/>
-<area shape="rect" href="../../da/d61/a01350.html#ab6dc81d51eeb1d029b8b3763c5fee34c" title=" " alt="" coords="455,940,647,966"/>
-<area shape="rect" href="../../da/d61/a01350.html#af5039ae69290cf8428f1962cf818a8d4" title=" " alt="" coords="697,122,880,163"/>
-<area shape="rect" href="../../da/d79/a01310.html#a5869fbd4b51c9f72f50b0b220b8ec72d" title=" " alt="" coords="729,838,849,865"/>
-<area shape="rect" href="../../da/d61/a01350.html#abd302c556de407950a5f746375d84dd8" title=" " alt="" coords="466,1042,637,1083"/>
-<area shape="rect" href="../../da/d79/a01310.html#a822b523a847064dc2f86dab13d0d25a3" title=" " alt="" coords="725,484,853,510"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a79ad24165b3507839a56ed2b8f535af6" title=" " alt="" coords="453,585,649,612"/>
-<area shape="rect" href="../../d6/dfa/a01318.html#a6889983a22379cab98acb6591158deca" title=" " alt="" coords="467,534,635,561"/>
-<area shape="rect" href="../../da/d61/a01350.html#adfd8ede9f549c74432781dcc36c01e80" title=" " alt="" coords="455,889,648,916"/>
-<area shape="rect" href="../../da/d61/a01350.html#a3e2f94068156d109877da292ff1abade" title=" " alt="" coords="212,1018,399,1059"/>
-<area shape="rect" href="../../da/d61/a01350.html#a980b5b0265b1d249a8cc07d4f2d00c3a" title=" " alt="" coords="212,859,399,900"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a7a37ec6e418d1b40651f8d2eb0a15575"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a37ec6e418d1b40651f8d2eb0a15575">&#9670;&nbsp;</a></span>position()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float QcItem::position </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00167">167</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../da/d79/a01310.html#a9950a96eb440a38e541cb0498340c152">&#x202A;mPosition</a>;</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a7a37ec6e418d1b40651f8d2eb0a15575_icgraph.png" border="0" usemap="#da/d79/a01310_a7a37ec6e418d1b40651f8d2eb0a15575_icgraph" alt=""/></div>
-<map name="da/d79/a01310_a7a37ec6e418d1b40651f8d2eb0a15575_icgraph" id="da/d79/a01310_a7a37ec6e418d1b40651f8d2eb0a15575_icgraph">
-<area shape="rect" title=" " alt="" coords="817,309,935,336"/>
-<area shape="rect" href="../../d6/dfa/a01318.html#afeaa7cfcb289c5d12398385d8cf49008" title=" " alt="" coords="573,563,765,589"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a79ad24165b3507839a56ed2b8f535af6" title=" " alt="" coords="571,5,767,32"/>
-<area shape="rect" href="../../d6/dfa/a01318.html#a6889983a22379cab98acb6591158deca" title=" " alt="" coords="585,107,753,133"/>
-<area shape="rect" href="../../d5/df4/a01322.html#aac063de2d7e99ad1685c03e78a6642e0" title=" " alt="" coords="603,157,736,184"/>
-<area shape="rect" href="../../d1/d54/a01326.html#a77e9ac62ffee29b7ff40f4eed5a0b34e" title=" " alt="" coords="604,208,735,235"/>
-<area shape="rect" href="../../d5/d78/a01330.html#aef101056b0b6904ac2ef16ab423330fa" title=" " alt="" coords="610,259,729,285"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a4bdba32ed37b37a5b67cdcbb7431d32c" title=" " alt="" coords="596,309,743,336"/>
-<area shape="rect" href="../../d5/da0/a01342.html#aad774985d2725e44d2509e393213d1d5" title=" " alt="" coords="600,360,739,387"/>
-<area shape="rect" href="../../d9/de4/a01346.html#acac454cfd99f40089d88ae92be536449" title=" " alt="" coords="600,411,739,437"/>
-<area shape="rect" href="../../da/d61/a01350.html#a3aead0bf7420db58372857f080d4acff" title=" " alt="" coords="319,461,471,488"/>
-<area shape="rect" href="../../da/d61/a01350.html#a2581aee6a6f234df9c99ca3a7fa2bfe1" title=" " alt="" coords="569,512,769,539"/>
-<area shape="rect" href="../../da/d61/a01350.html#ab6dc81d51eeb1d029b8b3763c5fee34c" title=" " alt="" coords="573,56,765,83"/>
-<area shape="rect" href="../../da/d79/a01310.html#a954ca7fd1b5c0f726a899ed53f584ac7" title=" " alt="" coords="601,955,738,981"/>
-<area shape="rect" href="../../dc/de0/a01302.html#aa64a89868f350934162deec6001bbb8b" title=" " alt="" coords="5,1035,221,1061"/>
-<area shape="rect" href="../../d6/dfa/a01318.html#a7d218e292b8ab2ed661327077985782a" title=" " alt="" coords="269,563,521,589"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a3e797b84f087007636fc85fc8c1185b0" title=" " alt="" coords="328,5,463,32"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a65306a2298b2267bac0278d223975fde" title=" " alt="" coords="312,867,479,893"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#ace5904dd2b44f40f3aed0b4fa3b407e2" title=" " alt="" coords="299,918,491,959"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#ab18b61014548fa8033b9febf4edea05e" title=" " alt="" coords="287,1085,503,1112"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a14855c8d81ab2821a9beefbf6cad4c94" title=" " alt="" coords="292,1035,499,1061"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a359820489a9614a9772758271f0880e5" title=" " alt="" coords="298,1187,493,1213"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a9f138244953a686251a69fced16b282c" title=" " alt="" coords="305,1237,486,1264"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a35991f4b95f99a78a8147e96f66a7d96" title=" " alt="" coords="309,1136,481,1163"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a263cb196d11770e5091bca4cfc135c52" title=" " alt="" coords="306,613,485,640"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a7514e7c34e840d61ce61222ca1dfbde4" title=" " alt="" coords="302,984,489,1011"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a57a60287b93ab093c171cfeec0c9691a" title=" " alt="" coords="302,1288,489,1315"/>
-<area shape="rect" href="../../d5/d78/a01330.html#a45439b5b5bcc72d5845589c6aeaf1ccc" title=" " alt="" coords="318,1339,473,1365"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a8a285e76c30a1be0dcab9bb9fbff33a2" title=" " alt="" coords="303,1389,487,1416"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a6ed624541ecc8b3621a684abc202e034" title=" " alt="" coords="290,664,501,691"/>
-<area shape="rect" href="../../d5/df4/a01322.html#a95bbc600e7a3999443c36edd11cffb26" title=" " alt="" coords="304,715,487,741"/>
-<area shape="rect" href="../../d1/d54/a01326.html#a2d17644ce2cab9115710ac8731df8f48" title=" " alt="" coords="307,765,483,792"/>
-<area shape="rect" href="../../d9/de4/a01346.html#a934601627c4a319149f79e1ebc85b69d" title=" " alt="" coords="298,816,493,843"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aa051f0fd3884f03ddb9c93e481ad59b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa051f0fd3884f03ddb9c93e481ad59b7">&#9670;&nbsp;</a></span>rect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QRectF QcItem::rect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00172">172</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">&#x202A;mRect</a>;</div>
-</div><!-- fragment --><div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_aa051f0fd3884f03ddb9c93e481ad59b7_icgraph.png" border="0" usemap="#da/d79/a01310_aa051f0fd3884f03ddb9c93e481ad59b7_icgraph" alt=""/></div>
-<map name="da/d79/a01310_aa051f0fd3884f03ddb9c93e481ad59b7_icgraph" id="da/d79/a01310_aa051f0fd3884f03ddb9c93e481ad59b7_icgraph">
-<area shape="rect" title=" " alt="" coords="188,56,283,83"/>
-<area shape="rect" href="../../d5/df4/a01322.html#aac063de2d7e99ad1685c03e78a6642e0" title=" " alt="" coords="6,5,139,32"/>
-<area shape="rect" href="../../d1/d54/a01326.html#a77e9ac62ffee29b7ff40f4eed5a0b34e" title=" " alt="" coords="7,56,138,83"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a3e797b84f087007636fc85fc8c1185b0" title=" " alt="" coords="5,107,140,133"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a822b523a847064dc2f86dab13d0d25a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a822b523a847064dc2f86dab13d0d25a3">&#9670;&nbsp;</a></span>resetRect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QRectF QcItem::resetRect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00206">206</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">&#x202A;mRect</a> = <a class="code" href="../../da/d79/a01310.html#a25a3d81ff9a15a4ccd084539fea6dbf9">&#x202A;parentWidget</a>-&gt;rect();</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">float</span> r = <a class="code" href="../../da/d79/a01310.html#af2c9ba2372149a249b9cf658e8ab4249">&#x202A;getRadius</a>(<a class="code" href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">&#x202A;mRect</a>);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <a class="code" href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">&#x202A;mRect</a>.setWidth(2.0*r);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <a class="code" href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">&#x202A;mRect</a>.setHeight(2.0*r);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">&#x202A;mRect</a>.moveCenter(<a class="code" href="../../da/d79/a01310.html#a25a3d81ff9a15a4ccd084539fea6dbf9">&#x202A;parentWidget</a>-&gt;rect().center());</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">&#x202A;mRect</a>;</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a822b523a847064dc2f86dab13d0d25a3_cgraph.png" border="0" usemap="#da/d79/a01310_a822b523a847064dc2f86dab13d0d25a3_cgraph" alt=""/></div>
-<map name="da/d79/a01310_a822b523a847064dc2f86dab13d0d25a3_cgraph" id="da/d79/a01310_a822b523a847064dc2f86dab13d0d25a3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,133,32"/>
-<area shape="rect" href="../../da/d79/a01310.html#af2c9ba2372149a249b9cf658e8ab4249" title=" " alt="" coords="181,5,312,32"/>
-</map>
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a822b523a847064dc2f86dab13d0d25a3_icgraph.png" border="0" usemap="#da/d79/a01310_a822b523a847064dc2f86dab13d0d25a3_icgraph" alt=""/></div>
-<map name="da/d79/a01310_a822b523a847064dc2f86dab13d0d25a3_icgraph" id="da/d79/a01310_a822b523a847064dc2f86dab13d0d25a3_icgraph">
-<area shape="rect" title=" " alt="" coords="453,233,581,260"/>
-<area shape="rect" href="../../d6/dfa/a01318.html#a6889983a22379cab98acb6591158deca" title=" " alt="" coords="221,5,389,32"/>
-<area shape="rect" href="../../d5/df4/a01322.html#aac063de2d7e99ad1685c03e78a6642e0" title=" " alt="" coords="239,56,372,83"/>
-<area shape="rect" href="../../d1/d54/a01326.html#a77e9ac62ffee29b7ff40f4eed5a0b34e" title=" " alt="" coords="240,107,371,133"/>
-<area shape="rect" href="../../d5/d78/a01330.html#aef101056b0b6904ac2ef16ab423330fa" title=" " alt="" coords="246,157,365,184"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a3e797b84f087007636fc85fc8c1185b0" title=" " alt="" coords="238,208,373,235"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a4bdba32ed37b37a5b67cdcbb7431d32c" title=" " alt="" coords="232,259,379,285"/>
-<area shape="rect" href="../../d5/da0/a01342.html#aad774985d2725e44d2509e393213d1d5" title=" " alt="" coords="236,309,375,336"/>
-<area shape="rect" href="../../d9/de4/a01346.html#acac454cfd99f40089d88ae92be536449" title=" " alt="" coords="236,360,375,387"/>
-<area shape="rect" href="../../da/d61/a01350.html#a3aead0bf7420db58372857f080d4acff" title=" " alt="" coords="5,436,157,463"/>
-<area shape="rect" href="../../da/d61/a01350.html#a2581aee6a6f234df9c99ca3a7fa2bfe1" title=" " alt="" coords="205,461,405,488"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a954ca7fd1b5c0f726a899ed53f584ac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a954ca7fd1b5c0f726a899ed53f584ac7">&#9670;&nbsp;</a></span>setPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QcItem::setPosition </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>percentage</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00177">177</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../da/d79/a01310.html#a7a37ec6e418d1b40651f8d2eb0a15575">&#x202A;position</a>&gt;100)</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <a class="code" href="../../da/d79/a01310.html#a9950a96eb440a38e541cb0498340c152">&#x202A;mPosition</a> = 100;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="../../da/d79/a01310.html#a7a37ec6e418d1b40651f8d2eb0a15575">&#x202A;position</a>&lt;0)</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="../../da/d79/a01310.html#a9950a96eb440a38e541cb0498340c152">&#x202A;mPosition</a> = 0;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <a class="code" href="../../da/d79/a01310.html#a9950a96eb440a38e541cb0498340c152">&#x202A;mPosition</a> = <a class="code" href="../../da/d79/a01310.html#a7a37ec6e418d1b40651f8d2eb0a15575">&#x202A;position</a>;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="../../da/d79/a01310.html#a3a0a19af45e689ad291bf448a269aede">&#x202A;update</a>();</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a954ca7fd1b5c0f726a899ed53f584ac7_cgraph.png" border="0" usemap="#da/d79/a01310_a954ca7fd1b5c0f726a899ed53f584ac7_cgraph" alt=""/></div>
-<map name="da/d79/a01310_a954ca7fd1b5c0f726a899ed53f584ac7_cgraph" id="da/d79/a01310_a954ca7fd1b5c0f726a899ed53f584ac7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,143,57"/>
-<area shape="rect" href="../../da/d79/a01310.html#a7a37ec6e418d1b40651f8d2eb0a15575" title=" " alt="" coords="191,5,308,32"/>
-<area shape="rect" href="../../da/d79/a01310.html#a3a0a19af45e689ad291bf448a269aede" title=" " alt="" coords="194,56,305,83"/>
-</map>
-</div>
-<div class="dynheader">
-这是这个函数的调用关系图:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a954ca7fd1b5c0f726a899ed53f584ac7_icgraph.png" border="0" usemap="#da/d79/a01310_a954ca7fd1b5c0f726a899ed53f584ac7_icgraph" alt=""/></div>
-<map name="da/d79/a01310_a954ca7fd1b5c0f726a899ed53f584ac7_icgraph" id="da/d79/a01310_a954ca7fd1b5c0f726a899ed53f584ac7_icgraph">
-<area shape="rect" title=" " alt="" coords="569,427,707,453"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a65306a2298b2267bac0278d223975fde" title=" " alt="" coords="312,5,479,32"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#ace5904dd2b44f40f3aed0b4fa3b407e2" title=" " alt="" coords="299,57,491,98"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#ab18b61014548fa8033b9febf4edea05e" title=" " alt="" coords="287,123,503,149"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a14855c8d81ab2821a9beefbf6cad4c94" title=" " alt="" coords="292,173,499,200"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a359820489a9614a9772758271f0880e5" title=" " alt="" coords="298,224,493,251"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a9f138244953a686251a69fced16b282c" title=" " alt="" coords="305,275,486,301"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a35991f4b95f99a78a8147e96f66a7d96" title=" " alt="" coords="309,325,481,352"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a263cb196d11770e5091bca4cfc135c52" title=" " alt="" coords="306,376,485,403"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a7514e7c34e840d61ce61222ca1dfbde4" title=" " alt="" coords="302,427,489,453"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a57a60287b93ab093c171cfeec0c9691a" title=" " alt="" coords="302,477,489,504"/>
-<area shape="rect" href="../../d5/d78/a01330.html#a45439b5b5bcc72d5845589c6aeaf1ccc" title=" " alt="" coords="318,528,473,555"/>
-<area shape="rect" href="../../d6/dfa/a01318.html#a7d218e292b8ab2ed661327077985782a" title=" " alt="" coords="269,579,521,605"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a8a285e76c30a1be0dcab9bb9fbff33a2" title=" " alt="" coords="303,629,487,656"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a6ed624541ecc8b3621a684abc202e034" title=" " alt="" coords="290,680,501,707"/>
-<area shape="rect" href="../../d5/df4/a01322.html#a95bbc600e7a3999443c36edd11cffb26" title=" " alt="" coords="304,731,487,757"/>
-<area shape="rect" href="../../d1/d54/a01326.html#a2d17644ce2cab9115710ac8731df8f48" title=" " alt="" coords="307,781,483,808"/>
-<area shape="rect" href="../../d9/de4/a01346.html#a934601627c4a319149f79e1ebc85b69d" title=" " alt="" coords="298,832,493,859"/>
-<area shape="rect" href="../../dc/de0/a01302.html#aa64a89868f350934162deec6001bbb8b" title=" " alt="" coords="5,275,221,301"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a51789b5e2b3a042fa5faa9e9e1d2d247"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51789b5e2b3a042fa5faa9e9e1d2d247">&#9670;&nbsp;</a></span>type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int QcItem::type </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00157">157</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">return</span> 50;</div>
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00086">86</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QString fileFullName = QString::fromStdString(path);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    QFileInfo fileInfo(fileFullName);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (fileInfo.isFile())</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span> (create_)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            ;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a3a0a19af45e689ad291bf448a269aede"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a0a19af45e689ad291bf448a269aede">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a5e322fd011b3f370c7cc4acfc2164d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e322fd011b3f370c7cc4acfc2164d6b">&#9670;&nbsp;</a></span>DirBack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -785,7 +341,70 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void QcItem::update </td>
+          <td class="memname">static std::string Utils_QT::DirBack </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;文件夹后退一层 </p>
+<p class="DocNodeLTR">获取上一层级的文件夹 字符串</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A std::string </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00028">28</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 获取从后往前的 第一个/ 位置</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">size_t</span> index = str.find_last_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::string res;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// 如果最后一个字符 / 则删除之后重新计算/ 位置</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (index == str.size() - 1)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        res = str.substr(0, index + 1);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        index = res.find_last_of(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    res = res.substr(0, index + 1);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab29d5e125f8291249578a509c7b74838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab29d5e125f8291249578a509c7b74838">&#9670;&nbsp;</a></span>GetAllSerialPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt; std::string &gt; Utils_QT::GetAllSerialPort </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -793,65 +412,111 @@ Private 属性</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a> 第 <a class="el" href="../../dc/dfe/a00125_source.html#l00162">162</a> 行定义.</p>
-<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="../../da/d79/a01310.html#a25a3d81ff9a15a4ccd084539fea6dbf9">&#x202A;parentWidget</a>-&gt;update();</div>
+<p>&#x202A;获取所有 的可用串口 COM5 的形式 </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2020/1/7</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;all port number </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00399">399</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;{</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    std::vector&lt;std::string&gt; res;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> QSerialPortInfo &amp;info : QSerialPortInfo::availablePorts())</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    {</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        res.push_back(info.portName().toStdString());</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acb425a725353c07d525139ce1119ede2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb425a725353c07d525139ce1119ede2">&#9670;&nbsp;</a></span>GetDiskAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double Utils_QT::GetDiskAll </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>disk</em> = <code>DEFAULT_DISK</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets disk all </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&#x202A;The disk</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk all</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&#x202A;(Optional) The disk</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk all </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00150">150</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">//获取所有分区信息</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    QList&lt;QStorageInfo&gt; listDisks = QStorageInfo::mountedVolumes();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">//枚举各个分区信息</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">int</span> nCount = listDisks.count();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nCount; i++)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        QString <a class="code" href="../../df/d98/a00107.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = listDisks[i].rootPath();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../df/d98/a00107.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>[0] == disk[0])</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">//分区的空间信息</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordtype">double</span> dblAllGB = 1.0 * listDisks[i].bytesTotal() / (1024 * 1024 * 1024);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keywordtype">double</span> dblFreeGB = 1.0 * listDisks[i].bytesFree() / (1024 * 1024 * 1024);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            UNREFERENCED_PARAMETER(dblFreeGB);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">return</span> dblAllGB;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> 0;   <span class="comment">// 如果没有找到一致的</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../da/d79/a01310_a3a0a19af45e689ad291bf448a269aede_icgraph.png" border="0" usemap="#da/d79/a01310_a3a0a19af45e689ad291bf448a269aede_icgraph" alt=""/></div>
-<map name="da/d79/a01310_a3a0a19af45e689ad291bf448a269aede_icgraph" id="da/d79/a01310_a3a0a19af45e689ad291bf448a269aede_icgraph">
-<area shape="rect" title=" " alt="" coords="1064,458,1175,484"/>
-<area shape="rect" href="../../d6/dfa/a01318.html#afeaa7cfcb289c5d12398385d8cf49008" title=" " alt="" coords="569,1208,761,1235"/>
-<area shape="rect" href="../../d1/d54/a01326.html#aea8f08b2029668818c30645ee1ff93aa" title=" " alt="" coords="588,1271,743,1298"/>
-<area shape="rect" href="../../d1/d54/a01326.html#ac2ada3fe2ac7eea5018a962a8f9435b9" title=" " alt="" coords="590,1347,741,1374"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a6d07fb4f6b775e5fc00c90c2698b554e" title=" " alt="" coords="581,11,749,38"/>
-<area shape="rect" href="../../d5/da0/a01342.html#a4f0cf26ae3f1e3cc7020796060378317" title=" " alt="" coords="833,214,993,240"/>
-<area shape="rect" href="../../da/d61/a01350.html#a0ba10c7e9d744a16e9f187d701d1d9f6" title=" " alt="" coords="820,265,1005,306"/>
-<area shape="rect" href="../../da/d61/a01350.html#ac8b4e5c75e5967aa9290e04388dbcbb2" title=" " alt="" coords="809,331,1016,358"/>
-<area shape="rect" href="../../d5/da0/a01342.html#a09882117abbaff4a9a755b08c41b43d8" title=" " alt="" coords="579,164,751,205"/>
-<area shape="rect" href="../../d5/da0/a01342.html#a8ca77c5ef057452a560213631a2a5e01" title=" " alt="" coords="585,62,746,88"/>
-<area shape="rect" href="../../d9/de6/a01314.html#a1f6888bcf8655d82440d7325b07fa0d6" title=" " alt="" coords="822,483,1003,510"/>
-<area shape="rect" href="../../d9/de6/a01314.html#a0ea296e3cefb5efd32db98b3d4fdc032" title=" " alt="" coords="573,112,758,139"/>
-<area shape="rect" href="../../d9/de6/a01314.html#a7ffbb0504bcc7ebe2b64fd32dce943b2" title=" " alt="" coords="824,584,1001,611"/>
-<area shape="rect" href="../../d5/da0/a01342.html#acf7f800ff97d59471dff26406116c337" title=" " alt="" coords="580,280,751,307"/>
-<area shape="rect" href="../../da/d79/a01310.html#a954ca7fd1b5c0f726a899ed53f584ac7" title=" " alt="" coords="597,762,734,788"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a62dec05d8576e3cce5691b45329b26bd" title=" " alt="" coords="830,534,995,560"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a72105cd9c6f6ddd0a18f936b6a5a7cd9" title=" " alt="" coords="811,787,1014,814"/>
-<area shape="rect" href="../../d1/d54/a01326.html#ab25ca6ee2dfb085881f707d862d85f71" title=" " alt="" coords="839,382,986,408"/>
-<area shape="rect" href="../../d5/da0/a01342.html#a5d5655154bb7874a63623ad22bb7b19a" title=" " alt="" coords="811,888,1015,915"/>
-<area shape="rect" href="../../dc/de0/a01302.html#aa64a89868f350934162deec6001bbb8b" title=" " alt="" coords="5,382,221,408"/>
-<area shape="rect" href="../../d6/dfa/a01318.html#a7d218e292b8ab2ed661327077985782a" title=" " alt="" coords="269,1208,521,1235"/>
-<area shape="rect" href="../../dc/de0/a01302.html#a103143429fbb76de11d5f397983657b4" title=" " alt="" coords="323,164,467,205"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a65306a2298b2267bac0278d223975fde" title=" " alt="" coords="312,1040,479,1067"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#ace5904dd2b44f40f3aed0b4fa3b407e2" title=" " alt="" coords="299,1092,491,1133"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#ab18b61014548fa8033b9febf4edea05e" title=" " alt="" coords="287,534,503,560"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a14855c8d81ab2821a9beefbf6cad4c94" title=" " alt="" coords="292,1158,499,1184"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a359820489a9614a9772758271f0880e5" title=" " alt="" coords="298,635,493,662"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a9f138244953a686251a69fced16b282c" title=" " alt="" coords="305,382,486,408"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a35991f4b95f99a78a8147e96f66a7d96" title=" " alt="" coords="309,584,481,611"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a263cb196d11770e5091bca4cfc135c52" title=" " alt="" coords="306,432,485,459"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a7514e7c34e840d61ce61222ca1dfbde4" title=" " alt="" coords="302,483,489,510"/>
-<area shape="rect" href="../../d7/d8c/a01306.html#a57a60287b93ab093c171cfeec0c9691a" title=" " alt="" coords="302,686,489,712"/>
-<area shape="rect" href="../../d5/d78/a01330.html#a45439b5b5bcc72d5845589c6aeaf1ccc" title=" " alt="" coords="318,736,473,763"/>
-<area shape="rect" href="../../d4/dd1/a01334.html#a8a285e76c30a1be0dcab9bb9fbff33a2" title=" " alt="" coords="303,787,487,814"/>
-<area shape="rect" href="../../d2/d4d/a01338.html#a6ed624541ecc8b3621a684abc202e034" title=" " alt="" coords="290,838,501,864"/>
-<area shape="rect" href="../../d5/df4/a01322.html#a95bbc600e7a3999443c36edd11cffb26" title=" " alt="" coords="304,888,487,915"/>
-<area shape="rect" href="../../d1/d54/a01326.html#a2d17644ce2cab9115710ac8731df8f48" title=" " alt="" coords="307,939,483,966"/>
-<area shape="rect" href="../../d9/de4/a01346.html#a934601627c4a319149f79e1ebc85b69d" title=" " alt="" coords="298,990,493,1016"/>
+<div class="center"><img src="../../da/d79/a01310_acb425a725353c07d525139ce1119ede2_icgraph.png" border="0" usemap="#da/d79/a01310_acb425a725353c07d525139ce1119ede2_icgraph" alt=""/></div>
+<map name="da/d79/a01310_acb425a725353c07d525139ce1119ede2_icgraph" id="da/d79/a01310_acb425a725353c07d525139ce1119ede2_icgraph">
+<area shape="rect" title="Gets disk all" alt="" coords="451,31,593,57"/>
+<area shape="rect" href="../../da/d79/a01310.html#a2d00b920acc10d1e96fd29853ebfe792" title="Gets disk occupy" alt="" coords="231,5,403,32"/>
+<area shape="rect" href="../../d4/dbc/a01038.html#a5714027a2cc07f9c5c0ae84a177631be" title="根据运行参数 更新参数" alt="" coords="244,56,389,83"/>
+<area shape="rect" href="../../d4/dbc/a01038.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="104,56,183,83"/>
+<area shape="rect" href="../../d5/db1/a00140.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="5,56,56,83"/>
 </map>
 </div>
 
 </div>
 </div>
-<h2 class="groupheader">结构体成员变量说明</h2>
-<a id="a9950a96eb440a38e541cb0498340c152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9950a96eb440a38e541cb0498340c152">&#9670;&nbsp;</a></span>mPosition</h2>
+<a id="aadd38da34770d4655265e234b0ed59cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd38da34770d4655265e234b0ed59cb">&#9670;&nbsp;</a></span>GetDiskFree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -860,22 +525,74 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float QcItem::mPosition</td>
+          <td class="memname">static double Utils_QT::GetDiskFree </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>disk</em> = <code>DEFAULT_DISK</code></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d1/d88/a00128_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d1/d88/a00128_source.html#l00121">121</a> 行定义.</p>
+<p>&#x202A;Gets disk free </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&#x202A;The disk</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk free</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&#x202A;(Optional) The disk</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk free </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00183">183</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">//获取所有分区信息</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    QList&lt;QStorageInfo&gt; listDisks = QStorageInfo::mountedVolumes();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="comment">//枚举各个分区信息</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">int</span> nCount = listDisks.count();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nCount; i++)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        QString <a class="code" href="../../df/d98/a00107.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = listDisks[i].rootPath();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../df/d98/a00107.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>[0] == disk[0])</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="comment">//分区的空间信息</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordtype">double</span> dblAllGB = 1.0 * listDisks[i].bytesTotal() / (1024 * 1024 * 1024);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordtype">double</span> dblFreeGB = 1.0 * listDisks[i].bytesFree() / (1024 * 1024 * 1024);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            UNREFERENCED_PARAMETER(dblAllGB);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">return</span> dblFreeGB;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> 0;   <span class="comment">// 如果没有找到一致的</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310_aadd38da34770d4655265e234b0ed59cb_icgraph.png" border="0" usemap="#da/d79/a01310_aadd38da34770d4655265e234b0ed59cb_icgraph" alt=""/></div>
+<map name="da/d79/a01310_aadd38da34770d4655265e234b0ed59cb_icgraph" id="da/d79/a01310_aadd38da34770d4655265e234b0ed59cb_icgraph">
+<area shape="rect" title="Gets disk free" alt="" coords="225,5,379,32"/>
+<area shape="rect" href="../../da/d79/a01310.html#a2d00b920acc10d1e96fd29853ebfe792" title="Gets disk occupy" alt="" coords="5,5,177,32"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="acb027a120b6fec2d135a6227f56cba0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb027a120b6fec2d135a6227f56cba0e">&#9670;&nbsp;</a></span>mRect</h2>
+<a id="a2d00b920acc10d1e96fd29853ebfe792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d00b920acc10d1e96fd29853ebfe792">&#9670;&nbsp;</a></span>GetDiskOccupy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -884,22 +601,62 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QRectF QcItem::mRect</td>
+          <td class="memname">static int Utils_QT::GetDiskOccupy </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>disk</em> = <code>DEFAULT_DISK</code></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d1/d88/a00128_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d1/d88/a00128_source.html#l00119">119</a> 行定义.</p>
+<p>&#x202A;Gets disk occupy </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&#x202A;The disk</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk occupy</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&#x202A;(Optional) The disk</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk occupy </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00130">130</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">double</span> all = <a class="code" href="../../da/d79/a01310.html#acb425a725353c07d525139ce1119ede2">&#x202A;GetDiskAll</a>(disk);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">double</span> used = all - <a class="code" href="../../da/d79/a01310.html#aadd38da34770d4655265e234b0ed59cb">&#x202A;GetDiskFree</a>(disk);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> (1000 * used / all);   <span class="comment">// 计算占用的1000 值 </span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310_a2d00b920acc10d1e96fd29853ebfe792_cgraph.png" border="0" usemap="#da/d79/a01310_a2d00b920acc10d1e96fd29853ebfe792_cgraph" alt=""/></div>
+<map name="da/d79/a01310_a2d00b920acc10d1e96fd29853ebfe792_cgraph" id="da/d79/a01310_a2d00b920acc10d1e96fd29853ebfe792_cgraph">
+<area shape="rect" title="Gets disk occupy" alt="" coords="5,31,177,57"/>
+<area shape="rect" href="../../da/d79/a01310.html#acb425a725353c07d525139ce1119ede2" title="Gets disk all" alt="" coords="231,5,373,32"/>
+<area shape="rect" href="../../da/d79/a01310.html#aadd38da34770d4655265e234b0ed59cb" title="Gets disk free" alt="" coords="225,56,379,83"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a25a3d81ff9a15a4ccd084539fea6dbf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25a3d81ff9a15a4ccd084539fea6dbf9">&#9670;&nbsp;</a></span>parentWidget</h2>
+<a id="aca84499be1f513127b12f9d5b7ca11ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca84499be1f513127b12f9d5b7ca11ef">&#9670;&nbsp;</a></span>GetDiskUsed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -908,39 +665,772 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QWidget* QcItem::parentWidget</td>
+          <td class="memname">static double Utils_QT::GetDiskUsed </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>disk</em> = <code>DEFAULT_DISK</code></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="../../d1/d88/a00128_source.html">qcgaugewidget.h</a> 第 <a class="el" href="../../d1/d88/a00128_source.html#l00120">120</a> 行定义.</p>
+<p>&#x202A;Gets disk used </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&#x202A;The disk</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk used</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disk</td><td>&#x202A;(Optional) The disk</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;The disk used </dd></dl>
 
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00216">216</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;{</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="comment">//获取所有分区信息</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    QList&lt;QStorageInfo&gt; listDisks = QStorageInfo::mountedVolumes();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">//枚举各个分区信息</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">int</span> nCount = listDisks.count();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nCount; i++)</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        QString <a class="code" href="../../df/d98/a00107.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a> = listDisks[i].rootPath();</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../df/d98/a00107.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a>[0] == disk[0])</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="comment">//分区的空间信息</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordtype">double</span> dblAllGB = 1.0 * listDisks[i].bytesTotal() / (1024 * 1024 * 1024);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordtype">double</span> dblFreeGB = 1.0 * listDisks[i].bytesFree() / (1024 * 1024 * 1024);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordflow">return</span> dblAllGB - dblFreeGB;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">return</span> 0;   <span class="comment">// 如果没有找到一致的</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310_aca84499be1f513127b12f9d5b7ca11ef_icgraph.png" border="0" usemap="#da/d79/a01310_aca84499be1f513127b12f9d5b7ca11ef_icgraph" alt=""/></div>
+<map name="da/d79/a01310_aca84499be1f513127b12f9d5b7ca11ef_icgraph" id="da/d79/a01310_aca84499be1f513127b12f9d5b7ca11ef_icgraph">
+<area shape="rect" title="Gets disk used" alt="" coords="424,5,581,32"/>
+<area shape="rect" href="../../d4/dbc/a01038.html#a5714027a2cc07f9c5c0ae84a177631be" title="根据运行参数 更新参数" alt="" coords="231,5,376,32"/>
+<area shape="rect" href="../../d4/dbc/a01038.html#afb07b00f2611777025031d20adb34ce5" title=" " alt="" coords="104,5,183,32"/>
+<area shape="rect" href="../../d5/db1/a00140.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2532e87f4c488fe497996c210b40458b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2532e87f4c488fe497996c210b40458b">&#9670;&nbsp;</a></span>GetSerialByPortNo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSerialPort Utils_QT::* Utils_QT::GetSerialByPortNo </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port_no</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Gets serial by port no </p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/10/17</dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../dc/de0/a01302.html" title="&#x202A;直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类">Utils_Exception</a></td><td>&#x202A;Thrown when the Utilities error condition occurs.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port_no</td><td>&#x202A;The port no</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;Null if it fails, else the serial by port no</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port_no</td><td>&#x202A;(Optional) The port no</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;Null if it fails, else the serial by port no </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00426">426</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;{</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    QString port_name;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    QSerialPort *serial_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#if WIN32 </span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    port_name = <span class="stringliteral">&quot;COM&quot;</span> + QString::number(port_no);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    port_name = <span class="stringliteral">&quot;/dev/ttyS&quot;</span> + +QString::number(port_no);;   <span class="comment">// #LINUX 存在问题</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> QSerialPortInfo &amp;info : QSerialPortInfo::availablePorts())</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    {</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordflow">if</span> (info.portName() == port_name)</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            serial_ = <span class="keyword">new</span> QSerialPort(info);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        }</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    }</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="comment">// 遍历找到相应的串口端口, 如果串口端口无效 则直接失效</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordflow">if</span> (serial_ == <span class="keyword">nullptr</span> || serial_-&gt;portName() != port_name)</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    {</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="../../dc/de0/a01302.html">&#x202A;Utils_Exception</a>(<a class="code" href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa431dd5abfc1bfc0dbda643f6f682bfca">&#x202A;Error_Serial_PortName_Invalid</a>);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    }</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordflow">return</span> serial_;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310_a2532e87f4c488fe497996c210b40458b_icgraph.png" border="0" usemap="#da/d79/a01310_a2532e87f4c488fe497996c210b40458b_icgraph" alt=""/></div>
+<map name="da/d79/a01310_a2532e87f4c488fe497996c210b40458b_icgraph" id="da/d79/a01310_a2532e87f4c488fe497996c210b40458b_icgraph">
+<area shape="rect" title="Gets serial by port no" alt="" coords="1412,127,1603,153"/>
+<area shape="rect" href="../../d0/d61/a01130.html#abe4b4d580f3fbb6b5df00baba443ca6e" title="Opens serial port" alt="" coords="1213,127,1364,153"/>
+<area shape="rect" href="../../d0/d61/a01130.html#a97f68664ea64cf379c2e35390a0b8ab3" title="Handles the open serial" alt="" coords="999,127,1165,153"/>
+<area shape="rect" href="../../d0/d61/a01130.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="811,99,924,125"/>
+<area shape="rect" href="../../df/db5/a01158.html#a4d356bce746d2a91ab02ec10914a34b2" title="设置初始化" alt="" coords="784,155,951,181"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="507,37,736,64"/>
+<area shape="rect" href="../../de/db1/a00197.html#a3bcd6efee1d07328d9c4022ac4061bf4" title=" " alt="" coords="573,99,670,125"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="293,35,417,61"/>
+<area shape="rect" href="../../d5/db1/a00140.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,5,130,32"/>
+<area shape="rect" href="../../d4/d13/a01162.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,57,204,98"/>
+<area shape="rect" href="../../df/db5/a01158.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="526,157,717,184"/>
+<area shape="rect" href="../../d4/d13/a01162.html#aea9a3a7c37640f3efc87ee36e9e8f573" title=" " alt="" coords="252,86,459,127"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#a7597205c96689c706eea3c64d87ba180" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="282,151,429,193"/>
+<area shape="rect" href="../../de/d79/a00203.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="307,217,404,244"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a115723aab7f427158c71249f5c9de377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115723aab7f427158c71249f5c9de377">&#9670;&nbsp;</a></span>ListAllDisk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Utils_QT::ListAllDisk </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;List all disk 列出所有磁盘的信息 </p>
+<p class="DocNodeLTR">List all disk</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/17</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00113">113</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7520153e28f1b4b72929dfd6b576ba35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7520153e28f1b4b72929dfd6b576ba35">&#9670;&nbsp;</a></span>ReleaseThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Utils_QT::ReleaseThread </td>
+          <td>(</td>
+          <td class="paramtype">QThread *&#160;</td>
+          <td class="paramname"><em>qthread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;停止进程并同时 删除对象 // 循环进程 使用 isInterruptionRequested 做while 循环条件 避免 无法退出 <a href="https://blog.csdn.net/caoshangpa/article/details/62421334">https://blog.csdn.net/caoshangpa/article/details/62421334</a> </p>
+<p class="DocNodeLTR">停止进程并同时 删除对象</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/17</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">qthread</td><td>&#x202A;If non-null, the qthread</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/6/15</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">qthread</td><td>&#x202A;If non-null, the qthread</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00284">284</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;{</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">if</span> (qthread == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        qthread-&gt;requestInterruption();</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        qthread-&gt;quit();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        qthread-&gt;wait();</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keyword">delete</span> qthread;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e)</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        qDebug() &lt;&lt; <span class="stringliteral">&quot;Thread Quit Error!&quot;</span> &lt;&lt; e.what();</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310_a7520153e28f1b4b72929dfd6b576ba35_icgraph.png" border="0" usemap="#da/d79/a01310_a7520153e28f1b4b72929dfd6b576ba35_icgraph" alt=""/></div>
+<map name="da/d79/a01310_a7520153e28f1b4b72929dfd6b576ba35_icgraph" id="da/d79/a01310_a7520153e28f1b4b72929dfd6b576ba35_icgraph">
+<area shape="rect" title="停止进程并同时 删除对象 // 循环进程 使用 isInterruptionRequested 做while 循环条件 避免 无法退出 https://blog.csdn...." alt="" coords="245,5,412,32"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#a0e99dde5e6e49f134243fbad6ded3a04" title="Finalizes an instance of the WorkWindow class" alt="" coords="5,5,197,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5c14d3864b00d246bdff2b4b70a7c48c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c14d3864b00d246bdff2b4b70a7c48c">&#9670;&nbsp;</a></span>RenderNumberOnLabel() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Utils_QT::RenderNumberOnLabel </td>
+          <td>(</td>
+          <td class="paramtype">QLabel *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;默认 float 显示一位数据 </p>
+<p class="DocNodeLTR">实现信息格式化显示 默认 float 显示一位数据</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">label</td><td>&#x202A;If non-null, the label </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">num</td><td>&#x202A;Number of</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/7</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">label</td><td>&#x202A;If non-null, the label </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">num</td><td>&#x202A;Number of </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00377">377</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;{</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    label-&gt;setText(QString::number(num, <span class="charliteral">&#39;f&#39;</span>, 1));</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310_a5c14d3864b00d246bdff2b4b70a7c48c_icgraph.png" border="0" usemap="#da/d79/a01310_a5c14d3864b00d246bdff2b4b70a7c48c_icgraph" alt=""/></div>
+<map name="da/d79/a01310_a5c14d3864b00d246bdff2b4b70a7c48c_icgraph" id="da/d79/a01310_a5c14d3864b00d246bdff2b4b70a7c48c_icgraph">
+<area shape="rect" title="默认 float 显示一位数据" alt="" coords="1175,71,1357,112"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#a1ac8d28317aadd53446419ac8b353a82" title="将位置信息实时更新到界面的label 上" alt="" coords="927,21,1119,47"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#af92af3ed8f61e4fd9eaf4d1b14446683" title="更新其他信息值 // 电压 // 亮度 // 存储信息" alt="" coords="701,71,872,112"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#ae9dcd6afdb5b4cd7811eda08b9223de1" title="更新电子罗盘数据" alt="" coords="920,133,1127,159"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#a01083e6fa8585bbe6302affa302bd4d7" title="更新 编码器 位置信息" alt="" coords="701,5,872,47"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="424,78,653,105"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="252,78,376,105"/>
+<area shape="rect" href="../../d5/db1/a00140.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="79,49,130,75"/>
+<area shape="rect" href="../../d4/d13/a01162.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="5,100,204,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8665c6075ec683d61ee20f1fbb348c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8665c6075ec683d61ee20f1fbb348c14">&#9670;&nbsp;</a></span>RenderNumberOnLabel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Utils_QT::RenderNumberOnLabel </td>
+          <td>(</td>
+          <td class="paramtype">QLabel *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;int 直接显示 </p>
+<p class="DocNodeLTR">Renders the number on label</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">label</td><td>&#x202A;If non-null, the label </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">num</td><td>&#x202A;Number of</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td><br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00393">393</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;{</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    label-&gt;setText(QString::number(num));</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4d10805fc4c80c6466c36d4d4e4b5c1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d10805fc4c80c6466c36d4d4e4b5c1a">&#9670;&nbsp;</a></span>ShowImageOnLable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Utils_QT::ShowImageOnLable </td>
+          <td>(</td>
+          <td class="paramtype">const cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>srcImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QLabel *&#160;</td>
+          <td class="paramname"><em>lb_label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;Shows the image on lable </p>
+<p class="DocNodeLTR">在相应的label 上显示图片</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/5</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">srcImg</td><td>&#x202A;Source image </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">lb_label</td><td>&#x202A;If non-null, the pound label </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">width</td><td>&#x202A;The width </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">height</td><td>&#x202A;The height</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails</dd></dl>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/7/20</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">srcImg</td><td>&#x202A;Source image. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">lb_label</td><td>&#x202A;If non-null, the pound label. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">width</td><td>&#x202A;The width. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">height</td><td>&#x202A;The height.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;True if it succeeds, false if it fails. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00325">325</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">// tCamProc-&gt;procMutex.lock(); // 处理线程  锁定</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// #TODO(SChen): 寻找减少转换的方案</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">// 首先根据label 大小 缩放对应的图像</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    Q_ASSERT(srcImg.rows != 0);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    cv::Mat tmp_img;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="comment">// 进行 图像缩放 进行进一步尺寸限制</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="comment">// LDebug(&quot;start resize Image {}!&quot;,img_cnt);</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="comment">// #FIXME 解决图像缩放问题</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="comment">// float src_ratio = (float)srcImg.rows / srcImg.cols;</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        LDebug(<span class="stringliteral">&quot;Show Image On Lable Resize Start!&quot;</span>);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        cv::resize(srcImg, tmp_img, cv::Size(width, height));</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="comment">// tmp_show_img = srcImg(cv::Rect(0, 0, width, height));</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="comment">// LDebug(&quot;end Image{}&quot;, img_cnt);</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="comment">// tmp_show_img = srcImg;</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    {</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        LError(<span class="stringliteral">&quot;resize Error!&quot;</span>);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">// 将原始图像转换成 QImage</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    QImage img = <a class="code" href="../../d7/d88/a01294.html#a988f9de91b15040f5376a6d3b33d108b">&#x202A;Utils_CV::CvMat2QImage</a>(&amp;tmp_img);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="comment">// 将QImage 转换成 QPixmap</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    QPixmap pixmap = QPixmap::fromImage(img);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="comment">// 在相应的lable 上 显示图片</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="comment">// pixmap.scaled(QSize(lb_label-&gt;width(),lb_label-&gt;height ()));</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="comment">// lb_label-&gt;setScaledContents(true);</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    lb_label-&gt;setPixmap(pixmap);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310_a4d10805fc4c80c6466c36d4d4e4b5c1a_cgraph.png" border="0" usemap="#da/d79/a01310_a4d10805fc4c80c6466c36d4d4e4b5c1a_cgraph" alt=""/></div>
+<map name="da/d79/a01310_a4d10805fc4c80c6466c36d4d4e4b5c1a_cgraph" id="da/d79/a01310_a4d10805fc4c80c6466c36d4d4e4b5c1a_cgraph">
+<area shape="rect" title="Shows the image on lable" alt="" coords="5,5,200,32"/>
+<area shape="rect" href="../../d7/d88/a01294.html#a988f9de91b15040f5376a6d3b33d108b" title="将opencv mat 转换成 QT image" alt="" coords="248,5,417,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d2476fd8c1a5ab09328ccb1d7e13b2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d2476fd8c1a5ab09328ccb1d7e13b2a">&#9670;&nbsp;</a></span>Str2QByteArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static QByteArray Utils_QT::Str2QByteArray </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flg_space</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&#x202A;2 q byte array </p>
+<p class="DocNodeLTR">将字符串 转换成 QByteArray 字符串默认有空格</p>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/12/27</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string </td></tr>
+    <tr><td class="paramname">flg_space</td><td>&#x202A;The flg space</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A QByteArray</dd></dl>
+<ul class="DocNodeLTR">
+<li>&#x202A;A B C &mdash; 65 66 67 &mdash; 41 42 43</li>
+<li>&#x202A;* 字母 十进制 16进制</li>
+</ul>
+<dl class="section author DocNodeLTR"><dt>作者</dt><dd>&#x202A;IRIS_Chen </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2019/11/2</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>&#x202A;The string. </td></tr>
+    <tr><td class="paramname">flg_space</td><td>&#x202A;(Optional) The flg space.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>&#x202A;A QByteArray. </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a> 第 <a class="el" href="../../d5/d42/a00269_source.html#l00250">250</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;{</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">size_t</span> n = str.size();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">if</span> (n &lt; 2) <span class="keywordflow">return</span> QByteArray();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    QByteArray res;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">if</span> (flg_space)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        res.resize(static_cast&lt;int&gt;((n + 1) / 3));</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ((n + 1) / 3); i++)</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            res[i] = <a class="code" href="../../d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f">&#x202A;Utils_String::Hex2Uchar</a>(str.substr(static_cast&lt;size_t&gt;(i * 3), 2));</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        res = QByteArray::fromHex(QByteArray::fromStdString(str));</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310_a2d2476fd8c1a5ab09328ccb1d7e13b2a_cgraph.png" border="0" usemap="#da/d79/a01310_a2d2476fd8c1a5ab09328ccb1d7e13b2a_cgraph" alt=""/></div>
+<map name="da/d79/a01310_a2d2476fd8c1a5ab09328ccb1d7e13b2a_cgraph" id="da/d79/a01310_a2d2476fd8c1a5ab09328ccb1d7e13b2a_cgraph">
+<area shape="rect" title="2 q byte array" alt="" coords="5,5,177,32"/>
+<area shape="rect" href="../../d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f" title="Hexadecimal 2 uchar 将两个 hex 字符 转换成 0&#45;256" alt="" coords="225,5,387,32"/>
+<area shape="rect" href="../../d9/de6/a01314.html#a9f04ee936ee3b6fdf6384b0450506c21" title="根据 各种情况 转换字母 一位字母 大于 48 的 +9 然后取后4位的值" alt="" coords="435,5,589,32"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310_a2d2476fd8c1a5ab09328ccb1d7e13b2a_icgraph.png" border="0" usemap="#da/d79/a01310_a2d2476fd8c1a5ab09328ccb1d7e13b2a_icgraph" alt=""/></div>
+<map name="da/d79/a01310_a2d2476fd8c1a5ab09328ccb1d7e13b2a_icgraph" id="da/d79/a01310_a2d2476fd8c1a5ab09328ccb1d7e13b2a_icgraph">
+<area shape="rect" title="2 q byte array" alt="" coords="1699,137,1871,163"/>
+<area shape="rect" href="../../d0/d61/a01130.html#a7620016be54cb445876b796aad0e062f" title="Reads the data" alt="" coords="1495,137,1651,163"/>
+<area shape="rect" href="../../d0/d61/a01130.html#a27276985d679bea457d317b5821664f5" title="Handles the timeout" alt="" coords="1265,86,1447,113"/>
+<area shape="rect" href="../../d0/d61/a01130.html#ab3ea56749f8b01fa4da75d8164cb8dc5" title="读取数据" alt="" coords="1282,137,1430,163"/>
+<area shape="rect" href="../../de/db1/a00197.html#a3bcd6efee1d07328d9c4022ac4061bf4" title=" " alt="" coords="787,213,885,239"/>
+<area shape="rect" href="../../df/db5/a01158.html#aca565b69167068c3d03888f396e46189" title="交互式处理数据 // 写入一句 读取一句" alt="" coords="1021,45,1195,87"/>
+<area shape="rect" href="../../df/db5/a01158.html#a30681f14980014f263933507dea5f077" title="循环处理 串口 数据" alt="" coords="999,111,1217,138"/>
+<area shape="rect" href="../../d0/d61/a01130.html#a424a48bd80ac205a2471f3ecd11203c6" title="Initializes this object" alt="" coords="1051,162,1165,189"/>
+<area shape="rect" href="../../df/db5/a01158.html#a7a4d2b37a6f00109fdde7b593b596d36" title="设置周期 定时器 执行的内容" alt="" coords="763,71,909,112"/>
+<area shape="rect" href="../../df/db5/a01158.html#a4d356bce746d2a91ab02ec10914a34b2" title="设置初始化" alt="" coords="507,78,673,105"/>
+<area shape="rect" href="../../df/db5/a01158.html#aecefe574a943886a31f529a16c5b4869" title="Sets current thread" alt="" coords="264,78,455,105"/>
+<area shape="rect" href="../../d4/d13/a01162.html#aea9a3a7c37640f3efc87ee36e9e8f573" title=" " alt="" coords="5,5,212,47"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#a7597205c96689c706eea3c64d87ba180" title="开始工作按钮点击事件 开始执行拼图程序" alt="" coords="35,71,182,112"/>
+<area shape="rect" href="../../de/d79/a00203.html#aefa9ed611ce50c1e8f2b69198bca5c6d" title=" " alt="" coords="60,137,157,163"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#aca648f5b3e1bd12006f0d2fd3fc5c8e9" title="设定相关槽和信号的连接" alt="" coords="721,162,951,189"/>
+<area shape="rect" href="../../d3/dc7/a01170.html#a98cc99469cf7af144c013870cd2a31e1" title="主线程 初始化" alt="" coords="528,162,652,189"/>
+<area shape="rect" href="../../d5/db1/a00140.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry&#45;point for this application" alt="" coords="334,145,385,171"/>
+<area shape="rect" href="../../d4/d13/a01162.html#a16d22af38341107258918d2b0b93e912" title="Handles button start work clicked signals" alt="" coords="260,196,459,237"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3f3809720f8a9ad495dcf6b15acb7fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3809720f8a9ad495dcf6b15acb7fc5">&#9670;&nbsp;</a></span>UI_ToggleEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Utils_QT::UI_ToggleEnable </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>btn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d9/dd6/a00272_source.html">utils_qt.h</a> 第 <a class="el" href="../../d9/dd6/a00272_source.html#l00256">256</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">if</span> (btn == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        btn-&gt;setDisabled(btn-&gt;isEnabled());</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310_a3f3809720f8a9ad495dcf6b15acb7fc5_icgraph.png" border="0" usemap="#da/d79/a01310_a3f3809720f8a9ad495dcf6b15acb7fc5_icgraph" alt=""/></div>
+<map name="da/d79/a01310_a3f3809720f8a9ad495dcf6b15acb7fc5_icgraph" id="da/d79/a01310_a3f3809720f8a9ad495dcf6b15acb7fc5_icgraph">
+<area shape="rect" title=" " alt="" coords="260,35,437,61"/>
+<area shape="rect" href="../../d4/d13/a01162.html#aca357a3e2acc281a88d56fc32aa4460c" title=" " alt="" coords="21,5,197,32"/>
+<area shape="rect" href="../../d4/d13/a01162.html#aea9a3a7c37640f3efc87ee36e9e8f573" title=" " alt="" coords="5,57,212,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5b48140bd25eb6903d233b9c6f536e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b48140bd25eb6903d233b9c6f536e91">&#9670;&nbsp;</a></span>UI_ToggleVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Utils_QT::UI_ToggleVisible </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>btn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="../../d9/dd6/a00272_source.html">utils_qt.h</a> 第 <a class="el" href="../../d9/dd6/a00272_source.html#l00265">265</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">if</span> (btn == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        btn-&gt;setVisible(!btn-&gt;isVisible());</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/model/<a class="el" href="../../d1/d88/a00128_source.html">qcgaugewidget.h</a></li>
-<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/model/<a class="el" href="../../dc/dfe/a00125_source.html">qcgaugewidget.cc</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/<a class="el" href="../../d9/dd6/a00272_source.html">utils_qt.h</a></li>
+<li>D:/Code/Vision/Camera/Project/CBoreHole/Code/utils/<a class="el" href="../../d5/d42/a00269_source.html">utils_qt.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01310_html_af2c9ba2372149a249b9cf658e8ab4249"><div class="ttname"><a href="../../da/d79/a01310.html#af2c9ba2372149a249b9cf658e8ab4249">&#x202A;QcItem::getRadius</a></div><div class="ttdeci">&#x202A;float getRadius(const QRectF &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/a00125_source.html#l00196">qcgaugewidget.cc:196</a></div></div>
-<div class="ttc" id="aa01310_html_a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695"><div class="ttname"><a href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431aa3843d23b5e9795c243a61318879af695">&#x202A;QcItem::InvalidValueRange</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00107">qcgaugewidget.h:107</a></div></div>
-<div class="ttc" id="aa01310_html_a9950a96eb440a38e541cb0498340c152"><div class="ttname"><a href="../../da/d79/a01310.html#a9950a96eb440a38e541cb0498340c152">&#x202A;QcItem::mPosition</a></div><div class="ttdeci">&#x202A;float mPosition</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00121">qcgaugewidget.h:121</a></div></div>
-<div class="ttc" id="aa01310_html_a7a37ec6e418d1b40651f8d2eb0a15575"><div class="ttname"><a href="../../da/d79/a01310.html#a7a37ec6e418d1b40651f8d2eb0a15575">&#x202A;QcItem::position</a></div><div class="ttdeci">&#x202A;float position()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/a00125_source.html#l00167">qcgaugewidget.cc:167</a></div></div>
-<div class="ttc" id="aa01310_html_a3a0a19af45e689ad291bf448a269aede"><div class="ttname"><a href="../../da/d79/a01310.html#a3a0a19af45e689ad291bf448a269aede">&#x202A;QcItem::update</a></div><div class="ttdeci">&#x202A;void update()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/a00125_source.html#l00162">qcgaugewidget.cc:162</a></div></div>
-<div class="ttc" id="aa01310_html_a25a3d81ff9a15a4ccd084539fea6dbf9"><div class="ttname"><a href="../../da/d79/a01310.html#a25a3d81ff9a15a4ccd084539fea6dbf9">&#x202A;QcItem::parentWidget</a></div><div class="ttdeci">&#x202A;QWidget * parentWidget</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00120">qcgaugewidget.h:120</a></div></div>
-<div class="ttc" id="aa01310_html_acb027a120b6fec2d135a6227f56cba0e"><div class="ttname"><a href="../../da/d79/a01310.html#acb027a120b6fec2d135a6227f56cba0e">&#x202A;QcItem::mRect</a></div><div class="ttdeci">&#x202A;QRectF mRect</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00119">qcgaugewidget.h:119</a></div></div>
-<div class="ttc" id="aa01310_html_a0ef5112d89cda1d9105683533079431aab597c8e8a25a168105e84edc20dda514"><div class="ttname"><a href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431aab597c8e8a25a168105e84edc20dda514">&#x202A;QcItem::InvalidStep</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00107">qcgaugewidget.h:107</a></div></div>
-<div class="ttc" id="aa01310_html_a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06"><div class="ttname"><a href="../../da/d79/a01310.html#a0ef5112d89cda1d9105683533079431aa5aa679aefc77d3dde08aeecdaae2dc06">&#x202A;QcItem::InvalidDegreeRange</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d88/a00128_source.html#l00107">qcgaugewidget.h:107</a></div></div>
+<div class="ttc" id="aa00257_html_a59e56af19e754a6aa26a612ebf91d05fa431dd5abfc1bfc0dbda643f6f682bfca"><div class="ttname"><a href="../../d9/d39/a00257.html#a59e56af19e754a6aa26a612ebf91d05fa431dd5abfc1bfc0dbda643f6f682bfca">&#x202A;Error_Serial_PortName_Invalid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00046">Utils_Exception.h:46</a></div></div>
+<div class="ttc" id="aa01294_html_a988f9de91b15040f5376a6d3b33d108b"><div class="ttname"><a href="../../d7/d88/a01294.html#a988f9de91b15040f5376a6d3b33d108b">&#x202A;Utils_CV::CvMat2QImage</a></div><div class="ttdeci">&#x202A;static QImage CvMat2QImage(const cv::Mat *mat)</div><div class="ttdoc">&#x202A;将opencv mat 转换成 QT image</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d22/a00245_source.html#l00487">utils_cv.cc:487</a></div></div>
+<div class="ttc" id="aa01310_html_aadd38da34770d4655265e234b0ed59cb"><div class="ttname"><a href="../../da/d79/a01310.html#aadd38da34770d4655265e234b0ed59cb">&#x202A;Utils_QT::GetDiskFree</a></div><div class="ttdeci">&#x202A;static double GetDiskFree(const std::string disk=DEFAULT_DISK)</div><div class="ttdoc">&#x202A;Gets disk free</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00183">utils_qt.cc:183</a></div></div>
+<div class="ttc" id="aa01302_html"><div class="ttname"><a href="../../dc/de0/a01302.html">&#x202A;Utils_Exception</a></div><div class="ttdoc">&#x202A;直接从 异常基类继承 , 可以考虑分别使用不同的基类继承出来不同的类</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/a00257_source.html#l00074">Utils_Exception.h:74</a></div></div>
+<div class="ttc" id="aa01314_html_a9c65f3ca9342a3ef5b8d91a5e9e0353f"><div class="ttname"><a href="../../d9/de6/a01314.html#a9c65f3ca9342a3ef5b8d91a5e9e0353f">&#x202A;Utils_String::Hex2Uchar</a></div><div class="ttdeci">&#x202A;static uchar Hex2Uchar(const std::string &amp;str)</div><div class="ttdoc">&#x202A;Hexadecimal 2 uchar 将两个 hex 字符 转换成 0-256</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d5e/a00275_source.html#l00513">utils_string.cc:513</a></div></div>
+<div class="ttc" id="aa00107_html_abe29b0d0f446a335c8586ae898a768ed"><div class="ttname"><a href="../../df/d98/a00107.html#abe29b0d0f446a335c8586ae898a768ed">&#x202A;tmp</a></div><div class="ttdeci">&#x202A;cv::Mat tmp</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/a00107_source.html#l00037">QImgLabel.cc:37</a></div></div>
+<div class="ttc" id="aa01310_html_acb425a725353c07d525139ce1119ede2"><div class="ttname"><a href="../../da/d79/a01310.html#acb425a725353c07d525139ce1119ede2">&#x202A;Utils_QT::GetDiskAll</a></div><div class="ttdeci">&#x202A;static double GetDiskAll(const std::string disk=DEFAULT_DISK)</div><div class="ttdoc">&#x202A;Gets disk all</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d42/a00269_source.html#l00150">utils_qt.cc:150</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../da/d79/a01310.html">&#x202A;QcItem</a></li>
+    <li class="navelem"><a class="el" href="../../da/d79/a01310.html">&#x202A;Utils_QT</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

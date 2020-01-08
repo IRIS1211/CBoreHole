@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/CamCapture.h 源文件</title>
+<title>&#x202A;CBoreHole: &#x202A;D:/Code/Vision/Camera/Project/CBoreHole/Code/inc/constdefine.h 源文件</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../Panorama32.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">&#x202A;CBoreHole
-   &#160;<span id="projectnumber">1.6.3</span>
+   &#160;<span id="projectnumber">1.7.0</span>
    </div>
    <div id="projectbrief">&#x202A;测孔图片拼接全景显示系统</div>
   </td>
@@ -89,75 +89,60 @@ $(document).ready(function(){initNavTree('dc/d87/a00032_source.html','../../');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">CamCapture.h</div>  </div>
+<div class="title">constdefine.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="../../dc/d87/a00032.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef CBOREHOLE_CAMCAPTURE_H_</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define CBOREHOLE_CAMCAPTURE_H_</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QThread&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// #include &lt;QMutex&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d41/a00038.html">&#x202A;common.h</a>&quot;</span>     <span class="comment">// 公共头 文件定义</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/dee/a00053.html">&#x202A;CQueue.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>cv::Mat;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../da/d73/a01090.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d73/a01090.html">&#x202A;CamCapture</a> : <span class="keyword">public</span> QThread</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../da/d73/a01090.html#afc5a803f219b312cd6f2bc0cf604651d">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../da/d73/a01090.html#afc5a803f219b312cd6f2bc0cf604651d">&#x202A;mi_img_index_</a>; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../da/d73/a01090.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">   36</a></span>&#160;    cv::Mat <a class="code" href="../../da/d73/a01090.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;ma_Frame_</a>;   </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../da/d73/a01090.html#a7b9f74c08dcc9ec30b259abd621ae185">   37</a></span>&#160;    cv::VideoCapture *<a class="code" href="../../da/d73/a01090.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;m_VideoCapture_</a>;   </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef CONSTDEFINE_H__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define CONSTDEFINE_H__</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// 定义一个配置文件路径, 后续参数均可从里面读取</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// const std::string K_MAIN_CONFIG_FILE = &quot;./Config/Config.yml&quot;;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#a433302ffff0649fa165e352add69b39a">   15</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="../../dc/d87/a00032.html#a433302ffff0649fa165e352add69b39a">&#x202A;K_MAIN_CONFIG_FILE</a>[] = <span class="stringliteral">&quot;./Config/Config.yml&quot;</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// 定义系统参数的节点名称 即 yml 配置参数的根节点名称</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// const std::string K_NODE_RUNPARA = &quot;RunPara&quot;;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#ad37cc69fef747f0500fbb7d30c3858cd">   18</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="../../dc/d87/a00032.html#ad37cc69fef747f0500fbb7d30c3858cd">&#x202A;K_NODE_RUNPARA</a>[] = <span class="stringliteral">&quot;RunPara&quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// 定义读写文件的时候 数组的不同长度,避免每个都写 花费时间</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#a0718a9e828e0075edac91e10a5d2f1aa">   21</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d87/a00032.html#a0718a9e828e0075edac91e10a5d2f1aa">&#x202A;K_LONGLONG_ARRAY_SIZE</a> = 60;   <span class="comment">// 定义较长数组的尺寸</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#a3df889932de4701a8db6223acb561c39">   22</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d87/a00032.html#a3df889932de4701a8db6223acb561c39">&#x202A;K_LONG_ARRAY_SIZE</a> = 30;   <span class="comment">// 定义较长数组的尺寸</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#ad9f1be9bf57e85c02e510057cd96ef0c">   23</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d87/a00032.html#ad9f1be9bf57e85c02e510057cd96ef0c">&#x202A;K_MEDIUM_ARRAY_SIZE</a> = 20;   <span class="comment">// 定义较中等长度数组的尺寸</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#ae09f17a780ae536bca76620964e009c9">   24</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d87/a00032.html#ae09f17a780ae536bca76620964e009c9">&#x202A;K_SHORT_ARRAY_SIZE</a> = 10;  <span class="comment">// 定义比较短的数组的尺寸</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#ac675a28c6fa4d61129467a531f6df5a4">   25</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d87/a00032.html#ac675a28c6fa4d61129467a531f6df5a4">&#x202A;K_MINI_ARRAY_SIZE</a> = 5;    <span class="comment">// 可以接收的最短的数组的尺寸</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// 定义罗盘数据长度</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#afa3967d6fc384c9f165b20f370b5b3f0">   28</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d87/a00032.html#afa3967d6fc384c9f165b20f370b5b3f0">&#x202A;K_COMPASS_HEAD_LEN</a> = 4;   <span class="comment">// 罗盘帧头数据</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#a0d733587756cc1c1263aa6f27a7f722b">   29</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d87/a00032.html#a0d733587756cc1c1263aa6f27a7f722b">&#x202A;K_COMPASS_TYPE</a> = 2;   <span class="comment">// 目前所有的罗盘种类</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#a5331e763f1b8e64b460eed460ec6de60">   31</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d87/a00032.html#a5331e763f1b8e64b460eed460ec6de60">&#x202A;K_Timer_Time_MS</a> = 33;     <span class="comment">// 默认定时器 时间 ms</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#a8cef84e707656a33ac95925cbe84af50">   33</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d87/a00032.html#a8cef84e707656a33ac95925cbe84af50">&#x202A;KD_Serial_Buffer_Size</a> = 10;     <span class="comment">// 默认串口缓冲区 大小  读写</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// 设置目标图的轮换交替显示</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../dc/d87/a00032.html#a1befdeb2254bebc2b90f845a52bb9f7d">   36</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../dc/d87/a00032.html#a1befdeb2254bebc2b90f845a52bb9f7d">&#x202A;K_Dst_Img_Max_Num</a> = 5;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../da/d73/a01090.html#a8520541f0914714fe138b2bbe986c32d">   40</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../da/d73/a01090.html#a8520541f0914714fe138b2bbe986c32d">&#x202A;mb_capture_enable_</a>; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../da/d73/a01090.html#af7fe40eb92e15b37ede3690ccddb523a">   41</a></span>&#160;    <a class="code" href="../../db/d32/a01122.html">&#x202A;CQueue&lt;cv::Mat&gt;</a> *<a class="code" href="../../da/d73/a01090.html#af7fe40eb92e15b37ede3690ccddb523a">&#x202A;mqa_writevideo_buffer_</a>;     </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../da/d73/a01090.html#a2fe8acbc4a8218e9fe7666cc90160dcd">   42</a></span>&#160;    <a class="code" href="../../db/d32/a01122.html">&#x202A;CQueue&lt;cv::Mat&gt;</a> *<a class="code" href="../../da/d73/a01090.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;mqa_capture_buffer_</a>;     </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../da/d73/a01090.html#afea77c5388119e83970fd423b9ec5db3">   43</a></span>&#160;    std::mutex <a class="code" href="../../da/d73/a01090.html#afea77c5388119e83970fd423b9ec5db3">&#x202A;mx_CameraCapture_</a>;  </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../da/d73/a01090.html#a4bd2d5e4ee609ad2ceec43e97fe50660">&#x202A;CamCapture</a>(QObject *parent = <span class="keyword">nullptr</span>); <span class="comment">// 默认初始化</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../da/d73/a01090.html#a3c3ceca5c417e904aba8e2ec25265a61">&#x202A;~CamCapture</a>(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../da/d73/a01090.html#a37280d2e0cfb79c0efc4cb2a26c54f86">&#x202A;Init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d73/a01090.html#ab04aeb116e1fa0b05b79428db55f209e">&#x202A;run</a>() <span class="keyword">override</span>;  <span class="comment">// 定义运行函数</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif // CBOREHOLE_CAMCAPTURE_H_</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif  // CONSTDEFINE_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa01090_html_a8520541f0914714fe138b2bbe986c32d"><div class="ttname"><a href="../../da/d73/a01090.html#a8520541f0914714fe138b2bbe986c32d">&#x202A;CamCapture::mb_capture_enable_</a></div><div class="ttdeci">&#x202A;bool mb_capture_enable_</div><div class="ttdoc">&#x202A;使能 抓取,</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00040">CamCapture.h:40</a></div></div>
-<div class="ttc" id="aa01090_html_afea77c5388119e83970fd423b9ec5db3"><div class="ttname"><a href="../../da/d73/a01090.html#afea77c5388119e83970fd423b9ec5db3">&#x202A;CamCapture::mx_CameraCapture_</a></div><div class="ttdeci">&#x202A;std::mutex mx_CameraCapture_</div><div class="ttdoc">&#x202A;图像采集锁</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00043">CamCapture.h:43</a></div></div>
-<div class="ttc" id="aa01090_html_af7fe40eb92e15b37ede3690ccddb523a"><div class="ttname"><a href="../../da/d73/a01090.html#af7fe40eb92e15b37ede3690ccddb523a">&#x202A;CamCapture::mqa_writevideo_buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * mqa_writevideo_buffer_</div><div class="ttdoc">&#x202A;设置存储队列, 用于存储 原始视频流</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00041">CamCapture.h:41</a></div></div>
-<div class="ttc" id="aa01090_html_ab04aeb116e1fa0b05b79428db55f209e"><div class="ttname"><a href="../../da/d73/a01090.html#ab04aeb116e1fa0b05b79428db55f209e">&#x202A;CamCapture::run</a></div><div class="ttdeci">&#x202A;void run() override</div><div class="ttdoc">&#x202A;线程循环进程, 重写 run 函数</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00142">CamCapture.cc:142</a></div></div>
-<div class="ttc" id="aa01122_html"><div class="ttname"><a href="../../db/d32/a01122.html">&#x202A;CQueue&lt; cv::Mat &gt;</a></div></div>
-<div class="ttc" id="aa01090_html_a3c3ceca5c417e904aba8e2ec25265a61"><div class="ttname"><a href="../../da/d73/a01090.html#a3c3ceca5c417e904aba8e2ec25265a61">&#x202A;CamCapture::~CamCapture</a></div><div class="ttdeci">&#x202A;~CamCapture(void) override</div><div class="ttdoc">&#x202A;Finalizes an instance of the CamCapture class</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00070">CamCapture.cc:70</a></div></div>
-<div class="ttc" id="aa00038_html"><div class="ttname"><a href="../../d8/d41/a00038.html">&#x202A;common.h</a></div></div>
-<div class="ttc" id="aa01090_html"><div class="ttname"><a href="../../da/d73/a01090.html">&#x202A;CamCapture</a></div><div class="ttdoc">&#x202A;摄像头 抓取对象, 循环抓取对象数据到缓冲队列中</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00030">CamCapture.h:30</a></div></div>
-<div class="ttc" id="aa01090_html_a0e49ba7f08cb0fb60c6e8f51fd68bc1f"><div class="ttname"><a href="../../da/d73/a01090.html#a0e49ba7f08cb0fb60c6e8f51fd68bc1f">&#x202A;CamCapture::ma_Frame_</a></div><div class="ttdeci">&#x202A;cv::Mat ma_Frame_</div><div class="ttdoc">&#x202A;数据写入的对象,避免重复 申请空间</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00036">CamCapture.h:36</a></div></div>
-<div class="ttc" id="aa01090_html_a37280d2e0cfb79c0efc4cb2a26c54f86"><div class="ttname"><a href="../../da/d73/a01090.html#a37280d2e0cfb79c0efc4cb2a26c54f86">&#x202A;CamCapture::Init</a></div><div class="ttdeci">&#x202A;bool Init(void)</div><div class="ttdoc">&#x202A;初始化相机参数, 并打开相机对象</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00104">CamCapture.cc:104</a></div></div>
-<div class="ttc" id="aa01090_html_a7b9f74c08dcc9ec30b259abd621ae185"><div class="ttname"><a href="../../da/d73/a01090.html#a7b9f74c08dcc9ec30b259abd621ae185">&#x202A;CamCapture::m_VideoCapture_</a></div><div class="ttdeci">&#x202A;cv::VideoCapture * m_VideoCapture_</div><div class="ttdoc">&#x202A;视频抓取对象</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00037">CamCapture.h:37</a></div></div>
-<div class="ttc" id="aa01090_html_afc5a803f219b312cd6f2bc0cf604651d"><div class="ttname"><a href="../../da/d73/a01090.html#afc5a803f219b312cd6f2bc0cf604651d">&#x202A;CamCapture::mi_img_index_</a></div><div class="ttdeci">&#x202A;int mi_img_index_</div><div class="ttdoc">&#x202A;设置 图像索引值</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00035">CamCapture.h:35</a></div></div>
-<div class="ttc" id="aa01090_html_a4bd2d5e4ee609ad2ceec43e97fe50660"><div class="ttname"><a href="../../da/d73/a01090.html#a4bd2d5e4ee609ad2ceec43e97fe50660">&#x202A;CamCapture::CamCapture</a></div><div class="ttdeci">&#x202A;CamCapture(QObject *parent=nullptr)</div><div class="ttdoc">&#x202A;Camera 抓取线程初始化</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db1/a00140_source.html#l00038">CamCapture.cc:38</a></div></div>
-<div class="ttc" id="aa01090_html_a2fe8acbc4a8218e9fe7666cc90160dcd"><div class="ttname"><a href="../../da/d73/a01090.html#a2fe8acbc4a8218e9fe7666cc90160dcd">&#x202A;CamCapture::mqa_capture_buffer_</a></div><div class="ttdeci">&#x202A;CQueue&lt; cv::Mat &gt; * mqa_capture_buffer_</div><div class="ttdoc">&#x202A;采集到的图像数据</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00042">CamCapture.h:42</a></div></div>
-<div class="ttc" id="aa00053_html"><div class="ttname"><a href="../../dc/dee/a00053.html">&#x202A;CQueue.h</a></div><div class="ttdoc">&#x202A;Declares the queue class @changelog 2019/11/8 IRIS_Chen Created.</div></div>
+<div class="ttc" id="aa00032_html_ae09f17a780ae536bca76620964e009c9"><div class="ttname"><a href="../../dc/d87/a00032.html#ae09f17a780ae536bca76620964e009c9">&#x202A;K_SHORT_ARRAY_SIZE</a></div><div class="ttdeci">&#x202A;const int K_SHORT_ARRAY_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00024">constdefine.h:24</a></div></div>
+<div class="ttc" id="aa00032_html_a1befdeb2254bebc2b90f845a52bb9f7d"><div class="ttname"><a href="../../dc/d87/a00032.html#a1befdeb2254bebc2b90f845a52bb9f7d">&#x202A;K_Dst_Img_Max_Num</a></div><div class="ttdeci">&#x202A;const int K_Dst_Img_Max_Num</div><div class="ttdoc">&#x202A;目标大图的 最大数量, 做轮换 处理</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00036">constdefine.h:36</a></div></div>
+<div class="ttc" id="aa00032_html_a0718a9e828e0075edac91e10a5d2f1aa"><div class="ttname"><a href="../../dc/d87/a00032.html#a0718a9e828e0075edac91e10a5d2f1aa">&#x202A;K_LONGLONG_ARRAY_SIZE</a></div><div class="ttdeci">&#x202A;const int K_LONGLONG_ARRAY_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00021">constdefine.h:21</a></div></div>
+<div class="ttc" id="aa00032_html_a0d733587756cc1c1263aa6f27a7f722b"><div class="ttname"><a href="../../dc/d87/a00032.html#a0d733587756cc1c1263aa6f27a7f722b">&#x202A;K_COMPASS_TYPE</a></div><div class="ttdeci">&#x202A;const int K_COMPASS_TYPE</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00029">constdefine.h:29</a></div></div>
+<div class="ttc" id="aa00032_html_ac675a28c6fa4d61129467a531f6df5a4"><div class="ttname"><a href="../../dc/d87/a00032.html#ac675a28c6fa4d61129467a531f6df5a4">&#x202A;K_MINI_ARRAY_SIZE</a></div><div class="ttdeci">&#x202A;const int K_MINI_ARRAY_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00025">constdefine.h:25</a></div></div>
+<div class="ttc" id="aa00032_html_a8cef84e707656a33ac95925cbe84af50"><div class="ttname"><a href="../../dc/d87/a00032.html#a8cef84e707656a33ac95925cbe84af50">&#x202A;KD_Serial_Buffer_Size</a></div><div class="ttdeci">&#x202A;const int KD_Serial_Buffer_Size</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00033">constdefine.h:33</a></div></div>
+<div class="ttc" id="aa00032_html_a433302ffff0649fa165e352add69b39a"><div class="ttname"><a href="../../dc/d87/a00032.html#a433302ffff0649fa165e352add69b39a">&#x202A;K_MAIN_CONFIG_FILE</a></div><div class="ttdeci">&#x202A;const char K_MAIN_CONFIG_FILE[]</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00015">constdefine.h:15</a></div></div>
+<div class="ttc" id="aa00032_html_a5331e763f1b8e64b460eed460ec6de60"><div class="ttname"><a href="../../dc/d87/a00032.html#a5331e763f1b8e64b460eed460ec6de60">&#x202A;K_Timer_Time_MS</a></div><div class="ttdeci">&#x202A;const int K_Timer_Time_MS</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00031">constdefine.h:31</a></div></div>
+<div class="ttc" id="aa00032_html_ad37cc69fef747f0500fbb7d30c3858cd"><div class="ttname"><a href="../../dc/d87/a00032.html#ad37cc69fef747f0500fbb7d30c3858cd">&#x202A;K_NODE_RUNPARA</a></div><div class="ttdeci">&#x202A;const char K_NODE_RUNPARA[]</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00018">constdefine.h:18</a></div></div>
+<div class="ttc" id="aa00032_html_a3df889932de4701a8db6223acb561c39"><div class="ttname"><a href="../../dc/d87/a00032.html#a3df889932de4701a8db6223acb561c39">&#x202A;K_LONG_ARRAY_SIZE</a></div><div class="ttdeci">&#x202A;const int K_LONG_ARRAY_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00022">constdefine.h:22</a></div></div>
+<div class="ttc" id="aa00032_html_ad9f1be9bf57e85c02e510057cd96ef0c"><div class="ttname"><a href="../../dc/d87/a00032.html#ad9f1be9bf57e85c02e510057cd96ef0c">&#x202A;K_MEDIUM_ARRAY_SIZE</a></div><div class="ttdeci">&#x202A;const int K_MEDIUM_ARRAY_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00023">constdefine.h:23</a></div></div>
+<div class="ttc" id="aa00032_html_afa3967d6fc384c9f165b20f370b5b3f0"><div class="ttname"><a href="../../dc/d87/a00032.html#afa3967d6fc384c9f165b20f370b5b3f0">&#x202A;K_COMPASS_HEAD_LEN</a></div><div class="ttdeci">&#x202A;const int K_COMPASS_HEAD_LEN</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/a00032_source.html#l00028">constdefine.h:28</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../dc/d87/a00032.html">&#x202A;CamCapture.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_23fdee2f6995db16c755697cdf620cf4.html">&#x202A;Code</a></li><li class="navelem"><a class="el" href="../../dir_f8d8e0a4ca34514f836ebac25097d4e4.html">&#x202A;inc</a></li><li class="navelem"><a class="el" href="../../dc/d87/a00032.html">&#x202A;constdefine.h</a></li>
     <li class="footer">制作者
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
